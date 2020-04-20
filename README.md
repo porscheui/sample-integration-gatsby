@@ -1,3 +1,28 @@
+# Gatsby - Sample integration with Porsche Design System
+
+For further documentation regarding designing websites and the correct usage of the components, 
+you can visit our website https://designsystem.porsche.com/.
+
+---
+
+## Get the project up and running
+
+### yarn
+* Install dependencies via `yarn install`
+* Build the application via `yarn build`
+* Run tests via `yarn test`
+* Run the application via `yarn start`
+
+
+### npm
+* Install dependencies via `npm install`
+* Build the application via `npm run build`
+* Run tests via `npm test`
+* Run the application via `npm start`
+
+---
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
