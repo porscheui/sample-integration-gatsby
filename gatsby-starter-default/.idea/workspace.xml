@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0dca807-c5b3-4357-bb8e-2ef91678ad99" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aFOUnxc5cm1smuw2X1dFnfinMf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.cache" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0dca807-c5b3-4357-bb8e-2ef91678ad99" name="Default Changelist" comment="" />
+      <created>1586327893231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586327893231</updated>
+      <workItem from="1586327896306" duration="5102000" />
+      <workItem from="1586844950852" duration="5712000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2462" y="63" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586331125975">
+      <screen x="1792" y="-266" width="1920" height="1080" />
+    </state>
+    <state x="2462" y="63" key="#com.intellij.fileTypes.FileTypeChooser/1792.-266.1920.1080/0.0.1792.1120@1792.-266.1920.1080" timestamp="1586331125975" />
+    <state x="2427" y="-53" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586854029169">
+      <screen x="1792" y="-243" width="1920" height="1057" />
+    </state>
+    <state x="2427" y="-53" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1792.-243.1920.1057/0.23.1792.1031@1792.-243.1920.1057" timestamp="1586854029169" />
+    <state x="2333" y="-218" key="search.everywhere.popup" timestamp="1586855954353">
+      <screen x="1792" y="-266" width="1920" height="1080" />
+    </state>
+    <state x="2333" y="-218" key="search.everywhere.popup/1792.-266.1920.1080/0.0.1792.1120@1792.-266.1920.1080" timestamp="1586855954353" />
+  </component>
+</project>
