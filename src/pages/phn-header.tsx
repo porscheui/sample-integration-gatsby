@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Layout from '../components/layout';
 import { PButton, PLinkPure, PIcon } from '@porsche-design-system/components-react';
 import { applyPolyfills, defineCustomElements as definePorscheNavigation } from '@porschehn/navigation/loader';
