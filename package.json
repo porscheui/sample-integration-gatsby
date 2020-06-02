@@ -1,11 +1,12 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "sample-integration-gatsby",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@porsche-design-system/components-react": "^1.4.0",
+    "@porschehn/navigation": "^1.2.1",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-manifest": "^2.3.3",
@@ -23,12 +24,13 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.2",
+    "@types/react-helmet": "^6.0.0",
     "babel-jest": "^25.3.0",
     "babel-preset-gatsby": "^0.3.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.3.0",
     "jest-preset-gatsby": "^1.0.44",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.5",
     "react-test-renderer": "^16.13.1"
   },
   "keywords": [
@@ -36,19 +38,12 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "test": "jest",
+    "prettier": "prettier --write '**/*.{ts,tsx}'"
   }
 }
