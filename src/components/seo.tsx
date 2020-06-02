@@ -7,7 +7,7 @@
 
 import React from 'react';
 import * as PropTypes from 'prop-types';
-import * as Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const SEO = ({ description, lang, meta, title }): JSX.Element => {
