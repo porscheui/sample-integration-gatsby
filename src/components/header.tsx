@@ -3,7 +3,7 @@ import * as PropTypes from 'prop-types';
 import * as React from 'react';
 import { PHeadline, PGridItem, PGrid, PDivider, PLinkPure } from '@porsche-design-system/components-react';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }): JSX.Element => (
   <PGrid>
     <PGridItem size={12}>
       <PHeadline align="center" variant="headline-2">
@@ -14,10 +14,10 @@ const Header = ({ siteTitle }) => (
       <PDivider className="divider" />
     </PGridItem>
     <PGridItem size={12}>
-      <Link to="/collectionPage" className="removeLinkStyle">
+      <Link to="/collection" className="removeLinkStyle">
         <PLinkPure>Components Collection</PLinkPure>
       </Link>
-      <Link to="/formsPage" className="removeLinkStyle">
+      <Link to="/forms" className="removeLinkStyle">
         <PLinkPure>Forms</PLinkPure>
       </Link>
     </PGridItem>

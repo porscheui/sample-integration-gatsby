@@ -14,7 +14,7 @@ import {
 } from '@porsche-design-system/components-react';
 import { useState } from 'react';
 
-export default function ComponentCollection() {
+const ComponentCollection = (): JSX.Element => {
   const [submit, setSubmit] = useState(false);
   const [activePage, setActivePage] = useState(1);
 
@@ -107,4 +107,6 @@ export default function ComponentCollection() {
       </PGridItem>
     </PGrid>
   );
-}
+};
+
+export default ComponentCollection;

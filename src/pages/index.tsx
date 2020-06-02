@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { PGrid, PGridItem, PText } from '@porsche-design-system/components-react';
-
 import Layout from '../components/layout';
 
-const IndexPage = () => (
+const IndexPage = (): JSX.Element => (
   <Layout>
     <PGrid>
       <PGridItem size={12}>

@@ -12,7 +12,7 @@ import {
   PTextFieldWrapper,
 } from '@porsche-design-system/components-react';
 
-export default function Forms() {
+const Forms = (): JSX.Element => {
   const [select, setSelect] = useState('Change this Headline by selecting');
   const [checkBox, setCheckBox] = useState(false);
   const [radioButton, setRadioButton] = useState(false);
@@ -118,4 +118,6 @@ export default function Forms() {
       </PFlexItem>
     </PFlex>
   );
-}
+};
+
+export default Forms;
