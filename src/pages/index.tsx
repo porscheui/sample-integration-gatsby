@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 const IndexPage = () => (
   <Layout>
     <PGrid>
-      <PGridItem size={'12'}>
+      <PGridItem size={12}>
         <PText>
           Welcome to our Porsche Design System example site with Gatsby. Click one of the Links above to see different
           examples of all Components we provide

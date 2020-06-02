@@ -24,12 +24,10 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <div className="pageLayout">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className={'pageLayout'}>
-        <main>{children}</main>
-      </div>
-    </>
+      {children}
+    </div>
   );
 };
 
