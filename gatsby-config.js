@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Porsche Design System in Gatsby`,
+    title: `Example usage of the Porsche-Design-System Gatsby`,
     description: `Kick off your new project with these integration samples.`,
     author: `matthias.haegele@mhp.com`,
   },

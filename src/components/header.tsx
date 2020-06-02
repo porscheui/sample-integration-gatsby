@@ -13,21 +13,21 @@ const Header = ({ siteTitle }) => (
     <div>
       <PGrid>
         <PGridItem size={12}>
-          <PHeadline align={"center"}>{siteTitle}</PHeadline>
+          <PHeadline align="center" variant="headline-2">{siteTitle}</PHeadline>
         </PGridItem>
         <PGridItem size={12}>
-          <PDivider className={"divider"}/>
+          <PDivider className="divider"/>
         </PGridItem>
         <PGridItem size={12}>
-          <Link to="/collectionPage" className={"removeLinkStyle"}>
+          <Link to="/collectionPage" className="removeLinkStyle">
             <PLinkPure>Components Collection</PLinkPure>
           </Link>
-          <Link to="/formsPage" className={"removeLinkStyle"}>
+          <Link to="/formsPage" className="removeLinkStyle">
             <PLinkPure>Forms</PLinkPure>
           </Link>
         </PGridItem>
         <PGridItem size={12}>
-          <PDivider className={"divider"}/>
+          <PDivider className="divider"/>
         </PGridItem>
       </PGrid>
     </div>
