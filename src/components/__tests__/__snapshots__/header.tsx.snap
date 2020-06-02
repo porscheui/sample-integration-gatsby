@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<p-grid>
+  <p-grid-item
+    size={12}
+  >
+    <p-headline
+      align="center"
+      variant="headline-2"
+    >
+      Porsche Design System in Gatsby
+    </p-headline>
+  </p-grid-item>
+  <p-grid-item
+    size={12}
+  >
+    <p-divider />
+  </p-grid-item>
+  <p-grid-item
+    size={12}
+  >
+    <a
+      className="removeLinkStyle"
+      href="/collectionPage"
+    >
+      <p-link-pure>
+        Components Collection
+      </p-link-pure>
+    </a>
+    <a
+      className="removeLinkStyle"
+      href="/formsPage"
+    >
+      <p-link-pure>
+        Forms
+      </p-link-pure>
+    </a>
+  </p-grid-item>
+  <p-grid-item
+    size={12}
+  >
+    <p-divider />
+  </p-grid-item>
+</p-grid>
+`;
