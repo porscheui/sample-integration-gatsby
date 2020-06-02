@@ -1,12 +1,11 @@
-import * as React from "react"
-import Layout from "../components/layout"
+import * as React from 'react';
+import Layout from '../components/layout';
 import ComponentCollection from '../components/componentCollection';
-
 
 const CollectionPage = () => (
   <Layout>
-    <ComponentCollection/>
+    <ComponentCollection />
   </Layout>
 );
 
-export default CollectionPage
+export default CollectionPage;

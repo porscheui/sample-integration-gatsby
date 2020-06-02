@@ -1,11 +1,11 @@
-import * as React from "react"
-import Layout from "../components/layout"
+import * as React from 'react';
+import Layout from '../components/layout';
 import Forms from '../components/forms';
 
 const FormsPage = () => (
   <Layout>
-    <Forms/>
+    <Forms />
   </Layout>
 );
 
-export default FormsPage
+export default FormsPage;

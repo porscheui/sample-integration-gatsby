@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
-import * as PropTypes from "prop-types"
-import * as React from "react"
-import { PHeadline, PGridItem, PGrid, PDivider, PLinkPure } from "@porsche-design-system/components-react"
+import { Link } from 'gatsby';
+import * as PropTypes from 'prop-types';
+import * as React from 'react';
+import { PHeadline, PGridItem, PGrid, PDivider, PLinkPure } from '@porsche-design-system/components-react';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -13,10 +13,12 @@ const Header = ({ siteTitle }) => (
     <div>
       <PGrid>
         <PGridItem size={12}>
-          <PHeadline align="center" variant="headline-2">{siteTitle}</PHeadline>
+          <PHeadline align="center" variant="headline-2">
+            {siteTitle}
+          </PHeadline>
         </PGridItem>
         <PGridItem size={12}>
-          <PDivider className="divider"/>
+          <PDivider className="divider" />
         </PGridItem>
         <PGridItem size={12}>
           <Link to="/collectionPage" className="removeLinkStyle">
@@ -27,7 +29,7 @@ const Header = ({ siteTitle }) => (
           </Link>
         </PGridItem>
         <PGridItem size={12}>
-          <PDivider className="divider"/>
+          <PDivider className="divider" />
         </PGridItem>
       </PGrid>
     </div>
@@ -42,4 +44,4 @@ Header.defaultProps = {
   siteTitle: ``,
 };
 
-export default Header
+export default Header;

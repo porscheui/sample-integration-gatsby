@@ -28,7 +28,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.3.0",
     "jest-preset-gatsby": "^1.0.44",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.5",
     "react-test-renderer": "^16.13.1"
   },
   "keywords": [
@@ -42,7 +42,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "prettier --write '**/*.{ts,tsx}'"
   },
   "repository": {
     "type": "git",
