@@ -20,6 +20,9 @@ const Header = ({ siteTitle }): JSX.Element => (
       <Link to="/forms" className="removeLinkStyle">
         <PLinkPure>Forms</PLinkPure>
       </Link>
+      <Link to="/phn-header" className="removeLinkStyle">
+        <PLinkPure>Phn Header</PLinkPure>
+      </Link>
     </PGridItem>
     <PGridItem size={12}>
       <PDivider className="divider" />
