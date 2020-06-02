@@ -4,6 +4,7 @@ module.exports = {
     description: `Kick off your new project with these integration samples.`,
     author: `matthias.haegele@mhp.com`,
   },
+  pathPrefix: '/sample-integration-gatsby',
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -38,4 +39,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
