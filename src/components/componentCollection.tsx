@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   PGrid,
   PLinkPure,
@@ -12,7 +12,6 @@ import {
   PPagination,
   PButton,
 } from '@porsche-design-system/components-react';
-import { useState } from 'react';
 
 const ComponentCollection = (): JSX.Element => {
   const [submit, setSubmit] = useState(false);

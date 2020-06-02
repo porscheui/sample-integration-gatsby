@@ -1,5 +1,4 @@
-import React from 'react';
-import { ChangeEvent, FormEvent, useState } from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
 import {
   PCheckboxWrapper,
   PDivider,
