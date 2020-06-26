@@ -6,7 +6,7 @@ services:
     working_dir: /opt/sample-integration-app
     user: "${RUN_UID}:${RUN_GID}"
     ports:
-      - "61423:61423"
+      - "8000:8000"
     environment:
       - HOME=/home/sample-integration
     env_file:

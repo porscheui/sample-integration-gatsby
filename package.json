@@ -39,8 +39,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build --prefix-paths",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "develop": "gatsby develop -H 0.0.0.0",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
