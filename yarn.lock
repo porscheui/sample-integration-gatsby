@@ -1573,17 +1573,17 @@
     lodash.debounce "^4.0.8"
     react-dev-utils "^9.1.0"
 
-"@porsche-design-system/components-js@1.4.0":
-  version "1.4.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.4.0.tgz#56bd2e05c770b5a8093cfaee2d79ddd98042b5a7"
-  integrity sha1-Vr0uBcdwtagJPPruLXnd2YBCtac=
+"@porsche-design-system/components-js@1.5.2":
+  version "1.5.2"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.5.2.tgz#25d5b34e58a09db6ff2e3c6fa9fd1b16761c0695"
+  integrity sha1-JdWzTlignbb/Ljxvqf0bFnYcBpU=
 
 "@porsche-design-system/components-react@^1.4.0":
-  version "1.4.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-react/-/@porsche-design-system/components-react-1.4.0.tgz#0c85fe4584bddd6ac1f60bc33b62d575e9cffbb9"
-  integrity sha1-DIX+RYS93WrB9gvDO2LVdenP+7k=
+  version "1.5.2"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-react/-/@porsche-design-system/components-react-1.5.2.tgz#d800676c2adc0a3b1e4909ba40d3337d36592db8"
+  integrity sha1-2ABnbCrcCjseSQm6QNMzfTZZLbg=
   dependencies:
-    "@porsche-design-system/components-js" "1.4.0"
+    "@porsche-design-system/components-js" "1.5.2"
 
 "@porschehn/navigation@^1.2.1":
   version "1.2.1"
