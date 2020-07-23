@@ -15,7 +15,9 @@ exports[`Header renders correctly 1`] = `
   <p-grid-item
     size={12}
   >
-    <p-divider />
+    <p-divider
+      className="divider"
+    />
   </p-grid-item>
   <p-grid-item
     size={12}
@@ -48,7 +50,9 @@ exports[`Header renders correctly 1`] = `
   <p-grid-item
     size={12}
   >
-    <p-divider />
+    <p-divider
+      className="divider"
+    />
   </p-grid-item>
 </p-grid>
 `;

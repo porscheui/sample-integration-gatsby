@@ -1578,7 +1578,7 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.5.2.tgz#25d5b34e58a09db6ff2e3c6fa9fd1b16761c0695"
   integrity sha1-JdWzTlignbb/Ljxvqf0bFnYcBpU=
 
-"@porsche-design-system/components-react@^1.4.0":
+"@porsche-design-system/components-react@^1.5.2":
   version "1.5.2"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-react/-/@porsche-design-system/components-react-1.5.2.tgz#d800676c2adc0a3b1e4909ba40d3337d36592db8"
   integrity sha1-2ABnbCrcCjseSQm6QNMzfTZZLbg=
