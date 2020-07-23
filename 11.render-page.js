@@ -1,44 +1,316 @@
 exports.ids = [11];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-flex.entry.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-flex.entry.js ***!
-  \****************************************************************************************/
-/*! exports provided: p_flex */
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js ***!
+  \**************************************************************************************************/
+/*! exports provided: i */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_flex", function() { return Flex; });
-/* harmony import */ var _index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-381d535c.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-381d535c.js");
-/* harmony import */ var _index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index-0a27866a.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-0a27866a.js");
-
-
-var flexCss = ".p-flex{display:-ms-flexbox;display:flex;}.p-flex--default{display:-ms-flexbox;display:flex}.p-flex--inline{display:-ms-inline-flexbox;display:inline-flex}@media (min-width: 480px){.p-flex--default-xs{display:-ms-flexbox;display:flex}.p-flex--inline-xs{display:-ms-inline-flexbox;display:inline-flex}}@media (min-width: 760px){.p-flex--default-s{display:-ms-flexbox;display:flex}.p-flex--inline-s{display:-ms-inline-flexbox;display:inline-flex}}@media (min-width: 1000px){.p-flex--default-m{display:-ms-flexbox;display:flex}.p-flex--inline-m{display:-ms-inline-flexbox;display:inline-flex}}@media (min-width: 1300px){.p-flex--default-l{display:-ms-flexbox;display:flex}.p-flex--inline-l{display:-ms-inline-flexbox;display:inline-flex}}@media (min-width: 1760px){.p-flex--default-xl{display:-ms-flexbox;display:flex}.p-flex--inline-xl{display:-ms-inline-flexbox;display:inline-flex}}.p-flex--wrap-wrap{-ms-flex-wrap:wrap;flex-wrap:wrap}.p-flex--wrap-nowrap{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.p-flex--wrap-wrap-reverse{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}@media (min-width: 480px){.p-flex--wrap-wrap-xs{-ms-flex-wrap:wrap;flex-wrap:wrap}.p-flex--wrap-nowrap-xs{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.p-flex--wrap-wrap-reverse-xs{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}@media (min-width: 760px){.p-flex--wrap-wrap-s{-ms-flex-wrap:wrap;flex-wrap:wrap}.p-flex--wrap-nowrap-s{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.p-flex--wrap-wrap-reverse-s{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}@media (min-width: 1000px){.p-flex--wrap-wrap-m{-ms-flex-wrap:wrap;flex-wrap:wrap}.p-flex--wrap-nowrap-m{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.p-flex--wrap-wrap-reverse-m{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}@media (min-width: 1300px){.p-flex--wrap-wrap-l{-ms-flex-wrap:wrap;flex-wrap:wrap}.p-flex--wrap-nowrap-l{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.p-flex--wrap-wrap-reverse-l{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}@media (min-width: 1760px){.p-flex--wrap-wrap-xl{-ms-flex-wrap:wrap;flex-wrap:wrap}.p-flex--wrap-nowrap-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.p-flex--wrap-wrap-reverse-xl{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}.p-flex--direction-column{-ms-flex-direction:column;flex-direction:column}.p-flex--direction-column-reverse{-ms-flex-direction:column-reverse;flex-direction:column-reverse}.p-flex--direction-row{-ms-flex-direction:row;flex-direction:row}.p-flex--direction-row-reverse{-ms-flex-direction:row-reverse;flex-direction:row-reverse}@media (min-width: 480px){.p-flex--direction-column-xs{-ms-flex-direction:column;flex-direction:column}.p-flex--direction-column-reverse-xs{-ms-flex-direction:column-reverse;flex-direction:column-reverse}.p-flex--direction-row-xs{-ms-flex-direction:row;flex-direction:row}.p-flex--direction-row-reverse-xs{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}@media (min-width: 760px){.p-flex--direction-column-s{-ms-flex-direction:column;flex-direction:column}.p-flex--direction-column-reverse-s{-ms-flex-direction:column-reverse;flex-direction:column-reverse}.p-flex--direction-row-s{-ms-flex-direction:row;flex-direction:row}.p-flex--direction-row-reverse-s{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}@media (min-width: 1000px){.p-flex--direction-column-m{-ms-flex-direction:column;flex-direction:column}.p-flex--direction-column-reverse-m{-ms-flex-direction:column-reverse;flex-direction:column-reverse}.p-flex--direction-row-m{-ms-flex-direction:row;flex-direction:row}.p-flex--direction-row-reverse-m{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}@media (min-width: 1300px){.p-flex--direction-column-l{-ms-flex-direction:column;flex-direction:column}.p-flex--direction-column-reverse-l{-ms-flex-direction:column-reverse;flex-direction:column-reverse}.p-flex--direction-row-l{-ms-flex-direction:row;flex-direction:row}.p-flex--direction-row-reverse-l{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}@media (min-width: 1760px){.p-flex--direction-column-xl{-ms-flex-direction:column;flex-direction:column}.p-flex--direction-column-reverse-xl{-ms-flex-direction:column-reverse;flex-direction:column-reverse}.p-flex--direction-row-xl{-ms-flex-direction:row;flex-direction:row}.p-flex--direction-row-reverse-xl{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}.p-flex--justify-content-flex-start{-ms-flex-pack:start;justify-content:flex-start}.p-flex--justify-content-flex-end{-ms-flex-pack:end;justify-content:flex-end}.p-flex--justify-content-center{-ms-flex-pack:center;justify-content:center}.p-flex--justify-content-space-between{-ms-flex-pack:justify;justify-content:space-between}.p-flex--justify-content-space-around{-ms-flex-pack:distribute;justify-content:space-around}.p-flex--justify-content-space-evenly{-ms-flex-pack:space-evenly;justify-content:space-evenly}@media (min-width: 480px){.p-flex--justify-content-flex-start-xs{-ms-flex-pack:start;justify-content:flex-start}.p-flex--justify-content-flex-end-xs{-ms-flex-pack:end;justify-content:flex-end}.p-flex--justify-content-center-xs{-ms-flex-pack:center;justify-content:center}.p-flex--justify-content-space-between-xs{-ms-flex-pack:justify;justify-content:space-between}.p-flex--justify-content-space-around-xs{-ms-flex-pack:distribute;justify-content:space-around}.p-flex--justify-content-space-evenly-xs{-ms-flex-pack:space-evenly;justify-content:space-evenly}}@media (min-width: 760px){.p-flex--justify-content-flex-start-s{-ms-flex-pack:start;justify-content:flex-start}.p-flex--justify-content-flex-end-s{-ms-flex-pack:end;justify-content:flex-end}.p-flex--justify-content-center-s{-ms-flex-pack:center;justify-content:center}.p-flex--justify-content-space-between-s{-ms-flex-pack:justify;justify-content:space-between}.p-flex--justify-content-space-around-s{-ms-flex-pack:distribute;justify-content:space-around}.p-flex--justify-content-space-evenly-s{-ms-flex-pack:space-evenly;justify-content:space-evenly}}@media (min-width: 1000px){.p-flex--justify-content-flex-start-m{-ms-flex-pack:start;justify-content:flex-start}.p-flex--justify-content-flex-end-m{-ms-flex-pack:end;justify-content:flex-end}.p-flex--justify-content-center-m{-ms-flex-pack:center;justify-content:center}.p-flex--justify-content-space-between-m{-ms-flex-pack:justify;justify-content:space-between}.p-flex--justify-content-space-around-m{-ms-flex-pack:distribute;justify-content:space-around}.p-flex--justify-content-space-evenly-m{-ms-flex-pack:space-evenly;justify-content:space-evenly}}@media (min-width: 1300px){.p-flex--justify-content-flex-start-l{-ms-flex-pack:start;justify-content:flex-start}.p-flex--justify-content-flex-end-l{-ms-flex-pack:end;justify-content:flex-end}.p-flex--justify-content-center-l{-ms-flex-pack:center;justify-content:center}.p-flex--justify-content-space-between-l{-ms-flex-pack:justify;justify-content:space-between}.p-flex--justify-content-space-around-l{-ms-flex-pack:distribute;justify-content:space-around}.p-flex--justify-content-space-evenly-l{-ms-flex-pack:space-evenly;justify-content:space-evenly}}@media (min-width: 1760px){.p-flex--justify-content-flex-start-xl{-ms-flex-pack:start;justify-content:flex-start}.p-flex--justify-content-flex-end-xl{-ms-flex-pack:end;justify-content:flex-end}.p-flex--justify-content-center-xl{-ms-flex-pack:center;justify-content:center}.p-flex--justify-content-space-between-xl{-ms-flex-pack:justify;justify-content:space-between}.p-flex--justify-content-space-around-xl{-ms-flex-pack:distribute;justify-content:space-around}.p-flex--justify-content-space-evenly-xl{-ms-flex-pack:space-evenly;justify-content:space-evenly}}.p-flex--align-items-flex-start{-ms-flex-align:start;align-items:flex-start}.p-flex--align-items-flex-end{-ms-flex-align:end;align-items:flex-end}.p-flex--align-items-center{-ms-flex-align:center;align-items:center}.p-flex--align-items-stretch{-ms-flex-align:stretch;align-items:stretch}.p-flex--align-items-baseline{-ms-flex-align:baseline;align-items:baseline}@media (min-width: 480px){.p-flex--align-items-flex-start-xs{-ms-flex-align:start;align-items:flex-start}.p-flex--align-items-flex-end-xs{-ms-flex-align:end;align-items:flex-end}.p-flex--align-items-center-xs{-ms-flex-align:center;align-items:center}.p-flex--align-items-stretch-xs{-ms-flex-align:stretch;align-items:stretch}.p-flex--align-items-baseline-xs{-ms-flex-align:baseline;align-items:baseline}}@media (min-width: 760px){.p-flex--align-items-flex-start-s{-ms-flex-align:start;align-items:flex-start}.p-flex--align-items-flex-end-s{-ms-flex-align:end;align-items:flex-end}.p-flex--align-items-center-s{-ms-flex-align:center;align-items:center}.p-flex--align-items-stretch-s{-ms-flex-align:stretch;align-items:stretch}.p-flex--align-items-baseline-s{-ms-flex-align:baseline;align-items:baseline}}@media (min-width: 1000px){.p-flex--align-items-flex-start-m{-ms-flex-align:start;align-items:flex-start}.p-flex--align-items-flex-end-m{-ms-flex-align:end;align-items:flex-end}.p-flex--align-items-center-m{-ms-flex-align:center;align-items:center}.p-flex--align-items-stretch-m{-ms-flex-align:stretch;align-items:stretch}.p-flex--align-items-baseline-m{-ms-flex-align:baseline;align-items:baseline}}@media (min-width: 1300px){.p-flex--align-items-flex-start-l{-ms-flex-align:start;align-items:flex-start}.p-flex--align-items-flex-end-l{-ms-flex-align:end;align-items:flex-end}.p-flex--align-items-center-l{-ms-flex-align:center;align-items:center}.p-flex--align-items-stretch-l{-ms-flex-align:stretch;align-items:stretch}.p-flex--align-items-baseline-l{-ms-flex-align:baseline;align-items:baseline}}@media (min-width: 1760px){.p-flex--align-items-flex-start-xl{-ms-flex-align:start;align-items:flex-start}.p-flex--align-items-flex-end-xl{-ms-flex-align:end;align-items:flex-end}.p-flex--align-items-center-xl{-ms-flex-align:center;align-items:center}.p-flex--align-items-stretch-xl{-ms-flex-align:stretch;align-items:stretch}.p-flex--align-items-baseline-xl{-ms-flex-align:baseline;align-items:baseline}}.p-flex--align-content-flex-start{-ms-flex-line-pack:start;align-content:flex-start}.p-flex--align-content-flex-end{-ms-flex-line-pack:end;align-content:flex-end}.p-flex--align-content-center{-ms-flex-line-pack:center;align-content:center}.p-flex--align-content-stretch{-ms-flex-line-pack:stretch;align-content:stretch}.p-flex--align-content-space-between{-ms-flex-line-pack:justify;align-content:space-between}.p-flex--align-content-space-around{-ms-flex-line-pack:distribute;align-content:space-around}.p-flex--align-content-space-evenly{-ms-flex-line-pack:space-evenly;align-content:space-evenly}@media (min-width: 480px){.p-flex--align-content-flex-start-xs{-ms-flex-line-pack:start;align-content:flex-start}.p-flex--align-content-flex-end-xs{-ms-flex-line-pack:end;align-content:flex-end}.p-flex--align-content-center-xs{-ms-flex-line-pack:center;align-content:center}.p-flex--align-content-stretch-xs{-ms-flex-line-pack:stretch;align-content:stretch}.p-flex--align-content-space-between-xs{-ms-flex-line-pack:justify;align-content:space-between}.p-flex--align-content-space-around-xs{-ms-flex-line-pack:distribute;align-content:space-around}.p-flex--align-content-space-evenly-xs{-ms-flex-line-pack:space-evenly;align-content:space-evenly}}@media (min-width: 760px){.p-flex--align-content-flex-start-s{-ms-flex-line-pack:start;align-content:flex-start}.p-flex--align-content-flex-end-s{-ms-flex-line-pack:end;align-content:flex-end}.p-flex--align-content-center-s{-ms-flex-line-pack:center;align-content:center}.p-flex--align-content-stretch-s{-ms-flex-line-pack:stretch;align-content:stretch}.p-flex--align-content-space-between-s{-ms-flex-line-pack:justify;align-content:space-between}.p-flex--align-content-space-around-s{-ms-flex-line-pack:distribute;align-content:space-around}.p-flex--align-content-space-evenly-s{-ms-flex-line-pack:space-evenly;align-content:space-evenly}}@media (min-width: 1000px){.p-flex--align-content-flex-start-m{-ms-flex-line-pack:start;align-content:flex-start}.p-flex--align-content-flex-end-m{-ms-flex-line-pack:end;align-content:flex-end}.p-flex--align-content-center-m{-ms-flex-line-pack:center;align-content:center}.p-flex--align-content-stretch-m{-ms-flex-line-pack:stretch;align-content:stretch}.p-flex--align-content-space-between-m{-ms-flex-line-pack:justify;align-content:space-between}.p-flex--align-content-space-around-m{-ms-flex-line-pack:distribute;align-content:space-around}.p-flex--align-content-space-evenly-m{-ms-flex-line-pack:space-evenly;align-content:space-evenly}}@media (min-width: 1300px){.p-flex--align-content-flex-start-l{-ms-flex-line-pack:start;align-content:flex-start}.p-flex--align-content-flex-end-l{-ms-flex-line-pack:end;align-content:flex-end}.p-flex--align-content-center-l{-ms-flex-line-pack:center;align-content:center}.p-flex--align-content-stretch-l{-ms-flex-line-pack:stretch;align-content:stretch}.p-flex--align-content-space-between-l{-ms-flex-line-pack:justify;align-content:space-between}.p-flex--align-content-space-around-l{-ms-flex-line-pack:distribute;align-content:space-around}.p-flex--align-content-space-evenly-l{-ms-flex-line-pack:space-evenly;align-content:space-evenly}}@media (min-width: 1760px){.p-flex--align-content-flex-start-xl{-ms-flex-line-pack:start;align-content:flex-start}.p-flex--align-content-flex-end-xl{-ms-flex-line-pack:end;align-content:flex-end}.p-flex--align-content-center-xl{-ms-flex-line-pack:center;align-content:center}.p-flex--align-content-stretch-xl{-ms-flex-line-pack:stretch;align-content:stretch}.p-flex--align-content-space-between-xl{-ms-flex-line-pack:justify;align-content:space-between}.p-flex--align-content-space-around-xl{-ms-flex-line-pack:distribute;align-content:space-around}.p-flex--align-content-space-evenly-xl{-ms-flex-line-pack:space-evenly;align-content:space-evenly}}";
-var Flex = /** @class */ (function () {
-    function Flex(hostRef) {
-        Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        /** Defines the flex containers content flow if 2 or more containers are siblings of each other. */
-        this.inline = false;
-        /** If set, overflowing elements will wrap to a new line. */
-        this.wrap = 'nowrap';
-        /** Defines the direction of the main and cross axis. The default "row" defines the main axis as horizontal left to right. */
-        this.direction = 'row';
-        /** Defines how the flex items are aligned along the main axis. */
-        this.justifyContent = 'flex-start';
-        /** Defines how the flex items are aligned along the cross axis. */
-        this.alignItems = 'stretch';
-        /** This aligns a flex container's individual lines when there is extra space in the cross-axis, similar to how "justifyContent" aligns individual items along the main axis. */
-        this.alignContent = 'stretch';
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return improveFocusHandlingForCustomElement; });
+/**
+ * keep attention to delegatesFocus which might help to
+ * reduce logic and improve the behaviour in near future
+ * https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/delegatesFocus
+ */
+var getFocusableElements = function (element) {
+    if (element === void 0) { element = document; }
+    /**
+     * from https://github.com/salesforce/lwc/blob/28ac669d6f3e318bbebe74290b5a7ee6c6ceaa93/packages/%40lwc/synthetic-shadow/src/faux-shadow/focus.ts#L48
+     */
+    var notTabIndex = ':not([tabindex="-1"])';
+    var notDisabled = ':not([disabled])';
+    var tabbableElementsSelector = [
+        "button" + notTabIndex + notDisabled,
+        "[contenteditable]" + notTabIndex,
+        "video[controls]" + notTabIndex,
+        "audio[controls]" + notTabIndex,
+        "[href]" + notTabIndex,
+        "input" + notTabIndex + notDisabled,
+        "select" + notTabIndex + notDisabled,
+        "textarea" + notTabIndex + notDisabled,
+        '[tabindex="0"]'
+    ].join(',');
+    /**
+     * querySelectorAll returns matching elements in DOM order
+     * that's important, since the tab order for elements with
+     * the same tabindex is the dom order
+     * https://www.w3.org/TR/selectors-api/#findelements
+     */
+    var focusableCandidatesList = element.querySelectorAll(tabbableElementsSelector);
+    var focusable = [].slice.call(focusableCandidatesList);
+    /**
+     * sort does not change element order for compare function return value 0,
+     * this ensures that our DOM order for elements with the same tabindex is
+     * preserved
+     * https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+     */
+    focusable.sort(function (a, b) { return a.tabIndex - b.tabIndex; });
+    return focusable;
+};
+var createFocusEvent = function (type, bubbles) {
+    if (typeof FocusEvent === 'function') {
+        return new FocusEvent(type, { bubbles: bubbles });
     }
-    Flex.prototype.render = function () {
-        var flexClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('flex'), this.inline !== false && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('flex-', this.inline, ['inline', 'default']), this.wrap !== 'nowrap' && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('flex--wrap', this.wrap), this.direction !== 'row' && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('flex--direction', this.direction), this.justifyContent !== 'flex-start' && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('flex--justify-content', this.justifyContent), this.alignItems !== 'stretch' && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('flex--align-items', this.alignItems), this.alignContent !== 'stretch' && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('flex--align-content', this.alignContent));
-        return (Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: flexClasses }));
+    else {
+        /**
+         * fallback for IE 11
+         */
+        var focusEvent = document.createEvent('FocusEvent');
+        focusEvent.initEvent(type, bubbles, false);
+        return focusEvent;
+    }
+};
+var getActiveElement = function (element) {
+    if (element.shadowRoot && element.shadowRoot.host) {
+        return element.shadowRoot.activeElement;
+    }
+    /**
+     * fallback if there is no shadow root
+     */
+    var rootNode = element.getRootNode();
+    return rootNode.activeElement;
+};
+var improveFocusHandlingForCustomElement = function (element) {
+    var _a;
+    var childElementContainer = (_a = element.shadowRoot) !== null && _a !== void 0 ? _a : element;
+    element.focus = function () {
+        var firstFocusableChild = getFocusableElements(childElementContainer)[0];
+        if (firstFocusableChild) {
+            firstFocusableChild.focus();
+        }
     };
-    return Flex;
+    element.blur = function () {
+        var activeElement = getActiveElement(element);
+        if (activeElement && childElementContainer.contains(activeElement)) {
+            activeElement.blur();
+        }
+    };
+    if (!element.shadowRoot || !element.shadowRoot.host) {
+        /**
+         * we don't have a shadowRoot. this usually means we're in
+         * IE11/Edge (not chromium based). but in any case we've to fix some
+         * events that behave different without shadow dom
+         */
+        var firstChild = element.children.item(0);
+        if (firstChild) {
+            firstChild.addEventListener('focusin', function (event) {
+                var isRelatedTargetPartOfComponent = element.contains(event.relatedTarget);
+                if (!isRelatedTargetPartOfComponent) {
+                    element.dispatchEvent(createFocusEvent('focus', false));
+                    element.dispatchEvent(createFocusEvent('focusin', true));
+                }
+                event.stopPropagation();
+            });
+            firstChild.addEventListener('focusout', function (event) {
+                var isRelatedTargetPartOfComponent = element.contains(event.relatedTarget);
+                if (!isRelatedTargetPartOfComponent) {
+                    element.dispatchEvent(createFocusEvent('blur', false));
+                    element.dispatchEvent(createFocusEvent('focusout', true));
+                }
+                event.stopPropagation();
+            });
+        }
+    }
+};
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js ***!
+  \******************************************************************************************/
+/*! exports provided: c */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+
+var classnames = Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
+    /*!
+      Copyright (c) 2017 Jed Watson.
+      Licensed under the MIT License (MIT), see
+      http://jedwatson.github.io/classnames
+    */
+    /* global define */
+    (function () {
+        var hasOwn = {}.hasOwnProperty;
+        function classNames() {
+            var classes = [];
+            for (var i = 0; i < arguments.length; i++) {
+                var arg = arguments[i];
+                if (!arg)
+                    continue;
+                var argType = typeof arg;
+                if (argType === 'string' || argType === 'number') {
+                    classes.push(arg);
+                }
+                else if (Array.isArray(arg) && arg.length) {
+                    var inner = classNames.apply(null, arg);
+                    if (inner) {
+                        classes.push(inner);
+                    }
+                }
+                else if (argType === 'object') {
+                    for (var key in arg) {
+                        if (hasOwn.call(arg, key) && arg[key]) {
+                            classes.push(key);
+                        }
+                    }
+                }
+            }
+            return classes.join(' ');
+        }
+        if (module.exports) {
+            classNames.default = classNames;
+            module.exports = classNames;
+        }
+        else {
+            window.classNames = classNames;
+        }
+    }());
+});
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-link-social.entry.js":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-link-social.entry.js ***!
+  \***********************************************************************************************/
+/*! exports provided: p_link_social */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_link_social", function() { return LinkSocial; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+/* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
+/* harmony import */ var _index_359f03c5_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index-359f03c5.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js");
+/* harmony import */ var _focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./focusHandling-e078221d.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js");
+
+
+
+
+var linkSocialCss = ":host{display:-ms-inline-flexbox;display:inline-flex;vertical-align:top;position:relative !important;cursor:pointer}::slotted(a){display:block !important;position:static !important;text-decoration:none !important;color:inherit !important;line-height:inherit !important}::slotted(a)::before{content:\"\" !important;position:absolute !important;top:0 !important;left:0 !important;right:0 !important;bottom:0 !important;display:block !important;outline:transparent none !important;-webkit-transition:outline-color 0.24s ease !important;transition:outline-color 0.24s ease !important}::slotted(a:focus){outline:none !important}::slotted(a:focus)::before{outline-offset:1px !important;outline:#00d5b9 solid 2px !important}.p-link-social{display:-ms-flexbox;display:flex;width:100%;min-width:3rem;min-height:3rem;position:relative;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none transparent;text-decoration:none;-webkit-transition:background-color 0.24s ease, outline-color 0.24s ease, color 0.24s ease;transition:background-color 0.24s ease, outline-color 0.24s ease, color 0.24s ease}.p-link-social::-moz-focus-inner{border:0}.p-link-social:focus{outline-width:2px;outline-style:solid;outline-offset:1px}.p-link-social--theme-light{background-color:#323639;color:#fff}.p-link-social--theme-light:hover,.p-link-social--theme-light:active{color:#fff;background-color:#151718}.p-link-social--theme-light:focus{outline-color:#00d5b9}.p-link-social--theme-dark{background-color:#fff;color:#000}.p-link-social--theme-dark:hover,.p-link-social--theme-dark:active{color:#000;background-color:#e0e0e0}.p-link-social--theme-dark:focus{outline-color:#00d5b9}.p-link-social--logo-facebook:hover,.p-link-social--logo-facebook:active{color:#fff;background-color:#1877f2}.p-link-social--logo-google:hover,.p-link-social--logo-google:active{color:#fff;background-color:#4285f4}.p-link-social--logo-instagram:hover,.p-link-social--logo-instagram:active{color:#fff;background-color:#e1306c}.p-link-social--logo-linkedin:hover,.p-link-social--logo-linkedin:active{color:#fff;background-color:#0077b5}.p-link-social--logo-pinterest:hover,.p-link-social--logo-pinterest:active{color:#fff;background-color:#e60023}.p-link-social--logo-twitter:hover,.p-link-social--logo-twitter:active{color:#fff;background-color:#1da1f2}.p-link-social--logo-wechat:hover,.p-link-social--logo-wechat:active{color:#fff;background-color:#1aad19}.p-link-social--logo-whatsapp:hover,.p-link-social--logo-whatsapp:active{color:#fff;background-color:#25d366}.p-link-social--logo-xing:hover,.p-link-social--logo-xing:active{color:#fff;background-color:#006567}.p-link-social--logo-youtube:hover,.p-link-social--logo-youtube:active{color:#fff;background-color:#ff0000}.p-link-social--with-label{padding:0.75rem 1rem 0.75rem 2.5rem}.p-link-social--with-label .p-link-social__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link-social--with-label .p-link-social__icon{left:0.75rem;top:0.75rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link-social--without-label{padding:0}.p-link-social--without-label .p-link-social__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link-social--without-label .p-link-social__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}@media (min-width: 480px){.p-link-social--with-label-xs{padding:0.75rem 1rem 0.75rem 2.5rem}.p-link-social--with-label-xs .p-link-social__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link-social--with-label-xs .p-link-social__icon{left:0.75rem;top:0.75rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link-social--without-label-xs{padding:0}.p-link-social--without-label-xs .p-link-social__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link-social--without-label-xs .p-link-social__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 760px){.p-link-social--with-label-s{padding:0.75rem 1rem 0.75rem 2.5rem}.p-link-social--with-label-s .p-link-social__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link-social--with-label-s .p-link-social__icon{left:0.75rem;top:0.75rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link-social--without-label-s{padding:0}.p-link-social--without-label-s .p-link-social__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link-social--without-label-s .p-link-social__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 1000px){.p-link-social--with-label-m{padding:0.75rem 1rem 0.75rem 2.5rem}.p-link-social--with-label-m .p-link-social__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link-social--with-label-m .p-link-social__icon{left:0.75rem;top:0.75rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link-social--without-label-m{padding:0}.p-link-social--without-label-m .p-link-social__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link-social--without-label-m .p-link-social__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 1300px){.p-link-social--with-label-l{padding:0.75rem 1rem 0.75rem 2.5rem}.p-link-social--with-label-l .p-link-social__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link-social--with-label-l .p-link-social__icon{left:0.75rem;top:0.75rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link-social--without-label-l{padding:0}.p-link-social--without-label-l .p-link-social__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link-social--without-label-l .p-link-social__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 1760px){.p-link-social--with-label-xl{padding:0.75rem 1rem 0.75rem 2.5rem}.p-link-social--with-label-xl .p-link-social__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link-social--with-label-xl .p-link-social__icon{left:0.75rem;top:0.75rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link-social--without-label-xl{padding:0}.p-link-social--without-label-xl .p-link-social__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link-social--without-label-xl .p-link-social__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}.p-link-social__icon{position:absolute;width:1.5rem;height:1.5rem}";
+var LinkSocial = /** @class */ (function () {
+    function LinkSocial(hostRef) {
+        Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        /** The icon shown. */
+        this.icon = undefined;
+        /** A custom URL path to a custom social icon. */
+        this.iconSource = undefined;
+        /** When providing an url then the component will be rendered as `<a>`. */
+        this.href = undefined;
+        /** Adapts the icon color when used on dark background. */
+        this.theme = 'light';
+        /** Target attribute where the link should be opened. */
+        this.target = '_self';
+        /** Specifies the relationship of the target object to the link object. */
+        this.rel = undefined;
+        /** Show or hide label. */
+        this.hideLabel = false;
+    }
+    LinkSocial.prototype.componentWillLoad = function () {
+        this.addSlottedStyles();
+        Object(_focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_3__["i"])(this.host);
+    };
+    LinkSocial.prototype.render = function () {
+        var TagType = this.href === undefined ? 'span' : 'a';
+        var linkClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_2__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-social'), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('link-social-', this.hideLabel, ['without-label', 'with-label']), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("link-social--" + this.icon), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("link-social--theme-" + this.theme));
+        var iconClasses = Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-social__icon');
+        var labelClasses = Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-social__label');
+        return (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, Object.assign({ class: linkClasses }, (TagType === 'a' ? {
+            href: this.href,
+            target: this.target,
+            rel: this.rel
+        } : null)), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, size: 'inherit', name: this.icon, source: this.iconSource, color: 'inherit', "aria-hidden": 'true' }), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { tag: 'span', color: 'inherit', class: labelClasses }, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))));
+    };
+    LinkSocial.prototype.addSlottedStyles = function () {
+        var tagName = this.host.tagName.toLowerCase();
+        var style = "a:focus " + tagName + " {\n      outline: 2px solid #00d5b9;\n      outline-offset: 1px;\n    }\n\n    /* this hack is only needed for Safari which does not support pseudo elements in slotted context (https://bugs.webkit.org/show_bug.cgi?id=178237) :-( */\n    " + tagName + " a::before {\n      content: \"\" !important;\n      position: absolute !important;\n      top: 0 !important;\n      left: 0 !important;\n      right: 0 !important;\n      bottom: 0 !important;\n      display: block !important;\n      transition: outline-color 0.24s ease !important;\n    }\n\n    " + tagName + " a:focus::before {\n      outline-offset: 1px !important;\n      outline: #00d5b9 solid 2px !important;\n    }\n    ";
+        Object(_slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__["i"])(this.host, style);
+    };
+    Object.defineProperty(LinkSocial.prototype, "host", {
+        get: function () { return Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        enumerable: false,
+        configurable: true
+    });
+    return LinkSocial;
 }());
-Flex.style = flexCss;
+LinkSocial.style = linkSocialCss;
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js ***!
+  \***************************************************************************************************/
+/*! exports provided: i */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return insertSlottedStyles; });
+var elementStyles = new Map();
+var getElementMap = function (element) {
+    var tagName = element.tagName;
+    var map = elementStyles.get(tagName);
+    if (map !== undefined) {
+        return map;
+    }
+    var newMap = new Map();
+    elementStyles.set(tagName, newMap);
+    return newMap;
+};
+var getNodeToPrependTo = function (rootNode) {
+    if (rootNode === document) {
+        return rootNode.head;
+    }
+    return rootNode;
+};
+/**
+ * Adds an inheritable style for slotted content.
+ * @param element
+ * @param css - Make sure that css selectors are always in context of element (make sure that
+ * it's created dynamically by e.g. `element.tagName.toLowerCase()`), e.g. `a:focus p-link-pure {…}`. Something like
+ * providing only `a {…}` would cause unscoped global styling.
+ * @returns void
+ */
+var insertSlottedStyles = function (element, css) {
+    var rootNode = element.getRootNode();
+    var elementMap = getElementMap(element);
+    if (elementMap.get(rootNode) === undefined) {
+        elementMap.set(rootNode, true);
+        var style = document.createElement('style');
+        style.appendChild(document.createTextNode(minifySlottedStyles(css)));
+        var prependTo = getNodeToPrependTo(rootNode);
+        var charsetTag = prependTo.querySelector('meta[charset]');
+        if (charsetTag !== null) {
+            prependTo.insertBefore(style, charsetTag.nextSibling);
+        }
+        else if (prependTo.childNodes.length > 0) {
+            prependTo.insertBefore(style, prependTo.firstChild);
+        }
+        else {
+            prependTo.appendChild(style);
+        }
+    }
+};
+var minifySlottedStyles = function (css) { return css
+    .replace(/\s{2,}|(\/\*.*\*\/)/g, '') // remove 2 and more white spaces + comments
+    .replace(/(:|;)\s/g, '$1') // remove space after colon and semi colon
+    .replace(/[\s;]({|})\s?/g, '$1'); }; // remove semi colon and space before and after opening and closing curly bracket
 
 
 

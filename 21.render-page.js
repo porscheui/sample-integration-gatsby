@@ -1,72 +1,95 @@
 exports.ids = [21];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-text-list-item.entry.js":
-/*!**************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-text-list-item.entry.js ***!
-  \**************************************************************************************************/
-/*! exports provided: p_text_list_item */
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js ***!
+  \******************************************************************************************/
+/*! exports provided: c */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_text_list_item", function() { return TextListItem; });
-/* harmony import */ var _index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-381d535c.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-381d535c.js");
-/* harmony import */ var _index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index-0a27866a.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-0a27866a.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+
+var classnames = Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
+    /*!
+      Copyright (c) 2017 Jed Watson.
+      Licensed under the MIT License (MIT), see
+      http://jedwatson.github.io/classnames
+    */
+    /* global define */
+    (function () {
+        var hasOwn = {}.hasOwnProperty;
+        function classNames() {
+            var classes = [];
+            for (var i = 0; i < arguments.length; i++) {
+                var arg = arguments[i];
+                if (!arg)
+                    continue;
+                var argType = typeof arg;
+                if (argType === 'string' || argType === 'number') {
+                    classes.push(arg);
+                }
+                else if (Array.isArray(arg) && arg.length) {
+                    var inner = classNames.apply(null, arg);
+                    if (inner) {
+                        classes.push(inner);
+                    }
+                }
+                else if (argType === 'object') {
+                    for (var key in arg) {
+                        if (hasOwn.call(arg, key) && arg[key]) {
+                            classes.push(key);
+                        }
+                    }
+                }
+            }
+            return classes.join(' ');
+        }
+        if (module.exports) {
+            classNames.default = classNames;
+            module.exports = classNames;
+        }
+        else {
+            window.classNames = classNames;
+        }
+    }());
+});
 
 
-var textListItemCss = ":host{position:relative !important;display:list-item !important;color:inherit !important;list-style-type:none !important}:host(.p-text-list-item--unordered){padding-left:1.5rem !important}:host(.p-text-list-item--unordered)::before{content:\"\" !important;position:absolute !important;left:0 !important;top:calc(1.5em / 2 - 0.125em) !important;width:0.25rem !important;height:0.25rem !important;background-color:currentColor !important}:host(.p-text-list-item--unordered.p-text-list-item--nested)::before{height:1px !important;width:0.5rem !important;top:calc(1.5em / 2) !important}:host(.p-text-list-item--ordered){padding-left:2.5rem !important}:host(.p-text-list-item--ordered)::before{position:absolute !important;right:calc(100% - 24px) !important;top:0 !important;counter-increment:section !important;text-align:right !important;font-size:1rem;line-height:1.5;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:400}:host(.p-text-list-item--ordered-numbered)::before{content:counters(section, \".\", decimal) \".\" !important}:host(.p-text-list-item--ordered-alphabetically)::before{content:counters(section, \".\", lower-latin) \".\" !important}:host(.p-text-list-item--ordered-numbered.p-text-list-item--nested)::before{content:counters(section, \".\", decimal) !important}:host(.p-text-list-item--ordered-alphabetically.p-text-list-item--nested)::before{content:counters(section, \".\", lower-latin) !important}";
-var TextListItem = /** @class */ (function () {
-    function TextListItem(hostRef) {
-        Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-grid.entry.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-grid.entry.js ***!
+  \****************************************************************************************/
+/*! exports provided: p_grid */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_grid", function() { return Grid; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+/* harmony import */ var _index_359f03c5_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index-359f03c5.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js");
+
+
+var gridCss = ".p-grid{display:-ms-flexbox !important;display:flex !important;-ms-flex-wrap:wrap !important;flex-wrap:wrap !important;-ms-flex:auto !important;flex:auto !important;width:auto !important;margin-left:-0.5rem !important;margin-right:-0.5rem !important}@media (min-width: 760px) and (max-width: 999px){.p-grid{margin-left:-0.75rem !important;margin-right:-0.75rem !important}}@media (min-width: 1000px){.p-grid{margin-left:-1.125rem !important;margin-right:-1.125rem !important}}.p-grid--direction-column{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}@media (min-width: 480px){.p-grid--direction-column-xs{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse-xs{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row-xs{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse-xs{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}}@media (min-width: 760px){.p-grid--direction-column-s{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse-s{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row-s{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse-s{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}}@media (min-width: 1000px){.p-grid--direction-column-m{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse-m{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row-m{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse-m{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}}@media (min-width: 1300px){.p-grid--direction-column-l{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse-l{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row-l{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse-l{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}}@media (min-width: 1760px){.p-grid--direction-column-xl{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse-xl{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row-xl{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse-xl{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}}";
+var Grid = /** @class */ (function () {
+    function Grid(hostRef) {
+        Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        /** Defines the direction of the main and cross axis. The default "row" defines the main axis as horizontal left to right. Also defines the direction for specific breakpoints, like {base: "column", l: "row"}. You always need to provide a base value when doing this. */
+        this.direction = 'row';
     }
-    TextListItem.prototype.componentDidLoad = function () {
-        this.addSlottedStyles();
+    Grid.prototype.render = function () {
+        var gridClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('grid'), this.direction !== 'row' && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('grid--direction', this.direction));
+        return Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: gridClasses });
     };
-    TextListItem.prototype.render = function () {
-        var _a;
-        var textListItemClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('text-list-item'), Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])("text-list-item--" + this.typeOfList), (_a = {},
-            _a[Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])("text-list-item--ordered-" + this.typeOfOrderedList)] = this.typeOfList === 'ordered',
-            _a[Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('text-list-item--nested')] = this.isNestedList,
-            _a));
-        return (Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["H"], { role: 'listitem', class: textListItemClasses }, Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)));
-    };
-    Object.defineProperty(TextListItem.prototype, "typeOfList", {
-        get: function () {
-            var list = this.host.closest(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('text-list'));
-            return list.getAttribute('list-type');
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(TextListItem.prototype, "typeOfOrderedList", {
-        get: function () {
-            var list = this.host.closest(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('text-list'));
-            return list.getAttribute('order-type');
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(TextListItem.prototype, "isNestedList", {
-        get: function () {
-            return !!this.host.closest(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('text-list[nested]'));
-        },
-        enumerable: true,
-        configurable: true
-    });
-    TextListItem.prototype.addSlottedStyles = function () {
-        var tagName = this.host.tagName.toLowerCase();
-        var style = tagName + " a {\n      outline: none transparent;\n      color: inherit;\n      text-decoration: underline;\n      -webkit-transition: outline-color .24s ease, color .24s ease;\n      transition: outline-color .24s ease, color .24s ease;\n    }\n\n    " + tagName + " a:hover {\n      color: #d5001c;\n    }\n\n    " + tagName + " a:focus {\n      outline: 2px solid #00d5b9;\n      outline-offset: 1px;\n    }\n    ";
-        Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["b"])(this.host, style);
-    };
-    Object.defineProperty(TextListItem.prototype, "host", {
-        get: function () { return Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
-        configurable: true
-    });
-    return TextListItem;
+    return Grid;
 }());
-TextListItem.style = textListItemCss;
+Grid.style = gridCss;
 
 
 

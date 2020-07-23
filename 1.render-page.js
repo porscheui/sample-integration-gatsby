@@ -1,9 +1,66 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e515b816.js":
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js ***!
+  \***************************************************************************************************/
+/*! exports provided: h, i */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return handleButtonEvent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return improveButtonHandlingForCustomElement; });
+var improveButtonHandlingForCustomElement = function (element, getType, getDisabled) {
+    element.addEventListener('click', function (event) { return fixEventTarget(event, element); }, true);
+    element.addEventListener('click', function (event) { return handleButtonEvent(event, element, getType, getDisabled); });
+};
+var handleButtonEvent = function (event, element, getType, getDisabled) {
+    // Why? That's why: https://www.hjorthhansen.dev/shadow-dom-and-forms/
+    var form = element.closest('form');
+    var type = getType();
+    var disabled = getDisabled();
+    if (form && !disabled) {
+        /**
+         * we've to wait if someone calls preventDefault on the event
+         * then we shouldn't submit the form
+         */
+        window.setTimeout(function () {
+            if (!event.defaultPrevented) {
+                var fakeButton = document.createElement('button');
+                fakeButton.type = type;
+                fakeButton.style.display = 'none';
+                form.appendChild(fakeButton);
+                fakeButton.addEventListener('click', function (fakeButtonEvent) {
+                    fakeButtonEvent.stopPropagation();
+                });
+                fakeButton.click();
+                fakeButton.remove();
+            }
+        }, 1);
+    }
+};
+/**
+ * IE11/Edge (not chromium based) workaround to
+ * fix the event target of click events (which normally
+ * shadow dom takes care of)
+ */
+var fixEventTarget = function (event, element) {
+    if (event.target !== element) {
+        event.stopPropagation();
+        event.preventDefault();
+        element.click();
+    }
+};
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js":
 /*!**************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e515b816.js ***!
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js ***!
   \**************************************************************************************************/
 /*! exports provided: i */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -21,7 +78,19 @@ var getFocusableElements = function (element) {
     /**
      * from https://github.com/salesforce/lwc/blob/28ac669d6f3e318bbebe74290b5a7ee6c6ceaa93/packages/%40lwc/synthetic-shadow/src/faux-shadow/focus.ts#L48
      */
-    var tabbableElementsSelector = "\n    button:not([tabindex=\"-1\"]):not([disabled]),\n    [contenteditable]:not([tabindex=\"-1\"]),\n    video[controls]:not([tabindex=\"-1\"]),\n    audio[controls]:not([tabindex=\"-1\"]),\n    [href]:not([tabindex=\"-1\"]),\n    input:not([tabindex=\"-1\"]):not([disabled]),\n    select:not([tabindex=\"-1\"]):not([disabled]),\n    textarea:not([tabindex=\"-1\"]):not([disabled]),\n    [tabindex=\"0\"]\n  ";
+    var notTabIndex = ':not([tabindex="-1"])';
+    var notDisabled = ':not([disabled])';
+    var tabbableElementsSelector = [
+        "button" + notTabIndex + notDisabled,
+        "[contenteditable]" + notTabIndex,
+        "video[controls]" + notTabIndex,
+        "audio[controls]" + notTabIndex,
+        "[href]" + notTabIndex,
+        "input" + notTabIndex + notDisabled,
+        "select" + notTabIndex + notDisabled,
+        "textarea" + notTabIndex + notDisabled,
+        '[tabindex="0"]'
+    ].join(',');
     /**
      * querySelectorAll returns matching elements in DOM order
      * that's important, since the tab order for elements with
@@ -43,12 +112,14 @@ var createFocusEvent = function (type, bubbles) {
     if (typeof FocusEvent === 'function') {
         return new FocusEvent(type, { bubbles: bubbles });
     }
-    /**
-     * fallback for IE 11
-     */
-    var focusEvent = document.createEvent('FocusEvent');
-    focusEvent.initEvent(type, bubbles, false);
-    return focusEvent;
+    else {
+        /**
+         * fallback for IE 11
+         */
+        var focusEvent = document.createEvent('FocusEvent');
+        focusEvent.initEvent(type, bubbles, false);
+        return focusEvent;
+    }
 };
 var getActiveElement = function (element) {
     if (element.shadowRoot && element.shadowRoot.host) {
@@ -61,7 +132,8 @@ var getActiveElement = function (element) {
     return rootNode.activeElement;
 };
 var improveFocusHandlingForCustomElement = function (element) {
-    var childElementContainer = element.shadowRoot ? element.shadowRoot : element;
+    var _a;
+    var childElementContainer = (_a = element.shadowRoot) !== null && _a !== void 0 ? _a : element;
     element.focus = function () {
         var firstFocusableChild = getFocusableElements(childElementContainer)[0];
         if (firstFocusableChild) {
@@ -106,6 +178,234 @@ var improveFocusHandlingForCustomElement = function (element) {
 
 /***/ }),
 
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js ***!
+  \******************************************************************************************/
+/*! exports provided: c */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+
+var classnames = Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
+    /*!
+      Copyright (c) 2017 Jed Watson.
+      Licensed under the MIT License (MIT), see
+      http://jedwatson.github.io/classnames
+    */
+    /* global define */
+    (function () {
+        var hasOwn = {}.hasOwnProperty;
+        function classNames() {
+            var classes = [];
+            for (var i = 0; i < arguments.length; i++) {
+                var arg = arguments[i];
+                if (!arg)
+                    continue;
+                var argType = typeof arg;
+                if (argType === 'string' || argType === 'number') {
+                    classes.push(arg);
+                }
+                else if (Array.isArray(arg) && arg.length) {
+                    var inner = classNames.apply(null, arg);
+                    if (inner) {
+                        classes.push(inner);
+                    }
+                }
+                else if (argType === 'object') {
+                    for (var key in arg) {
+                        if (hasOwn.call(arg, key) && arg[key]) {
+                            classes.push(key);
+                        }
+                    }
+                }
+            }
+            return classes.join(' ');
+        }
+        if (module.exports) {
+            classNames.default = classNames;
+            module.exports = classNames;
+        }
+        else {
+            window.classNames = classNames;
+        }
+    }());
+});
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js ***!
+  \**********************************************************************************************/
+/*! exports provided: t */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return throttle; });
+/* eslint-disable no-undefined,no-param-reassign,no-shadow */
+/**
+ * Throttle execution of a function. Especially useful for rate limiting
+ * execution of handlers on events like resize and scroll.
+ *
+ * @param  {number}    delay -          A zero-or-greater delay in milliseconds. For event callbacks, values around 100 or 250 (or even higher) are most useful.
+ * @param  {boolean}   [noTrailing] -   Optional, defaults to false. If noTrailing is true, callback will only execute every `delay` milliseconds while the
+ *                                    throttled-function is being called. If noTrailing is false or unspecified, callback will be executed one final time
+ *                                    after the last throttled-function call. (After the throttled-function has not been called for `delay` milliseconds,
+ *                                    the internal counter is reset).
+ * @param  {Function}  callback -       A function to be executed after delay milliseconds. The `this` context and all arguments are passed through, as-is,
+ *                                    to `callback` when the throttled-function is executed.
+ * @param  {boolean}   [debounceMode] - If `debounceMode` is true (at begin), schedule `clear` to execute after `delay` ms. If `debounceMode` is false (at end),
+ *                                    schedule `callback` to execute after `delay` ms.
+ *
+ * @returns {Function}  A new, throttled, function.
+ */
+function throttle(delay, noTrailing, callback, debounceMode) {
+    /*
+     * After wrapper has stopped being called, this timeout ensures that
+     * `callback` is executed at the proper times in `throttle` and `end`
+     * debounce modes.
+     */
+    var timeoutID;
+    var cancelled = false; // Keep track of the last time `callback` was executed.
+    var lastExec = 0; // Function to clear existing timeout
+    function clearExistingTimeout() {
+        if (timeoutID) {
+            clearTimeout(timeoutID);
+        }
+    } // Function to cancel next exec
+    function cancel() {
+        clearExistingTimeout();
+        cancelled = true;
+    } // `noTrailing` defaults to falsy.
+    if (typeof noTrailing !== 'boolean') {
+        debounceMode = callback;
+        callback = noTrailing;
+        noTrailing = undefined;
+    }
+    /*
+     * The `wrapper` function encapsulates all of the throttling / debouncing
+     * functionality and when executed will limit the rate at which `callback`
+     * is executed.
+     */
+    function wrapper() {
+        for (var _len = arguments.length, arguments_ = new Array(_len), _key = 0; _key < _len; _key++) {
+            arguments_[_key] = arguments[_key];
+        }
+        var self = this;
+        var elapsed = Date.now() - lastExec;
+        if (cancelled) {
+            return;
+        } // Execute `callback` and update the `lastExec` timestamp.
+        function exec() {
+            lastExec = Date.now();
+            callback.apply(self, arguments_);
+        }
+        /*
+         * If `debounceMode` is true (at begin) this is used to clear the flag
+         * to allow future `callback` executions.
+         */
+        function clear() {
+            timeoutID = undefined;
+        }
+        if (debounceMode && !timeoutID) {
+            /*
+             * Since `wrapper` is being called for the first time and
+             * `debounceMode` is true (at begin), execute `callback`.
+             */
+            exec();
+        }
+        clearExistingTimeout();
+        if (debounceMode === undefined && elapsed > delay) {
+            /*
+             * In throttle mode, if `delay` time has been exceeded, execute
+             * `callback`.
+             */
+            exec();
+        }
+        else if (noTrailing !== true) {
+            /*
+             * In trailing throttle mode, since `delay` time has not been
+             * exceeded, schedule `callback` to execute `delay` ms after most
+             * recent execution.
+             *
+             * If `debounceMode` is true (at begin), schedule `clear` to execute
+             * after `delay` ms.
+             *
+             * If `debounceMode` is false (at end), schedule `callback` to
+             * execute after `delay` ms.
+             */
+            timeoutID = setTimeout(debounceMode ? clear : exec, debounceMode === undefined ? delay - elapsed : delay);
+        }
+    }
+    wrapper.cancel = cancel; // Return the wrapper function.
+    return wrapper;
+}
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-e60665f4.js":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-e60665f4.js ***!
+  \************************************************************************************************/
+/*! exports provided: c */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return calcLineHeightForElement; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+
+var FONT_SIZE_REGEX = /^(\d+\.?\d*)(rem|px)$/;
+var REM_BASE = 16;
+var remToPx = function (rem) {
+    var _a;
+    var _b = (_a = rem === null || rem === void 0 ? void 0 : rem.match(FONT_SIZE_REGEX)) !== null && _a !== void 0 ? _a : [], fontSizeValue = _b[1], fontSizeUnit = _b[2];
+    if (fontSizeUnit !== 'rem' || fontSizeValue === '0') {
+        throw new Error('function only accepts value in rem and not 0, e.g. 1.5rem');
+    }
+    else {
+        return parseFloat("" + fontSizeValue) * REM_BASE + "px";
+    }
+};
+var calculateLineHeight = function (fontSize) {
+    var _a;
+    var _b = (_a = fontSize === null || fontSize === void 0 ? void 0 : fontSize.match(FONT_SIZE_REGEX)) !== null && _a !== void 0 ? _a : [], fontSizeValue = _b[1], fontSizeUnit = _b[2];
+    if (fontSizeUnit === undefined || fontSizeValue === undefined || fontSizeValue === '0') {
+        throw new Error("font size needs to be value + px or rem and not 0, e.g. 15rem or 16px, received: '" + fontSize + "'");
+    }
+    var fontSizePx = fontSizeUnit === 'rem' ? remToPx(fontSize) : fontSizeValue;
+    var fontSizeLength = parseFloat(fontSizePx);
+    var e = 2.71828;
+    var exactLineHeightFactor = 0.911 / (2.97 + 0.005 * Math.pow(e, 0.2 * fontSizeLength)) + 1.2;
+    var exactLineHeightPx = fontSizeLength * exactLineHeightFactor;
+    var remainingPx = exactLineHeightPx % 4;
+    if (remainingPx > 2) {
+        remainingPx = remainingPx - 4;
+    }
+    var roundingFactor = 100000;
+    var fittedLineHeightPx = exactLineHeightPx - remainingPx;
+    var fittedLineHeightFactor = fittedLineHeightPx / fontSizeLength;
+    return Math.round(fittedLineHeightFactor * roundingFactor) / roundingFactor;
+};
+var calcLineHeightForElement = function (tag) {
+    var fontSize = window.getComputedStyle(tag).fontSize;
+    // fontSize is "" when element does no longer exist and would throw an exception in calculateLineHeight
+    return fontSize && calculateLineHeight(fontSize);
+};
+
+
+
+/***/ }),
+
 /***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-button-pure.entry.js":
 /*!***********************************************************************************************!*\
   !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-button-pure.entry.js ***!
@@ -116,16 +416,24 @@ var improveFocusHandlingForCustomElement = function (element) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_button_pure", function() { return ButtonPure; });
-/* harmony import */ var _index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-381d535c.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-381d535c.js");
-/* harmony import */ var _index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index-0a27866a.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-0a27866a.js");
-/* harmony import */ var _focusHandling_e515b816_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./focusHandling-e515b816.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e515b816.js");
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+/* harmony import */ var _line_height_e60665f4_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./line-height-e60665f4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-e60665f4.js");
+/* harmony import */ var _buttonHandling_8f4ca036_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./buttonHandling-8f4ca036.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js");
+/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
+/* harmony import */ var _transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./transition-listener-302b2719.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js");
+/* harmony import */ var _index_359f03c5_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index-359f03c5.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js");
+/* harmony import */ var _focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./focusHandling-e078221d.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js");
 
 
 
-var buttonPureCss = ":host{display:-ms-inline-flexbox;display:inline-flex;vertical-align:top;position:relative !important}.p-button-pure{display:-ms-flexbox;display:flex;width:100%;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;cursor:pointer;color:inherit;-webkit-transition:color 0.24s ease, font-size 1ms linear;transition:color 0.24s ease, font-size 1ms linear}.p-button-pure::before{content:\"\";position:absolute;top:0;left:0;right:0;bottom:0;display:block;outline:transparent none;-webkit-transition:outline-color 0.24s ease;transition:outline-color 0.24s ease}.p-button-pure::-moz-focus-inner{border:0}.p-button-pure:focus::before{outline-width:2px;outline-style:solid;outline-offset:1px}.p-button-pure:disabled,.p-button-pure[disabled]{cursor:not-allowed}.p-button-pure--theme-light{color:#000}.p-button-pure--theme-light:focus::before{outline-color:#00d5b9}.p-button-pure--theme-light:enabled:hover,.p-button-pure--theme-light:not([disabled]):hover{color:#d5001c}.p-button-pure--theme-light:enabled:active,.p-button-pure--theme-light:not([disabled]):active{color:#d5001c}.p-button-pure--theme-light:disabled,.p-button-pure--theme-light[disabled]{color:#96989a}.p-button-pure--theme-dark{color:#fff}.p-button-pure--theme-dark:focus::before{outline-color:#00d5b9}.p-button-pure--theme-dark:enabled:hover,.p-button-pure--theme-dark:not([disabled]):hover{color:#d5001c}.p-button-pure--theme-dark:enabled:active,.p-button-pure--theme-dark:not([disabled]):active{color:#d5001c}.p-button-pure--theme-dark:disabled,.p-button-pure--theme-dark[disabled]{color:#7c7f81}.p-button-pure--size-x-small{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-small{font-size:1rem;line-height:1.5}.p-button-pure--size-small .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-large{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-x-large{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-inherit{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit .p-button-pure__icon{width:1.5em;height:1.5em}@media (min-width: 480px){.p-button-pure--size-x-small-xs{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-xs .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-small-xs{font-size:1rem;line-height:1.5}.p-button-pure--size-small-xs .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium-xs{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium-xs .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-large-xs{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large-xs .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-x-large-xs{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large-xs .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-inherit-xs{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit-xs .p-button-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 760px){.p-button-pure--size-x-small-s{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-s .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-small-s{font-size:1rem;line-height:1.5}.p-button-pure--size-small-s .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium-s{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium-s .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-large-s{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large-s .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-x-large-s{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large-s .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-inherit-s{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit-s .p-button-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 1000px){.p-button-pure--size-x-small-m{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-m .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-small-m{font-size:1rem;line-height:1.5}.p-button-pure--size-small-m .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium-m{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium-m .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-large-m{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large-m .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-x-large-m{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large-m .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-inherit-m{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit-m .p-button-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 1300px){.p-button-pure--size-x-small-l{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-l .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-small-l{font-size:1rem;line-height:1.5}.p-button-pure--size-small-l .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium-l{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium-l .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-large-l{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large-l .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-x-large-l{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large-l .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-inherit-l{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit-l .p-button-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 1760px){.p-button-pure--size-x-small-xl{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-xl .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-small-xl{font-size:1rem;line-height:1.5}.p-button-pure--size-small-xl .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium-xl{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium-xl .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-large-xl{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large-xl .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-x-large-xl{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large-xl .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-inherit-xl{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit-xl .p-button-pure__icon{width:1.5em;height:1.5em}}.p-button-pure__icon{-ms-flex-negative:0;flex-shrink:0;width:1.5em;height:1.5em}.p-button-pure__label{display:block;-webkit-box-sizing:border-box;box-sizing:border-box;border:0}.p-button-pure__label--visible{position:static;width:100%;height:auto;margin:0 0 0 0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}@media (min-width: 480px){.p-button-pure__label--visible-xs{position:static;width:100%;height:auto;margin:0 0 0 0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden-xs{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 760px){.p-button-pure__label--visible-s{position:static;width:100%;height:auto;margin:0 0 0 0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden-s{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1000px){.p-button-pure__label--visible-m{position:static;width:100%;height:auto;margin:0 0 0 0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden-m{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1300px){.p-button-pure__label--visible-l{position:static;width:100%;height:auto;margin:0 0 0 0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden-l{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1760px){.p-button-pure__label--visible-xl{position:static;width:100%;height:auto;margin:0 0 0 0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden-xl{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}";
+
+
+
+
+var buttonPureCss = ":host{display:inline-block;vertical-align:top;position:relative !important}::slotted(p){margin:0}.p-button-pure{display:-ms-flexbox;display:flex;width:100%;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;cursor:pointer;color:inherit;-webkit-transition:color 0.24s ease, font-size 1ms linear;transition:color 0.24s ease, font-size 1ms linear}.p-button-pure::before{content:\"\";position:absolute;top:0;left:0;right:0;bottom:0;outline:transparent none;-webkit-transition:outline-color 0.24s ease;transition:outline-color 0.24s ease}.p-button-pure::-moz-focus-inner{border:0}.p-button-pure:focus::before{outline-width:2px;outline-style:solid;outline-offset:1px}.p-button-pure:disabled,.p-button-pure[disabled]{cursor:not-allowed}.p-button-pure--theme-light{color:#000}.p-button-pure--theme-light+*{color:#000}.p-button-pure--theme-light:focus::before{outline-color:#00d5b9}.p-button-pure--theme-light:enabled:hover,.p-button-pure--theme-light:not([disabled]):hover{color:#d5001c}.p-button-pure--theme-light:enabled:hover+*,.p-button-pure--theme-light:not([disabled]):hover+*{color:#d5001c}.p-button-pure--theme-light:enabled:active,.p-button-pure--theme-light:not([disabled]):active{color:#d5001c}.p-button-pure--theme-light:enabled:active+*,.p-button-pure--theme-light:not([disabled]):active+*{color:#d5001c}.p-button-pure--theme-light:disabled,.p-button-pure--theme-light[disabled]{color:#96989a}.p-button-pure--theme-light:disabled+*,.p-button-pure--theme-light[disabled]+*{color:#96989a}.p-button-pure--theme-dark{color:#fff}.p-button-pure--theme-dark+*{color:#fff}.p-button-pure--theme-dark:focus::before{outline-color:#00d5b9}.p-button-pure--theme-dark:enabled:hover,.p-button-pure--theme-dark:not([disabled]):hover{color:#d5001c}.p-button-pure--theme-dark:enabled:hover+*,.p-button-pure--theme-dark:not([disabled]):hover+*{color:#d5001c}.p-button-pure--theme-dark:enabled:active,.p-button-pure--theme-dark:not([disabled]):active{color:#d5001c}.p-button-pure--theme-dark:enabled:active+*,.p-button-pure--theme-dark:not([disabled]):active+*{color:#d5001c}.p-button-pure--theme-dark:disabled,.p-button-pure--theme-dark[disabled]{color:#7c7f81}.p-button-pure--theme-dark:disabled+*,.p-button-pure--theme-dark[disabled]+*{color:#7c7f81}.p-button-pure--size-x-small{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-x-small+*{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-button-pure--size-small{font-size:1rem;line-height:1.5}.p-button-pure--size-small .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-small+*{font-size:1rem;line-height:1.5}.p-button-pure--size-small+*::before{font-size:1rem;margin-left:1.5em}.p-button-pure--size-medium{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium+*{font-size:1.25rem;line-height:1.4}.p-button-pure--size-medium+*::before{font-size:1.5rem;margin-left:1.5em}.p-button-pure--size-large{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-large+*{font-size:1.875rem;line-height:1.3333333333}.p-button-pure--size-large+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-button-pure--size-x-large{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-x-large+*{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-x-large+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-button-pure--size-inherit{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit .p-button-pure__icon{width:1.5em;height:1.5em}@media (min-width: 480px){.p-button-pure--size-x-small-xs{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-xs .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-x-small-xs+*{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-xs+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-button-pure--size-small-xs{font-size:1rem;line-height:1.5}.p-button-pure--size-small-xs .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-small-xs+*{font-size:1rem;line-height:1.5}.p-button-pure--size-small-xs+*::before{font-size:1rem;margin-left:1.5em}.p-button-pure--size-medium-xs{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium-xs .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium-xs+*{font-size:1.25rem;line-height:1.4}.p-button-pure--size-medium-xs+*::before{font-size:1.5rem;margin-left:1.5em}.p-button-pure--size-large-xs{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large-xs .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-large-xs+*{font-size:1.875rem;line-height:1.3333333333}.p-button-pure--size-large-xs+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-button-pure--size-x-large-xs{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large-xs .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-x-large-xs+*{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-x-large-xs+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-button-pure--size-inherit-xs{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit-xs .p-button-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 760px){.p-button-pure--size-x-small-s{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-s .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-x-small-s+*{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-s+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-button-pure--size-small-s{font-size:1rem;line-height:1.5}.p-button-pure--size-small-s .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-small-s+*{font-size:1rem;line-height:1.5}.p-button-pure--size-small-s+*::before{font-size:1rem;margin-left:1.5em}.p-button-pure--size-medium-s{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium-s .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium-s+*{font-size:1.25rem;line-height:1.4}.p-button-pure--size-medium-s+*::before{font-size:1.5rem;margin-left:1.5em}.p-button-pure--size-large-s{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large-s .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-large-s+*{font-size:1.875rem;line-height:1.3333333333}.p-button-pure--size-large-s+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-button-pure--size-x-large-s{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large-s .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-x-large-s+*{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-x-large-s+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-button-pure--size-inherit-s{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit-s .p-button-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 1000px){.p-button-pure--size-x-small-m{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-m .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-x-small-m+*{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-m+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-button-pure--size-small-m{font-size:1rem;line-height:1.5}.p-button-pure--size-small-m .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-small-m+*{font-size:1rem;line-height:1.5}.p-button-pure--size-small-m+*::before{font-size:1rem;margin-left:1.5em}.p-button-pure--size-medium-m{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium-m .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium-m+*{font-size:1.25rem;line-height:1.4}.p-button-pure--size-medium-m+*::before{font-size:1.5rem;margin-left:1.5em}.p-button-pure--size-large-m{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large-m .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-large-m+*{font-size:1.875rem;line-height:1.3333333333}.p-button-pure--size-large-m+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-button-pure--size-x-large-m{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large-m .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-x-large-m+*{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-x-large-m+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-button-pure--size-inherit-m{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit-m .p-button-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 1300px){.p-button-pure--size-x-small-l{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-l .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-x-small-l+*{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-l+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-button-pure--size-small-l{font-size:1rem;line-height:1.5}.p-button-pure--size-small-l .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-small-l+*{font-size:1rem;line-height:1.5}.p-button-pure--size-small-l+*::before{font-size:1rem;margin-left:1.5em}.p-button-pure--size-medium-l{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium-l .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium-l+*{font-size:1.25rem;line-height:1.4}.p-button-pure--size-medium-l+*::before{font-size:1.5rem;margin-left:1.5em}.p-button-pure--size-large-l{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large-l .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-large-l+*{font-size:1.875rem;line-height:1.3333333333}.p-button-pure--size-large-l+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-button-pure--size-x-large-l{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large-l .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-x-large-l+*{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-x-large-l+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-button-pure--size-inherit-l{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit-l .p-button-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 1760px){.p-button-pure--size-x-small-xl{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-xl .p-button-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-button-pure--size-x-small-xl+*{font-size:0.75rem;line-height:1.6666666667}.p-button-pure--size-x-small-xl+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-button-pure--size-small-xl{font-size:1rem;line-height:1.5}.p-button-pure--size-small-xl .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-small-xl+*{font-size:1rem;line-height:1.5}.p-button-pure--size-small-xl+*::before{font-size:1rem;margin-left:1.5em}.p-button-pure--size-medium-xl{font-size:1.5rem;line-height:1.5}.p-button-pure--size-medium-xl .p-button-pure__icon{width:1.5em;height:1.5em}.p-button-pure--size-medium-xl+*{font-size:1.25rem;line-height:1.4}.p-button-pure--size-medium-xl+*::before{font-size:1.5rem;margin-left:1.5em}.p-button-pure--size-large-xl{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-large-xl .p-button-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-button-pure--size-large-xl+*{font-size:1.875rem;line-height:1.3333333333}.p-button-pure--size-large-xl+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-button-pure--size-x-large-xl{font-size:3.25rem;line-height:1.2307692308}.p-button-pure--size-x-large-xl .p-button-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-button-pure--size-x-large-xl+*{font-size:2.25rem;line-height:1.3333333333}.p-button-pure--size-x-large-xl+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-button-pure--size-inherit-xl{font-size:inherit;line-height:inherit}.p-button-pure--size-inherit-xl .p-button-pure__icon{width:1.5em;height:1.5em}}.p-button-pure__icon{-ms-flex-negative:0;flex-shrink:0;width:1.5em;height:1.5em}.p-button-pure__label{display:block;-webkit-box-sizing:border-box;box-sizing:border-box;border:0}.p-button-pure__subline{display:-ms-flexbox;display:flex;-webkit-transition:color 0.24s ease;transition:color 0.24s ease;margin-top:4px}.p-button-pure__subline::before{content:\"\"}.p-button-pure__label--visible,.p-button-pure__subline--visible{position:static;width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden,.p-button-pure__subline--hidden{position:absolute;width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}@media (min-width: 480px){.p-button-pure__label--visible-xs,.p-button-pure__subline--visible-xs{position:static;width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden-xs,.p-button-pure__subline--hidden-xs{position:absolute;width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 760px){.p-button-pure__label--visible-s,.p-button-pure__subline--visible-s{position:static;width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden-s,.p-button-pure__subline--hidden-s{position:absolute;width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1000px){.p-button-pure__label--visible-m,.p-button-pure__subline--visible-m{position:static;width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden-m,.p-button-pure__subline--hidden-m{position:absolute;width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1300px){.p-button-pure__label--visible-l,.p-button-pure__subline--visible-l{position:static;width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden-l,.p-button-pure__subline--hidden-l{position:absolute;width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1760px){.p-button-pure__label--visible-xl,.p-button-pure__subline--visible-xl{position:static;width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-button-pure__label--hidden-xl,.p-button-pure__subline--hidden-xl{position:absolute;width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}";
 var ButtonPure = /** @class */ (function () {
     function ButtonPure(hostRef) {
-        Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         /** To remove the element from tab order. */
         this.tabbable = true;
         /** Specifies the type of the button. */
@@ -147,34 +455,82 @@ var ButtonPure = /** @class */ (function () {
         /** Adapts the button color depending on the theme. */
         this.theme = 'light';
     }
+    // this stops click events when button is disabled
+    ButtonPure.prototype.handleOnClick = function (e) {
+        if (this.isDisabled()) {
+            e.stopPropagation();
+        }
+    };
+    ButtonPure.prototype.componentWillLoad = function () {
+        this.checkHasSubline();
+    };
     ButtonPure.prototype.componentDidLoad = function () {
         var _this = this;
-        Object(_focusHandling_e515b816_js__WEBPACK_IMPORTED_MODULE_2__["i"])(this.element);
-        Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["i"])(this.element, function () { return _this.type; }, function () { return _this.isDisabled(); });
-        Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["t"])(this.buttonTag, 'font-size', function () {
-            var size = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["a"])(_this.buttonTag);
+        Object(_focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_6__["i"])(this.host);
+        Object(_buttonHandling_8f4ca036_js__WEBPACK_IMPORTED_MODULE_2__["i"])(this.host, function () { return _this.type; }, function () { return _this.isDisabled(); });
+        Object(_transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_4__["t"])(this.buttonTag, 'font-size', function () {
+            var size = Object(_line_height_e60665f4_js__WEBPACK_IMPORTED_MODULE_1__["c"])(_this.buttonTag);
             _this.iconTag.style.width = size + "em";
             _this.iconTag.style.height = size + "em";
         });
     };
     ButtonPure.prototype.render = function () {
         var _this = this;
-        var buttonPureClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('button-pure'), Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('button-pure--size', this.size), Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])("button-pure--theme-" + this.theme));
-        var iconClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('button-pure__icon'));
-        var labelClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('button-pure__label'), Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('button-pure__label-', this.hideLabel, ['hidden', 'visible']));
-        return (Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { class: buttonPureClasses, type: this.type, disabled: this.isDisabled(), tabindex: this.tabbable ? 0 : -1, ref: function (el) { return _this.buttonTag = el; }, "aria-busy": this.loading && 'true' }, this.loading ? (Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-spinner", { class: iconClasses, size: 'inherit', theme: this.theme, ref: function (el) { return _this.iconTag = el; } })) : (Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, color: 'inherit', size: 'inherit', name: this.icon, source: this.iconSource, ref: function (el) { return _this.iconTag = el; }, "aria-hidden": 'true' })), Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelClasses, tag: 'span', color: 'inherit', size: 'inherit', weight: this.weight }, Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))));
+        var buttonPureClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('button-pure'), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('button-pure--size', this.size), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("button-pure--theme-" + this.theme));
+        var iconClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('button-pure__icon'));
+        var labelClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('button-pure__label'), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('button-pure__label-', this.hideLabel, ['hidden', 'visible']));
+        var sublineClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('button-pure__subline'), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('button-pure__subline-', this.hideLabel, ['hidden', 'visible']));
+        return (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { class: buttonPureClasses, type: this.type, disabled: this.isDisabled(), tabindex: this.tabbable ? 0 : -1, ref: function (el) { return (_this.buttonTag = el); }, "aria-busy": this.loading && 'true' }, this.loading ? (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-spinner", { class: iconClasses, size: "inherit", theme: this.theme, ref: function (el) { return (_this.iconTag = el); } })) : (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, color: "inherit", size: "inherit", name: this.icon, source: this.iconSource, ref: function (el) { return (_this.iconTag = el); }, "aria-hidden": "true" })), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelClasses, tag: "span", color: "inherit", size: "inherit", weight: this.weight }, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), this.hasSubline && (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: sublineClasses, color: "inherit", size: "inherit", tag: "div" }, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "subline" })))));
+    };
+    ButtonPure.prototype.checkHasSubline = function () {
+        this.hasSubline = !!this.host.querySelector('[slot="subline"]');
     };
     ButtonPure.prototype.isDisabled = function () {
         return this.disabled || this.loading;
     };
-    Object.defineProperty(ButtonPure.prototype, "element", {
-        get: function () { return Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
+    Object.defineProperty(ButtonPure.prototype, "host", {
+        get: function () { return Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        enumerable: false,
         configurable: true
     });
     return ButtonPure;
 }());
 ButtonPure.style = buttonPureCss;
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js ***!
+  \********************************************************************************************************/
+/*! exports provided: t */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return transitionListener; });
+/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
+
+/**
+ * Listens to the end of a CSS transition and calls a throttled callback and calls
+ * the callback once initially.
+ * @param tag
+ * @param transitionProperty
+ * @param callback
+ * @returns void
+ */
+var transitionListener = function (tag, transitionProperty, callback) {
+    window.requestAnimationFrame(function () {
+        tag.addEventListener('transitionend', Object(_index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_0__["t"])(50, function (e) {
+            if (e.propertyName === transitionProperty) {
+                callback();
+            }
+        }));
+        callback();
+    });
+};
 
 
 

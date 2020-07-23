@@ -1,136 +1,105 @@
 exports.ids = [18];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-select-wrapper.entry.js":
-/*!**************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-select-wrapper.entry.js ***!
-  \**************************************************************************************************/
-/*! exports provided: p_select_wrapper */
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js ***!
+  \******************************************************************************************/
+/*! exports provided: c */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_select_wrapper", function() { return SelectWrapper; });
-/* harmony import */ var _index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-381d535c.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-381d535c.js");
-/* harmony import */ var _index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index-0a27866a.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-0a27866a.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
 
-
-var selectWrapperCss = ":host{display:block}::slotted(select){position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important;display:block !important;padding:0.75rem 3rem 0.75rem 0.75rem !important;margin:0 !important;outline:transparent none !important;outline-offset:1px !important;-webkit-appearance:none !important;-moz-appearance:none !important;appearance:none !important;-webkit-box-sizing:border-box !important;box-sizing:border-box !important;border-width:0 !important;border-top-color:transparent !important;background-color:transparent !important;opacity:1 !important;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif !important;font-weight:400 !important;font-size:1rem !important;line-height:1.5 !important;color:#000 !important;text-indent:0 !important;cursor:pointer !important;-webkit-transition:outline-color 0.24s ease, color 0.24s ease, border-top-color 1ms linear !important;transition:outline-color 0.24s ease, color 0.24s ease, border-top-color 1ms linear !important}::slotted(select:-moz-focusring){color:transparent !important;text-shadow:0 0 0 #000 !important}::slotted(select::-ms-expand){display:none !important}::slotted(select:focus::-ms-value){background-color:transparent !important;color:#000 !important}::slotted(select:focus){outline:#00d5b9 solid 2px !important}::slotted(select:disabled){border-top-color:rgba(255, 255, 255, 0.01) !important;color:#96989a !important;cursor:not-allowed !important}.p-select-wrapper__label{display:block}.p-select-wrapper__label-text,.p-select-wrapper__description-text{display:block;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;color:#000;-webkit-transition:color 0.24s ease;transition:color 0.24s ease}.p-select-wrapper__label-text--disabled,.p-select-wrapper__description-text--disabled{color:#96989a}.p-select-wrapper__label-text--visible,.p-select-wrapper__description-text--visible{position:static;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:auto;margin:0;padding:0 0 0.25rem 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-select-wrapper__label-text--hidden,.p-select-wrapper__description-text--hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}@media (min-width: 480px){.p-select-wrapper__label-text--visible-xs,.p-select-wrapper__description-text--visible-xs{position:static;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:auto;margin:0;padding:0 0 0.25rem 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-select-wrapper__label-text--hidden-xs,.p-select-wrapper__description-text--hidden-xs{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 760px){.p-select-wrapper__label-text--visible-s,.p-select-wrapper__description-text--visible-s{position:static;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:auto;margin:0;padding:0 0 0.25rem 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-select-wrapper__label-text--hidden-s,.p-select-wrapper__description-text--hidden-s{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1000px){.p-select-wrapper__label-text--visible-m,.p-select-wrapper__description-text--visible-m{position:static;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:auto;margin:0;padding:0 0 0.25rem 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-select-wrapper__label-text--hidden-m,.p-select-wrapper__description-text--hidden-m{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1300px){.p-select-wrapper__label-text--visible-l,.p-select-wrapper__description-text--visible-l{position:static;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:auto;margin:0;padding:0 0 0.25rem 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-select-wrapper__label-text--hidden-l,.p-select-wrapper__description-text--hidden-l{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1760px){.p-select-wrapper__label-text--visible-xl,.p-select-wrapper__description-text--visible-xl{position:static;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:auto;margin:0;padding:0 0 0.25rem 0;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-select-wrapper__label-text--hidden-xl,.p-select-wrapper__description-text--hidden-xl{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}.p-select-wrapper__description-text{color:#626669}.p-select-wrapper__description-text--disabled{color:#96989a}.p-select-wrapper__label-text~.p-select-wrapper__description-text{margin-top:-0.25rem;padding-bottom:0.5rem}.p-select-wrapper__fake-select{position:relative;width:100%;height:3rem;display:block;background-color:#fff;-webkit-box-shadow:inset 0 0 0 1px #626669;box-shadow:inset 0 0 0 1px #626669;-webkit-transition:background-color 0.24s ease, -webkit-box-shadow 0.24s ease;transition:background-color 0.24s ease, -webkit-box-shadow 0.24s ease;transition:box-shadow 0.24s ease, background-color 0.24s ease;transition:box-shadow 0.24s ease, background-color 0.24s ease, -webkit-box-shadow 0.24s ease}.p-select-wrapper__fake-select:hover:not(.p-select-wrapper__fake-select--disabled):not(.p-select-wrapper__fake-select--success):not(.p-select-wrapper__fake-select--error),.p-select-wrapper__label-text:hover~.p-select-wrapper__fake-select:not(.p-select-wrapper__fake-select--disabled):not(.p-select-wrapper__fake-select--success):not(.p-select-wrapper__fake-select--error){-webkit-box-shadow:inset 0 0 0 1px #000;box-shadow:inset 0 0 0 1px #000}.p-select-wrapper__fake-select--disabled{-webkit-box-shadow:inset 0 0 0 1px #96989a;box-shadow:inset 0 0 0 1px #96989a;background-color:#fff}.p-select-wrapper__fake-select--success{-webkit-box-shadow:inset 0 0 0 2px #018a16;box-shadow:inset 0 0 0 2px #018a16}.p-select-wrapper__fake-select--success:hover,.p-select-wrapper__label-text:hover~.p-select-wrapper__fake-select--success{-webkit-box-shadow:inset 0 0 0 2px #014d0c;box-shadow:inset 0 0 0 2px #014d0c}.p-select-wrapper__fake-select--error{-webkit-box-shadow:inset 0 0 0 2px #e00000;box-shadow:inset 0 0 0 2px #e00000}.p-select-wrapper__fake-select--error:hover,.p-select-wrapper__label-text:hover~.p-select-wrapper__fake-select--error{-webkit-box-shadow:inset 0 0 0 2px #a30000;box-shadow:inset 0 0 0 2px #a30000}.p-select-wrapper__icon{position:absolute;top:0.75rem;right:0.75rem;color:#000}.p-select-wrapper__icon--disabled{color:#96989a}.p-select-wrapper__message{margin-top:0.25rem;color:#000;-webkit-transition:color 0.24s ease;transition:color 0.24s ease}.p-select-wrapper__message--success{color:#018a16}.p-select-wrapper__message--error{color:#e00000}";
-var SelectWrapper = /** @class */ (function () {
-    function SelectWrapper(hostRef) {
-        Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        /** The label text. */
-        this.label = '';
-        /** The description text. */
-        this.description = '';
-        /** The validation state. */
-        this.state = 'none';
-        /** The message styled depending on validation state. */
-        this.message = '';
-        /** Show or hide label. For better accessibility it is recommended to show the label. */
-        this.hideLabel = false;
-    }
-    SelectWrapper.prototype.componentWillLoad = function () {
-        this.setSelect();
-        this.setAriaAttributes();
-        this.setState();
-        this.bindStateListener();
-        this.addSlottedStyles();
-    };
-    SelectWrapper.prototype.componentDidUpdate = function () {
-        this.setAriaAttributes();
-    };
-    SelectWrapper.prototype.render = function () {
-        var _this = this;
-        var labelClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('select-wrapper__label'));
-        var labelTextClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('select-wrapper__label-text'), Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('select-wrapper__label-text-', this.hideLabel, ['hidden', 'visible']), this.disabled && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('select-wrapper__label-text--disabled'));
-        var descriptionTextClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('select-wrapper__description-text'), Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('select-wrapper__description-text-', this.hideLabel, ['hidden', 'visible']), this.disabled && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('select-wrapper__description-text--disabled'));
-        var fakeSelectClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('select-wrapper__fake-select'), this.disabled && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('select-wrapper__fake-select--disabled'), this.state !== 'none' && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])("select-wrapper__fake-select--" + this.state));
-        var iconClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('select-wrapper__icon'), this.disabled && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('select-wrapper__icon--disabled'));
-        var messageClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('select-wrapper__message'), this.state !== 'none' && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])("select-wrapper__message--" + this.state));
-        return (Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("label", { class: labelClasses }, this.isLabelVisible &&
-            Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelTextClasses, tag: 'span', color: 'inherit', onClick: function () { return _this.labelClick(); } }, this.label ? this.label : Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: 'label' }))), this.isDescriptionVisible &&
-            Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: descriptionTextClasses, tag: 'span', color: 'inherit', size: 'x-small', onClick: function () { return _this.labelClick(); } }, this.description ? this.description : Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: 'description' }))), Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: fakeSelectClasses }, Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, name: 'arrow-head-down', color: 'inherit' }), Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), this.isMessageVisible &&
-            Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: messageClasses, color: 'inherit', role: this.state === 'error' && 'alert' }, this.message ? this.message : Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: 'message' })))));
-    };
-    Object.defineProperty(SelectWrapper.prototype, "isLabelVisible", {
-        get: function () {
-            return !!this.label || !!this.host.querySelector('[slot="label"]');
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(SelectWrapper.prototype, "isDescriptionVisible", {
-        get: function () {
-            return !!this.description || !!this.host.querySelector('[slot="description"]');
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(SelectWrapper.prototype, "isMessageDefined", {
-        get: function () {
-            return !!this.message || !!this.host.querySelector('[slot="message"]');
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(SelectWrapper.prototype, "isMessageVisible", {
-        get: function () {
-            return ['success', 'error'].includes(this.state) && this.isMessageDefined;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    SelectWrapper.prototype.setSelect = function () {
-        this.select = this.host.querySelector('select');
-    };
-    /*
-     * This is a workaround to improve accessibility because the select and the label/description/message text are placed in different DOM.
-     * Referencing ID's from outside the component is impossible because the web component’s DOM is separate.
-     * We have to wait for full support of the Accessibility Object Model (AOM) to provide the relationship between shadow DOM and slots.
-     */
-    SelectWrapper.prototype.setAriaAttributes = function () {
-        if (this.label && this.message) {
-            this.select.setAttribute('aria-label', this.label + ". " + this.message);
+var classnames = Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
+    /*!
+      Copyright (c) 2017 Jed Watson.
+      Licensed under the MIT License (MIT), see
+      http://jedwatson.github.io/classnames
+    */
+    /* global define */
+    (function () {
+        var hasOwn = {}.hasOwnProperty;
+        function classNames() {
+            var classes = [];
+            for (var i = 0; i < arguments.length; i++) {
+                var arg = arguments[i];
+                if (!arg)
+                    continue;
+                var argType = typeof arg;
+                if (argType === 'string' || argType === 'number') {
+                    classes.push(arg);
+                }
+                else if (Array.isArray(arg) && arg.length) {
+                    var inner = classNames.apply(null, arg);
+                    if (inner) {
+                        classes.push(inner);
+                    }
+                }
+                else if (argType === 'object') {
+                    for (var key in arg) {
+                        if (hasOwn.call(arg, key) && arg[key]) {
+                            classes.push(key);
+                        }
+                    }
+                }
+            }
+            return classes.join(' ');
         }
-        else if (this.label && this.description) {
-            this.select.setAttribute('aria-label', this.label + ". " + this.description);
-        }
-        else if (this.label) {
-            this.select.setAttribute('aria-label', this.label);
-        }
-        if (this.state === 'error') {
-            this.select.setAttribute('aria-invalid', 'true');
+        if (module.exports) {
+            classNames.default = classNames;
+            module.exports = classNames;
         }
         else {
-            this.select.removeAttribute('aria-invalid');
+            window.classNames = classNames;
         }
+    }());
+});
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-flex-item.entry.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-flex-item.entry.js ***!
+  \*********************************************************************************************/
+/*! exports provided: p_flex_item */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_flex_item", function() { return FlexItem; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+/* harmony import */ var _index_359f03c5_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index-359f03c5.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js");
+
+
+var flexItemCss = ".p-flex{}.p-flex__item{-webkit-box-sizing:border-box;box-sizing:border-box}.p-flex__item--grow-0{-ms-flex-positive:0;flex-grow:0}.p-flex__item--grow-1{-ms-flex-positive:1;flex-grow:1}.p-flex__item--shrink-0{-ms-flex-negative:0;flex-shrink:0}.p-flex__item--shrink-1{-ms-flex-negative:1;flex-shrink:1}.p-flex__item--initial{-ms-flex:initial;flex:initial}.p-flex__item--auto{-ms-flex:auto;flex:auto}.p-flex__item--equal{-ms-flex:1 1 0px;flex:1 1 0}.p-flex__item--none{-ms-flex:none;flex:none}@media (min-width: 480px){.p-flex__item--grow-0-xs{-ms-flex-positive:0;flex-grow:0}.p-flex__item--grow-1-xs{-ms-flex-positive:1;flex-grow:1}.p-flex__item--shrink-0-xs{-ms-flex-negative:0;flex-shrink:0}.p-flex__item--shrink-1-xs{-ms-flex-negative:1;flex-shrink:1}.p-flex__item--initial-xs{-ms-flex:initial;flex:initial}.p-flex__item--auto-xs{-ms-flex:auto;flex:auto}.p-flex__item--equal-xs{-ms-flex:1 1 0px;flex:1 1 0}.p-flex__item--none-xs{-ms-flex:none;flex:none}}@media (min-width: 760px){.p-flex__item--grow-0-s{-ms-flex-positive:0;flex-grow:0}.p-flex__item--grow-1-s{-ms-flex-positive:1;flex-grow:1}.p-flex__item--shrink-0-s{-ms-flex-negative:0;flex-shrink:0}.p-flex__item--shrink-1-s{-ms-flex-negative:1;flex-shrink:1}.p-flex__item--initial-s{-ms-flex:initial;flex:initial}.p-flex__item--auto-s{-ms-flex:auto;flex:auto}.p-flex__item--equal-s{-ms-flex:1 1 0px;flex:1 1 0}.p-flex__item--none-s{-ms-flex:none;flex:none}}@media (min-width: 1000px){.p-flex__item--grow-0-m{-ms-flex-positive:0;flex-grow:0}.p-flex__item--grow-1-m{-ms-flex-positive:1;flex-grow:1}.p-flex__item--shrink-0-m{-ms-flex-negative:0;flex-shrink:0}.p-flex__item--shrink-1-m{-ms-flex-negative:1;flex-shrink:1}.p-flex__item--initial-m{-ms-flex:initial;flex:initial}.p-flex__item--auto-m{-ms-flex:auto;flex:auto}.p-flex__item--equal-m{-ms-flex:1 1 0px;flex:1 1 0}.p-flex__item--none-m{-ms-flex:none;flex:none}}@media (min-width: 1300px){.p-flex__item--grow-0-l{-ms-flex-positive:0;flex-grow:0}.p-flex__item--grow-1-l{-ms-flex-positive:1;flex-grow:1}.p-flex__item--shrink-0-l{-ms-flex-negative:0;flex-shrink:0}.p-flex__item--shrink-1-l{-ms-flex-negative:1;flex-shrink:1}.p-flex__item--initial-l{-ms-flex:initial;flex:initial}.p-flex__item--auto-l{-ms-flex:auto;flex:auto}.p-flex__item--equal-l{-ms-flex:1 1 0px;flex:1 1 0}.p-flex__item--none-l{-ms-flex:none;flex:none}}@media (min-width: 1760px){.p-flex__item--grow-0-xl{-ms-flex-positive:0;flex-grow:0}.p-flex__item--grow-1-xl{-ms-flex-positive:1;flex-grow:1}.p-flex__item--shrink-0-xl{-ms-flex-negative:0;flex-shrink:0}.p-flex__item--shrink-1-xl{-ms-flex-negative:1;flex-shrink:1}.p-flex__item--initial-xl{-ms-flex:initial;flex:initial}.p-flex__item--auto-xl{-ms-flex:auto;flex:auto}.p-flex__item--equal-xl{-ms-flex:1 1 0px;flex:1 1 0}.p-flex__item--none-xl{-ms-flex:none;flex:none}}.p-flex__item--align-self-auto{-ms-flex-item-align:auto;align-self:auto}.p-flex__item--align-self-flex-start{-ms-flex-item-align:start;align-self:flex-start}.p-flex__item--align-self-flex-end{-ms-flex-item-align:end;align-self:flex-end}.p-flex__item--align-self-center{-ms-flex-item-align:center;align-self:center}.p-flex__item--align-self-stretch{-ms-flex-item-align:stretch;align-self:stretch}.p-flex__item--align-self-baseline{-ms-flex-item-align:baseline;align-self:baseline}@media (min-width: 480px){.p-flex__item--align-self-auto-xs{-ms-flex-item-align:auto;align-self:auto}.p-flex__item--align-self-flex-start-xs{-ms-flex-item-align:start;align-self:flex-start}.p-flex__item--align-self-flex-end-xs{-ms-flex-item-align:end;align-self:flex-end}.p-flex__item--align-self-center-xs{-ms-flex-item-align:center;align-self:center}.p-flex__item--align-self-stretch-xs{-ms-flex-item-align:stretch;align-self:stretch}.p-flex__item--align-self-baseline-xs{-ms-flex-item-align:baseline;align-self:baseline}}@media (min-width: 760px){.p-flex__item--align-self-auto-s{-ms-flex-item-align:auto;align-self:auto}.p-flex__item--align-self-flex-start-s{-ms-flex-item-align:start;align-self:flex-start}.p-flex__item--align-self-flex-end-s{-ms-flex-item-align:end;align-self:flex-end}.p-flex__item--align-self-center-s{-ms-flex-item-align:center;align-self:center}.p-flex__item--align-self-stretch-s{-ms-flex-item-align:stretch;align-self:stretch}.p-flex__item--align-self-baseline-s{-ms-flex-item-align:baseline;align-self:baseline}}@media (min-width: 1000px){.p-flex__item--align-self-auto-m{-ms-flex-item-align:auto;align-self:auto}.p-flex__item--align-self-flex-start-m{-ms-flex-item-align:start;align-self:flex-start}.p-flex__item--align-self-flex-end-m{-ms-flex-item-align:end;align-self:flex-end}.p-flex__item--align-self-center-m{-ms-flex-item-align:center;align-self:center}.p-flex__item--align-self-stretch-m{-ms-flex-item-align:stretch;align-self:stretch}.p-flex__item--align-self-baseline-m{-ms-flex-item-align:baseline;align-self:baseline}}@media (min-width: 1300px){.p-flex__item--align-self-auto-l{-ms-flex-item-align:auto;align-self:auto}.p-flex__item--align-self-flex-start-l{-ms-flex-item-align:start;align-self:flex-start}.p-flex__item--align-self-flex-end-l{-ms-flex-item-align:end;align-self:flex-end}.p-flex__item--align-self-center-l{-ms-flex-item-align:center;align-self:center}.p-flex__item--align-self-stretch-l{-ms-flex-item-align:stretch;align-self:stretch}.p-flex__item--align-self-baseline-l{-ms-flex-item-align:baseline;align-self:baseline}}@media (min-width: 1760px){.p-flex__item--align-self-auto-xl{-ms-flex-item-align:auto;align-self:auto}.p-flex__item--align-self-flex-start-xl{-ms-flex-item-align:start;align-self:flex-start}.p-flex__item--align-self-flex-end-xl{-ms-flex-item-align:end;align-self:flex-end}.p-flex__item--align-self-center-xl{-ms-flex-item-align:center;align-self:center}.p-flex__item--align-self-stretch-xl{-ms-flex-item-align:stretch;align-self:stretch}.p-flex__item--align-self-baseline-xl{-ms-flex-item-align:baseline;align-self:baseline}}.p-flex__item--width-one-quarter{width:25%}.p-flex__item--width-one-third{width:33.333333%}.p-flex__item--width-half{width:50%}.p-flex__item--width-two-thirds{width:66.666667%}.p-flex__item--width-three-quarters{width:75%}.p-flex__item--width-full{width:100%}.p-flex__item--width-auto{width:auto}@media (min-width: 480px){.p-flex__item--width-one-quarter-xs{width:25%}.p-flex__item--width-one-third-xs{width:33.333333%}.p-flex__item--width-half-xs{width:50%}.p-flex__item--width-two-thirds-xs{width:66.666667%}.p-flex__item--width-three-quarters-xs{width:75%}.p-flex__item--width-full-xs{width:100%}.p-flex__item--width-auto-xs{width:auto}}@media (min-width: 760px){.p-flex__item--width-one-quarter-s{width:25%}.p-flex__item--width-one-third-s{width:33.333333%}.p-flex__item--width-half-s{width:50%}.p-flex__item--width-two-thirds-s{width:66.666667%}.p-flex__item--width-three-quarters-s{width:75%}.p-flex__item--width-full-s{width:100%}.p-flex__item--width-auto-s{width:auto}}@media (min-width: 1000px){.p-flex__item--width-one-quarter-m{width:25%}.p-flex__item--width-one-third-m{width:33.333333%}.p-flex__item--width-half-m{width:50%}.p-flex__item--width-two-thirds-m{width:66.666667%}.p-flex__item--width-three-quarters-m{width:75%}.p-flex__item--width-full-m{width:100%}.p-flex__item--width-auto-m{width:auto}}@media (min-width: 1300px){.p-flex__item--width-one-quarter-l{width:25%}.p-flex__item--width-one-third-l{width:33.333333%}.p-flex__item--width-half-l{width:50%}.p-flex__item--width-two-thirds-l{width:66.666667%}.p-flex__item--width-three-quarters-l{width:75%}.p-flex__item--width-full-l{width:100%}.p-flex__item--width-auto-l{width:auto}}@media (min-width: 1760px){.p-flex__item--width-one-quarter-xl{width:25%}.p-flex__item--width-one-third-xl{width:33.333333%}.p-flex__item--width-half-xl{width:50%}.p-flex__item--width-two-thirds-xl{width:66.666667%}.p-flex__item--width-three-quarters-xl{width:75%}.p-flex__item--width-full-xl{width:100%}.p-flex__item--width-auto-xl{width:auto}}.p-flex__item--offset-none{margin-left:0%}.p-flex__item--offset-one-quarter{margin-left:25%}.p-flex__item--offset-one-third{margin-left:33.333333%}.p-flex__item--offset-half{margin-left:50%}.p-flex__item--offset-two-thirds{margin-left:66.666667%}.p-flex__item--offset-three-quarters{margin-left:75%}@media (min-width: 480px){.p-flex__item--offset-none-xs{margin-left:0%}.p-flex__item--offset-one-quarter-xs{margin-left:25%}.p-flex__item--offset-one-third-xs{margin-left:33.333333%}.p-flex__item--offset-half-xs{margin-left:50%}.p-flex__item--offset-two-thirds-xs{margin-left:66.666667%}.p-flex__item--offset-three-quarters-xs{margin-left:75%}}@media (min-width: 760px){.p-flex__item--offset-none-s{margin-left:0%}.p-flex__item--offset-one-quarter-s{margin-left:25%}.p-flex__item--offset-one-third-s{margin-left:33.333333%}.p-flex__item--offset-half-s{margin-left:50%}.p-flex__item--offset-two-thirds-s{margin-left:66.666667%}.p-flex__item--offset-three-quarters-s{margin-left:75%}}@media (min-width: 1000px){.p-flex__item--offset-none-m{margin-left:0%}.p-flex__item--offset-one-quarter-m{margin-left:25%}.p-flex__item--offset-one-third-m{margin-left:33.333333%}.p-flex__item--offset-half-m{margin-left:50%}.p-flex__item--offset-two-thirds-m{margin-left:66.666667%}.p-flex__item--offset-three-quarters-m{margin-left:75%}}@media (min-width: 1300px){.p-flex__item--offset-none-l{margin-left:0%}.p-flex__item--offset-one-quarter-l{margin-left:25%}.p-flex__item--offset-one-third-l{margin-left:33.333333%}.p-flex__item--offset-half-l{margin-left:50%}.p-flex__item--offset-two-thirds-l{margin-left:66.666667%}.p-flex__item--offset-three-quarters-l{margin-left:75%}}@media (min-width: 1760px){.p-flex__item--offset-none-xl{margin-left:0%}.p-flex__item--offset-one-quarter-xl{margin-left:25%}.p-flex__item--offset-one-third-xl{margin-left:33.333333%}.p-flex__item--offset-half-xl{margin-left:50%}.p-flex__item--offset-two-thirds-xl{margin-left:66.666667%}.p-flex__item--offset-three-quarters-xl{margin-left:75%}}";
+var FlexItem = /** @class */ (function () {
+    function FlexItem(hostRef) {
+        Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        /** The width of the flex item. You can also supply values for specific breakpoints, like {base: "full", l: "one-quarter"}. You always need to provide a base value when doing this. */
+        this.width = 'auto';
+        /** The offset of the column. You can also supply values for specific breakpoints, like {base: "none", l: "one-quarter"}. You always need to provide a base value when doing this. */
+        this.offset = 'none';
+        /** Defines how this flex item is aligned along the cross axis. This overwrites the cross axis alignment set by the container. Corresponds to the "alignSelf" css property. */
+        this.alignSelf = 'auto';
+        /** The ability to allow/disallow the flex child to grow. */
+        this.grow = 0;
+        /** The ability to allow/disallow the flex child to shrink. */
+        this.shrink = 1;
+        /** The shorthand property for the combined definition of "shrink", "grow" and "basis" */
+        this.flex = 'initial';
+    }
+    FlexItem.prototype.render = function () {
+        var flexItemClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('flex__item'), this.width !== 'auto' && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('flex__item--width', this.width), this.offset !== 'none' && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('flex__item--offset', this.offset), this.alignSelf !== 'auto' && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('flex__item--align-self', this.alignSelf), this.grow !== 0 && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('flex__item--grow', this.grow), this.shrink !== 1 && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('flex__item--shrink', this.shrink), this.flex !== 'initial' && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('flex__item-', this.flex));
+        return Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: flexItemClasses });
     };
-    SelectWrapper.prototype.setState = function () {
-        this.disabled = this.select.disabled;
-    };
-    SelectWrapper.prototype.labelClick = function () {
-        this.select.focus();
-    };
-    SelectWrapper.prototype.bindStateListener = function () {
-        var _this = this;
-        Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["t"])(this.select, 'border-top-color', function () {
-            _this.setState();
-        });
-    };
-    SelectWrapper.prototype.addSlottedStyles = function () {
-        var tagName = this.host.tagName.toLowerCase();
-        var style = tagName + " a {\n      outline: none transparent;\n      color: inherit;\n      text-decoration: underline;\n      -webkit-transition: outline-color .24s ease, color .24s ease;\n      transition: outline-color .24s ease, color .24s ease;\n    }\n    " + tagName + " a:hover {\n      color: #d5001c;\n    }\n    " + tagName + " a:focus {\n      outline: 2px solid #00d5b9;\n      outline-offset: 1px;\n    }";
-        Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["b"])(this.host, style);
-    };
-    Object.defineProperty(SelectWrapper.prototype, "host", {
-        get: function () { return Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
-        configurable: true
-    });
-    return SelectWrapper;
+    return FlexItem;
 }());
-SelectWrapper.style = selectWrapperCss;
+FlexItem.style = flexItemCss;
 
 
 

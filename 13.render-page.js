@@ -1,34 +1,201 @@
 exports.ids = [13];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-grid.entry.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-grid.entry.js ***!
-  \****************************************************************************************/
-/*! exports provided: p_grid */
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js ***!
+  \******************************************************************************************/
+/*! exports provided: c */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_grid", function() { return Grid; });
-/* harmony import */ var _index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-381d535c.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-381d535c.js");
-/* harmony import */ var _index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index-0a27866a.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-0a27866a.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+
+var classnames = Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
+    /*!
+      Copyright (c) 2017 Jed Watson.
+      Licensed under the MIT License (MIT), see
+      http://jedwatson.github.io/classnames
+    */
+    /* global define */
+    (function () {
+        var hasOwn = {}.hasOwnProperty;
+        function classNames() {
+            var classes = [];
+            for (var i = 0; i < arguments.length; i++) {
+                var arg = arguments[i];
+                if (!arg)
+                    continue;
+                var argType = typeof arg;
+                if (argType === 'string' || argType === 'number') {
+                    classes.push(arg);
+                }
+                else if (Array.isArray(arg) && arg.length) {
+                    var inner = classNames.apply(null, arg);
+                    if (inner) {
+                        classes.push(inner);
+                    }
+                }
+                else if (argType === 'object') {
+                    for (var key in arg) {
+                        if (hasOwn.call(arg, key) && arg[key]) {
+                            classes.push(key);
+                        }
+                    }
+                }
+            }
+            return classes.join(' ');
+        }
+        if (module.exports) {
+            classNames.default = classNames;
+            module.exports = classNames;
+        }
+        else {
+            window.classNames = classNames;
+        }
+    }());
+});
 
 
-var gridCss = ".p-grid{display:-ms-flexbox !important;display:flex !important;-ms-flex-wrap:wrap !important;flex-wrap:wrap !important;-ms-flex:auto !important;flex:auto !important;width:auto !important;margin-left:-0.5rem !important;margin-right:-0.5rem !important}@media (min-width: 760px) and (max-width: 999px){.p-grid{margin-left:-0.75rem !important;margin-right:-0.75rem !important}}@media (min-width: 1000px){.p-grid{margin-left:-1.125rem !important;margin-right:-1.125rem !important}}.p-grid--direction-column{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}@media (min-width: 480px){.p-grid--direction-column-xs{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse-xs{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row-xs{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse-xs{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}}@media (min-width: 760px){.p-grid--direction-column-s{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse-s{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row-s{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse-s{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}}@media (min-width: 1000px){.p-grid--direction-column-m{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse-m{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row-m{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse-m{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}}@media (min-width: 1300px){.p-grid--direction-column-l{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse-l{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row-l{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse-l{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}}@media (min-width: 1760px){.p-grid--direction-column-xl{-ms-flex-direction:column !important;flex-direction:column !important}.p-grid--direction-column-reverse-xl{-ms-flex-direction:column-reverse !important;flex-direction:column-reverse !important}.p-grid--direction-row-xl{-ms-flex-direction:row !important;flex-direction:row !important}.p-grid--direction-row-reverse-xl{-ms-flex-direction:row-reverse !important;flex-direction:row-reverse !important}}";
-var Grid = /** @class */ (function () {
-    function Grid(hostRef) {
-        Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        /** Defines the direction of the main and cross axis. The default "row" defines the main axis as horizontal left to right. Also defines the direction for specific breakpoints, like {base: "column", l: "row"}. You always need to provide a base value when doing this. */
-        this.direction = 'row';
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-headline.entry.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-headline.entry.js ***!
+  \********************************************************************************************/
+/*! exports provided: p_headline */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_headline", function() { return Headline; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+/* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
+/* harmony import */ var _index_359f03c5_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index-359f03c5.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js");
+
+
+
+var headlineCss = ":host{display:block}::slotted(h1),::slotted(h2),::slotted(h3),::slotted(h4),::slotted(h5),::slotted(h6){margin:0 !important;font-weight:600 !important;font-size:inherit !important}.p-headline{padding:0;margin:0}.p-headline--variant-large-title{font-size:2rem;line-height:1.375;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:600}@media (min-width: 760px) and (max-width: 999px){.p-headline--variant-large-title{font-size:2.625rem;line-height:1.2380952381}}@media (min-width: 1000px) and (max-width: 1299px){.p-headline--variant-large-title{font-size:3.25rem;line-height:1.2307692308}}@media (min-width: 1300px) and (max-width: 1759px){.p-headline--variant-large-title{font-size:3.875rem;line-height:1.2258064516}}@media (min-width: 1760px){.p-headline--variant-large-title{font-size:4.5rem;line-height:1.2222222222}}.p-headline--variant-headline-1{font-size:1.75rem;line-height:1.4285714286;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:600}@media (min-width: 760px) and (max-width: 999px){.p-headline--variant-headline-1{font-size:2.25rem;line-height:1.3333333333}}@media (min-width: 1000px) and (max-width: 1299px){.p-headline--variant-headline-1{font-size:2.75rem;line-height:1.1818181818}}@media (min-width: 1300px) and (max-width: 1759px){.p-headline--variant-headline-1{font-size:3.25rem;line-height:1.2307692308}}@media (min-width: 1760px){.p-headline--variant-headline-1{font-size:3.75rem;line-height:1.2}}.p-headline--variant-headline-2{font-size:1.5rem;line-height:1.5;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:600}@media (min-width: 760px) and (max-width: 999px){.p-headline--variant-headline-2{font-size:1.875rem;line-height:1.3333333333}}@media (min-width: 1000px) and (max-width: 1299px){.p-headline--variant-headline-2{font-size:2.25rem;line-height:1.3333333333}}@media (min-width: 1300px) and (max-width: 1759px){.p-headline--variant-headline-2{font-size:2.625rem;line-height:1.2380952381}}@media (min-width: 1760px){.p-headline--variant-headline-2{font-size:3rem;line-height:1.25}}.p-headline--variant-headline-3{font-size:1.25rem;line-height:1.4;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:600}@media (min-width: 760px) and (max-width: 999px){.p-headline--variant-headline-3{font-size:1.5rem;line-height:1.5}}@media (min-width: 1000px) and (max-width: 1299px){.p-headline--variant-headline-3{font-size:1.75rem;line-height:1.4285714286}}@media (min-width: 1300px) and (max-width: 1759px){.p-headline--variant-headline-3{font-size:2rem;line-height:1.375}}@media (min-width: 1760px){.p-headline--variant-headline-3{font-size:2.25rem;line-height:1.3333333333}}.p-headline--variant-headline-4{font-size:1rem;line-height:1.5;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:600}@media (min-width: 760px) and (max-width: 999px){.p-headline--variant-headline-4{font-size:1.125rem;line-height:1.5555555556}}@media (min-width: 1000px) and (max-width: 1299px){.p-headline--variant-headline-4{font-size:1.25rem;line-height:1.4}}@media (min-width: 1300px) and (max-width: 1759px){.p-headline--variant-headline-4{font-size:1.375rem;line-height:1.4545454545}}@media (min-width: 1760px){.p-headline--variant-headline-4{font-size:1.5rem;line-height:1.5}}.p-headline--variant-headline-5{font-size:1rem;line-height:1.5;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:600}.p-headline--align-left{text-align:left}.p-headline--align-center{text-align:center}.p-headline--align-right{text-align:right}.p-headline--color-default.p-headline--theme-light{color:#000}.p-headline--color-default.p-headline--theme-dark{color:#fff}.p-headline--color-inherit{color:inherit}.p-headline--ellipsis{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}";
+var Headline = /** @class */ (function () {
+    function Headline(hostRef) {
+        Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        /** Style of the headline. */
+        this.variant = 'headline-1';
+        /** Sets a custom HTML tag depending of the usage of the headline component. */
+        this.tag = undefined;
+        /** Text alignment of the component. */
+        this.align = 'left';
+        /** Basic text color variations depending on theme property. */
+        this.color = 'default';
+        /** Adds an ellipsis to a single line of text if it overflows. */
+        this.ellipsis = false;
+        /** Adapts the text color depending on the theme. Has no effect when "inherit" is set as color prop. */
+        this.theme = 'light';
     }
-    Grid.prototype.render = function () {
-        var gridClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('grid'), this.direction !== 'row' && Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('grid--direction', this.direction));
-        return Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: gridClasses });
+    Headline.prototype.componentWillLoad = function () {
+        this.addSlottedStyles();
     };
-    return Grid;
+    Headline.prototype.render = function () {
+        var variantToTagMap = {
+            'large-title': 'h1',
+            'headline-1': 'h1',
+            'headline-2': 'h2',
+            'headline-3': 'h3',
+            'headline-4': 'h4',
+            'headline-5': 'h5'
+        };
+        var TagType = this.hasSlottedHeadlineTag ? 'div' : this.tag || variantToTagMap[this.variant];
+        var headlineClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_2__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('headline'), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("headline--variant-" + this.variant), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("headline--align-" + this.align), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("headline--color-" + this.color), this.ellipsis && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('headline--ellipsis'), this.color !== 'inherit' && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("headline--theme-" + this.theme));
+        return (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, { class: headlineClasses }, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)));
+    };
+    Object.defineProperty(Headline.prototype, "hasSlottedHeadlineTag", {
+        get: function () {
+            var el = this.host.querySelector(':first-child');
+            return el === null || el === void 0 ? void 0 : el.matches('h1, h2, h3, h4, h5, h6');
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Headline.prototype.addSlottedStyles = function () {
+        var tagName = this.host.tagName.toLowerCase();
+        var style = tagName + " a {\n      color: inherit;\n      text-decoration: none;\n    }";
+        Object(_slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__["i"])(this.host, style);
+    };
+    Object.defineProperty(Headline.prototype, "host", {
+        get: function () { return Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        enumerable: false,
+        configurable: true
+    });
+    return Headline;
 }());
-Grid.style = gridCss;
+Headline.style = headlineCss;
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js ***!
+  \***************************************************************************************************/
+/*! exports provided: i */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return insertSlottedStyles; });
+var elementStyles = new Map();
+var getElementMap = function (element) {
+    var tagName = element.tagName;
+    var map = elementStyles.get(tagName);
+    if (map !== undefined) {
+        return map;
+    }
+    var newMap = new Map();
+    elementStyles.set(tagName, newMap);
+    return newMap;
+};
+var getNodeToPrependTo = function (rootNode) {
+    if (rootNode === document) {
+        return rootNode.head;
+    }
+    return rootNode;
+};
+/**
+ * Adds an inheritable style for slotted content.
+ * @param element
+ * @param css - Make sure that css selectors are always in context of element (make sure that
+ * it's created dynamically by e.g. `element.tagName.toLowerCase()`), e.g. `a:focus p-link-pure {…}`. Something like
+ * providing only `a {…}` would cause unscoped global styling.
+ * @returns void
+ */
+var insertSlottedStyles = function (element, css) {
+    var rootNode = element.getRootNode();
+    var elementMap = getElementMap(element);
+    if (elementMap.get(rootNode) === undefined) {
+        elementMap.set(rootNode, true);
+        var style = document.createElement('style');
+        style.appendChild(document.createTextNode(minifySlottedStyles(css)));
+        var prependTo = getNodeToPrependTo(rootNode);
+        var charsetTag = prependTo.querySelector('meta[charset]');
+        if (charsetTag !== null) {
+            prependTo.insertBefore(style, charsetTag.nextSibling);
+        }
+        else if (prependTo.childNodes.length > 0) {
+            prependTo.insertBefore(style, prependTo.firstChild);
+        }
+        else {
+            prependTo.appendChild(style);
+        }
+    }
+};
+var minifySlottedStyles = function (css) { return css
+    .replace(/\s{2,}|(\/\*.*\*\/)/g, '') // remove 2 and more white spaces + comments
+    .replace(/(:|;)\s/g, '$1') // remove space after colon and semi colon
+    .replace(/[\s;]({|})\s?/g, '$1'); }; // remove semi colon and space before and after opening and closing curly bracket
 
 
 

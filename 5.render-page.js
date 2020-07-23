@@ -1,176 +1,404 @@
 exports.ids = [5];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e515b816.js":
-/*!**************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e515b816.js ***!
-  \**************************************************************************************************/
-/*! exports provided: i */
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js ***!
+  \******************************************************************************************/
+/*! exports provided: c */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return improveFocusHandlingForCustomElement; });
-/**
- * keep attention to delegatesFocus which might help to
- * reduce logic and improve the behaviour in near future
- * https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/delegatesFocus
- */
-var getFocusableElements = function (element) {
-    if (element === void 0) { element = document; }
-    /**
-     * from https://github.com/salesforce/lwc/blob/28ac669d6f3e318bbebe74290b5a7ee6c6ceaa93/packages/%40lwc/synthetic-shadow/src/faux-shadow/focus.ts#L48
-     */
-    var tabbableElementsSelector = "\n    button:not([tabindex=\"-1\"]):not([disabled]),\n    [contenteditable]:not([tabindex=\"-1\"]),\n    video[controls]:not([tabindex=\"-1\"]),\n    audio[controls]:not([tabindex=\"-1\"]),\n    [href]:not([tabindex=\"-1\"]),\n    input:not([tabindex=\"-1\"]):not([disabled]),\n    select:not([tabindex=\"-1\"]):not([disabled]),\n    textarea:not([tabindex=\"-1\"]):not([disabled]),\n    [tabindex=\"0\"]\n  ";
-    /**
-     * querySelectorAll returns matching elements in DOM order
-     * that's important, since the tab order for elements with
-     * the same tabindex is the dom order
-     * https://www.w3.org/TR/selectors-api/#findelements
-     */
-    var focusableCandidatesList = element.querySelectorAll(tabbableElementsSelector);
-    var focusable = [].slice.call(focusableCandidatesList);
-    /**
-     * sort does not change element order for compare function return value 0,
-     * this ensures that our DOM order for elements with the same tabindex is
-     * preserved
-     * https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-     */
-    focusable.sort(function (a, b) { return a.tabIndex - b.tabIndex; });
-    return focusable;
-};
-var createFocusEvent = function (type, bubbles) {
-    if (typeof FocusEvent === 'function') {
-        return new FocusEvent(type, { bubbles: bubbles });
-    }
-    /**
-     * fallback for IE 11
-     */
-    var focusEvent = document.createEvent('FocusEvent');
-    focusEvent.initEvent(type, bubbles, false);
-    return focusEvent;
-};
-var getActiveElement = function (element) {
-    if (element.shadowRoot && element.shadowRoot.host) {
-        return element.shadowRoot.activeElement;
-    }
-    /**
-     * fallback if there is no shadow root
-     */
-    var rootNode = element.getRootNode();
-    return rootNode.activeElement;
-};
-var improveFocusHandlingForCustomElement = function (element) {
-    var childElementContainer = element.shadowRoot ? element.shadowRoot : element;
-    element.focus = function () {
-        var firstFocusableChild = getFocusableElements(childElementContainer)[0];
-        if (firstFocusableChild) {
-            firstFocusableChild.focus();
-        }
-    };
-    element.blur = function () {
-        var activeElement = getActiveElement(element);
-        if (activeElement && childElementContainer.contains(activeElement)) {
-            activeElement.blur();
-        }
-    };
-    if (!element.shadowRoot || !element.shadowRoot.host) {
-        /**
-         * we don't have a shadowRoot. this usually means we're in
-         * IE11/Edge (not chromium based). but in any case we've to fix some
-         * events that behave different without shadow dom
-         */
-        var firstChild = element.children.item(0);
-        if (firstChild) {
-            firstChild.addEventListener('focusin', function (event) {
-                var isRelatedTargetPartOfComponent = element.contains(event.relatedTarget);
-                if (!isRelatedTargetPartOfComponent) {
-                    element.dispatchEvent(createFocusEvent('focus', false));
-                    element.dispatchEvent(createFocusEvent('focusin', true));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+
+var classnames = Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
+    /*!
+      Copyright (c) 2017 Jed Watson.
+      Licensed under the MIT License (MIT), see
+      http://jedwatson.github.io/classnames
+    */
+    /* global define */
+    (function () {
+        var hasOwn = {}.hasOwnProperty;
+        function classNames() {
+            var classes = [];
+            for (var i = 0; i < arguments.length; i++) {
+                var arg = arguments[i];
+                if (!arg)
+                    continue;
+                var argType = typeof arg;
+                if (argType === 'string' || argType === 'number') {
+                    classes.push(arg);
                 }
-                event.stopPropagation();
-            });
-            firstChild.addEventListener('focusout', function (event) {
-                var isRelatedTargetPartOfComponent = element.contains(event.relatedTarget);
-                if (!isRelatedTargetPartOfComponent) {
-                    element.dispatchEvent(createFocusEvent('blur', false));
-                    element.dispatchEvent(createFocusEvent('focusout', true));
+                else if (Array.isArray(arg) && arg.length) {
+                    var inner = classNames.apply(null, arg);
+                    if (inner) {
+                        classes.push(inner);
+                    }
                 }
-                event.stopPropagation();
-            });
+                else if (argType === 'object') {
+                    for (var key in arg) {
+                        if (hasOwn.call(arg, key) && arg[key]) {
+                            classes.push(key);
+                        }
+                    }
+                }
+            }
+            return classes.join(' ');
         }
-    }
-};
+        if (module.exports) {
+            classNames.default = classNames;
+            module.exports = classNames;
+        }
+        else {
+            window.classNames = classNames;
+        }
+    }());
+});
 
 
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-link.entry.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-link.entry.js ***!
-  \****************************************************************************************/
-/*! exports provided: p_link */
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js ***!
+  \**********************************************************************************************/
+/*! exports provided: t */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_link", function() { return Link; });
-/* harmony import */ var _index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-381d535c.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-381d535c.js");
-/* harmony import */ var _index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index-0a27866a.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-0a27866a.js");
-/* harmony import */ var _focusHandling_e515b816_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./focusHandling-e515b816.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e515b816.js");
-
-
-
-var linkCss = ":host{display:-ms-inline-flexbox;display:inline-flex;vertical-align:top}.p-link{display:-ms-flexbox;display:flex;width:100%;min-width:3rem;min-height:3rem;position:relative;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none transparent;text-decoration:none;border-style:solid;border-width:1px;-webkit-transition:background-color 0.24s ease, border-color 0.24s ease, outline-color 0.24s ease, color 0.24s ease;transition:background-color 0.24s ease, border-color 0.24s ease, outline-color 0.24s ease, color 0.24s ease}.p-link::-moz-focus-inner{border:0}.p-link:focus{outline-width:2px;outline-style:solid;outline-offset:1px}.p-link--theme-light:focus{outline-color:#00d5b9}.p-link--theme-dark:focus{outline-color:#00d5b9}.p-link--primary.p-link--theme-light{color:#fff;background-color:#d5001c;border-color:#d5001c}.p-link--primary.p-link--theme-dark{color:#fff;background-color:#d5001c;border-color:#d5001c}.p-link--primary:hover.p-link--theme-light,.p-link--primary:active.p-link--theme-light{color:#fff;background-color:#980014;border-color:#980014}.p-link--primary:hover.p-link--theme-dark,.p-link--primary:active.p-link--theme-dark{color:#fff;background-color:#980014;border-color:#980014}.p-link--secondary.p-link--theme-light{color:#fff;background-color:#323639;border-color:#323639}.p-link--secondary.p-link--theme-dark{color:#000;background-color:#fff;border-color:#fff}.p-link--secondary:hover.p-link--theme-light,.p-link--secondary:active.p-link--theme-light{color:#fff;background-color:#151718;border-color:#151718}.p-link--secondary:hover.p-link--theme-dark,.p-link--secondary:active.p-link--theme-dark{color:#000;background-color:#e0e0e0;border-color:#e0e0e0}.p-link--tertiary.p-link--theme-light{color:#000;background-color:transparent;border-color:#323639}.p-link--tertiary.p-link--theme-dark{color:#fff;background-color:transparent;border-color:#fff}.p-link--tertiary:hover.p-link--theme-light,.p-link--tertiary:active.p-link--theme-light{color:#fff;background-color:#151718;border-color:#151718}.p-link--tertiary:hover.p-link--theme-dark,.p-link--tertiary:active.p-link--theme-dark{color:#000;background-color:#fff;border-color:#fff}.p-link--with-label{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label .p-link__label{position:static;width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;clip:auto;-webkit-clip-path:none;clip-path:none}.p-link--with-label .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label{padding:0}.p-link--without-label .p-link__label{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;border:0;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}.p-link--without-label .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}@media (min-width: 480px){.p-link--with-label-xs{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label-xs .p-link__label{position:static;width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;clip:auto;-webkit-clip-path:none;clip-path:none}.p-link--with-label-xs .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label-xs{padding:0}.p-link--without-label-xs .p-link__label{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;border:0;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}.p-link--without-label-xs .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 760px){.p-link--with-label-s{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label-s .p-link__label{position:static;width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;clip:auto;-webkit-clip-path:none;clip-path:none}.p-link--with-label-s .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label-s{padding:0}.p-link--without-label-s .p-link__label{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;border:0;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}.p-link--without-label-s .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 1000px){.p-link--with-label-m{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label-m .p-link__label{position:static;width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;clip:auto;-webkit-clip-path:none;clip-path:none}.p-link--with-label-m .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label-m{padding:0}.p-link--without-label-m .p-link__label{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;border:0;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}.p-link--without-label-m .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 1300px){.p-link--with-label-l{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label-l .p-link__label{position:static;width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;clip:auto;-webkit-clip-path:none;clip-path:none}.p-link--with-label-l .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label-l{padding:0}.p-link--without-label-l .p-link__label{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;border:0;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}.p-link--without-label-l .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 1760px){.p-link--with-label-xl{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label-xl .p-link__label{position:static;width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;clip:auto;-webkit-clip-path:none;clip-path:none}.p-link--with-label-xl .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label-xl{padding:0}.p-link--without-label-xl .p-link__label{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;border:0;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}.p-link--without-label-xl .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}.p-link__label{display:block;-webkit-box-sizing:border-box;box-sizing:border-box}.p-link__icon{position:absolute;width:1.5rem;height:1.5rem}";
-var Link = /** @class */ (function () {
-    function Link(hostRef) {
-        Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        /** The style variant of the link. */
-        this.variant = 'secondary';
-        /** The icon shown. */
-        this.icon = 'arrow-head-right';
-        /** A custom URL path to a custom icon. */
-        this.iconSource = undefined;
-        /** When providing an url then the component will be rendered as `<a>`. */
-        this.href = undefined;
-        /** Adapts the link color when used on dark background. */
-        this.theme = 'light';
-        /** Target attribute where the link should be opened. */
-        this.target = '_self';
-        /** Special download attribute to open native browser download dialog if target url points to a downloadable file. */
-        this.download = undefined;
-        /** Specifies the relationship of the target object to the link object. */
-        this.rel = undefined;
-        /** Show or hide label. For better accessibility it is recommended to show the label. */
-        this.hideLabel = false;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return throttle; });
+/* eslint-disable no-undefined,no-param-reassign,no-shadow */
+/**
+ * Throttle execution of a function. Especially useful for rate limiting
+ * execution of handlers on events like resize and scroll.
+ *
+ * @param  {number}    delay -          A zero-or-greater delay in milliseconds. For event callbacks, values around 100 or 250 (or even higher) are most useful.
+ * @param  {boolean}   [noTrailing] -   Optional, defaults to false. If noTrailing is true, callback will only execute every `delay` milliseconds while the
+ *                                    throttled-function is being called. If noTrailing is false or unspecified, callback will be executed one final time
+ *                                    after the last throttled-function call. (After the throttled-function has not been called for `delay` milliseconds,
+ *                                    the internal counter is reset).
+ * @param  {Function}  callback -       A function to be executed after delay milliseconds. The `this` context and all arguments are passed through, as-is,
+ *                                    to `callback` when the throttled-function is executed.
+ * @param  {boolean}   [debounceMode] - If `debounceMode` is true (at begin), schedule `clear` to execute after `delay` ms. If `debounceMode` is false (at end),
+ *                                    schedule `callback` to execute after `delay` ms.
+ *
+ * @returns {Function}  A new, throttled, function.
+ */
+function throttle(delay, noTrailing, callback, debounceMode) {
+    /*
+     * After wrapper has stopped being called, this timeout ensures that
+     * `callback` is executed at the proper times in `throttle` and `end`
+     * debounce modes.
+     */
+    var timeoutID;
+    var cancelled = false; // Keep track of the last time `callback` was executed.
+    var lastExec = 0; // Function to clear existing timeout
+    function clearExistingTimeout() {
+        if (timeoutID) {
+            clearTimeout(timeoutID);
+        }
+    } // Function to cancel next exec
+    function cancel() {
+        clearExistingTimeout();
+        cancelled = true;
+    } // `noTrailing` defaults to falsy.
+    if (typeof noTrailing !== 'boolean') {
+        debounceMode = callback;
+        callback = noTrailing;
+        noTrailing = undefined;
     }
-    Link.prototype.componentDidLoad = function () {
-        var tagName = this.element.tagName.toLowerCase();
-        var style = "a:focus " + tagName + " {\n      outline: 2px solid #00d5b9;\n      outline-offset: 1px;\n    }";
-        Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["b"])(this.element, style);
-        Object(_focusHandling_e515b816_js__WEBPACK_IMPORTED_MODULE_2__["i"])(this.element);
+    /*
+     * The `wrapper` function encapsulates all of the throttling / debouncing
+     * functionality and when executed will limit the rate at which `callback`
+     * is executed.
+     */
+    function wrapper() {
+        for (var _len = arguments.length, arguments_ = new Array(_len), _key = 0; _key < _len; _key++) {
+            arguments_[_key] = arguments[_key];
+        }
+        var self = this;
+        var elapsed = Date.now() - lastExec;
+        if (cancelled) {
+            return;
+        } // Execute `callback` and update the `lastExec` timestamp.
+        function exec() {
+            lastExec = Date.now();
+            callback.apply(self, arguments_);
+        }
+        /*
+         * If `debounceMode` is true (at begin) this is used to clear the flag
+         * to allow future `callback` executions.
+         */
+        function clear() {
+            timeoutID = undefined;
+        }
+        if (debounceMode && !timeoutID) {
+            /*
+             * Since `wrapper` is being called for the first time and
+             * `debounceMode` is true (at begin), execute `callback`.
+             */
+            exec();
+        }
+        clearExistingTimeout();
+        if (debounceMode === undefined && elapsed > delay) {
+            /*
+             * In throttle mode, if `delay` time has been exceeded, execute
+             * `callback`.
+             */
+            exec();
+        }
+        else if (noTrailing !== true) {
+            /*
+             * In trailing throttle mode, since `delay` time has not been
+             * exceeded, schedule `callback` to execute `delay` ms after most
+             * recent execution.
+             *
+             * If `debounceMode` is true (at begin), schedule `clear` to execute
+             * after `delay` ms.
+             *
+             * If `debounceMode` is false (at end), schedule `callback` to
+             * execute after `delay` ms.
+             */
+            timeoutID = setTimeout(debounceMode ? clear : exec, debounceMode === undefined ? delay - elapsed : delay);
+        }
+    }
+    wrapper.cancel = cancel; // Return the wrapper function.
+    return wrapper;
+}
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-radio-button-wrapper.entry.js":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-radio-button-wrapper.entry.js ***!
+  \********************************************************************************************************/
+/*! exports provided: p_radio_button_wrapper */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_radio_button_wrapper", function() { return RadioButtonWrapper; });
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+/* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
+/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
+/* harmony import */ var _transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./transition-listener-302b2719.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js");
+/* harmony import */ var _index_359f03c5_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index-359f03c5.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js");
+
+
+
+
+
+var radioButtonWrapperCss = ":host{display:block}::slotted(input){position:absolute !important;top:-1px !important;left:-1px !important;width:1.625rem !important;height:1.625rem !important;display:block !important;margin:0 !important;padding:0 !important;-webkit-appearance:none !important;-moz-appearance:none !important;appearance:none !important;border:0 rgba(255, 255, 255, 0) !important;border-radius:50% !important;background-color:transparent !important;opacity:1 !important;outline:none !important;cursor:pointer !important;-webkit-box-shadow:0 0 0 0 transparent !important;box-shadow:0 0 0 0 transparent !important;-webkit-transition:border-top-color 1ms linear, -webkit-box-shadow 0.24s ease !important;transition:border-top-color 1ms linear, -webkit-box-shadow 0.24s ease !important;transition:box-shadow 0.24s ease, border-top-color 1ms linear !important;transition:box-shadow 0.24s ease, border-top-color 1ms linear, -webkit-box-shadow 0.24s ease !important}::slotted(input::-ms-check){display:none !important}::slotted(input:focus){-webkit-box-shadow:0 0 0 2px #00d5b9 !important;box-shadow:0 0 0 2px #00d5b9 !important}::slotted(input:checked){border-top-color:rgba(255, 255, 255, 0.01) !important}::slotted(input:disabled){cursor:not-allowed !important;border-top-color:rgba(255, 255, 255, 0.02) !important}::slotted(input:disabled:checked){border-top-color:rgba(255, 255, 255, 0.03) !important}.p-radio-button-wrapper__label{position:relative;display:-ms-flexbox;display:flex}.p-radio-button-wrapper__label-text{-ms-flex-order:1;order:1;display:inline-block;cursor:pointer;color:#000;-webkit-transition:color 0.24s ease;transition:color 0.24s ease}.p-radio-button-wrapper__label-text--disabled{color:#96989a;cursor:default}.p-radio-button-wrapper__label-text--visible{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}@media (min-width: 480px){.p-radio-button-wrapper__label-text--visible-xs{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden-xs{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 760px){.p-radio-button-wrapper__label-text--visible-s{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden-s{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1000px){.p-radio-button-wrapper__label-text--visible-m{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden-m{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1300px){.p-radio-button-wrapper__label-text--visible-l{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden-l{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1760px){.p-radio-button-wrapper__label-text--visible-xl{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden-xl{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}.p-radio-button-wrapper__fake-radio-button{position:relative;width:1.5rem;height:1.5rem;display:block;-ms-flex-negative:0;flex-shrink:0;border-radius:50%;-webkit-box-shadow:inset 0 0 0 1px #626669;box-shadow:inset 0 0 0 1px #626669;background-color:#fff;-webkit-transition:background-color 0.24s ease, -webkit-box-shadow 0.24s ease;transition:background-color 0.24s ease, -webkit-box-shadow 0.24s ease;transition:box-shadow 0.24s ease, background-color 0.24s ease;transition:box-shadow 0.24s ease, background-color 0.24s ease, -webkit-box-shadow 0.24s ease}.p-radio-button-wrapper__fake-radio-button:hover:not(.p-radio-button-wrapper__fake-radio-button--disabled):not(.p-radio-button-wrapper__fake-radio-button--success):not(.p-radio-button-wrapper__fake-radio-button--error),.p-radio-button-wrapper__label-text:hover~.p-radio-button-wrapper__fake-radio-button:not(.p-radio-button-wrapper__fake-radio-button--disabled):not(.p-radio-button-wrapper__fake-radio-button--success):not(.p-radio-button-wrapper__fake-radio-button--error){-webkit-box-shadow:inset 0 0 0 1px #000;box-shadow:inset 0 0 0 1px #000}.p-radio-button-wrapper__fake-radio-button::before{content:\"\";width:1rem;height:1rem;border-radius:50%;background-color:transparent;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);-webkit-transition:background-color 0.24s ease;transition:background-color 0.24s ease}.p-radio-button-wrapper__fake-radio-button--checked{-webkit-box-shadow:inset 0 0 0 1px #323639;box-shadow:inset 0 0 0 1px #323639}.p-radio-button-wrapper__fake-radio-button--checked::before{background-color:#323639}.p-radio-button-wrapper__fake-radio-button--checked.p-radio-button-wrapper__fake-radio-button--disabled::before{background-color:#96989a}.p-radio-button-wrapper__fake-radio-button--checked.p-radio-button-wrapper__fake-radio-button--error::before{background-color:#e00000}.p-radio-button-wrapper__fake-radio-button--checked.p-radio-button-wrapper__fake-radio-button--success::before{background-color:#018a16}.p-radio-button-wrapper__fake-radio-button--disabled{-webkit-box-shadow:inset 0 0 0 1px #96989a;box-shadow:inset 0 0 0 1px #96989a}.p-radio-button-wrapper__fake-radio-button--error{-webkit-box-shadow:inset 0 0 0 2px #e00000;box-shadow:inset 0 0 0 2px #e00000}.p-radio-button-wrapper__fake-radio-button--error:hover,.p-radio-button-wrapper__label-text:hover~.p-radio-button-wrapper__fake-radio-button--error{-webkit-box-shadow:inset 0 0 0 2px #a30000;box-shadow:inset 0 0 0 2px #a30000}.p-radio-button-wrapper__fake-radio-button--success{-webkit-box-shadow:inset 0 0 0 2px #018a16;box-shadow:inset 0 0 0 2px #018a16}.p-radio-button-wrapper__fake-radio-button--success:hover,.p-radio-button-wrapper__label-text:hover~.p-radio-button-wrapper__fake-radio-button--success{-webkit-box-shadow:inset 0 0 0 2px #014d0c;box-shadow:inset 0 0 0 2px #014d0c}.p-radio-button-wrapper__message{margin-top:0.25rem;color:#000;-webkit-transition:color 0.24s ease;transition:color 0.24s ease}.p-radio-button-wrapper__message--success{color:#018a16}.p-radio-button-wrapper__message--error{color:#e00000}";
+var RadioButtonWrapper = /** @class */ (function () {
+    function RadioButtonWrapper(hostRef) {
+        var _this = this;
+        Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        /** The label text. */
+        this.label = '';
+        /** The validation state. */
+        this.state = 'none';
+        /** The message styled depending on validation state. */
+        this.message = '';
+        /** Show or hide label. For better accessibility it's recommended to show the label. */
+        this.hideLabel = false;
+        this.labelClick = function (event) {
+            var _a;
+            /**
+             * we only want to simulate the checkbox click by label click
+             * for real shadow dom, else the native behaviour works out
+             * of the box
+             */
+            if (((_a = _this.host.shadowRoot) === null || _a === void 0 ? void 0 : _a.host) && event.target.closest('a') === null) {
+                _this.input.click();
+            }
+        };
+        this.setState = function () {
+            _this.checked = _this.input.checked;
+            _this.disabled = _this.input.disabled;
+        };
+    }
+    RadioButtonWrapper.prototype.componentWillLoad = function () {
+        this.setInput();
+        this.setAriaAttributes();
+        this.setState();
+        this.bindStateListener();
+        this.addSlottedStyles();
     };
-    Link.prototype.render = function () {
-        var TagType = this.href === undefined ? 'span' : 'a';
-        var linkClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('link'), Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])("link--" + this.variant), Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["m"])('link-', this.hideLabel, ['without-label', 'with-label']), Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])("link--theme-" + this.theme));
-        var iconClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('link__icon');
-        var labelClasses = Object(_index_0a27866a_js__WEBPACK_IMPORTED_MODULE_1__["p"])('link__label');
-        return (Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, Object.assign({ class: linkClasses }, (TagType === 'a' ? {
-            href: this.href,
-            target: "" + this.target,
-            download: this.download,
-            rel: this.rel
-        } : null)), Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, size: 'inherit', name: this.icon, source: this.iconSource, color: 'inherit', "aria-hidden": 'true' }), Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { tag: 'span', color: 'inherit', class: labelClasses }, Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))));
+    RadioButtonWrapper.prototype.componentDidUpdate = function () {
+        this.setAriaAttributes();
     };
-    Object.defineProperty(Link.prototype, "element", {
-        get: function () { return Object(_index_381d535c_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
+    RadioButtonWrapper.prototype.render = function () {
+        var labelClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_4__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__label'));
+        var fakeRadioButtonClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_4__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__fake-radio-button'), this.checked && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__fake-radio-button--checked'), this.disabled && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__fake-radio-button--disabled'), this.state !== 'none' && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("radio-button-wrapper__fake-radio-button--" + this.state));
+        var labelTextClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_4__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__label-text'), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('radio-button-wrapper__label-text-', this.hideLabel, ['hidden', 'visible']), this.disabled && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__label-text--disabled'));
+        var messageClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_4__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__message'), this.state !== 'none' && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("radio-button-wrapper__message--" + this.state));
+        return (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("label", { class: labelClasses }, this.isLabelVisible && (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelTextClasses, tag: "span", color: "inherit", onClick: this.labelClick }, this.label || (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "label" }))))), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: fakeRadioButtonClasses }, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), this.isMessageVisible && (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: messageClasses, color: "inherit", role: this.state === 'error' && 'alert' }, this.message || (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "message" })))))));
+    };
+    Object.defineProperty(RadioButtonWrapper.prototype, "isLabelVisible", {
+        get: function () {
+            return !!this.label || !!this.host.querySelector('[slot="label"]');
+        },
+        enumerable: false,
         configurable: true
     });
-    return Link;
+    Object.defineProperty(RadioButtonWrapper.prototype, "isMessageDefined", {
+        get: function () {
+            return !!this.message || !!this.host.querySelector('[slot="message"]');
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(RadioButtonWrapper.prototype, "isMessageVisible", {
+        get: function () {
+            return ['success', 'error'].includes(this.state) && this.isMessageDefined;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    RadioButtonWrapper.prototype.setInput = function () {
+        this.input = this.host.querySelector('input[type="radio"]');
+    };
+    /*
+     * This is a workaround to improve accessibility because the input and the label/description/message text are placed in different DOM.
+     * Referencing ID's from outside the component is impossible because the web component’s DOM is separate.
+     * We have to wait for full support of the Accessibility Object Model (AOM) to provide the relationship between shadow DOM and slots
+     */
+    RadioButtonWrapper.prototype.setAriaAttributes = function () {
+        if (this.label && this.message) {
+            this.input.setAttribute('aria-label', this.label + ". " + this.message);
+        }
+        else if (this.label) {
+            this.input.setAttribute('aria-label', this.label);
+        }
+        if (this.state === 'error') {
+            this.input.setAttribute('aria-invalid', 'true');
+        }
+        else {
+            this.input.removeAttribute('aria-invalid');
+        }
+    };
+    RadioButtonWrapper.prototype.bindStateListener = function () {
+        Object(_transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_3__["t"])(this.input, 'border-top-color', this.setState);
+    };
+    RadioButtonWrapper.prototype.addSlottedStyles = function () {
+        var tagName = this.host.tagName.toLowerCase();
+        var style = tagName + " a {\n      outline: none transparent;\n      color: inherit;\n      text-decoration: underline;\n      -webkit-transition: outline-color .24s ease, color .24s ease;\n      transition: outline-color .24s ease, color .24s ease;\n    }\n\n    " + tagName + " a:hover {\n      color: #d5001c;\n    }\n\n    " + tagName + " a:focus {\n      outline: 2px solid #00d5b9;\n      outline-offset: 1px;\n    }";
+        Object(_slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__["i"])(this.host, style);
+    };
+    Object.defineProperty(RadioButtonWrapper.prototype, "host", {
+        get: function () { return Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        enumerable: false,
+        configurable: true
+    });
+    return RadioButtonWrapper;
 }());
-Link.style = linkCss;
+RadioButtonWrapper.style = radioButtonWrapperCss;
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js ***!
+  \***************************************************************************************************/
+/*! exports provided: i */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return insertSlottedStyles; });
+var elementStyles = new Map();
+var getElementMap = function (element) {
+    var tagName = element.tagName;
+    var map = elementStyles.get(tagName);
+    if (map !== undefined) {
+        return map;
+    }
+    var newMap = new Map();
+    elementStyles.set(tagName, newMap);
+    return newMap;
+};
+var getNodeToPrependTo = function (rootNode) {
+    if (rootNode === document) {
+        return rootNode.head;
+    }
+    return rootNode;
+};
+/**
+ * Adds an inheritable style for slotted content.
+ * @param element
+ * @param css - Make sure that css selectors are always in context of element (make sure that
+ * it's created dynamically by e.g. `element.tagName.toLowerCase()`), e.g. `a:focus p-link-pure {…}`. Something like
+ * providing only `a {…}` would cause unscoped global styling.
+ * @returns void
+ */
+var insertSlottedStyles = function (element, css) {
+    var rootNode = element.getRootNode();
+    var elementMap = getElementMap(element);
+    if (elementMap.get(rootNode) === undefined) {
+        elementMap.set(rootNode, true);
+        var style = document.createElement('style');
+        style.appendChild(document.createTextNode(minifySlottedStyles(css)));
+        var prependTo = getNodeToPrependTo(rootNode);
+        var charsetTag = prependTo.querySelector('meta[charset]');
+        if (charsetTag !== null) {
+            prependTo.insertBefore(style, charsetTag.nextSibling);
+        }
+        else if (prependTo.childNodes.length > 0) {
+            prependTo.insertBefore(style, prependTo.firstChild);
+        }
+        else {
+            prependTo.appendChild(style);
+        }
+    }
+};
+var minifySlottedStyles = function (css) { return css
+    .replace(/\s{2,}|(\/\*.*\*\/)/g, '') // remove 2 and more white spaces + comments
+    .replace(/(:|;)\s/g, '$1') // remove space after colon and semi colon
+    .replace(/[\s;]({|})\s?/g, '$1'); }; // remove semi colon and space before and after opening and closing curly bracket
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js ***!
+  \********************************************************************************************************/
+/*! exports provided: t */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return transitionListener; });
+/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
+
+/**
+ * Listens to the end of a CSS transition and calls a throttled callback and calls
+ * the callback once initially.
+ * @param tag
+ * @param transitionProperty
+ * @param callback
+ * @returns void
+ */
+var transitionListener = function (tag, transitionProperty, callback) {
+    window.requestAnimationFrame(function () {
+        tag.addEventListener('transitionend', Object(_index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_0__["t"])(50, function (e) {
+            if (e.propertyName === transitionProperty) {
+                callback();
+            }
+        }));
+        callback();
+    });
+};
 
 
 
