@@ -1,9 +1,9 @@
 exports.ids = [27];
 exports.modules = {
 
-/***/ "./node_modules/@porschehn/navigation/dist/esm-es5/shadow-css-66fdb204.js":
+/***/ "./node_modules/@porschehn/navigation/dist/esm-es5/shadow-css-7f9c6860.js":
 /*!********************************************************************************!*\
-  !*** ./node_modules/@porschehn/navigation/dist/esm-es5/shadow-css-66fdb204.js ***!
+  !*** ./node_modules/@porschehn/navigation/dist/esm-es5/shadow-css-7f9c6860.js ***!
   \********************************************************************************/
 /*! exports provided: scopeCss */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -19,7 +19,7 @@ var __spreadArrays = (undefined && undefined.__spreadArrays) || function () {
     return r;
 };
 /*
- Stencil Client Platform v1.12.3 | MIT Licensed | https://stenciljs.com
+ Stencil Client Platform v1.14.0 | MIT Licensed | https://stenciljs.com
  */
 /**
  * @license

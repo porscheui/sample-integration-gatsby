@@ -1,16 +1,15 @@
 exports.ids = [26];
 exports.modules = {
 
-/***/ "./node_modules/@porschehn/navigation/dist/esm-es5/context-consumer_34.entry.js":
-/*!**************************************************************************************!*\
-  !*** ./node_modules/@porschehn/navigation/dist/esm-es5/context-consumer_34.entry.js ***!
-  \**************************************************************************************/
-/*! exports provided: context_consumer, phn_back_button, phn_burger_button, phn_button_extended, phn_car_further_links, phn_car_meta_functionalities, phn_car_model, phn_car_model_list, phn_car_series, phn_car_series_list, phn_car_series_model_overview, phn_close_button, phn_crest, phn_dealer_search, phn_drawer_car_series_model_overview, phn_drawer_shops_and_more, phn_header, phn_headline, phn_list_item, phn_mega_fly_out_overlay, phn_menu_desktop_level_1, phn_menu_drawer_level_1, phn_meta_functionalities, phn_mobile_car_series_list, phn_mobile_shops_and_more, phn_myporsche, phn_myporsche_drawer, phn_myporsche_flyout, phn_myporsche_items, phn_myporsche_items_drawer, phn_preview_badge, phn_shops_and_more, phn_shops_and_more_item, phn_shops_and_more_overview */
+/***/ "./node_modules/@porschehn/navigation/dist/esm-es5/phn-back-button_43.entry.js":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/@porschehn/navigation/dist/esm-es5/phn-back-button_43.entry.js ***!
+  \*************************************************************************************/
+/*! exports provided: phn_back_button, phn_burger_button, phn_button_extended, phn_car_further_links, phn_car_meta_functionalities, phn_car_model, phn_car_model_list, phn_car_series, phn_car_series_list, phn_car_series_model_overview, phn_close_button, phn_crest, phn_dealer_search, phn_drawer_car_series_model_overview, phn_drawer_car_series_model_overview_2, phn_drawer_shops_and_more, phn_drawer_shops_and_more_2, phn_header, phn_headline, phn_list_item, phn_mega_fly_out_overlay, phn_menu_desktop_level_1, phn_menu_drawer, phn_menu_drawer_level_1, phn_menu_mobile_level_1, phn_messages_link, phn_meta_functionalities, phn_mobile_car_series_list, phn_mobile_car_series_list_2, phn_mobile_layout, phn_mobile_shops_and_more, phn_mobile_shops_and_more_2, phn_myporsche, phn_myporsche_drawer, phn_myporsche_drawer_2, phn_myporsche_flyout, phn_myporsche_items, phn_myporsche_items_drawer, phn_myporsche_items_drawer_2, phn_preview_badge, phn_shops_and_more, phn_shops_and_more_item, phn_shops_and_more_overview */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "context_consumer", function() { return ContextConsumer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_back_button", function() { return BackButton; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_burger_button", function() { return BurgerButton; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_button_extended", function() { return ButtonExtended; });
@@ -25,26 +24,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_crest", function() { return Crest; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_dealer_search", function() { return DealerSearch; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_drawer_car_series_model_overview", function() { return DrawerCarSeriesModelOverview; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_drawer_car_series_model_overview_2", function() { return DrawerCarSeriesModelOverview$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_drawer_shops_and_more", function() { return DrawerShopsAndMore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_drawer_shops_and_more_2", function() { return DrawerShopsAndMore$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_header", function() { return Header; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_headline", function() { return Headline; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_list_item", function() { return ListItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mega_fly_out_overlay", function() { return MegaFlyOutOverlay; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_menu_desktop_level_1", function() { return MenuDesktopLevel1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_menu_drawer", function() { return MenuDrawer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_menu_drawer_level_1", function() { return MenuDrawerLevel1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_menu_mobile_level_1", function() { return MenuMobileLevel1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_messages_link", function() { return MessagesLink; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_meta_functionalities", function() { return MetaFunctionalities; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_car_series_list", function() { return MobileCarSeriesList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_car_series_list_2", function() { return MobileCarSeriesList$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_layout", function() { return MobileLayout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_shops_and_more", function() { return MobileShopsAndMore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_shops_and_more_2", function() { return MobileShopsAndMore$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche", function() { return Myporsche; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_drawer", function() { return MyPorscheDrawer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_drawer_2", function() { return MyPorscheDrawer$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_flyout", function() { return MyPorscheFlyout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_items", function() { return MyPorscheItems; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_items_drawer", function() { return MyPorscheItemsDrawer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_items_drawer_2", function() { return MyPorscheItemsDrawer$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_preview_badge", function() { return PreviewBadge; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_shops_and_more", function() { return ShopsAndMore; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_shops_and_more_item", function() { return ShopsAndMoreItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_shops_and_more_overview", function() { return ShopsAndMoreOverview; });
-/* harmony import */ var _index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-5a8cb5da.js */ "./node_modules/@porschehn/navigation/dist/esm-es5/index-5a8cb5da.js");
+/* harmony import */ var _index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-b5926612.js */ "./node_modules/@porschehn/navigation/dist/esm-es5/index-b5926612.js");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -102,32 +111,6 @@ var __spreadArrays = (undefined && undefined.__spreadArrays) || function () {
     return r;
 };
 
-var ContextConsumer = /** @class */ (function () {
-    function ContextConsumer(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.context = {};
-        this.renderer = function () { return null; };
-    }
-    ContextConsumer.prototype.connectedCallback = function () {
-        if (this.subscribe != null) {
-            this.unsubscribe = this.subscribe(this.el, 'context');
-        }
-    };
-    ContextConsumer.prototype.disconnectedCallback = function () {
-        if (this.unsubscribe != null) {
-            this.unsubscribe();
-        }
-    };
-    ContextConsumer.prototype.render = function () {
-        return this.renderer(Object.assign({}, this.context));
-    };
-    Object.defineProperty(ContextConsumer.prototype, "el", {
-        get: function () { return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
-        configurable: true
-    });
-    return ContextConsumer;
-}());
 var appendToMap = function (map, propName, value) {
     var items = map.get(propName);
     if (!items) {
@@ -172,14 +155,14 @@ var cleanupElements = debounce(function (map) {
 var stencilSubscription = function (_a) {
     var on = _a.on;
     var elmsToUpdate = new Map();
-    if (typeof _index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["c"] === 'function') {
+    if (typeof _index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["g"] === 'function') {
         // If we are not in a stencil project, we do nothing.
         // This function is not really exported by @stencil/core.
         on('dispose', function () {
             elmsToUpdate.clear();
         });
         on('get', function (propName) {
-            var elm = Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["c"])();
+            var elm = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["g"])();
             if (elm) {
                 appendToMap(elmsToUpdate, propName, elm);
             }
@@ -187,12 +170,12 @@ var stencilSubscription = function (_a) {
         on('set', function (propName) {
             var elements = elmsToUpdate.get(propName);
             if (elements) {
-                elmsToUpdate.set(propName, elements.filter(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["f"]));
+                elmsToUpdate.set(propName, elements.filter(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["f"]));
             }
             cleanupElements(elmsToUpdate);
         });
         on('reset', function () {
-            elmsToUpdate.forEach(function (elms) { return elms.forEach(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["f"]); });
+            elmsToUpdate.forEach(function (elms) { return elms.forEach(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["f"]); });
             cleanupElements(elmsToUpdate);
         });
     }
@@ -309,7 +292,6 @@ var createStore = function (defaultState, shouldUpdate) {
     return map;
 };
 var DEFAULT_LOCALE = 'de-CH';
-var DEFAULT_ITEMS_LIST = [];
 var DEFAULT_SERIES_LIST = [];
 var DEFAULT_SHOPS = [];
 var DEFAULT_MORE = [];
@@ -318,14 +300,16 @@ var DEFAULT_MENU = [];
 var DEFAULT_ENVIRONMENT = 'production';
 var ANALYTICS_APP_ID = 'nav';
 var EMPTY_SERIES = { PhraseId: '', Name: '', Image: '', Models: [], Further: [], Meta: [] };
-var EMPTY_ITEM = { Id: '', PhraseId: '', Text: '', IsLinkItem: false };
+var EMPTY_ITEM = { PhraseId: '', Text: '' };
 var REDACTED = 'REDACTED';
 var LOGGED_IN_USER_NO_NAME_STATUS = 'loggedIn';
 var LOGGED_OUT_USER_STATUS = 'loginOrRegister';
 var LOADING_STATUS = 'loading';
-var VERSION = '1.2.1';
+var VERSION = '1.4.2';
+var DEFAULT_UNREAD_MESSAGES_COUNT = 0;
 var ACCESS_TOKEN_FETCHED_EVENT = 'accessTokenFetched';
 var ACCESS_TOKEN_FETCH_ERROR_EVENT = 'accessTokenFetchError';
+var SLOT_UPDATED_EVENT = 'slotUpdated';
 var TEXT_FIELD_NAME = 'Text';
 var LINK_FIELD_NAME = 'Link';
 var PHRASEID_FIELD_NAME = 'PhraseId';
@@ -335,6 +319,11 @@ var CREST_PHRASE_ID = 'mainmenu.crest';
 var MENU_PHRASE_ID = 'mainmenu.menu';
 var FEATURE_OVERRIDE_ENABLED = 'featureOverrideEnabled';
 var FEATURE_KEYBOARD = 'homenav_732_keyboard';
+var FEATURE_SKIPCONTENT = 'homenav_skipcontent';
+var FEATURE_UNREAD_MESSAGES_COUNT = 'homenav_628_messages_count';
+var FEATURE_DRAWER_RESTRUCTURE = 'homenav_drawer_restructure';
+var MAX_M_VIEWPORT_WIDTH = 1299;
+var FOCUSABLE_ELEMENTS_SELECTOR = 'a, [tabindex]:not([tabindex="-1"]), p-link-pure, p-button-pure';
 var Locale = /** @class */ (function () {
     function Locale(locale) {
         this.setLocale(locale);
@@ -354,7 +343,8 @@ var Locale = /** @class */ (function () {
 var analyticsSetupStore = createStore({
     applicationId: ANALYTICS_APP_ID,
     locale: new Locale(DEFAULT_LOCALE),
-    window: undefined
+    window: undefined,
+    environment: DEFAULT_ENVIRONMENT
 });
 var ContextCollectionDimensions;
 (function (ContextCollectionDimensions) {
@@ -363,6 +353,7 @@ var ContextCollectionDimensions;
     ContextCollectionDimensions["Language"] = "language";
     ContextCollectionDimensions["Country"] = "country";
     ContextCollectionDimensions["Timestamp"] = "timestamp";
+    ContextCollectionDimensions["Environment"] = "environment";
 })(ContextCollectionDimensions || (ContextCollectionDimensions = {}));
 var VisitorCollectionDimensions;
 (function (VisitorCollectionDimensions) {
@@ -416,6 +407,7 @@ var AnalyticsEvent = /** @class */ (function () {
         this.context.country = analyticsSetup.locale.country;
         this.context.language = analyticsSetup.locale.language;
         this.context.timestamp = new Date(Date.now()).toISOString();
+        this.context.environment = this.getEnvironmentAbreviation(analyticsSetup.environment);
         this.populateVisitor(analyticsSetup.window);
         this.populatePageExperience(window);
     }
@@ -437,6 +429,7 @@ var AnalyticsEvent = /** @class */ (function () {
             _a[ContextCollectionDimensions.Country] = undefined,
             _a[ContextCollectionDimensions.EventAction] = undefined,
             _a[ContextCollectionDimensions.Timestamp] = undefined,
+            _a[ContextCollectionDimensions.Environment] = undefined,
             _a);
     };
     AnalyticsEvent.prototype.initVisitor = function () {
@@ -459,7 +452,7 @@ var AnalyticsEvent = /** @class */ (function () {
         this.visitor.deviceBrowserHeight = window.innerHeight.toString();
         this.visitor.deviceBrowserWidth = window.innerWidth.toString();
         this.visitor.deviceBrowserBreakpoint = this.getLowerBreakpointForWidth(window.innerWidth).toString();
-        this.visitor.deviceBrowserOrientation = this.getDeviceOrientation(window);
+        this.visitor.deviceBrowserOrientation = AnalyticsEvent.getDeviceOrientation(window);
     };
     AnalyticsEvent.prototype.populatePageExperience = function (window) {
         this.pageExperience.pageId = window.location.protocol + "//" + window.location.host + window.location.pathname;
@@ -472,7 +465,18 @@ var AnalyticsEvent = /** @class */ (function () {
             .reverse()
             .shift();
     };
-    AnalyticsEvent.prototype.getDeviceOrientation = function (window) {
+    AnalyticsEvent.prototype.getEnvironmentAbreviation = function (environment) {
+        if (environment === 'production') {
+            return 'P';
+        }
+        else if (environment === 'preview') {
+            return 'PP';
+        }
+        else {
+            return 'K';
+        }
+    };
+    AnalyticsEvent.getDeviceOrientation = function (window) {
         var orientation;
         if (window.matchMedia('(orientation: landscape)').matches) {
             orientation = DeviceBrowserOrientation.Landscape;
@@ -516,7 +520,7 @@ var MenuBackClickEvent = /** @class */ (function (_super_1) {
 var backButtonCss = ".sc-phn-back-button-h{font-size:1rem;display:-ms-flexbox;display:flex}@media (min-width: 1300px){.sc-phn-back-button-h{visibility:hidden}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-back-button-h{font-size:1.125rem}}";
 var BackButton = /** @class */ (function () {
     function BackButton(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.text = '';
         this.buttonId = '';
     }
@@ -525,7 +529,8 @@ var BackButton = /** @class */ (function () {
         var analyticsSetup = {
             applicationId: analyticsSetupStore.get('applicationId'),
             locale: analyticsSetupStore.get('locale'),
-            window: analyticsSetupStore.get('window')
+            window: analyticsSetupStore.get('window'),
+            environment: analyticsSetupStore.get('environment')
         };
         var menuBackClickEvent = new MenuBackClickEvent(analyticsSetup, contentItem);
         var pagData = (window['pagData'] = window['pagData'] || []);
@@ -533,79 +538,21 @@ var BackButton = /** @class */ (function () {
     };
     BackButton.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { size: "inherit", icon: "arrow-head-left", class: "back-button-text-link", onClick: function () { return _this_1.sendMenuBackClickEventAnalyticsEvent(); } }, this.text)));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { size: "inherit", icon: "arrow-head-left", class: "back-button-text-link", onClick: function () { return _this_1.sendMenuBackClickEventAnalyticsEvent(); } }, this.text)));
     };
     return BackButton;
 }());
 BackButton.style = backButtonCss;
-var createProviderConsumer = function (defaultState, consumerRender) {
-    var listeners = new Map();
-    var currentState = defaultState;
-    var updateListener = function (fields, instance) {
-        if (Array.isArray(fields)) {
-            __spreadArrays(fields).forEach(function (fieldName) {
-                instance[fieldName] = currentState[fieldName];
-            });
-        }
-        else {
-            instance[fields] = Object.assign({}, currentState);
-        }
-    };
-    var subscribe = function (instance, propList) {
-        if (!listeners.has(instance)) {
-            listeners.set(instance, propList);
-            updateListener(propList, instance);
-        }
-        return function () {
-            if (listeners.has(instance)) {
-                listeners.delete(instance);
-            }
-        };
-    };
-    var Provider = function (_a, children) {
-        var state = _a.state;
-        currentState = state;
-        listeners.forEach(updateListener);
-        return children;
-    };
-    var Consumer = function (props, children) {
-        // The casting on subscribe is to allow for crossover through the stencil compiler
-        // In the future we should allow for generics in components.
-        return consumerRender(subscribe, children[0]);
-    };
-    var injectProps = function (Cstr, fieldList) {
-        var CstrPrototype = Cstr.prototype;
-        var cstrConnectedCallback = CstrPrototype.connectedCallback;
-        var cstrDisconnectedCallback = CstrPrototype.disconnectedCallback;
-        CstrPrototype.connectedCallback = function () {
-            subscribe(this, fieldList);
-            if (cstrConnectedCallback) {
-                return cstrConnectedCallback.call(this);
-            }
-        };
-        CstrPrototype.disconnectedCallback = function () {
-            listeners.delete(this);
-            if (cstrDisconnectedCallback) {
-                cstrDisconnectedCallback.call(this);
-            }
-        };
-    };
-    return {
-        Provider: Provider,
-        Consumer: Consumer,
-        injectProps: injectProps
-    };
-};
-/* istanbul ignore file */
-var StateTunnel = createProviderConsumer({
+var navContentStore = createStore({
     seriesList: DEFAULT_SERIES_LIST,
     shops: DEFAULT_SHOPS,
     more: DEFAULT_MORE,
     metafunctionalities: DEFAULT_METAFUNCTIONALITIES,
     menu: DEFAULT_MENU,
     env: DEFAULT_ENVIRONMENT,
-    loggedInState: undefined
-}, function (subscribe, child) { return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("context-consumer", { subscribe: subscribe, renderer: child }); });
+    loggedInState: undefined,
+    unreadMessagesCount: DEFAULT_UNREAD_MESSAGES_COUNT
+});
 var MoreClickEvent = /** @class */ (function (_super_1) {
     __extends(MoreClickEvent, _super_1);
     function MoreClickEvent(analyticsSetup, contentItem) {
@@ -638,13 +585,13 @@ var MoreClickEvent = /** @class */ (function (_super_1) {
 var burgerButtonCss = ".sc-phn-burger-button-h{color:#000;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}.sc-phn-burger-button-h:hover{color:#d5001c;cursor:pointer}@media (min-width: 1300px){.sc-phn-burger-button-h{display:none}}.sc-phn-burger-button-h .burger-button-text.sc-phn-burger-button{font-size:1rem;padding:0 0.5rem 0 0}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button-text.sc-phn-burger-button{font-size:1.125rem}}";
 var BurgerButton = /** @class */ (function () {
     function BurgerButton(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.menu = [];
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     BurgerButton.prototype.getText = function () {
         var text = '';
-        if (this.menu && this.menu.length > 0) {
-            var menuItem = this.menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
+        var menu = navContentStore.get('menu');
+        if (menu && menu.length > 0) {
+            var menuItem = menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
             if (menuItem && menuItem.Text) {
                 text = menuItem.Text;
             }
@@ -655,27 +602,29 @@ var BurgerButton = /** @class */ (function () {
         var analyticsSetup = {
             applicationId: analyticsSetupStore.get('applicationId'),
             locale: analyticsSetupStore.get('locale'),
-            window: analyticsSetupStore.get('window')
+            window: analyticsSetupStore.get('window'),
+            environment: analyticsSetupStore.get('environment')
         };
-        var moreClickEvent = new MoreClickEvent(analyticsSetup, this.menu[0]);
+        var menu = navContentStore.get('menu');
+        var moreClickEvent = new MoreClickEvent(analyticsSetup, menu[0]);
         var pagData = (window['pagData'] = window['pagData'] || []);
         pagData.push(moreClickEvent.event());
     };
     BurgerButton.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "burger-button", onClick: function () { return _this_1.sendMoreClickAnalyticsEvent(); } }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { size: "inherit", class: "burger-button-text" }, this.getText()), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: "burger-button-icon", size: "small", name: "menu-lines" })));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "burger-button", onClick: function () { return _this_1.sendMoreClickAnalyticsEvent(); } }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { size: "inherit", class: "burger-button-text" }, this.getText()), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: "burger-button-icon", size: "small", name: "menu-lines" })));
     };
     return BurgerButton;
 }());
-StateTunnel.injectProps(BurgerButton, ['menu']);
 BurgerButton.style = burgerButtonCss;
-var buttonExtendedCss = "button.sc-phn-button-extended{display:-ms-flexbox;display:flex;width:100%;position:relative;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;-webkit-transition:outline-color 0.24s ease, color 0.24s ease;transition:outline-color 0.24s ease, color 0.24s ease;color:inherit;font-size:inherit;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center}button.sc-phn-button-extended::-moz-focus-inner{border:0}button.sc-phn-button-extended:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}button.sc-phn-button-extended:hover,button.sc-phn-button-extended:hover p-text.sc-phn-button-extended,button.sc-phn-button-extended:hover p-icon.sc-phn-button-extended{color:#d5001c;cursor:pointer}@media (min-width: 1300px){button.sc-phn-button-extended:hover,button.sc-phn-button-extended:hover p-text.sc-phn-button-extended,button.sc-phn-button-extended:hover p-icon.sc-phn-button-extended{cursor:default;color:inherit}}button.sc-phn-button-extended:enabled:hover,button.sc-phn-button-extended:enabled:active,button.sc-phn-button-extended:not([disabled]):hover,button.sc-phn-button-extended:not([disabled]):active{color:#d5001c}button.sc-phn-button-extended p-icon.sc-phn-button-extended{display:-ms-flexbox;display:flex}button.sc-phn-button-extended p-text.sc-phn-button-extended{display:-ms-flexbox;display:flex}";
+var buttonExtendedCss = "button.sc-phn-button-extended{display:-ms-flexbox;display:flex;width:100%;position:relative;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;-webkit-transition:outline-color 0.24s ease, color 0.24s ease;transition:outline-color 0.24s ease, color 0.24s ease;color:inherit;font-size:inherit;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center}button.sc-phn-button-extended::-moz-focus-inner{border:0}button.sc-phn-button-extended:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;height:100%}button.sc-phn-button-extended:hover,button.sc-phn-button-extended:hover p-text.sc-phn-button-extended,button.sc-phn-button-extended:hover p-icon.sc-phn-button-extended{color:#d5001c;cursor:pointer}@media (min-width: 1300px){button.sc-phn-button-extended:hover,button.sc-phn-button-extended:hover p-text.sc-phn-button-extended,button.sc-phn-button-extended:hover p-icon.sc-phn-button-extended{cursor:default;color:inherit}}button.sc-phn-button-extended:enabled:hover,button.sc-phn-button-extended:enabled:active,button.sc-phn-button-extended:not([disabled]):hover,button.sc-phn-button-extended:not([disabled]):active{color:#d5001c}button.sc-phn-button-extended p-icon.sc-phn-button-extended{display:-ms-flexbox;display:flex}button.sc-phn-button-extended p-text.sc-phn-button-extended{display:-ms-flexbox;display:flex}";
 var ButtonExtended = /** @class */ (function () {
     function ButtonExtended(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.cancelTabIndex = true;
     }
     ButtonExtended.prototype.render = function () {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { tabindex: "-1" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { color: "inherit", size: "inherit", tag: "div" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)), this.icon ? Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { color: "inherit", size: "small", name: this.icon }) : null));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { tabindex: this.cancelTabIndex ? -1 : 0 }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { color: "inherit", size: "inherit", tag: "div" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)), this.icon ? Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { color: "inherit", size: "small", name: this.icon }) : null));
     };
     return ButtonExtended;
 }());
@@ -710,10 +659,10 @@ var NavigationClickEvent = /** @class */ (function (_super_1) {
     };
     return NavigationClickEvent;
 }(AnalyticsEvent));
-var carFurtherLinksCss = "@media (min-width: 1300px){.car-further-links.sc-phn-car-further-links{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center}}.car-further-links.sc-phn-car-further-links .car-further-links-wrapper.sc-phn-car-further-links{border-bottom:1px solid #c9cacb;margin-bottom:3.75rem}@media (min-width: 1300px){.car-further-links.sc-phn-car-further-links .car-further-links-wrapper.sc-phn-car-further-links{padding:0.875rem 0;border-top:1px solid #c9cacb;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;margin-bottom:unset}}.car-further-links-item.sc-phn-car-further-links{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;font-weight:normal;-ms-flex-align:center;align-items:center;border-top:1px solid #c9cacb;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;padding:15px 0}.car-further-links-item.sc-phn-car-further-links:first-child{border-top:0}@media (min-width: 760px) and (max-width: 999px){.car-further-links-item.sc-phn-car-further-links{font-size:1.125rem;padding:18px 0}}@media (min-width: 1300px){.car-further-links-item.sc-phn-car-further-links{height:1.5rem;padding:0 0.625rem;border-top:0;-webkit-box-sizing:unset;box-sizing:unset}.car-further-links-item.sc-phn-car-further-links:first-child{margin-right:0.25rem}}";
+var carFurtherLinksCss = "@media (min-width: 1300px){.car-further-links.sc-phn-car-further-links{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center}}.car-further-links.sc-phn-car-further-links .car-further-links-wrapper.sc-phn-car-further-links{border-bottom:1px solid #c9cacb;margin-bottom:3.75rem}@media (min-width: 1300px){.car-further-links.sc-phn-car-further-links .car-further-links-wrapper.sc-phn-car-further-links{border-top:1px solid #c9cacb;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;margin-bottom:unset}}.car-further-links-item.sc-phn-car-further-links{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;font-weight:normal;-ms-flex-align:center;align-items:center;border-top:1px solid #c9cacb;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;padding:15px 0}.car-further-links-item.sc-phn-car-further-links:first-child{border-top:0}@media (min-width: 760px) and (max-width: 999px){.car-further-links-item.sc-phn-car-further-links{font-size:1.125rem;padding:18px 0}}@media (min-width: 1300px){.car-further-links-item.sc-phn-car-further-links{height:1.5rem;padding:0.875rem 0.625rem;border-top:0;-webkit-box-sizing:unset;box-sizing:unset}.car-further-links-item.sc-phn-car-further-links:first-child{margin-right:0.25rem}}";
 var CarFurtherLinks = /** @class */ (function () {
     function CarFurtherLinks(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.items = [
             { PhraseId: '', Text: '', Link: '' },
             { PhraseId: '', Text: '', Link: '' }
@@ -722,7 +671,8 @@ var CarFurtherLinks = /** @class */ (function () {
             var analyticsSetup = {
                 applicationId: analyticsSetupStore.get('applicationId'),
                 locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window')
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
             };
             var navigationClick = new NavigationClickEvent(analyticsSetup, contentItem);
             var pagData = (window['pagData'] = window['pagData'] || []);
@@ -731,10 +681,10 @@ var CarFurtherLinks = /** @class */ (function () {
     }
     CarFurtherLinks.prototype.renderItem = function (item) {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: item.Link, icon: 'arrow-head-right', size: "inherit", class: "car-further-links-item", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(item); } }, item.Text));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: item.Link, icon: 'arrow-head-right', size: "inherit", class: "car-further-links-item", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(item); } }, item.Text));
     };
     CarFurtherLinks.prototype.render = function () {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links-wrapper" }, this.renderItem(this.items[0]), this.renderItem(this.items[1]))));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links-wrapper" }, this.renderItem(this.items[0]), this.renderItem(this.items[1]))));
     };
     return CarFurtherLinks;
 }());
@@ -844,7 +794,7 @@ var carMetaFunctionalitiesCss = "@media (min-width: 1300px) and (max-width: 1759
 var CarMetaFunctionalities = /** @class */ (function () {
     function CarMetaFunctionalities(hostRef) {
         var _this_1 = this;
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.items = [
             { PhraseId: '', Text: '', Link: '' },
             { PhraseId: '', Text: '', Link: '' },
@@ -854,7 +804,8 @@ var CarMetaFunctionalities = /** @class */ (function () {
             var analyticsSetup = {
                 applicationId: analyticsSetupStore.get('applicationId'),
                 locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window')
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
             };
             var configureClickEvent = new ConfigureClickEvent(analyticsSetup, _this_1.name, contentItem);
             var pagData = (window['pagData'] = window['pagData'] || []);
@@ -864,7 +815,8 @@ var CarMetaFunctionalities = /** @class */ (function () {
             var analyticsSetup = {
                 applicationId: analyticsSetupStore.get('applicationId'),
                 locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window')
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
             };
             var compareClickEvent = new CompareClickEvent(analyticsSetup, _this_1.name, contentItem);
             var pagData = (window['pagData'] = window['pagData'] || []);
@@ -874,7 +826,8 @@ var CarMetaFunctionalities = /** @class */ (function () {
             var analyticsSetup = {
                 applicationId: analyticsSetupStore.get('applicationId'),
                 locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window')
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
             };
             var findCarClickEvent = new FindCarClickEvent(analyticsSetup, _this_1.name, contentItem);
             var pagData = (window['pagData'] = window['pagData'] || []);
@@ -882,10 +835,10 @@ var CarMetaFunctionalities = /** @class */ (function () {
         };
     }
     CarMetaFunctionalities.prototype.renderItem = function (source, contentItem, analyticsEvent) {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: contentItem.Link, icon: source, size: "inherit", onClick: function () { return analyticsEvent(contentItem); }, class: "car-meta-functionalities-item" }, contentItem.Text));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: contentItem.Link, icon: source, size: "inherit", onClick: function () { return analyticsEvent(contentItem); }, class: "car-meta-functionalities-item" }, contentItem.Text));
     };
     CarMetaFunctionalities.prototype.render = function () {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities-wrapper" }, this.renderItem('configurate', this.items[0], this.sendConfigureClickAnalyticsEvent), this.renderItem('compare', this.items[1], this.sendCompareClickAnalyticsEvent), this.renderItem('search', this.items[2], this.sendFindCarClickAnalyticsEvent))));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities-wrapper" }, this.renderItem('configurate', this.items[0], this.sendConfigureClickAnalyticsEvent), this.renderItem('compare', this.items[1], this.sendCompareClickAnalyticsEvent), this.renderItem('search', this.items[2], this.sendFindCarClickAnalyticsEvent))));
     };
     return CarMetaFunctionalities;
 }());
@@ -894,6 +847,7 @@ var local = {
     CONTENT_URL: "https://cdn.pchomenav.aws.porsche.cloud/content/preprod-content.json",
     ASSETS_URL: ".",
     PROFILE_API_URL: "https://api.porsche-preview.com/profiles/mydata",
+    UNREAD_MESSAGES_COUNT_API_URL: "https://api.porsche-preview.com/inbox/pp/rest/messages/unreadCount",
     LOGIN_BASE_URL: "https://preview-login.porsche.com",
     LOGIN_REDIRECT_URL: "https://preview-nav.porsche.com/authIframe.html",
     CLIENT_ID: "V5yfGusXVALiypCMRFBfM4IAHaZ0IA4A",
@@ -906,6 +860,7 @@ var preview = {
     CONTENT_URL: "https://cdn.pchomenav.aws.porsche.cloud/content/preprod-content.json",
     ASSETS_URL: "https://cdn.pchomenav.aws.porsche.cloud",
     PROFILE_API_URL: "https://api.porsche-preview.com/profiles/mydata",
+    UNREAD_MESSAGES_COUNT_API_URL: "https://api.porsche-preview.com/inbox/pp/rest/messages/unreadCount",
     LOGIN_BASE_URL: "https://preview-login.porsche.com",
     LOGIN_REDIRECT_URL: "https://preview-nav.porsche.com/authIframe.html",
     CLIENT_ID: "V5yfGusXVALiypCMRFBfM4IAHaZ0IA4A",
@@ -924,6 +879,7 @@ var production = {
     CONTENT_URL: "https://nav.porsche.com/00BC524/content/content.json",
     ASSETS_URL: "https://nav.porsche.com/00BC524",
     PROFILE_API_URL: "https://api.porsche.com/profiles/mydata",
+    UNREAD_MESSAGES_COUNT_API_URL: "https://api.porsche.com/inbox/p/rest/messages/unreadCount",
     LOGIN_BASE_URL: "https://login.porsche.com",
     LOGIN_REDIRECT_URL: "https://nav.porsche.com/00BC524/auth/authIframe.html",
     CLIENT_ID: "QPw3VOLAMfI7r0nmRY8ELq4RzZpZeXEE",
@@ -940,17 +896,26 @@ var configJson = {
 var local$1 = {
     featureOverrideEnabled: true,
     homenav_feature1: false,
-    homenav_732_keyboard: true
+    homenav_732_keyboard: true,
+    homenav_628_messages_count: true,
+    homenav_skipcontent: true,
+    homenav_drawer_restructure: false
 };
 var preview$1 = {
     featureOverrideEnabled: true,
     homenav_feature1: false,
-    homenav_732_keyboard: false
+    homenav_732_keyboard: true,
+    homenav_628_messages_count: true,
+    homenav_skipcontent: true,
+    homenav_drawer_restructure: false
 };
 var production$1 = {
     featureOverrideEnabled: false,
     homenav_feature1: false,
-    homenav_732_keyboard: false
+    homenav_732_keyboard: true,
+    homenav_628_messages_count: true,
+    homenav_skipcontent: true,
+    homenav_drawer_restructure: false
 };
 var featureJson = {
     local: local$1,
@@ -983,23 +948,22 @@ var isFeatureEnabled = function (feature, env) {
     var overrideValue = getOverrideValue(feature);
     return isOverrideValid(env, overrideValue) ? overrideValue : featureJson[env][feature];
 };
-var carModelCss = ".car-model.sc-phn-car-model{text-decoration:none;color:#000;padding-top:0.6875rem;padding-bottom:0.875rem;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center;width:100%;text-align:left;border-bottom:1px solid #c9cacb}@media (min-width: 760px){.car-model.sc-phn-car-model{padding-top:unset;padding-bottom:unset}}@media (min-width: 1000px){.car-model.sc-phn-car-model:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 1300px){.car-model.sc-phn-car-model{display:block;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:unset;align-items:unset;width:unset;text-align:center;border-bottom:0}}.car-model.sc-phn-car-model:hover .model-text.sc-phn-car-model{color:#d5001c}.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{width:50%}.car-model.sc-phn-car-model .model-pic.sc-phn-car-model img.sc-phn-car-model{vertical-align:middle}@media (min-width: 760px) and (max-width: 999px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{height:10.875rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{height:8.125rem}}@media (min-width: 1300px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{width:100%}}.car-model.sc-phn-car-model .model-text.sc-phn-car-model{width:50%}@media (min-width: 0) and (max-width: 759px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1rem;line-height:1.5rem}}@media (min-width: 760px) and (max-width: 999px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1.875rem;line-height:2.5rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1.5rem;line-height:2rem}}@media (min-width: 1300px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{width:100%;margin-top:-0.9375rem}}";
+var carModelCss = ".car-model.sc-phn-car-model{text-decoration:none;color:#000;padding-top:0.6875rem;padding-bottom:0.875rem;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center;width:100%;text-align:left;border-bottom:1px solid #c9cacb}@media (min-width: 760px){.car-model.sc-phn-car-model{padding-top:unset;padding-bottom:unset}}@media (min-width: 1000px){.car-model.sc-phn-car-model:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;outline-offset:-2px}}@media (min-width: 1300px){.car-model.sc-phn-car-model{display:block;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:unset;align-items:unset;width:unset;text-align:center;border-bottom:0}}.car-model.sc-phn-car-model:hover .model-text.sc-phn-car-model{color:#d5001c}.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{width:50%}.car-model.sc-phn-car-model .model-pic.sc-phn-car-model img.sc-phn-car-model{vertical-align:middle}@media (min-width: 760px) and (max-width: 999px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{height:10.875rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{height:8.125rem}}@media (min-width: 1300px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{width:100%}}.car-model.sc-phn-car-model .model-text.sc-phn-car-model{width:50%}@media (min-width: 0) and (max-width: 759px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1rem;line-height:1.5rem}}@media (min-width: 760px) and (max-width: 999px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1.875rem;line-height:2.5rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1.5rem;line-height:2rem}}@media (min-width: 1300px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{width:100%;margin-top:-0.9375rem}}";
 var CarModel = /** @class */ (function () {
     function CarModel(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     CarModel.prototype.render = function () {
-        var path = Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["d"])(config(this.env).ASSETS_URL + "/model-assets");
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "car-model", href: this.link }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("picture", { class: "model-pic" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1760px)", srcSet: path + "/1920/" + this.image + ".png, " + path + "/1920/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1300px)", srcSet: path + "/1366/" + this.image + ".png, " + path + "/1366/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1000px)", srcSet: path + "/1024/" + this.image + ".png, " + path + "/1024/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 760px)", srcSet: path + "/768/" + this.image + ".png, " + path + "/768/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 375px)", srcSet: path + "/375/" + this.image + ".png, " + path + "/375/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 0px)", srcSet: path + "/320/" + this.image + ".png, " + path + "/320/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("img", { alt: this.text })), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "model-text" }, this.text)));
+        var path = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["c"])(config(navContentStore.get('env')).ASSETS_URL + "/model-assets");
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "car-model", href: this.link }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("picture", { class: "model-pic" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1760px)", srcSet: path + "/1920/" + this.image + ".png, " + path + "/1920/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1300px)", srcSet: path + "/1366/" + this.image + ".png, " + path + "/1366/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1000px)", srcSet: path + "/1024/" + this.image + ".png, " + path + "/1024/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 760px)", srcSet: path + "/768/" + this.image + ".png, " + path + "/768/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 375px)", srcSet: path + "/375/" + this.image + ".png, " + path + "/375/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 0px)", srcSet: path + "/320/" + this.image + ".png, " + path + "/320/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("img", { alt: this.text })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "model-text" }, this.text)));
     };
     Object.defineProperty(CarModel, "assetsDirs", {
         get: function () { return ["model-assets"]; },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     return CarModel;
 }());
-StateTunnel.injectProps(CarModel, ['env']);
 CarModel.style = carModelCss;
 var ModelClickEvent = /** @class */ (function (_super_1) {
     __extends(ModelClickEvent, _super_1);
@@ -1024,14 +988,15 @@ var ModelClickEvent = /** @class */ (function (_super_1) {
 var carModelListCss = "@media (min-width: 1300px) and (max-width: 1759px){.car-model-list.sc-phn-car-model-list{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;margin-bottom:1.875rem}}@media (min-width: 1760px){.car-model-list.sc-phn-car-model-list{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;margin-bottom:3.5625rem}}@media (min-width: 1300px) and (max-width: 1759px){.car-model-list-wrapper.sc-phn-car-model-list{padding-top:0.5rem;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;width:70rem;-ms-flex-pack:center;justify-content:center}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list{margin-right:2.25rem}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list:last-child{margin-right:0}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list,.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list{width:52.5rem}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3),.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3){margin-right:0}}@media (min-width: 1760px){.car-model-list-wrapper.sc-phn-car-model-list{padding-top:1.5rem;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;width:83rem;-ms-flex-pack:center;justify-content:center}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list{margin-right:3rem}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list:last-child{margin-right:0}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list,.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list{width:64.0625rem}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3),.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3){margin-right:0}}";
 var CarModelList = /** @class */ (function () {
     function CarModelList(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.series = EMPTY_SERIES;
     }
     CarModelList.prototype.sendModelClickAnalyticsEvent = function (model) {
         var analyticsSetup = {
             applicationId: analyticsSetupStore.get('applicationId'),
             locale: analyticsSetupStore.get('locale'),
-            window: analyticsSetupStore.get('window')
+            window: analyticsSetupStore.get('window'),
+            environment: analyticsSetupStore.get('environment')
         };
         var modelClickEvent = new ModelClickEvent(analyticsSetup, this.series.Name, model);
         var pagData = (window['pagData'] = window['pagData'] || []);
@@ -1039,38 +1004,37 @@ var CarModelList = /** @class */ (function () {
     };
     CarModelList.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-model-list" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model-list-wrapper car-models-count-' + this.series.Models.length }, this.series.Models.map(function (model, index) { return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model car-model-' + index }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model", { text: model.Name, image: model.Image, link: model.Link, onClick: function () { return _this_1.sendModelClickAnalyticsEvent(model); } }))); }))));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-model-list" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model-list-wrapper car-models-count-' + this.series.Models.length }, this.series.Models.map(function (model, index) { return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model car-model-' + index }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model", { text: model.Name, image: model.Image, link: model.Link, onClick: function () { return _this_1.sendModelClickAnalyticsEvent(model); } }))); }))));
     };
     return CarModelList;
 }());
 CarModelList.style = carModelListCss;
-var carSeriesCss = ".car-series.sc-phn-car-series{text-align:center;text-decoration:none;color:#000;display:block}.car-series.sc-phn-car-series:hover{cursor:pointer;color:#d5001c}@media (min-width: 0) and (max-width: 759px){.car-series.sc-phn-car-series{padding-bottom:0.5625rem}}@media (min-width: 760px) and (max-width: 999px){.car-series.sc-phn-car-series{padding-bottom:0.625rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-series.sc-phn-car-series{padding-bottom:0.25rem}}@media (min-width: 1300px) and (max-width: 1759px){.car-series.sc-phn-car-series{height:89px}.car-series.sc-phn-car-series:hover{color:inherit;cursor:default}}@media (min-width: 1760px){.car-series.sc-phn-car-series{height:100px}.car-series.sc-phn-car-series:hover{color:inherit;cursor:default}}.car-series.sc-phn-car-series .car-series-text.sc-phn-car-series{padding:0;margin:0;line-height:1.5rem;font-size:1rem}@media (min-width: 0) and (max-width: 759px){.car-series.sc-phn-car-series .car-series-text.sc-phn-car-series{margin:-1.125rem 0 0 -0.1875rem}}@media (min-width: 760px) and (max-width: 999px){.car-series.sc-phn-car-series .car-series-text.sc-phn-car-series{margin:-2.3125rem 0 0 -0.0625rem;font-size:1.125rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-series.sc-phn-car-series .car-series-text.sc-phn-car-series{margin:-1.6875rem 0 0 -0.125rem;font-size:1rem}}@media (min-width: 1300px) and (max-width: 1759px){.car-series.sc-phn-car-series .car-series-text.sc-phn-car-series{margin-top:-1.0625rem;font-size:0.875rem;padding-bottom:1.25rem}}@media (min-width: 1760px){.car-series.sc-phn-car-series .car-series-text.sc-phn-car-series{margin-top:-1.1875rem;padding-bottom:1.4375rem}}";
+var carSeriesCss = ".sc-phn-car-series-h{text-align:center;text-decoration:none;color:#000;display:block}.sc-phn-car-series-h:hover{cursor:pointer;color:#d5001c}@media (min-width: 0) and (max-width: 759px){.sc-phn-car-series-h{padding-bottom:0.5625rem}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-car-series-h{padding-bottom:0.625rem}}@media (min-width: 1000px) and (max-width: 1299px){.sc-phn-car-series-h{padding-bottom:0.25rem}.sc-phn-car-series-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;outline-offset:-1px}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-h{height:89px}.sc-phn-car-series-h:hover{color:inherit;cursor:default}}@media (min-width: 1760px){.sc-phn-car-series-h{height:100px}.sc-phn-car-series-h:hover{color:inherit;cursor:default}}.sc-phn-car-series-h .car-series-text.sc-phn-car-series{padding:0;margin:0;line-height:1.5rem;font-size:1rem}@media (min-width: 0) and (max-width: 759px){.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-1.125rem 0 0 0;padding-right:0.1875rem}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-2.3125rem 0 0 0;padding-right:0.0625rem;font-size:1.125rem}}@media (min-width: 1000px) and (max-width: 1299px){.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-1.6875rem 0 0 0;padding-right:0.125rem;font-size:1rem}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin-top:-1.0625rem;font-size:0.875rem;padding-bottom:1.25rem}}@media (min-width: 1760px){.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin-top:-1.1875rem;padding-bottom:1.4375rem}}";
 var CarSeries = /** @class */ (function () {
     function CarSeries(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     CarSeries.prototype.render = function () {
-        var path = Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["d"])(config(this.env).ASSETS_URL + "/series-assets");
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-series" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("picture", null, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1760px)", srcSet: path + "/1920/" + this.image + ".png, " + path + "/1920/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1300px)", srcSet: path + "/1366/" + this.image + ".png, " + path + "/1366/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1000px)", srcSet: path + "/1024/" + this.image + ".png, " + path + "/1024/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 760px)", srcSet: path + "/768/" + this.image + ".png, " + path + "/768/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 375px)", srcSet: path + "/375/" + this.image + ".png, " + path + "/375/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 0px)", srcSet: path + "/320/" + this.image + ".png, " + path + "/320/" + this.image + "@2x.png 2x" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("img", { alt: this.text })), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p", { class: "car-series-text" }, this.text)));
+        var path = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["c"])(config(navContentStore.get('env')).ASSETS_URL + "/series-assets");
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "car-series" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("picture", null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1760px)", srcSet: path + "/1920/" + this.image + ".png, " + path + "/1920/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1300px)", srcSet: path + "/1366/" + this.image + ".png, " + path + "/1366/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1000px)", srcSet: path + "/1024/" + this.image + ".png, " + path + "/1024/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 760px)", srcSet: path + "/768/" + this.image + ".png, " + path + "/768/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 375px)", srcSet: path + "/375/" + this.image + ".png, " + path + "/375/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 0px)", srcSet: path + "/320/" + this.image + ".png, " + path + "/320/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("img", { alt: this.text })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p", { class: "car-series-text" }, this.text)));
     };
     Object.defineProperty(CarSeries, "assetsDirs", {
         get: function () { return ["series-assets"]; },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     return CarSeries;
 }());
-StateTunnel.injectProps(CarSeries, ['env']);
 CarSeries.style = carSeriesCss;
 var carSeriesListCss = ".sc-phn-car-series-list-h{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:1.75rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-car-series-list-h{margin-top:1.875rem}}@media (min-width: 1300px){.sc-phn-car-series-list-h{-ms-flex-wrap:nowrap;flex-wrap:nowrap;margin-top:0}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-list-h{margin-left:0.5625rem}}@media (min-width: 1760px){.sc-phn-car-series-list-h{margin-left:1.25rem}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list{padding:0 0.3125rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:first-of-type{padding-left:0.9375rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:last-of-type{padding-right:0.9375rem}}@media (min-width: 1760px){.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list{padding:0 0.5625rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:first-of-type{padding-left:1.25rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:last-of-type{padding-right:1.25rem}}";
 var CarSeriesList = /** @class */ (function () {
     function CarSeriesList(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.carSeries = DEFAULT_SERIES_LIST;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     CarSeriesList.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, this.carSeries.map(function (series) { return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "car-series-fly-out-overlay overlay-trigger " + series.PhraseId, showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { slot: "button", text: series.Name, image: series.Image }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-model-overview", { slot: "content", series: series }))); })));
+        var carSeries = navContentStore.get('seriesList');
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, carSeries.map(function (series) { return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "car-series-fly-out-overlay overlay-trigger " + series.PhraseId, showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { slot: "button", text: series.Name, image: series.Image }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-model-overview", { slot: "content", series: series }))); })));
     };
     return CarSeriesList;
 }());
@@ -1097,11 +1061,11 @@ var ModelRangeOverlayLoadEvent = /** @class */ (function (_super_1) {
     return ModelRangeOverlayLoadEvent;
 }(ModelAnalyticsEvent));
 var CarSeriesModelOverview = /** @class */ (function () {
-    function class_1(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+    function CarSeriesModelOverview(hostRef) {
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.series = EMPTY_SERIES;
     }
-    class_1.prototype.triggerAnalyticsEvent = function () {
+    CarSeriesModelOverview.prototype.triggerAnalyticsEvent = function () {
         return __awaiter(this, void 0, void 0, function () {
             var pagData, analyticsSetup, analyticsEvent;
             return __generator(this, function (_a) {
@@ -1109,7 +1073,8 @@ var CarSeriesModelOverview = /** @class */ (function () {
                 analyticsSetup = {
                     applicationId: analyticsSetupStore.get('applicationId'),
                     locale: analyticsSetupStore.get('locale'),
-                    window: analyticsSetupStore.get('window')
+                    window: analyticsSetupStore.get('window'),
+                    environment: analyticsSetupStore.get('environment')
                 };
                 analyticsEvent = new ModelRangeOverlayLoadEvent(analyticsSetup, this.series.Name, this.series);
                 pagData.push(analyticsEvent.event());
@@ -1117,25 +1082,31 @@ var CarSeriesModelOverview = /** @class */ (function () {
             });
         });
     };
-    class_1.prototype.render = function () {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-series-model-overview" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { series: this.series }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further })));
+    CarSeriesModelOverview.prototype.render = function () {
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-series-model-overview" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { series: this.series }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further })));
     };
-    return class_1;
+    return CarSeriesModelOverview;
 }());
-var closeButtonCss = ".close-button-wrapper.sc-phn-close-button{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}@media (min-width: 760px){.close-button-wrapper.sc-phn-close-button{height:3rem;width:3rem}}.close-button-wrapper.sc-phn-close-button:hover{color:#d5001c;cursor:pointer}";
+var closeButtonCss = ".sc-phn-close-button-h{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}@media (min-width: 760px){.sc-phn-close-button-h{height:3rem;width:3rem}}.sc-phn-close-button-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.sc-phn-close-button-h:hover{color:#d5001c;cursor:pointer}";
 var CloseButton = /** @class */ (function () {
     function CloseButton(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.closeEvent = Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "closeEvent", 7);
-    }
-    CloseButton.prototype.closeEventfun = function (e) {
-        this.closeEvent.emit(e);
-    };
-    CloseButton.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "close-button-wrapper", onClick: function (e) {
-                _this_1.closeEventfun(e);
-            } }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: "close-button close-button-icon", name: "close", size: "small" })));
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.env = DEFAULT_ENVIRONMENT;
+        this.closeEventfun = function (e) {
+            _this_1.closeEvent.emit(e);
+        };
+        this.handlePressEnterKey = function (event) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
+                if (event.key === 'Enter') {
+                    _this_1.closeEventfun(event);
+                }
+            }
+        };
+        this.closeEvent = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "closeEvent", 7);
+    }
+    CloseButton.prototype.render = function () {
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "close-button-wrapper", tabindex: "0", onClick: this.closeEventfun, onKeyDown: this.handlePressEnterKey }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: "close-button close-button-icon", name: "close", size: "small" })));
     };
     return CloseButton;
 }());
@@ -1152,20 +1123,21 @@ var CrestClickEvent = /** @class */ (function (_super_1) {
     };
     return CrestClickEvent;
 }(AnalyticsEvent));
-var crestCss = ".crest.sc-phn-crest{display:-ms-flexbox;display:flex;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;border:0.0625rem solid #c9cacb;border-top:0;height:4.8125rem;padding:0.3125rem 0.1875rem 0.5625rem 0.1875rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.1875rem + 0.0625rem));margin-bottom:-0.75rem}@media (min-width: 760px){.crest.sc-phn-crest{height:5.25rem;padding:0.5625rem 0.25rem 0.8125rem 0.25rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.25rem + 0.0625rem))}}@media (min-width: 1000px){.crest.sc-phn-crest{padding:0.375rem 0.3125rem 0.4375rem 0.3125rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.3125rem + 0.0625rem))}.crest.sc-phn-crest:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 1300px){.crest.sc-phn-crest{height:8.3125rem;padding:1.75rem 0.25rem 1.875rem 0.25rem;margin-bottom:-0.9375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.25rem + 0.0625rem))}}@media (min-width: 1760px){.crest.sc-phn-crest{height:8.5625rem;padding:1.8125rem 0.375rem 2.0625rem 0.375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.375rem + 0.0625rem))}}";
+var crestCss = ".crest.sc-phn-crest{display:-ms-flexbox;display:flex;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;border:0.0625rem solid #c9cacb;border-top:0;height:4.8125rem;padding:0.3125rem 0.1875rem 0.5625rem 0.1875rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.1875rem + 0.0625rem));margin-bottom:-0.75rem}.crest.sc-phn-crest:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}@media (min-width: 760px){.crest.sc-phn-crest{height:5.25rem;padding:0.5625rem 0.25rem 0.8125rem 0.25rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.25rem + 0.0625rem))}}@media (min-width: 1000px){.crest.sc-phn-crest{padding:0.375rem 0.3125rem 0.4375rem 0.3125rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.3125rem + 0.0625rem))}}@media (min-width: 1300px){.crest.sc-phn-crest{height:8.3125rem;padding:1.75rem 0.25rem 1.875rem 0.25rem;margin-bottom:-0.9375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.25rem + 0.0625rem))}}@media (min-width: 1760px){.crest.sc-phn-crest{height:8.5625rem;padding:1.8125rem 0.375rem 2.0625rem 0.375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.375rem + 0.0625rem))}}";
 var Crest = /** @class */ (function () {
     function Crest(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     Crest.prototype.getCrestLink = function () {
-        var crestItem = this.menu.find(function (m) { return m.PhraseId === CREST_PHRASE_ID; });
+        var crestItem = navContentStore.get('menu').find(function (m) { return m.PhraseId === CREST_PHRASE_ID; });
         return crestItem ? (crestItem.Link ? crestItem.Link : '/') : '/';
     };
     Crest.prototype.sendCrestClickAnalyticsEvent = function () {
         var analyticsSetup = {
             applicationId: analyticsSetupStore.get('applicationId'),
             locale: analyticsSetupStore.get('locale'),
-            window: analyticsSetupStore.get('window')
+            window: analyticsSetupStore.get('window'),
+            environment: analyticsSetupStore.get('environment')
         };
         var crestClickEvent = new CrestClickEvent(analyticsSetup);
         var pagData = (window['pagData'] = window['pagData'] || []);
@@ -1173,53 +1145,37 @@ var Crest = /** @class */ (function () {
     };
     Crest.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "crest", onClick: function () { return _this_1.sendCrestClickAnalyticsEvent(); }, href: this.getCrestLink() }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-marque", { class: "marque" })));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "crest", onClick: function () { return _this_1.sendCrestClickAnalyticsEvent(); }, href: this.getCrestLink() }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-marque", { class: "marque" })));
     };
     return Crest;
 }());
-StateTunnel.injectProps(Crest, ['menu']);
 Crest.style = crestCss;
-var LinkItem = /** @class */ (function () {
-    function LinkItem(_id, _text, _link) {
-        this.IsLinkItem = true;
-        this.Id = _id;
-        this.Text = _text;
-        this.Link = _link;
-    }
-    return LinkItem;
-}());
-var hasLinkItemChild = function (item) {
-    if (item.Items) {
-        for (var index = 0; index < item.Items.length; index++) {
-            if (item.Items[index].IsLinkItem) {
-                return true;
-            }
-        }
-    }
-    return false;
-};
-var dealerSearchCss = "p-link-pure.sc-phn-dealer-search{border-bottom:1px solid #c9cacb;padding:0.875rem 0 0.875rem 0;width:100%}@media (min-width: 760px) and (max-width: 999px){p-link-pure.sc-phn-dealer-search{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){p-link-pure.sc-phn-dealer-search{border-bottom:0;padding:0 1.125rem 0 0}}@media (min-width: 1760px){p-link-pure.sc-phn-dealer-search{padding-right:1.5rem}}";
+var dealerSearchCss = "p-link-pure.sc-phn-dealer-search{border-bottom:1px solid #c9cacb;padding:0.875rem 0 0.875rem 0;width:100%}@media (min-width: 760px) and (max-width: 999px){p-link-pure.sc-phn-dealer-search{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){p-link-pure.sc-phn-dealer-search{border-bottom:0;padding:0}}";
 var DealerSearch = /** @class */ (function () {
     function DealerSearch(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.dealerSearchText = '';
         this.dealerSearchLink = '';
     }
     DealerSearch.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: this.dealerSearchLink, size: "inherit", icon: "pin", onClick: function () {
-                var linkItem = new LinkItem(DEALER_SEARCH_PHRASE_ID, _this_1.dealerSearchText, _this_1.dealerSearchLink);
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: this.dealerSearchLink, size: "inherit", icon: "pin", onClick: function () {
+                var linkItem = {
+                    PhraseId: DEALER_SEARCH_PHRASE_ID,
+                    Text: _this_1.dealerSearchText,
+                    Link: _this_1.dealerSearchLink
+                };
                 _this_1.sendMetaFunctionClickAnalyticsEvent(linkItem);
             } }, this.dealerSearchText)));
     };
     return DealerSearch;
 }());
 DealerSearch.style = dealerSearchCss;
-var drawerCarSeriesModelOverviewCss = ".drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview{position:fixed;width:100%;right:0;bottom:0;top:0;z-index:999999}@media (min-width: 1000px) and (max-width: 1299px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview{width:568px}}.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview{right:0;bottom:0;top:0;overflow:auto;background-color:#fff;max-width:62.5rem;padding-right:7%;padding-left:7%;height:100%}.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview{padding-top:0.75rem}}@media (min-width: 1300px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview{padding-top:unset}}.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview .back-button.sc-phn-drawer-car-series-model-overview{margin-left:-0.625rem}@media (min-width: 760px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview .close-button.sc-phn-drawer-car-series-model-overview{margin-right:-1.125rem}}";
+var drawerCarSeriesModelOverviewCss = ".drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview{position:fixed;width:100%;right:0;bottom:0;top:0;z-index:999999}@media (min-width: 1000px) and (max-width: 1299px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview{width:568px}}.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview{right:0;bottom:0;top:0;overflow-y:auto;background-color:#fff;max-width:62.5rem;padding-right:7%;padding-left:7%;height:100%}.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview{padding-top:0.75rem}}@media (min-width: 1300px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview{padding-top:unset}}.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview .back-button.sc-phn-drawer-car-series-model-overview{margin-left:-0.625rem}@media (min-width: 760px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview .close-button.sc-phn-drawer-car-series-model-overview{margin-right:-1.125rem}}";
 var DrawerCarSeriesModelOverview = /** @class */ (function () {
     function DrawerCarSeriesModelOverview(hostRef) {
         var _this_1 = this;
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.series = EMPTY_SERIES;
         this.handleClick = function () {
             _this_1.el.style.display = 'none';
@@ -1228,36 +1184,80 @@ var DrawerCarSeriesModelOverview = /** @class */ (function () {
     }
     DrawerCarSeriesModelOverview.prototype.getValueForField = function (fieldName) {
         var text = '';
-        if (this.menu && this.menu.length > 0) {
-            var menuItem = this.menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
+        var menu = navContentStore.get('menu');
+        if (menu && menu.length > 0) {
+            var menuItem = menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
             if (menuItem && menuItem[fieldName]) {
                 text = menuItem[fieldName];
             }
         }
         return text;
     };
+    DrawerCarSeriesModelOverview.prototype.keyDownHandler = function (event) {
+        if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
+            if (!event.shiftKey && event.key === 'Tab') {
+                var focusable = this.el.querySelectorAll(FOCUSABLE_ELEMENTS_SELECTOR);
+                if (event.target === focusable[focusable.length - 1]) {
+                    event.preventDefault();
+                    this.el.querySelector('phn-back-button > p-button-pure').focus();
+                }
+            }
+        }
+    };
     DrawerCarSeriesModelOverview.prototype.render = function () {
         var backButtonText = this.getValueForField(TEXT_FIELD_NAME);
         var backButtonId = this.getValueForField(PHRASEID_FIELD_NAME);
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-car-series-model-overview" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container drawer-level-2-item-scroll" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-back-and-close" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: this.handleClick, buttonId: backButtonId, text: backButtonText }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.series.Name }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { class: "car-model-list", series: this.series }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further }))));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-car-series-model-overview" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container drawer-level-2-item-scroll" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-back-and-close" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: this.handleClick, buttonId: backButtonId, text: backButtonText }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.series.Name }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { class: "car-model-list", series: this.series }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further }))));
     };
     Object.defineProperty(DrawerCarSeriesModelOverview.prototype, "el", {
-        get: function () { return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
+        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
         configurable: true
     });
     return DrawerCarSeriesModelOverview;
 }());
-StateTunnel.injectProps(DrawerCarSeriesModelOverview, ['menu']);
 DrawerCarSeriesModelOverview.style = drawerCarSeriesModelOverviewCss;
-var drawerShopsAndMoreCss = ".drawer-shops-and-more.sc-phn-drawer-shops-and-more{position:fixed;right:0;top:0;bottom:0;overflow-y:auto;background-color:#fff;width:100%;padding-bottom:3.125rem;z-index:999999}@media (min-width: 1000px) and (max-width: 1299px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more{width:568px}}.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-container.sc-phn-drawer-shops-and-more{padding-right:7%;padding-left:7%}.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more{padding-top:0.75rem}}@media (min-width: 1300px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more{padding-top:unset}}@media (min-width: 760px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more .close-button.sc-phn-drawer-shops-and-more{margin-right:-1.125rem}}.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more .back-button.sc-phn-drawer-shops-and-more{margin-left:-0.625rem}";
+var DrawerCarSeriesModelOverview$1 = /** @class */ (function () {
+    function DrawerCarSeriesModelOverview$1(hostRef) {
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.series = EMPTY_SERIES;
+    }
+    DrawerCarSeriesModelOverview$1.prototype.render = function () {
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-car-series-model-overview" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container drawer-level-2-item-scroll" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.series.Name }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { class: "car-model-list", series: this.series }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further }))));
+    };
+    return DrawerCarSeriesModelOverview$1;
+}());
+var drawerShopsAndMoreCss = ".drawer-shops-and-more.sc-phn-drawer-shops-and-more{position:fixed;right:0;top:0;bottom:0;overflow-y:auto;overscroll-behavior-y:none;background-color:#fff;width:100%;padding-bottom:3.125rem;z-index:999999}@media (min-width: 1000px) and (max-width: 1299px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more{width:568px}}.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-container.sc-phn-drawer-shops-and-more{padding-right:7%;padding-left:7%}.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more{padding-top:0.75rem}}@media (min-width: 1300px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more{padding-top:unset}}@media (min-width: 760px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more .close-button.sc-phn-drawer-shops-and-more{margin-right:-1.125rem}}.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more .back-button.sc-phn-drawer-shops-and-more{margin-left:-0.625rem}";
 var DrawerShopsAndMore = /** @class */ (function () {
     function DrawerShopsAndMore(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        var _this_1 = this;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.env = DEFAULT_ENVIRONMENT;
         this.item = EMPTY_ITEM;
         this.backButtonText = '';
         this.backButtonId = '';
         this.level = 2;
+        this.showDrawer = function (item, innerOverlayEl) {
+            if (!item.Link && innerOverlayEl) {
+                innerOverlayEl.style.display = 'block';
+                _this_1.setActiveDrawer(innerOverlayEl, _this_1.level + 1);
+            }
+        };
+        this.handleKeyDown = function (event, item, innerOverlayEl, isLastItem) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
+                if (event.key === 'Enter') {
+                    _this_1.showDrawer(item, innerOverlayEl);
+                }
+                if (!event.shiftKey && event.key === 'Tab' && isLastItem) {
+                    event.preventDefault();
+                    var target = event.target;
+                    var closestBackButton = target
+                        .closest('phn-drawer-shops-and-more')
+                        .querySelector('phn-back-button > p-button-pure');
+                    closestBackButton.focus();
+                }
+            }
+        };
     }
     DrawerShopsAndMore.prototype.hideDrawer = function () {
         this.hide();
@@ -1268,8 +1268,9 @@ var DrawerShopsAndMore = /** @class */ (function () {
     };
     DrawerShopsAndMore.prototype.getValueForField = function (fieldName) {
         var text = '';
-        if (this.menu && this.menu.length > 0) {
-            var menuItem = this.menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
+        var menu = navContentStore.get('menu');
+        if (menu && menu.length > 0) {
+            var menuItem = menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
             if (menuItem && menuItem[fieldName]) {
                 text = menuItem[fieldName];
             }
@@ -1282,32 +1283,77 @@ var DrawerShopsAndMore = /** @class */ (function () {
         var buttonText = this.backButtonText ? this.backButtonText : this.getValueForField(TEXT_FIELD_NAME);
         var buttonId = this.backButtonId ? this.backButtonId : this.getValueForField(PHRASEID_FIELD_NAME);
         var _headline = this.headline !== '' ? this.headline : this.item.Text;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-shops-and-more drawer-level-" + this.level + "-item-scroll drawer-level-" + this.level + "-item" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-back-and-close" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: function () { return _this_1.hideDrawer(); }, buttonId: buttonId, text: buttonText }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: _headline, class: "drawer-headline" }), this.item.Items &&
-            this.item.Items.map(function (item, index) {
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-shops-and-more drawer-level-" + this.level + "-item-scroll drawer-level-" + this.level + "-item" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-back-and-close" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: function () { return _this_1.hideDrawer(); }, buttonId: buttonId, text: buttonText }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: _headline, class: "drawer-headline" }), this.item.Items &&
+            this.item.Items.map(function (item, index, arr) {
+                var isLastItem = arr.length === index + 1;
                 var innerOverlayEl;
-                return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", null, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: item, onClick: function () {
-                        if (!item.IsLinkItem) {
-                            innerOverlayEl.style.display = 'block';
-                            _this_1.setActiveDrawer(innerOverlayEl, _this_1.level + 1);
-                        }
-                    }, class: 'shops-and-more-item shops-and-more-item-' + index }), item.IsLinkItem ? null : (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Items && item.Items.length === 1 ? item.Text : '', ref: function (el) { return (innerOverlayEl = el); }, item: item, level: _this_1.level + 1, class: 'drawer-level-2 drawer-level-2-' + index, backButtonText: _this_1.item.Text, backButtonId: _this_1.item.PhraseId, closeActiveDrawer: _this_1.closeActiveDrawer, setActiveDrawer: _this_1.setActiveDrawer }))));
+                return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: item, onClick: function () { return _this_1.showDrawer(item, innerOverlayEl); }, onKeyDown: function (event) { return _this_1.handleKeyDown(event, item, innerOverlayEl, isLastItem); }, class: 'shops-and-more-item shops-and-more-item-' + index }), item.Link || !item.Items ? null : (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Text, ref: function (el) { return (innerOverlayEl = el); }, item: item, level: _this_1.level + 1, class: 'drawer-level-2 drawer-level-2-' + index, backButtonText: _this_1.item.Text, backButtonId: _this_1.item.PhraseId, closeActiveDrawer: _this_1.closeActiveDrawer, setActiveDrawer: _this_1.setActiveDrawer }))));
             }))));
     };
     Object.defineProperty(DrawerShopsAndMore.prototype, "mainEl", {
-        get: function () { return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
+        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
         configurable: true
     });
     return DrawerShopsAndMore;
 }());
-StateTunnel.injectProps(DrawerShopsAndMore, ['menu']);
 DrawerShopsAndMore.style = drawerShopsAndMoreCss;
+var navStateStore = createStore({
+    activeDrawerContent: null,
+    parentDrawerContent: [],
+    accessibilityMarker: null,
+    backButtonText: null
+});
+navStateStore.onChange('activeDrawerContent', function (_) {
+    var slotUpdatedEvent = new CustomEvent(SLOT_UPDATED_EVENT);
+    var headerElement = document.querySelector('phn-header');
+    if (headerElement) {
+        var menuDrawer = headerElement.shadowRoot.querySelector('.drawer-trigger');
+        menuDrawer.dispatchEvent(slotUpdatedEvent);
+    }
+});
+var drawerShopsAndMoreCss$1 = ".drawer-shops-and-more.sc-phn-drawer-shops-and-more-2{padding-bottom:3.125rem}";
+var DrawerShopsAndMore$1 = /** @class */ (function () {
+    function DrawerShopsAndMore$1(hostRef) {
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.item = EMPTY_ITEM;
+    }
+    DrawerShopsAndMore$1.prototype.showDrawer = function (item, index) {
+        var phnDrawerCarSeriesModelOverview2 = (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more-2", { headline: item.Text, item: item, class: 'shops-and-more-drawer-level-2 drawer-level-2 drawer-level-2-' + index, slot: "content" }));
+        if (!item.Link && item.Items) {
+            var parent = navStateStore.get('activeDrawerContent');
+            var currentParent = navStateStore.get('parentDrawerContent');
+            navStateStore.set('activeDrawerContent', phnDrawerCarSeriesModelOverview2);
+            navStateStore.set('parentDrawerContent', __spreadArrays([parent], currentParent));
+            navStateStore.set('accessibilityMarker', ".shops-and-more-drawer-level-1 .drawer-shops-and-more-item-" + index);
+            navStateStore.set('backButtonText', this.item.Text);
+        }
+    };
+    DrawerShopsAndMore$1.prototype.render = function () {
+        var _this_1 = this;
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-shops-and-more" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.headline, class: "drawer-headline" }), this.item.Items &&
+            this.item.Items.map(function (item, index) {
+                return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: item, onClick: function () { return _this_1.showDrawer(item, index); }, class: 'drawer-shops-and-more-item drawer-shops-and-more-item-' + index })));
+            }))));
+    };
+    return DrawerShopsAndMore$1;
+}());
+DrawerShopsAndMore$1.style = drawerShopsAndMoreCss$1;
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 function unwrapExports(x) {
     return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
 }
-function createCommonjsModule(fn, module) {
-    return module = { exports: {} }, fn(module, module.exports), module.exports;
+function createCommonjsModule(fn, basedir, module) {
+    return module = {
+        path: basedir,
+        exports: {},
+        require: function (path, base) {
+            return commonjsRequire();
+        }
+    }, fn(module, module.exports), module.exports;
+}
+function commonjsRequire() {
+    throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
 }
 var picturefill = createCommonjsModule(function (module) {
     /*! picturefill - v3.0.2 - 2016-02-12
@@ -2665,172 +2711,6 @@ var debugLogRequest = function (id, data, env) {
 var errorLogRequest = function (id, data, env) {
     logRequest(env, 'error', id, data);
 };
-var rngBrowser = createCommonjsModule(function (module) {
-    // Unique ID creation requires a high quality random # generator.  In the
-    // browser this is a little complicated due to unknown quality of Math.random()
-    // and inconsistent support for the `crypto` API.  We do the best we can via
-    // feature-detection
-    // getRandomValues needs to be invoked in a context where "this" is a Crypto
-    // implementation. Also, find the complete implementation of crypto on IE11.
-    var getRandomValues = (typeof (crypto) != 'undefined' && crypto.getRandomValues && crypto.getRandomValues.bind(crypto)) ||
-        (typeof (msCrypto) != 'undefined' && typeof window.msCrypto.getRandomValues == 'function' && msCrypto.getRandomValues.bind(msCrypto));
-    if (getRandomValues) {
-        // WHATWG crypto RNG - http://wiki.whatwg.org/wiki/Crypto
-        var rnds8 = new Uint8Array(16); // eslint-disable-line no-undef
-        module.exports = function whatwgRNG() {
-            getRandomValues(rnds8);
-            return rnds8;
-        };
-    }
-    else {
-        // Math.random()-based (RNG)
-        //
-        // If all else fails, use Math.random().  It's fast, but is of unspecified
-        // quality.
-        var rnds = new Array(16);
-        module.exports = function mathRNG() {
-            for (var i = 0, r; i < 16; i++) {
-                if ((i & 0x03) === 0)
-                    r = Math.random() * 0x100000000;
-                rnds[i] = r >>> ((i & 0x03) << 3) & 0xff;
-            }
-            return rnds;
-        };
-    }
-});
-/**
- * Convert array of 16 byte values to UUID string format of the form:
- * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
- */
-var byteToHex = [];
-for (var i = 0; i < 256; ++i) {
-    byteToHex[i] = (i + 0x100).toString(16).substr(1);
-}
-function bytesToUuid(buf, offset) {
-    var i = offset || 0;
-    var bth = byteToHex;
-    // join used to fix memory issue caused by concatenation: https://bugs.chromium.org/p/v8/issues/detail?id=3175#c4
-    return ([
-        bth[buf[i++]], bth[buf[i++]],
-        bth[buf[i++]], bth[buf[i++]], '-',
-        bth[buf[i++]], bth[buf[i++]], '-',
-        bth[buf[i++]], bth[buf[i++]], '-',
-        bth[buf[i++]], bth[buf[i++]], '-',
-        bth[buf[i++]], bth[buf[i++]],
-        bth[buf[i++]], bth[buf[i++]],
-        bth[buf[i++]], bth[buf[i++]]
-    ]).join('');
-}
-var bytesToUuid_1 = bytesToUuid;
-// **`v1()` - Generate time-based UUID**
-//
-// Inspired by https://github.com/LiosK/UUID.js
-// and http://docs.python.org/library/uuid.html
-var _nodeId;
-var _clockseq;
-// Previous uuid creation time
-var _lastMSecs = 0;
-var _lastNSecs = 0;
-// See https://github.com/uuidjs/uuid for API details
-function v1(options, buf, offset) {
-    var i = buf && offset || 0;
-    var b = buf || [];
-    options = options || {};
-    var node = options.node || _nodeId;
-    var clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq;
-    // node and clockseq need to be initialized to random values if they're not
-    // specified.  We do this lazily to minimize issues related to insufficient
-    // system entropy.  See #189
-    if (node == null || clockseq == null) {
-        var seedBytes = rngBrowser();
-        if (node == null) {
-            // Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
-            node = _nodeId = [
-                seedBytes[0] | 0x01,
-                seedBytes[1], seedBytes[2], seedBytes[3], seedBytes[4], seedBytes[5]
-            ];
-        }
-        if (clockseq == null) {
-            // Per 4.2.2, randomize (14 bit) clockseq
-            clockseq = _clockseq = (seedBytes[6] << 8 | seedBytes[7]) & 0x3fff;
-        }
-    }
-    // UUID timestamps are 100 nano-second units since the Gregorian epoch,
-    // (1582-10-15 00:00).  JSNumbers aren't precise enough for this, so
-    // time is handled internally as 'msecs' (integer milliseconds) and 'nsecs'
-    // (100-nanoseconds offset from msecs) since unix epoch, 1970-01-01 00:00.
-    var msecs = options.msecs !== undefined ? options.msecs : new Date().getTime();
-    // Per 4.2.1.2, use count of uuid's generated during the current clock
-    // cycle to simulate higher resolution clock
-    var nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1;
-    // Time since last uuid creation (in msecs)
-    var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs) / 10000;
-    // Per 4.2.1.2, Bump clockseq on clock regression
-    if (dt < 0 && options.clockseq === undefined) {
-        clockseq = clockseq + 1 & 0x3fff;
-    }
-    // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
-    // time interval
-    if ((dt < 0 || msecs > _lastMSecs) && options.nsecs === undefined) {
-        nsecs = 0;
-    }
-    // Per 4.2.1.2 Throw error if too many uuids are requested
-    if (nsecs >= 10000) {
-        throw new Error('uuid.v1(): Can\'t create more than 10M uuids/sec');
-    }
-    _lastMSecs = msecs;
-    _lastNSecs = nsecs;
-    _clockseq = clockseq;
-    // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
-    msecs += 12219292800000;
-    // `time_low`
-    var tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
-    b[i++] = tl >>> 24 & 0xff;
-    b[i++] = tl >>> 16 & 0xff;
-    b[i++] = tl >>> 8 & 0xff;
-    b[i++] = tl & 0xff;
-    // `time_mid`
-    var tmh = (msecs / 0x100000000 * 10000) & 0xfffffff;
-    b[i++] = tmh >>> 8 & 0xff;
-    b[i++] = tmh & 0xff;
-    // `time_high_and_version`
-    b[i++] = tmh >>> 24 & 0xf | 0x10; // include version
-    b[i++] = tmh >>> 16 & 0xff;
-    // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
-    b[i++] = clockseq >>> 8 | 0x80;
-    // `clock_seq_low`
-    b[i++] = clockseq & 0xff;
-    // `node`
-    for (var n = 0; n < 6; ++n) {
-        b[i + n] = node[n];
-    }
-    return buf ? buf : bytesToUuid_1(b);
-}
-var v1_1 = v1;
-function v4(options, buf, offset) {
-    var i = buf && offset || 0;
-    if (typeof (options) == 'string') {
-        buf = options === 'binary' ? new Array(16) : null;
-        options = null;
-    }
-    options = options || {};
-    var rnds = options.random || (options.rng || rngBrowser)();
-    // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
-    rnds[6] = (rnds[6] & 0x0f) | 0x40;
-    rnds[8] = (rnds[8] & 0x3f) | 0x80;
-    // Copy bytes to buffer, if provided
-    if (buf) {
-        for (var ii = 0; ii < 16; ++ii) {
-            buf[i + ii] = rnds[ii];
-        }
-    }
-    return buf || bytesToUuid_1(rnds);
-}
-var v4_1 = v4;
-var uuid = v4_1;
-uuid.v1 = v1_1;
-uuid.v4 = v4_1;
-var uuid_1 = uuid;
 var DEFAULT_EMPTY_CONTENT = {
     seriesList: DEFAULT_SERIES_LIST,
     shops: DEFAULT_SHOPS,
@@ -2883,7 +2763,47 @@ var getContentForLocale = function (locale, content, env) {
         return content[DEFAULT_LOCALE];
     }
 };
-var deriveLoggedInStatusFromUserData = function (userData, defaultLoggedInStatus) {
+// Unique ID creation requires a high quality random # generator. In the browser we therefore
+// require the crypto API and do not support built-in fallback to lower quality random number
+// generators (like Math.random()).
+// getRandomValues needs to be invoked in a context where "this" is a Crypto implementation. Also,
+// find the complete implementation of crypto (msCrypto) on IE11.
+var getRandomValues = typeof crypto !== 'undefined' && crypto.getRandomValues && crypto.getRandomValues.bind(crypto) || typeof msCrypto !== 'undefined' && typeof msCrypto.getRandomValues === 'function' && msCrypto.getRandomValues.bind(msCrypto);
+var rnds8 = new Uint8Array(16);
+function rng() {
+    if (!getRandomValues) {
+        throw new Error('crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported');
+    }
+    return getRandomValues(rnds8);
+}
+/**
+ * Convert array of 16 byte values to UUID string format of the form:
+ * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+ */
+var byteToHex = [];
+for (var i = 0; i < 256; ++i) {
+    byteToHex.push((i + 0x100).toString(16).substr(1));
+}
+function bytesToUuid(buf, offset_) {
+    var offset = offset_ || 0; // Note: Be careful editing this code!  It's been tuned for performance
+    // and works in ways you may not expect. See https://github.com/uuidjs/uuid/pull/434
+    return (byteToHex[buf[offset + 0]] + byteToHex[buf[offset + 1]] + byteToHex[buf[offset + 2]] + byteToHex[buf[offset + 3]] + '-' + byteToHex[buf[offset + 4]] + byteToHex[buf[offset + 5]] + '-' + byteToHex[buf[offset + 6]] + byteToHex[buf[offset + 7]] + '-' + byteToHex[buf[offset + 8]] + byteToHex[buf[offset + 9]] + '-' + byteToHex[buf[offset + 10]] + byteToHex[buf[offset + 11]] + byteToHex[buf[offset + 12]] + byteToHex[buf[offset + 13]] + byteToHex[buf[offset + 14]] + byteToHex[buf[offset + 15]]).toLowerCase();
+}
+function v4(options, buf, offset) {
+    options = options || {};
+    var rnds = options.random || (options.rng || rng)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+    rnds[6] = rnds[6] & 0x0f | 0x40;
+    rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+    if (buf) {
+        offset = offset || 0;
+        for (var i = 0; i < 16; ++i) {
+            buf[offset + i] = rnds[i];
+        }
+        return buf;
+    }
+    return bytesToUuid(rnds);
+}
+var deriveLoggedInStatusFromUserData = function (userData) {
     var status;
     if (userData.firstName) {
         status = userData.firstName;
@@ -2912,9 +2832,9 @@ var deriveLoggedInStatusFromUserData = function (userData, defaultLoggedInStatus
             }
         }
     }
-    return status ? status : defaultLoggedInStatus;
+    return status ? status : LOGGED_IN_USER_NO_NAME_STATUS;
 };
-var getLoggedInStatus = function (accessToken, locale, defaultLoggedInStatus, env) { return __awaiter(void 0, void 0, void 0, function () {
+var getLoggedInStatus = function (accessToken, locale, env) { return __awaiter(void 0, void 0, void 0, function () {
     var userProfile, userLoggedInStatus, configuration, init, e_2, logData, userData;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -2925,7 +2845,7 @@ var getLoggedInStatus = function (accessToken, locale, defaultLoggedInStatus, en
                     method: 'GET',
                     headers: {
                         'Accept-Language': "" + locale.toHeaderString(),
-                        'x-trace-id': uuid_1(),
+                        'x-trace-id': v4(),
                         apikey: configuration.CLIENT_ID,
                         Authorization: "Bearer " + accessToken,
                         Accept: 'application/json'
@@ -2939,7 +2859,7 @@ var getLoggedInStatus = function (accessToken, locale, defaultLoggedInStatus, en
                 e_2 = _a.sent();
                 logData = "Exception occurred while fetching user info: " + JSON.stringify(e_2.message);
                 errorLogRequest('user_profile', logData, env);
-                userLoggedInStatus = defaultLoggedInStatus;
+                userLoggedInStatus = LOGGED_IN_USER_NO_NAME_STATUS;
                 return [3 /*break*/, 3];
             case 3:
                 if (!!userLoggedInStatus) return [3 /*break*/, 6];
@@ -2947,7 +2867,7 @@ var getLoggedInStatus = function (accessToken, locale, defaultLoggedInStatus, en
                 return [4 /*yield*/, userProfile.json()];
             case 4:
                 userData = _a.sent();
-                userLoggedInStatus = deriveLoggedInStatusFromUserData(userData, defaultLoggedInStatus);
+                userLoggedInStatus = deriveLoggedInStatusFromUserData(userData);
                 return [3 /*break*/, 6];
             case 5:
                 errorLogRequest('user_profile', "Error occurred: " + userProfile.status + " " + userProfile.statusText, env);
@@ -2957,6 +2877,136 @@ var getLoggedInStatus = function (accessToken, locale, defaultLoggedInStatus, en
         }
     });
 }); };
+var getUnreadMessagesCount = function (accessToken, env
+//currentUnreadMessagesCount = 0
+) { return __awaiter(void 0, void 0, void 0, function () {
+    var unreadMessagesCount, unreadMessagesCountResponse, configuration, init, unreadMessagesCountPayload, e_3, logData;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                unreadMessagesCount = 0;
+                _a.label = 1;
+            case 1:
+                _a.trys.push([1, 6, , 7]);
+                configuration = config(env);
+                init = {
+                    method: 'GET',
+                    headers: {
+                        'x-trace-id': v4(),
+                        apikey: configuration.CLIENT_ID,
+                        Authorization: "Bearer " + accessToken,
+                        Accept: 'application/json'
+                    }
+                };
+                return [4 /*yield*/, fetch(configuration.UNREAD_MESSAGES_COUNT_API_URL, init)];
+            case 2:
+                unreadMessagesCountResponse = _a.sent();
+                if (!(unreadMessagesCountResponse.status === 200)) return [3 /*break*/, 4];
+                return [4 /*yield*/, unreadMessagesCountResponse.json()];
+            case 3:
+                unreadMessagesCountPayload = _a.sent();
+                if (unreadMessagesCountPayload.data &&
+                    unreadMessagesCountPayload.data.unreadCount &&
+                    typeof unreadMessagesCountPayload.data.unreadCount === 'number') {
+                    unreadMessagesCount = unreadMessagesCountPayload.data.unreadCount;
+                }
+                return [3 /*break*/, 5];
+            case 4:
+                errorLogRequest('unread_messages_count', "Error occurred: " + unreadMessagesCountResponse.status + " " + unreadMessagesCountResponse.statusText, env);
+                _a.label = 5;
+            case 5: return [3 /*break*/, 7];
+            case 6:
+                e_3 = _a.sent();
+                logData = "Exception occurred while fetching unread message count: " + JSON.stringify(e_3.message);
+                errorLogRequest('unread_messages_count', logData, env);
+                return [3 /*break*/, 7];
+            case 7: return [2 /*return*/, unreadMessagesCount];
+        }
+    });
+}); };
+var updateLoggedInStatus = function (newToken, localeObject) { return __awaiter(void 0, void 0, void 0, function () {
+    var env, userLoggedInStatus;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                env = navContentStore.get('env');
+                if (navContentStore.get('loggedInState') !== LOADING_STATUS) {
+                    navContentStore.set('loggedInState', LOADING_STATUS);
+                }
+                return [4 /*yield*/, getLoggedInStatus(newToken, localeObject, env)];
+            case 1:
+                userLoggedInStatus = _a.sent();
+                if (!userLoggedInStatus) {
+                    navContentStore.set('loggedInState', LOGGED_OUT_USER_STATUS);
+                    return [2 /*return*/, undefined];
+                }
+                else {
+                    navContentStore.set('loggedInState', userLoggedInStatus);
+                    debugLogRequest('token_update', 'User data response captured successfully!', env);
+                    return [2 /*return*/, true];
+                }
+                return [2 /*return*/];
+        }
+    });
+}); };
+var updateUnreadMessagesCount = function (accessToken) { return __awaiter(void 0, void 0, void 0, function () {
+    var env, unreadMessagesCount;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                env = navContentStore.get('env');
+                return [4 /*yield*/, getUnreadMessagesCount(accessToken, env)];
+            case 1:
+                unreadMessagesCount = _a.sent();
+                navContentStore.set('unreadMessagesCount', unreadMessagesCount);
+                return [2 /*return*/];
+        }
+    });
+}); };
+var setScrollbarWidth = function () {
+    var scrollDiv = document.createElement('div');
+    scrollDiv.style.width = '100px';
+    scrollDiv.style.height = '100px';
+    scrollDiv.style.overflow = 'scroll';
+    scrollDiv.style.position = 'absolute';
+    scrollDiv.style.top = '-9999px';
+    document.body.appendChild(scrollDiv);
+    var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+    document.body.removeChild(scrollDiv);
+    return scrollbarWidth;
+};
+var BodyScrollLock = /** @class */ (function () {
+    function BodyScrollLock() {
+        var _this_1 = this;
+        this.activate = function () {
+            _this_1.recordCurrentBodyStyles();
+            _this_1.initBodyPaddingRight();
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+            document.body.style.width = '100%';
+            document.body.style.paddingRight = "" + (_this_1.initialBodyPaddingRightValue + _this_1.scrollbarWidth) + _this_1.initialBodyPaddingRightUnit;
+        };
+        this.deactivate = function () {
+            document.body.style.overflow = _this_1.initialBodyOverflow;
+            document.body.style.position = _this_1.initialBodyPosition;
+            document.body.style.width = _this_1.initialBodyWidth;
+            document.body.style.paddingRight = "" + _this_1.initialBodyPaddingRightValue + _this_1.initialBodyPaddingRightUnit;
+        };
+        this.recordCurrentBodyStyles = function () {
+            _this_1.initialBodyOverflow = document.body.style.overflow;
+            _this_1.initialBodyPosition = document.body.style.position;
+            _this_1.initialBodyWidth = document.body.style.width;
+        };
+        this.scrollbarWidth = setScrollbarWidth();
+    }
+    BodyScrollLock.prototype.initBodyPaddingRight = function () {
+        var body = document.body;
+        var paddingRight = window.getComputedStyle(body, null).getPropertyValue('padding-right');
+        this.initialBodyPaddingRightValue = parseFloat(paddingRight);
+        this.initialBodyPaddingRightUnit = paddingRight.split(this.initialBodyPaddingRightValue.toString())[1];
+    };
+    return BodyScrollLock;
+}());
 var errors = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -4354,7 +4404,7 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
                 authorizationHandler = new redirect_based_handler_1(new storage_2(window.sessionStorage), new NoHashQueryStringUtils(null, null, null), iFrameAuth.contentWindow.location);
                 tokenHandler = new token_request_handler_1(fetchRequestor);
                 getToken_1 = function (authorizationRequestResponse) { return __awaiter(void 0, void 0, void 0, function () {
-                    var extras, requestToken, tokenResponse, e_3;
+                    var extras, requestToken, tokenResponse, e_4;
                     return __generator(this, function (_a) {
                         switch (_a.label) {
                             case 0:
@@ -4377,8 +4427,8 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
                                 debugLogRequest('silent_auth', 'Token request completed successfully', env);
                                 return [2 /*return*/, tokenResponse];
                             case 3:
-                                e_3 = _a.sent();
-                                errorLogRequest('silent_auth', "Token request failed: " + JSON.stringify(e_3.message), env);
+                                e_4 = _a.sent();
+                                errorLogRequest('silent_auth', "Token request failed: " + JSON.stringify(e_4.message), env);
                                 errorHandler();
                                 return [3 /*break*/, 4];
                             case 4: return [2 /*return*/];
@@ -4394,7 +4444,7 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
                     extras: { prompt: 'none' }
                 });
                 recieveMessage = function (event) { return __awaiter(void 0, void 0, void 0, function () {
-                    var authorizationRequestResponse, tokenResponse, e_4;
+                    var authorizationRequestResponse, tokenResponse, e_5;
                     return __generator(this, function (_a) {
                         switch (_a.label) {
                             case 0:
@@ -4419,8 +4469,8 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
                                 }
                                 return [3 /*break*/, 5];
                             case 4:
-                                e_4 = _a.sent();
-                                errorLogRequest('silent_auth', "Something really bad happened: " + JSON.stringify(e_4.message), env);
+                                e_5 = _a.sent();
+                                errorLogRequest('silent_auth', "Something really bad happened: " + JSON.stringify(e_5.message), env);
                                 errorHandler();
                                 return [3 /*break*/, 5];
                             case 5: return [3 /*break*/, 7];
@@ -4469,68 +4519,110 @@ var GeneralLoadEvent = /** @class */ (function (_super_1) {
     };
     return GeneralLoadEvent;
 }(AnalyticsEvent));
-var headerCss = ".header-container{background:#fff;position:relative}.header{font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:400;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:3.8125rem}@media (min-width: 760px){.header{height:4.4375rem}}@media (min-width: 1300px){.header{height:7.3125rem;-ms-flex-direction:row;flex-direction:row}}@media (min-width: 1760px){.header{height:7.6875rem}}.header .crest-burger-btn-container{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.header .crest-burger-btn-container .crest{z-index:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}@media (min-width: 1300px){.header .crest-burger-btn-container .crest{z-index:400}}.header .menu-container{visibility:hidden;display:none}@media (min-width: 1300px){.header .menu-container{display:-ms-flexbox;display:flex;visibility:visible;-ms-flex-positive:1;flex-grow:1}}.header .menu-container .menu-desktop-level-1{-ms-flex:1;flex:1}.limit-stretch{width:calc(100vw - 7vw * 2);max-width:96rem;margin-left:auto;margin-right:auto;-webkit-box-sizing:content-box;box-sizing:content-box}@media (min-width: 1760px){.limit-stretch{width:calc(100vw - 10vw * 2)}}@media (min-width: 1000px){.limit-stretch{padding-left:calc(100vw - 100%)}}.header-border{height:1px;background-color:#c9cacb}";
+var headerCss = ".header-container{background:#fff;position:relative}.header{font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:400;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:3.8125rem}@media (min-width: 760px){.header{height:4.4375rem}}@media (min-width: 1300px){.header{height:7.3125rem;-ms-flex-direction:row;flex-direction:row}}@media (min-width: 1760px){.header{height:7.6875rem}}.header .crest-burger-btn-container{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.header .crest-burger-btn-container .crest{z-index:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}@media (min-width: 1300px){.header .crest-burger-btn-container .crest{z-index:400}}.header .burger-button:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.header .menu-container{visibility:hidden;display:none}@media (min-width: 1300px){.header .menu-container{display:-ms-flexbox;display:flex;visibility:visible;-ms-flex-positive:1;flex-grow:1}}.header .menu-container .menu-desktop-level-1{-ms-flex:1;flex:1}.limit-stretch{width:calc(100vw - 7vw * 2);max-width:96rem;margin-left:auto;margin-right:auto;-webkit-box-sizing:content-box;box-sizing:content-box}@media (min-width: 1760px){.limit-stretch{width:calc(100vw - 10vw * 2)}}@media (min-width: 1000px){.limit-stretch{padding-left:calc(100vw - 100%)}}.header-border{height:1px;background-color:#c9cacb}p-button.skip-content{display:none}@media (min-width: 1000px){p-button.skip-content{display:-ms-inline-flexbox;display:inline-flex;left:-999px;position:absolute;width:auto;height:auto;overflow:hidden;z-index:-999}}p-button.skip-content.focused{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;overflow:visible;z-index:999}.main-content{width:20px}.main-content:focus{outline-style:none}";
 var Header = /** @class */ (function () {
-    function class_2(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+    function Header(hostRef) {
+        var _this_1 = this;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.localeObject = new Locale(DEFAULT_LOCALE);
         this.locale = DEFAULT_LOCALE;
         this.env = DEFAULT_ENVIRONMENT;
-        this.accessTokenExpired = Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "accessTokenExpired", 7);
-        this.navigationDidLoad = Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "navigationDidLoad", 7);
-    }
-    class_2.prototype.updateLoggedInStatus = function (newToken) {
-        return __awaiter(this, void 0, void 0, function () {
-            var userLoggedInStatus;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        if (this.loggedInState !== LOADING_STATUS) {
-                            this.loggedInState = LOADING_STATUS;
-                        }
-                        return [4 /*yield*/, getLoggedInStatus(newToken, this.localeObject, LOGGED_IN_USER_NO_NAME_STATUS, this.env)];
-                    case 1:
-                        userLoggedInStatus = _a.sent();
-                        if (!userLoggedInStatus) {
-                            this.accessTokenState = undefined;
-                            this.accessTokenExpired.emit();
-                            this.loggedInState = LOGGED_OUT_USER_STATUS;
-                        }
-                        else {
-                            this.loggedInState = userLoggedInStatus;
-                            debugLogRequest('token_update', 'User data response captured successfully!', this.env);
-                        }
-                        return [2 /*return*/];
+        this.keyDownHandler = function (event) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
+                if (event.key === 'Enter') {
+                    _this_1.menuDrawerLevel1.show();
                 }
-            });
-        });
+            }
+        };
+        this.skipToMainContent = function (event) {
+            if (_this_1.skipContentEnabled) {
+                if (event.key === 'Enter') {
+                    var mainElement = _this_1.el.shadowRoot.querySelector('#main');
+                    mainElement.tabIndex = 0;
+                    mainElement.focus();
+                }
+            }
+        };
+        this.mainContentTab = function () {
+            if (_this_1.skipContentEnabled) {
+                var mainElement = _this_1.el.shadowRoot.querySelector('#main');
+                mainElement.tabIndex = -1;
+            }
+        };
+        this.addFocus = function () {
+            var skipContentElement = _this_1.el.shadowRoot.querySelector('p-button.skip-content');
+            skipContentElement.classList.add('focused');
+            var crestElement = _this_1.el.shadowRoot.querySelector('phn-crest');
+            skipContentElement.style.left = crestElement.getBoundingClientRect().right + 4 + "px";
+        };
+        this.removeFocus = function () {
+            var skipContentElement = _this_1.el.shadowRoot.querySelector('p-button.skip-content');
+            skipContentElement.classList.remove('focused');
+        };
+        this.accessTokenExpired = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "accessTokenExpired", 7);
+        this.navigationDidLoad = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "navigationDidLoad", 7);
+    }
+    Header.prototype.localeWatchHandler = function (newLocale) {
+        this.localeObject.setLocale(newLocale);
+        analyticsSetupStore.set('locale', new Locale(newLocale));
     };
-    class_2.prototype.setScrollbarWidth = function () {
-        var scrollDiv = document.createElement('div');
-        scrollDiv.style.width = '100px';
-        scrollDiv.style.height = '100px';
-        scrollDiv.style.overflow = 'scroll';
-        scrollDiv.style.position = 'absolute';
-        scrollDiv.style.top = '-9999px';
-        document.body.appendChild(scrollDiv);
-        this.scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-        document.body.removeChild(scrollDiv);
+    Header.prototype.newAccessTokenReceived = function (newAccessToken, _) {
+        if (newAccessToken !== REDACTED && newAccessToken !== this.accessTokenState) {
+            this.accessTokenState = newAccessToken;
+        }
+        this.el.setAttribute('access-token', REDACTED);
     };
-    class_2.prototype.initBodyPaddingRight = function () {
-        var body = document.getElementsByTagName('body')[0];
-        var paddingRight = window.getComputedStyle(body, null).getPropertyValue('padding-right');
-        this.initialBodyPaddingRightValue = parseFloat(paddingRight);
-        this.initialBodyPaddingRightUnit = paddingRight.split(this.initialBodyPaddingRightValue.toString())[1];
+    Header.prototype.accessTokenStateUpdated = function (newToken, oldToken) {
+        var _this_1 = this;
+        if (newToken) {
+            if (newToken !== oldToken) {
+                updateLoggedInStatus(newToken, this.localeObject).then(function (statusUpdated) {
+                    if (!statusUpdated) {
+                        _this_1.accessTokenState = undefined;
+                        _this_1.accessTokenExpired.emit();
+                    }
+                    else {
+                        if (isFeatureEnabled(FEATURE_UNREAD_MESSAGES_COUNT, navContentStore.get('env'))) {
+                            updateUnreadMessagesCount(newToken);
+                        }
+                    }
+                });
+            }
+        }
+        else {
+            navContentStore.set('loggedInState', LOGGED_OUT_USER_STATUS);
+        }
     };
-    class_2.prototype.componentWillLoad = function () {
+    Header.prototype.handleAccessTokenFetchedEvent = function (event) {
+        if (event.detail.accessToken) {
+            this.accessTokenState = event.detail.accessToken;
+        }
+        else {
+            navContentStore.set('loggedInState', LOGGED_OUT_USER_STATUS);
+        }
+    };
+    Header.prototype.handleAccessTokenFetchErrorEvent = function () {
+        navContentStore.set('loggedInState', LOGGED_OUT_USER_STATUS);
+    };
+    Header.prototype.handleMenuOverlayOpen = function () {
+        this.bodyScrollLock.activate();
+    };
+    Header.prototype.handleMenuOverlayClose = function () {
+        this.bodyScrollLock.deactivate();
+    };
+    Header.prototype.componentWillLoad = function () {
         return __awaiter(this, void 0, void 0, function () {
             var _a, contentForLocale;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         analyticsSetupStore.set('window', window);
-                        this.setScrollbarWidth();
+                        analyticsSetupStore.set('environment', this.env);
+                        navContentStore.set('env', this.env);
+                        this.bodyScrollLock = new BodyScrollLock();
                         this.localeWatchHandler(this.locale);
+                        this.skipContentEnabled = isFeatureEnabled(FEATURE_SKIPCONTENT, navContentStore.get('env'));
+                        this.drawerRestructureEnabled = isFeatureEnabled(FEATURE_DRAWER_RESTRUCTURE, navContentStore.get('env'));
                         _a = this;
                         return [4 /*yield*/, fetchContent(this.env)];
                     case 1:
@@ -4544,29 +4636,34 @@ var Header = /** @class */ (function () {
                         return [3 /*break*/, 5];
                     case 2:
                         if (!config(this.env).PORSCHE_COM_URL.includes(window.location.origin)) return [3 /*break*/, 4];
-                        this.loggedInState = LOADING_STATUS;
+                        navContentStore.set('loggedInState', LOADING_STATUS);
                         return [4 /*yield*/, emitAccessToken(this.el, this.env)()];
                     case 3:
                         _b.sent();
                         return [3 /*break*/, 5];
                     case 4:
-                        this.loggedInState = LOGGED_OUT_USER_STATUS;
+                        navContentStore.set('loggedInState', LOGGED_OUT_USER_STATUS);
                         _b.label = 5;
                     case 5:
-                        this.appData = Object.assign(Object.assign({}, contentForLocale), { env: this.env, loggedInState: this.loggedInState });
+                        navContentStore.set('seriesList', contentForLocale.seriesList);
+                        navContentStore.set('shops', contentForLocale.shops);
+                        navContentStore.set('more', contentForLocale.more);
+                        navContentStore.set('metafunctionalities', contentForLocale.metafunctionalities);
+                        navContentStore.set('menu', contentForLocale.menu);
                         return [2 /*return*/];
                 }
             });
         });
     };
-    class_2.prototype.componentDidLoad = function () {
+    Header.prototype.componentDidLoad = function () {
         return __awaiter(this, void 0, void 0, function () {
             var analyticsSetup, generalLoadEvent, pagData;
             return __generator(this, function (_a) {
                 analyticsSetup = {
                     applicationId: analyticsSetupStore.get('applicationId'),
                     locale: analyticsSetupStore.get('locale'),
-                    window: analyticsSetupStore.get('window')
+                    window: analyticsSetupStore.get('window'),
+                    environment: analyticsSetupStore.get('environment')
                 };
                 generalLoadEvent = new GeneralLoadEvent(analyticsSetup);
                 pagData = (window['pagData'] = window['pagData'] || []);
@@ -4578,66 +4675,29 @@ var Header = /** @class */ (function () {
             });
         });
     };
-    class_2.prototype.componentWillUpdate = function () {
+    Header.prototype.componentWillUpdate = function () {
         var contentForLocale = getContentForLocale(this.localeObject, this.content, this.env);
-        this.appData = Object.assign(Object.assign({}, contentForLocale), { env: this.env, loggedInState: this.loggedInState });
+        navContentStore.set('seriesList', contentForLocale.seriesList);
+        navContentStore.set('shops', contentForLocale.shops);
+        navContentStore.set('more', contentForLocale.more);
+        navContentStore.set('metafunctionalities', contentForLocale.metafunctionalities);
+        navContentStore.set('menu', contentForLocale.menu);
     };
-    class_2.prototype.localeWatchHandler = function (newLocale) {
-        this.localeObject.setLocale(newLocale);
-        analyticsSetupStore.set('locale', new Locale(newLocale));
+    Header.prototype.render = function () {
+        var _this_1 = this;
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header-container" }, this.skipContentEnabled && (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button", { variant: "primary", class: "skip-content", onfocus: this.addFocus, onKeyDown: this.skipToMainContent, onblur: this.removeFocus }, "Skip to main content")), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header limit-stretch" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "crest-burger-btn-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-crest", { class: "crest" }), this.drawerRestructureEnabled ? (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-layout", null)) : (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-burger-button", { tabindex: "0", class: "burger-button", onClick: function () { return _this_1.menuDrawerLevel1.show(); }, onKeyDown: this.keyDownHandler }))), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-desktop-level-1", { class: "menu-desktop-level-1" })), !this.drawerRestructureEnabled && (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-drawer-level-1", { ref: function (el) { return (_this_1.menuDrawerLevel1 = el); } }))), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header-border" }), this.env === 'preview' && Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-preview-badge", { versionString: "Header " + VERSION + " - PP content" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { id: "main", tabindex: "-1", class: "main-content", onBlur: this.mainContentTab })));
     };
-    class_2.prototype.newAccessTokenReceived = function (newAccessToken, _) {
-        if (newAccessToken !== REDACTED && newAccessToken !== this.accessTokenState) {
-            this.accessTokenState = newAccessToken;
-        }
-        this.el.setAttribute('access-token', REDACTED);
-    };
-    class_2.prototype.accessTokenStateUpdated = function (newToken, oldToken) {
-        if (newToken) {
-            if (newToken !== oldToken) {
-                this.updateLoggedInStatus(newToken);
-            }
-        }
-        else {
-            this.loggedInState = LOGGED_OUT_USER_STATUS;
-        }
-    };
-    class_2.prototype.handleAccessTokenFetchedEvent = function (event) {
-        if (event.detail.accessToken) {
-            this.accessTokenState = event.detail.accessToken;
-        }
-        else {
-            this.loggedInState = LOGGED_OUT_USER_STATUS;
-        }
-    };
-    class_2.prototype.handleAccessTokenFetchErrorEvent = function () {
-        this.loggedInState = LOGGED_OUT_USER_STATUS;
-    };
-    class_2.prototype.handleMenuOverlayOpen = function () {
-        this.initialBodyOverflow = document.body.style.overflow;
-        this.initBodyPaddingRight();
-        document.body.style.overflow = 'hidden';
-        document.body.style.paddingRight = "" + (this.initialBodyPaddingRightValue + this.scrollbarWidth) + this.initialBodyPaddingRightUnit;
-    };
-    class_2.prototype.handleMenuOverlayClose = function () {
-        document.body.style.overflow = this.initialBodyOverflow;
-        document.body.style.paddingRight = "" + this.initialBodyPaddingRightValue + this.initialBodyPaddingRightUnit;
-    };
-    class_2.prototype.render = function () {
-        var menuDrawerLevel1;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header-container" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header limit-stretch" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "crest-burger-btn-container" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-crest", { class: "crest" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-burger-button", { class: "burger-button", onClick: function () { return menuDrawerLevel1.show(); } })), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(StateTunnel.Provider, { state: this.appData }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-container" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-desktop-level-1", { class: "menu-desktop-level-1" })), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-drawer-level-1", { ref: function (el) { return (menuDrawerLevel1 = el); } }))), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header-border" }), this.env === 'preview' && Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-preview-badge", { versionString: "Header " + VERSION + " - PP content" })));
-    };
-    Object.defineProperty(class_2, "assetsDirs", {
+    Object.defineProperty(Header, "assetsDirs", {
         get: function () { return ["auth"]; },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
-    Object.defineProperty(class_2.prototype, "el", {
-        get: function () { return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
+    Object.defineProperty(Header.prototype, "el", {
+        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
         configurable: true
     });
-    Object.defineProperty(class_2, "watchers", {
+    Object.defineProperty(Header, "watchers", {
         get: function () {
             return {
                 "locale": ["localeWatchHandler"],
@@ -4645,34 +4705,35 @@ var Header = /** @class */ (function () {
                 "accessTokenState": ["accessTokenStateUpdated"]
             };
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
-    return class_2;
+    return Header;
 }());
 Header.style = headerCss;
 var headlineCss = ".headline.sc-phn-headline{font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:100;border-bottom:1px solid #7b7e80;padding:0;cursor:default}@media (min-width: 0) and (max-width: 759px){.headline.sc-phn-headline{margin-top:5.1875rem;font-size:2rem;line-height:2.5rem;padding-bottom:0.75rem;padding-left:0.625rem}}@media (min-width: 760px) and (max-width: 999px){.headline.sc-phn-headline{margin-top:6.625rem;font-size:3.75rem;line-height:4.25rem;padding-bottom:0.6875rem;padding-left:0.625rem}}@media (min-width: 1000px) and (max-width: 1299px){.headline.sc-phn-headline{margin-top:6.625rem;font-size:3rem;line-height:3.5rem;padding-bottom:0.6875rem;padding-left:0.625rem}}@media (min-width: 1300px){.headline.sc-phn-headline{font-weight:400;border-bottom:1px solid #4a4a4a;text-align:left;padding-left:0.625rem}}@media (min-width: 1300px) and (max-width: 1759px){.headline.sc-phn-headline{font-size:1.375rem;line-height:1.75rem;padding-bottom:0.6875rem;padding-right:0.625rem}}@media (min-width: 1760px){.headline.sc-phn-headline{font-size:1.5rem;line-height:2rem;padding-bottom:0.4375rem}}";
 var Headline = /** @class */ (function () {
     function Headline(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     Headline.prototype.render = function () {
-        return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "headline" }, this.text);
+        return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "headline" }, this.text);
     };
     return Headline;
 }());
 Headline.style = headlineCss;
-var listItemCss = ".list-item-link.sc-phn-list-item{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;border-bottom:1px solid #c9cacb;padding:0.875rem 0 0.875rem 0.625rem}.list-item-link.sc-phn-list-item:hover{color:#d5001c;cursor:pointer}@media (min-width: 760px) and (max-width: 999px){.list-item-link.sc-phn-list-item{font-size:1.125rem;padding-top:1.125rem;padding-bottom:1.125rem}}@media (min-width: 1300px){.list-item-link.sc-phn-list-item{border-bottom:0;padding-left:0;padding-bottom:0}}.list-item-link.sc-phn-list-item a.sc-phn-list-item{text-decoration:none;line-height:1.5rem;display:inline-block;width:100%}.list-item-button.sc-phn-list-item{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;border-bottom:1px solid #c9cacb;height:3.3125rem;padding-left:0.625rem;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}@media (min-width: 760px) and (max-width: 999px){.list-item-button.sc-phn-list-item{font-size:1.125rem;height:3.8125rem;padding-right:0.625rem}}@media (min-width: 1300px){.list-item-button.sc-phn-list-item{border-bottom:0;padding-left:0;padding-top:0.875rem}}.list-item-button.sc-phn-list-item .list-item-text.sc-phn-list-item{display:inline-block;line-height:24px}";
+var listItemCss = ".list-item-link.sc-phn-list-item{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;border-bottom:1px solid #c9cacb}.list-item-link.sc-phn-list-item:hover{color:#d5001c;cursor:pointer}@media (min-width: 760px) and (max-width: 999px){.list-item-link.sc-phn-list-item{font-size:1.125rem}}@media (min-width: 1300px){.list-item-link.sc-phn-list-item{border-bottom:0;padding-left:0}}.list-item-link.sc-phn-list-item a.sc-phn-list-item{text-decoration:none;line-height:1.5rem;display:inline-block;width:100%;padding:0.875rem 0 0.875rem 0.625rem}@media (min-width: 760px) and (max-width: 999px){.list-item-link.sc-phn-list-item a.sc-phn-list-item{padding-top:1.125rem;padding-bottom:1.125rem}}@media (min-width: 1300px){.list-item-link.sc-phn-list-item a.sc-phn-list-item{padding-bottom:0}}.list-item-button.sc-phn-list-item{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;border-bottom:1px solid #c9cacb;height:3.3125rem;padding-left:0.625rem;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}@media (min-width: 760px) and (max-width: 999px){.list-item-button.sc-phn-list-item{font-size:1.125rem;height:3.8125rem;padding-right:0.625rem}}@media (min-width: 1300px){.list-item-button.sc-phn-list-item{border-bottom:0;padding-left:0;padding-top:0.875rem}}.list-item-button.sc-phn-list-item .list-item-text.sc-phn-list-item{display:inline-block;line-height:24px}";
 var ListItem = /** @class */ (function () {
     function ListItem(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
         this.sendNavigationClickAnalyticsEvent = function (item) {
             var contentItem = { PhraseId: item.PhraseId, Text: item.Text, Link: item.Link };
             var analyticsSetup = {
                 applicationId: analyticsSetupStore.get('applicationId'),
                 locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window')
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
             };
             var navigationClick = new NavigationClickEvent(analyticsSetup, contentItem);
             var pagData = (window['pagData'] = window['pagData'] || []);
@@ -4681,100 +4742,101 @@ var ListItem = /** @class */ (function () {
     }
     ListItem.prototype.renderLinkItem = function (linkItem) {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: linkItem.Link, onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(linkItem); } }, linkItem.Text)));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: linkItem.Link, onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(linkItem); } }, linkItem.Text)));
     };
     ListItem.prototype.renderTextItem = function (textItem) {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "list-item-button", icon: "arrow-head-right", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(textItem); } }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "list-item-text" }, textItem.Text)));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "list-item-button", icon: "arrow-head-right", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(textItem); }, cancelTabIndex: false }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "list-item-text" }, textItem.Text)));
     };
     ListItem.prototype.render = function () {
-        return this.item.IsLinkItem ? this.renderLinkItem(this.item) : this.renderTextItem(this.item);
+        return this.item.Link ? this.renderLinkItem(this.item) : this.renderTextItem(this.item);
     };
     return ListItem;
 }());
 ListItem.style = listItemCss;
 var megaFlyOutOverlayCss = ".backdrop.sc-phn-mega-fly-out-overlay{position:fixed;z-index:200;left:0;right:0;background:rgba(0, 0, 0, 0.5);pointer-events:none;height:100vh;margin-top:1px}@media (min-width: 1300px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button.sc-phn-mega-fly-out-overlay{border-bottom:2px solid transparent}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button.sc-phn-mega-fly-out-overlay:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button-active.sc-phn-mega-fly-out-overlay{border-bottom:2px solid #d5001c}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button-active.sc-phn-mega-fly-out-overlay:hover{color:#d5001c}}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay{display:block;visibility:hidden;width:100%;position:absolute;left:0;z-index:300;max-height:0;overflow:hidden}@media (min-width: 1300px) and (max-width: 1759px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay{top:117px}}@media (min-width: 1760px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay{top:123px}}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-content.sc-phn-mega-fly-out-overlay{background-color:#fff;border-top:1px solid #c9cacb}@media (min-width: 1300px) and (max-width: 1759px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-content.sc-phn-mega-fly-out-overlay{padding-bottom:5rem}}@media (min-width: 1760px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-content.sc-phn-mega-fly-out-overlay{padding-bottom:6rem}}";
 var MegaFlyOutOverlay = /** @class */ (function () {
-    function class_3(hostRef) {
+    function MegaFlyOutOverlay(hostRef) {
         var _this_1 = this;
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.active = '';
-        this.env = DEFAULT_ENVIRONMENT;
-        // TODO: Add e2e test
-        /* istanbul ignore next */
         this.setBackdropOffset = function () {
-            var VIEWPORT_XL = 1920;
-            var HEADER_HEIGHT_FROM_L = 118;
-            var HEADER_HEIGHT_FROM_XL = 124;
-            var previousElement = document.body.querySelector('phn-header').previousElementSibling;
-            var headerHeight = document.body.clientWidth >= VIEWPORT_XL ? HEADER_HEIGHT_FROM_XL : HEADER_HEIGHT_FROM_L;
-            _this_1.backdropElement.style.top = _this_1.calculateBackdropOffset(window.scrollY, headerHeight, previousElement.clientHeight);
-        };
-        this.calculateBackdropOffset = function (windowScrollHeight, headerHeight, previousElementsHeight) {
-            var offsetFromTop = previousElementsHeight ? previousElementsHeight + headerHeight : headerHeight;
-            if (windowScrollHeight > offsetFromTop) {
-                return '0';
+            var offsetFromTop = document.body.querySelector('phn-header').getBoundingClientRect().bottom;
+            if (offsetFromTop <= 0) {
+                _this_1.backdropElement.style.top = '0';
             }
-            if (windowScrollHeight < offsetFromTop) {
-                return '';
+            else {
+                _this_1.backdropElement.style.top = '';
             }
         };
-        this.handlePressEnterKey = function (event) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
+        this.activateOverlay = function () {
+            _this_1.active = 'active';
+            window.addEventListener('scroll', _this_1.setBackdropOffset);
+        };
+        this.handleKeyDown = function (event) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
                 if (event.key === 'Enter') {
-                    _this_1.active = 'active';
-                    _this_1.containerElement.style.visibility = 'visible';
+                    _this_1.activateOverlay();
                     _this_1.keyboardShowOverlayHandler(_this_1.containerElement);
+                }
+                if (event.shiftKey && event.key === 'Tab') {
+                    _this_1.deactivateState();
+                    _this_1.keyboardHideOverlayHandler();
                 }
             }
         };
-        this.handleFocus = function () {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
+        this.handleKeyDownContainer = function (event) {
+            var focusable = _this_1.containerElement.querySelectorAll(FOCUSABLE_ELEMENTS_SELECTOR);
+            var isFirstOverlayElement = event.target === focusable[0];
+            if (event.shiftKey && event.key === 'Tab' && isFirstOverlayElement) {
+                _this_1.deactivateState();
+                _this_1.keyboardHideOverlayHandler();
+            }
+            var isLastOverlayElement = event.target === focusable[focusable.length - 1];
+            if (!event.shiftKey && event.key === 'Tab' && isLastOverlayElement) {
+                _this_1.deactivateState();
                 _this_1.keyboardHideOverlayHandler();
             }
         };
     }
-    class_3.prototype.showOverlay = function () {
+    MegaFlyOutOverlay.prototype.showOverlay = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                window.addEventListener('scroll', this.setBackdropOffset);
-                this.active = 'active';
-                this.containerElement.style.visibility = 'visible';
+                this.activateOverlay();
                 this.showOverlayHandler(this.containerElement);
                 return [2 /*return*/];
             });
         });
     };
-    class_3.prototype.deactivateState = function () {
+    MegaFlyOutOverlay.prototype.deactivateState = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
+                window.removeEventListener('scroll', this.setBackdropOffset);
                 this.active = '';
                 return [2 /*return*/];
             });
         });
     };
-    class_3.prototype.hideOverlay = function () {
+    MegaFlyOutOverlay.prototype.hideOverlay = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                this.active = '';
-                window.removeEventListener('scroll', this.setBackdropOffset);
+                this.deactivateState();
                 this.hideOverlayHandler(this.containerElement);
                 return [2 /*return*/];
             });
         });
     };
-    class_3.prototype.render = function () {
+    MegaFlyOutOverlay.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], { onKeyDown: this.handlePressEnterKey }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { tabindex: "0", onFocus: this.handleFocus, class: 'mega-fly-out-overlay-button mega-fly-out-overlay-button-' + this.active }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "button" })), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-container", ref: function (el) { return (_this_1.containerElement = el); } }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-content" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" }))), this.active && Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "backdrop", ref: function (el) { return (_this_1.backdropElement = el); } }))));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { tabindex: "0", class: 'mega-fly-out-overlay-button mega-fly-out-overlay-button-' + this.active, onKeyDown: this.handleKeyDown }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "button" })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-container", ref: function (el) { return (_this_1.containerElement = el); }, onKeyDown: this.handleKeyDownContainer }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-content" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" }))), this.active && Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "backdrop", ref: function (el) { return (_this_1.backdropElement = el); } }))));
     };
-    Object.defineProperty(class_3.prototype, "element", {
-        get: function () { return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
+    Object.defineProperty(MegaFlyOutOverlay.prototype, "element", {
+        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
         configurable: true
     });
-    return class_3;
+    return MegaFlyOutOverlay;
 }());
-StateTunnel.injectProps(MegaFlyOutOverlay, ['env']);
 MegaFlyOutOverlay.style = megaFlyOutOverlayCss;
 var HoverIntentService = /** @class */ (function () {
     function HoverIntentService() {
@@ -4907,7 +4969,7 @@ function _assertThisInitialized(self) { if (self === void 0) {
 } return self; }
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 /*!
- * GSAP 3.2.6
+ * GSAP 3.3.4
  * https://greensock.com
  *
  * @license Copyright 2008-2020, GreenSock. All rights reserved.
@@ -5021,19 +5083,12 @@ _round = function _round(value) {
     _lazyTweens.length = 0;
     for (i = 0; i < l; i++) {
         tween = a[i];
-        if (tween && tween._lazy) {
-            tween.render(tween._lazy[0], tween._lazy[1], true)._lazy = 0;
-        }
+        tween && tween._lazy && (tween.render(tween._lazy[0], tween._lazy[1], true)._lazy = 0);
     }
 }, _lazySafeRender = function _lazySafeRender(animation, time, suppressEvents, force) {
-    if (_lazyTweens.length) {
-        _lazyRender();
-    }
+    _lazyTweens.length && _lazyRender();
     animation.render(time, suppressEvents, force);
-    if (_lazyTweens.length) {
-        //in case rendering caused any tweens to lazy-init, we should render them because typically when someone calls seek() or time() or progress(), they expect an immediate render.
-        _lazyRender();
-    }
+    _lazyTweens.length && _lazyRender(); //in case rendering caused any tweens to lazy-init, we should render them because typically when someone calls seek() or time() or progress(), they expect an immediate render.
 }, _numericIfPossible = function _numericIfPossible(value) {
     var n = parseFloat(value);
     return (n || n === 0) && (value + "").match(_delimitedValueExp).length < 2 ? n : value;
@@ -5041,9 +5096,7 @@ _round = function _round(value) {
     return p;
 }, _setDefaults = function _setDefaults(obj, defaults) {
     for (var p in defaults) {
-        if (!(p in obj)) {
-            obj[p] = defaults[p];
-        }
+        p in obj || (obj[p] = defaults[p]);
     }
     return obj;
 }, _setKeyframeDefaults = function _setKeyframeDefaults(obj, defaults) {
@@ -5065,9 +5118,7 @@ _round = function _round(value) {
 }, _copyExcluding = function _copyExcluding(obj, excluding) {
     var copy = {}, p;
     for (p in obj) {
-        if (!(p in excluding)) {
-            copy[p] = obj[p];
-        }
+        p in excluding || (copy[p] = obj[p]);
     }
     return copy;
 }, _inheritDefaults = function _inheritDefaults(vars) {
@@ -5075,7 +5126,7 @@ _round = function _round(value) {
     if (_isNotFalse(vars.inherit)) {
         while (parent) {
             func(vars, parent.vars.defaults);
-            parent = parent.parent;
+            parent = parent.parent || parent._dp;
         }
     }
     return vars;
@@ -5207,6 +5258,8 @@ _postAddChecks = function _postAddChecks(timeline, child) {
     timeline._recent = child;
     skipChecks || _postAddChecks(timeline, child);
     return timeline;
+}, _scrollTrigger = function _scrollTrigger(animation, trigger) {
+    return (_globals.ScrollTrigger || _missingPlugin("scrollTrigger", trigger)) && _globals.ScrollTrigger.create(trigger, animation);
 }, _attemptInitTween = function _attemptInitTween(tween, totalTime, force, suppressEvents) {
     _initTween(tween, totalTime);
     if (!tween._initted) {
@@ -5218,29 +5271,29 @@ _postAddChecks = function _postAddChecks(timeline, child) {
         return 1;
     }
 }, _renderZeroDurationTween = function _renderZeroDurationTween(tween, totalTime, suppressEvents, force) {
-    var prevRatio = tween._zTime < 0 ? 0 : 1, ratio = totalTime < 0 ? 0 : 1, repeatDelay = tween._rDelay, tTime = 0, pt, iteration, prevIteration;
+    var prevRatio = tween.ratio, ratio = totalTime < 0 || !totalTime && prevRatio && !tween._start && tween._zTime > _tinyNum && !tween._dp._lock || tween._ts < 0 || tween._dp._ts < 0 ? 0 : 1, 
+    // check parent's _lock because when a timeline repeats/yoyos and does its artificial wrapping, we shouldn't force the ratio back to 0. Also, if the tween or its parent is reversed and the totalTime is 0, we should go to a ratio of 0.
+    repeatDelay = tween._rDelay, tTime = 0, pt, iteration, prevIteration;
     if (repeatDelay && tween._repeat) {
-        //in case there's a zero-duration tween that has a repeat with a repeatDelay
+        // in case there's a zero-duration tween that has a repeat with a repeatDelay
         tTime = _clamp(0, tween._tDur, totalTime);
         iteration = _animationCycle(tTime, repeatDelay);
         prevIteration = _animationCycle(tween._tTime, repeatDelay);
         if (iteration !== prevIteration) {
             prevRatio = 1 - ratio;
-            if (tween.vars.repeatRefresh && tween._initted) {
-                tween.invalidate();
-            }
+            tween.vars.repeatRefresh && tween._initted && tween.invalidate();
         }
     }
     if (!tween._initted && _attemptInitTween(tween, totalTime, force, suppressEvents)) {
-        //if we render the very beginning (time == 0) of a fromTo(), we must force the render (normal tweens wouldn't need to render at a time of 0 when the prevTime was also 0). This is also mandatory to make sure overwriting kicks in immediately.
+        // if we render the very beginning (time == 0) of a fromTo(), we must force the render (normal tweens wouldn't need to render at a time of 0 when the prevTime was also 0). This is also mandatory to make sure overwriting kicks in immediately.
         return;
     }
     if (ratio !== prevRatio || force || tween._zTime === _tinyNum || !totalTime && tween._zTime) {
-        tween._zTime = totalTime || (suppressEvents ? _tinyNum : 0); //when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration tween, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect.
+        prevIteration = tween._zTime;
+        tween._zTime = totalTime || (suppressEvents ? _tinyNum : 0); // when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration tween, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect.
+        suppressEvents || (suppressEvents = totalTime && !prevIteration); // if it was rendered previously at exactly 0 (_zTime) and now the playhead is moving away, DON'T fire callbacks otherwise they'll seem like duplicates.
         tween.ratio = ratio;
-        if (tween._from) {
-            ratio = 1 - ratio;
-        }
+        tween._from && (ratio = 1 - ratio);
         tween._time = 0;
         tween._tTime = tTime;
         suppressEvents || _callback(tween, "onStart");
@@ -5249,21 +5302,19 @@ _postAddChecks = function _postAddChecks(timeline, child) {
             pt.r(ratio, pt.d);
             pt = pt._next;
         }
-        if (!ratio && tween._startAt && !tween._onUpdate && tween._start) {
-            //if the tween is positioned at the VERY beginning (_start 0) of its parent timeline, it's illegal for the playhead to go back further, so we should not render the recorded startAt values.
-            tween._startAt.render(totalTime, true, force);
-        }
-        tween._onUpdate && (suppressEvents || _callback(tween, "onUpdate"));
-        if (tTime && tween._repeat && !suppressEvents && tween.parent) {
-            _callback(tween, "onRepeat");
-        }
+        tween._startAt && totalTime < 0 && tween._startAt.render(totalTime, true, true);
+        tween._onUpdate && !suppressEvents && _callback(tween, "onUpdate");
+        tTime && tween._repeat && !suppressEvents && tween.parent && _callback(tween, "onRepeat");
         if ((totalTime >= tween._tDur || totalTime < 0) && tween.ratio === ratio) {
-            tween.ratio && _removeFromParent(tween, 1);
+            ratio && _removeFromParent(tween, 1);
             if (!suppressEvents) {
-                _callback(tween, tween.ratio ? "onComplete" : "onReverseComplete", true);
+                _callback(tween, ratio ? "onComplete" : "onReverseComplete", true);
                 tween._prom && tween._prom();
             }
         }
+    }
+    else if (!tween._zTime) {
+        tween._zTime = totalTime;
     }
 }, _findNextPauseTween = function _findNextPauseTween(animation, prevTime, time) {
     var child;
@@ -5288,7 +5339,7 @@ _postAddChecks = function _postAddChecks(timeline, child) {
 }, _setDuration = function _setDuration(animation, duration, skipUncache) {
     var repeat = animation._repeat, dur = _round(duration) || 0;
     animation._dur = dur;
-    animation._tDur = !repeat ? dur : repeat < 0 ? 1e12 : _round(dur * (repeat + 1) + animation._rDelay * repeat);
+    animation._tDur = !repeat ? dur : repeat < 0 ? 1e10 : _round(dur * (repeat + 1) + animation._rDelay * repeat);
     if (animation._time > dur) {
         animation._time = dur;
         animation._tTime = Math.min(animation._tTime, animation._tDur);
@@ -5313,9 +5364,7 @@ _postAddChecks = function _postAddChecks(timeline, child) {
         }
         i = position.indexOf("=");
         if (i < 0) {
-            if (!(position in labels)) {
-                labels[position] = clippedDuration;
-            }
+            position in labels || (labels[position] = clippedDuration);
             return labels[position];
         }
         offset = +(position.charAt(i - 1) + position.substr(i + 1));
@@ -5351,7 +5400,7 @@ toArray = function toArray(value, leaveStrings) {
         return .5 - Math.random();
     });
 }, 
-// alternative that's a bit faster and more reliably diverse but bigger:   for (let j, v, i = a.length; i; j = ~~(Math.random() * i), v = a[--i], a[i] = a[j], a[j] = v); return a;
+// alternative that's a bit faster and more reliably diverse but bigger:   for (let j, v, i = a.length; i; j = Math.floor(Math.random() * i), v = a[--i], a[i] = a[j], a[j] = v); return a;
 //for distributing values across an array. Can accept a number, a function or (most commonly) a function which can contain the following properties: {base, amount, from, ease, grid, axis, length, each}. Returns a function that expects the following parameters: index, target, array. Recognizes the following
 distribute = function distribute(v) {
     if (_isFunction(v)) {
@@ -5391,12 +5440,8 @@ distribute = function distribute(v) {
                 x = j % wrapAt - originX;
                 y = originY - (j / wrapAt | 0);
                 distances[j] = d = !axis ? _sqrt(x * x + y * y) : Math.abs(axis === "y" ? y : x);
-                if (d > max) {
-                    max = d;
-                }
-                if (d < min) {
-                    min = d;
-                }
+                d > max && (max = d);
+                d < min && (min = d);
             }
             from === "random" && shuffle(distances);
             distances.max = max - min;
@@ -5413,7 +5458,7 @@ distribute = function distribute(v) {
     //pass in 0.1 get a function that'll round to the nearest tenth, or 5 to round to the closest 5, or 0.001 to the closest 1000th, etc.
     var p = v < 1 ? Math.pow(10, (v + "").length - 2) : 1; //to avoid floating point math errors (like 24 * 0.1 == 2.4000000000000004), we chop off at a specific number of decimal places (much faster than toFixed()
     return function (raw) {
-        return ~~(Math.round(parseFloat(raw) / v) * v * p) / p + (_isNumber(raw) ? 0 : getUnit(raw));
+        return Math.floor(Math.round(parseFloat(raw) / v) * v * p) / p + (_isNumber(raw) ? 0 : getUnit(raw));
     };
 }, snap = function snap(snapTo, value) {
     var isArray = _isArray(snapTo), radius, is2D;
@@ -5453,7 +5498,7 @@ distribute = function distribute(v) {
     });
 }, random = function random(min, max, roundingIncrement, returnFunction) {
     return _conditionalReturn(_isArray(min) ? !max : roundingIncrement === true ? !!(roundingIncrement = 0) : !returnFunction, function () {
-        return _isArray(min) ? min[~~(Math.random() * min.length)] : (roundingIncrement = roundingIncrement || 1e-5) && (returnFunction = roundingIncrement < 1 ? Math.pow(10, (roundingIncrement + "").length - 2) : 1) && ~~(Math.round((min + Math.random() * (max - min)) / roundingIncrement) * roundingIncrement * returnFunction) / returnFunction;
+        return _isArray(min) ? min[~~(Math.random() * min.length)] : (roundingIncrement = roundingIncrement || 1e-5) && (returnFunction = roundingIncrement < 1 ? Math.pow(10, (roundingIncrement + "").length - 2) : 1) && Math.floor(Math.round((min + Math.random() * (max - min)) / roundingIncrement) * roundingIncrement * returnFunction) / returnFunction;
     });
 }, pipe = function pipe() {
     for (var _len = arguments.length, functions = new Array(_len), _key = 0; _key < _len; _key++) {
@@ -5483,7 +5528,7 @@ distribute = function distribute(v) {
 }, wrapYoyo = function wrapYoyo(min, max, value) {
     var range = max - min, total = range * 2;
     return _isArray(min) ? _wrapArray(min, wrapYoyo(0, min.length - 1), max) : _conditionalReturn(value, function (value) {
-        value = (total + (value - min) % total) % total;
+        value = (total + (value - min) % total) % total || 0;
         return min + (value > range ? total - value : value);
     });
 }, _replaceRandom = function _replaceRandom(value) {
@@ -5500,7 +5545,7 @@ distribute = function distribute(v) {
 }, mapRange = function mapRange(inMin, inMax, outMin, outMax, value) {
     var inRange = inMax - inMin, outRange = outMax - outMin;
     return _conditionalReturn(value, function (value) {
-        return outMin + (value - inMin) / inRange * outRange;
+        return outMin + ((value - inMin) / inRange * outRange || 0);
     });
 }, interpolate = function interpolate(start, end, progress, mutate) {
     var func = isNaN(start + end) ? 0 : function (p) {
@@ -5782,15 +5827,10 @@ _tickerActive, _ticker = function () {
             _nextTime += overlap + (overlap >= _gap ? 0.004 : _gap - overlap);
             dispatch = 1;
         }
-        if (!manual) {
-            //make sure the request is made before we dispatch the "tick" event so that timing is maintained. Otherwise, if processing the "tick" requires a bunch of time (like 15ms) and we're using a setTimeout() that's based on 16.7ms, it'd technically take 31.7ms between frames otherwise.
-            _id = _req(_tick);
-        }
-        if (dispatch) {
-            _listeners.forEach(function (l) {
-                return l(_self.time, elapsed, _self.frame, v);
-            });
-        }
+        manual || (_id = _req(_tick)); //make sure the request is made before we dispatch the "tick" event so that timing is maintained. Otherwise, if processing the "tick" requires a bunch of time (like 15ms) and we're using a setTimeout() that's based on 16.7ms, it'd technically take 31.7ms between frames otherwise.
+        dispatch && _listeners.forEach(function (l) {
+            return l(_self.time, elapsed, _self.frame, v);
+        });
     };
     _self = {
         time: 0,
@@ -5869,26 +5909,27 @@ _easeMap = {}, _customEaseExp = /^[\d.\-M][\d.\-,\s]/, _quotesExp = /["']/g, _pa
         return 1 - ease(1 - p);
     };
 }, 
-// potential future feature - allow yoyoEase to be set in children and have those affected when the parent/ancestor timeline yoyos. Not sure it's worth the kb.
-// _propagateYoyoEase = (timeline, isYoyo) => {
-// 	let child = timeline._first, ease;
-// 	while (child) {
-// 		if (child instanceof Timeline) {
-// 			_propagateYoyoEase(child, isYoyo);
-// 		} else if (child.vars.yoyoEase && (!child._yoyo || !child._repeat) && child._yoyo !== isYoyo) {
-// 			if (child.timeline) {
-// 				_propagateYoyoEase(child.timeline, isYoyo);
-// 			} else {
-// 				ease = child._ease;
-// 				child._ease = child._yEase;
-// 				child._yEase = ease;
-// 				child._yoyo = isYoyo;
-// 			}
-// 		}
-// 		child = child._next;
-// 	}
-// },
-_parseEase = function _parseEase(ease, defaultEase) {
+// allow yoyoEase to be set in children and have those affected when the parent/ancestor timeline yoyos.
+_propagateYoyoEase = function _propagateYoyoEase(timeline, isYoyo) {
+    var child = timeline._first, ease;
+    while (child) {
+        if (child instanceof Timeline) {
+            _propagateYoyoEase(child, isYoyo);
+        }
+        else if (child.vars.yoyoEase && (!child._yoyo || !child._repeat) && child._yoyo !== isYoyo) {
+            if (child.timeline) {
+                _propagateYoyoEase(child.timeline, isYoyo);
+            }
+            else {
+                ease = child._ease;
+                child._ease = child._yEase;
+                child._yEase = ease;
+                child._yoyo = isYoyo;
+            }
+        }
+        child = child._next;
+    }
+}, _parseEase = function _parseEase(ease, defaultEase) {
     return !ease ? defaultEase : (_isFunction(ease) ? ease : _easeMap[ease] || _configEaseFromString(ease)) || defaultEase;
 }, _insertEase = function _insertEase(names, easeIn, easeOut, easeInOut) {
     if (easeOut === void 0) {
@@ -5986,7 +6027,7 @@ _insertEase("Circ", function (p) {
     return -(_sqrt(1 - p * p) - 1);
 });
 _insertEase("Sine", function (p) {
-    return -_cos(p * _HALF_PI) + 1;
+    return p === 1 ? 1 : -_cos(p * _HALF_PI) + 1;
 });
 _insertEase("Back", _configBack("in"), _configBack("out"), _configBack());
 _easeMap.SteppedEase = _easeMap.steps = _globals.SteppedEase = {
@@ -6022,9 +6063,7 @@ var GSCache = function GSCache(target, harness) {
  * ANIMATION
  * --------------------------------------------------------------------------------------
  */
-var Animation = 
-/*#__PURE__*/
-function () {
+var Animation = /*#__PURE__*/ function () {
     function Animation(vars, time) {
         var parent = vars.parent || _globalTimeline;
         this.vars = vars;
@@ -6072,22 +6111,20 @@ function () {
             // }
             this._start = _round(parent._time - (this._ts > 0 ? _totalTime / this._ts : ((this._dirty ? this.totalDuration() : this._tDur) - _totalTime) / -this._ts));
             _setEnd(this);
-            if (!parent._dirty) {
-                //for performance improvement. If the parent's cache is already dirty, it already took care of marking the ancestors as dirty too, so skip the function call here.
-                _uncache(parent);
-            } //in case any of the ancestor timelines had completed but should now be enabled, we should reset their totalTime() which will also ensure that they're lined up properly and enabled. Skip for animations that are on the root (wasteful). Example: a TimelineLite.exportRoot() is performed when there's a paused tween on the root, the export will not complete until that tween is unpaused, but imagine a child gets restarted later, after all [unpaused] tweens have completed. The start of that child would get pushed out, but one of the ancestors may have completed.
+            parent._dirty || _uncache(parent); //for performance improvement. If the parent's cache is already dirty, it already took care of marking the ancestors as dirty too, so skip the function call here.
+            //in case any of the ancestor timelines had completed but should now be enabled, we should reset their totalTime() which will also ensure that they're lined up properly and enabled. Skip for animations that are on the root (wasteful). Example: a TimelineLite.exportRoot() is performed when there's a paused tween on the root, the export will not complete until that tween is unpaused, but imagine a child gets restarted later, after all [unpaused] tweens have completed. The start of that child would get pushed out, but one of the ancestors may have completed.
             while (parent.parent) {
                 if (parent.parent._time !== parent._start + (parent._ts >= 0 ? parent._tTime / parent._ts : (parent.totalDuration() - parent._tTime) / -parent._ts)) {
                     parent.totalTime(parent._tTime, true);
                 }
                 parent = parent.parent;
             }
-            if (!this.parent && this._dp.autoRemoveChildren) {
+            if (!this.parent && this._dp.autoRemoveChildren && (this._ts > 0 && _totalTime < this._tDur || this._ts < 0 && _totalTime > 0 || !this._tDur && !_totalTime)) {
                 //if the animation doesn't have a parent, put it back into its last parent (recorded as _dp for exactly cases like this). Limit to parents with autoRemoveChildren (like globalTimeline) so that if the user manually removes an animation from a timeline and then alters its playhead, it doesn't get added back in.
                 _addToTimeline(this._dp, this, this._start - this._delay);
             }
         }
-        if (this._tTime !== _totalTime || !this._dur && !suppressEvents || this._initted && Math.abs(this._zTime) === _tinyNum) {
+        if (this._tTime !== _totalTime || !this._dur && !suppressEvents || this._initted && Math.abs(this._zTime) === _tinyNum || !_totalTime && !this._initted) {
             this._ts || (this._pTime = _totalTime); // otherwise, if an animation is paused, then the playhead is moved back to zero, then resumed, it'd revert back to the original time at the pause
             _lazySafeRender(this, _totalTime, suppressEvents);
         }
@@ -6105,7 +6142,8 @@ function () {
     _proto.iteration = function iteration(value, suppressEvents) {
         var cycleDuration = this.duration() + this._rDelay;
         return arguments.length ? this.totalTime(this._time + (value - 1) * cycleDuration, suppressEvents) : this._repeat ? _animationCycle(this._tTime, cycleDuration) + 1 : 1;
-    };
+    } // potential future addition:
+    ;
     _proto.timeScale = function timeScale(value) {
         if (!arguments.length) {
             return this._rts === -_tinyNum ? 0 : this._rts; // recorded timeScale. Special case: if someone calls reverse() on an animation with timeScale of 0, we assign it -_tinyNum to remember it's reversed.
@@ -6287,9 +6325,7 @@ _setDefaults(Animation.prototype, {
  * TIMELINE
  * -------------------------------------------------
  */
-var Timeline = 
-/*#__PURE__*/
-function (_Animation) {
+var Timeline = /*#__PURE__*/ function (_Animation) {
     _inheritsLoose(Timeline, _Animation);
     function Timeline(vars, time) {
         var _this;
@@ -6302,6 +6338,7 @@ function (_Animation) {
         _this.autoRemoveChildren = !!vars.autoRemoveChildren;
         _this._sort = _isNotFalse(vars.sortChildren);
         _this.parent && _postAddChecks(_this.parent, _assertThisInitialized(_this));
+        vars.scrollTrigger && _scrollTrigger(_assertThisInitialized(_this), vars.scrollTrigger);
         return _this;
     }
     var _proto2 = Timeline.prototype;
@@ -6361,13 +6398,8 @@ function (_Animation) {
             timeScale = this._ts;
             prevPaused = !timeScale;
             if (crossingStart) {
-                if (!dur) {
-                    prevTime = this._zTime;
-                }
-                if (totalTime || !suppressEvents) {
-                    //when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration timeline, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect.
-                    this._zTime = totalTime;
-                }
+                dur || (prevTime = this._zTime); //when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration timeline, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect.
+                (totalTime || !suppressEvents) && (this._zTime = totalTime);
             }
             if (this._repeat) {
                 //adjust the time for repeats and yoyos
@@ -6383,6 +6415,7 @@ function (_Animation) {
                     iteration--;
                 }
                 prevIteration = _animationCycle(this._tTime, cycleDuration);
+                !prevTime && this._tTime && prevIteration !== iteration && (prevIteration = iteration); // edge case - if someone does addPause() at the very beginning of a repeating timeline, that pause is technically at the same spot as the end which causes this._time to get set to 0 when the totalTime would normally place the playhead at the end. See https://greensock.com/forums/topic/23823-closing-nav-animation-not-working-on-ie-and-iphone-6-maybe-other-older-browser/?tab=comments#comment-113005
                 if (yoyo && iteration & 1) {
                     time = dur - time;
                     isYoyo = 1;
@@ -6402,7 +6435,7 @@ function (_Animation) {
                     }
                     prevTime = rewinding ? 0 : dur;
                     this._lock = 1;
-                    this.render(prevTime, suppressEvents, !dur)._lock = 0;
+                    this.render(prevTime || (isYoyo ? 0 : _round(iteration * cycleDuration)), suppressEvents, !dur)._lock = 0;
                     if (!suppressEvents && this.parent) {
                         _callback(this, "onRepeat");
                     }
@@ -6420,7 +6453,7 @@ function (_Animation) {
                     if (!this._ts && !prevPaused) {
                         return this;
                     } //in order for yoyoEase to work properly when there's a stagger, we must swap out the ease in each sub-tween.
-                    //_propagateYoyoEase(this, isYoyo);
+                    _propagateYoyoEase(this, isYoyo);
                 }
             }
             if (this._hasPause && !this._forcing && this._lock < 2) {
@@ -6491,16 +6524,14 @@ function (_Animation) {
                     return this.render(totalTime, suppressEvents, force);
                 }
             }
-            if (this._onUpdate && !suppressEvents) {
-                _callback(this, "onUpdate", true);
-            }
-            if (tTime === tDur && tDur >= this.totalDuration() || !tTime && this._ts < 0)
+            this._onUpdate && !suppressEvents && _callback(this, "onUpdate", true);
+            if (tTime === tDur && tDur >= this.totalDuration() || !tTime && prevTime)
                 if (prevStart === this._start || Math.abs(timeScale) !== Math.abs(this._ts))
                     if (!this._lock) {
-                        (totalTime || !dur) && (totalTime && this._ts > 0 || !tTime && this._ts < 0) && _removeFromParent(this, 1); // don't remove if the timeline is reversed and the playhead isn't at 0, otherwise tl.progress(1).reverse() won't work. Only remove if the playhead is at the end and timeScale is positive, or if the playhead is at 0 and the timeScale is negative.
-                        if (!suppressEvents && !(totalTime < 0 && !prevTime)) {
+                        (totalTime || !dur) && (tTime === tDur && this._ts > 0 || !tTime && this._ts < 0) && _removeFromParent(this, 1); // don't remove if the timeline is reversed and the playhead isn't at 0, otherwise tl.progress(1).reverse() won't work. Only remove if the playhead is at the end and timeScale is positive, or if the playhead is at 0 and the timeScale is negative.
+                        if (!suppressEvents && !(totalTime < 0 && !prevTime) && (tTime || prevTime)) {
                             _callback(this, tTime === tDur ? "onComplete" : "onReverseComplete", true);
-                            this._prom && this._prom();
+                            this._prom && !(tTime < tDur && this.timeScale() > 0) && this._prom();
                         }
                     }
         }
@@ -6547,17 +6578,11 @@ function (_Animation) {
         while (child) {
             if (child._start >= ignoreBeforeTime) {
                 if (child instanceof Tween) {
-                    if (tweens) {
-                        a.push(child);
-                    }
+                    tweens && a.push(child);
                 }
                 else {
-                    if (timelines) {
-                        a.push(child);
-                    }
-                    if (nested) {
-                        a.push.apply(a, child.getChildren(true, tweens, timelines));
-                    }
+                    timelines && a.push(child);
+                    nested && a.push.apply(a, child.getChildren(true, tweens, timelines));
                 }
             }
             child = child._next;
@@ -6654,13 +6679,8 @@ function (_Animation) {
             onStart: function onStart() {
                 tl.pause();
                 var duration = vars.duration || Math.abs((endTime - tl._time) / tl.timeScale());
-                if (tween._dur !== duration) {
-                    _setDuration(tween, duration).render(tween._time, true, true);
-                }
-                if (_onStart) {
-                    //in case the user had an onStart in the vars - we don't want to overwrite it.
-                    _onStart.apply(tween, onStartParams || []);
-                }
+                tween._dur !== duration && _setDuration(tween, duration).render(tween._time, true, true);
+                _onStart && _onStart.apply(tween, onStartParams || []); //in case the user had an onStart in the vars - we don't want to overwrite it.
             }
         }));
         return tween;
@@ -6729,7 +6749,7 @@ function (_Animation) {
             this.remove(child);
             child = next;
         }
-        this._time = this._tTime = 0;
+        this._time = this._tTime = this._pTime = 0;
         if (includeLabels) {
             this.labels = {};
         }
@@ -6744,9 +6764,7 @@ function (_Animation) {
             parent = self.parent;
             while (child) {
                 prev = child._prev; //record it here in case the tween changes position in the sequence...
-                if (child._dirty) {
-                    child.totalDuration(); //could change the tween._startTime, so make sure the animation's cache is clean before analyzing it.
-                }
+                child._dirty && child.totalDuration(); //could change the tween._startTime, so make sure the animation's cache is clean before analyzing it.
                 start = child._start;
                 if (start > prevStart && self._sort && child._ts && !self._lock) {
                     //in case one of the tweens shifted out of order, it needs to be re-inserted into the correct position in the sequence
@@ -6764,7 +6782,7 @@ function (_Animation) {
                         self._time -= start;
                         self._tTime -= start;
                     }
-                    self.shiftChildren(-start, false, -1e20);
+                    self.shiftChildren(-start, false, -1e999);
                     prevStart = 0;
                 }
                 end = _setEnd(child);
@@ -6773,7 +6791,7 @@ function (_Animation) {
                 }
                 child = prev;
             }
-            _setDuration(self, self === _globalTimeline && self._time > max ? self._time : Math.min(_bigNum, max), 1);
+            _setDuration(self, self === _globalTimeline && self._time > max ? self._time : max, 1);
             self._dirty = 0;
         }
         return self._tDur;
@@ -6791,9 +6809,7 @@ function (_Animation) {
                     while (child && !child._ts) {
                         child = child._next;
                     }
-                    if (!child) {
-                        _ticker.sleep();
-                    }
+                    child || _ticker.sleep();
                 }
         }
     };
@@ -6851,9 +6867,7 @@ var _addComplexStringPropTween = function _addComplexStringPropTween(target, pro
     this._pt = pt; //start the linked list with this new PropTween. Remember, we call _addComplexStringPropTween.call(tweenInstance...) to ensure that it's scoped properly. We may call it from within a plugin too, thus "this" would refer to the plugin.
     return pt;
 }, _addPropTween = function _addPropTween(target, prop, start, end, index, targets, modifier, stringFilter, funcParam) {
-    if (_isFunction(end)) {
-        end = end(index || 0, target, targets);
-    }
+    _isFunction(end) && (end = end(index || 0, target, targets));
     var currentValue = target[prop], parsedStart = start !== "get" ? start : !_isFunction(currentValue) ? currentValue : funcParam ? target[prop.indexOf("set") || !_isFunction(target["get" + prop.substr(3)]) ? prop : "get" + prop.substr(3)](funcParam) : target[prop](), setter = !_isFunction(currentValue) ? _setterPlain : funcParam ? _setterFuncWithParam : _setterFunc, pt;
     if (_isString(end)) {
         if (~end.indexOf("random(")) {
@@ -6866,12 +6880,8 @@ var _addComplexStringPropTween = function _addComplexStringPropTween(target, pro
     if (parsedStart !== end) {
         if (!isNaN(parsedStart + end)) {
             pt = new PropTween(this._pt, target, prop, +parsedStart || 0, end - (parsedStart || 0), typeof currentValue === "boolean" ? _renderBoolean : _renderPlain, 0, setter);
-            if (funcParam) {
-                pt.fp = funcParam;
-            }
-            if (modifier) {
-                pt.modifier(modifier, this, target);
-            }
+            funcParam && (pt.fp = funcParam);
+            modifier && pt.modifier(modifier, this, target);
             return this._pt = pt;
         }
         !currentValue && !(prop in target) && _missingPlugin(prop, end);
@@ -6908,9 +6918,7 @@ _processVars = function _processVars(vars, index, target, targets, tween) {
 //store a reference temporarily so we can avoid overwriting itself.
 _initTween = function _initTween(tween, time) {
     var vars = tween.vars, ease = vars.ease, startAt = vars.startAt, immediateRender = vars.immediateRender, lazy = vars.lazy, onUpdate = vars.onUpdate, onUpdateParams = vars.onUpdateParams, callbackScope = vars.callbackScope, runBackwards = vars.runBackwards, yoyoEase = vars.yoyoEase, keyframes = vars.keyframes, autoRevert = vars.autoRevert, dur = tween._dur, prevStartAt = tween._startAt, targets = tween._targets, parent = tween.parent, fullTargets = parent && parent.data === "nested" ? parent.parent._targets : targets, autoOverwrite = tween._overwrite === "auto", tl = tween.timeline, cleanVars, i, p, pt, target, hasPriority, gsData, harness, plugin, ptLookup, index, harnessVars;
-    if (tl && (!keyframes || !ease)) {
-        ease = "none";
-    }
+    tl && (!keyframes || !ease) && (ease = "none");
     tween._ease = _parseEase(ease, _defaults.ease);
     tween._yEase = yoyoEase ? _invertEase(_parseEase(yoyoEase === true ? ease : yoyoEase, _defaults.ease)) : 0;
     if (yoyoEase && tween._yoyo && !tween._repeat) {
@@ -6921,9 +6929,10 @@ _initTween = function _initTween(tween, time) {
     }
     if (!tl) {
         //if there's an internal timeline, skip all the parsing because we passed that task down the chain.
-        if (prevStartAt) {
-            prevStartAt.render(-1, true).kill();
-        }
+        harness = targets[0] ? _getCache(targets[0]).harness : 0;
+        harnessVars = harness && vars[harness.prop]; //someone may need to specify CSS-specific values AND non-CSS values, like if the element has an "x" property plus it's a standard DOM element. We allow people to distinguish by wrapping plugin-specific stuff in a css:{} object for example.
+        cleanVars = _copyExcluding(vars, _reservedProps);
+        prevStartAt && prevStartAt.render(-1, true).kill();
         if (startAt) {
             _removeFromParent(tween._startAt = Tween.set(targets, _setDefaults({
                 data: "isStart",
@@ -6953,11 +6962,8 @@ _initTween = function _initTween(tween, time) {
                 !autoRevert && (tween._startAt = 0);
             }
             else {
-                if (time) {
-                    //in rare cases (like if a from() tween runs and then is invalidate()-ed), immediateRender could be true but the initial forced-render gets skipped, so there's no need to force the render in this context when the _time is greater than 0
-                    immediateRender = false;
-                }
-                _removeFromParent(tween._startAt = Tween.set(targets, _merge(_copyExcluding(vars, _reservedProps), {
+                time && (immediateRender = false); //in rare cases (like if a from() tween runs and then is invalidate()-ed), immediateRender could be true but the initial forced-render gets skipped, so there's no need to force the render in this context when the _time is greater than 0
+                p = _setDefaults({
                     overwrite: false,
                     data: "isFromStart",
                     //we tag the tween with as "isFromStart" so that if [inside a plugin] we need to only do something at the very END of a tween, we have a way of identifying this tween as merely the one that's setting the beginning values for a "from()" tween. For example, clearProps in CSSPlugin should only get applied at the very END of a tween and without this tag, from(...{height:100, clearProps:"height", delay:1}) would wipe the height at the beginning of the tween and after 1 second, it'd kick back in.
@@ -6966,7 +6972,9 @@ _initTween = function _initTween(tween, time) {
                     //zero-duration tweens render immediately by default, but if we're not specifically instructed to render this tween immediately, we should skip this and merely _init() to record the starting values (rendering them immediately would push them to completion which is wasteful in that case - we'd have to render(-1) immediately after)
                     stagger: 0,
                     parent: parent //ensures that nested tweens that had a stagger are handled properly, like gsap.from(".class", {y:gsap.utils.wrap([-100,100])})
-                })));
+                }, cleanVars);
+                harnessVars && (p[harness.prop] = harnessVars); // in case someone does something like .from(..., {css:{}})
+                _removeFromParent(tween._startAt = Tween.set(targets, p));
                 if (!immediateRender) {
                     _initTween(tween._startAt, _tinyNum); //ensures that the initial values are recorded
                 }
@@ -6975,63 +6983,45 @@ _initTween = function _initTween(tween, time) {
                 }
             }
         }
-        cleanVars = _copyExcluding(vars, _reservedProps);
         tween._pt = 0;
-        harness = targets[0] ? _getCache(targets[0]).harness : 0;
-        harnessVars = harness && vars[harness.prop]; //someone may need to specify CSS-specific values AND non-CSS values, like if the element has an "x" property plus it's a standard DOM element. We allow people to distinguish by wrapping plugin-specific stuff in a css:{} object for example.
         lazy = dur && _isNotFalse(lazy) || lazy && !dur;
         for (i = 0; i < targets.length; i++) {
             target = targets[i];
             gsData = target._gsap || _harness(targets)[i]._gsap;
             tween._ptLookup[i] = ptLookup = {};
-            if (_lazyLookup[gsData.id]) {
-                _lazyRender(); //if other tweens of the same target have recently initted but haven't rendered yet, we've got to force the render so that the starting values are correct (imagine populating a timeline with a bunch of sequential tweens and then jumping to the end)
-            }
+            _lazyLookup[gsData.id] && _lazyRender(); //if other tweens of the same target have recently initted but haven't rendered yet, we've got to force the render so that the starting values are correct (imagine populating a timeline with a bunch of sequential tweens and then jumping to the end)
             index = fullTargets === targets ? i : fullTargets.indexOf(target);
             if (harness && (plugin = new harness()).init(target, harnessVars || cleanVars, tween, index, fullTargets) !== false) {
                 tween._pt = pt = new PropTween(tween._pt, target, plugin.name, 0, 1, plugin.render, plugin, 0, plugin.priority);
                 plugin._props.forEach(function (name) {
                     ptLookup[name] = pt;
                 });
-                if (plugin.priority) {
-                    hasPriority = 1;
-                }
+                plugin.priority && (hasPriority = 1);
             }
             if (!harness || harnessVars) {
                 for (p in cleanVars) {
                     if (_plugins[p] && (plugin = _checkPlugin(p, cleanVars, tween, index, target, fullTargets))) {
-                        if (plugin.priority) {
-                            hasPriority = 1;
-                        }
+                        plugin.priority && (hasPriority = 1);
                     }
                     else {
                         ptLookup[p] = pt = _addPropTween.call(tween, target, p, "get", cleanVars[p], index, fullTargets, 0, vars.stringFilter);
                     }
                 }
             }
-            if (tween._op && tween._op[i]) {
-                tween.kill(target, tween._op[i]);
-            }
+            tween._op && tween._op[i] && tween.kill(target, tween._op[i]);
             if (autoOverwrite && tween._pt) {
                 _overwritingTween = tween;
                 _globalTimeline.killTweensOf(target, ptLookup, "started"); //Also make sure the overwriting doesn't overwrite THIS tween!!!
                 _overwritingTween = 0;
             }
-            if (tween._pt && lazy) {
-                _lazyLookup[gsData.id] = 1;
-            }
+            tween._pt && lazy && (_lazyLookup[gsData.id] = 1);
         }
-        if (hasPriority) {
-            _sortPropTweensByPriority(tween);
-        }
-        if (tween._onInit) {
-            //plugins like RoundProps must wait until ALL of the PropTweens are instantiated. In the plugin's init() function, it sets the _onInit on the tween instance. May not be pretty/intuitive, but it's fast and keeps file size down.
-            tween._onInit(tween);
-        }
+        hasPriority && _sortPropTweensByPriority(tween);
+        tween._onInit && tween._onInit(tween); //plugins like RoundProps must wait until ALL of the PropTweens are instantiated. In the plugin's init() function, it sets the _onInit on the tween instance. May not be pretty/intuitive, but it's fast and keeps file size down.
     }
     tween._from = !tl && !!vars.runBackwards; //nested timelines should never run backwards - the backwards-ness is in the child tweens.
     tween._onUpdate = onUpdate;
-    tween._initted = 1;
+    tween._initted = !!tween.parent; // if overwrittenProps resulted in the entire tween being killed, do NOT flag it as initted or else it may render for one tick.
 }, _addAliasesToVars = function _addAliasesToVars(targets, vars) {
     var harness = targets[0] ? _getCache(targets[0]).harness : 0, propertyAliases = harness && harness.aliases, copy, p, i, aliases;
     if (!propertyAliases) {
@@ -7050,15 +7040,13 @@ _initTween = function _initTween(tween, time) {
     return copy;
 }, _parseFuncOrString = function _parseFuncOrString(value, tween, i, target, targets) {
     return _isFunction(value) ? value.call(tween, i, target, targets) : _isString(value) && ~value.indexOf("random(") ? _replaceRandom(value) : value;
-}, _staggerTweenProps = _callbackNames + "repeat,repeatDelay,yoyo,repeatRefresh,yoyoEase", _staggerPropsToSkip = (_staggerTweenProps + ",id,stagger,delay,duration,paused").split(",");
+}, _staggerTweenProps = _callbackNames + "repeat,repeatDelay,yoyo,repeatRefresh,yoyoEase", _staggerPropsToSkip = (_staggerTweenProps + ",id,stagger,delay,duration,paused,scrollTrigger").split(",");
 /*
  * --------------------------------------------------------------------------------------
  * TWEEN
  * --------------------------------------------------------------------------------------
  */
-var Tween = 
-/*#__PURE__*/
-function (_Animation2) {
+var Tween = /*#__PURE__*/ function (_Animation2) {
     _inheritsLoose(Tween, _Animation2);
     function Tween(targets, vars, time, skipInherit) {
         var _this3;
@@ -7068,7 +7056,7 @@ function (_Animation2) {
             time = null;
         }
         _this3 = _Animation2.call(this, skipInherit ? vars : _inheritDefaults(vars), time) || this;
-        var _this3$vars = _this3.vars, duration = _this3$vars.duration, delay = _this3$vars.delay, immediateRender = _this3$vars.immediateRender, stagger = _this3$vars.stagger, overwrite = _this3$vars.overwrite, keyframes = _this3$vars.keyframes, defaults = _this3$vars.defaults, parent = _this3.parent, parsedTargets = (_isArray(targets) ? _isNumber(targets[0]) : "length" in vars) ? [targets] : toArray(targets), tl, i, copy, l, p, curTarget, staggerFunc, staggerVarsToMerge;
+        var _this3$vars = _this3.vars, duration = _this3$vars.duration, delay = _this3$vars.delay, immediateRender = _this3$vars.immediateRender, stagger = _this3$vars.stagger, overwrite = _this3$vars.overwrite, keyframes = _this3$vars.keyframes, defaults = _this3$vars.defaults, scrollTrigger = _this3$vars.scrollTrigger, yoyoEase = _this3$vars.yoyoEase, parent = _this3.parent, parsedTargets = (_isArray(targets) ? _isNumber(targets[0]) : "length" in vars) ? [targets] : toArray(targets), tl, i, copy, l, p, curTarget, staggerFunc, staggerVarsToMerge;
         _this3._targets = parsedTargets.length ? _harness(parsedTargets) : _warn("GSAP target " + targets + " not found. https://greensock.com", !_config.nullTargetWarn) || [];
         _this3._ptLookup = []; //PropTween lookup. An array containing an object for each target, having keys for each tweening property
         _this3._overwrite = overwrite;
@@ -7095,9 +7083,7 @@ function (_Animation2) {
                     //users can pass in callbacks like onStart/onComplete in the stagger object. These should fire with each individual tween.
                     for (p in stagger) {
                         if (~_staggerTweenProps.indexOf(p)) {
-                            if (!staggerVarsToMerge) {
-                                staggerVarsToMerge = {};
-                            }
+                            staggerVarsToMerge || (staggerVarsToMerge = {});
                             staggerVarsToMerge[p] = stagger[p];
                         }
                     }
@@ -7110,13 +7096,8 @@ function (_Animation2) {
                         }
                     }
                     copy.stagger = 0;
-                    if (staggerVarsToMerge) {
-                        _merge(copy, staggerVarsToMerge);
-                    }
-                    if (vars.yoyoEase && !vars.repeat) {
-                        //so that propagation works properly when a ancestor timeline yoyos
-                        copy.yoyoEase = vars.yoyoEase;
-                    }
+                    yoyoEase && (copy.yoyoEase = yoyoEase);
+                    staggerVarsToMerge && _merge(copy, staggerVarsToMerge);
                     curTarget = parsedTargets[i]; //don't just copy duration or delay because if they're a string or function, we'd end up in an infinite loop because _isFuncOrString() would evaluate as true in the child tweens, entering this loop, etc. So we parse the value straight from vars and default to 0.
                     copy.duration = +_parseFuncOrString(duration, _assertThisInitialized(_this3), i, curTarget, parsedTargets);
                     copy.delay = (+_parseFuncOrString(delay, _assertThisInitialized(_this3), i, curTarget, parsedTargets) || 0) - _this3._delay;
@@ -7128,7 +7109,7 @@ function (_Animation2) {
                     }
                     tl.to(curTarget, copy, staggerFunc(i, curTarget, parsedTargets));
                 }
-                duration = delay = 0;
+                tl.duration() ? duration = delay = 0 : _this3.timeline = 0; // if the timeline's duration is 0, we don't need a timeline internally!
             }
             duration || _this3.duration(duration = tl.duration());
         }
@@ -7141,10 +7122,11 @@ function (_Animation2) {
             _overwritingTween = 0;
         }
         parent && _postAddChecks(parent, _assertThisInitialized(_this3));
-        if (immediateRender || !duration && !keyframes && _this3._start === parent._time && _isNotFalse(immediateRender) && _hasNoPausedAncestors(_assertThisInitialized(_this3)) && parent.data !== "nested") {
+        if (immediateRender || !duration && !keyframes && _this3._start === _round(parent._time) && _isNotFalse(immediateRender) && _hasNoPausedAncestors(_assertThisInitialized(_this3)) && parent.data !== "nested") {
             _this3._tTime = -_tinyNum; //forces a render without having to set the render() "force" parameter to true because we want to allow lazying by default (using the "force" parameter always forces an immediate full render)
             _this3.render(Math.max(0, -delay)); //in case delay is negative
         }
+        scrollTrigger && _scrollTrigger(_assertThisInitialized(_this3), scrollTrigger);
         return _this3;
     }
     var _proto3 = Tween.prototype;
@@ -7181,11 +7163,10 @@ function (_Animation2) {
                     return this;
                 }
                 if (iteration !== prevIteration) {
-                    //timeline && this._yEase && _propagateYoyoEase(timeline, isYoyo);
-                    //repeatRefresh functionality
+                    timeline && this._yEase && _propagateYoyoEase(timeline, isYoyo); //repeatRefresh functionality
                     if (this.vars.repeatRefresh && !isYoyo && !this._lock) {
                         this._lock = force = 1; //force, otherwise if lazy is true, the _attemptInitTween() will return and we'll jump out and get caught bouncing on each tick.
-                        this.render(cycleDuration * iteration, true).invalidate()._lock = 0;
+                        this.render(_round(cycleDuration * iteration), true).invalidate()._lock = 0;
                     }
                 }
             }
@@ -7209,9 +7190,7 @@ function (_Animation2) {
             if (this._from) {
                 this.ratio = ratio = 1 - ratio;
             }
-            if (!prevTime && time && !suppressEvents) {
-                _callback(this, "onStart");
-            }
+            time && !prevTime && !suppressEvents && _callback(this, "onStart");
             pt = this._pt;
             while (pt) {
                 pt.r(ratio, pt.d);
@@ -7224,18 +7203,14 @@ function (_Animation2) {
                 }
                 _callback(this, "onUpdate");
             }
-            if (this._repeat)
-                if (iteration !== prevIteration && this.vars.onRepeat && !suppressEvents && this.parent) {
-                    _callback(this, "onRepeat");
-                }
+            this._repeat && iteration !== prevIteration && this.vars.onRepeat && !suppressEvents && this.parent && _callback(this, "onRepeat");
             if ((tTime === this._tDur || !tTime) && this._tTime === tTime) {
-                if (totalTime < 0 && this._startAt && !this._onUpdate) {
-                    this._startAt.render(totalTime, true, force);
-                }
-                (totalTime || !dur) && (totalTime && this._ts > 0 || !tTime && this._ts < 0) && _removeFromParent(this, 1); // don't remove if we're rendering at exactly a time of 0, as there could be autoRevert values that should get set on the next tick (if the playhead goes backward beyond the startTime, negative totalTime). Don't remove if the timeline is reversed and the playhead isn't at 0, otherwise tl.progress(1).reverse() won't work. Only remove if the playhead is at the end and timeScale is positive, or if the playhead is at 0 and the timeScale is negative.
-                if (!suppressEvents && !(totalTime < 0 && !prevTime) && !(tTime < tDur && this.timeScale() > 0)) {
+                totalTime < 0 && this._startAt && !this._onUpdate && this._startAt.render(totalTime, true, true);
+                (totalTime || !dur) && (tTime === this._tDur && this._ts > 0 || !tTime && this._ts < 0) && _removeFromParent(this, 1); // don't remove if we're rendering at exactly a time of 0, as there could be autoRevert values that should get set on the next tick (if the playhead goes backward beyond the startTime, negative totalTime). Don't remove if the timeline is reversed and the playhead isn't at 0, otherwise tl.progress(1).reverse() won't work. Only remove if the playhead is at the end and timeScale is positive, or if the playhead is at 0 and the timeScale is negative.
+                if (!suppressEvents && !(totalTime < 0 && !prevTime) && (tTime || prevTime)) {
+                    // if prevTime and tTime are zero, we shouldn't fire the onReverseComplete. This could happen if you gsap.to(... {paused:true}).play();
                     _callback(this, tTime === tDur ? "onComplete" : "onReverseComplete", true);
-                    this._prom && this._prom();
+                    this._prom && !(tTime < tDur && this.timeScale() > 0) && this._prom();
                 }
             }
         }
@@ -7261,7 +7236,9 @@ function (_Animation2) {
             }
         }
         if (this.timeline) {
-            this.timeline.killTweensOf(targets, vars, _overwritingTween && _overwritingTween.vars.overwrite !== true);
+            var tDur = this.timeline.totalDuration();
+            this.timeline.killTweensOf(targets, vars, _overwritingTween && _overwritingTween.vars.overwrite !== true)._first || _interrupt(this); // if nothing is left tweenng, interrupt.
+            this.parent && tDur !== this.timeline.totalDuration() && _setDuration(this, this._dur * this.timeline._tDur / tDur); // if a nested tween is killed that changes the duration, it should affect this tween's duration. We must use the ratio, though, because sometimes the internal timeline is stretched like for keyframes where they don't all add up to whatever the parent tween's duration was set to.
             return this;
         }
         var parsedTargets = this._targets, killingTargets = targets ? toArray(targets) : parsedTargets, propTweenLookup = this._ptLookup, firstPT = this._pt, overwrittenProps, curLookup, curOverwriteProps, props, p, pt, i;
@@ -7307,10 +7284,7 @@ function (_Animation2) {
                 }
             }
         }
-        if (this._initted && !this._pt && firstPT) {
-            //if all tweening properties are killed, kill the tween. Without this line, if there's a tween with multiple targets and then you killTweensOf() each target individually, the tween would technically still remain active and fire its onComplete even though there aren't any more properties tweening.
-            _interrupt(this);
-        }
+        this._initted && !this._pt && firstPT && _interrupt(this); //if all tweening properties are killed, kill the tween. Without this line, if there's a tween with multiple targets and then you killTweensOf() each target individually, the tween would technically still remain active and fire its onComplete even though there aren't any more properties tweening.
         return this;
     };
     Tween.to = function to(targets, vars) {
@@ -7457,9 +7431,7 @@ var _setterPlain = function _setterPlain(target, property, value) {
     }
     parent._pt = first;
 }; //PropTween key: t = target, p = prop, r = renderer, d = data, s = start, c = change, op = overwriteProperty (ONLY populated when it's different than p), pr = priority, _next/_prev for the linked list siblings, set = setter, m = modifier, mSet = modifierSetter (the original setter, before a modifier was added)
-var PropTween = 
-/*#__PURE__*/
-function () {
+var PropTween = /*#__PURE__*/ function () {
     function PropTween(next, target, prop, start, change, renderer, data, setter, priority) {
         this.t = target;
         this.s = start;
@@ -7484,7 +7456,7 @@ function () {
     };
     return PropTween;
 }(); //Initialization tasks
-_forEachName(_callbackNames + "parent,duration,ease,delay,overwrite,runBackwards,startAt,yoyo,immediateRender,repeat,repeatDelay,data,paused,reversed,lazy,callbackScope,stringFilter,id,yoyoEase,stagger,inherit,repeatRefresh,keyframes,autoRevert", function (name) {
+_forEachName(_callbackNames + "parent,duration,ease,delay,overwrite,runBackwards,startAt,yoyo,immediateRender,repeat,repeatDelay,data,paused,reversed,lazy,callbackScope,stringFilter,id,yoyoEase,stagger,inherit,repeatRefresh,keyframes,autoRevert,scrollTrigger", function (name) {
     return _reservedProps[name] = 1;
 });
 _globals.TweenMax = _globals.TweenLite = Tween;
@@ -7544,15 +7516,17 @@ var _gsap = {
             };
         }
         target = target[0] || {};
-        var Plugin = _plugins[property], cache = _getCache(target), setter = Plugin ? function (value) {
+        var Plugin = _plugins[property], cache = _getCache(target), p = cache.harness && (cache.harness.aliases || {})[property] || property, 
+        // in case it's an alias, like "rotate" for "rotation".
+        setter = Plugin ? function (value) {
             var p = new Plugin();
             _quickTween._pt = 0;
             p.init(target, unit ? value + unit : value, _quickTween, 0, [target]);
             p.render(1, p);
             _quickTween._pt && _renderPropTweens(1, _quickTween);
-        } : cache.set(target, property);
+        } : cache.set(target, p);
         return Plugin ? setter : function (value) {
-            return setter(target, property, unit ? value + unit : value, cache, 1);
+            return setter(target, p, unit ? value + unit : value, cache, 1);
         };
     },
     isTweening: function isTweening(targets) {
@@ -7701,8 +7675,10 @@ var _getPluginPropTween = function _getPluginPropTween(plugin, prop) {
 var gsap = _gsap.registerPlugin({
     name: "attr",
     init: function init(target, vars, tween, index, targets) {
-        for (var p in vars) {
-            this.add(target, "setAttribute", (target.getAttribute(p) || 0) + "", vars[p], index, targets, 0, 0, p); //this.add(target, "setAttribute", (target.getAttribute((p in target.dataset ? (p = "data-" + p) : p)) || 0) + "", vars[p], index, targets, 0, 0, p);
+        var p, pt;
+        for (p in vars) {
+            pt = this.add(target, "setAttribute", (target.getAttribute(p) || 0) + "", vars[p], index, targets, 0, 0, p);
+            pt && (pt.op = p); //this.add(target, "setAttribute", (target.getAttribute((p in target.dataset ? (p = "data-" + p) : p)) || 0) + "", vars[p], index, targets, 0, 0, p);
             this._props.push(p);
         }
     }
@@ -7715,13 +7691,13 @@ var gsap = _gsap.registerPlugin({
         }
     }
 }, _buildModifierPlugin("roundProps", _roundModifier), _buildModifierPlugin("modifiers"), _buildModifierPlugin("snap", snap)) || _gsap; //to prevent the core plugins from being dropped via aggressive tree shaking, we must include them in the variable declaration in this way.
-Tween.version = Timeline.version = gsap.version = "3.2.6";
+Tween.version = Timeline.version = gsap.version = "3.3.4";
 _coreReady = 1;
 if (_windowExists()) {
     _wake();
 }
 /*!
- * CSSPlugin 3.2.6
+ * CSSPlugin 3.3.4
  * https://greensock.com
  *
  * Copyright 2008-2020, GreenSock. All rights reserved.
@@ -7781,7 +7757,7 @@ _renderRoundedCSSProp = function _renderRoundedCSSProp(ratio, data) {
     while (i-- && !(_prefixes[i] + property in s)) { }
     return i < 0 ? null : (i === 3 ? "ms" : i >= 0 ? _prefixes[i] : "") + property;
 }, _initCore = function _initCore() {
-    if (_windowExists$1()) {
+    if (_windowExists$1() && window.document) {
         _win$1 = window;
         _doc$1 = _win$1.document;
         _docElement = _doc$1.documentElement;
@@ -8164,27 +8140,15 @@ _identity2DMatrix = [1, 0, 0, 1, 0, 0], _rotationalProperties = {}, _isNullTrans
         style.display = "block";
         parent = target.parentNode;
         if (!parent || !target.offsetParent) {
+            // note: in 3.3.0 we switched target.offsetParent to _doc.body.contains(target) to avoid [sometimes unnecessary] MutationObserver calls but that wasn't adequate because there are edge cases where nested position: fixed elements need to get reparented to accurately sense transforms. See https://github.com/greensock/GSAP/issues/388 and https://github.com/greensock/GSAP/issues/375
             addedToDOM = 1; //flag
             nextSibling = target.nextSibling;
             _docElement.appendChild(target); //we must add it to the DOM in order to get values properly
         }
         matrix = _getComputedTransformMatrixAsArray(target);
-        if (temp) {
-            style.display = temp;
-        }
-        else {
-            _removeProperty(target, "display");
-        }
+        temp ? style.display = temp : _removeProperty(target, "display");
         if (addedToDOM) {
-            if (nextSibling) {
-                parent.insertBefore(target, nextSibling);
-            }
-            else if (parent) {
-                parent.appendChild(target);
-            }
-            else {
-                _docElement.removeChild(target);
-            }
+            nextSibling ? parent.insertBefore(target, nextSibling) : parent ? parent.appendChild(target) : _docElement.removeChild(target);
         }
     }
     return force2D && matrix.length > 6 ? [matrix[0], matrix[1], matrix[4], matrix[5], matrix[12], matrix[13]] : matrix;
@@ -8322,9 +8286,9 @@ _identity2DMatrix = [1, 0, 0, 1, 0, 0], _rotationalProperties = {}, _isNullTrans
         }
         if (cache.svg) {
             //sense if there are CSS transforms applied on an SVG element in which case we must overwrite them when rendering. The transform attribute is more reliable cross-browser, but we can't just remove the CSS ones because they may be applied in a CSS rule somewhere (not just inline).
-            matrix = target.getAttribute("transform");
+            t1 = target.getAttribute("transform");
             cache.forceCSS = target.setAttribute("transform", "") || !_isNullTransform(_getComputedProperty(target, _transformProp));
-            matrix && target.setAttribute("transform", matrix);
+            t1 && target.setAttribute("transform", t1);
         }
     }
     if (Math.abs(skewX) > 90 && Math.abs(skewX) < 270) {
@@ -8724,27 +8688,33 @@ var gsapWithCSS = gsap.registerPlugin(CSSPlugin) || gsap;
 var OverlayAnimation = /** @class */ (function () {
     function OverlayAnimation() {
         var _this_1 = this;
-        this.slideDown = function (element) {
-            if (_this_1.showOverlay) {
-                _this_1.showOverlay.kill();
+        this.killAnimation = function (animation) {
+            if (animation) {
+                animation.kill();
             }
+        };
+        this.slideDown = function (element) {
+            _this_1.killAnimation(_this_1.showOverlay);
+            _this_1.killAnimation(_this_1.hideOverlay);
             _this_1.showOverlay = gsapWithCSS.to(element, {
                 maxHeight: '1000px',
                 duration: 0.54,
-                ease: 'sine.inOut'
+                ease: 'sine.inOut',
+                visibility: 'visible'
             });
         };
         this.show = function (element) {
-            if (_this_1.showOverlay) {
-                _this_1.showOverlay.kill();
-            }
+            _this_1.killAnimation(_this_1.showOverlay);
+            _this_1.killAnimation(_this_1.hideOverlay);
             _this_1.showOverlay = gsapWithCSS.set(element, {
-                maxHeight: '1000px'
+                maxHeight: '1000px',
+                visibility: 'visible'
             });
         };
         this.hide = function (element) {
-            _this_1.showOverlay.kill();
-            gsapWithCSS.set(element, {
+            _this_1.killAnimation(_this_1.showOverlay);
+            _this_1.killAnimation(_this_1.hideOverlay);
+            _this_1.hideOverlay = gsapWithCSS.set(element, {
                 maxHeight: '0',
                 onComplete: function () {
                     element.style.visibility = 'hidden';
@@ -8752,12 +8722,16 @@ var OverlayAnimation = /** @class */ (function () {
             });
         };
         this.slideUp = function (element) {
-            _this_1.showOverlay.kill();
-            gsapWithCSS.to(element, {
+            _this_1.killAnimation(_this_1.showOverlay);
+            _this_1.killAnimation(_this_1.hideOverlay);
+            _this_1.hideOverlay = gsapWithCSS.to(element, {
                 maxHeight: '0',
                 duration: 0.43,
                 ease: 'sine.inOut',
                 onComplete: function () {
+                    element.style.visibility = 'hidden';
+                },
+                onInterrupt: function () {
                     element.style.visibility = 'hidden';
                 }
             });
@@ -8769,7 +8743,7 @@ var menuDesktopLevel1Css = ".menu-desktop-level-1.sc-phn-menu-desktop-level-1{di
 var MenuDesktopLevel1 = /** @class */ (function () {
     function MenuDesktopLevel1(hostRef) {
         var _this_1 = this;
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.hoverIntentService = new HoverIntentService();
         this.overlayAnimation = new OverlayAnimation();
         this.mouseMoveListener = function (event) { return _this_1.onmousemove(event); };
@@ -8815,10 +8789,13 @@ var MenuDesktopLevel1 = /** @class */ (function () {
         this.keyboardShowOverlayHandler = function (overlayElement) {
             _this_1.previousOverlay = overlayElement;
             _this_1.overlayAnimation.slideDown(overlayElement);
+            var megaMenuSelected = overlayElement.closest('phn-mega-fly-out-overlay');
+            var openOverlay = megaMenuSelected.querySelector('phn-car-series-model-overview') ||
+                megaMenuSelected.querySelector('phn-shops-and-more-overview');
+            openOverlay.triggerAnalyticsEvent();
         };
         this.keyboardHideOverlayHandler = function () {
             if (_this_1.previousOverlay) {
-                _this_1.previousOverlay.closest('phn-mega-fly-out-overlay').deactivateState();
                 _this_1.overlayAnimation.slideUp(_this_1.previousOverlay);
             }
             _this_1.previousOverlay = undefined;
@@ -8831,31 +8808,26 @@ var MenuDesktopLevel1 = /** @class */ (function () {
     MenuDesktopLevel1.prototype.onmousemove = function (event) {
         this.hoverIntentService.handleMouseMove(event, '.overlay-trigger');
     };
-    MenuDesktopLevel1.prototype.getItems = function () {
-        var items = [];
-        if (this.shops && this.shops.length > 0) {
-            items.push(this.shops[0]);
-        }
-        if (this.more && this.more.length > 0) {
-            items.push(this.more[0]);
-        }
-        return items;
-    };
     MenuDesktopLevel1.prototype.render = function () {
         var _this_1 = this;
-        var seriesList = !this.seriesList ? DEFAULT_SERIES_LIST : this.seriesList;
-        var items = this.getItems();
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-desktop-level-1" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-series-shop-and-more", onMouseEnter: function () { return _this_1.handleMouseEnter(); }, onMouseLeave: function () { return _this_1.handleMouseLeave(); } }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-list", { carSeries: seriesList, showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more", { items: items, showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler })), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-separator" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "metafunctionalities" })));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-desktop-level-1" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-series-shop-and-more", onMouseEnter: function () { return _this_1.handleMouseEnter(); }, onMouseLeave: function () { return _this_1.handleMouseLeave(); } }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-list", { showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more", { showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-separator" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "metafunctionalities" })));
     };
     return MenuDesktopLevel1;
 }());
-StateTunnel.injectProps(MenuDesktopLevel1, ['shops', 'more', 'seriesList']);
 MenuDesktopLevel1.style = menuDesktopLevel1Css;
 var MenuDrawerAnimation = /** @class */ (function () {
     function MenuDrawerAnimation() {
         this.slideIn = function (element) {
             element.querySelector('.menu-drawer-level-1').setAttribute('style', 'visibility: visible;');
             gsapWithCSS.to(element.querySelector('.drawer-level-1'), {
+                right: '0%',
+                duration: 0.32,
+                ease: 'sine.inOut'
+            });
+        };
+        this.slideInMenuDrawer = function (element) {
+            element.querySelector('.menu-drawer-container').setAttribute('style', 'visibility: visible;');
+            gsapWithCSS.to(element.querySelector('.menu-drawer-content'), {
                 right: '0%',
                 duration: 0.32,
                 ease: 'sine.inOut'
@@ -8871,93 +8843,285 @@ var MenuDrawerAnimation = /** @class */ (function () {
                 }
             });
         };
+        this.slideOutMenuDrawer = function (element) {
+            gsapWithCSS.to(element.querySelector('.menu-drawer-content'), {
+                right: '-100%',
+                duration: 0.24,
+                ease: 'sine.inOut',
+                onComplete: function () {
+                    element.querySelector('.menu-drawer-container').setAttribute('style', 'visibility:hidden');
+                }
+            });
+        };
     }
     return MenuDrawerAnimation;
 }());
+var menuDrawerCss = ".menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer{position:fixed;z-index:300;top:0;left:0;width:100%;height:100vh;background-color:rgba(0, 0, 0, 0.3);visibility:hidden}@media (min-width: 1300px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer{display:none}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer{position:fixed;right:-100%;bottom:0;top:0;overflow-y:auto;background-color:#fff;width:100%}@media (min-width: 1000px) and (max-width: 1299px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer{width:568px}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer{padding-left:7%;padding-right:7%}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer{padding-top:0.75rem}}@media (min-width: 1300px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer{padding-top:unset}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer .back-button.sc-phn-menu-drawer{margin-left:-0.625rem}@media (min-width: 760px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer .close-button.sc-phn-menu-drawer{margin-right:-1.125rem}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.drawer-close.sc-phn-menu-drawer{-ms-flex-pack:end;justify-content:flex-end}";
+var MenuDrawer = /** @class */ (function () {
+    function MenuDrawer(hostRef) {
+        var _this_1 = this;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.menuDrawerAnimation = new MenuDrawerAnimation();
+        this.clickBackground = function (event) {
+            _this_1.handleClose(event);
+        };
+        this.clickMenu = function (event) {
+            event.stopPropagation();
+        };
+    }
+    MenuDrawer.prototype.showContent = function (element) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                this.menuDrawerAnimation.slideInMenuDrawer(element);
+                return [2 /*return*/];
+            });
+        });
+    };
+    MenuDrawer.prototype.hideContent = function (element) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                this.menuDrawerAnimation.slideOutMenuDrawer(element);
+                return [2 /*return*/];
+            });
+        });
+    };
+    MenuDrawer.prototype.slotChange = function (event) {
+        // For Animation - e.g.
+        // const drawerContent = this.el.querySelector('.menu-drawer-content') as HTMLElement;
+        // drawerContent.style.right = '-100%';
+        this.eventTriggered = event.target;
+    };
+    MenuDrawer.prototype.keyDownListener = function (event) {
+        if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
+            this.enterTriggered = event.key === 'Enter';
+            if (!event.shiftKey && event.key === 'Tab') {
+                var focusable = this.el.querySelectorAll(FOCUSABLE_ELEMENTS_SELECTOR);
+                if (event.target === focusable[focusable.length - 1]) {
+                    event.preventDefault();
+                    var backButton = this.el
+                        .closest('phn-menu-drawer')
+                        .querySelector('phn-back-button > p-button-pure');
+                    if (backButton) {
+                        backButton.focus();
+                    }
+                    else {
+                        var closeButton = this.el.closest('phn-menu-drawer').querySelector('phn-close-button');
+                        closeButton.focus();
+                    }
+                }
+            }
+        }
+        else {
+            this.enterTriggered = false;
+        }
+    };
+    MenuDrawer.prototype.componentDidUpdate = function () {
+        if (this.enterTriggered && this.eventTriggered) {
+            var accessibilityMarker = navStateStore.get('accessibilityMarker');
+            var focusElement = null;
+            if (accessibilityMarker && accessibilityMarker !== '') {
+                focusElement = this.eventTriggered.querySelector('' + accessibilityMarker);
+                if (focusElement) {
+                    focusElement.focus();
+                }
+            }
+            if (!focusElement) {
+                focusElement = this.eventTriggered.querySelector('phn-back-button > p-button-pure');
+                if (focusElement) {
+                    focusElement.focus();
+                }
+                else {
+                    focusElement = this.eventTriggered.querySelector('phn-close-button');
+                    focusElement.focus();
+                }
+            }
+        }
+        // For Animation - e.g.
+        // this.showContent(this.el);
+        this.eventTriggered = null;
+        this.enterTriggered = false;
+    };
+    MenuDrawer.prototype.handleBack = function () {
+        var parentDrawerContent = navStateStore.get('parentDrawerContent');
+        navStateStore.set('activeDrawerContent', parentDrawerContent[0]);
+        navStateStore.set('parentDrawerContent', parentDrawerContent.filter(function (_, index) { return index > 0; }));
+        navStateStore.set('backButtonText', null);
+    };
+    MenuDrawer.prototype.handleClose = function (event) {
+        navStateStore.reset();
+        var menuDrawer = event.target.closest('.drawer-trigger');
+        menuDrawer.hideContent(menuDrawer);
+    };
+    MenuDrawer.prototype.keyDownHandler = function (event) {
+        if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
+            if (event.key === 'Enter') {
+                navStateStore.reset();
+                var menuDrawer = event.target.closest('.drawer-trigger');
+                menuDrawer.hideContent(menuDrawer);
+            }
+        }
+    };
+    MenuDrawer.prototype.getValueForField = function (fieldName) {
+        var text = '';
+        var menu = navContentStore.get('menu');
+        if (menu && menu.length > 0) {
+            var menuItem = menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
+            if (menuItem && menuItem[fieldName]) {
+                text = menuItem[fieldName];
+            }
+        }
+        return text;
+    };
+    MenuDrawer.prototype.render = function () {
+        var backButtonText = navStateStore.get('backButtonText') || this.getValueForField(TEXT_FIELD_NAME);
+        var backButtonId = this.getValueForField(PHRASEID_FIELD_NAME);
+        var parentDrawerContent = navStateStore.get('parentDrawerContent');
+        var hasParent = parentDrawerContent.length > 0;
+        var backAndCloseClass = hasParent ? 'drawer-back-and-close' : 'drawer-back-and-close drawer-close';
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "drawer-trigger" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'menu-drawer-container', onClick: this.clickBackground }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-content", onClick: this.clickMenu }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-content-wrapper" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: backAndCloseClass }, hasParent && (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: this.handleBack, buttonId: backButtonId, text: backButtonText })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button", onClick: this.handleClose, onKeyDown: this.keyDownHandler })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" })))))));
+    };
+    Object.defineProperty(MenuDrawer.prototype, "el", {
+        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
+        configurable: true
+    });
+    return MenuDrawer;
+}());
+MenuDrawer.style = menuDrawerCss;
 var menuDrawerLevel1Css = ".menu-drawer-level-1.sc-phn-menu-drawer-level-1{position:fixed;z-index:300;top:0;left:0;width:100%;height:100vh;background-color:rgba(0, 0, 0, 0.3);visibility:hidden}@media (min-width: 1300px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1{display:none}}.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1{position:fixed;right:-100%;bottom:0;top:0;overflow-y:auto;background-color:#fff;width:100%}@media (min-width: 1000px) and (max-width: 1299px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1{width:568px}}.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1{padding-right:7%;padding-left:7%;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:end;align-items:flex-end}.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-close.sc-phn-menu-drawer-level-1{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:end;justify-content:flex-end;width:100%;padding-top:1.1875rem;margin-bottom:0.5rem}@media (min-width: 760px) and (max-width: 1299px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-close.sc-phn-menu-drawer-level-1{padding-top:0.75rem;margin-bottom:1.75rem}}@media (min-width: 1300px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-close.sc-phn-menu-drawer-level-1{padding-top:0.75rem;margin-bottom:0}}@media (min-width: 760px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .close-button.sc-phn-menu-drawer-level-1{margin-right:-1.125rem}}.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-content.sc-phn-menu-drawer-level-1{width:100%;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;margin-bottom:4.5rem}@media (min-width: 1300px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-content.sc-phn-menu-drawer-level-1{margin-bottom:0}}@media (min-width: 760px) and (max-width: 1299px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-content.sc-phn-menu-drawer-level-1{margin-bottom:3.1875rem}}";
 var MenuDrawerLevel1 = /** @class */ (function () {
-    function class_4(hostRef) {
+    function MenuDrawerLevel1(hostRef) {
         var _this_1 = this;
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.menuDrawerAnimation = new MenuDrawerAnimation();
         this.activeDrawerLevel = 1;
         this.setActiveDrawer = function (element, level) {
             _this_1.activeDrawerElement = element;
             _this_1.activeDrawerLevel = level;
-            var scrollableElement;
-            if (_this_1.activeDrawerElement.classList.contains("drawer-level-" + _this_1.activeDrawerLevel + "-item-scroll")) {
-                scrollableElement = _this_1.activeDrawerElement;
-            }
-            else {
-                scrollableElement = _this_1.activeDrawerElement.querySelector(".drawer-level-" + _this_1.activeDrawerLevel + "-item-scroll");
-            }
-            if (scrollableElement) {
-                scrollableElement.scrollTop = 0;
-            }
+            _this_1.scrollActiveElementToTop();
+            _this_1.preventiOSScrollingParentDrawer(level, element, true);
         };
         this.closeActiveDrawer = function (level) {
+            var drawerToBeClosed = _this_1.activeDrawerElement;
+            _this_1.preventiOSScrollingParentDrawer(level, drawerToBeClosed, false);
             _this_1.activeDrawerLevel = level - 1;
             _this_1.activeDrawerElement = _this_1.el.querySelector(".drawer-level-" + _this_1.activeDrawerLevel + "-item");
-            var scrollableElement;
-            if (_this_1.activeDrawerElement.classList.contains("drawer-level-" + _this_1.activeDrawerLevel + "-item-scroll")) {
-                scrollableElement = _this_1.activeDrawerElement;
+            _this_1.scrollActiveElementToTop();
+        };
+        this.preventiOSScrollingParentDrawer = function (targetLevelForAction, targetElementForAction, isLevelIncrease) {
+            /* This prevents iOS allowing the bottom drawer to be scrolled.
+             * At the time of creating this solution, we tested overflow: hidden in the fixed scrollable div,
+             * as well as pointer-events: none, but this did not work. Somehow, putting
+             * position: fixed to the parent drawer container did even if it's not a scrollable container.
+             */
+            var parentLevel = targetLevelForAction - 1;
+            if (isLevelIncrease) {
+                var parentScrollableContainer = targetElementForAction.closest(".drawer-level-" + parentLevel + "-item");
+                if (parentScrollableContainer) {
+                    parentScrollableContainer.querySelector('.drawer-container').style.position = 'fixed';
+                }
             }
             else {
-                scrollableElement = _this_1.activeDrawerElement.querySelector(".drawer-level-" + _this_1.activeDrawerLevel + "-item-scroll");
-            }
-            if (scrollableElement) {
-                scrollableElement.scrollTop = 0;
+                var parentScrollableContainer = targetElementForAction.closest(".drawer-level-" + parentLevel + "-item");
+                parentScrollableContainer.querySelector('.drawer-container').style.position = '';
             }
         };
-        this.menuOverlayOpen = Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "menuOverlayOpen", 7);
-        this.menuOverlayClose = Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "menuOverlayClose", 7);
+        this.clickBackground = function () {
+            var closeButton = _this_1.activeDrawerElement.querySelector('phn-close-button');
+            closeButton.click();
+        };
+        this.clickMenu = function (event) {
+            event.stopPropagation();
+        };
+        this.menuOverlayOpen = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "menuOverlayOpen", 7);
+        this.menuOverlayClose = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "menuOverlayClose", 7);
     }
-    class_4.prototype.show = function () {
+    MenuDrawerLevel1.prototype.show = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 this.menuOverlayOpen.emit();
                 this.menuDrawerAnimation.slideIn(this.el);
-                this.el.querySelector('.drawer-level-1-item-scroll').scrollTop = 0;
+                this.setActiveDrawer(this.el, 1);
                 return [2 /*return*/];
             });
         });
     };
-    class_4.prototype.hide = function () {
+    MenuDrawerLevel1.prototype.handleClose = function () {
+        this.mobileCarSeriesListElement.hideAll();
+        this.hide();
+        this.el.querySelectorAll('.drawer-container').forEach(function (element) {
+            element.style.position = '';
+        });
+    };
+    MenuDrawerLevel1.prototype.scrollActiveElementToTop = function () {
+        var scrollableElement;
+        if (this.activeDrawerElement.classList.contains("drawer-level-" + this.activeDrawerLevel + "-item-scroll")) {
+            scrollableElement = this.activeDrawerElement;
+        }
+        else {
+            scrollableElement = this.activeDrawerElement.querySelector(".drawer-level-" + this.activeDrawerLevel + "-item-scroll");
+        }
+        if (scrollableElement) {
+            scrollableElement.scrollTop = 0;
+        }
+    };
+    MenuDrawerLevel1.prototype.hide = function () {
         this.menuOverlayClose.emit();
         this.menuDrawerAnimation.slideOut(this.el);
     };
-    class_4.prototype.handelClose = function () {
-        this.mobileCarSeriesListElement.hideAll();
+    MenuDrawerLevel1.prototype.componentDidLoad = function () {
         this.hide();
     };
-    class_4.prototype.getItems = function () {
-        var items = [];
-        if (this.shops && this.shops.length > 0) {
-            items.push(this.shops[0]);
-        }
-        if (this.more && this.more.length > 0) {
-            items.push(this.more[0]);
-        }
-        return items;
-    };
-    class_4.prototype.componentDidLoad = function () {
-        this.hide();
-    };
-    class_4.prototype.render = function () {
+    MenuDrawerLevel1.prototype.render = function () {
         var _this_1 = this;
-        var seriesList = !this.seriesList ? DEFAULT_SERIES_LIST : this.seriesList;
-        var items = this.getItems();
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-level-1 drawer-level-1-item" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-level-1 drawer-level-1-item-scroll" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-close" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-content" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-car-series-list", { ref: function (el) { return (_this_1.mobileCarSeriesListElement = el); }, class: "mobile-car-series-list", carSeries: seriesList, setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shops-and-more", { items: items, class: "mobile-shops-and-more", setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "meta-functionalities", setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }))))));
+        var seriesList = navContentStore.get('seriesList');
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-level-1 drawer-level-1-item", onClick: this.clickBackground }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-level-1 drawer-level-1-item-scroll", onClick: this.clickMenu }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-close" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-content" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-car-series-list", { ref: function (el) { return (_this_1.mobileCarSeriesListElement = el); }, class: "mobile-car-series-list", carSeries: seriesList, setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shops-and-more", { class: "mobile-shops-and-more", setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "meta-functionalities", setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }))))));
     };
-    Object.defineProperty(class_4.prototype, "el", {
-        get: function () { return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
+    Object.defineProperty(MenuDrawerLevel1.prototype, "el", {
+        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
         configurable: true
     });
-    return class_4;
+    return MenuDrawerLevel1;
 }());
-StateTunnel.injectProps(MenuDrawerLevel1, ['shops', 'more', 'seriesList']);
 MenuDrawerLevel1.style = menuDrawerLevel1Css;
+var MenuMobileLevel1 = /** @class */ (function () {
+    function MenuMobileLevel1(hostRef) {
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+    }
+    MenuMobileLevel1.prototype.render = function () {
+        var seriesList = navContentStore.get('seriesList');
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-mobile-level-1 mobile-level-1-item" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-level-1 mobile-level-1-item-scroll" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-content" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-car-series-list-2", { class: "mobile-car-series-list", carSeries: seriesList }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shops-and-more-2", null), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "meta-functionalities" }))))));
+    };
+    return MenuMobileLevel1;
+}());
+var messagesLinkCss = ".sc-phn-messages-link-h .list-item-link.sc-phn-messages-link{display:block;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;border-bottom:1px solid #c9cacb}.sc-phn-messages-link-h .list-item-link.sc-phn-messages-link:hover{color:#d5001c;cursor:pointer}@media (min-width: 760px) and (max-width: 999px){.sc-phn-messages-link-h .list-item-link.sc-phn-messages-link{font-size:1.125rem}}@media (min-width: 1300px){.sc-phn-messages-link-h .list-item-link.sc-phn-messages-link{border-bottom:0;padding-left:0}}.sc-phn-messages-link-h .list-item-link.sc-phn-messages-link a.sc-phn-messages-link{text-decoration:none;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;width:100%;padding:0.875rem 0 0.875rem 0.625rem}@media (min-width: 760px) and (max-width: 999px){.sc-phn-messages-link-h .list-item-link.sc-phn-messages-link a.sc-phn-messages-link{padding-top:1.125rem;padding-bottom:1.125rem}}@media (min-width: 1300px){.sc-phn-messages-link-h .list-item-link.sc-phn-messages-link a.sc-phn-messages-link{padding-bottom:0}}.sc-phn-messages-link-h .list-item-link.sc-phn-messages-link .unread-messages-count.sc-phn-messages-link{height:1rem;margin-left:0.5rem;padding:0 0.3125rem;background-color:#d5001c;border-radius:8px;font-size:0.75rem;color:#fff;line-height:1rem}@media (min-width: 760px) and (max-width: 999px){.sc-phn-messages-link-h .list-item-link.sc-phn-messages-link .unread-messages-count.sc-phn-messages-link{height:1.125rem;font-size:0.875rem;line-height:1.125rem}}.sc-phn-messages-link-h .list-item-link.sc-phn-messages-link .unread-messages-count.sc-phn-messages-link:hover{color:#fff}.sc-phn-messages-link-h .list-item-link.sc-phn-messages-link .unread-messages-count.hidden.sc-phn-messages-link{display:none}";
+var MessagesLink = /** @class */ (function () {
+    function MessagesLink(hostRef) {
+        var _this_1 = this;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.item = EMPTY_ITEM;
+        this.sendNavigationClickAnalyticsEvent = function () {
+            var contentItem = { PhraseId: _this_1.item.PhraseId, Text: _this_1.item.Text, Link: _this_1.item.Link };
+            var analyticsSetup = {
+                applicationId: analyticsSetupStore.get('applicationId'),
+                locale: analyticsSetupStore.get('locale'),
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
+            };
+            var navigationClick = new NavigationClickEvent(analyticsSetup, contentItem);
+            var pagData = (window['pagData'] = window['pagData'] || []);
+            pagData.push(navigationClick.event());
+        };
+    }
+    MessagesLink.prototype.render = function () {
+        var _this_1 = this;
+        var unreadMessagesCount = navContentStore.get('unreadMessagesCount');
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: this.item.Link, onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(); } }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "link-text" }, this.item.Text), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: unreadMessagesCount > 0 ? 'unread-messages-count' : 'unread-messages-count hidden' }, unreadMessagesCount)))));
+    };
+    return MessagesLink;
+}());
+MessagesLink.style = messagesLinkCss;
 var MetaFunctionClick = /** @class */ (function (_super_1) {
     __extends(MetaFunctionClick, _super_1);
     function MetaFunctionClick(analyticsSetup, linkItem) {
@@ -8977,7 +9141,7 @@ var MetaFunctionClick = /** @class */ (function (_super_1) {
             _a);
     };
     MetaFunctionClick.prototype.populateComponentClick = function (linkItem) {
-        this.componentClick.clickElementId = linkItem.Id;
+        this.componentClick.clickElementId = linkItem.PhraseId;
         this.componentClick.clickElementName = linkItem.Text;
         this.componentClick.clickElementType = 'link';
         this.componentClick.targetUrl = linkItem.Link;
@@ -8988,16 +9152,16 @@ var MetaFunctionClick = /** @class */ (function (_super_1) {
     };
     return MetaFunctionClick;
 }(AnalyticsEvent));
-var metaFunctionalitiesCss = ".metafunctionalities.sc-phn-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-direction:column;flex-direction:column;font-size:1rem}@media (-ms-high-contrast: none) and (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{float:right}}@media (min-width: 760px) and (max-width: 999px){.metafunctionalities.sc-phn-meta-functionalities{font-size:1.125rem}}@media (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-align:center;align-items:center;padding-top:0;height:4.0625rem;padding-left:1.25rem;-ms-flex-direction:row;flex-direction:row;font-size:1rem}}@media (min-width: 1760px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-direction:row;flex-direction:row;font-size:1.25rem}}";
+var metaFunctionalitiesCss = ".metafunctionalities.sc-phn-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-direction:column;flex-direction:column;font-size:1rem}@media (-ms-high-contrast: none) and (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{float:right}}@media (min-width: 760px) and (max-width: 999px){.metafunctionalities.sc-phn-meta-functionalities{font-size:1.125rem}}@media (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-align:center;align-items:center;padding-top:0;height:4.0625rem;padding-left:1.25rem;-ms-flex-direction:row;flex-direction:row;font-size:1rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities{margin-right:1.125rem}}@media (min-width: 1760px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-direction:row;flex-direction:row;font-size:1.25rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities{margin-right:1.5rem}}";
 var MetaFunctionalities = /** @class */ (function () {
     function MetaFunctionalities(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.metafunctionalities = [];
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.sendMetaFunctionClickAnalyticsEvent = function (linkItem) {
             var analyticsSetup = {
                 applicationId: analyticsSetupStore.get('applicationId'),
                 locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window')
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
             };
             var metaFunctionClick = new MetaFunctionClick(analyticsSetup, linkItem);
             var pagData = (window['pagData'] = window['pagData'] || []);
@@ -9005,33 +9169,34 @@ var MetaFunctionalities = /** @class */ (function () {
         };
     }
     MetaFunctionalities.prototype.getFieldValueForPhraseId = function (phraseId, fieldName) {
-        var functionality = this.metafunctionalities.find(function (meta) { return meta.PhraseId === phraseId; });
+        var functionality = navContentStore.get('metafunctionalities').find(function (meta) { return meta.PhraseId === phraseId; });
         if (!functionality) {
             return '';
         }
         return functionality[fieldName] ? functionality[fieldName] : '';
     };
     MetaFunctionalities.prototype.getLoggedInStatusTranslations = function () {
-        var functionality = this.metafunctionalities.find(function (meta) { return meta.PhraseId === MYPORSCHE_PHRASE_ID; });
+        var functionality = navContentStore
+            .get('metafunctionalities')
+            .find(function (meta) { return meta.PhraseId === MYPORSCHE_PHRASE_ID; });
         var loggedInStatusTranslations = {};
         if (functionality && functionality.Items) {
             functionality.Items.forEach(function (meta) {
-                loggedInStatusTranslations[meta.Id] = meta[TEXT_FIELD_NAME];
+                loggedInStatusTranslations[meta.PhraseId] = meta[TEXT_FIELD_NAME];
             });
         }
         return loggedInStatusTranslations;
     };
     MetaFunctionalities.prototype.render = function () {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "metafunctionalities" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-dealer-search", { dealerSearchText: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, TEXT_FIELD_NAME), dealerSearchLink: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, LINK_FIELD_NAME), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche", { myporscheText: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, TEXT_FIELD_NAME), myporscheLink: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, LINK_FIELD_NAME), loggedInStatusTranslations: this.getLoggedInStatusTranslations(), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent, setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer })));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "metafunctionalities" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-dealer-search", { class: "dealer-search", dealerSearchText: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, TEXT_FIELD_NAME), dealerSearchLink: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, LINK_FIELD_NAME), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche", { myporscheText: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, TEXT_FIELD_NAME), myporscheLink: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, LINK_FIELD_NAME), loggedInStatusTranslations: this.getLoggedInStatusTranslations(), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent, setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer })));
     };
     Object.defineProperty(MetaFunctionalities.prototype, "hostElement", {
-        get: function () { return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
+        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
         configurable: true
     });
     return MetaFunctionalities;
 }());
-StateTunnel.injectProps(MetaFunctionalities, ['metafunctionalities']);
 MetaFunctionalities.style = metaFunctionalitiesCss;
 var ModelRangeClickEvent = /** @class */ (function (_super_1) {
     __extends(ModelRangeClickEvent, _super_1);
@@ -9056,15 +9221,17 @@ var ModelRangeClickEvent = /** @class */ (function (_super_1) {
 }(ModelAnalyticsEvent));
 var mobileCarSeriesListCss = ".mobile-car-series-list.sc-phn-mobile-car-series-list{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list{width:50%}@media (min-width: 760px) and (max-width: 1299px){.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list{margin-top:0.625rem}}";
 var MobileCarSeriesList = /** @class */ (function () {
-    function class_5(hostRef) {
+    function MobileCarSeriesList(hostRef) {
         var _this_1 = this;
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.carSeries = DEFAULT_SERIES_LIST;
+        this.env = DEFAULT_ENVIRONMENT;
         this.sendNavigationClickAnalyticsEvent = function (series) {
             var analyticsSetup = {
                 applicationId: analyticsSetupStore.get('applicationId'),
                 locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window')
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
             };
             var modelSeriesClickEvent = new ModelRangeClickEvent(analyticsSetup, series.Name, series);
             var pagData = (window['pagData'] = window['pagData'] || []);
@@ -9076,8 +9243,15 @@ var MobileCarSeriesList = /** @class */ (function () {
             subnavigation.style.display = 'block';
             _this_1.setActiveDrawer(subnavigation, 2);
         };
+        this.handlePressEnterKey = function (event, index) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
+                if (event.key === 'Enter') {
+                    _this_1.showCarSubnavigation(index);
+                }
+            }
+        };
     }
-    class_5.prototype.hideAll = function () {
+    MobileCarSeriesList.prototype.hideAll = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 this.hideAllCarSubnavigations();
@@ -9085,102 +9259,268 @@ var MobileCarSeriesList = /** @class */ (function () {
             });
         });
     };
-    class_5.prototype.componentDidLoad = function () {
+    MobileCarSeriesList.prototype.componentDidLoad = function () {
         this.hideAllCarSubnavigations();
     };
-    class_5.prototype.hideAllCarSubnavigations = function () {
+    MobileCarSeriesList.prototype.hideAllCarSubnavigations = function () {
         var _this_1 = this;
         this.carSeries.map(function (_, index) {
             var subnavigation = _this_1.el.querySelector('.drawer-car-series-model-overview-' + index);
             subnavigation.style.display = 'none';
         });
     };
-    class_5.prototype.render = function () {
+    MobileCarSeriesList.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series-list" }, this.carSeries.map(function (series, index) { return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { class: 'car-series car-series-' + index, text: series.Name, image: series.Image, onClick: function () { return _this_1.showCarSubnavigation(index); } }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-car-series-model-overview", { series: series, class: 'drawer-car-series-model-overview drawer-car-series-model-overview-' + index, closeActiveDrawer: _this_1.closeActiveDrawer }))); })));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series-list" }, this.carSeries.map(function (series, index) { return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { class: 'car-series car-series-' + index, text: series.Name, image: series.Image, tabindex: "0", onClick: function () { return _this_1.showCarSubnavigation(index); }, onKeyDown: function (event) { return _this_1.handlePressEnterKey(event, index); } }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-car-series-model-overview", { series: series, class: 'drawer-car-series-model-overview drawer-car-series-model-overview-' + index, closeActiveDrawer: _this_1.closeActiveDrawer }))); })));
     };
-    Object.defineProperty(class_5.prototype, "el", {
-        get: function () { return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
+    Object.defineProperty(MobileCarSeriesList.prototype, "el", {
+        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
         configurable: true
     });
-    return class_5;
+    return MobileCarSeriesList;
 }());
 MobileCarSeriesList.style = mobileCarSeriesListCss;
+var mobileCarSeriesListCss$1 = ".mobile-car-series-list.sc-phn-mobile-car-series-list-2{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.mobile-car-series-list.sc-phn-mobile-car-series-list-2 .mobile-car-series.sc-phn-mobile-car-series-list-2{width:50%}@media (min-width: 760px) and (max-width: 1299px){.mobile-car-series-list.sc-phn-mobile-car-series-list-2 .mobile-car-series.sc-phn-mobile-car-series-list-2{margin-top:0.625rem}}";
+var MobileCarSeriesList$1 = /** @class */ (function () {
+    function MobileCarSeriesList$1(hostRef) {
+        var _this_1 = this;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.carSeries = DEFAULT_SERIES_LIST;
+        this.keyDownHandler = function (event, series, index) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
+                if (event.key === 'Enter') {
+                    _this_1.showDrawer(event, series, index);
+                }
+            }
+        };
+        this.sendNavigationClickAnalyticsEvent = function (series) {
+            var analyticsSetup = {
+                applicationId: analyticsSetupStore.get('applicationId'),
+                locale: analyticsSetupStore.get('locale'),
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
+            };
+            var modelSeriesClickEvent = new ModelRangeClickEvent(analyticsSetup, series.Name, series);
+            var pagData = (window['pagData'] = window['pagData'] || []);
+            pagData.push(modelSeriesClickEvent.event());
+        };
+    }
+    MobileCarSeriesList$1.prototype.showDrawer = function (_, series, index) {
+        var phnDrawerCarSeriesModelOverview2 = (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-car-series-model-overview-2", { series: series, class: 'drawer-car-series-model-overview drawer-car-series-model-overview-' + index, slot: "content" }));
+        var parent = navStateStore.get('activeDrawerContent');
+        var currentParent = navStateStore.get('parentDrawerContent');
+        navStateStore.set('activeDrawerContent', phnDrawerCarSeriesModelOverview2);
+        navStateStore.set('parentDrawerContent', __spreadArrays([parent], currentParent));
+        navStateStore.set('accessibilityMarker', ".car-series-" + index);
+        navStateStore.set('backButtonText', null);
+        this.sendNavigationClickAnalyticsEvent(series);
+    };
+    MobileCarSeriesList$1.prototype.render = function () {
+        var _this_1 = this;
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series-list" }, this.carSeries.map(function (series, index) { return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { class: 'car-series car-series-' + index, text: series.Name, image: series.Image, tabindex: "0", onClick: function (event) { return _this_1.showDrawer(event, series, index); }, onKeyDown: function (event) { return _this_1.keyDownHandler(event, series, index); } }))); })));
+    };
+    return MobileCarSeriesList$1;
+}());
+MobileCarSeriesList$1.style = mobileCarSeriesListCss$1;
+var mobileLayoutCss = ".sc-phn-mobile-layout-h .burger-button.sc-phn-mobile-layout{height:100%}";
+var MobileLayout = /** @class */ (function () {
+    function MobileLayout(hostRef) {
+        var _this_1 = this;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.keyDownHandler = function (event) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
+                if (event.key === 'Enter') {
+                    _this_1.showDrawer(event);
+                }
+            }
+        };
+        this.slotUpdated = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "slotUpdated", 7);
+    }
+    MobileLayout.prototype.showDrawer = function (event) {
+        navStateStore.set('activeDrawerContent', Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-mobile-level-1", { slot: "content" }));
+        var hostElement = event.target.closest('phn-mobile-layout');
+        var menuDrawer = hostElement.querySelector('.drawer-trigger');
+        menuDrawer.showContent(menuDrawer);
+    };
+    MobileLayout.prototype.render = function () {
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-burger-button", { tabindex: "0", class: "burger-button", onClick: this.showDrawer, onKeyDown: this.keyDownHandler }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-drawer", null, navStateStore.get('activeDrawerContent'))));
+    };
+    return MobileLayout;
+}());
+MobileLayout.style = mobileLayoutCss;
 var mobileShopsAndMoreCss = ".sc-phn-mobile-shops-and-more-h{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-direction:column;flex-direction:column;border-top:1px solid #c9cacb;margin-top:1.5rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-mobile-shops-and-more-h{margin-top:3rem}}";
 var MobileShopsAndMore = /** @class */ (function () {
     function MobileShopsAndMore(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.items = DEFAULT_ITEMS_LIST;
+        var _this_1 = this;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.env = DEFAULT_ENVIRONMENT;
+        this.showActiveDrawer = function (overlayRef, item) {
+            overlayRef.style.display = 'block';
+            _this_1.sendNavigationClickAnalyticsEvent(item);
+            _this_1.setActiveDrawer(overlayRef, 2);
+        };
+        this.handlePressEnterKey = function (event, overlayRef, item) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
+                if (event.key === 'Enter') {
+                    _this_1.showActiveDrawer(overlayRef, item);
+                }
+            }
+        };
     }
+    MobileShopsAndMore.prototype.sendNavigationClickAnalyticsEvent = function (item) {
+        var contentItem = { PhraseId: item.PhraseId, Text: item.Text, Link: undefined };
+        var analyticsSetup = {
+            applicationId: analyticsSetupStore.get('applicationId'),
+            locale: analyticsSetupStore.get('locale'),
+            window: analyticsSetupStore.get('window'),
+            environment: analyticsSetupStore.get('environment')
+        };
+        var navigationClickEvent = new NavigationClickEvent(analyticsSetup, contentItem);
+        var pagData = (window['pagData'] = window['pagData'] || []);
+        pagData.push(navigationClickEvent.event());
+    };
+    MobileShopsAndMore.prototype.getItems = function () {
+        var items = [];
+        var shops = navContentStore.get('shops');
+        var more = navContentStore.get('more');
+        if (shops && shops.length > 0) {
+            items.push(shops[0]);
+        }
+        if (more && more.length > 0) {
+            items.push(more[0]);
+        }
+        return items;
+    };
     MobileShopsAndMore.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shops-and-more" }, this.items.map(function (item) {
+        var items = this.getItems();
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shops-and-more" }, items.map(function (item) {
             var overlayRef;
-            return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-container" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-item", { item: item, class: "shops-and-more-item", onClick: function () {
-                    overlayRef.style.display = 'block';
-                    _this_1.setActiveDrawer(overlayRef, 2);
-                } }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Items.length === 1 ? item.Text : '', item: item.Items.length === 1 ? item.Items[0] : item, class: "shops-and-more-overlay", setActiveDrawer: _this_1.setActiveDrawer, closeActiveDrawer: _this_1.closeActiveDrawer, ref: function (el) { return (overlayRef = el); } })));
+            return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-item", { item: item, class: "shops-and-more-item", tabindex: "0", onClick: function () { return _this_1.showActiveDrawer(overlayRef, item); }, onKeyDown: function (event) { return _this_1.handlePressEnterKey(event, overlayRef, item); } }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Items && item.Items.length === 1 ? item.Text : '', item: item.Items && item.Items.length === 1 ? item.Items[0] : item, class: "shops-and-more-overlay", setActiveDrawer: _this_1.setActiveDrawer, closeActiveDrawer: _this_1.closeActiveDrawer, ref: function (el) { return (overlayRef = el); } })));
         })));
     };
     return MobileShopsAndMore;
 }());
 MobileShopsAndMore.style = mobileShopsAndMoreCss;
+var mobileShopsAndMoreCss$1 = ".sc-phn-mobile-shops-and-more-2-h{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-direction:column;flex-direction:column;border-top:1px solid #c9cacb;margin-top:1.5rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-mobile-shops-and-more-2-h{margin-top:3rem}}";
+var MobileShopsAndMore$1 = /** @class */ (function () {
+    function MobileShopsAndMore$1(hostRef) {
+        var _this_1 = this;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.handleKeyDown = function (event, item, index) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
+                if (event.key === 'Enter') {
+                    _this_1.showDrawer(event, item, index);
+                }
+            }
+        };
+    }
+    MobileShopsAndMore$1.prototype.showDrawer = function (_, item, index) {
+        var phnDrawerShopsAndMore2 = (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more-2", { headline: item.Text, item: item.Items && item.Items.length === 1 ? item.Items[0] : item, slot: "content", class: "shops-and-more-drawer-level-1" }));
+        var parent = navStateStore.get('activeDrawerContent');
+        var currentParent = navStateStore.get('parentDrawerContent');
+        navStateStore.set('activeDrawerContent', phnDrawerShopsAndMore2);
+        navStateStore.set('parentDrawerContent', __spreadArrays([parent], currentParent));
+        navStateStore.set('accessibilityMarker', ".shops-and-more-item-" + index);
+        navStateStore.set('backButtonText', null);
+        this.sendNavigationClickAnalyticsEvent(item);
+    };
+    MobileShopsAndMore$1.prototype.sendNavigationClickAnalyticsEvent = function (item) {
+        var contentItem = { PhraseId: item.PhraseId, Text: item.Text, Link: undefined };
+        var analyticsSetup = {
+            applicationId: analyticsSetupStore.get('applicationId'),
+            locale: analyticsSetupStore.get('locale'),
+            window: analyticsSetupStore.get('window'),
+            environment: analyticsSetupStore.get('environment')
+        };
+        var navigationClickEvent = new NavigationClickEvent(analyticsSetup, contentItem);
+        var pagData = (window['pagData'] = window['pagData'] || []);
+        pagData.push(navigationClickEvent.event());
+    };
+    MobileShopsAndMore$1.prototype.getItems = function () {
+        var items = [];
+        var shops = navContentStore.get('shops');
+        var more = navContentStore.get('more');
+        if (shops && shops.length > 0) {
+            items.push(shops[0]);
+        }
+        if (more && more.length > 0) {
+            items.push(more[0]);
+        }
+        return items;
+    };
+    MobileShopsAndMore$1.prototype.render = function () {
+        var _this_1 = this;
+        var items = this.getItems();
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shops-and-more" }, items.map(function (item, index) {
+            return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-item", { item: item, class: 'shops-and-more-item shops-and-more-item-' + index, tabindex: "0", onClick: function (event) { return _this_1.showDrawer(event, item, index); }, onKeyDown: function (event) { return _this_1.handleKeyDown(event, item, index); } })));
+        })));
+    };
+    return MobileShopsAndMore$1;
+}());
+MobileShopsAndMore$1.style = mobileShopsAndMoreCss$1;
 var myporscheCss = ".sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{border-bottom:1px solid #c9cacb;padding:0.875rem 0 0.875rem 0;width:100%}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{border-bottom:0;padding:0}}.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:-0.25rem;font-size:0.75rem}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:-0.1875rem}}@media (min-width: 1300px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:unset;position:absolute;top:0}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{left:1.75rem;padding-top:1.1875rem}}@media (min-width: 1760px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{left:2.1875rem;font-size:0.875rem;padding-top:1.6875rem}}.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{padding:0.875rem 0 0.875rem 0;border-bottom:1px solid #c9cacb}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{display:none}}";
 var Myporsche = /** @class */ (function () {
     function Myporsche(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.myporscheLink = '';
         this.myporscheText = '';
         this.loggedInStatusTranslations = {};
     }
-    Myporsche.prototype.loggedInStateChanged = function () {
-        this.getSubTextForUser();
-    };
     Myporsche.prototype.getSubTextForUser = function () {
-        var phraseId = MYPORSCHE_PHRASE_ID + "." + this.loggedInState;
-        this.subText = this.loggedInStatusTranslations[phraseId] || this.loggedInState;
+        var loggedInState = navContentStore.get('loggedInState');
+        var phraseId = MYPORSCHE_PHRASE_ID + "." + loggedInState;
+        return this.loggedInStatusTranslations[phraseId] || loggedInState;
     };
     Myporsche.prototype.renderLoggedOutComponent = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { class: "myporsche-logged-out", href: this.myporscheLink, onClick: function () {
-                var linkItem = new LinkItem(MYPORSCHE_PHRASE_ID, _this_1.myporscheText, _this_1.myporscheLink);
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { class: "myporsche-logged-out", href: this.myporscheLink, onClick: function () {
+                var linkItem = {
+                    PhraseId: MYPORSCHE_PHRASE_ID,
+                    Text: _this_1.myporscheText,
+                    Link: _this_1.myporscheLink
+                };
                 _this_1.sendMetaFunctionClickAnalyticsEvent(linkItem);
-            }, size: "inherit", icon: "user" }, this.myporscheText, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.subText)));
+            }, size: "inherit", icon: "user" }, this.myporscheText, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.getSubTextForUser())));
     };
     Myporsche.prototype.renderLoadingComponent = function () {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { loading: "true", size: "inherit" }, this.myporscheText));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { loading: "true", size: "inherit" }, this.myporscheText));
     };
     Myporsche.prototype.renderLoggedInComponent = function () {
+        var unreadMessagesCount = navContentStore.get('unreadMessagesCount');
+        var drawerRestructure = isFeatureEnabled(FEATURE_DRAWER_RESTRUCTURE, navContentStore.get('env'));
+        var myPorscheDrawer = drawerRestructure ? (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-drawer-2", { class: "myporsche-logged-in", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), unreadMessagesCount: unreadMessagesCount })) : (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-drawer", { class: "myporsche-logged-in", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer, unreadMessagesCount: unreadMessagesCount }));
         return [
-            Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-drawer", { class: "myporsche-logged-in", myPorscheText: this.myporscheText, loginStatus: this.subText, setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }),
-            Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-flyout", { class: "myporsche-flyout", myPorscheText: this.myporscheText, loginStatus: this.subText })
+            myPorscheDrawer,
+            Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-flyout", { class: "myporsche-flyout", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), unreadMessagesCount: unreadMessagesCount })
         ];
     };
     Myporsche.prototype.render = function () {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, this.loggedInState === LOGGED_OUT_USER_STATUS
+        var loggedInState = navContentStore.get('loggedInState');
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, loggedInState === LOGGED_OUT_USER_STATUS
             ? this.renderLoggedOutComponent()
-            : this.loggedInState === LOADING_STATUS
+            : loggedInState === LOADING_STATUS
                 ? this.renderLoadingComponent()
                 : this.renderLoggedInComponent()));
     };
-    Object.defineProperty(Myporsche, "watchers", {
-        get: function () {
-            return {
-                "loggedInState": ["loggedInStateChanged"]
-            };
-        },
-        enumerable: true,
-        configurable: true
-    });
     return Myporsche;
 }());
-StateTunnel.injectProps(Myporsche, ['loggedInState']);
 Myporsche.style = myporscheCss;
-var myporscheDrawerCss = ".sc-phn-myporsche-drawer-h{display:block}.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:-0.25rem;font-size:0.75rem}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:-0.1875rem}}@media (min-width: 1300px){.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:unset}}.sc-phn-myporsche-drawer-h .drawer-trigger-label.sc-phn-myporsche-drawer{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-direction:column;flex-direction:column;padding-left:0.25rem}.sc-phn-myporsche-drawer-h .drawer--closed.sc-phn-myporsche-drawer{display:none}.sc-phn-myporsche-drawer-h .drawer--opened.sc-phn-myporsche-drawer{display:block}";
+var myporscheDrawerCss = ".sc-phn-myporsche-drawer-h{display:block}.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:-0.25rem;font-size:0.75rem}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:-0.1875rem}}@media (min-width: 1300px){.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:unset}}.sc-phn-myporsche-drawer-h .drawer-trigger.sc-phn-myporsche-drawer:focus-within{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.sc-phn-myporsche-drawer-h .drawer-trigger-label.sc-phn-myporsche-drawer{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-direction:column;flex-direction:column;padding-left:0.25rem}.sc-phn-myporsche-drawer-h .drawer--closed.sc-phn-myporsche-drawer{display:none}.sc-phn-myporsche-drawer-h .drawer--opened.sc-phn-myporsche-drawer{display:block}.sc-phn-myporsche-drawer-h .myporsche-unread-messages-indicator.sc-phn-myporsche-drawer{position:absolute;width:0.375rem;height:0.375rem;border-radius:50%;background-color:#d5001c;left:1.0625rem;top:0.0625rem}.sc-phn-myporsche-drawer-h .myporsche-unread-messages-indicator.hidden.sc-phn-myporsche-drawer{display:none}";
 var MyPorscheDrawer = /** @class */ (function () {
     function MyPorscheDrawer(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        var _this_1 = this;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.env = DEFAULT_ENVIRONMENT;
+        this.unreadMessagesCount = 0;
+        this.handlePressEnterKey = function (event, drawerRef) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
+                if (event.key === 'Enter') {
+                    _this_1.openDrawer(drawerRef);
+                }
+            }
+        };
     }
     MyPorscheDrawer.prototype.openDrawer = function (myPorscheItems) {
         myPorscheItems.style.display = 'block';
@@ -9189,17 +9529,55 @@ var MyPorscheDrawer = /** @class */ (function () {
     MyPorscheDrawer.prototype.render = function () {
         var _this_1 = this;
         var drawerRef;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "drawer-trigger", icon: "arrow-head-right", onClick: function () { return _this_1.openDrawer(drawerRef); } }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "user", size: "small" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "drawer-trigger-label" }, this.myPorscheText, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus))), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items-drawer", { class: "drawer--closed", ref: function (el) { return (drawerRef = el); }, closeActiveDrawer: this.closeActiveDrawer })));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "drawer-trigger", icon: "arrow-head-right", onClick: function () { return _this_1.openDrawer(drawerRef); }, onKeyDown: function (event) { return _this_1.handlePressEnterKey(event, drawerRef); }, cancelTabIndex: false }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: this.unreadMessagesCount > 0
+                ? 'myporsche-unread-messages-indicator'
+                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "user", size: "small" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "drawer-trigger-label" }, this.myPorscheText, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus))), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items-drawer", { class: "drawer--closed", ref: function (el) { return (drawerRef = el); }, closeActiveDrawer: this.closeActiveDrawer })));
     };
     return MyPorscheDrawer;
 }());
 MyPorscheDrawer.style = myporscheDrawerCss;
-var myporscheFlyoutCss = ".sc-phn-myporsche-flyout-h{display:none;position:relative}@media (min-width: 1300px){.sc-phn-myporsche-flyout-h{display:block}}.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout{cursor:pointer}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout:first-child{padding-right:1.125rem}}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout:first-child{padding-right:1.5rem}}@media (min-width: 1300px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout .login-status.sc-phn-myporsche-flyout{position:absolute;top:0;padding-bottom:0.625rem;left:1.75rem;font-size:0.75rem;padding-top:1.1875rem}}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout .login-status.sc-phn-myporsche-flyout{left:2.1875rem;font-size:0.875rem;padding-top:1.6875rem}}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout{-webkit-box-sizing:border-box;box-sizing:border-box;display:block;position:absolute;background:#fff;right:-3rem;z-index:300}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout{-webkit-box-sizing:inherit;box-sizing:inherit;border:1px solid #c9cacb;position:relative;background:#fff}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout:before{content:\"\";width:0;height:0;position:absolute;top:-0.375rem;right:50%;-webkit-transform:translateX(50%);transform:translateX(50%);border-style:solid;border-width:0 0.3125rem 0.3125rem;border-color:transparent transparent #c9cacb}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout:after{content:\"\";width:0;height:0;position:absolute;top:-0.3125rem;right:50%;-webkit-transform:translateX(50%);transform:translateX(50%);border-style:solid;border-width:0 0.3125rem 0.3125rem;border-color:transparent transparent #fff}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout{width:14.625rem;top:2.75rem}}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout{width:17.125rem;top:3.5625rem}}@media (min-width: 1300px){.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout{padding:0.625rem 1.5rem 2.25rem 1.5rem}}";
+var myporscheDrawerCss$1 = ".sc-phn-myporsche-drawer-2-h{display:block}.sc-phn-myporsche-drawer-2-h .login-status.sc-phn-myporsche-drawer-2{margin-top:-0.25rem;font-size:0.75rem}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-drawer-2-h .login-status.sc-phn-myporsche-drawer-2{margin-top:-0.1875rem}}@media (min-width: 1300px){.sc-phn-myporsche-drawer-2-h .login-status.sc-phn-myporsche-drawer-2{margin-top:unset}}.sc-phn-myporsche-drawer-2-h .myporsche-drawer-trigger.sc-phn-myporsche-drawer-2:focus-within{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.sc-phn-myporsche-drawer-2-h .myporsche-drawer-trigger-label.sc-phn-myporsche-drawer-2{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-direction:column;flex-direction:column;padding-left:0.25rem}.sc-phn-myporsche-drawer-2-h .myporsche-unread-messages-indicator.sc-phn-myporsche-drawer-2{position:absolute;width:0.375rem;height:0.375rem;border-radius:50%;background-color:#d5001c;left:1.0625rem;top:0.0625rem}.sc-phn-myporsche-drawer-2-h .myporsche-unread-messages-indicator.hidden.sc-phn-myporsche-drawer-2{display:none}";
+var MyPorscheDrawer$1 = /** @class */ (function () {
+    function MyPorscheDrawer$1(hostRef) {
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.unreadMessagesCount = 0;
+    }
+    MyPorscheDrawer$1.prototype.openDrawer = function () {
+        var phnDrawerCarSeriesModelOverview2 = (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items-drawer-2", { slot: "content", myPorscheText: this.myPorscheText }));
+        var parent = navStateStore.get('activeDrawerContent');
+        var currentParent = navStateStore.get('parentDrawerContent');
+        navStateStore.set('activeDrawerContent', phnDrawerCarSeriesModelOverview2);
+        navStateStore.set('parentDrawerContent', __spreadArrays([parent], currentParent));
+        navStateStore.set('accessibilityMarker', '.my-porsche-meta-functionality');
+        navStateStore.set('backButtonText', null);
+    };
+    MyPorscheDrawer$1.prototype.render = function () {
+        var _this_1 = this;
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "myporsche-drawer-trigger", icon: "arrow-head-right", onClick: function () { return _this_1.openDrawer(); }, cancelTabIndex: false }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: this.unreadMessagesCount > 0
+                ? 'myporsche-unread-messages-indicator'
+                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "user", size: "small" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "myporsche-drawer-trigger-label" }, this.myPorscheText, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)))));
+    };
+    return MyPorscheDrawer$1;
+}());
+MyPorscheDrawer$1.style = myporscheDrawerCss$1;
+var myporscheFlyoutCss = ".sc-phn-myporsche-flyout-h{display:none;position:relative}@media (min-width: 1300px){.sc-phn-myporsche-flyout-h{display:block}}.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout{cursor:pointer}.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout:first-child{padding-right:1.125rem}}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout:first-child{padding-right:1.5rem}}@media (min-width: 1300px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout .login-status.sc-phn-myporsche-flyout{position:absolute;top:0;padding-bottom:0.625rem;left:1.75rem;font-size:0.75rem;padding-top:1.1875rem}}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout .login-status.sc-phn-myporsche-flyout{left:2.1875rem;font-size:0.875rem;padding-top:1.6875rem}}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout{-webkit-box-sizing:border-box;box-sizing:border-box;display:block;position:absolute;background:#fff;right:-3rem;z-index:300}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout{-webkit-box-sizing:inherit;box-sizing:inherit;border:1px solid #c9cacb;position:relative;background:#fff}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout:before{content:\"\";width:0;height:0;position:absolute;top:-0.375rem;right:50%;-webkit-transform:translateX(50%);transform:translateX(50%);border-style:solid;border-width:0 0.3125rem 0.3125rem;border-color:transparent transparent #c9cacb}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout:after{content:\"\";width:0;height:0;position:absolute;top:-0.3125rem;right:50%;-webkit-transform:translateX(50%);transform:translateX(50%);border-style:solid;border-width:0 0.3125rem 0.3125rem;border-color:transparent transparent #fff}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout{width:14.625rem;top:2.75rem}}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout{width:17.125rem;top:3.5625rem}}@media (min-width: 1300px){.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout{padding:0.625rem 1.5rem 2.25rem 1.5rem}}.sc-phn-myporsche-flyout-h .myporsche-unread-messages-indicator.sc-phn-myporsche-flyout{position:absolute;width:0.375rem;height:0.375rem;border-radius:50%;background-color:#d5001c;left:1.0625rem;top:0.0625rem}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .myporsche-unread-messages-indicator.sc-phn-myporsche-flyout{width:0.5rem;height:0.5rem;left:1.25rem;top:0.0625rem}}.sc-phn-myporsche-flyout-h .myporsche-unread-messages-indicator.hidden.sc-phn-myporsche-flyout{display:none}";
 var MyPorscheFlyout = /** @class */ (function () {
     function MyPorscheFlyout(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        var _this_1 = this;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.env = DEFAULT_ENVIRONMENT;
+        this.unreadMessagesCount = 0;
         this.isActive = false;
+        this.keyDownHandler = function (event) {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
+                if (event.key === 'Enter') {
+                    _this_1.isActive = true;
+                }
+                if (event.shiftKey && event.key === 'Tab') {
+                    _this_1.isActive = false;
+                }
+            }
+        };
     }
     MyPorscheFlyout.prototype.myPorscheCloseHandler = function () {
         this.isActive = false;
@@ -9210,16 +9588,11 @@ var MyPorscheFlyout = /** @class */ (function () {
     MyPorscheFlyout.prototype.mouseLeaveHandler = function () {
         this.isActive = false;
     };
-    MyPorscheFlyout.prototype.keyDownHandler = function (event) {
-        if (isFeatureEnabled(FEATURE_KEYBOARD, this.env)) {
-            if (event.key === 'Enter') {
-                this.isActive = true;
-            }
-        }
-    };
     MyPorscheFlyout.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], { tabindex: "0" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { class: "flyout-trigger", size: "inherit", icon: "user", active: this.isActive }, this.myPorscheText, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)), this.isActive ? (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "myporsche-items" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", { myPorscheCloseHandler: function () { return _this_1.myPorscheCloseHandler(); } }))) : null));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: this.unreadMessagesCount > 0
+                ? 'myporsche-unread-messages-indicator'
+                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { class: "flyout-trigger", size: "inherit", icon: "user", active: this.isActive, tabindex: "0", onKeyDown: this.keyDownHandler }, this.myPorscheText, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)), this.isActive ? (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "myporsche-items" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", { myPorscheCloseHandler: function () { return _this_1.myPorscheCloseHandler(); } }))) : null));
     };
     return MyPorscheFlyout;
 }());
@@ -9228,18 +9601,17 @@ var myporscheItemsCss = ".sc-phn-myporsche-items-h{display:block}.sc-phn-myporsc
 var MyPorscheItems = /** @class */ (function () {
     function MyPorscheItems(hostRef) {
         var _this_1 = this;
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.env = DEFAULT_ENVIRONMENT;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.handlePressShiftTabKey = function (event) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
-                if (event.shiftKey && event.key === 'Tab') {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
+                if (window.innerWidth > MAX_M_VIEWPORT_WIDTH && event.shiftKey && event.key === 'Tab') {
                     _this_1.myPorscheCloseHandler();
                 }
             }
         };
         this.handlePressTabKey = function (event) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
-                if (!event.shiftKey && event.key === 'Tab') {
+            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
+                if (window.innerWidth > MAX_M_VIEWPORT_WIDTH && !event.shiftKey && event.key === 'Tab') {
                     _this_1.myPorscheCloseHandler();
                 }
             }
@@ -9247,34 +9619,46 @@ var MyPorscheItems = /** @class */ (function () {
     }
     MyPorscheItems.prototype.getMyPorscheItemFromTemplateAsLinkItem = function (id) {
         var phraseId = MYPORSCHE_PHRASE_ID + "." + id;
-        var myPorscheItems = this.metafunctionalities.find(function (m) { return m.PhraseId === MYPORSCHE_PHRASE_ID; }).Items;
-        var myPorscheItem = myPorscheItems.find(function (item) { return item.Id === phraseId; });
-        return new LinkItem(myPorscheItem.Id, myPorscheItem.Text, myPorscheItem.Link);
+        // TODO Add test for Items presence, find failure
+        var myPorscheItems = navContentStore.get('metafunctionalities').find(function (m) { return m.PhraseId === MYPORSCHE_PHRASE_ID; })
+            .Items;
+        return myPorscheItems.find(function (item) { return item.PhraseId === phraseId; });
     };
     MyPorscheItems.prototype.render = function () {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: this.getMyPorscheItemFromTemplateAsLinkItem('carsandservices'), onKeyDown: this.handlePressShiftTabKey }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: this.getMyPorscheItemFromTemplateAsLinkItem('messages') }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: this.getMyPorscheItemFromTemplateAsLinkItem('accountadministration') }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("hr", null), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item logout", item: this.getMyPorscheItemFromTemplateAsLinkItem('logout'), onKeyDown: this.handlePressTabKey })));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: this.getMyPorscheItemFromTemplateAsLinkItem('carsandservices'), onKeyDown: this.handlePressShiftTabKey }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-messages-link", { class: "myporsche-list-item", item: this.getMyPorscheItemFromTemplateAsLinkItem('messages') }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: this.getMyPorscheItemFromTemplateAsLinkItem('accountadministration') }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("hr", null), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item logout", item: this.getMyPorscheItemFromTemplateAsLinkItem('logout'), onKeyDown: this.handlePressTabKey })));
     };
     return MyPorscheItems;
 }());
-StateTunnel.injectProps(MyPorscheItems, ['metafunctionalities']);
 MyPorscheItems.style = myporscheItemsCss;
-var myporscheItemsDrawerCss = ".sc-phn-myporsche-items-drawer-h{position:fixed;right:0;top:0;bottom:0;overflow-y:auto;background-color:#fff;width:100%;padding-bottom:3.125rem;z-index:999999}@media (min-width: 1000px) and (max-width: 1299px){.sc-phn-myporsche-items-drawer-h{width:568px}}.sc-phn-myporsche-items-drawer-h .drawer-container.sc-phn-myporsche-items-drawer{padding-right:7%;padding-left:7%}.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer{padding-top:0.75rem}}@media (min-width: 1300px){.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer{padding-top:unset}}@media (min-width: 760px){.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer .close-button.sc-phn-myporsche-items-drawer{margin-right:-1.125rem}}.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer .back-button.sc-phn-myporsche-items-drawer{margin-left:-0.625rem}";
+var myporscheItemsDrawerCss = ".sc-phn-myporsche-items-drawer-h{position:fixed;right:0;top:0;bottom:0;overflow-y:auto;overscroll-behavior-y:none;background-color:#fff;width:100%;padding-bottom:3.125rem;z-index:999999}@media (min-width: 1000px) and (max-width: 1299px){.sc-phn-myporsche-items-drawer-h{width:568px}}.sc-phn-myporsche-items-drawer-h .drawer-container.sc-phn-myporsche-items-drawer{padding-right:7%;padding-left:7%}.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer{padding-top:0.75rem}}@media (min-width: 1300px){.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer{padding-top:unset}}@media (min-width: 760px){.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer .close-button.sc-phn-myporsche-items-drawer{margin-right:-1.125rem}}.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer .back-button.sc-phn-myporsche-items-drawer{margin-left:-0.625rem}";
 var MyPorscheItemsDrawer = /** @class */ (function () {
     function MyPorscheItemsDrawer(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
+    MyPorscheItemsDrawer.prototype.hideDrawer = function () {
+        this.hostElement.style.display = 'none';
+    };
+    MyPorscheItemsDrawer.prototype.keyDownHandler = function (event) {
+        if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
+            if (!event.shiftKey && event.key === 'Tab') {
+                var focusable = this.hostElement.querySelectorAll(FOCUSABLE_ELEMENTS_SELECTOR);
+                if (event.target === focusable[focusable.length - 1]) {
+                    event.preventDefault();
+                    this.hostElement.querySelector('phn-back-button > p-button-pure').focus();
+                }
+            }
+        }
+    };
     MyPorscheItemsDrawer.prototype.getValueForField = function (fieldName) {
         var text = '';
-        if (this.menu && this.menu.length > 0) {
-            var menuItem = this.menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
+        var menu = navContentStore.get('menu');
+        if (menu && menu.length > 0) {
+            var menuItem = menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
             if (menuItem && menuItem[fieldName]) {
                 text = menuItem[fieldName];
             }
         }
         return text;
-    };
-    MyPorscheItemsDrawer.prototype.hideDrawer = function () {
-        this.hostElement.style.display = 'none';
     };
     MyPorscheItemsDrawer.prototype.hide = function () {
         this.hideDrawer();
@@ -9282,24 +9666,34 @@ var MyPorscheItemsDrawer = /** @class */ (function () {
     };
     MyPorscheItemsDrawer.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "drawer-level-2-item-scroll" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-back-and-close" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", buttonId: this.getValueForField(PHRASEID_FIELD_NAME), text: this.getValueForField(TEXT_FIELD_NAME), onClick: function () { return _this_1.hide(); } }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: "My Porsche", class: "drawer-headline" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", null))));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "drawer-level-2-item-scroll" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-back-and-close" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", buttonId: this.getValueForField(PHRASEID_FIELD_NAME), text: this.getValueForField(TEXT_FIELD_NAME), onClick: function () { return _this_1.hide(); } }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: "My Porsche", class: "drawer-headline" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", null))));
     };
     Object.defineProperty(MyPorscheItemsDrawer.prototype, "hostElement", {
-        get: function () { return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
-        enumerable: true,
+        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
         configurable: true
     });
     return MyPorscheItemsDrawer;
 }());
-StateTunnel.injectProps(MyPorscheItemsDrawer, ['menu']);
 MyPorscheItemsDrawer.style = myporscheItemsDrawerCss;
+var myporscheItemsDrawerCss$1 = ".sc-phn-myporsche-items-drawer-2-h{padding-bottom:3.125rem}";
+var MyPorscheItemsDrawer$1 = /** @class */ (function () {
+    function MyPorscheItemsDrawer$1(hostRef) {
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+    }
+    MyPorscheItemsDrawer$1.prototype.render = function () {
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.myPorscheText, class: "drawer-headline" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", null))));
+    };
+    return MyPorscheItemsDrawer$1;
+}());
+MyPorscheItemsDrawer$1.style = myporscheItemsDrawerCss$1;
 var previewBadgeCss = ".sc-phn-preview-badge-h{display:block;position:absolute;top:0;right:0;background-color:#d5001c;z-index:9999;padding:0 0.125rem}";
 var PreviewBadge = /** @class */ (function () {
     function PreviewBadge(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     PreviewBadge.prototype.render = function () {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { theme: "dark", size: "x-small" }, this.versionString)));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { theme: "dark", size: "x-small" }, this.versionString)));
     };
     return PreviewBadge;
 }());
@@ -9307,42 +9701,52 @@ PreviewBadge.style = previewBadgeCss;
 var shopsAndMoreCss = ".shops-and-more.sc-phn-shops-and-more{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more.sc-phn-shops-and-more{padding-right:1.5rem}}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more.sc-phn-shops-and-more .shops-and-more-overlay-trigger.sc-phn-shops-and-more{padding:0 0.5625rem;height:91px}}@media (min-width: 1760px){.shops-and-more.sc-phn-shops-and-more .shops-and-more-overlay-trigger.sc-phn-shops-and-more{padding:0 0.75rem;height:102px}}";
 var ShopsAndMore = /** @class */ (function () {
     function ShopsAndMore(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.items = DEFAULT_ITEMS_LIST;
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
+    ShopsAndMore.prototype.getItems = function () {
+        var items = [];
+        var shops = navContentStore.get('shops');
+        var more = navContentStore.get('more');
+        if (shops && shops.length > 0) {
+            items.push(shops[0]);
+        }
+        if (more && more.length > 0) {
+            items.push(more[0]);
+        }
+        return items;
+    };
     ShopsAndMore.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more" }, this.items.map(function (item) {
-            return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "shops-and-more-overlay-trigger overlay-trigger", showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-item", { slot: "button", item: item, class: "shops-and-more-item" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-overview", { slot: "content", item: item })));
+        var items = this.getItems();
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more" }, items.map(function (item) {
+            return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "shops-and-more-overlay-trigger overlay-trigger", showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-item", { slot: "button", item: item, class: "shops-and-more-item" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-overview", { slot: "content", item: item })));
         })));
     };
     return ShopsAndMore;
 }());
 ShopsAndMore.style = shopsAndMoreCss;
-var shopsAndMoreItemCss = ".sc-phn-shops-and-more-item-h{display:-ms-flexbox;display:flex;color:#000;font-size:1rem;padding:0.875rem 0 1rem 0.625rem;border-bottom:1px solid #c9cacb}.sc-phn-shops-and-more-item-h:hover{color:#d5001c;cursor:pointer}@media (min-width: 760px) and (max-width: 999px){.sc-phn-shops-and-more-item-h{padding:1.125rem 0 1.125rem 0.625rem;font-size:1.125rem}}@media (min-width: 1000px) and (max-width: 1299px){.sc-phn-shops-and-more-item-h{padding:0.875rem 0 0.875rem 0.625rem}}@media (min-width: 1300px){.sc-phn-shops-and-more-item-h{border-bottom:0;padding:1.3125rem 0 2.75rem 0;white-space:nowrap}.sc-phn-shops-and-more-item-h:hover{cursor:default;color:inherit}}@media (min-width: 1760px){.sc-phn-shops-and-more-item-h{padding:1.6875rem 0 2.8125rem 0;font-size:1.25rem}}.sc-phn-shops-and-more-item-h .shops-and-more-item-drawer.sc-phn-shops-and-more-item{display:-ms-flexbox;display:flex;width:100%}@media (min-width: 1300px){.sc-phn-shops-and-more-item-h .shops-and-more-item-drawer.sc-phn-shops-and-more-item{display:none}}.sc-phn-shops-and-more-item-h .shops-and-more-item-mega-menu.sc-phn-shops-and-more-item{display:none}@media (min-width: 1300px){.sc-phn-shops-and-more-item-h .shops-and-more-item-mega-menu.sc-phn-shops-and-more-item{display:-ms-flexbox;display:flex}}";
+var shopsAndMoreItemCss = ".sc-phn-shops-and-more-item-h{display:-ms-flexbox;display:flex;color:#000;font-size:1rem;padding:0.875rem 0 1rem 0.625rem;border-bottom:1px solid #c9cacb}.sc-phn-shops-and-more-item-h:hover{color:#d5001c;cursor:pointer}@media (min-width: 480px) and (max-width: 759px){.sc-phn-shops-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-shops-and-more-item-h{padding:1.125rem 0 1.125rem 0.625rem;font-size:1.125rem}.sc-phn-shops-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 1000px) and (max-width: 1299px){.sc-phn-shops-and-more-item-h{padding:0.875rem 0 0.875rem 0.625rem}.sc-phn-shops-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 1300px){.sc-phn-shops-and-more-item-h{border-bottom:0;padding:1.3125rem 0 2.75rem 0;white-space:nowrap}.sc-phn-shops-and-more-item-h:hover{cursor:default;color:inherit}}@media (min-width: 1760px){.sc-phn-shops-and-more-item-h{padding:1.6875rem 0 2.8125rem 0;font-size:1.25rem}}.sc-phn-shops-and-more-item-h .shops-and-more-item-drawer.sc-phn-shops-and-more-item{display:-ms-flexbox;display:flex;width:100%}@media (min-width: 1300px){.sc-phn-shops-and-more-item-h .shops-and-more-item-drawer.sc-phn-shops-and-more-item{display:none}}.sc-phn-shops-and-more-item-h .shops-and-more-item-mega-menu.sc-phn-shops-and-more-item{display:none}@media (min-width: 1300px){.sc-phn-shops-and-more-item-h .shops-and-more-item-mega-menu.sc-phn-shops-and-more-item{display:-ms-flexbox;display:flex}}";
 var ShopsAndMoreItem = /** @class */ (function () {
     function ShopsAndMoreItem(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
     }
-    ShopsAndMoreItem.prototype.sendNavigationClickAnalyticsEvent = function (item) {
-        var contentItem = { PhraseId: item.PhraseId, Text: item.Text, Link: undefined };
-        var analyticsSetup = {
-            applicationId: analyticsSetupStore.get('applicationId'),
-            locale: analyticsSetupStore.get('locale'),
-            window: analyticsSetupStore.get('window')
-        };
-        var navigationClickEvent = new NavigationClickEvent(analyticsSetup, contentItem);
-        var pagData = (window['pagData'] = window['pagData'] || []);
-        pagData.push(navigationClickEvent.event());
-    };
     ShopsAndMoreItem.prototype.render = function () {
-        var _this_1 = this;
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "shops-and-more-item-drawer", icon: "arrow-head-right", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(_this_1.item); } }, this.item.Text), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "shops-and-more-item-mega-menu" }, this.item.Text)));
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "shops-and-more-item-drawer", icon: "arrow-head-right" }, this.item.Text), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "shops-and-more-item-mega-menu" }, this.item.Text)));
     };
     return ShopsAndMoreItem;
 }());
 ShopsAndMoreItem.style = shopsAndMoreItemCss;
+var hasLinkItemChild = function (item) {
+    if (item.Items) {
+        for (var index = 0; index < item.Items.length; index++) {
+            if (item.Items[index].Link) {
+                return true;
+            }
+        }
+    }
+    return false;
+};
 var NavigationLoadEvent = /** @class */ (function (_super_1) {
     __extends(NavigationLoadEvent, _super_1);
     function NavigationLoadEvent(analyticsSetup, item) {
@@ -9375,11 +9779,11 @@ var NavigationLoadEvent = /** @class */ (function (_super_1) {
 }(AnalyticsEvent));
 var shopsAndMoreOverviewCss = ".shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:center;justify-content:center}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{padding-top:3.125rem}}@media (min-width: 1760px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{padding-top:3rem}}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview{margin-left:3.75rem;margin-right:3.75rem;width:16.6875rem}}@media (min-width: 1760px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview{margin-left:3rem;margin-right:3rem;width:21.6875rem}}.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview:nth-child(2){margin:0}.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview .list-item-group.sc-phn-shops-and-more-overview{padding-top:0.375rem;padding-left:0.625rem;padding-right:0.625rem}";
 var ShopsAndMoreOverview = /** @class */ (function () {
-    function class_6(hostRef) {
-        Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+    function ShopsAndMoreOverview(hostRef) {
+        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
     }
-    class_6.prototype.triggerAnalyticsEvent = function () {
+    ShopsAndMoreOverview.prototype.triggerAnalyticsEvent = function () {
         return __awaiter(this, void 0, void 0, function () {
             var pagData, analyticsSetup, analyticsEvent;
             return __generator(this, function (_a) {
@@ -9387,7 +9791,8 @@ var ShopsAndMoreOverview = /** @class */ (function () {
                 analyticsSetup = {
                     applicationId: analyticsSetupStore.get('applicationId'),
                     locale: analyticsSetupStore.get('locale'),
-                    window: analyticsSetupStore.get('window')
+                    window: analyticsSetupStore.get('window'),
+                    environment: analyticsSetupStore.get('environment')
                 };
                 analyticsEvent = new NavigationLoadEvent(analyticsSetup, this.item);
                 pagData.push(analyticsEvent.event());
@@ -9395,24 +9800,24 @@ var ShopsAndMoreOverview = /** @class */ (function () {
             });
         });
     };
-    class_6.prototype.renderLinkGroup = function (_items, _title) {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "link-group" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: _title, class: "head-line" }), Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "list-item-group" }, _items.map(function (linkItem) {
-            return Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: linkItem });
+    ShopsAndMoreOverview.prototype.renderLinkGroup = function (_items, _title) {
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "link-group" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: _title, class: "head-line" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "list-item-group" }, _items.map(function (linkItem) {
+            return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: linkItem });
         }))));
     };
-    class_6.prototype.renderLinkGroups = function (_items) {
+    ShopsAndMoreOverview.prototype.renderLinkGroups = function (_items) {
         var _this_1 = this;
         return (_items &&
             _items.map(function (childItem) {
                 return _this_1.renderLinkGroup(childItem.Items, childItem.Text);
             }));
     };
-    class_6.prototype.render = function () {
-        return (Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview" }, Object(_index_5a8cb5da_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview-content" }, hasLinkItemChild(this.item)
+    ShopsAndMoreOverview.prototype.render = function () {
+        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview-content" }, hasLinkItemChild(this.item)
             ? this.renderLinkGroup(this.item.Items, this.item.Text)
             : this.renderLinkGroups(this.item.Items))));
     };
-    return class_6;
+    return ShopsAndMoreOverview;
 }());
 ShopsAndMoreOverview.style = shopsAndMoreOverviewCss;
 

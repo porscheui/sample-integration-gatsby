@@ -1,10 +1,10 @@
 exports.ids = [9];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js":
-/*!***************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js ***!
-  \***************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js":
+/*!********************************************************************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js ***!
+  \********************************************************************************************************************************************************/
 /*! exports provided: h, i */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -58,10 +58,10 @@ var fixEventTarget = function (event, element) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js":
-/*!**************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js ***!
-  \**************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js":
+/*!*******************************************************************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js ***!
+  \*******************************************************************************************************************************************************/
 /*! exports provided: i */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -178,17 +178,17 @@ var improveFocusHandlingForCustomElement = function (element) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js ***!
-  \******************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js":
+/*!***********************************************************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js ***!
+  \***********************************************************************************************************************************************/
 /*! exports provided: c */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
-/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
 
 var classnames = Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
     /*!
@@ -239,20 +239,20 @@ var classnames = Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MO
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-button.entry.js":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-button.entry.js ***!
-  \******************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-button.entry.js":
+/*!***********************************************************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-button.entry.js ***!
+  \***********************************************************************************************************************************************/
 /*! exports provided: p_button */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_button", function() { return Button; });
-/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
-/* harmony import */ var _buttonHandling_8f4ca036_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buttonHandling-8f4ca036.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js");
-/* harmony import */ var _index_359f03c5_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index-359f03c5.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js");
-/* harmony import */ var _focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./focusHandling-e078221d.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js");
+/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+/* harmony import */ var _buttonHandling_8f4ca036_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buttonHandling-8f4ca036.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js");
+/* harmony import */ var _index_359f03c5_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index-359f03c5.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js");
+/* harmony import */ var _focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./focusHandling-e078221d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js");
 
 
 
