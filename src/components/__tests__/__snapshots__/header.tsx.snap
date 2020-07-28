@@ -40,6 +40,14 @@ exports[`Header renders correctly 1`] = `
     </a>
     <a
       className="removeLinkStyle"
+      href="/utilities"
+    >
+      <p-link-pure>
+        Utilities
+      </p-link-pure>
+    </a>
+    <a
+      className="removeLinkStyle"
       href="/phn-header"
     >
       <p-link-pure>
