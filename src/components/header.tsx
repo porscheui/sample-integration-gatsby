@@ -20,6 +20,9 @@ const Header = ({ siteTitle }): JSX.Element => (
       <Link to="/forms" className="removeLinkStyle">
         <PLinkPure>Forms</PLinkPure>
       </Link>
+      <Link to="/utilities" className="removeLinkStyle">
+        <PLinkPure>Utilities</PLinkPure>
+      </Link>
       <Link to="/phn-header" className="removeLinkStyle">
         <PLinkPure>Phn Header</PLinkPure>
       </Link>

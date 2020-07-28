@@ -1585,6 +1585,13 @@
   dependencies:
     "@porsche-design-system/components-js" "1.5.2"
 
+"@porsche-design-system/utilities@^1.0.5":
+  version "1.0.5"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/utilities/-/@porsche-design-system/utilities-1.0.5.tgz#15a456144653158c538189f9b445ef0d9d156a42"
+  integrity sha1-FaRWFEZTFYxTgYn5tEXvDZ0VakI=
+  dependencies:
+    csstype "^2.6.11"
+
 "@porschehn/navigation@^1.2.1":
   version "1.2.1"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-1.2.1.tgz#c68ddb8839a0c3ecfbc5e2fb3dbc01f26fd4a8c5"
