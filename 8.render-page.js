@@ -114,9 +114,9 @@ function throttle(delay, noTrailing, callback, debounceMode) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-e60665f4.js":
+/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-c7d0058c.js":
 /*!*****************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-e60665f4.js ***!
+  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-c7d0058c.js ***!
   \*****************************************************************************************************************************************************/
 /*! exports provided: c */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -124,44 +124,12 @@ function throttle(delay, noTrailing, callback, debounceMode) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return calcLineHeightForElement; });
-/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
+/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
 
-var FONT_SIZE_REGEX = /^(\d+\.?\d*)(rem|px)$/;
-var REM_BASE = 16;
-var remToPx = function (rem) {
-    var _a;
-    var _b = (_a = rem === null || rem === void 0 ? void 0 : rem.match(FONT_SIZE_REGEX)) !== null && _a !== void 0 ? _a : [], fontSizeValue = _b[1], fontSizeUnit = _b[2];
-    if (fontSizeUnit !== 'rem' || fontSizeValue === '0') {
-        throw new Error('function only accepts value in rem and not 0, e.g. 1.5rem');
-    }
-    else {
-        return parseFloat("" + fontSizeValue) * REM_BASE + "px";
-    }
-};
-var calculateLineHeight = function (fontSize) {
-    var _a;
-    var _b = (_a = fontSize === null || fontSize === void 0 ? void 0 : fontSize.match(FONT_SIZE_REGEX)) !== null && _a !== void 0 ? _a : [], fontSizeValue = _b[1], fontSizeUnit = _b[2];
-    if (fontSizeUnit === undefined || fontSizeValue === undefined || fontSizeValue === '0') {
-        throw new Error("font size needs to be value + px or rem and not 0, e.g. 15rem or 16px, received: '" + fontSize + "'");
-    }
-    var fontSizePx = fontSizeUnit === 'rem' ? remToPx(fontSize) : fontSizeValue;
-    var fontSizeLength = parseFloat(fontSizePx);
-    var e = 2.71828;
-    var exactLineHeightFactor = 0.911 / (2.97 + 0.005 * Math.pow(e, 0.2 * fontSizeLength)) + 1.2;
-    var exactLineHeightPx = fontSizeLength * exactLineHeightFactor;
-    var remainingPx = exactLineHeightPx % 4;
-    if (remainingPx > 2) {
-        remainingPx = remainingPx - 4;
-    }
-    var roundingFactor = 100000;
-    var fittedLineHeightPx = exactLineHeightPx - remainingPx;
-    var fittedLineHeightFactor = fittedLineHeightPx / fontSizeLength;
-    return Math.round(fittedLineHeightFactor * roundingFactor) / roundingFactor;
-};
 var calcLineHeightForElement = function (tag) {
     var fontSize = window.getComputedStyle(tag).fontSize;
     // fontSize is "" when element does no longer exist and would throw an exception in calculateLineHeight
-    return fontSize && calculateLineHeight(fontSize);
+    return fontSize && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["e"])(fontSize);
 };
 
 
@@ -179,12 +147,12 @@ var calcLineHeightForElement = function (tag) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_icon", function() { return Icon; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_text", function() { return Text; });
-/* harmony import */ var _breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-f03211e4.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-f03211e4.js");
-/* harmony import */ var _line_height_e60665f4_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./line-height-e60665f4.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-e60665f4.js");
+/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
+/* harmony import */ var _line_height_c7d0058c_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./line-height-c7d0058c.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-c7d0058c.js");
 /* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
 /* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
 /* harmony import */ var _transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./transition-listener-302b2719.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js");
-/* harmony import */ var _index_359f03c5_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index-359f03c5.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-359f03c5.js");
+/* harmony import */ var _index_45be8764_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index-45be8764.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js");
 /* harmony import */ var _index_9849e1be_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./index-9849e1be.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-9849e1be.js");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -274,32 +242,6 @@ var isValid = function (elm) {
     }
     return true;
 };
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-var __assign = function () {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s)
-                if (Object.prototype.hasOwnProperty.call(s, p))
-                    t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 /**
  * Source: ftp://ftp.unicode.org/Public/UCD/latest/ucd/SpecialCasing.txt
  */
@@ -356,7 +298,7 @@ function pascalCase(input, options) {
     if (options === void 0) {
         options = {};
     }
-    return noCase(input, __assign({ delimiter: "", transform: pascalCaseTransform }, options));
+    return noCase(input, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["_"])({ delimiter: "", transform: pascalCaseTransform }, options));
 }
 function camelCaseTransform(input, index) {
     if (index === 0)
@@ -367,7 +309,7 @@ function camelCase(input, options) {
     if (options === void 0) {
         options = {};
     }
-    return pascalCase(input, __assign({ transform: camelCaseTransform }, options));
+    return pascalCase(input, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["_"])({ transform: camelCaseTransform }, options));
 }
 /**
  * TODO: Cache is shared between tests and never cleared. Evaluate solution.
@@ -406,7 +348,7 @@ var buildIconUrl = function (iconNameOrSource) {
 var iconCss = ":host{display:-ms-inline-flexbox;display:inline-flex;vertical-align:top}.p-icon{display:-ms-flexbox;display:flex;-ms-flex-negative:0;flex-shrink:0;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;width:1.5rem;height:1.5rem}.p-icon--size-small{width:1.5rem;height:1.5rem}.p-icon--size-medium{width:2.25rem;height:2.25rem}.p-icon--size-large{width:3rem;height:3rem}.p-icon--size-inherit{width:inherit;height:inherit}.p-icon--color-brand.p-icon--theme-light{fill:#d5001c}.p-icon--color-brand.p-icon--theme-dark{fill:#d5001c}.p-icon--color-default.p-icon--theme-light{fill:#000}.p-icon--color-default.p-icon--theme-dark{fill:#fff}.p-icon--color-neutral-contrast-high.p-icon--theme-light{fill:#323639}.p-icon--color-neutral-contrast-high.p-icon--theme-dark{fill:#e3e4e5}.p-icon--color-neutral-contrast-medium.p-icon--theme-light{fill:#626669}.p-icon--color-neutral-contrast-medium.p-icon--theme-dark{fill:#b0b1b2}.p-icon--color-neutral-contrast-low.p-icon--theme-light{fill:#c9cacb}.p-icon--color-neutral-contrast-low.p-icon--theme-dark{fill:#4a4e51}.p-icon--color-notification-success.p-icon--theme-light{fill:#018a16}.p-icon--color-notification-success.p-icon--theme-dark{fill:#01ba1d}.p-icon--color-notification-warning.p-icon--theme-light{fill:#ff9b00}.p-icon--color-notification-warning.p-icon--theme-dark{fill:#ff9b00}.p-icon--color-notification-error.p-icon--theme-light{fill:#e00000}.p-icon--color-notification-error.p-icon--theme-dark{fill:#fc1717}.p-icon--color-notification-neutral.p-icon--theme-light{fill:#0061BD}.p-icon--color-notification-neutral.p-icon--theme-dark{fill:#2193FF}.p-icon--color-inherit{fill:currentColor}";
 var Icon = /** @class */ (function () {
     function Icon(hostRef) {
-        Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         /**
          * Specifies which icon to use.
          */
@@ -462,8 +404,8 @@ var Icon = /** @class */ (function () {
         }
     };
     Icon.prototype.render = function () {
-        var iconClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('icon'), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("icon--size-" + this.size), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("icon--color-" + this.color), this.color !== 'inherit' && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("icon--theme-" + this.theme));
-        return (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("i", { class: iconClasses, innerHTML: this.svgContent })));
+        var iconClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('icon'), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("icon--size-" + this.size), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("icon--color-" + this.color), this.color !== 'inherit' && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("icon--theme-" + this.theme));
+        return (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("i", { class: iconClasses, innerHTML: this.svgContent })));
     };
     Icon.prototype.waitUntilVisible = function (el, rootMargin, cb) {
         var _this = this;
@@ -484,7 +426,7 @@ var Icon = /** @class */ (function () {
         }
     };
     Object.defineProperty(Icon.prototype, "el", {
-        get: function () { return Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        get: function () { return Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -504,7 +446,7 @@ Icon.style = iconCss;
 var textCss = ":host{display:block}::slotted(p),::slotted(address),::slotted(blockquote),::slotted(figcaption),::slotted(cite),::slotted(time),::slotted(legend){margin:0 !important;padding:0 !important;font-style:normal !important;font-size:inherit !important}.p-text{font-size:1rem;line-height:1.5;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:400;padding:0;margin:0;list-style-type:none;display:inherit;-webkit-transition:font-size 1ms linear;transition:font-size 1ms linear}.p-text--size-x-small{font-size:0.75rem;line-height:1.6666666667}.p-text--size-small{font-size:1rem;line-height:1.5}.p-text--size-medium{font-size:1.5rem;line-height:1.5}.p-text--size-large{font-size:2.25rem;line-height:1.3333333333}.p-text--size-x-large{font-size:3.25rem;line-height:1.2307692308}.p-text--size-inherit{font-size:inherit;line-height:inherit}@media (min-width: 480px){.p-text--size-x-small-xs{font-size:0.75rem;line-height:1.6666666667}.p-text--size-small-xs{font-size:1rem;line-height:1.5}.p-text--size-medium-xs{font-size:1.5rem;line-height:1.5}.p-text--size-large-xs{font-size:2.25rem;line-height:1.3333333333}.p-text--size-x-large-xs{font-size:3.25rem;line-height:1.2307692308}.p-text--size-inherit-xs{font-size:inherit;line-height:inherit}}@media (min-width: 760px){.p-text--size-x-small-s{font-size:0.75rem;line-height:1.6666666667}.p-text--size-small-s{font-size:1rem;line-height:1.5}.p-text--size-medium-s{font-size:1.5rem;line-height:1.5}.p-text--size-large-s{font-size:2.25rem;line-height:1.3333333333}.p-text--size-x-large-s{font-size:3.25rem;line-height:1.2307692308}.p-text--size-inherit-s{font-size:inherit;line-height:inherit}}@media (min-width: 1000px){.p-text--size-x-small-m{font-size:0.75rem;line-height:1.6666666667}.p-text--size-small-m{font-size:1rem;line-height:1.5}.p-text--size-medium-m{font-size:1.5rem;line-height:1.5}.p-text--size-large-m{font-size:2.25rem;line-height:1.3333333333}.p-text--size-x-large-m{font-size:3.25rem;line-height:1.2307692308}.p-text--size-inherit-m{font-size:inherit;line-height:inherit}}@media (min-width: 1300px){.p-text--size-x-small-l{font-size:0.75rem;line-height:1.6666666667}.p-text--size-small-l{font-size:1rem;line-height:1.5}.p-text--size-medium-l{font-size:1.5rem;line-height:1.5}.p-text--size-large-l{font-size:2.25rem;line-height:1.3333333333}.p-text--size-x-large-l{font-size:3.25rem;line-height:1.2307692308}.p-text--size-inherit-l{font-size:inherit;line-height:inherit}}@media (min-width: 1760px){.p-text--size-x-small-xl{font-size:0.75rem;line-height:1.6666666667}.p-text--size-small-xl{font-size:1rem;line-height:1.5}.p-text--size-medium-xl{font-size:1.5rem;line-height:1.5}.p-text--size-large-xl{font-size:2.25rem;line-height:1.3333333333}.p-text--size-x-large-xl{font-size:3.25rem;line-height:1.2307692308}.p-text--size-inherit-xl{font-size:inherit;line-height:inherit}}.p-text--weight-thin{font-weight:100}.p-text--weight-regular{font-weight:400}.p-text--weight-semibold{font-weight:600}.p-text--weight-bold{font-weight:700}.p-text--align-left{text-align:left}.p-text--align-center{text-align:center}.p-text--align-right{text-align:right}.p-text--color-brand.p-text--theme-light{color:#d5001c}.p-text--color-brand.p-text--theme-dark{color:#d5001c}.p-text--color-default.p-text--theme-light{color:#000}.p-text--color-default.p-text--theme-dark{color:#fff}.p-text--color-neutral-contrast-high.p-text--theme-light{color:#323639}.p-text--color-neutral-contrast-high.p-text--theme-dark{color:#e3e4e5}.p-text--color-neutral-contrast-medium.p-text--theme-light{color:#626669}.p-text--color-neutral-contrast-medium.p-text--theme-dark{color:#b0b1b2}.p-text--color-neutral-contrast-low.p-text--theme-light{color:#c9cacb}.p-text--color-neutral-contrast-low.p-text--theme-dark{color:#4a4e51}.p-text--color-notification-success.p-text--theme-light{color:#018a16}.p-text--color-notification-success.p-text--theme-dark{color:#01ba1d}.p-text--color-notification-warning.p-text--theme-light{color:#ff9b00}.p-text--color-notification-warning.p-text--theme-dark{color:#ff9b00}.p-text--color-notification-error.p-text--theme-light{color:#e00000}.p-text--color-notification-error.p-text--theme-dark{color:#fc1717}.p-text--color-notification-neutral.p-text--theme-light{color:#0061BD}.p-text--color-notification-neutral.p-text--theme-dark{color:#2193FF}.p-text--color-inherit{color:inherit}.p-text--ellipsis{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}";
 var Text = /** @class */ (function () {
     function Text(hostRef) {
-        Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         /** Sets a custom HTML tag depending of the usage of the text component. */
         this.tag = 'p';
         /** Size of the text. Also defines the size for specific breakpoints, like {base: "small", l: "medium"}. You always need to provide a base value when doing this. */
@@ -529,8 +471,8 @@ var Text = /** @class */ (function () {
     Text.prototype.render = function () {
         var _this = this;
         var TagType = this.hasSlottedTextTag ? 'div' : this.tag;
-        var textClasses = Object(_index_359f03c5_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text'), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["m"])('text--size', this.size), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text--weight-" + this.weight), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text--align-" + this.align), Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text--color-" + this.color), this.ellipsis && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text--ellipsis'), this.color !== 'inherit' && Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text--theme-" + this.theme));
-        return (Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, { class: textClasses, ref: function (el) { return _this.textTag = el; } }, Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)));
+        var textClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text'), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["m"])('text--size', this.size), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text--weight-" + this.weight), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text--align-" + this.align), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text--color-" + this.color), this.ellipsis && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text--ellipsis'), this.color !== 'inherit' && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text--theme-" + this.theme));
+        return (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, { class: textClasses, ref: function (el) { return _this.textTag = el; } }, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)));
     };
     Object.defineProperty(Text.prototype, "hasSlottedTextTag", {
         get: function () {
@@ -543,7 +485,7 @@ var Text = /** @class */ (function () {
     Text.prototype.bindFontSizeListener = function () {
         var _this = this;
         Object(_transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_4__["t"])(this.textTag, 'font-size', function () {
-            _this.textTag.style.lineHeight = "" + Object(_line_height_e60665f4_js__WEBPACK_IMPORTED_MODULE_1__["c"])(_this.textTag);
+            _this.textTag.style.lineHeight = "" + Object(_line_height_c7d0058c_js__WEBPACK_IMPORTED_MODULE_1__["c"])(_this.textTag);
         });
     };
     Text.prototype.addSlottedStyles = function () {
@@ -552,7 +494,7 @@ var Text = /** @class */ (function () {
         Object(_slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_2__["i"])(this.host, style);
     };
     Object.defineProperty(Text.prototype, "host", {
-        get: function () { return Object(_breakpointCustomizable_f03211e4_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        get: function () { return Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
         enumerable: false,
         configurable: true
     });
