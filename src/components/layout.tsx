@@ -25,13 +25,10 @@ const Layout = ({ children }): JSX.Element => {
   `);
 
   return (
-    <>
-      <SEO title={data.site.siteMetadata.title} />
       <div className="pageLayout">
         <Header siteTitle={data.site.siteMetadata.title} />
         {children}
       </div>
-    </>
   );
 };
 
