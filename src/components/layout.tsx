@@ -8,10 +8,8 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-
 import Header from './header';
 import './layout.css';
-import SEO from './seo';
 
 const Layout = ({ children }): JSX.Element => {
   const data = useStaticQuery(graphql`
@@ -25,10 +23,10 @@ const Layout = ({ children }): JSX.Element => {
   `);
 
   return (
-      <div className="pageLayout">
-        <Header siteTitle={data.site.siteMetadata.title} />
-        {children}
-      </div>
+    <div className="pageLayout">
+      <Header siteTitle={data.site.siteMetadata.title} />
+      {children}
+    </div>
   );
 };
 
