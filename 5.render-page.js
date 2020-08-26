@@ -1,67 +1,6 @@
 exports.ids = [5];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js":
-/*!***********************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js ***!
-  \***********************************************************************************************************************************************/
-/*! exports provided: c */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
-/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
-
-var classnames = Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
-    /*!
-      Copyright (c) 2017 Jed Watson.
-      Licensed under the MIT License (MIT), see
-      http://jedwatson.github.io/classnames
-    */
-    /* global define */
-    (function () {
-        var hasOwn = {}.hasOwnProperty;
-        function classNames() {
-            var classes = [];
-            for (var i = 0; i < arguments.length; i++) {
-                var arg = arguments[i];
-                if (!arg)
-                    continue;
-                var argType = typeof arg;
-                if (argType === 'string' || argType === 'number') {
-                    classes.push(arg);
-                }
-                else if (Array.isArray(arg) && arg.length) {
-                    var inner = classNames.apply(null, arg);
-                    if (inner) {
-                        classes.push(inner);
-                    }
-                }
-                else if (argType === 'object') {
-                    for (var key in arg) {
-                        if (hasOwn.call(arg, key) && arg[key]) {
-                            classes.push(key);
-                        }
-                    }
-                }
-            }
-            return classes.join(' ');
-        }
-        if (module.exports) {
-            classNames.default = classNames;
-            module.exports = classNames;
-        }
-        else {
-            window.classNames = classNames;
-        }
-    }());
-});
-
-
-
-/***/ }),
-
 /***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js":
 /*!***************************************************************************************************************************************************!*\
   !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js ***!
@@ -175,31 +114,29 @@ function throttle(delay, noTrailing, callback, debounceMode) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-radio-button-wrapper.entry.js":
-/*!*************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-radio-button-wrapper.entry.js ***!
-  \*************************************************************************************************************************************************************/
-/*! exports provided: p_radio_button_wrapper */
+/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-checkbox-wrapper.entry.js":
+/*!*********************************************************************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-checkbox-wrapper.entry.js ***!
+  \*********************************************************************************************************************************************************/
+/*! exports provided: p_checkbox_wrapper */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_radio_button_wrapper", function() { return RadioButtonWrapper; });
-/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_checkbox_wrapper", function() { return CheckboxWrapper; });
+/* harmony import */ var _breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-633ca215.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-633ca215.js");
 /* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
 /* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
 /* harmony import */ var _transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./transition-listener-302b2719.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js");
-/* harmony import */ var _index_45be8764_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index-45be8764.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js");
 
 
 
 
-
-var radioButtonWrapperCss = ":host{display:block}::slotted(input){position:absolute !important;top:-1px !important;left:-1px !important;width:1.625rem !important;height:1.625rem !important;display:block !important;margin:0 !important;padding:0 !important;-webkit-appearance:none !important;-moz-appearance:none !important;appearance:none !important;border:0 rgba(255, 255, 255, 0) !important;border-radius:50% !important;background-color:transparent !important;opacity:1 !important;outline:none !important;cursor:pointer !important;-webkit-box-shadow:0 0 0 0 transparent !important;box-shadow:0 0 0 0 transparent !important;-webkit-transition:border-top-color 1ms linear, -webkit-box-shadow 0.24s ease !important;transition:border-top-color 1ms linear, -webkit-box-shadow 0.24s ease !important;transition:box-shadow 0.24s ease, border-top-color 1ms linear !important;transition:box-shadow 0.24s ease, border-top-color 1ms linear, -webkit-box-shadow 0.24s ease !important}::slotted(input::-ms-check){display:none !important}::slotted(input:focus){-webkit-box-shadow:0 0 0 2px #00d5b9 !important;box-shadow:0 0 0 2px #00d5b9 !important}::slotted(input:checked){border-top-color:rgba(255, 255, 255, 0.01) !important}::slotted(input:disabled){cursor:not-allowed !important;border-top-color:rgba(255, 255, 255, 0.02) !important}::slotted(input:disabled:checked){border-top-color:rgba(255, 255, 255, 0.03) !important}.p-radio-button-wrapper__label{position:relative;display:-ms-flexbox;display:flex}.p-radio-button-wrapper__label-text{-ms-flex-order:1;order:1;display:inline-block;cursor:pointer;color:#000;-webkit-transition:color 0.24s ease;transition:color 0.24s ease}.p-radio-button-wrapper__label-text--disabled{color:#96989a;cursor:default}.p-radio-button-wrapper__label-text--visible{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}@media (min-width: 480px){.p-radio-button-wrapper__label-text--visible-xs{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden-xs{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 760px){.p-radio-button-wrapper__label-text--visible-s{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden-s{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1000px){.p-radio-button-wrapper__label-text--visible-m{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden-m{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1300px){.p-radio-button-wrapper__label-text--visible-l{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden-l{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1760px){.p-radio-button-wrapper__label-text--visible-xl{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-radio-button-wrapper__label-text--hidden-xl{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}.p-radio-button-wrapper__fake-radio-button{position:relative;width:1.5rem;height:1.5rem;display:block;-ms-flex-negative:0;flex-shrink:0;border-radius:50%;-webkit-box-shadow:inset 0 0 0 1px #626669;box-shadow:inset 0 0 0 1px #626669;background-color:#fff;-webkit-transition:background-color 0.24s ease, -webkit-box-shadow 0.24s ease;transition:background-color 0.24s ease, -webkit-box-shadow 0.24s ease;transition:box-shadow 0.24s ease, background-color 0.24s ease;transition:box-shadow 0.24s ease, background-color 0.24s ease, -webkit-box-shadow 0.24s ease}.p-radio-button-wrapper__fake-radio-button:hover:not(.p-radio-button-wrapper__fake-radio-button--disabled):not(.p-radio-button-wrapper__fake-radio-button--success):not(.p-radio-button-wrapper__fake-radio-button--error),.p-radio-button-wrapper__label-text:hover~.p-radio-button-wrapper__fake-radio-button:not(.p-radio-button-wrapper__fake-radio-button--disabled):not(.p-radio-button-wrapper__fake-radio-button--success):not(.p-radio-button-wrapper__fake-radio-button--error){-webkit-box-shadow:inset 0 0 0 1px #000;box-shadow:inset 0 0 0 1px #000}.p-radio-button-wrapper__fake-radio-button::before{content:\"\";width:1rem;height:1rem;border-radius:50%;background-color:transparent;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);-webkit-transition:background-color 0.24s ease;transition:background-color 0.24s ease}.p-radio-button-wrapper__fake-radio-button--checked{-webkit-box-shadow:inset 0 0 0 1px #323639;box-shadow:inset 0 0 0 1px #323639}.p-radio-button-wrapper__fake-radio-button--checked::before{background-color:#323639}.p-radio-button-wrapper__fake-radio-button--checked.p-radio-button-wrapper__fake-radio-button--disabled::before{background-color:#96989a}.p-radio-button-wrapper__fake-radio-button--checked.p-radio-button-wrapper__fake-radio-button--error::before{background-color:#e00000}.p-radio-button-wrapper__fake-radio-button--checked.p-radio-button-wrapper__fake-radio-button--success::before{background-color:#018a16}.p-radio-button-wrapper__fake-radio-button--disabled{-webkit-box-shadow:inset 0 0 0 1px #96989a;box-shadow:inset 0 0 0 1px #96989a}.p-radio-button-wrapper__fake-radio-button--error{-webkit-box-shadow:inset 0 0 0 2px #e00000;box-shadow:inset 0 0 0 2px #e00000}.p-radio-button-wrapper__fake-radio-button--error:hover,.p-radio-button-wrapper__label-text:hover~.p-radio-button-wrapper__fake-radio-button--error{-webkit-box-shadow:inset 0 0 0 2px #a30000;box-shadow:inset 0 0 0 2px #a30000}.p-radio-button-wrapper__fake-radio-button--success{-webkit-box-shadow:inset 0 0 0 2px #018a16;box-shadow:inset 0 0 0 2px #018a16}.p-radio-button-wrapper__fake-radio-button--success:hover,.p-radio-button-wrapper__label-text:hover~.p-radio-button-wrapper__fake-radio-button--success{-webkit-box-shadow:inset 0 0 0 2px #014d0c;box-shadow:inset 0 0 0 2px #014d0c}.p-radio-button-wrapper__message{margin-top:0.25rem;color:#000;-webkit-transition:color 0.24s ease;transition:color 0.24s ease}.p-radio-button-wrapper__message--success{color:#018a16}.p-radio-button-wrapper__message--error{color:#e00000}";
-var RadioButtonWrapper = /** @class */ (function () {
-    function RadioButtonWrapper(hostRef) {
+var checkboxWrapperCss = ":host{display:block}::slotted(input){position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important;display:block !important;margin:0 !important;padding:0 !important;-webkit-appearance:none !important;-moz-appearance:none !important;appearance:none !important;border:0 !important;border-top-color:rgba(255, 255, 255, 0) !important;background-color:transparent !important;opacity:1 !important;outline:transparent solid 2px !important;outline-offset:1px !important;cursor:pointer !important;-webkit-transition:outline-color 0.24s ease, border-top-color 1ms linear !important;transition:outline-color 0.24s ease, border-top-color 1ms linear !important}::slotted(input::-ms-check){display:none !important}::slotted(input:focus){outline-color:#00d5b9 !important}::slotted(input:checked){border-top-color:rgba(255, 255, 255, 0.01) !important}::slotted(input:disabled){cursor:not-allowed !important;border-top-color:rgba(255, 255, 255, 0.02) !important}::slotted(input:indeterminate){border-top-color:rgba(255, 255, 255, 0.03) !important}::slotted(input:disabled:checked){border-top-color:rgba(255, 255, 255, 0.04) !important}::slotted(input:disabled:indeterminate){border-top-color:rgba(255, 255, 255, 0.05) !important}::slotted(input:checked:indeterminate){border-top-color:rgba(255, 255, 255, 0.06) !important}::slotted(input:disabled:checked:indeterminate){border-top-color:rgba(255, 255, 255, 0.07) !important}.p-checkbox-wrapper__label{position:relative;display:-ms-flexbox;display:flex}.p-checkbox-wrapper__label-text{-ms-flex-order:1;order:1;display:inline-block;cursor:pointer;color:#000;-webkit-transition:color 0.24s ease;transition:color 0.24s ease}.p-checkbox-wrapper__label-text--disabled{color:#96989a;cursor:default}.p-checkbox-wrapper__label-text--visible{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-checkbox-wrapper__label-text--hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}@media (min-width: 480px){.p-checkbox-wrapper__label-text--visible-xs{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-checkbox-wrapper__label-text--hidden-xs{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 760px){.p-checkbox-wrapper__label-text--visible-s{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-checkbox-wrapper__label-text--hidden-s{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1000px){.p-checkbox-wrapper__label-text--visible-m{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-checkbox-wrapper__label-text--hidden-m{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1300px){.p-checkbox-wrapper__label-text--visible-l{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-checkbox-wrapper__label-text--hidden-l{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}@media (min-width: 1760px){.p-checkbox-wrapper__label-text--visible-xl{position:static;width:auto;height:auto;margin:0;padding:0 0 0 0.5rem;white-space:normal;overflow:visible;clip:auto;-webkit-clip-path:none;clip-path:none}.p-checkbox-wrapper__label-text--hidden-xl{position:absolute;width:1px;height:1px;margin:-1px;padding:0;white-space:nowrap;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%)}}.p-checkbox-wrapper__fake-checkbox{position:relative;width:1.5rem;height:1.5rem;display:block;-ms-flex-negative:0;flex-shrink:0;background-color:#fff;-webkit-box-shadow:inset 0 0 0 1px #626669;box-shadow:inset 0 0 0 1px #626669;-webkit-transition:background-color 0.24s ease, -webkit-box-shadow 0.24s ease;transition:background-color 0.24s ease, -webkit-box-shadow 0.24s ease;transition:box-shadow 0.24s ease, background-color 0.24s ease;transition:box-shadow 0.24s ease, background-color 0.24s ease, -webkit-box-shadow 0.24s ease}.p-checkbox-wrapper__fake-checkbox:hover:not(.p-checkbox-wrapper__fake-checkbox--disabled):not(.p-checkbox-wrapper__fake-checkbox--success):not(.p-checkbox-wrapper__fake-checkbox--error),.p-checkbox-wrapper__label-text:hover~.p-checkbox-wrapper__fake-checkbox:not(.p-checkbox-wrapper__fake-checkbox--disabled):not(.p-checkbox-wrapper__fake-checkbox--success):not(.p-checkbox-wrapper__fake-checkbox--error){-webkit-box-shadow:inset 0 0 0 1px #000;box-shadow:inset 0 0 0 1px #000}.p-checkbox-wrapper__fake-checkbox--checked{-webkit-box-shadow:inset 0 0 0 1px #323639;box-shadow:inset 0 0 0 1px #323639;background-color:#323639}.p-checkbox-wrapper__fake-checkbox--checked.p-checkbox-wrapper__fake-checkbox--disabled{background-color:#96989a}.p-checkbox-wrapper__fake-checkbox--checked.p-checkbox-wrapper__fake-checkbox--error{background-color:#e00000}.p-checkbox-wrapper__fake-checkbox--checked.p-checkbox-wrapper__fake-checkbox--success{background-color:#018a16}.p-checkbox-wrapper__fake-checkbox--disabled{-webkit-box-shadow:inset 0 0 0 1px #96989a;box-shadow:inset 0 0 0 1px #96989a}.p-checkbox-wrapper__fake-checkbox--error{-webkit-box-shadow:inset 0 0 0 2px #e00000;box-shadow:inset 0 0 0 2px #e00000}.p-checkbox-wrapper__fake-checkbox--error:hover,.p-checkbox-wrapper__label-text:hover~.p-checkbox-wrapper__fake-checkbox--error{-webkit-box-shadow:inset 0 0 0 2px #a30000;box-shadow:inset 0 0 0 2px #a30000}.p-checkbox-wrapper__fake-checkbox--success{-webkit-box-shadow:inset 0 0 0 2px #018a16;box-shadow:inset 0 0 0 2px #018a16}.p-checkbox-wrapper__fake-checkbox--success:hover,.p-checkbox-wrapper__label-text:hover~.p-checkbox-wrapper__fake-checkbox--success{-webkit-box-shadow:inset 0 0 0 2px #014d0c;box-shadow:inset 0 0 0 2px #014d0c}.p-checkbox-wrapper__icon{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;-webkit-transition:opacity 0.24s ease;transition:opacity 0.24s ease}.p-checkbox-wrapper__icon--checked{opacity:1}.p-checkbox-wrapper__message{margin-top:0.25rem;color:#000;-webkit-transition:color 0.24s ease;transition:color 0.24s ease}.p-checkbox-wrapper__message--success{color:#018a16}.p-checkbox-wrapper__message--error{color:#e00000}";
+var CheckboxWrapper = /** @class */ (function () {
+    function CheckboxWrapper(hostRef) {
         var _this = this;
-        Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         /** The label text. */
         this.label = '';
         /** The validation state. */
@@ -213,64 +150,81 @@ var RadioButtonWrapper = /** @class */ (function () {
             /**
              * we only want to simulate the checkbox click by label click
              * for real shadow dom, else the native behaviour works out
-             * of the box
+             * of the box.
+             * also we don't want to click to the input, if a link is
+             * clicked.
              */
             if (((_a = _this.host.shadowRoot) === null || _a === void 0 ? void 0 : _a.host) && event.target.closest('a') === null) {
+                _this.input.focus();
                 _this.input.click();
             }
         };
         this.setState = function () {
             _this.checked = _this.input.checked;
             _this.disabled = _this.input.disabled;
+            _this.indeterminate = _this.input.indeterminate;
         };
     }
-    RadioButtonWrapper.prototype.componentWillLoad = function () {
+    CheckboxWrapper.prototype.componentWillLoad = function () {
         this.setInput();
         this.setAriaAttributes();
         this.setState();
         this.bindStateListener();
         this.addSlottedStyles();
     };
-    RadioButtonWrapper.prototype.componentDidUpdate = function () {
+    CheckboxWrapper.prototype.componentDidUpdate = function () {
         this.setAriaAttributes();
     };
-    RadioButtonWrapper.prototype.render = function () {
-        var labelClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_4__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__label'));
-        var fakeRadioButtonClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_4__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__fake-radio-button'), this.checked && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__fake-radio-button--checked'), this.disabled && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__fake-radio-button--disabled'), this.state !== 'none' && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("radio-button-wrapper__fake-radio-button--" + this.state));
-        var labelTextClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_4__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__label-text'), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["m"])('radio-button-wrapper__label-text-', this.hideLabel, ['hidden', 'visible']), this.disabled && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__label-text--disabled'));
-        var messageClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_4__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('radio-button-wrapper__message'), this.state !== 'none' && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("radio-button-wrapper__message--" + this.state));
-        return (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("label", { class: labelClasses }, this.isLabelVisible && (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelTextClasses, tag: "span", color: "inherit", onClick: this.labelClick }, this.label || (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "label" }))))), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: fakeRadioButtonClasses }, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), this.isMessageVisible && (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: messageClasses, color: "inherit", role: this.state === 'error' && 'alert' }, this.message || (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "message" })))))));
+    CheckboxWrapper.prototype.render = function () {
+        var _b, _c, _d, _e;
+        var labelClasses = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('checkbox-wrapper__label');
+        var fakeCheckboxClasses = (_b = {},
+            _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('checkbox-wrapper__fake-checkbox')] = true,
+            _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('checkbox-wrapper__fake-checkbox--checked')] = this.checked || this.indeterminate,
+            _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('checkbox-wrapper__fake-checkbox--disabled')] = this.disabled,
+            _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("checkbox-wrapper__fake-checkbox--" + this.state)] = this.state !== 'none',
+            _b);
+        var iconClasses = (_c = {},
+            _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('checkbox-wrapper__icon')] = true,
+            _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('checkbox-wrapper__icon--checked')] = this.checked || this.indeterminate,
+            _c);
+        var labelTextClasses = Object.assign((_d = {}, _d[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('checkbox-wrapper__label-text')] = true, _d[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('checkbox-wrapper__label-text--disabled')] = this.disabled, _d), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["m"])('checkbox-wrapper__label-text-', this.hideLabel, ['hidden', 'visible']));
+        var messageClasses = (_e = {},
+            _e[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('checkbox-wrapper__message')] = true,
+            _e[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("checkbox-wrapper__message--" + this.state)] = this.state !== 'none',
+            _e);
+        return (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("label", { class: labelClasses }, this.isLabelVisible && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelTextClasses, tag: "span", color: "inherit", onClick: this.labelClick }, this.label || (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "label" }))))), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: fakeCheckboxClasses }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, name: this.indeterminate ? 'minus' : 'check', theme: "dark", size: "inherit", "aria-hidden": "true" }), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), this.isMessageVisible && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: messageClasses, color: "inherit", role: this.state === 'error' && 'alert' }, this.message || (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "message" })))))));
     };
-    Object.defineProperty(RadioButtonWrapper.prototype, "isLabelVisible", {
+    Object.defineProperty(CheckboxWrapper.prototype, "isLabelVisible", {
         get: function () {
             return !!this.label || !!this.host.querySelector('[slot="label"]');
         },
         enumerable: false,
         configurable: true
     });
-    Object.defineProperty(RadioButtonWrapper.prototype, "isMessageDefined", {
+    Object.defineProperty(CheckboxWrapper.prototype, "isMessageDefined", {
         get: function () {
             return !!this.message || !!this.host.querySelector('[slot="message"]');
         },
         enumerable: false,
         configurable: true
     });
-    Object.defineProperty(RadioButtonWrapper.prototype, "isMessageVisible", {
+    Object.defineProperty(CheckboxWrapper.prototype, "isMessageVisible", {
         get: function () {
             return ['success', 'error'].includes(this.state) && this.isMessageDefined;
         },
         enumerable: false,
         configurable: true
     });
-    RadioButtonWrapper.prototype.setInput = function () {
-        this.input = this.host.querySelector('input[type="radio"]');
+    CheckboxWrapper.prototype.setInput = function () {
+        this.input = this.host.querySelector('input[type="checkbox"]');
     };
     /*
      * This is a workaround to improve accessibility because the input and the label/description/message text are placed in different DOM.
      * Referencing ID's from outside the component is impossible because the web component’s DOM is separate.
      * We have to wait for full support of the Accessibility Object Model (AOM) to provide the relationship between shadow DOM and slots
      */
-    RadioButtonWrapper.prototype.setAriaAttributes = function () {
+    CheckboxWrapper.prototype.setAriaAttributes = function () {
         if (this.label && this.message) {
             this.input.setAttribute('aria-label', this.label + ". " + this.message);
         }
@@ -284,22 +238,22 @@ var RadioButtonWrapper = /** @class */ (function () {
             this.input.removeAttribute('aria-invalid');
         }
     };
-    RadioButtonWrapper.prototype.bindStateListener = function () {
+    CheckboxWrapper.prototype.bindStateListener = function () {
         Object(_transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_3__["t"])(this.input, 'border-top-color', this.setState);
     };
-    RadioButtonWrapper.prototype.addSlottedStyles = function () {
+    CheckboxWrapper.prototype.addSlottedStyles = function () {
         var tagName = this.host.tagName.toLowerCase();
         var style = tagName + " a {\n      outline: none transparent;\n      color: inherit;\n      text-decoration: underline;\n      -webkit-transition: outline-color .24s ease, color .24s ease;\n      transition: outline-color .24s ease, color .24s ease;\n    }\n\n    " + tagName + " a:hover {\n      color: #d5001c;\n    }\n\n    " + tagName + " a:focus {\n      outline: 2px solid #00d5b9;\n      outline-offset: 1px;\n    }";
         Object(_slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__["i"])(this.host, style);
     };
-    Object.defineProperty(RadioButtonWrapper.prototype, "host", {
-        get: function () { return Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+    Object.defineProperty(CheckboxWrapper.prototype, "host", {
+        get: function () { return Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
         enumerable: false,
         configurable: true
     });
-    return RadioButtonWrapper;
+    return CheckboxWrapper;
 }());
-RadioButtonWrapper.style = radioButtonWrapperCss;
+CheckboxWrapper.style = checkboxWrapperCss;
 
 
 

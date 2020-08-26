@@ -1,46 +1,55 @@
 exports.ids = [24];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-marque.entry.js":
-/*!***********************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-marque.entry.js ***!
-  \***********************************************************************************************************************************************/
-/*! exports provided: p_marque */
+/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-text-list.entry.js":
+/*!**************************************************************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-text-list.entry.js ***!
+  \**************************************************************************************************************************************************/
+/*! exports provided: p_text_list */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_marque", function() { return Marque; });
-/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
-/* harmony import */ var _index_45be8764_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index-45be8764.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js");
-/* harmony import */ var _index_9849e1be_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index-9849e1be.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-9849e1be.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_text_list", function() { return TextList; });
+/* harmony import */ var _breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-633ca215.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-633ca215.js");
 
-
-
-var marqueCss = ":host{display:-ms-inline-flexbox;display:inline-flex;vertical-align:top}.p-marque{display:block;width:100px;height:60px}@media (min-width: 1300px){.p-marque{width:120px;height:72px}}.p-marque>img{display:block;width:100%;height:auto}";
-var Marque = /** @class */ (function () {
-    function Marque(hostRef) {
-        Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        /**
-         * Show/hide trademark sign.
-         */
-        this.trademark = true;
+var textListCss = ":host{display:block;counter-reset:section !important}.p-text-list{font-size:1rem;line-height:1.5;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:400;display:block;padding:0;margin:0}.p-text-list--theme-light{color:#000}.p-text-list--theme-dark{color:#fff}";
+var TextList = /** @class */ (function () {
+    function TextList(hostRef) {
+        Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        /** The type of the text list. */
+        this.listType = 'unordered';
+        /** The list style type of an ordered list. */
+        this.orderType = 'numbered';
+        /** Adapts the text color depending on the theme. Has no effect when "inherit" is set as color prop. */
+        this.theme = 'light';
     }
-    Marque.prototype.render = function () {
-        var cdnBaseUrl = _index_9849e1be_js__WEBPACK_IMPORTED_MODULE_2__["M"];
-        var manifestPath = _index_9849e1be_js__WEBPACK_IMPORTED_MODULE_2__["a"]["porscheMarque" + (this.trademark ? 'Trademark' : '')];
-        var buildSrcSet = function (size) { return Object.entries(manifestPath[size])
-            .map(function (_a) {
-            var resolution = _a[0], fileName = _a[1];
-            return cdnBaseUrl + "/" + fileName + " " + resolution;
-        })
-            .join(','); };
-        var marqueClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_1__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('marque'));
-        return (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("picture", { class: marqueClasses }, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { srcSet: buildSrcSet('medium'), media: "(min-width: 1300px)" }), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { srcSet: buildSrcSet('small') }), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("img", { src: cdnBaseUrl + "/" + manifestPath.medium['2x'], alt: "Porsche" })));
+    TextList.prototype.render = function () {
+        var _a;
+        var TagType = this.listType === 'unordered' ? 'ul' : 'ol';
+        var textListClasses = (_a = {},
+            _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-list')] = true,
+            _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text-list--" + this.listType)] = true,
+            _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text-list--theme-" + this.theme)] = true,
+            _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-list--nested')] = this.isNestedList,
+            _a);
+        return (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["H"], { nested: this.isNestedList }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, { role: "list", class: textListClasses }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))));
     };
-    return Marque;
+    Object.defineProperty(TextList.prototype, "isNestedList", {
+        get: function () {
+            return !!this.host.closest(Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-list-item'));
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(TextList.prototype, "host", {
+        get: function () { return Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        enumerable: false,
+        configurable: true
+    });
+    return TextList;
 }());
-Marque.style = marqueCss;
+TextList.style = textListCss;
 
 
 

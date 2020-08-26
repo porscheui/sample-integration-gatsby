@@ -121,67 +121,6 @@ var improveFocusHandlingForCustomElement = function (element) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js":
-/*!***********************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js ***!
-  \***********************************************************************************************************************************************/
-/*! exports provided: c */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
-/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
-
-var classnames = Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
-    /*!
-      Copyright (c) 2017 Jed Watson.
-      Licensed under the MIT License (MIT), see
-      http://jedwatson.github.io/classnames
-    */
-    /* global define */
-    (function () {
-        var hasOwn = {}.hasOwnProperty;
-        function classNames() {
-            var classes = [];
-            for (var i = 0; i < arguments.length; i++) {
-                var arg = arguments[i];
-                if (!arg)
-                    continue;
-                var argType = typeof arg;
-                if (argType === 'string' || argType === 'number') {
-                    classes.push(arg);
-                }
-                else if (Array.isArray(arg) && arg.length) {
-                    var inner = classNames.apply(null, arg);
-                    if (inner) {
-                        classes.push(inner);
-                    }
-                }
-                else if (argType === 'object') {
-                    for (var key in arg) {
-                        if (hasOwn.call(arg, key) && arg[key]) {
-                            classes.push(key);
-                        }
-                    }
-                }
-            }
-            return classes.join(' ');
-        }
-        if (module.exports) {
-            classNames.default = classNames;
-            module.exports = classNames;
-        }
-        else {
-            window.classNames = classNames;
-        }
-    }());
-});
-
-
-
-/***/ }),
-
 /***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-link.entry.js":
 /*!*********************************************************************************************************************************************!*\
   !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-link.entry.js ***!
@@ -192,18 +131,16 @@ var classnames = Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MO
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_link", function() { return Link; });
-/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
+/* harmony import */ var _breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-633ca215.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-633ca215.js");
 /* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
-/* harmony import */ var _index_45be8764_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index-45be8764.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js");
-/* harmony import */ var _focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./focusHandling-e078221d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js");
-
+/* harmony import */ var _focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./focusHandling-e078221d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js");
 
 
 
 var linkCss = ":host{display:-ms-inline-flexbox;display:inline-flex;vertical-align:top;position:relative !important;cursor:pointer}::slotted(a){display:block !important;position:static !important;text-decoration:none !important;color:inherit !important;line-height:inherit !important}::slotted(a)::before{content:\"\" !important;position:absolute !important;top:-1px !important;left:-1px !important;right:-1px !important;bottom:-1px !important;display:block !important;outline:transparent none !important;-webkit-transition:outline-color 0.24s ease !important;transition:outline-color 0.24s ease !important}::slotted(a:focus){outline:none !important}::slotted(a:focus)::before{outline-offset:1px !important;outline:#00d5b9 solid 2px !important}.p-link{display:-ms-flexbox;display:flex;width:100%;min-width:3rem;min-height:3rem;position:relative;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none transparent;text-decoration:none;border-style:solid;border-width:1px;-webkit-transition:background-color 0.24s ease, border-color 0.24s ease, outline-color 0.24s ease, color 0.24s ease;transition:background-color 0.24s ease, border-color 0.24s ease, outline-color 0.24s ease, color 0.24s ease}.p-link::-moz-focus-inner{border:0}.p-link:focus{outline-width:2px;outline-style:solid;outline-offset:1px}.p-link--theme-light:focus{outline-color:#00d5b9}.p-link--theme-dark:focus{outline-color:#00d5b9}.p-link--primary.p-link--theme-light{color:#fff;background-color:#d5001c;border-color:#d5001c}.p-link--primary.p-link--theme-dark{color:#fff;background-color:#d5001c;border-color:#d5001c}.p-link--primary:hover.p-link--theme-light,.p-link--primary:active.p-link--theme-light{color:#fff;background-color:#980014;border-color:#980014}.p-link--primary:hover.p-link--theme-dark,.p-link--primary:active.p-link--theme-dark{color:#fff;background-color:#980014;border-color:#980014}.p-link--secondary.p-link--theme-light{color:#fff;background-color:#323639;border-color:#323639}.p-link--secondary.p-link--theme-dark{color:#000;background-color:#fff;border-color:#fff}.p-link--secondary:hover.p-link--theme-light,.p-link--secondary:active.p-link--theme-light{color:#fff;background-color:#151718;border-color:#151718}.p-link--secondary:hover.p-link--theme-dark,.p-link--secondary:active.p-link--theme-dark{color:#000;background-color:#e0e0e0;border-color:#e0e0e0}.p-link--tertiary.p-link--theme-light{color:#000;background-color:transparent;border-color:#323639}.p-link--tertiary.p-link--theme-dark{color:#fff;background-color:transparent;border-color:#fff}.p-link--tertiary:hover.p-link--theme-light,.p-link--tertiary:active.p-link--theme-light{color:#fff;background-color:#151718;border-color:#151718}.p-link--tertiary:hover.p-link--theme-dark,.p-link--tertiary:active.p-link--theme-dark{color:#000;background-color:#fff;border-color:#fff}.p-link--with-label{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label .p-link__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link--with-label .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label{padding:0}.p-link--without-label .p-link__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link--without-label .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}@media (min-width: 480px){.p-link--with-label-xs{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label-xs .p-link__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link--with-label-xs .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label-xs{padding:0}.p-link--without-label-xs .p-link__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link--without-label-xs .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 760px){.p-link--with-label-s{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label-s .p-link__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link--with-label-s .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label-s{padding:0}.p-link--without-label-s .p-link__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link--without-label-s .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 1000px){.p-link--with-label-m{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label-m .p-link__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link--with-label-m .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label-m{padding:0}.p-link--without-label-m .p-link__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link--without-label-m .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 1300px){.p-link--with-label-l{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label-l .p-link__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link--with-label-l .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label-l{padding:0}.p-link--without-label-l .p-link__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link--without-label-l .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}@media (min-width: 1760px){.p-link--with-label-xl{padding:0.6875rem 0.9375rem 0.6875rem 2.4375rem}.p-link--with-label-xl .p-link__label{width:100%;height:auto;margin:0;padding:0;white-space:normal;overflow:visible;border:0;text-indent:0}.p-link--with-label-xl .p-link__icon{left:0.6875rem;top:0.6875rem;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}.p-link--without-label-xl{padding:0}.p-link--without-label-xl .p-link__label{width:1px;height:1px;margin:0 0 0 -1px;padding:0;white-space:nowrap;overflow:hidden;border:0;text-indent:-1px}.p-link--without-label-xl .p-link__icon{left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}.p-link__label{display:block;-webkit-box-sizing:border-box;box-sizing:border-box}.p-link__icon{position:absolute;width:1.5rem;height:1.5rem}";
 var Link = /** @class */ (function () {
     function Link(hostRef) {
-        Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         /** The style variant of the link. */
         this.variant = 'secondary';
         /** The icon shown. */
@@ -227,22 +164,23 @@ var Link = /** @class */ (function () {
         var tagName = this.element.tagName.toLowerCase();
         var style = "\n      a:focus " + tagName + " {\n      outline: 2px solid #00d5b9;\n      outline-offset: 1px;\n    }\n\n    /* this hack is only needed for Safari which does not support pseudo elements in slotted context (https://bugs.webkit.org/show_bug.cgi?id=178237) :-( */\n    " + tagName + " a::before {\n      content: \"\" !important;\n      position: absolute !important;\n      top: -1px !important;\n      left: -1px !important;\n      right: -1px !important;\n      bottom: -1px !important;\n      display: block !important;\n      transition: outline-color 0.24s ease !important;\n    }\n\n    " + tagName + " a:focus::before {\n      outline-offset: 1px !important;\n      outline: #00d5b9 solid 2px !important;\n    }\n    ";
         Object(_slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__["i"])(this.element, style);
-        Object(_focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_3__["i"])(this.element);
+        Object(_focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_2__["i"])(this.element);
     };
     Link.prototype.render = function () {
+        var _a;
         var TagType = this.href === undefined ? 'span' : 'a';
-        var linkClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_2__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link'), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("link--" + this.variant), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["m"])('link-', this.hideLabel, ['without-label', 'with-label']), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("link--theme-" + this.theme));
-        var iconClasses = Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link__icon');
-        var labelClasses = Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link__label');
-        return (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, Object.assign({ class: linkClasses }, (TagType === 'a' ? {
+        var linkClasses = Object.assign((_a = {}, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link')] = true, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("link--" + this.variant)] = true, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("link--theme-" + this.theme)] = true, _a), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["m"])('link-', this.hideLabel, ['without-label', 'with-label']));
+        var iconClasses = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link__icon');
+        var labelClasses = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link__label');
+        return (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, Object.assign({ class: linkClasses }, (TagType === 'a' && {
             href: this.href,
             target: "" + this.target,
             download: this.download,
             rel: this.rel
-        } : null)), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, size: 'inherit', name: this.icon, source: this.iconSource, color: 'inherit', "aria-hidden": 'true' }), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { tag: 'span', color: 'inherit', class: labelClasses }, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))));
+        })), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, size: "inherit", name: this.icon, source: this.iconSource, color: "inherit", "aria-hidden": "true" }), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { tag: "span", color: "inherit", class: labelClasses }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))));
     };
     Object.defineProperty(Link.prototype, "element", {
-        get: function () { return Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        get: function () { return Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
         enumerable: false,
         configurable: true
     });

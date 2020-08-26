@@ -121,67 +121,6 @@ var improveFocusHandlingForCustomElement = function (element) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js":
-/*!***********************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js ***!
-  \***********************************************************************************************************************************************/
-/*! exports provided: c */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
-/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
-
-var classnames = Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
-    /*!
-      Copyright (c) 2017 Jed Watson.
-      Licensed under the MIT License (MIT), see
-      http://jedwatson.github.io/classnames
-    */
-    /* global define */
-    (function () {
-        var hasOwn = {}.hasOwnProperty;
-        function classNames() {
-            var classes = [];
-            for (var i = 0; i < arguments.length; i++) {
-                var arg = arguments[i];
-                if (!arg)
-                    continue;
-                var argType = typeof arg;
-                if (argType === 'string' || argType === 'number') {
-                    classes.push(arg);
-                }
-                else if (Array.isArray(arg) && arg.length) {
-                    var inner = classNames.apply(null, arg);
-                    if (inner) {
-                        classes.push(inner);
-                    }
-                }
-                else if (argType === 'object') {
-                    for (var key in arg) {
-                        if (hasOwn.call(arg, key) && arg[key]) {
-                            classes.push(key);
-                        }
-                    }
-                }
-            }
-            return classes.join(' ');
-        }
-        if (module.exports) {
-            classNames.default = classNames;
-            module.exports = classNames;
-        }
-        else {
-            window.classNames = classNames;
-        }
-    }());
-});
-
-
-
-/***/ }),
-
 /***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js":
 /*!***************************************************************************************************************************************************!*\
   !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js ***!
@@ -295,9 +234,9 @@ function throttle(delay, noTrailing, callback, debounceMode) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-c7d0058c.js":
+/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-59b7344d.js":
 /*!*****************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-c7d0058c.js ***!
+  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-59b7344d.js ***!
   \*****************************************************************************************************************************************************/
 /*! exports provided: c */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -305,12 +244,12 @@ function throttle(delay, noTrailing, callback, debounceMode) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return calcLineHeightForElement; });
-/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
+/* harmony import */ var _breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-633ca215.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-633ca215.js");
 
 var calcLineHeightForElement = function (tag) {
     var fontSize = window.getComputedStyle(tag).fontSize;
     // fontSize is "" when element does no longer exist and would throw an exception in calculateLineHeight
-    return fontSize && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["e"])(fontSize);
+    return fontSize && Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["d"])(fontSize);
 };
 
 
@@ -327,14 +266,12 @@ var calcLineHeightForElement = function (tag) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_link_pure", function() { return LinkPure; });
-/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
-/* harmony import */ var _line_height_c7d0058c_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./line-height-c7d0058c.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-c7d0058c.js");
+/* harmony import */ var _breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-633ca215.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-633ca215.js");
+/* harmony import */ var _line_height_59b7344d_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./line-height-59b7344d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/line-height-59b7344d.js");
 /* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
 /* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
 /* harmony import */ var _transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./transition-listener-302b2719.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js");
-/* harmony import */ var _index_45be8764_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index-45be8764.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js");
-/* harmony import */ var _focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./focusHandling-e078221d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js");
-
+/* harmony import */ var _focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./focusHandling-e078221d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js");
 
 
 
@@ -344,7 +281,7 @@ __webpack_require__.r(__webpack_exports__);
 var linkPureCss = ":host{display:inline-block;vertical-align:top;position:relative !important;cursor:pointer}::slotted(a){display:block !important;position:static !important;text-decoration:none !important;color:inherit !important;line-height:inherit !important}::slotted(a)::before{content:\"\" !important;position:absolute !important;top:0 !important;left:0 !important;right:0 !important;bottom:0 !important;display:block !important;outline:transparent none !important;-webkit-transition:outline-color 0.24s ease !important;transition:outline-color 0.24s ease !important}::slotted(a:focus){outline:none !important}::slotted(a:focus)::before{outline-offset:1px !important;outline:#00d5b9 solid 2px !important}::slotted(p){margin:0}.p-link-pure{display:-ms-flexbox;display:flex;-ms-flex-align:start;align-items:flex-start;width:100%;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;-webkit-transition:color 0.24s ease, font-size 1ms linear;transition:color 0.24s ease, font-size 1ms linear}.p-link-pure::before{content:\"\";position:absolute;top:0;left:0;right:0;bottom:0;display:block;outline:transparent none;-webkit-transition:outline-color 0.24s ease;transition:outline-color 0.24s ease}.p-link-pure:not(a)::before{pointer-events:none}.p-link-pure::-moz-focus-inner{border:0}.p-link-pure:focus::before{outline-width:2px;outline-style:solid;outline-offset:1px}.p-link-pure--theme-light{color:#000}.p-link-pure--theme-light+*{color:#000}.p-link-pure--theme-light:focus::before{outline-color:#00d5b9}.p-link-pure--theme-light:active{color:#d5001c}.p-link-pure--theme-light:active+*{color:#d5001c}.p-link-pure--theme-light:hover{color:#d5001c}.p-link-pure--theme-light:hover+*{color:#d5001c}.p-link-pure--theme-light.p-link-pure--active{color:#d5001c}.p-link-pure--theme-light.p-link-pure--active+*{color:#d5001c}.p-link-pure--theme-dark{color:#fff}.p-link-pure--theme-dark+*{color:#fff}.p-link-pure--theme-dark:focus::before{outline-color:#00d5b9}.p-link-pure--theme-dark:active{color:#d5001c}.p-link-pure--theme-dark:active+*{color:#d5001c}.p-link-pure--theme-dark:hover{color:#d5001c}.p-link-pure--theme-dark:hover+*{color:#d5001c}.p-link-pure--theme-dark.p-link-pure--active{color:#d5001c}.p-link-pure--theme-dark.p-link-pure--active+*{color:#d5001c}.p-link-pure--size-x-small{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small .p-link-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-link-pure--size-x-small+*{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-link-pure--size-small{font-size:1rem;line-height:1.5}.p-link-pure--size-small .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-small+*{font-size:1rem;line-height:1.5}.p-link-pure--size-small+*::before{font-size:1rem;margin-left:1.5em}.p-link-pure--size-medium{font-size:1.5rem;line-height:1.5}.p-link-pure--size-medium .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-medium+*{font-size:1.25rem;line-height:1.4}.p-link-pure--size-medium+*::before{font-size:1.5rem;margin-left:1.5em}.p-link-pure--size-large{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-large .p-link-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-link-pure--size-large+*{font-size:1.875rem;line-height:1.3333333333}.p-link-pure--size-large+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-link-pure--size-x-large{font-size:3.25rem;line-height:1.2307692308}.p-link-pure--size-x-large .p-link-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-link-pure--size-x-large+*{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-x-large+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-link-pure--size-inherit{font-size:inherit;line-height:inherit}.p-link-pure--size-inherit .p-link-pure__icon{width:1.5em;height:1.5em}@media (min-width: 480px){.p-link-pure--size-x-small-xs{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small-xs .p-link-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-link-pure--size-x-small-xs+*{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small-xs+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-link-pure--size-small-xs{font-size:1rem;line-height:1.5}.p-link-pure--size-small-xs .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-small-xs+*{font-size:1rem;line-height:1.5}.p-link-pure--size-small-xs+*::before{font-size:1rem;margin-left:1.5em}.p-link-pure--size-medium-xs{font-size:1.5rem;line-height:1.5}.p-link-pure--size-medium-xs .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-medium-xs+*{font-size:1.25rem;line-height:1.4}.p-link-pure--size-medium-xs+*::before{font-size:1.5rem;margin-left:1.5em}.p-link-pure--size-large-xs{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-large-xs .p-link-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-link-pure--size-large-xs+*{font-size:1.875rem;line-height:1.3333333333}.p-link-pure--size-large-xs+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-link-pure--size-x-large-xs{font-size:3.25rem;line-height:1.2307692308}.p-link-pure--size-x-large-xs .p-link-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-link-pure--size-x-large-xs+*{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-x-large-xs+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-link-pure--size-inherit-xs{font-size:inherit;line-height:inherit}.p-link-pure--size-inherit-xs .p-link-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 760px){.p-link-pure--size-x-small-s{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small-s .p-link-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-link-pure--size-x-small-s+*{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small-s+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-link-pure--size-small-s{font-size:1rem;line-height:1.5}.p-link-pure--size-small-s .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-small-s+*{font-size:1rem;line-height:1.5}.p-link-pure--size-small-s+*::before{font-size:1rem;margin-left:1.5em}.p-link-pure--size-medium-s{font-size:1.5rem;line-height:1.5}.p-link-pure--size-medium-s .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-medium-s+*{font-size:1.25rem;line-height:1.4}.p-link-pure--size-medium-s+*::before{font-size:1.5rem;margin-left:1.5em}.p-link-pure--size-large-s{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-large-s .p-link-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-link-pure--size-large-s+*{font-size:1.875rem;line-height:1.3333333333}.p-link-pure--size-large-s+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-link-pure--size-x-large-s{font-size:3.25rem;line-height:1.2307692308}.p-link-pure--size-x-large-s .p-link-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-link-pure--size-x-large-s+*{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-x-large-s+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-link-pure--size-inherit-s{font-size:inherit;line-height:inherit}.p-link-pure--size-inherit-s .p-link-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 1000px){.p-link-pure--size-x-small-m{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small-m .p-link-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-link-pure--size-x-small-m+*{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small-m+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-link-pure--size-small-m{font-size:1rem;line-height:1.5}.p-link-pure--size-small-m .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-small-m+*{font-size:1rem;line-height:1.5}.p-link-pure--size-small-m+*::before{font-size:1rem;margin-left:1.5em}.p-link-pure--size-medium-m{font-size:1.5rem;line-height:1.5}.p-link-pure--size-medium-m .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-medium-m+*{font-size:1.25rem;line-height:1.4}.p-link-pure--size-medium-m+*::before{font-size:1.5rem;margin-left:1.5em}.p-link-pure--size-large-m{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-large-m .p-link-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-link-pure--size-large-m+*{font-size:1.875rem;line-height:1.3333333333}.p-link-pure--size-large-m+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-link-pure--size-x-large-m{font-size:3.25rem;line-height:1.2307692308}.p-link-pure--size-x-large-m .p-link-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-link-pure--size-x-large-m+*{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-x-large-m+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-link-pure--size-inherit-m{font-size:inherit;line-height:inherit}.p-link-pure--size-inherit-m .p-link-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 1300px){.p-link-pure--size-x-small-l{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small-l .p-link-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-link-pure--size-x-small-l+*{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small-l+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-link-pure--size-small-l{font-size:1rem;line-height:1.5}.p-link-pure--size-small-l .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-small-l+*{font-size:1rem;line-height:1.5}.p-link-pure--size-small-l+*::before{font-size:1rem;margin-left:1.5em}.p-link-pure--size-medium-l{font-size:1.5rem;line-height:1.5}.p-link-pure--size-medium-l .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-medium-l+*{font-size:1.25rem;line-height:1.4}.p-link-pure--size-medium-l+*::before{font-size:1.5rem;margin-left:1.5em}.p-link-pure--size-large-l{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-large-l .p-link-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-link-pure--size-large-l+*{font-size:1.875rem;line-height:1.3333333333}.p-link-pure--size-large-l+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-link-pure--size-x-large-l{font-size:3.25rem;line-height:1.2307692308}.p-link-pure--size-x-large-l .p-link-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-link-pure--size-x-large-l+*{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-x-large-l+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-link-pure--size-inherit-l{font-size:inherit;line-height:inherit}.p-link-pure--size-inherit-l .p-link-pure__icon{width:1.5em;height:1.5em}}@media (min-width: 1760px){.p-link-pure--size-x-small-xl{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small-xl .p-link-pure__icon{width:1.6666666667em;height:1.6666666667em}.p-link-pure--size-x-small-xl+*{font-size:0.75rem;line-height:1.6666666667}.p-link-pure--size-x-small-xl+*::before{font-size:0.75rem;margin-left:1.6666666667em}.p-link-pure--size-small-xl{font-size:1rem;line-height:1.5}.p-link-pure--size-small-xl .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-small-xl+*{font-size:1rem;line-height:1.5}.p-link-pure--size-small-xl+*::before{font-size:1rem;margin-left:1.5em}.p-link-pure--size-medium-xl{font-size:1.5rem;line-height:1.5}.p-link-pure--size-medium-xl .p-link-pure__icon{width:1.5em;height:1.5em}.p-link-pure--size-medium-xl+*{font-size:1.25rem;line-height:1.4}.p-link-pure--size-medium-xl+*::before{font-size:1.5rem;margin-left:1.5em}.p-link-pure--size-large-xl{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-large-xl .p-link-pure__icon{width:1.3333333333em;height:1.3333333333em}.p-link-pure--size-large-xl+*{font-size:1.875rem;line-height:1.3333333333}.p-link-pure--size-large-xl+*::before{font-size:2.25rem;margin-left:1.3333333333em}.p-link-pure--size-x-large-xl{font-size:3.25rem;line-height:1.2307692308}.p-link-pure--size-x-large-xl .p-link-pure__icon{width:1.2307692308em;height:1.2307692308em}.p-link-pure--size-x-large-xl+*{font-size:2.25rem;line-height:1.3333333333}.p-link-pure--size-x-large-xl+*::before{font-size:3.25rem;margin-left:1.2307692308em}.p-link-pure--size-inherit-xl{font-size:inherit;line-height:inherit}.p-link-pure--size-inherit-xl .p-link-pure__icon{width:1.5em;height:1.5em}}.p-link-pure__icon{-ms-flex-negative:0;flex-shrink:0;width:1.5em;height:1.5em}.p-link-pure__label{display:block;-webkit-box-sizing:border-box;box-sizing:border-box;border:0}.p-link-pure__subline{display:-ms-flexbox;display:flex;-webkit-transition:color 0.24s ease;transition:color 0.24s ease;margin-top:4px}.p-link-pure__subline::before{content:\"\"}.p-link-pure__label--visible,.p-link-pure__subline--visible{width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;text-indent:0}.p-link-pure__label--hidden,.p-link-pure__subline--hidden{width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;text-indent:-1px}@media (min-width: 480px){.p-link-pure__label--visible-xs,.p-link-pure__subline--visible-xs{width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;text-indent:0}.p-link-pure__label--hidden-xs,.p-link-pure__subline--hidden-xs{width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;text-indent:-1px}}@media (min-width: 760px){.p-link-pure__label--visible-s,.p-link-pure__subline--visible-s{width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;text-indent:0}.p-link-pure__label--hidden-s,.p-link-pure__subline--hidden-s{width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;text-indent:-1px}}@media (min-width: 1000px){.p-link-pure__label--visible-m,.p-link-pure__subline--visible-m{width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;text-indent:0}.p-link-pure__label--hidden-m,.p-link-pure__subline--hidden-m{width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;text-indent:-1px}}@media (min-width: 1300px){.p-link-pure__label--visible-l,.p-link-pure__subline--visible-l{width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;text-indent:0}.p-link-pure__label--hidden-l,.p-link-pure__subline--hidden-l{width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;text-indent:-1px}}@media (min-width: 1760px){.p-link-pure__label--visible-xl,.p-link-pure__subline--visible-xl{width:100%;height:auto;margin-left:0.25rem;padding:0 0.125em 0 0;white-space:normal;overflow:visible;text-indent:0}.p-link-pure__label--hidden-xl,.p-link-pure__subline--hidden-xl{width:1px;height:1px;margin-left:-1px;margin-top:0;padding:0;white-space:nowrap;overflow:hidden;text-indent:-1px}}";
 var LinkPure = /** @class */ (function () {
     function LinkPure(hostRef) {
-        Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         /** Size of the link. */
         this.size = 'small';
         /** The weight of the text (only has effect with visible label). */
@@ -374,28 +311,29 @@ var LinkPure = /** @class */ (function () {
     };
     LinkPure.prototype.componentDidLoad = function () {
         var _this = this;
-        Object(_focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_6__["i"])(this.host);
+        Object(_focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_5__["i"])(this.host);
         Object(_transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_4__["t"])(this.linkTag, 'font-size', function () {
-            var size = Object(_line_height_c7d0058c_js__WEBPACK_IMPORTED_MODULE_1__["c"])(_this.linkTag);
+            var size = Object(_line_height_59b7344d_js__WEBPACK_IMPORTED_MODULE_1__["c"])(_this.linkTag);
             _this.iconTag.style.width = size + "em";
             _this.iconTag.style.height = size + "em";
         });
     };
     LinkPure.prototype.render = function () {
+        var _a, _b, _c;
         var _this = this;
         var TagType = this.href === undefined ? 'span' : 'a';
-        var linkPureClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-pure'), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["m"])('link-pure--size', this.size), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("link-pure--theme-" + this.theme), this.active && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-pure--active'));
-        var iconClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-pure__icon'));
-        var labelClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-pure__label'), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["m"])('link-pure__label-', this.hideLabel, ['hidden', 'visible']));
-        var sublineClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_5__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-pure__subline'), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["m"])('link-pure__subline-', this.hideLabel, ['hidden', 'visible']));
-        return (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, Object.assign({ class: linkPureClasses }, (TagType === 'a'
+        var linkPureClasses = Object.assign((_a = {}, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-pure')] = true, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("link-pure--theme-" + this.theme)] = true, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-pure--active')] = this.active, _a), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["m"])('link-pure--size', this.size));
+        var iconClasses = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-pure__icon');
+        var labelClasses = Object.assign((_b = {}, _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-pure__label')] = true, _b), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["m"])('link-pure__label-', this.hideLabel, ['hidden', 'visible']));
+        var sublineClasses = Object.assign((_c = {}, _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('link-pure__subline')] = true, _c), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["m"])('link-pure__subline-', this.hideLabel, ['hidden', 'visible']));
+        return (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, Object.assign({ class: linkPureClasses }, (TagType === 'a'
             ? {
                 href: this.href,
                 target: this.target,
                 download: this.download,
                 rel: this.rel
             }
-            : null), { ref: function (el) { return (_this.linkTag = el); } }), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, color: "inherit", size: "inherit", name: this.icon, source: this.iconSource, ref: function (el) { return (_this.iconTag = el); }, "aria-hidden": "true" }), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelClasses, tag: "span", color: "inherit", size: "inherit", weight: this.weight }, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), this.subline && (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: sublineClasses, color: "inherit", size: "inherit", tag: "div" }, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "subline" })))));
+            : null), { ref: function (el) { return (_this.linkTag = el); } }), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, color: "inherit", size: "inherit", name: this.icon, source: this.iconSource, ref: function (el) { return (_this.iconTag = el); }, "aria-hidden": "true" }), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelClasses, tag: "span", color: "inherit", size: "inherit", weight: this.weight }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), this.subline && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: sublineClasses, color: "inherit", size: "inherit", tag: "div" }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "subline" })))));
     };
     LinkPure.prototype.setSubline = function () {
         this.subline = this.host.querySelector('[slot="subline"]');
@@ -406,7 +344,7 @@ var LinkPure = /** @class */ (function () {
         Object(_slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_2__["i"])(this.host, style);
     };
     Object.defineProperty(LinkPure.prototype, "host", {
-        get: function () { return Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        get: function () { return Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
         enumerable: false,
         configurable: true
     });

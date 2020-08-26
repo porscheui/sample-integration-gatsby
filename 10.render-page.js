@@ -121,67 +121,6 @@ var improveFocusHandlingForCustomElement = function (element) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js":
-/*!***********************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js ***!
-  \***********************************************************************************************************************************************/
-/*! exports provided: c */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return classnames; });
-/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
-
-var classnames = Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["d"])(function (module) {
-    /*!
-      Copyright (c) 2017 Jed Watson.
-      Licensed under the MIT License (MIT), see
-      http://jedwatson.github.io/classnames
-    */
-    /* global define */
-    (function () {
-        var hasOwn = {}.hasOwnProperty;
-        function classNames() {
-            var classes = [];
-            for (var i = 0; i < arguments.length; i++) {
-                var arg = arguments[i];
-                if (!arg)
-                    continue;
-                var argType = typeof arg;
-                if (argType === 'string' || argType === 'number') {
-                    classes.push(arg);
-                }
-                else if (Array.isArray(arg) && arg.length) {
-                    var inner = classNames.apply(null, arg);
-                    if (inner) {
-                        classes.push(inner);
-                    }
-                }
-                else if (argType === 'object') {
-                    for (var key in arg) {
-                        if (hasOwn.call(arg, key) && arg[key]) {
-                            classes.push(key);
-                        }
-                    }
-                }
-            }
-            return classes.join(' ');
-        }
-        if (module.exports) {
-            classNames.default = classNames;
-            module.exports = classNames;
-        }
-        else {
-            window.classNames = classNames;
-        }
-    }());
-});
-
-
-
-/***/ }),
-
 /***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js":
 /*!***************************************************************************************************************************************************!*\
   !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js ***!
@@ -305,11 +244,9 @@ function throttle(delay, noTrailing, callback, debounceMode) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_pagination", function() { return Pagination; });
-/* harmony import */ var _breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-063d6106.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-063d6106.js");
+/* harmony import */ var _breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-633ca215.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-633ca215.js");
 /* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
-/* harmony import */ var _index_45be8764_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index-45be8764.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-45be8764.js");
-/* harmony import */ var _focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./focusHandling-e078221d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js");
-
+/* harmony import */ var _focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./focusHandling-e078221d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/focusHandling-e078221d.js");
 
 
 
@@ -506,7 +443,7 @@ var readCounterResetValue = function (element) {
 var paginationCss = "@charset \"UTF-8\";:host{display:block}.p-pagination{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;margin:0;padding:0}.p-pagination--size-5{counter-reset:size 5}.p-pagination--size-7{counter-reset:size 7}@media (min-width: 480px){.p-pagination--size-5-xs{counter-reset:size 5}.p-pagination--size-7-xs{counter-reset:size 7}}@media (min-width: 760px){.p-pagination--size-5-s{counter-reset:size 5}.p-pagination--size-7-s{counter-reset:size 7}}@media (min-width: 1000px){.p-pagination--size-5-m{counter-reset:size 5}.p-pagination--size-7-m{counter-reset:size 7}}@media (min-width: 1300px){.p-pagination--size-5-l{counter-reset:size 5}.p-pagination--size-7-l{counter-reset:size 7}}@media (min-width: 1760px){.p-pagination--size-5-xl{counter-reset:size 5}.p-pagination--size-7-xl{counter-reset:size 7}}.p-pagination__items{display:-ms-flexbox;display:flex;margin:0;padding:0}.p-pagination__item{list-style-type:none;margin:0;padding:0}.p-pagination__goto,.p-pagination__prev,.p-pagination__next{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;-webkit-transition:color 0.24s ease, outline-color 0.24s ease;transition:color 0.24s ease, outline-color 0.24s ease;position:relative;width:2.5rem;height:2.5rem;-webkit-box-sizing:border-box;box-sizing:border-box;outline:none transparent}.p-pagination__goto:focus,.p-pagination__prev:focus,.p-pagination__next:focus{outline-width:2px;outline-style:solid}.p-pagination--theme-light .p-pagination__goto:focus,.p-pagination--theme-light .p-pagination__prev:focus,.p-pagination--theme-light .p-pagination__next:focus{outline-color:#00d5b9}.p-pagination--theme-dark .p-pagination__goto:focus,.p-pagination--theme-dark .p-pagination__prev:focus,.p-pagination--theme-dark .p-pagination__next:focus{outline-color:#00d5b9}.p-pagination__goto:active,.p-pagination__prev:active,.p-pagination__next:active{outline:none}.p-pagination--theme-light .p-pagination__goto:active,.p-pagination--theme-light .p-pagination__prev:active,.p-pagination--theme-light .p-pagination__next:active{color:#d5001c}.p-pagination--theme-dark .p-pagination__goto:active,.p-pagination--theme-dark .p-pagination__prev:active,.p-pagination--theme-dark .p-pagination__next:active{color:#d5001c}.p-pagination__goto{font-size:1rem;line-height:1.5;font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:400;text-decoration:none;cursor:pointer}.p-pagination--theme-light .p-pagination__goto{color:#000}.p-pagination--theme-dark .p-pagination__goto{color:#fff}.p-pagination--theme-light .p-pagination__goto:hover{color:#d5001c}.p-pagination--theme-dark .p-pagination__goto:hover{color:#d5001c}.p-pagination__goto--current{cursor:default}.p-pagination--theme-light .p-pagination__goto--current:hover{color:#000}.p-pagination--theme-dark .p-pagination__goto--current:hover{color:#fff}.p-pagination__goto--current::after{content:\"\";display:block;position:absolute;bottom:0;left:0.375rem;right:0.375rem;height:0.25rem}.p-pagination--theme-light .p-pagination__goto--current::after{background-color:#d5001c}.p-pagination--theme-dark .p-pagination__goto--current::after{background-color:#d5001c}.p-pagination__goto--ellipsis{cursor:default}.p-pagination--theme-light .p-pagination__goto--ellipsis:hover{color:#000}.p-pagination--theme-dark .p-pagination__goto--ellipsis:hover{color:#fff}.p-pagination__goto--ellipsis::after{content:\"…\"}.p-pagination__prev,.p-pagination__next{text-decoration:none;cursor:pointer}.p-pagination--theme-light .p-pagination__prev,.p-pagination--theme-light .p-pagination__next{color:#000}.p-pagination--theme-dark .p-pagination__prev,.p-pagination--theme-dark .p-pagination__next{color:#fff}.p-pagination--theme-light .p-pagination__prev:hover,.p-pagination--theme-light .p-pagination__next:hover{color:#d5001c}.p-pagination--theme-dark .p-pagination__prev:hover,.p-pagination--theme-dark .p-pagination__next:hover{color:#d5001c}.p-pagination__prev--disabled,.p-pagination__next--disabled{cursor:default}.p-pagination--theme-light .p-pagination__prev--disabled,.p-pagination--theme-light .p-pagination__next--disabled{color:#96989a}.p-pagination--theme-dark .p-pagination__prev--disabled,.p-pagination--theme-dark .p-pagination__next--disabled{color:#7c7f81}.p-pagination--theme-light .p-pagination__prev--disabled:hover,.p-pagination--theme-light .p-pagination__next--disabled:hover{color:#96989a}.p-pagination--theme-dark .p-pagination__prev--disabled:hover,.p-pagination--theme-dark .p-pagination__next--disabled:hover{color:#7c7f81}";
 var Pagination = /** @class */ (function () {
     function Pagination(hostRef) {
-        Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         /** The total count of items. */
         this.totalItemsCount = 1;
         /** The total count of items which should be shown per page.  */
@@ -528,14 +465,14 @@ var Pagination = /** @class */ (function () {
         this.allyLabelNext = 'Next page';
         /** Adapts the color when used on dark background. */
         this.theme = 'light';
-        this.pageChange = Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["f"])(this, "pageChange", 7);
+        this.pageChange = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "pageChange", 7);
     }
     Pagination.prototype.onActivePageChange = function (page, previousPage) {
         this.pageChange.emit({ page: page, previousPage: previousPage });
     };
     Pagination.prototype.componentDidLoad = function () {
         var _this = this;
-        Object(_focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_3__["i"])(this.element);
+        Object(_focusHandling_e078221d_js__WEBPACK_IMPORTED_MODULE_2__["i"])(this.element);
         this.unlistenResize = listenResize(function () {
             _this.updateMaxNumberOfPageLinks();
         });
@@ -545,11 +482,11 @@ var Pagination = /** @class */ (function () {
         this.unlistenResize();
     };
     Pagination.prototype.render = function () {
+        var _a;
         var _this = this;
-        var breakpointClasses = Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["m"])('pagination--size', this.maxNumberOfPageLinks);
         var pageRange = this.breakpointMaxNumberOfPageLinks === 7 ? 1 : 0;
-        var paginationClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_2__["c"])(breakpointClasses, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination'), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])("pagination--theme-" + this.theme));
-        var paginationItemsClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_2__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__items'));
+        var paginationClasses = Object.assign((_a = {}, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination')] = true, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("pagination--theme-" + this.theme)] = true, _a), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["m"])('pagination--size', this.maxNumberOfPageLinks));
+        var paginationItemsClasses = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__items');
         var pageTotal = getTotalPages(this.totalItemsCount, this.itemsPerPage);
         var activePage = getCurrentActivePage(this.activePage, pageTotal);
         // generate pagination items
@@ -562,23 +499,36 @@ var Pagination = /** @class */ (function () {
             var pageItems = [];
             var prevItem;
             var nextItem;
-            var paginationItemClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_2__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__item'));
+            var paginationItemClasses = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__item');
             paginationModel.forEach(function (pageModel) {
+                var _a, _b, _c, _d;
                 if (pageModel.type === itemTypes.PREVIOUS_PAGE_LINK) {
-                    var paginationPrevClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_2__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__prev'), !pageModel.isActive && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__prev--disabled'));
-                    return (prevItem = (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationPrevClasses, role: 'button', tabIndex: pageModel.isActive ? 0 : null, onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-disabled": !pageModel.isActive && 'true', "aria-label": _this.allyLabelPrev }, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "arrow-head-left", color: "inherit" })))));
+                    var paginationPrevClasses = (_a = {},
+                        _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__prev')] = true,
+                        _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__prev--disabled')] = !pageModel.isActive,
+                        _a);
+                    return (prevItem = (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationPrevClasses, role: 'button', tabIndex: pageModel.isActive ? 0 : null, onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-disabled": !pageModel.isActive && 'true', "aria-label": _this.allyLabelPrev }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "arrow-head-left", color: "inherit" })))));
                 }
                 if (pageModel.type === itemTypes.ELLIPSIS) {
-                    var paginationGoToClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_2__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__goto'), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__goto--ellipsis'));
-                    pageItems.push(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationGoToClasses })));
+                    var paginationGoToClasses = (_b = {},
+                        _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__goto')] = true,
+                        _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__goto--ellipsis')] = true,
+                        _b);
+                    pageItems.push(Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationGoToClasses })));
                 }
                 if (pageModel.type === itemTypes.PAGE) {
-                    var paginationGoToClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_2__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__goto'), pageModel.isActive && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__goto--current'));
-                    pageItems.push(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationGoToClasses, role: 'button', tabIndex: pageModel.isActive ? null : 0, "aria-disabled": pageModel.isActive && 'true', onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-label": _this.allyLabelPage + " " + pageModel.value, "aria-current": pageModel.isActive && 'page' }, pageModel.value)));
+                    var paginationGoToClasses = (_c = {},
+                        _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__goto')] = true,
+                        _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__goto--current')] = pageModel.isActive,
+                        _c);
+                    pageItems.push(Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationGoToClasses, role: 'button', tabIndex: pageModel.isActive ? null : 0, "aria-disabled": pageModel.isActive && 'true', onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-label": _this.allyLabelPage + " " + pageModel.value, "aria-current": pageModel.isActive && 'page' }, pageModel.value)));
                 }
                 if (pageModel.type === itemTypes.NEXT_PAGE_LINK) {
-                    var paginationNextClasses = Object(_index_45be8764_js__WEBPACK_IMPORTED_MODULE_2__["c"])(Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__next'), !pageModel.isActive && Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__next--disabled'));
-                    return (nextItem = (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationNextClasses, role: 'button', tabIndex: pageModel.isActive ? 0 : null, onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-disabled": !pageModel.isActive && 'true', "aria-label": _this.allyLabelNext }, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "arrow-head-right", color: "inherit" })))));
+                    var paginationNextClasses = (_d = {},
+                        _d[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__next')] = true,
+                        _d[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__next--disabled')] = !pageModel.isActive,
+                        _d);
+                    return (nextItem = (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationNextClasses, role: 'button', tabIndex: pageModel.isActive ? 0 : null, onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-disabled": !pageModel.isActive && 'true', "aria-label": _this.allyLabelNext }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "arrow-head-right", color: "inherit" })))));
                 }
             });
             return {
@@ -588,7 +538,7 @@ var Pagination = /** @class */ (function () {
             };
         };
         var paginationItems = createPaginationItems();
-        return (Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("nav", { class: paginationClasses, role: "navigation", "aria-label": this.allyLabel, ref: function (el) { return (_this.navigationElement = el); } }, Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ul", { class: paginationItemsClasses }, paginationItems.prevItem, paginationItems.pageItems, paginationItems.nextItem)));
+        return (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("nav", { class: paginationClasses, role: "navigation", "aria-label": this.allyLabel, ref: function (el) { return (_this.navigationElement = el); } }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ul", { class: paginationItemsClasses }, paginationItems.prevItem, paginationItems.pageItems, paginationItems.nextItem)));
     };
     Pagination.prototype.onKeyDown = function (event, page) {
         /**
@@ -612,7 +562,7 @@ var Pagination = /** @class */ (function () {
         this.breakpointMaxNumberOfPageLinks = size;
     };
     Object.defineProperty(Pagination.prototype, "element", {
-        get: function () { return Object(_breakpointCustomizable_063d6106_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        get: function () { return Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
         enumerable: false,
         configurable: true
     });
