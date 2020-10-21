@@ -1,10 +1,10 @@
 exports.ids = [25];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/shadow-css-4c80f1c6.js":
-/*!****************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/shadow-css-4c80f1c6.js ***!
-  \****************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/shadow-css-4c80f1c6.js":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/shadow-css-4c80f1c6.js ***!
+  \***********************************************************************************************/
 /*! exports provided: scopeCss */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

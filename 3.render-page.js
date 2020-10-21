@@ -1,10 +1,10 @@
 exports.ids = [3];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js":
-/*!********************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js ***!
-  \********************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js ***!
+  \***************************************************************************************************/
 /*! exports provided: h, i */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -58,10 +58,10 @@ var fixEventTarget = function (event, element) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js":
-/*!***************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js ***!
-  \***************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js ***!
+  \**********************************************************************************************/
 /*! exports provided: t */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -171,21 +171,21 @@ function throttle(delay, noTrailing, callback, debounceMode) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-text-field-wrapper.entry.js":
-/*!***********************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-text-field-wrapper.entry.js ***!
-  \***********************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-text-field-wrapper.entry.js":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-text-field-wrapper.entry.js ***!
+  \******************************************************************************************************/
 /*! exports provided: p_text_field_wrapper */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_text_field_wrapper", function() { return TextFieldWrapper; });
-/* harmony import */ var _breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-633ca215.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-633ca215.js");
-/* harmony import */ var _buttonHandling_8f4ca036_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buttonHandling-8f4ca036.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js");
-/* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
-/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
-/* harmony import */ var _transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./transition-listener-302b2719.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js");
+/* harmony import */ var _breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-ff31979d.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-ff31979d.js");
+/* harmony import */ var _buttonHandling_8f4ca036_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buttonHandling-8f4ca036.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/buttonHandling-8f4ca036.js");
+/* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
+/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
+/* harmony import */ var _transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./transition-listener-302b2719.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js");
 
 
 
@@ -195,7 +195,7 @@ var textFieldWrapperCss = ":host{display:block}::slotted(input){position:absolut
 var TextFieldWrapper = /** @class */ (function () {
     function TextFieldWrapper(hostRef) {
         var _this = this;
-        Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         /** The label text. */
         this.label = '';
         /** The description text. */
@@ -240,25 +240,25 @@ var TextFieldWrapper = /** @class */ (function () {
     };
     TextFieldWrapper.prototype.render = function () {
         var _a, _b, _c, _d;
-        var containerClasses = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__container');
-        var labelClasses = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__label');
-        var labelTextClasses = Object.assign((_a = {}, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__label-text')] = true, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__label-text--disabled')] = this.disabled, _a), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["m"])('text-field-wrapper__label-text-', this.hideLabel, ['hidden', 'visible']));
-        var descriptionTextClasses = Object.assign((_b = {}, _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__description-text')] = true, _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__description-text--disabled')] = this.disabled, _b), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["m"])('text-field-wrapper__description-text-', this.hideLabel, [
+        var containerClasses = Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__container');
+        var labelClasses = Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__label');
+        var labelTextClasses = Object.assign((_a = {}, _a[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__label-text')] = true, _a[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__label-text--disabled')] = this.disabled, _a), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["m"])('text-field-wrapper__label-text-', this.hideLabel, ['hidden', 'visible']));
+        var descriptionTextClasses = Object.assign((_b = {}, _b[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__description-text')] = true, _b[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__description-text--disabled')] = this.disabled, _b), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["m"])('text-field-wrapper__description-text-', this.hideLabel, [
             'hidden',
             'visible'
         ]));
         var fakeInputClasses = (_c = {},
-            _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__fake-input')] = true,
-            _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text-field-wrapper__fake-input--" + this.state)] = this.state !== 'none',
-            _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__fake-input--disabled')] = this.disabled,
-            _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__fake-input--readonly')] = this.readonly,
+            _c[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__fake-input')] = true,
+            _c[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text-field-wrapper__fake-input--" + this.state)] = this.state !== 'none',
+            _c[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__fake-input--disabled')] = this.disabled,
+            _c[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__fake-input--readonly')] = this.readonly,
             _c);
-        var buttonClasses = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__button');
+        var buttonClasses = Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__button');
         var messageClasses = (_d = {},
-            _d[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__message')] = true,
-            _d[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text-field-wrapper__message--" + this.state)] = this.state !== 'none',
+            _d[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('text-field-wrapper__message')] = true,
+            _d[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])("text-field-wrapper__message--" + this.state)] = this.state !== 'none',
             _d);
-        return (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: containerClasses }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("label", { class: labelClasses }, this.isLabelVisible && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelTextClasses, tag: "span", color: "inherit", onClick: this.labelClick }, this.label || (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "label" }))))), this.isDescriptionVisible && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: descriptionTextClasses, tag: "span", color: "inherit", size: "x-small", onClick: this.labelClick }, this.description || (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "description" }))))), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: fakeInputClasses }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), this.isPasswordToggleable && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { type: "button", class: buttonClasses, onClick: this.togglePassword, disabled: this.disabled }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: this.showPassword ? 'view-off' : 'view', color: "inherit" }))), this.isInputTypeSearch && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { onClick: this.onSubmitHandler, type: "submit", class: buttonClasses, disabled: this.disabled || this.readonly }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "search", color: "inherit" })))), this.isMessageVisible && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: messageClasses, color: "inherit", role: this.state === 'error' && 'alert' }, this.message || (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "message" })))))));
+        return (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: containerClasses }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("label", { class: labelClasses }, this.isLabelVisible && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelTextClasses, tag: "span", color: "inherit", onClick: this.labelClick }, this.label || (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "label" }))))), this.isDescriptionVisible && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: descriptionTextClasses, tag: "span", color: "inherit", size: "x-small", onClick: this.labelClick }, this.description || (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "description" }))))), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: fakeInputClasses }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), this.isPasswordToggleable && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { type: "button", class: buttonClasses, onClick: this.togglePassword, disabled: this.disabled }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: this.showPassword ? 'view-off' : 'view', color: "inherit" }))), this.isInputTypeSearch && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { onClick: this.onSubmitHandler, type: "submit", class: buttonClasses, disabled: this.disabled || this.readonly }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "search", color: "inherit" })))), this.isMessageVisible && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: messageClasses, color: "inherit", role: this.state === 'error' && 'alert' }, this.message || (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "message" })))))));
     };
     Object.defineProperty(TextFieldWrapper.prototype, "isLabelVisible", {
         get: function () {
@@ -334,7 +334,7 @@ var TextFieldWrapper = /** @class */ (function () {
         Object(_slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_2__["i"])(this.host, style);
     };
     Object.defineProperty(TextFieldWrapper.prototype, "host", {
-        get: function () { return Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        get: function () { return Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -346,10 +346,10 @@ TextFieldWrapper.style = textFieldWrapperCss;
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js":
-/*!********************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js ***!
-  \********************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js ***!
+  \***************************************************************************************************/
 /*! exports provided: i */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -410,17 +410,17 @@ var minifySlottedStyles = function (css) { return css
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js":
-/*!*************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js ***!
-  \*************************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js ***!
+  \********************************************************************************************************/
 /*! exports provided: t */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return transitionListener; });
-/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
+/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
 
 /**
  * Listens to the end of a CSS transition and calls a throttled callback and calls

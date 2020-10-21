@@ -1,11 +1,11 @@
 exports.ids = [26];
 exports.modules = {
 
-/***/ "./node_modules/@porschehn/navigation/dist/esm-es5/phn-back-button_43.entry.js":
+/***/ "./node_modules/@porschehn/navigation/dist/esm-es5/phn-back-button_36.entry.js":
 /*!*************************************************************************************!*\
-  !*** ./node_modules/@porschehn/navigation/dist/esm-es5/phn-back-button_43.entry.js ***!
+  !*** ./node_modules/@porschehn/navigation/dist/esm-es5/phn-back-button_36.entry.js ***!
   \*************************************************************************************/
-/*! exports provided: phn_back_button, phn_burger_button, phn_button_extended, phn_car_further_links, phn_car_meta_functionalities, phn_car_model, phn_car_model_list, phn_car_series, phn_car_series_list, phn_car_series_model_overview, phn_close_button, phn_crest, phn_dealer_search, phn_drawer_car_series_model_overview, phn_drawer_car_series_model_overview_2, phn_drawer_shops_and_more, phn_drawer_shops_and_more_2, phn_header, phn_headline, phn_list_item, phn_mega_fly_out_overlay, phn_menu_desktop_level_1, phn_menu_drawer, phn_menu_drawer_level_1, phn_menu_mobile_level_1, phn_messages_link, phn_meta_functionalities, phn_mobile_car_series_list, phn_mobile_car_series_list_2, phn_mobile_layout, phn_mobile_shops_and_more, phn_mobile_shops_and_more_2, phn_myporsche, phn_myporsche_drawer, phn_myporsche_drawer_2, phn_myporsche_flyout, phn_myporsche_items, phn_myporsche_items_drawer, phn_myporsche_items_drawer_2, phn_preview_badge, phn_shops_and_more, phn_shops_and_more_item, phn_shops_and_more_overview */
+/*! exports provided: phn_back_button, phn_burger_button, phn_button_extended, phn_car_further_links, phn_car_meta_functionalities, phn_car_model, phn_car_model_list, phn_car_series, phn_car_series_list, phn_car_series_model_overview, phn_crest, phn_dealer_search, phn_desktop_shop_and_more_item, phn_drawer_car_series_model_overview, phn_drawer_shops_and_more, phn_header, phn_headline, phn_list_item, phn_mega_fly_out_overlay, phn_menu_desktop_level_1, phn_menu_drawer, phn_menu_mobile_level_1, phn_messages_link, phn_meta_functionalities, phn_mobile_car_series_list, phn_mobile_layout, phn_mobile_shop_and_more_item, phn_mobile_shops_and_more, phn_myporsche, phn_myporsche_drawer, phn_myporsche_flyout, phn_myporsche_items, phn_myporsche_items_drawer, phn_preview_badge, phn_shops_and_more, phn_shops_and_more_overview */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20,40 +20,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_car_series", function() { return CarSeries; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_car_series_list", function() { return CarSeriesList; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_car_series_model_overview", function() { return CarSeriesModelOverview; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_close_button", function() { return CloseButton; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_crest", function() { return Crest; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_dealer_search", function() { return DealerSearch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_desktop_shop_and_more_item", function() { return DesktopShopAndMoreItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_drawer_car_series_model_overview", function() { return DrawerCarSeriesModelOverview; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_drawer_car_series_model_overview_2", function() { return DrawerCarSeriesModelOverview$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_drawer_shops_and_more", function() { return DrawerShopsAndMore; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_drawer_shops_and_more_2", function() { return DrawerShopsAndMore$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_header", function() { return Header; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_headline", function() { return Headline; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_list_item", function() { return ListItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mega_fly_out_overlay", function() { return MegaFlyOutOverlay; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_menu_desktop_level_1", function() { return MenuDesktopLevel1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_menu_drawer", function() { return MenuDrawer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_menu_drawer_level_1", function() { return MenuDrawerLevel1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_menu_mobile_level_1", function() { return MenuMobileLevel1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_messages_link", function() { return MessagesLink; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_meta_functionalities", function() { return MetaFunctionalities; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_car_series_list", function() { return MobileCarSeriesList; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_car_series_list_2", function() { return MobileCarSeriesList$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_layout", function() { return MobileLayout; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_shop_and_more_item", function() { return MobileShopAndMoreItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_shops_and_more", function() { return MobileShopsAndMore; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_mobile_shops_and_more_2", function() { return MobileShopsAndMore$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche", function() { return Myporsche; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_drawer", function() { return MyPorscheDrawer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_drawer_2", function() { return MyPorscheDrawer$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_flyout", function() { return MyPorscheFlyout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_items", function() { return MyPorscheItems; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_items_drawer", function() { return MyPorscheItemsDrawer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_myporsche_items_drawer_2", function() { return MyPorscheItemsDrawer$1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_preview_badge", function() { return PreviewBadge; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_shops_and_more", function() { return ShopsAndMore; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_shops_and_more_item", function() { return ShopsAndMoreItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_shops_and_more_overview", function() { return ShopsAndMoreOverview; });
-/* harmony import */ var _index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-b5926612.js */ "./node_modules/@porschehn/navigation/dist/esm-es5/index-b5926612.js");
+/* harmony import */ var _index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-f8290f1d.js */ "./node_modules/@porschehn/navigation/dist/esm-es5/index-f8290f1d.js");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -155,14 +148,14 @@ var cleanupElements = debounce(function (map) {
 var stencilSubscription = function (_a) {
     var on = _a.on;
     var elmsToUpdate = new Map();
-    if (typeof _index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["g"] === 'function') {
+    if (typeof _index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["g"] === 'function') {
         // If we are not in a stencil project, we do nothing.
         // This function is not really exported by @stencil/core.
         on('dispose', function () {
             elmsToUpdate.clear();
         });
         on('get', function (propName) {
-            var elm = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["g"])();
+            var elm = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["g"])();
             if (elm) {
                 appendToMap(elmsToUpdate, propName, elm);
             }
@@ -170,12 +163,12 @@ var stencilSubscription = function (_a) {
         on('set', function (propName) {
             var elements = elmsToUpdate.get(propName);
             if (elements) {
-                elmsToUpdate.set(propName, elements.filter(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["f"]));
+                elmsToUpdate.set(propName, elements.filter(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["f"]));
             }
             cleanupElements(elmsToUpdate);
         });
         on('reset', function () {
-            elmsToUpdate.forEach(function (elms) { return elms.forEach(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["f"]); });
+            elmsToUpdate.forEach(function (elms) { return elms.forEach(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["f"]); });
             cleanupElements(elmsToUpdate);
         });
     }
@@ -305,11 +298,18 @@ var REDACTED = 'REDACTED';
 var LOGGED_IN_USER_NO_NAME_STATUS = 'loggedIn';
 var LOGGED_OUT_USER_STATUS = 'loginOrRegister';
 var LOADING_STATUS = 'loading';
-var VERSION = '1.4.2';
+var VERSION = '1.9.1';
 var DEFAULT_UNREAD_MESSAGES_COUNT = 0;
+var DEFAULT_EMPTY_CONTENT_RESPONSE = [];
+var DEFAULT_EMPTY_CONTENT = {
+    seriesList: DEFAULT_SERIES_LIST,
+    shops: DEFAULT_SHOPS,
+    more: DEFAULT_MORE,
+    metafunctionalities: DEFAULT_METAFUNCTIONALITIES,
+    menu: DEFAULT_MENU
+};
 var ACCESS_TOKEN_FETCHED_EVENT = 'accessTokenFetched';
 var ACCESS_TOKEN_FETCH_ERROR_EVENT = 'accessTokenFetchError';
-var SLOT_UPDATED_EVENT = 'slotUpdated';
 var TEXT_FIELD_NAME = 'Text';
 var LINK_FIELD_NAME = 'Link';
 var PHRASEID_FIELD_NAME = 'PhraseId';
@@ -317,13 +317,8 @@ var DEALER_SEARCH_PHRASE_ID = 'metafunctionalities.finddealer';
 var MYPORSCHE_PHRASE_ID = 'metafunctionalities.myporsche';
 var CREST_PHRASE_ID = 'mainmenu.crest';
 var MENU_PHRASE_ID = 'mainmenu.menu';
-var FEATURE_OVERRIDE_ENABLED = 'featureOverrideEnabled';
-var FEATURE_KEYBOARD = 'homenav_732_keyboard';
-var FEATURE_SKIPCONTENT = 'homenav_skipcontent';
-var FEATURE_UNREAD_MESSAGES_COUNT = 'homenav_628_messages_count';
-var FEATURE_DRAWER_RESTRUCTURE = 'homenav_drawer_restructure';
 var MAX_M_VIEWPORT_WIDTH = 1299;
-var FOCUSABLE_ELEMENTS_SELECTOR = 'a, [tabindex]:not([tabindex="-1"]), p-link-pure, p-button-pure';
+var FOCUSABLE_ELEMENTS_SELECTOR = 'a, button, [tabindex]:not([tabindex="-1"]), p-link-pure, p-button-pure';
 var Locale = /** @class */ (function () {
     function Locale(locale) {
         this.setLocale(locale);
@@ -520,25 +515,25 @@ var MenuBackClickEvent = /** @class */ (function (_super_1) {
 var backButtonCss = ".sc-phn-back-button-h{font-size:1rem;display:-ms-flexbox;display:flex}@media (min-width: 1300px){.sc-phn-back-button-h{visibility:hidden}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-back-button-h{font-size:1.125rem}}";
 var BackButton = /** @class */ (function () {
     function BackButton(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        var _this_1 = this;
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.text = '';
         this.buttonId = '';
-    }
-    BackButton.prototype.sendMenuBackClickEventAnalyticsEvent = function () {
-        var contentItem = { Text: this.text, PhraseId: this.buttonId, Link: '' };
-        var analyticsSetup = {
-            applicationId: analyticsSetupStore.get('applicationId'),
-            locale: analyticsSetupStore.get('locale'),
-            window: analyticsSetupStore.get('window'),
-            environment: analyticsSetupStore.get('environment')
+        this.sendMenuBackClickEventAnalyticsEvent = function () {
+            var contentItem = { Text: _this_1.text, PhraseId: _this_1.buttonId, Link: '' };
+            var analyticsSetup = {
+                applicationId: analyticsSetupStore.get('applicationId'),
+                locale: analyticsSetupStore.get('locale'),
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
+            };
+            var menuBackClickEvent = new MenuBackClickEvent(analyticsSetup, contentItem);
+            var pagData = (window['pagData'] = window['pagData'] || []);
+            pagData.push(menuBackClickEvent.event());
         };
-        var menuBackClickEvent = new MenuBackClickEvent(analyticsSetup, contentItem);
-        var pagData = (window['pagData'] = window['pagData'] || []);
-        pagData.push(menuBackClickEvent.event());
-    };
+    }
     BackButton.prototype.render = function () {
-        var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { size: "inherit", icon: "arrow-head-left", class: "back-button-text-link", onClick: function () { return _this_1.sendMenuBackClickEventAnalyticsEvent(); } }, this.text)));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { size: "inherit", icon: "arrow-head-left", class: "back-button-text-link", onClick: this.sendMenuBackClickEventAnalyticsEvent }, this.text)));
     };
     return BackButton;
 }());
@@ -552,6 +547,31 @@ var navContentStore = createStore({
     env: DEFAULT_ENVIRONMENT,
     loggedInState: undefined,
     unreadMessagesCount: DEFAULT_UNREAD_MESSAGES_COUNT
+});
+var navStateStore = createStore({
+    drawerContentStack: [],
+    isDrawerOpen: false,
+    imagesRegistered: 0,
+    imagesRetrieved: 0,
+    imagesLoaded: true,
+    navigationLoaded: false,
+    crestLoaded: false,
+    pinSvgLoaded: false,
+    userSvgLoaded: false,
+    spinnerSvgLoaded: false,
+    loggedInUserSvgLoaded: false
+});
+navStateStore.onChange('imagesRetrieved', function () {
+    navStateStore.set('imagesLoaded', navStateStore.get('imagesRetrieved') === navStateStore.get('imagesRegistered'));
+});
+navStateStore.onChange('imagesRegistered', function () {
+    navStateStore.set('imagesLoaded', navStateStore.get('imagesRetrieved') === navStateStore.get('imagesRegistered'));
+});
+navStateStore.onChange('imagesLoaded', function () {
+    navStateStore.set('navigationLoaded', navStateStore.get('crestLoaded') && navStateStore.get('imagesLoaded'));
+});
+navStateStore.onChange('crestLoaded', function () {
+    navStateStore.set('navigationLoaded', navStateStore.get('crestLoaded') && navStateStore.get('imagesLoaded'));
 });
 var MoreClickEvent = /** @class */ (function (_super_1) {
     __extends(MoreClickEvent, _super_1);
@@ -582,10 +602,23 @@ var MoreClickEvent = /** @class */ (function (_super_1) {
     };
     return MoreClickEvent;
 }(AnalyticsEvent));
-var burgerButtonCss = ".sc-phn-burger-button-h{color:#000;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}.sc-phn-burger-button-h:hover{color:#d5001c;cursor:pointer}@media (min-width: 1300px){.sc-phn-burger-button-h{display:none}}.sc-phn-burger-button-h .burger-button-text.sc-phn-burger-button{font-size:1rem;padding:0 0.5rem 0 0}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button-text.sc-phn-burger-button{font-size:1.125rem}}";
+var burgerButtonCss = ".sc-phn-burger-button-h{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;position:relative}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button{display:-ms-flexbox;display:flex;font-family:inherit;width:100%;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;cursor:pointer;color:inherit;color:#000}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button::-moz-focus-inner{border:0}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button{padding-bottom:0.125rem}}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button:hover{color:#d5001c;cursor:pointer}@media (min-width: 1300px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button{display:none}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .burger-button-icon.sc-phn-burger-button{padding-top:0.125rem}}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .burger-button-text.sc-phn-burger-button{font-size:1rem;padding:0 0.5rem 0 0}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .burger-button-text.sc-phn-burger-button{font-size:1.125rem}}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .myporsche-unread-messages-indicator.sc-phn-burger-button{position:absolute;width:0.375rem;height:0.375rem;border-radius:50%;background-color:#d5001c;right:-0.25rem;top:1.25rem}@media (min-width: 760px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .myporsche-unread-messages-indicator.sc-phn-burger-button{top:1.3125rem}}@media (min-width: 1000px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .myporsche-unread-messages-indicator.sc-phn-burger-button{top:1.4375rem}}.sc-phn-burger-button-h .hide-button.sc-phn-burger-button{visibility:hidden}.sc-phn-burger-button-h .burger-button-skeleton.sc-phn-burger-button{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;height:0.875rem;width:4rem;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;background:#c9cacb}@media (min-width: 1300px){.sc-phn-burger-button-h .burger-button-skeleton.sc-phn-burger-button{display:none}}";
 var BurgerButton = /** @class */ (function () {
     function BurgerButton(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.hiddenStyle = { display: 'none' };
+        this.sendMoreClickAnalyticsEvent = function () {
+            var analyticsSetup = {
+                applicationId: analyticsSetupStore.get('applicationId'),
+                locale: analyticsSetupStore.get('locale'),
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
+            };
+            var menu = navContentStore.get('menu');
+            var moreClickEvent = new MoreClickEvent(analyticsSetup, menu[0]);
+            var pagData = (window['pagData'] = window['pagData'] || []);
+            pagData.push(moreClickEvent.event());
+        };
     }
     BurgerButton.prototype.getText = function () {
         var text = '';
@@ -598,21 +631,11 @@ var BurgerButton = /** @class */ (function () {
         }
         return text;
     };
-    BurgerButton.prototype.sendMoreClickAnalyticsEvent = function () {
-        var analyticsSetup = {
-            applicationId: analyticsSetupStore.get('applicationId'),
-            locale: analyticsSetupStore.get('locale'),
-            window: analyticsSetupStore.get('window'),
-            environment: analyticsSetupStore.get('environment')
-        };
-        var menu = navContentStore.get('menu');
-        var moreClickEvent = new MoreClickEvent(analyticsSetup, menu[0]);
-        var pagData = (window['pagData'] = window['pagData'] || []);
-        pagData.push(moreClickEvent.event());
-    };
     BurgerButton.prototype.render = function () {
-        var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "burger-button", onClick: function () { return _this_1.sendMoreClickAnalyticsEvent(); } }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { size: "inherit", class: "burger-button-text" }, this.getText()), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: "burger-button-icon", size: "small", name: "menu-lines" })));
+        var hasMenuContent = navContentStore.get('menu').length > 0;
+        var hasUnreadMessages = navContentStore.get('unreadMessagesCount') > 0;
+        var isDrawerOpen = navStateStore.get('isDrawerOpen');
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { style: navStateStore.get('crestLoaded') ? {} : this.hiddenStyle, class: "burger-button " + (isDrawerOpen ? 'hide-button' : ''), onClick: hasMenuContent ? this.sendMoreClickAnalyticsEvent : null }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { size: "inherit", class: "burger-button-text" }, this.getText()), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: "burger-button-icon", size: "small", name: "menu-lines" }), hasUnreadMessages && Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "myporsche-unread-messages-indicator" })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { style: navStateStore.get('crestLoaded') ? this.hiddenStyle : {}, class: "burger-button-skeleton" })));
     };
     return BurgerButton;
 }());
@@ -620,11 +643,11 @@ BurgerButton.style = burgerButtonCss;
 var buttonExtendedCss = "button.sc-phn-button-extended{display:-ms-flexbox;display:flex;width:100%;position:relative;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;-webkit-transition:outline-color 0.24s ease, color 0.24s ease;transition:outline-color 0.24s ease, color 0.24s ease;color:inherit;font-size:inherit;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center}button.sc-phn-button-extended::-moz-focus-inner{border:0}button.sc-phn-button-extended:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;height:100%}button.sc-phn-button-extended:hover,button.sc-phn-button-extended:hover p-text.sc-phn-button-extended,button.sc-phn-button-extended:hover p-icon.sc-phn-button-extended{color:#d5001c;cursor:pointer}@media (min-width: 1300px){button.sc-phn-button-extended:hover,button.sc-phn-button-extended:hover p-text.sc-phn-button-extended,button.sc-phn-button-extended:hover p-icon.sc-phn-button-extended{cursor:default;color:inherit}}button.sc-phn-button-extended:enabled:hover,button.sc-phn-button-extended:enabled:active,button.sc-phn-button-extended:not([disabled]):hover,button.sc-phn-button-extended:not([disabled]):active{color:#d5001c}button.sc-phn-button-extended p-icon.sc-phn-button-extended{display:-ms-flexbox;display:flex}button.sc-phn-button-extended p-text.sc-phn-button-extended{display:-ms-flexbox;display:flex}";
 var ButtonExtended = /** @class */ (function () {
     function ButtonExtended(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.cancelTabIndex = true;
     }
     ButtonExtended.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { tabindex: this.cancelTabIndex ? -1 : 0 }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { color: "inherit", size: "inherit", tag: "div" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)), this.icon ? Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { color: "inherit", size: "small", name: this.icon }) : null));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { tabindex: this.cancelTabIndex ? -1 : 0 }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { color: "inherit", size: "inherit", tag: "div" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)), this.icon ? Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { color: "inherit", size: "small", name: this.icon }) : null));
     };
     return ButtonExtended;
 }());
@@ -662,7 +685,7 @@ var NavigationClickEvent = /** @class */ (function (_super_1) {
 var carFurtherLinksCss = "@media (min-width: 1300px){.car-further-links.sc-phn-car-further-links{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center}}.car-further-links.sc-phn-car-further-links .car-further-links-wrapper.sc-phn-car-further-links{border-bottom:1px solid #c9cacb;margin-bottom:3.75rem}@media (min-width: 1300px){.car-further-links.sc-phn-car-further-links .car-further-links-wrapper.sc-phn-car-further-links{border-top:1px solid #c9cacb;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;margin-bottom:unset}}.car-further-links-item.sc-phn-car-further-links{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;font-weight:normal;-ms-flex-align:center;align-items:center;border-top:1px solid #c9cacb;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;padding:15px 0}.car-further-links-item.sc-phn-car-further-links:first-child{border-top:0}@media (min-width: 760px) and (max-width: 999px){.car-further-links-item.sc-phn-car-further-links{font-size:1.125rem;padding:18px 0}}@media (min-width: 1300px){.car-further-links-item.sc-phn-car-further-links{height:1.5rem;padding:0.875rem 0.625rem;border-top:0;-webkit-box-sizing:unset;box-sizing:unset}.car-further-links-item.sc-phn-car-further-links:first-child{margin-right:0.25rem}}";
 var CarFurtherLinks = /** @class */ (function () {
     function CarFurtherLinks(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.items = [
             { PhraseId: '', Text: '', Link: '' },
             { PhraseId: '', Text: '', Link: '' }
@@ -681,10 +704,10 @@ var CarFurtherLinks = /** @class */ (function () {
     }
     CarFurtherLinks.prototype.renderItem = function (item) {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: item.Link, icon: 'arrow-head-right', size: "inherit", class: "car-further-links-item", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(item); } }, item.Text));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: item.Link, icon: 'arrow-head-right', size: "inherit", class: "car-further-links-item", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(item); } }, item.Text));
     };
     CarFurtherLinks.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links-wrapper" }, this.renderItem(this.items[0]), this.renderItem(this.items[1]))));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links-wrapper" }, this.renderItem(this.items[0]), this.renderItem(this.items[1]))));
     };
     return CarFurtherLinks;
 }());
@@ -794,7 +817,7 @@ var carMetaFunctionalitiesCss = "@media (min-width: 1300px) and (max-width: 1759
 var CarMetaFunctionalities = /** @class */ (function () {
     function CarMetaFunctionalities(hostRef) {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.items = [
             { PhraseId: '', Text: '', Link: '' },
             { PhraseId: '', Text: '', Link: '' },
@@ -835,16 +858,16 @@ var CarMetaFunctionalities = /** @class */ (function () {
         };
     }
     CarMetaFunctionalities.prototype.renderItem = function (source, contentItem, analyticsEvent) {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: contentItem.Link, icon: source, size: "inherit", onClick: function () { return analyticsEvent(contentItem); }, class: "car-meta-functionalities-item" }, contentItem.Text));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: contentItem.Link, icon: source, size: "inherit", onClick: function () { return analyticsEvent(contentItem); }, class: "car-meta-functionalities-item" }, contentItem.Text));
     };
     CarMetaFunctionalities.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities-wrapper" }, this.renderItem('configurate', this.items[0], this.sendConfigureClickAnalyticsEvent), this.renderItem('compare', this.items[1], this.sendCompareClickAnalyticsEvent), this.renderItem('search', this.items[2], this.sendFindCarClickAnalyticsEvent))));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities-wrapper" }, this.renderItem('configurate', this.items[0], this.sendConfigureClickAnalyticsEvent), this.renderItem('compare', this.items[1], this.sendCompareClickAnalyticsEvent), this.renderItem('search', this.items[2], this.sendFindCarClickAnalyticsEvent))));
     };
     return CarMetaFunctionalities;
 }());
 CarMetaFunctionalities.style = carMetaFunctionalitiesCss;
 var local = {
-    CONTENT_URL: "https://cdn.pchomenav.aws.porsche.cloud/content/preprod-content.json",
+    CONTENT_URL: "https://preview-nav.porsche.com/content/preprod-content.json",
     ASSETS_URL: ".",
     PROFILE_API_URL: "https://api.porsche-preview.com/profiles/mydata",
     UNREAD_MESSAGES_COUNT_API_URL: "https://api.porsche-preview.com/inbox/pp/rest/messages/unreadCount",
@@ -853,12 +876,13 @@ var local = {
     CLIENT_ID: "V5yfGusXVALiypCMRFBfM4IAHaZ0IA4A",
     PORSCHE_COM_URL: [
         "http://localhost:3333",
+        "http://localhost:3334",
         "http://localhost:3335"
     ]
 };
 var preview = {
-    CONTENT_URL: "https://cdn.pchomenav.aws.porsche.cloud/content/preprod-content.json",
-    ASSETS_URL: "https://cdn.pchomenav.aws.porsche.cloud",
+    CONTENT_URL: "https://preview-nav.porsche.com/content/preprod-content.json",
+    ASSETS_URL: "https://preview-nav.porsche.com",
     PROFILE_API_URL: "https://api.porsche-preview.com/profiles/mydata",
     UNREAD_MESSAGES_COUNT_API_URL: "https://api.porsche-preview.com/inbox/pp/rest/messages/unreadCount",
     LOGIN_BASE_URL: "https://preview-login.porsche.com",
@@ -893,69 +917,20 @@ var configJson = {
     preview: preview,
     production: production
 };
-var local$1 = {
-    featureOverrideEnabled: true,
-    homenav_feature1: false,
-    homenav_732_keyboard: true,
-    homenav_628_messages_count: true,
-    homenav_skipcontent: true,
-    homenav_drawer_restructure: false
-};
-var preview$1 = {
-    featureOverrideEnabled: true,
-    homenav_feature1: false,
-    homenav_732_keyboard: true,
-    homenav_628_messages_count: true,
-    homenav_skipcontent: true,
-    homenav_drawer_restructure: false
-};
-var production$1 = {
-    featureOverrideEnabled: false,
-    homenav_feature1: false,
-    homenav_732_keyboard: true,
-    homenav_628_messages_count: true,
-    homenav_skipcontent: true,
-    homenav_drawer_restructure: false
-};
-var featureJson = {
-    local: local$1,
-    preview: preview$1,
-    production: production$1
-};
 var config = function (env) {
     if (env === void 0) { env = DEFAULT_ENVIRONMENT; }
     return configJson[env] || configJson['local'];
 };
-var getOverrideValue = function (feature) {
-    var queryString = window.location.search.split('?')[1];
-    if (queryString) {
-        var queryStringArray = queryString.split('&');
-        var featureQuery = queryStringArray.find(function (query) { return query.indexOf(feature) > -1; });
-        if (featureQuery) {
-            var stringValue = featureQuery.split('=')[1];
-            if (stringValue === 'true') {
-                return true;
-            }
-            else if (stringValue === 'false') {
-                return false;
-            }
-        }
-    }
-};
-var isOverrideValid = function (env, overrideValue) { return featureJson[env][FEATURE_OVERRIDE_ENABLED] && overrideValue !== undefined; };
-var isFeatureEnabled = function (feature, env) {
-    if (env === void 0) { env = DEFAULT_ENVIRONMENT; }
-    var overrideValue = getOverrideValue(feature);
-    return isOverrideValid(env, overrideValue) ? overrideValue : featureJson[env][feature];
-};
 var carModelCss = ".car-model.sc-phn-car-model{text-decoration:none;color:#000;padding-top:0.6875rem;padding-bottom:0.875rem;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center;width:100%;text-align:left;border-bottom:1px solid #c9cacb}@media (min-width: 760px){.car-model.sc-phn-car-model{padding-top:unset;padding-bottom:unset}}@media (min-width: 1000px){.car-model.sc-phn-car-model:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;outline-offset:-2px}}@media (min-width: 1300px){.car-model.sc-phn-car-model{display:block;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:unset;align-items:unset;width:unset;text-align:center;border-bottom:0}}.car-model.sc-phn-car-model:hover .model-text.sc-phn-car-model{color:#d5001c}.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{width:50%}.car-model.sc-phn-car-model .model-pic.sc-phn-car-model img.sc-phn-car-model{vertical-align:middle}@media (min-width: 760px) and (max-width: 999px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{height:10.875rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{height:8.125rem}}@media (min-width: 1300px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{width:100%}}.car-model.sc-phn-car-model .model-text.sc-phn-car-model{width:50%}@media (min-width: 0) and (max-width: 759px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1rem;line-height:1.5rem}}@media (min-width: 760px) and (max-width: 999px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1.875rem;line-height:2.5rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1.5rem;line-height:2rem}}@media (min-width: 1300px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{width:100%;margin-top:-0.9375rem}}";
 var CarModel = /** @class */ (function () {
     function CarModel(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     CarModel.prototype.render = function () {
-        var path = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["c"])(config(navContentStore.get('env')).ASSETS_URL + "/model-assets");
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "car-model", href: this.link }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("picture", { class: "model-pic" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1760px)", srcSet: path + "/1920/" + this.image + ".png, " + path + "/1920/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1300px)", srcSet: path + "/1366/" + this.image + ".png, " + path + "/1366/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1000px)", srcSet: path + "/1024/" + this.image + ".png, " + path + "/1024/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 760px)", srcSet: path + "/768/" + this.image + ".png, " + path + "/768/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 375px)", srcSet: path + "/375/" + this.image + ".png, " + path + "/375/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 0px)", srcSet: path + "/320/" + this.image + ".png, " + path + "/320/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("img", { alt: this.text })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "model-text" }, this.text)));
+        var path = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["c"])(config(navContentStore.get('env')).ASSETS_URL + "/model-assets");
+        var imageFileEnding = 'jpg';
+        var imageType = 'jpeg';
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "car-model", href: this.link }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("picture", { class: "model-pic", "aria-hidden": "true" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 1760px)", srcSet: path + "/1920/" + this.image + "." + imageFileEnding + ", " + path + "/1920/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 1300px)", srcSet: path + "/1366/" + this.image + "." + imageFileEnding + ", " + path + "/1366/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 1000px)", srcSet: path + "/1024/" + this.image + "." + imageFileEnding + ", " + path + "/1024/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 760px)", srcSet: path + "/768/" + this.image + "." + imageFileEnding + ", " + path + "/768/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 375px)", srcSet: path + "/375/" + this.image + "." + imageFileEnding + ", " + path + "/375/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 0px)", srcSet: path + "/320/" + this.image + "." + imageFileEnding + ", " + path + "/320/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("img", { alt: this.text })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "model-text" }, this.text)));
     };
     Object.defineProperty(CarModel, "assetsDirs", {
         get: function () { return ["model-assets"]; },
@@ -988,7 +963,7 @@ var ModelClickEvent = /** @class */ (function (_super_1) {
 var carModelListCss = "@media (min-width: 1300px) and (max-width: 1759px){.car-model-list.sc-phn-car-model-list{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;margin-bottom:1.875rem}}@media (min-width: 1760px){.car-model-list.sc-phn-car-model-list{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;margin-bottom:3.5625rem}}@media (min-width: 1300px) and (max-width: 1759px){.car-model-list-wrapper.sc-phn-car-model-list{padding-top:0.5rem;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;width:70rem;-ms-flex-pack:center;justify-content:center}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list{margin-right:2.25rem}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list:last-child{margin-right:0}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list,.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list{width:52.5rem}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3),.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3){margin-right:0}}@media (min-width: 1760px){.car-model-list-wrapper.sc-phn-car-model-list{padding-top:1.5rem;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;width:83rem;-ms-flex-pack:center;justify-content:center}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list{margin-right:3rem}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list:last-child{margin-right:0}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list,.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list{width:64.0625rem}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3),.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3){margin-right:0}}";
 var CarModelList = /** @class */ (function () {
     function CarModelList(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.series = EMPTY_SERIES;
     }
     CarModelList.prototype.sendModelClickAnalyticsEvent = function (model) {
@@ -1004,37 +979,108 @@ var CarModelList = /** @class */ (function () {
     };
     CarModelList.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-model-list" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model-list-wrapper car-models-count-' + this.series.Models.length }, this.series.Models.map(function (model, index) { return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model car-model-' + index }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model", { text: model.Name, image: model.Image, link: model.Link, onClick: function () { return _this_1.sendModelClickAnalyticsEvent(model); } }))); }))));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-model-list" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model-list-wrapper car-models-count-' + this.series.Models.length }, this.series.Models.map(function (model, index) { return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model car-model-' + index }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model", { text: model.Name, image: model.Image, link: model.Link, onClick: function () { return _this_1.sendModelClickAnalyticsEvent(model); } }))); }))));
     };
     return CarModelList;
 }());
 CarModelList.style = carModelListCss;
-var carSeriesCss = ".sc-phn-car-series-h{text-align:center;text-decoration:none;color:#000;display:block}.sc-phn-car-series-h:hover{cursor:pointer;color:#d5001c}@media (min-width: 0) and (max-width: 759px){.sc-phn-car-series-h{padding-bottom:0.5625rem}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-car-series-h{padding-bottom:0.625rem}}@media (min-width: 1000px) and (max-width: 1299px){.sc-phn-car-series-h{padding-bottom:0.25rem}.sc-phn-car-series-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;outline-offset:-1px}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-h{height:89px}.sc-phn-car-series-h:hover{color:inherit;cursor:default}}@media (min-width: 1760px){.sc-phn-car-series-h{height:100px}.sc-phn-car-series-h:hover{color:inherit;cursor:default}}.sc-phn-car-series-h .car-series-text.sc-phn-car-series{padding:0;margin:0;line-height:1.5rem;font-size:1rem}@media (min-width: 0) and (max-width: 759px){.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-1.125rem 0 0 0;padding-right:0.1875rem}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-2.3125rem 0 0 0;padding-right:0.0625rem;font-size:1.125rem}}@media (min-width: 1000px) and (max-width: 1299px){.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-1.6875rem 0 0 0;padding-right:0.125rem;font-size:1rem}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin-top:-1.0625rem;font-size:0.875rem;padding-bottom:1.25rem}}@media (min-width: 1760px){.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin-top:-1.1875rem;padding-bottom:1.4375rem}}";
+/* istanbul ignore file */
+var getSrcPath = function (image) {
+    var path = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["c"])(config(navContentStore.get('env')).ASSETS_URL + "/series-assets");
+    var imageFileEnding = 'jpg';
+    if (window.matchMedia('(min-width: 1760px)').matches) {
+        return path + "/1920/" + image + "." + imageFileEnding + ", " + path + "/1920/" + image + "@2x." + imageFileEnding + " 2x";
+    }
+    else if (window.matchMedia('(min-width: 1300px)').matches) {
+        return path + "/1366/" + image + "." + imageFileEnding + ", " + path + "/1366/" + image + "@2x." + imageFileEnding + " 2x";
+    }
+    else if (window.matchMedia('(min-width: 1000px)').matches) {
+        return path + "/1024/" + image + "." + imageFileEnding + ", " + path + "/1024/" + image + "@2x." + imageFileEnding + " 2x";
+    }
+    else if (window.matchMedia('(min-width: 760px)').matches) {
+        return path + "/768/" + image + "." + imageFileEnding + ", " + path + "/768/" + image + "@2x." + imageFileEnding + " 2x";
+    }
+    else if (window.matchMedia('(min-width: 375px)').matches) {
+        return path + "/375/" + image + "." + imageFileEnding + ", " + path + "/375/" + image + "@2x." + imageFileEnding + " 2x";
+    }
+    else if (window.matchMedia('(min-width: 0)').matches) {
+        return path + "/320/" + image + "." + imageFileEnding + ", " + path + "/320/" + image + "@2x." + imageFileEnding + " 2x";
+    }
+    return '';
+};
+var carSeriesCss = ".car-series.sc-phn-car-series-h{text-align:center;text-decoration:none;color:#000;display:block}.car-series.sc-phn-car-series-h:hover{cursor:pointer;color:#d5001c}@media (min-width: 0) and (max-width: 759px){.car-series.sc-phn-car-series-h{padding-bottom:0.5625rem}}@media (min-width: 760px) and (max-width: 999px){.car-series.sc-phn-car-series-h{padding-bottom:0.625rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-series.sc-phn-car-series-h{padding-bottom:0.25rem}.car-series.sc-phn-car-series-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;outline-offset:-2px}}@media (min-width: 1300px) and (max-width: 1759px){.car-series.sc-phn-car-series-h{height:5.5625rem;min-width:5.5625rem}.car-series.sc-phn-car-series-h:hover{color:inherit;cursor:default}}@media (min-width: 1760px){.car-series.sc-phn-car-series-h{height:100px}.car-series.sc-phn-car-series-h:hover{color:inherit;cursor:default}}.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{padding:0;margin:0;line-height:1.5rem;font-size:1rem}@media (min-width: 0) and (max-width: 759px){.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-1.125rem 0 0 0;padding-right:0.1875rem}}@media (min-width: 760px) and (max-width: 999px){.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-2.3125rem 0 0 0;padding-right:0.0625rem;font-size:1.125rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-2.0625rem 0 0 0;padding-right:0.125rem;font-size:1rem}}@media (min-width: 1300px) and (max-width: 1759px){.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin-top:-1.0625rem;font-size:0.875rem;padding-bottom:1.25rem}}@media (min-width: 1760px){.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin-top:-1.1875rem;padding-bottom:1.4375rem}}.car-series-skeleton.sc-phn-car-series{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:#c9cacb;pointer-events:none;display:none}@media (min-width: 1300px){.car-series-skeleton.sc-phn-car-series{display:block;margin-top:1rem;height:2.6875rem;width:5.5625rem}}@media (min-width: 1760px){.car-series-skeleton.sc-phn-car-series{margin-top:1.1875rem;height:2.6875rem;width:6.5625rem}}";
 var CarSeries = /** @class */ (function () {
     function CarSeries(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.imgLarge = new Image();
+        this.isResized = false;
+        this.hideImage = function (image) {
+            image.style.display = 'none';
+        };
+        this.setImageDefaultDisplay = function (image) {
+            image.style.display = '';
+        };
     }
+    CarSeries.prototype.prependImage = function () {
+        var _this_1 = this;
+        this.imgLarge.srcset = getSrcPath(this.image);
+        this.imgLarge.alt = this.text;
+        this.el.prepend(this.imgLarge);
+        window.addEventListener('resize', function () {
+            _this_1.isResized = true;
+            _this_1.imgLarge.srcset = getSrcPath(_this_1.image);
+        });
+    };
+    CarSeries.prototype.componentWillLoad = function () {
+        var _this_1 = this;
+        if (window.innerWidth <= MAX_M_VIEWPORT_WIDTH) {
+            navStateStore.set('imagesLoaded', true);
+            this.setImageDefaultDisplay(this.imgLarge);
+            this.prependImage();
+        }
+        else {
+            navStateStore.set('imagesRegistered', navStateStore.get('imagesRegistered') + 1);
+            this.imgLarge.onload = function () {
+                if (!_this_1.isResized)
+                    navStateStore.set('imagesRetrieved', navStateStore.get('imagesRetrieved') + 1);
+            };
+            this.hideImage(this.imgLarge);
+            this.prependImage();
+        }
+    };
+    CarSeries.prototype.componentDidUpdate = function () {
+        if (navStateStore.get('navigationLoaded')) {
+            if (window.innerWidth > MAX_M_VIEWPORT_WIDTH) {
+                this.setImageDefaultDisplay(this.imgLarge);
+            }
+        }
+    };
     CarSeries.prototype.render = function () {
-        var path = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["c"])(config(navContentStore.get('env')).ASSETS_URL + "/series-assets");
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "car-series" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("picture", null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1760px)", srcSet: path + "/1920/" + this.image + ".png, " + path + "/1920/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1300px)", srcSet: path + "/1366/" + this.image + ".png, " + path + "/1366/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 1000px)", srcSet: path + "/1024/" + this.image + ".png, " + path + "/1024/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 760px)", srcSet: path + "/768/" + this.image + ".png, " + path + "/768/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 375px)", srcSet: path + "/375/" + this.image + ".png, " + path + "/375/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/png", media: "(min-width: 0px)", srcSet: path + "/320/" + this.image + ".png, " + path + "/320/" + this.image + "@2x.png 2x" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("img", { alt: this.text })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p", { class: "car-series-text" }, this.text)));
+        var hiddenStyle = { display: 'none' };
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "car-series" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p", { style: navStateStore.get('navigationLoaded') ? {} : hiddenStyle, class: "car-series-text", "aria-label": "Porsche Model Series " + this.text }, this.text), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { style: navStateStore.get('navigationLoaded') ? hiddenStyle : {}, class: "car-series-skeleton" })));
     };
     Object.defineProperty(CarSeries, "assetsDirs", {
         get: function () { return ["series-assets"]; },
         enumerable: false,
         configurable: true
     });
+    Object.defineProperty(CarSeries.prototype, "el", {
+        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
+        configurable: true
+    });
     return CarSeries;
 }());
 CarSeries.style = carSeriesCss;
-var carSeriesListCss = ".sc-phn-car-series-list-h{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:1.75rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-car-series-list-h{margin-top:1.875rem}}@media (min-width: 1300px){.sc-phn-car-series-list-h{-ms-flex-wrap:nowrap;flex-wrap:nowrap;margin-top:0}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-list-h{margin-left:0.5625rem}}@media (min-width: 1760px){.sc-phn-car-series-list-h{margin-left:1.25rem}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list{padding:0 0.3125rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:first-of-type{padding-left:0.9375rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:last-of-type{padding-right:0.9375rem}}@media (min-width: 1760px){.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list{padding:0 0.5625rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:first-of-type{padding-left:1.25rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:last-of-type{padding-right:1.25rem}}";
+var carSeriesListCss = ".sc-phn-car-series-list-h{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:1.75rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-car-series-list-h{margin-top:1.875rem}}@media (min-width: 1300px){.sc-phn-car-series-list-h{-ms-flex-wrap:nowrap;flex-wrap:nowrap;margin-top:0}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-list-h{min-width:657px;margin-left:0.5625rem}}@media (min-width: 1760px){.sc-phn-car-series-list-h{min-width:809px;margin-left:1.25rem}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list{padding:0 0.3125rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:first-of-type{padding-left:0.9375rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:last-of-type{padding-right:0.9375rem}}@media (min-width: 1760px){.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list{padding:0 0.5625rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:first-of-type{padding-left:1.25rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:last-of-type{padding-right:1.25rem}}";
 var CarSeriesList = /** @class */ (function () {
     function CarSeriesList(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     CarSeriesList.prototype.render = function () {
         var _this_1 = this;
         var carSeries = navContentStore.get('seriesList');
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, carSeries.map(function (series) { return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "car-series-fly-out-overlay overlay-trigger " + series.PhraseId, showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { slot: "button", text: series.Name, image: series.Image }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-model-overview", { slot: "content", series: series }))); })));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { role: "list" }, carSeries.map(function (series) { return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "car-series-fly-out-overlay overlay-trigger " + series.PhraseId, showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler, screenReaderId: "car-series-mega-menu-" + series.Name, role: "listitem" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { slot: "button", text: series.Name, image: series.Image }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-model-overview", { slot: "content", series: series }))); })));
     };
     return CarSeriesList;
 }());
@@ -1061,11 +1107,11 @@ var ModelRangeOverlayLoadEvent = /** @class */ (function (_super_1) {
     return ModelRangeOverlayLoadEvent;
 }(ModelAnalyticsEvent));
 var CarSeriesModelOverview = /** @class */ (function () {
-    function CarSeriesModelOverview(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+    function class_1(hostRef) {
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.series = EMPTY_SERIES;
     }
-    CarSeriesModelOverview.prototype.triggerAnalyticsEvent = function () {
+    class_1.prototype.triggerAnalyticsEvent = function () {
         return __awaiter(this, void 0, void 0, function () {
             var pagData, analyticsSetup, analyticsEvent;
             return __generator(this, function (_a) {
@@ -1082,35 +1128,11 @@ var CarSeriesModelOverview = /** @class */ (function () {
             });
         });
     };
-    CarSeriesModelOverview.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-series-model-overview" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { series: this.series }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further })));
+    class_1.prototype.render = function () {
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-series-model-overview" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { series: this.series }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further })));
     };
-    return CarSeriesModelOverview;
+    return class_1;
 }());
-var closeButtonCss = ".sc-phn-close-button-h{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}@media (min-width: 760px){.sc-phn-close-button-h{height:3rem;width:3rem}}.sc-phn-close-button-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.sc-phn-close-button-h:hover{color:#d5001c;cursor:pointer}";
-var CloseButton = /** @class */ (function () {
-    function CloseButton(hostRef) {
-        var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.env = DEFAULT_ENVIRONMENT;
-        this.closeEventfun = function (e) {
-            _this_1.closeEvent.emit(e);
-        };
-        this.handlePressEnterKey = function (event) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
-                if (event.key === 'Enter') {
-                    _this_1.closeEventfun(event);
-                }
-            }
-        };
-        this.closeEvent = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "closeEvent", 7);
-    }
-    CloseButton.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "close-button-wrapper", tabindex: "0", onClick: this.closeEventfun, onKeyDown: this.handlePressEnterKey }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: "close-button close-button-icon", name: "close", size: "small" })));
-    };
-    return CloseButton;
-}());
-CloseButton.style = closeButtonCss;
 var CrestClickEvent = /** @class */ (function (_super_1) {
     __extends(CrestClickEvent, _super_1);
     function CrestClickEvent(analyticsSetup) {
@@ -1123,10 +1145,10 @@ var CrestClickEvent = /** @class */ (function (_super_1) {
     };
     return CrestClickEvent;
 }(AnalyticsEvent));
-var crestCss = ".crest.sc-phn-crest{display:-ms-flexbox;display:flex;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;border:0.0625rem solid #c9cacb;border-top:0;height:4.8125rem;padding:0.3125rem 0.1875rem 0.5625rem 0.1875rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.1875rem + 0.0625rem));margin-bottom:-0.75rem}.crest.sc-phn-crest:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}@media (min-width: 760px){.crest.sc-phn-crest{height:5.25rem;padding:0.5625rem 0.25rem 0.8125rem 0.25rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.25rem + 0.0625rem))}}@media (min-width: 1000px){.crest.sc-phn-crest{padding:0.375rem 0.3125rem 0.4375rem 0.3125rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.3125rem + 0.0625rem))}}@media (min-width: 1300px){.crest.sc-phn-crest{height:8.3125rem;padding:1.75rem 0.25rem 1.875rem 0.25rem;margin-bottom:-0.9375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.25rem + 0.0625rem))}}@media (min-width: 1760px){.crest.sc-phn-crest{height:8.5625rem;padding:1.8125rem 0.375rem 2.0625rem 0.375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.375rem + 0.0625rem))}}";
+var crestCss = ".sc-phn-crest-h .crest.sc-phn-crest{display:-ms-flexbox;display:flex;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;border:0.0625rem solid #c9cacb;border-top:0;height:4.8125rem;padding:0.3125rem 0.1875rem 0.5625rem 0.1875rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.1875rem + 0.0625rem));margin-bottom:-0.75rem}.sc-phn-crest-h .crest.sc-phn-crest:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}@media (min-width: 760px){.sc-phn-crest-h .crest.sc-phn-crest{height:5.25rem;padding:0.5625rem 0.25rem 0.8125rem 0.25rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.25rem + 0.0625rem))}}@media (min-width: 1000px){.sc-phn-crest-h .crest.sc-phn-crest{padding:0.375rem 0.3125rem 0.4375rem 0.3125rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.3125rem + 0.0625rem))}}@media (min-width: 1300px){.sc-phn-crest-h .crest.sc-phn-crest{width:8.3125rem;height:8.3125rem;padding:1.75rem 0.25rem 1.875rem 0.25rem;margin-bottom:-0.9375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.25rem + 0.0625rem))}}@media (min-width: 1760px){.sc-phn-crest-h .crest.sc-phn-crest{width:8.5625rem;height:8.5625rem;padding:1.8125rem 0.375rem 2.0625rem 0.375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.375rem + 0.0625rem))}}.sc-phn-crest-h .marque-bone.sc-phn-crest{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;border:0.0625rem solid #c9cacb;border-top:0;width:6.75rem;height:4.75rem;padding:0.875rem 0 1.1875rem 0;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.1875rem + 0.0625rem));margin-bottom:-0.75rem}@media (min-width: 760px){.sc-phn-crest-h .marque-bone.sc-phn-crest{width:6.875rem;height:5.1875rem;padding:1.125rem 0 1.375rem 0;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.25rem + 0.0625rem))}}@media (min-width: 1000px){.sc-phn-crest-h .marque-bone.sc-phn-crest{width:8.3125rem;height:5.4375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.3125rem + 0.0625rem));padding:1.1875rem 0 1.125rem 0}}@media (min-width: 1300px){.sc-phn-crest-h .marque-bone.sc-phn-crest{width:8.25rem;height:8.3125rem;padding:2.46875rem 0 2.59375rem 0;margin-bottom:-0.9375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.25rem + 0.0625rem))}}@media (min-width: 1760px){.sc-phn-crest-h .marque-bone.sc-phn-crest{width:8.5625rem;height:8.5rem;padding:2.5rem 0 2.75rem 0;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.375rem + 0.0625rem))}}.sc-phn-crest-h .marque-bone.sc-phn-crest .crest-bone.sc-phn-crest{width:1.5rem;height:1.9375rem;background-image:url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='24px' height='31px' viewBox='0 0 29 37' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Ecrest-path-pixel-perfect-3%3C/title%3E%3Cg id='Design-Focus' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='832-skeleton-hn-1366' transform='translate(-130.000000, -39.000000)' fill='%23C9CACB' fill-rule='nonzero'%3E%3Cg id='Crest-bones' transform='translate(78.000000, 0.000000)'%3E%3Cpath d='M80.8612951,41.6891698 C79.3593022,41.0929534 77.8195513,40.5958533 76.2520235,40.2010916 C74.092052,39.6781633 71.8946453,39.3227949 69.6795438,39.1381787 C68.6125828,39.0425165 67.6096394,39.0106291 66.4786608,39 L66.4679912,39 C65.4010302,39 64.3340692,39 63.2671082,39.1381787 C61.0520067,39.3227949 58.8545999,39.6781633 56.6946284,40.2010916 C55.1285058,40.5930516 53.5918758,41.093847 52.0960265,41.6997989 L52,41.6997989 C52,41.6997989 52.1813834,52.8710141 52.3200883,58.3981614 C52.3624958,60.0288438 52.6613178,61.6428163 53.2056659,63.1812698 C53.83596,64.927843 54.6779771,66.5912102 55.7130243,68.1344441 C56.7974563,69.7321996 58.1093136,71.164397 59.6074319,72.3860959 C60.1877267,72.8817079 60.8047619,73.3329574 61.4532745,73.7359954 C62.4748439,74.3534515 63.5453697,74.8866836 64.6541575,75.3303648 C65.0062546,75.4791727 65.3263429,75.6279805 65.6144224,75.7236426 C65.9077386,75.8428333 66.2112826,75.9353298 66.5213392,76 C66.8313958,75.9353298 67.1349399,75.8428333 67.4282561,75.7236426 C67.7163355,75.6279805 68.0364238,75.4791727 68.3991906,75.3303648 C69.4899033,74.8845355 70.542531,74.3513317 71.5467255,73.7359954 C72.1928274,73.3294237 72.8096114,72.8783579 73.3925681,72.3860959 C74.8933275,71.167176 76.2055628,69.7345659 77.2869757,68.1344441 C78.3220229,66.5912102 79.16404,64.927843 79.7943341,63.1812698 C80.3386822,61.6428163 80.6375042,60.0288438 80.6799117,58.3981614 C80.8186166,52.8710141 81,41.6997989 81,41.6997989 L80.8612951,41.6891698 Z' id='crest-path-pixel-perfect-3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\");background-repeat:no-repeat;background-position:center}@media (min-width: 1000px){.sc-phn-crest-h .marque-bone.sc-phn-crest .crest-bone.sc-phn-crest{width:1.8125rem;height:2.3125rem;background-image:url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='29px' height='37px' viewBox='0 0 29 37' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Ecrest-path-pixel-perfect-3%3C/title%3E%3Cg id='Design-Focus' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='832-skeleton-hn-1366' transform='translate(-130.000000, -39.000000)' fill='%23C9CACB' fill-rule='nonzero'%3E%3Cg id='Crest-bones' transform='translate(78.000000, 0.000000)'%3E%3Cpath d='M80.8612951,41.6891698 C79.3593022,41.0929534 77.8195513,40.5958533 76.2520235,40.2010916 C74.092052,39.6781633 71.8946453,39.3227949 69.6795438,39.1381787 C68.6125828,39.0425165 67.6096394,39.0106291 66.4786608,39 L66.4679912,39 C65.4010302,39 64.3340692,39 63.2671082,39.1381787 C61.0520067,39.3227949 58.8545999,39.6781633 56.6946284,40.2010916 C55.1285058,40.5930516 53.5918758,41.093847 52.0960265,41.6997989 L52,41.6997989 C52,41.6997989 52.1813834,52.8710141 52.3200883,58.3981614 C52.3624958,60.0288438 52.6613178,61.6428163 53.2056659,63.1812698 C53.83596,64.927843 54.6779771,66.5912102 55.7130243,68.1344441 C56.7974563,69.7321996 58.1093136,71.164397 59.6074319,72.3860959 C60.1877267,72.8817079 60.8047619,73.3329574 61.4532745,73.7359954 C62.4748439,74.3534515 63.5453697,74.8866836 64.6541575,75.3303648 C65.0062546,75.4791727 65.3263429,75.6279805 65.6144224,75.7236426 C65.9077386,75.8428333 66.2112826,75.9353298 66.5213392,76 C66.8313958,75.9353298 67.1349399,75.8428333 67.4282561,75.7236426 C67.7163355,75.6279805 68.0364238,75.4791727 68.3991906,75.3303648 C69.4899033,74.8845355 70.542531,74.3513317 71.5467255,73.7359954 C72.1928274,73.3294237 72.8096114,72.8783579 73.3925681,72.3860959 C74.8933275,71.167176 76.2055628,69.7345659 77.2869757,68.1344441 C78.3220229,66.5912102 79.16404,64.927843 79.7943341,63.1812698 C80.3386822,61.6428163 80.6375042,60.0288438 80.6799117,58.3981614 C80.8186166,52.8710141 81,41.6997989 81,41.6997989 L80.8612951,41.6891698 Z' id='crest-path-pixel-perfect-3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")}}.sc-phn-crest-h .marque-bone.sc-phn-crest .label-bone.sc-phn-crest{width:5rem;height:0.4375rem;background-color:#c9cacb}@media (min-width: 1000px){.sc-phn-crest-h .marque-bone.sc-phn-crest .label-bone.sc-phn-crest{width:6.1875rem;height:0.5rem}}";
 var Crest = /** @class */ (function () {
     function Crest(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     Crest.prototype.getCrestLink = function () {
         var crestItem = navContentStore.get('menu').find(function (m) { return m.PhraseId === CREST_PHRASE_ID; });
@@ -1143,1547 +1165,109 @@ var Crest = /** @class */ (function () {
         var pagData = (window['pagData'] = window['pagData'] || []);
         pagData.push(crestClickEvent.event());
     };
+    Crest.prototype.contentLoaded = function () {
+        if (window.matchMedia('(min-width: 1300px)').matches) {
+            return navStateStore.get('navigationLoaded');
+        }
+        else {
+            return navStateStore.get('crestLoaded');
+        }
+    };
+    Crest.prototype.extractImageFromMarque = function () {
+        return this.el.querySelector('.crest p-marque').shadowRoot.querySelector('picture img');
+    };
+    Crest.prototype.componentDidLoad = function () {
+        this.extractImageFromMarque().addEventListener('load', function () {
+            navStateStore.set('crestLoaded', true);
+        });
+    };
     Crest.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "crest", onClick: function () { return _this_1.sendCrestClickAnalyticsEvent(); }, href: this.getCrestLink() }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-marque", { class: "marque" })));
+        var hiddenStyle = { display: 'none' };
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "crest", style: this.contentLoaded() ? {} : hiddenStyle, onClick: function () { return _this_1.sendCrestClickAnalyticsEvent(); }, href: this.getCrestLink() }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-marque", { class: "marque" })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "marque-bone", style: this.contentLoaded() ? hiddenStyle : {} }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "crest-bone" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "label-bone" }))));
     };
+    Object.defineProperty(Crest.prototype, "el", {
+        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
+        configurable: true
+    });
     return Crest;
 }());
 Crest.style = crestCss;
-var dealerSearchCss = "p-link-pure.sc-phn-dealer-search{border-bottom:1px solid #c9cacb;padding:0.875rem 0 0.875rem 0;width:100%}@media (min-width: 760px) and (max-width: 999px){p-link-pure.sc-phn-dealer-search{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){p-link-pure.sc-phn-dealer-search{border-bottom:0;padding:0}}";
+var dealerSearchCss = ".dealer-search.sc-phn-dealer-search-h .dealer-search-link.sc-phn-dealer-search{border-bottom:1px solid #c9cacb;padding:0.875rem 0 0.875rem 0;width:100%}@media (min-width: 760px) and (max-width: 999px){.dealer-search.sc-phn-dealer-search-h .dealer-search-link.sc-phn-dealer-search{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){.dealer-search.sc-phn-dealer-search-h .dealer-search-link.sc-phn-dealer-search{border-bottom:0;padding:0}}@media (min-width: 1300px){.dealer-search.sc-phn-dealer-search-h .dealer-search-skeleton.sc-phn-dealer-search{width:6.375rem;height:0.875rem;background-color:#c9cacb;margin-top:0.125rem;width:8rem}}";
 var DealerSearch = /** @class */ (function () {
     function DealerSearch(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.dealerSearchText = '';
         this.dealerSearchLink = '';
     }
     DealerSearch.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: this.dealerSearchLink, size: "inherit", icon: "pin", onClick: function () {
+        var hiddenStyle = { display: 'none' };
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "dealer-search" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { style: navStateStore.get('navigationLoaded') ? {} : hiddenStyle, href: this.dealerSearchLink, size: "inherit", icon: "pin", class: 'dealer-search-link', onClick: function () {
                 var linkItem = {
                     PhraseId: DEALER_SEARCH_PHRASE_ID,
                     Text: _this_1.dealerSearchText,
                     Link: _this_1.dealerSearchLink
                 };
                 _this_1.sendMetaFunctionClickAnalyticsEvent(linkItem);
-            } }, this.dealerSearchText)));
+            } }, this.dealerSearchText), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "dealer-search-skeleton", style: navStateStore.get('navigationLoaded') ? hiddenStyle : {} })));
     };
+    Object.defineProperty(DealerSearch.prototype, "el", {
+        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
+        configurable: true
+    });
     return DealerSearch;
 }());
 DealerSearch.style = dealerSearchCss;
-var drawerCarSeriesModelOverviewCss = ".drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview{position:fixed;width:100%;right:0;bottom:0;top:0;z-index:999999}@media (min-width: 1000px) and (max-width: 1299px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview{width:568px}}.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview{right:0;bottom:0;top:0;overflow-y:auto;background-color:#fff;max-width:62.5rem;padding-right:7%;padding-left:7%;height:100%}.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview{padding-top:0.75rem}}@media (min-width: 1300px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview{padding-top:unset}}.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview .back-button.sc-phn-drawer-car-series-model-overview{margin-left:-0.625rem}@media (min-width: 760px){.drawer-car-series-model-overview.sc-phn-drawer-car-series-model-overview .drawer-container.sc-phn-drawer-car-series-model-overview .drawer-back-and-close.sc-phn-drawer-car-series-model-overview .close-button.sc-phn-drawer-car-series-model-overview{margin-right:-1.125rem}}";
+var desktopShopAndMoreItemCss = ".desktop-shop-and-more-item.sc-phn-desktop-shop-and-more-item-h{display:-ms-flexbox;display:flex;color:#000;font-size:1rem;border-bottom:0;padding:1.3125rem 0 2.75rem 0;white-space:nowrap}.desktop-shop-and-more-item.sc-phn-desktop-shop-and-more-item-h:hover{cursor:default;color:inherit}@media (min-width: 1760px){.desktop-shop-and-more-item.sc-phn-desktop-shop-and-more-item-h{padding:1.6875rem 0 2.8125rem 0;font-size:1.25rem}}.desktop-shop-and-more-item-skeleton.sc-phn-desktop-shop-and-more-item{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:-ms-flexbox;display:flex;background:#c9cacb;-ms-flex-align:center;align-items:center;height:0.875rem}@media (min-width: 1300px){.desktop-shop-and-more-item-skeleton.sc-phn-desktop-shop-and-more-item{width:2.375rem;margin-top:0.375rem}}@media (min-width: 1760px){.desktop-shop-and-more-item-skeleton.sc-phn-desktop-shop-and-more-item{width:3.125rem;margin-top:0.1875rem}}";
+var DesktopShopAndMoreItem = /** @class */ (function () {
+    function DesktopShopAndMoreItem(hostRef) {
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+    }
+    DesktopShopAndMoreItem.prototype.render = function () {
+        var hiddenStyle = { display: 'none' };
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { style: navStateStore.get('navigationLoaded') ? {} : hiddenStyle, class: "desktop-shop-and-more-item-text", color: "inherit", size: "inherit", tag: "div" }, this.itemText), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "desktop-shop-and-more-item-skeleton", style: navStateStore.get('navigationLoaded') ? hiddenStyle : {} })));
+    };
+    return DesktopShopAndMoreItem;
+}());
+DesktopShopAndMoreItem.style = desktopShopAndMoreItemCss;
 var DrawerCarSeriesModelOverview = /** @class */ (function () {
     function DrawerCarSeriesModelOverview(hostRef) {
-        var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.series = EMPTY_SERIES;
-        this.handleClick = function () {
-            _this_1.el.style.display = 'none';
-            _this_1.closeActiveDrawer(2);
-        };
     }
-    DrawerCarSeriesModelOverview.prototype.getValueForField = function (fieldName) {
-        var text = '';
-        var menu = navContentStore.get('menu');
-        if (menu && menu.length > 0) {
-            var menuItem = menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
-            if (menuItem && menuItem[fieldName]) {
-                text = menuItem[fieldName];
-            }
-        }
-        return text;
-    };
-    DrawerCarSeriesModelOverview.prototype.keyDownHandler = function (event) {
-        if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
-            if (!event.shiftKey && event.key === 'Tab') {
-                var focusable = this.el.querySelectorAll(FOCUSABLE_ELEMENTS_SELECTOR);
-                if (event.target === focusable[focusable.length - 1]) {
-                    event.preventDefault();
-                    this.el.querySelector('phn-back-button > p-button-pure').focus();
-                }
-            }
-        }
-    };
     DrawerCarSeriesModelOverview.prototype.render = function () {
-        var backButtonText = this.getValueForField(TEXT_FIELD_NAME);
-        var backButtonId = this.getValueForField(PHRASEID_FIELD_NAME);
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-car-series-model-overview" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container drawer-level-2-item-scroll" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-back-and-close" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: this.handleClick, buttonId: backButtonId, text: backButtonText }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.series.Name }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { class: "car-model-list", series: this.series }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further }))));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-car-series-model-overview" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container drawer-level-2-item-scroll" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.series.Name }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { class: "car-model-list", series: this.series }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further }))));
     };
-    Object.defineProperty(DrawerCarSeriesModelOverview.prototype, "el", {
-        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
-        enumerable: false,
-        configurable: true
-    });
     return DrawerCarSeriesModelOverview;
 }());
-DrawerCarSeriesModelOverview.style = drawerCarSeriesModelOverviewCss;
-var DrawerCarSeriesModelOverview$1 = /** @class */ (function () {
-    function DrawerCarSeriesModelOverview$1(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.series = EMPTY_SERIES;
-    }
-    DrawerCarSeriesModelOverview$1.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-car-series-model-overview" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container drawer-level-2-item-scroll" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.series.Name }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { class: "car-model-list", series: this.series }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further }))));
-    };
-    return DrawerCarSeriesModelOverview$1;
-}());
-var drawerShopsAndMoreCss = ".drawer-shops-and-more.sc-phn-drawer-shops-and-more{position:fixed;right:0;top:0;bottom:0;overflow-y:auto;overscroll-behavior-y:none;background-color:#fff;width:100%;padding-bottom:3.125rem;z-index:999999}@media (min-width: 1000px) and (max-width: 1299px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more{width:568px}}.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-container.sc-phn-drawer-shops-and-more{padding-right:7%;padding-left:7%}.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more{padding-top:0.75rem}}@media (min-width: 1300px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more{padding-top:unset}}@media (min-width: 760px){.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more .close-button.sc-phn-drawer-shops-and-more{margin-right:-1.125rem}}.drawer-shops-and-more.sc-phn-drawer-shops-and-more .drawer-back-and-close.sc-phn-drawer-shops-and-more .back-button.sc-phn-drawer-shops-and-more{margin-left:-0.625rem}";
+var drawerShopsAndMoreCss = ".drawer-shops-and-more.sc-phn-drawer-shops-and-more{padding-bottom:3.125rem}";
 var DrawerShopsAndMore = /** @class */ (function () {
     function DrawerShopsAndMore(hostRef) {
-        var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.env = DEFAULT_ENVIRONMENT;
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
-        this.backButtonText = '';
-        this.backButtonId = '';
-        this.level = 2;
-        this.showDrawer = function (item, innerOverlayEl) {
-            if (!item.Link && innerOverlayEl) {
-                innerOverlayEl.style.display = 'block';
-                _this_1.setActiveDrawer(innerOverlayEl, _this_1.level + 1);
-            }
-        };
-        this.handleKeyDown = function (event, item, innerOverlayEl, isLastItem) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
-                if (event.key === 'Enter') {
-                    _this_1.showDrawer(item, innerOverlayEl);
-                }
-                if (!event.shiftKey && event.key === 'Tab' && isLastItem) {
-                    event.preventDefault();
-                    var target = event.target;
-                    var closestBackButton = target
-                        .closest('phn-drawer-shops-and-more')
-                        .querySelector('phn-back-button > p-button-pure');
-                    closestBackButton.focus();
-                }
-            }
-        };
     }
-    DrawerShopsAndMore.prototype.hideDrawer = function () {
-        this.hide();
-        this.closeActiveDrawer(this.level);
-    };
-    DrawerShopsAndMore.prototype.hide = function () {
-        this.mainEl.style.display = 'none';
-    };
-    DrawerShopsAndMore.prototype.getValueForField = function (fieldName) {
-        var text = '';
-        var menu = navContentStore.get('menu');
-        if (menu && menu.length > 0) {
-            var menuItem = menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
-            if (menuItem && menuItem[fieldName]) {
-                text = menuItem[fieldName];
-            }
+    DrawerShopsAndMore.prototype.showDrawer = function (item, index) {
+        var phnDrawerShopsAndMore = {
+            backButton: this.item.Text,
+            content: (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Text, item: item, class: 'shops-and-more-drawer-level-2 drawer-level-2 drawer-level-2-' + index, slot: "content" }))
+        };
+        if (!item.Link && item.Items) {
+            navStateStore.set('drawerContentStack', __spreadArrays(navStateStore.get('drawerContentStack'), [phnDrawerShopsAndMore]));
         }
-        return text;
     };
     DrawerShopsAndMore.prototype.render = function () {
         var _this_1 = this;
-        this.hide();
-        var buttonText = this.backButtonText ? this.backButtonText : this.getValueForField(TEXT_FIELD_NAME);
-        var buttonId = this.backButtonId ? this.backButtonId : this.getValueForField(PHRASEID_FIELD_NAME);
-        var _headline = this.headline !== '' ? this.headline : this.item.Text;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-shops-and-more drawer-level-" + this.level + "-item-scroll drawer-level-" + this.level + "-item" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-back-and-close" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: function () { return _this_1.hideDrawer(); }, buttonId: buttonId, text: buttonText }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: _headline, class: "drawer-headline" }), this.item.Items &&
-            this.item.Items.map(function (item, index, arr) {
-                var isLastItem = arr.length === index + 1;
-                var innerOverlayEl;
-                return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: item, onClick: function () { return _this_1.showDrawer(item, innerOverlayEl); }, onKeyDown: function (event) { return _this_1.handleKeyDown(event, item, innerOverlayEl, isLastItem); }, class: 'shops-and-more-item shops-and-more-item-' + index }), item.Link || !item.Items ? null : (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Text, ref: function (el) { return (innerOverlayEl = el); }, item: item, level: _this_1.level + 1, class: 'drawer-level-2 drawer-level-2-' + index, backButtonText: _this_1.item.Text, backButtonId: _this_1.item.PhraseId, closeActiveDrawer: _this_1.closeActiveDrawer, setActiveDrawer: _this_1.setActiveDrawer }))));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-shops-and-more" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.headline, class: "drawer-headline" }), this.item.Items &&
+            this.item.Items.map(function (item, index) {
+                return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: item, onClick: function () { return _this_1.showDrawer(item, index); }, class: 'drawer-shops-and-more-item drawer-shops-and-more-item-' + index })));
             }))));
     };
-    Object.defineProperty(DrawerShopsAndMore.prototype, "mainEl", {
-        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
-        enumerable: false,
-        configurable: true
-    });
     return DrawerShopsAndMore;
 }());
 DrawerShopsAndMore.style = drawerShopsAndMoreCss;
-var navStateStore = createStore({
-    activeDrawerContent: null,
-    parentDrawerContent: [],
-    accessibilityMarker: null,
-    backButtonText: null
-});
-navStateStore.onChange('activeDrawerContent', function (_) {
-    var slotUpdatedEvent = new CustomEvent(SLOT_UPDATED_EVENT);
-    var headerElement = document.querySelector('phn-header');
-    if (headerElement) {
-        var menuDrawer = headerElement.shadowRoot.querySelector('.drawer-trigger');
-        menuDrawer.dispatchEvent(slotUpdatedEvent);
-    }
-});
-var drawerShopsAndMoreCss$1 = ".drawer-shops-and-more.sc-phn-drawer-shops-and-more-2{padding-bottom:3.125rem}";
-var DrawerShopsAndMore$1 = /** @class */ (function () {
-    function DrawerShopsAndMore$1(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.item = EMPTY_ITEM;
-    }
-    DrawerShopsAndMore$1.prototype.showDrawer = function (item, index) {
-        var phnDrawerCarSeriesModelOverview2 = (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more-2", { headline: item.Text, item: item, class: 'shops-and-more-drawer-level-2 drawer-level-2 drawer-level-2-' + index, slot: "content" }));
-        if (!item.Link && item.Items) {
-            var parent = navStateStore.get('activeDrawerContent');
-            var currentParent = navStateStore.get('parentDrawerContent');
-            navStateStore.set('activeDrawerContent', phnDrawerCarSeriesModelOverview2);
-            navStateStore.set('parentDrawerContent', __spreadArrays([parent], currentParent));
-            navStateStore.set('accessibilityMarker', ".shops-and-more-drawer-level-1 .drawer-shops-and-more-item-" + index);
-            navStateStore.set('backButtonText', this.item.Text);
-        }
-    };
-    DrawerShopsAndMore$1.prototype.render = function () {
-        var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-shops-and-more" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.headline, class: "drawer-headline" }), this.item.Items &&
-            this.item.Items.map(function (item, index) {
-                return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: item, onClick: function () { return _this_1.showDrawer(item, index); }, class: 'drawer-shops-and-more-item drawer-shops-and-more-item-' + index })));
-            }))));
-    };
-    return DrawerShopsAndMore$1;
-}());
-DrawerShopsAndMore$1.style = drawerShopsAndMoreCss$1;
-var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
-function unwrapExports(x) {
-    return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
-}
-function createCommonjsModule(fn, basedir, module) {
-    return module = {
-        path: basedir,
-        exports: {},
-        require: function (path, base) {
-            return commonjsRequire();
-        }
-    }, fn(module, module.exports), module.exports;
-}
-function commonjsRequire() {
-    throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
-}
-var picturefill = createCommonjsModule(function (module) {
-    /*! picturefill - v3.0.2 - 2016-02-12
-     * https://scottjehl.github.io/picturefill/
-     * Copyright (c) 2016 https://github.com/scottjehl/picturefill/blob/master/Authors.txt; Licensed MIT
-     */
-    /*! Gecko-Picture - v1.0
-     * https://github.com/scottjehl/picturefill/tree/3.0/src/plugins/gecko-picture
-     * Firefox's early picture implementation (prior to FF41) is static and does
-     * not react to viewport changes. This tiny module fixes this.
-     */
-    (function (window) {
-        /*jshint eqnull:true */
-        var ua = navigator.userAgent;
-        if (window.HTMLPictureElement && ((/ecko/).test(ua) && ua.match(/rv\:(\d+)/) && RegExp.$1 < 45)) {
-            addEventListener("resize", (function () {
-                var timer;
-                var dummySrc = document.createElement("source");
-                var fixRespimg = function (img) {
-                    var source, sizes;
-                    var picture = img.parentNode;
-                    if (picture.nodeName.toUpperCase() === "PICTURE") {
-                        source = dummySrc.cloneNode();
-                        picture.insertBefore(source, picture.firstElementChild);
-                        setTimeout(function () {
-                            picture.removeChild(source);
-                        });
-                    }
-                    else if (!img._pfLastSize || img.offsetWidth > img._pfLastSize) {
-                        img._pfLastSize = img.offsetWidth;
-                        sizes = img.sizes;
-                        img.sizes += ",100vw";
-                        setTimeout(function () {
-                            img.sizes = sizes;
-                        });
-                    }
-                };
-                var findPictureImgs = function () {
-                    var i;
-                    var imgs = document.querySelectorAll("picture > img, img[srcset][sizes]");
-                    for (i = 0; i < imgs.length; i++) {
-                        fixRespimg(imgs[i]);
-                    }
-                };
-                var onResize = function () {
-                    clearTimeout(timer);
-                    timer = setTimeout(findPictureImgs, 99);
-                };
-                var mq = window.matchMedia && matchMedia("(orientation: landscape)");
-                var init = function () {
-                    onResize();
-                    if (mq && mq.addListener) {
-                        mq.addListener(onResize);
-                    }
-                };
-                dummySrc.srcset = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
-                if (/^[c|i]|d$/.test(document.readyState || "")) {
-                    init();
-                }
-                else {
-                    document.addEventListener("DOMContentLoaded", init);
-                }
-                return onResize;
-            })());
-        }
-    })(window);
-    /*! Picturefill - v3.0.2
-     * http://scottjehl.github.io/picturefill
-     * Copyright (c) 2015 https://github.com/scottjehl/picturefill/blob/master/Authors.txt;
-     *  License: MIT
-     */
-    (function (window, document, undefined$1) {
-        // HTML shim|v it for old IE (IE9 will still need the HTML video tag workaround)
-        document.createElement("picture");
-        var eminpx, alwaysCheckWDescriptor, evalId;
-        // local object for method references and testing exposure
-        var pf = {};
-        var isSupportTestReady = false;
-        var noop = function () { };
-        var image = document.createElement("img");
-        var getImgAttr = image.getAttribute;
-        var setImgAttr = image.setAttribute;
-        var removeImgAttr = image.removeAttribute;
-        var docElem = document.documentElement;
-        var types = {};
-        var cfg = {
-            //resource selection:
-            algorithm: ""
-        };
-        var srcAttr = "data-pfsrc";
-        var srcsetAttr = srcAttr + "set";
-        // ua sniffing is done for undetectable img loading features,
-        // to do some non crucial perf optimizations
-        var ua = navigator.userAgent;
-        var supportAbort = (/rident/).test(ua) || ((/ecko/).test(ua) && ua.match(/rv\:(\d+)/) && RegExp.$1 > 35);
-        var curSrcProp = "currentSrc";
-        var regWDesc = /\s+\+?\d+(e\d+)?w/;
-        var regSize = /(\([^)]+\))?\s*(.+)/;
-        var setOptions = window.picturefillCFG;
-        /**
-         * Shortcut property for https://w3c.github.io/webappsec/specs/mixedcontent/#restricts-mixed-content ( for easy overriding in tests )
-         */
-        // baseStyle also used by getEmValue (i.e.: width: 1em is important)
-        var baseStyle = "position:absolute;left:0;visibility:hidden;display:block;padding:0;border:none;font-size:1em;width:1em;overflow:hidden;clip:rect(0px, 0px, 0px, 0px)";
-        var fsCss = "font-size:100%!important;";
-        var isVwDirty = true;
-        var cssCache = {};
-        var sizeLengthCache = {};
-        var DPR = window.devicePixelRatio;
-        var units = {
-            px: 1,
-            "in": 96
-        };
-        var anchor = document.createElement("a");
-        /**
-         * alreadyRun flag used for setOptions. is it true setOptions will reevaluate
-         * @type {boolean}
-         */
-        var alreadyRun = false;
-        // Reusable, non-"g" Regexes
-        // (Don't use \s, to avoid matching non-breaking space.)
-        var regexLeadingSpaces = /^[ \t\n\r\u000c]+/, regexLeadingCommasOrSpaces = /^[, \t\n\r\u000c]+/, regexLeadingNotSpaces = /^[^ \t\n\r\u000c]+/, regexTrailingCommas = /[,]+$/, regexNonNegativeInteger = /^\d+$/, 
-        // ( Positive or negative or unsigned integers or decimals, without or without exponents.
-        // Must include at least one digit.
-        // According to spec tests any decimal point must be followed by a digit.
-        // No leading plus sign is allowed.)
-        // https://html.spec.whatwg.org/multipage/infrastructure.html#valid-floating-point-number
-        regexFloatingPoint = /^-?(?:[0-9]+|[0-9]*\.[0-9]+)(?:[eE][+-]?[0-9]+)?$/;
-        var on = function (obj, evt, fn, capture) {
-            if (obj.addEventListener) {
-                obj.addEventListener(evt, fn, capture || false);
-            }
-            else if (obj.attachEvent) {
-                obj.attachEvent("on" + evt, fn);
-            }
-        };
-        /**
-         * simple memoize function:
-         */
-        var memoize = function (fn) {
-            var cache = {};
-            return function (input) {
-                if (!(input in cache)) {
-                    cache[input] = fn(input);
-                }
-                return cache[input];
-            };
-        };
-        // UTILITY FUNCTIONS
-        // Manual is faster than RegEx
-        // http://jsperf.com/whitespace-character/5
-        function isSpace(c) {
-            return (c === "\u0020" || // space
-                c === "\u0009" || // horizontal tab
-                c === "\u000A" || // new line
-                c === "\u000C" || // form feed
-                c === "\u000D"); // carriage return
-        }
-        /**
-         * gets a mediaquery and returns a boolean or gets a css length and returns a number
-         * @param css mediaqueries or css length
-         * @returns {boolean|number}
-         *
-         * based on: https://gist.github.com/jonathantneal/db4f77009b155f083738
-         */
-        var evalCSS = (function () {
-            var regLength = /^([\d\.]+)(em|vw|px)$/;
-            var replace = function () {
-                var args = arguments, index = 0, string = args[0];
-                while (++index in args) {
-                    string = string.replace(args[index], args[++index]);
-                }
-                return string;
-            };
-            var buildStr = memoize(function (css) {
-                return "return " + replace((css || "").toLowerCase(), 
-                // interpret `and`
-                /\band\b/g, "&&", 
-                // interpret `,`
-                /,/g, "||", 
-                // interpret `min-` as >=
-                /min-([a-z-\s]+):/g, "e.$1>=", 
-                // interpret `max-` as <=
-                /max-([a-z-\s]+):/g, "e.$1<=", 
-                //calc value
-                /calc([^)]+)/g, "($1)", 
-                // interpret css values
-                /(\d+[\.]*[\d]*)([a-z]+)/g, "($1 * e.$2)", 
-                //make eval less evil
-                /^(?!(e.[a-z]|[0-9\.&=|><\+\-\*\(\)\/])).*/ig, "") + ";";
-            });
-            return function (css, length) {
-                var parsedLength;
-                if (!(css in cssCache)) {
-                    cssCache[css] = false;
-                    if (length && (parsedLength = css.match(regLength))) {
-                        cssCache[css] = parsedLength[1] * units[parsedLength[2]];
-                    }
-                    else {
-                        /*jshint evil:true */
-                        try {
-                            cssCache[css] = new Function("e", buildStr(css))(units);
-                        }
-                        catch (e) { }
-                        /*jshint evil:false */
-                    }
-                }
-                return cssCache[css];
-            };
-        })();
-        var setResolution = function (candidate, sizesattr) {
-            if (candidate.w) { // h = means height: || descriptor.type === 'h' do not handle yet...
-                candidate.cWidth = pf.calcListLength(sizesattr || "100vw");
-                candidate.res = candidate.w / candidate.cWidth;
-            }
-            else {
-                candidate.res = candidate.d;
-            }
-            return candidate;
-        };
-        /**
-         *
-         * @param opt
-         */
-        var picturefill = function (opt) {
-            if (!isSupportTestReady) {
-                return;
-            }
-            var elements, i, plen;
-            var options = opt || {};
-            if (options.elements && options.elements.nodeType === 1) {
-                if (options.elements.nodeName.toUpperCase() === "IMG") {
-                    options.elements = [options.elements];
-                }
-                else {
-                    options.context = options.elements;
-                    options.elements = null;
-                }
-            }
-            elements = options.elements || pf.qsa((options.context || document), (options.reevaluate || options.reselect) ? pf.sel : pf.selShort);
-            if ((plen = elements.length)) {
-                pf.setupRun(options);
-                alreadyRun = true;
-                // Loop through all elements
-                for (i = 0; i < plen; i++) {
-                    pf.fillImg(elements[i], options);
-                }
-                pf.teardownRun(options);
-            }
-        };
-        if (!(curSrcProp in image)) {
-            curSrcProp = "src";
-        }
-        // Add support for standard mime types.
-        types["image/jpeg"] = true;
-        types["image/gif"] = true;
-        types["image/png"] = true;
-        function detectTypeSupport(type, typeUri) {
-            // based on Modernizr's lossless img-webp test
-            // note: asynchronous
-            var image = new window.Image();
-            image.onerror = function () {
-                types[type] = false;
-                picturefill();
-            };
-            image.onload = function () {
-                types[type] = image.width === 1;
-                picturefill();
-            };
-            image.src = typeUri;
-            return "pending";
-        }
-        // test svg support
-        types["image/svg+xml"] = document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1");
-        /**
-         * updates the internal vW property with the current viewport width in px
-         */
-        function updateMetrics() {
-            isVwDirty = false;
-            DPR = window.devicePixelRatio;
-            cssCache = {};
-            sizeLengthCache = {};
-            pf.DPR = DPR || 1;
-            units.width = Math.max(window.innerWidth || 0, docElem.clientWidth);
-            units.height = Math.max(window.innerHeight || 0, docElem.clientHeight);
-            units.vw = units.width / 100;
-            units.vh = units.height / 100;
-            evalId = [units.height, units.width, DPR].join("-");
-            units.em = pf.getEmValue();
-            units.rem = units.em;
-        }
-        function chooseLowRes(lowerValue, higherValue, dprValue, isCached) {
-            var bonusFactor, tooMuch, bonus, meanDensity;
-            //experimental
-            if (cfg.algorithm === "saveData") {
-                if (lowerValue > 2.7) {
-                    meanDensity = dprValue + 1;
-                }
-                else {
-                    tooMuch = higherValue - dprValue;
-                    bonusFactor = Math.pow(lowerValue - 0.6, 1.5);
-                    bonus = tooMuch * bonusFactor;
-                    if (isCached) {
-                        bonus += 0.1 * bonusFactor;
-                    }
-                    meanDensity = lowerValue + bonus;
-                }
-            }
-            else {
-                meanDensity = (dprValue > 1) ?
-                    Math.sqrt(lowerValue * higherValue) :
-                    lowerValue;
-            }
-            return meanDensity > dprValue;
-        }
-        function applyBestCandidate(img) {
-            var srcSetCandidates;
-            var matchingSet = pf.getSet(img);
-            var evaluated = false;
-            if (matchingSet !== "pending") {
-                evaluated = evalId;
-                if (matchingSet) {
-                    srcSetCandidates = pf.setRes(matchingSet);
-                    pf.applySetCandidate(srcSetCandidates, img);
-                }
-            }
-            img[pf.ns].evaled = evaluated;
-        }
-        function ascendingSort(a, b) {
-            return a.res - b.res;
-        }
-        function setSrcToCur(img, src, set) {
-            var candidate;
-            if (!set && src) {
-                set = img[pf.ns].sets;
-                set = set && set[set.length - 1];
-            }
-            candidate = getCandidateForSrc(src, set);
-            if (candidate) {
-                src = pf.makeUrl(src);
-                img[pf.ns].curSrc = src;
-                img[pf.ns].curCan = candidate;
-                if (!candidate.res) {
-                    setResolution(candidate, candidate.set.sizes);
-                }
-            }
-            return candidate;
-        }
-        function getCandidateForSrc(src, set) {
-            var i, candidate, candidates;
-            if (src && set) {
-                candidates = pf.parseSet(set);
-                src = pf.makeUrl(src);
-                for (i = 0; i < candidates.length; i++) {
-                    if (src === pf.makeUrl(candidates[i].url)) {
-                        candidate = candidates[i];
-                        break;
-                    }
-                }
-            }
-            return candidate;
-        }
-        function getAllSourceElements(picture, candidates) {
-            var i, len, source, srcset;
-            // SPEC mismatch intended for size and perf:
-            // actually only source elements preceding the img should be used
-            // also note: don't use qsa here, because IE8 sometimes doesn't like source as the key part in a selector
-            var sources = picture.getElementsByTagName("source");
-            for (i = 0, len = sources.length; i < len; i++) {
-                source = sources[i];
-                source[pf.ns] = true;
-                srcset = source.getAttribute("srcset");
-                // if source does not have a srcset attribute, skip
-                if (srcset) {
-                    candidates.push({
-                        srcset: srcset,
-                        media: source.getAttribute("media"),
-                        type: source.getAttribute("type"),
-                        sizes: source.getAttribute("sizes")
-                    });
-                }
-            }
-        }
-        /**
-         * Srcset Parser
-         * By Alex Bell |  MIT License
-         *
-         * @returns Array [{url: _, d: _, w: _, h:_, set:_(????)}, ...]
-         *
-         * Based super duper closely on the reference algorithm at:
-         * https://html.spec.whatwg.org/multipage/embedded-content.html#parse-a-srcset-attribute
-         */
-        // 1. Let input be the value passed to this algorithm.
-        // (TO-DO : Explain what "set" argument is here. Maybe choose a more
-        // descriptive & more searchable name.  Since passing the "set" in really has
-        // nothing to do with parsing proper, I would prefer this assignment eventually
-        // go in an external fn.)
-        function parseSrcset(input, set) {
-            function collectCharacters(regEx) {
-                var chars, match = regEx.exec(input.substring(pos));
-                if (match) {
-                    chars = match[0];
-                    pos += chars.length;
-                    return chars;
-                }
-            }
-            var inputLength = input.length, url, descriptors, currentDescriptor, state, c, 
-            // 2. Let position be a pointer into input, initially pointing at the start
-            //    of the string.
-            pos = 0, 
-            // 3. Let candidates be an initially empty source set.
-            candidates = [];
-            /**
-            * Adds descriptor properties to a candidate, pushes to the candidates array
-            * @return undefined
-            */
-            // (Declared outside of the while loop so that it's only created once.
-            // (This fn is defined before it is used, in order to pass JSHINT.
-            // Unfortunately this breaks the sequencing of the spec comments. :/ )
-            function parseDescriptors() {
-                // 9. Descriptor parser: Let error be no.
-                var pError = false, 
-                // 10. Let width be absent.
-                // 11. Let density be absent.
-                // 12. Let future-compat-h be absent. (We're implementing it now as h)
-                w, d, h, i, candidate = {}, desc, lastChar, value, intVal, floatVal;
-                // 13. For each descriptor in descriptors, run the appropriate set of steps
-                // from the following list:
-                for (i = 0; i < descriptors.length; i++) {
-                    desc = descriptors[i];
-                    lastChar = desc[desc.length - 1];
-                    value = desc.substring(0, desc.length - 1);
-                    intVal = parseInt(value, 10);
-                    floatVal = parseFloat(value);
-                    // If the descriptor consists of a valid non-negative integer followed by
-                    // a U+0077 LATIN SMALL LETTER W character
-                    if (regexNonNegativeInteger.test(value) && (lastChar === "w")) {
-                        // If width and density are not both absent, then let error be yes.
-                        if (w || d) {
-                            pError = true;
-                        }
-                        // Apply the rules for parsing non-negative integers to the descriptor.
-                        // If the result is zero, let error be yes.
-                        // Otherwise, let width be the result.
-                        if (intVal === 0) {
-                            pError = true;
-                        }
-                        else {
-                            w = intVal;
-                        }
-                        // If the descriptor consists of a valid floating-point number followed by
-                        // a U+0078 LATIN SMALL LETTER X character
-                    }
-                    else if (regexFloatingPoint.test(value) && (lastChar === "x")) {
-                        // If width, density and future-compat-h are not all absent, then let error
-                        // be yes.
-                        if (w || d || h) {
-                            pError = true;
-                        }
-                        // Apply the rules for parsing floating-point number values to the descriptor.
-                        // If the result is less than zero, let error be yes. Otherwise, let density
-                        // be the result.
-                        if (floatVal < 0) {
-                            pError = true;
-                        }
-                        else {
-                            d = floatVal;
-                        }
-                        // If the descriptor consists of a valid non-negative integer followed by
-                        // a U+0068 LATIN SMALL LETTER H character
-                    }
-                    else if (regexNonNegativeInteger.test(value) && (lastChar === "h")) {
-                        // If height and density are not both absent, then let error be yes.
-                        if (h || d) {
-                            pError = true;
-                        }
-                        // Apply the rules for parsing non-negative integers to the descriptor.
-                        // If the result is zero, let error be yes. Otherwise, let future-compat-h
-                        // be the result.
-                        if (intVal === 0) {
-                            pError = true;
-                        }
-                        else {
-                            h = intVal;
-                        }
-                        // Anything else, Let error be yes.
-                    }
-                    else {
-                        pError = true;
-                    }
-                } // (close step 13 for loop)
-                // 15. If error is still no, then append a new image source to candidates whose
-                // URL is url, associated with a width width if not absent and a pixel
-                // density density if not absent. Otherwise, there is a parse error.
-                if (!pError) {
-                    candidate.url = url;
-                    if (w) {
-                        candidate.w = w;
-                    }
-                    if (d) {
-                        candidate.d = d;
-                    }
-                    if (h) {
-                        candidate.h = h;
-                    }
-                    if (!h && !d && !w) {
-                        candidate.d = 1;
-                    }
-                    if (candidate.d === 1) {
-                        set.has1x = true;
-                    }
-                    candidate.set = set;
-                    candidates.push(candidate);
-                }
-            } // (close parseDescriptors fn)
-            /**
-            * Tokenizes descriptor properties prior to parsing
-            * Returns undefined.
-            * (Again, this fn is defined before it is used, in order to pass JSHINT.
-            * Unfortunately this breaks the logical sequencing of the spec comments. :/ )
-            */
-            function tokenize() {
-                // 8.1. Descriptor tokeniser: Skip whitespace
-                collectCharacters(regexLeadingSpaces);
-                // 8.2. Let current descriptor be the empty string.
-                currentDescriptor = "";
-                // 8.3. Let state be in descriptor.
-                state = "in descriptor";
-                while (true) {
-                    // 8.4. Let c be the character at position.
-                    c = input.charAt(pos);
-                    //  Do the following depending on the value of state.
-                    //  For the purpose of this step, "EOF" is a special character representing
-                    //  that position is past the end of input.
-                    // In descriptor
-                    if (state === "in descriptor") {
-                        // Do the following, depending on the value of c:
-                        // Space character
-                        // If current descriptor is not empty, append current descriptor to
-                        // descriptors and let current descriptor be the empty string.
-                        // Set state to after descriptor.
-                        if (isSpace(c)) {
-                            if (currentDescriptor) {
-                                descriptors.push(currentDescriptor);
-                                currentDescriptor = "";
-                                state = "after descriptor";
-                            }
-                            // U+002C COMMA (,)
-                            // Advance position to the next character in input. If current descriptor
-                            // is not empty, append current descriptor to descriptors. Jump to the step
-                            // labeled descriptor parser.
-                        }
-                        else if (c === ",") {
-                            pos += 1;
-                            if (currentDescriptor) {
-                                descriptors.push(currentDescriptor);
-                            }
-                            parseDescriptors();
-                            return;
-                            // U+0028 LEFT PARENTHESIS (()
-                            // Append c to current descriptor. Set state to in parens.
-                        }
-                        else if (c === "\u0028") {
-                            currentDescriptor = currentDescriptor + c;
-                            state = "in parens";
-                            // EOF
-                            // If current descriptor is not empty, append current descriptor to
-                            // descriptors. Jump to the step labeled descriptor parser.
-                        }
-                        else if (c === "") {
-                            if (currentDescriptor) {
-                                descriptors.push(currentDescriptor);
-                            }
-                            parseDescriptors();
-                            return;
-                            // Anything else
-                            // Append c to current descriptor.
-                        }
-                        else {
-                            currentDescriptor = currentDescriptor + c;
-                        }
-                        // (end "in descriptor"
-                        // In parens
-                    }
-                    else if (state === "in parens") {
-                        // U+0029 RIGHT PARENTHESIS ())
-                        // Append c to current descriptor. Set state to in descriptor.
-                        if (c === ")") {
-                            currentDescriptor = currentDescriptor + c;
-                            state = "in descriptor";
-                            // EOF
-                            // Append current descriptor to descriptors. Jump to the step labeled
-                            // descriptor parser.
-                        }
-                        else if (c === "") {
-                            descriptors.push(currentDescriptor);
-                            parseDescriptors();
-                            return;
-                            // Anything else
-                            // Append c to current descriptor.
-                        }
-                        else {
-                            currentDescriptor = currentDescriptor + c;
-                        }
-                        // After descriptor
-                    }
-                    else if (state === "after descriptor") {
-                        // Do the following, depending on the value of c:
-                        // Space character: Stay in this state.
-                        if (isSpace(c))
-                            ;
-                        else if (c === "") {
-                            parseDescriptors();
-                            return;
-                            // Anything else
-                            // Set state to in descriptor. Set position to the previous character in input.
-                        }
-                        else {
-                            state = "in descriptor";
-                            pos -= 1;
-                        }
-                    }
-                    // Advance position to the next character in input.
-                    pos += 1;
-                    // Repeat this step.
-                } // (close while true loop)
-            }
-            // 4. Splitting loop: Collect a sequence of characters that are space
-            //    characters or U+002C COMMA characters. If any U+002C COMMA characters
-            //    were collected, that is a parse error.
-            while (true) {
-                collectCharacters(regexLeadingCommasOrSpaces);
-                // 5. If position is past the end of input, return candidates and abort these steps.
-                if (pos >= inputLength) {
-                    return candidates; // (we're done, this is the sole return path)
-                }
-                // 6. Collect a sequence of characters that are not space characters,
-                //    and let that be url.
-                url = collectCharacters(regexLeadingNotSpaces);
-                // 7. Let descriptors be a new empty list.
-                descriptors = [];
-                // 8. If url ends with a U+002C COMMA character (,), follow these substeps:
-                //		(1). Remove all trailing U+002C COMMA characters from url. If this removed
-                //         more than one character, that is a parse error.
-                if (url.slice(-1) === ",") {
-                    url = url.replace(regexTrailingCommas, "");
-                    // (Jump ahead to step 9 to skip tokenization and just push the candidate).
-                    parseDescriptors();
-                    //	Otherwise, follow these substeps:
-                }
-                else {
-                    tokenize();
-                } // (close else of step 8)
-                // 16. Return to the step labeled splitting loop.
-            } // (Close of big while loop.)
-        }
-        /*
-         * Sizes Parser
-         *
-         * By Alex Bell |  MIT License
-         *
-         * Non-strict but accurate and lightweight JS Parser for the string value <img sizes="here">
-         *
-         * Reference algorithm at:
-         * https://html.spec.whatwg.org/multipage/embedded-content.html#parse-a-sizes-attribute
-         *
-         * Most comments are copied in directly from the spec
-         * (except for comments in parens).
-         *
-         * Grammar is:
-         * <source-size-list> = <source-size># [ , <source-size-value> ]? | <source-size-value>
-         * <source-size> = <media-condition> <source-size-value>
-         * <source-size-value> = <length>
-         * http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-img-sizes
-         *
-         * E.g. "(max-width: 30em) 100vw, (max-width: 50em) 70vw, 100vw"
-         * or "(min-width: 30em), calc(30vw - 15px)" or just "30vw"
-         *
-         * Returns the first valid <css-length> with a media condition that evaluates to true,
-         * or "100vw" if all valid media conditions evaluate to false.
-         *
-         */
-        function parseSizes(strValue) {
-            // (Percentage CSS lengths are not allowed in this case, to avoid confusion:
-            // https://html.spec.whatwg.org/multipage/embedded-content.html#valid-source-size-list
-            // CSS allows a single optional plus or minus sign:
-            // http://www.w3.org/TR/CSS2/syndata.html#numbers
-            // CSS is ASCII case-insensitive:
-            // http://www.w3.org/TR/CSS2/syndata.html#characters )
-            // Spec allows exponential notation for <number> type:
-            // http://dev.w3.org/csswg/css-values/#numbers
-            var regexCssLengthWithUnits = /^(?:[+-]?[0-9]+|[0-9]*\.[0-9]+)(?:[eE][+-]?[0-9]+)?(?:ch|cm|em|ex|in|mm|pc|pt|px|rem|vh|vmin|vmax|vw)$/i;
-            // (This is a quick and lenient test. Because of optional unlimited-depth internal
-            // grouping parens and strict spacing rules, this could get very complicated.)
-            var regexCssCalc = /^calc\((?:[0-9a-z \.\+\-\*\/\(\)]+)\)$/i;
-            var i;
-            var unparsedSizesList;
-            var unparsedSizesListLength;
-            var unparsedSize;
-            var lastComponentValue;
-            var size;
-            // UTILITY FUNCTIONS
-            //  (Toy CSS parser. The goals here are:
-            //  1) expansive test coverage without the weight of a full CSS parser.
-            //  2) Avoiding regex wherever convenient.
-            //  Quick tests: http://jsfiddle.net/gtntL4gr/3/
-            //  Returns an array of arrays.)
-            function parseComponentValues(str) {
-                var chrctr;
-                var component = "";
-                var componentArray = [];
-                var listArray = [];
-                var parenDepth = 0;
-                var pos = 0;
-                var inComment = false;
-                function pushComponent() {
-                    if (component) {
-                        componentArray.push(component);
-                        component = "";
-                    }
-                }
-                function pushComponentArray() {
-                    if (componentArray[0]) {
-                        listArray.push(componentArray);
-                        componentArray = [];
-                    }
-                }
-                // (Loop forwards from the beginning of the string.)
-                while (true) {
-                    chrctr = str.charAt(pos);
-                    if (chrctr === "") { // ( End of string reached.)
-                        pushComponent();
-                        pushComponentArray();
-                        return listArray;
-                    }
-                    else if (inComment) {
-                        if ((chrctr === "*") && (str[pos + 1] === "/")) { // (At end of a comment.)
-                            inComment = false;
-                            pos += 2;
-                            pushComponent();
-                            continue;
-                        }
-                        else {
-                            pos += 1; // (Skip all characters inside comments.)
-                            continue;
-                        }
-                    }
-                    else if (isSpace(chrctr)) {
-                        // (If previous character in loop was also a space, or if
-                        // at the beginning of the string, do not add space char to
-                        // component.)
-                        if ((str.charAt(pos - 1) && isSpace(str.charAt(pos - 1))) || !component) {
-                            pos += 1;
-                            continue;
-                        }
-                        else if (parenDepth === 0) {
-                            pushComponent();
-                            pos += 1;
-                            continue;
-                        }
-                        else {
-                            // (Replace any space character with a plain space for legibility.)
-                            chrctr = " ";
-                        }
-                    }
-                    else if (chrctr === "(") {
-                        parenDepth += 1;
-                    }
-                    else if (chrctr === ")") {
-                        parenDepth -= 1;
-                    }
-                    else if (chrctr === ",") {
-                        pushComponent();
-                        pushComponentArray();
-                        pos += 1;
-                        continue;
-                    }
-                    else if ((chrctr === "/") && (str.charAt(pos + 1) === "*")) {
-                        inComment = true;
-                        pos += 2;
-                        continue;
-                    }
-                    component = component + chrctr;
-                    pos += 1;
-                }
-            }
-            function isValidNonNegativeSourceSizeValue(s) {
-                if (regexCssLengthWithUnits.test(s) && (parseFloat(s) >= 0)) {
-                    return true;
-                }
-                if (regexCssCalc.test(s)) {
-                    return true;
-                }
-                // ( http://www.w3.org/TR/CSS2/syndata.html#numbers says:
-                // "-0 is equivalent to 0 and is not a negative number." which means that
-                // unitless zero and unitless negative zero must be accepted as special cases.)
-                if ((s === "0") || (s === "-0") || (s === "+0")) {
-                    return true;
-                }
-                return false;
-            }
-            // When asked to parse a sizes attribute from an element, parse a
-            // comma-separated list of component values from the value of the element's
-            // sizes attribute (or the empty string, if the attribute is absent), and let
-            // unparsed sizes list be the result.
-            // http://dev.w3.org/csswg/css-syntax/#parse-comma-separated-list-of-component-values
-            unparsedSizesList = parseComponentValues(strValue);
-            unparsedSizesListLength = unparsedSizesList.length;
-            // For each unparsed size in unparsed sizes list:
-            for (i = 0; i < unparsedSizesListLength; i++) {
-                unparsedSize = unparsedSizesList[i];
-                // 1. Remove all consecutive <whitespace-token>s from the end of unparsed size.
-                // ( parseComponentValues() already omits spaces outside of parens. )
-                // If unparsed size is now empty, that is a parse error; continue to the next
-                // iteration of this algorithm.
-                // ( parseComponentValues() won't push an empty array. )
-                // 2. If the last component value in unparsed size is a valid non-negative
-                // <source-size-value>, let size be its value and remove the component value
-                // from unparsed size. Any CSS function other than the calc() function is
-                // invalid. Otherwise, there is a parse error; continue to the next iteration
-                // of this algorithm.
-                // http://dev.w3.org/csswg/css-syntax/#parse-component-value
-                lastComponentValue = unparsedSize[unparsedSize.length - 1];
-                if (isValidNonNegativeSourceSizeValue(lastComponentValue)) {
-                    size = lastComponentValue;
-                    unparsedSize.pop();
-                }
-                else {
-                    continue;
-                }
-                // 3. Remove all consecutive <whitespace-token>s from the end of unparsed
-                // size. If unparsed size is now empty, return size and exit this algorithm.
-                // If this was not the last item in unparsed sizes list, that is a parse error.
-                if (unparsedSize.length === 0) {
-                    return size;
-                }
-                // 4. Parse the remaining component values in unparsed size as a
-                // <media-condition>. If it does not parse correctly, or it does parse
-                // correctly but the <media-condition> evaluates to false, continue to the
-                // next iteration of this algorithm.
-                // (Parsing all possible compound media conditions in JS is heavy, complicated,
-                // and the payoff is unclear. Is there ever an situation where the
-                // media condition parses incorrectly but still somehow evaluates to true?
-                // Can we just rely on the browser/polyfill to do it?)
-                unparsedSize = unparsedSize.join(" ");
-                if (!(pf.matchesMedia(unparsedSize))) {
-                    continue;
-                }
-                // 5. Return size and exit this algorithm.
-                return size;
-            }
-            // If the above algorithm exhausts unparsed sizes list without returning a
-            // size value, return 100vw.
-            return "100vw";
-        }
-        // namespace
-        pf.ns = ("pf" + new Date().getTime()).substr(0, 9);
-        // srcset support test
-        pf.supSrcset = "srcset" in image;
-        pf.supSizes = "sizes" in image;
-        pf.supPicture = !!window.HTMLPictureElement;
-        // UC browser does claim to support srcset and picture, but not sizes,
-        // this extended test reveals the browser does support nothing
-        if (pf.supSrcset && pf.supPicture && !pf.supSizes) {
-            (function (image2) {
-                image.srcset = "data:,a";
-                image2.src = "data:,a";
-                pf.supSrcset = image.complete === image2.complete;
-                pf.supPicture = pf.supSrcset && pf.supPicture;
-            })(document.createElement("img"));
-        }
-        // Safari9 has basic support for sizes, but does't expose the `sizes` idl attribute
-        if (pf.supSrcset && !pf.supSizes) {
-            (function () {
-                var width2 = "data:image/gif;base64,R0lGODlhAgABAPAAAP///wAAACH5BAAAAAAALAAAAAACAAEAAAICBAoAOw==";
-                var width1 = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
-                var img = document.createElement("img");
-                var test = function () {
-                    var width = img.width;
-                    if (width === 2) {
-                        pf.supSizes = true;
-                    }
-                    alwaysCheckWDescriptor = pf.supSrcset && !pf.supSizes;
-                    isSupportTestReady = true;
-                    // force async
-                    setTimeout(picturefill);
-                };
-                img.onload = test;
-                img.onerror = test;
-                img.setAttribute("sizes", "9px");
-                img.srcset = width1 + " 1w," + width2 + " 9w";
-                img.src = width1;
-            })();
-        }
-        else {
-            isSupportTestReady = true;
-        }
-        // using pf.qsa instead of dom traversing does scale much better,
-        // especially on sites mixing responsive and non-responsive images
-        pf.selShort = "picture>img,img[srcset]";
-        pf.sel = pf.selShort;
-        pf.cfg = cfg;
-        /**
-         * Shortcut property for `devicePixelRatio` ( for easy overriding in tests )
-         */
-        pf.DPR = (DPR || 1);
-        pf.u = units;
-        // container of supported mime types that one might need to qualify before using
-        pf.types = types;
-        pf.setSize = noop;
-        /**
-         * Gets a string and returns the absolute URL
-         * @param src
-         * @returns {String} absolute URL
-         */
-        pf.makeUrl = memoize(function (src) {
-            anchor.href = src;
-            return anchor.href;
-        });
-        /**
-         * Gets a DOM element or document and a selctor and returns the found matches
-         * Can be extended with jQuery/Sizzle for IE7 support
-         * @param context
-         * @param sel
-         * @returns {NodeList|Array}
-         */
-        pf.qsa = function (context, sel) {
-            return ("querySelector" in context) ? context.querySelectorAll(sel) : [];
-        };
-        /**
-         * Shortcut method for matchMedia ( for easy overriding in tests )
-         * wether native or pf.mMQ is used will be decided lazy on first call
-         * @returns {boolean}
-         */
-        pf.matchesMedia = function () {
-            if (window.matchMedia && (matchMedia("(min-width: 0.1em)") || {}).matches) {
-                pf.matchesMedia = function (media) {
-                    return !media || (matchMedia(media).matches);
-                };
-            }
-            else {
-                pf.matchesMedia = pf.mMQ;
-            }
-            return pf.matchesMedia.apply(this, arguments);
-        };
-        /**
-         * A simplified matchMedia implementation for IE8 and IE9
-         * handles only min-width/max-width with px or em values
-         * @param media
-         * @returns {boolean}
-         */
-        pf.mMQ = function (media) {
-            return media ? evalCSS(media) : true;
-        };
-        /**
-         * Returns the calculated length in css pixel from the given sourceSizeValue
-         * http://dev.w3.org/csswg/css-values-3/#length-value
-         * intended Spec mismatches:
-         * * Does not check for invalid use of CSS functions
-         * * Does handle a computed length of 0 the same as a negative and therefore invalid value
-         * @param sourceSizeValue
-         * @returns {Number}
-         */
-        pf.calcLength = function (sourceSizeValue) {
-            var value = evalCSS(sourceSizeValue, true) || false;
-            if (value < 0) {
-                value = false;
-            }
-            return value;
-        };
-        /**
-         * Takes a type string and checks if its supported
-         */
-        pf.supportsType = function (type) {
-            return (type) ? types[type] : true;
-        };
-        /**
-         * Parses a sourceSize into mediaCondition (media) and sourceSizeValue (length)
-         * @param sourceSizeStr
-         * @returns {*}
-         */
-        pf.parseSize = memoize(function (sourceSizeStr) {
-            var match = (sourceSizeStr || "").match(regSize);
-            return {
-                media: match && match[1],
-                length: match && match[2]
-            };
-        });
-        pf.parseSet = function (set) {
-            if (!set.cands) {
-                set.cands = parseSrcset(set.srcset, set);
-            }
-            return set.cands;
-        };
-        /**
-         * returns 1em in css px for html/body default size
-         * function taken from respondjs
-         * @returns {*|number}
-         */
-        pf.getEmValue = function () {
-            var body;
-            if (!eminpx && (body = document.body)) {
-                var div = document.createElement("div"), originalHTMLCSS = docElem.style.cssText, originalBodyCSS = body.style.cssText;
-                div.style.cssText = baseStyle;
-                // 1em in a media query is the value of the default font size of the browser
-                // reset docElem and body to ensure the correct value is returned
-                docElem.style.cssText = fsCss;
-                body.style.cssText = fsCss;
-                body.appendChild(div);
-                eminpx = div.offsetWidth;
-                body.removeChild(div);
-                //also update eminpx before returning
-                eminpx = parseFloat(eminpx, 10);
-                // restore the original values
-                docElem.style.cssText = originalHTMLCSS;
-                body.style.cssText = originalBodyCSS;
-            }
-            return eminpx || 16;
-        };
-        /**
-         * Takes a string of sizes and returns the width in pixels as a number
-         */
-        pf.calcListLength = function (sourceSizeListStr) {
-            // Split up source size list, ie ( max-width: 30em ) 100%, ( max-width: 50em ) 50%, 33%
-            //
-            //                           or (min-width:30em) calc(30% - 15px)
-            if (!(sourceSizeListStr in sizeLengthCache) || cfg.uT) {
-                var winningLength = pf.calcLength(parseSizes(sourceSizeListStr));
-                sizeLengthCache[sourceSizeListStr] = !winningLength ? units.width : winningLength;
-            }
-            return sizeLengthCache[sourceSizeListStr];
-        };
-        /**
-         * Takes a candidate object with a srcset property in the form of url/
-         * ex. "images/pic-medium.png 1x, images/pic-medium-2x.png 2x" or
-         *     "images/pic-medium.png 400w, images/pic-medium-2x.png 800w" or
-         *     "images/pic-small.png"
-         * Get an array of image candidates in the form of
-         *      {url: "/foo/bar.png", resolution: 1}
-         * where resolution is http://dev.w3.org/csswg/css-values-3/#resolution-value
-         * If sizes is specified, res is calculated
-         */
-        pf.setRes = function (set) {
-            var candidates;
-            if (set) {
-                candidates = pf.parseSet(set);
-                for (var i = 0, len = candidates.length; i < len; i++) {
-                    setResolution(candidates[i], set.sizes);
-                }
-            }
-            return candidates;
-        };
-        pf.setRes.res = setResolution;
-        pf.applySetCandidate = function (candidates, img) {
-            if (!candidates.length) {
-                return;
-            }
-            var candidate, i, j, length, bestCandidate, curSrc, curCan, candidateSrc, abortCurSrc;
-            var imageData = img[pf.ns];
-            var dpr = pf.DPR;
-            curSrc = imageData.curSrc || img[curSrcProp];
-            curCan = imageData.curCan || setSrcToCur(img, curSrc, candidates[0].set);
-            // if we have a current source, we might either become lazy or give this source some advantage
-            if (curCan && curCan.set === candidates[0].set) {
-                // if browser can abort image request and the image has a higher pixel density than needed
-                // and this image isn't downloaded yet, we skip next part and try to save bandwidth
-                abortCurSrc = (supportAbort && !img.complete && curCan.res - 0.1 > dpr);
-                if (!abortCurSrc) {
-                    curCan.cached = true;
-                    // if current candidate is "best", "better" or "okay",
-                    // set it to bestCandidate
-                    if (curCan.res >= dpr) {
-                        bestCandidate = curCan;
-                    }
-                }
-            }
-            if (!bestCandidate) {
-                candidates.sort(ascendingSort);
-                length = candidates.length;
-                bestCandidate = candidates[length - 1];
-                for (i = 0; i < length; i++) {
-                    candidate = candidates[i];
-                    if (candidate.res >= dpr) {
-                        j = i - 1;
-                        // we have found the perfect candidate,
-                        // but let's improve this a little bit with some assumptions ;-)
-                        if (candidates[j] &&
-                            (abortCurSrc || curSrc !== pf.makeUrl(candidate.url)) &&
-                            chooseLowRes(candidates[j].res, candidate.res, dpr, candidates[j].cached)) {
-                            bestCandidate = candidates[j];
-                        }
-                        else {
-                            bestCandidate = candidate;
-                        }
-                        break;
-                    }
-                }
-            }
-            if (bestCandidate) {
-                candidateSrc = pf.makeUrl(bestCandidate.url);
-                imageData.curSrc = candidateSrc;
-                imageData.curCan = bestCandidate;
-                if (candidateSrc !== curSrc) {
-                    pf.setSrc(img, bestCandidate);
-                }
-                pf.setSize(img);
-            }
-        };
-        pf.setSrc = function (img, bestCandidate) {
-            var origWidth;
-            img.src = bestCandidate.url;
-            // although this is a specific Safari issue, we don't want to take too much different code paths
-            if (bestCandidate.set.type === "image/svg+xml") {
-                origWidth = img.style.width;
-                img.style.width = (img.offsetWidth + 1) + "px";
-                // next line only should trigger a repaint
-                // if... is only done to trick dead code removal
-                if (img.offsetWidth + 1) {
-                    img.style.width = origWidth;
-                }
-            }
-        };
-        pf.getSet = function (img) {
-            var i, set, supportsType;
-            var match = false;
-            var sets = img[pf.ns].sets;
-            for (i = 0; i < sets.length && !match; i++) {
-                set = sets[i];
-                if (!set.srcset || !pf.matchesMedia(set.media) || !(supportsType = pf.supportsType(set.type))) {
-                    continue;
-                }
-                if (supportsType === "pending") {
-                    set = supportsType;
-                }
-                match = set;
-                break;
-            }
-            return match;
-        };
-        pf.parseSets = function (element, parent, options) {
-            var srcsetAttribute, imageSet, isWDescripor, srcsetParsed;
-            var hasPicture = parent && parent.nodeName.toUpperCase() === "PICTURE";
-            var imageData = element[pf.ns];
-            if (imageData.src === undefined$1 || options.src) {
-                imageData.src = getImgAttr.call(element, "src");
-                if (imageData.src) {
-                    setImgAttr.call(element, srcAttr, imageData.src);
-                }
-                else {
-                    removeImgAttr.call(element, srcAttr);
-                }
-            }
-            if (imageData.srcset === undefined$1 || options.srcset || !pf.supSrcset || element.srcset) {
-                srcsetAttribute = getImgAttr.call(element, "srcset");
-                imageData.srcset = srcsetAttribute;
-                srcsetParsed = true;
-            }
-            imageData.sets = [];
-            if (hasPicture) {
-                imageData.pic = true;
-                getAllSourceElements(parent, imageData.sets);
-            }
-            if (imageData.srcset) {
-                imageSet = {
-                    srcset: imageData.srcset,
-                    sizes: getImgAttr.call(element, "sizes")
-                };
-                imageData.sets.push(imageSet);
-                isWDescripor = (alwaysCheckWDescriptor || imageData.src) && regWDesc.test(imageData.srcset || "");
-                // add normal src as candidate, if source has no w descriptor
-                if (!isWDescripor && imageData.src && !getCandidateForSrc(imageData.src, imageSet) && !imageSet.has1x) {
-                    imageSet.srcset += ", " + imageData.src;
-                    imageSet.cands.push({
-                        url: imageData.src,
-                        d: 1,
-                        set: imageSet
-                    });
-                }
-            }
-            else if (imageData.src) {
-                imageData.sets.push({
-                    srcset: imageData.src,
-                    sizes: null
-                });
-            }
-            imageData.curCan = null;
-            imageData.curSrc = undefined$1;
-            // if img has picture or the srcset was removed or has a srcset and does not support srcset at all
-            // or has a w descriptor (and does not support sizes) set support to false to evaluate
-            imageData.supported = !(hasPicture || (imageSet && !pf.supSrcset) || (isWDescripor && !pf.supSizes));
-            if (srcsetParsed && pf.supSrcset && !imageData.supported) {
-                if (srcsetAttribute) {
-                    setImgAttr.call(element, srcsetAttr, srcsetAttribute);
-                    element.srcset = "";
-                }
-                else {
-                    removeImgAttr.call(element, srcsetAttr);
-                }
-            }
-            if (imageData.supported && !imageData.srcset && ((!imageData.src && element.src) || element.src !== pf.makeUrl(imageData.src))) {
-                if (imageData.src === null) {
-                    element.removeAttribute("src");
-                }
-                else {
-                    element.src = imageData.src;
-                }
-            }
-            imageData.parsed = true;
-        };
-        pf.fillImg = function (element, options) {
-            var imageData;
-            var extreme = options.reselect || options.reevaluate;
-            // expando for caching data on the img
-            if (!element[pf.ns]) {
-                element[pf.ns] = {};
-            }
-            imageData = element[pf.ns];
-            // if the element has already been evaluated, skip it
-            // unless `options.reevaluate` is set to true ( this, for example,
-            // is set to true when running `picturefill` on `resize` ).
-            if (!extreme && imageData.evaled === evalId) {
-                return;
-            }
-            if (!imageData.parsed || options.reevaluate) {
-                pf.parseSets(element, element.parentNode, options);
-            }
-            if (!imageData.supported) {
-                applyBestCandidate(element);
-            }
-            else {
-                imageData.evaled = evalId;
-            }
-        };
-        pf.setupRun = function () {
-            if (!alreadyRun || isVwDirty || (DPR !== window.devicePixelRatio)) {
-                updateMetrics();
-            }
-        };
-        // If picture is supported, well, that's awesome.
-        if (pf.supPicture) {
-            picturefill = noop;
-            pf.fillImg = noop;
-        }
-        else {
-            // Set up picture polyfill by polling the document
-            (function () {
-                var isDomReady;
-                var regReady = window.attachEvent ? /d$|^c/ : /d$|^c|^i/;
-                var run = function () {
-                    var readyState = document.readyState || "";
-                    timerId = setTimeout(run, readyState === "loading" ? 200 : 999);
-                    if (document.body) {
-                        pf.fillImgs();
-                        isDomReady = isDomReady || regReady.test(readyState);
-                        if (isDomReady) {
-                            clearTimeout(timerId);
-                        }
-                    }
-                };
-                var timerId = setTimeout(run, document.body ? 9 : 99);
-                // Also attach picturefill on resize and readystatechange
-                // http://modernjavascript.blogspot.com/2013/08/building-better-debounce.html
-                var debounce = function (func, wait) {
-                    var timeout, timestamp;
-                    var later = function () {
-                        var last = (new Date()) - timestamp;
-                        if (last < wait) {
-                            timeout = setTimeout(later, wait - last);
-                        }
-                        else {
-                            timeout = null;
-                            func();
-                        }
-                    };
-                    return function () {
-                        timestamp = new Date();
-                        if (!timeout) {
-                            timeout = setTimeout(later, wait);
-                        }
-                    };
-                };
-                var lastClientWidth = docElem.clientHeight;
-                var onResize = function () {
-                    isVwDirty = Math.max(window.innerWidth || 0, docElem.clientWidth) !== units.width || docElem.clientHeight !== lastClientWidth;
-                    lastClientWidth = docElem.clientHeight;
-                    if (isVwDirty) {
-                        pf.fillImgs();
-                    }
-                };
-                on(window, "resize", debounce(onResize, 99));
-                on(document, "readystatechange", run);
-            })();
-        }
-        pf.picturefill = picturefill;
-        //use this internally for easy monkey patching/performance testing
-        pf.fillImgs = picturefill;
-        pf.teardownRun = noop;
-        /* expose methods for testing */
-        picturefill._ = pf;
-        window.picturefillCFG = {
-            pf: pf,
-            push: function (args) {
-                var name = args.shift();
-                if (typeof pf[name] === "function") {
-                    pf[name].apply(pf, args);
-                }
-                else {
-                    cfg[name] = args[0];
-                    if (alreadyRun) {
-                        pf.fillImgs({ reselect: true });
-                    }
-                }
-            }
-        };
-        while (setOptions && setOptions.length) {
-            window.picturefillCFG.push(setOptions.shift());
-        }
-        /* expose picturefill */
-        window.picturefill = picturefill;
-        /* expose picturefill */
-        {
-            // CommonJS, just export
-            module.exports = picturefill;
-        }
-        // IE8 evals this sync, so it must be the last thing we do
-        if (!pf.supPicture) {
-            types["image/webp"] = detectTypeSupport("image/webp", "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==");
-        }
-    })(window, document);
-});
 function logRequest(env, level, id, data) {
     var log = JSON.stringify({
         level: level,
@@ -2711,13 +1295,6 @@ var debugLogRequest = function (id, data, env) {
 var errorLogRequest = function (id, data, env) {
     logRequest(env, 'error', id, data);
 };
-var DEFAULT_EMPTY_CONTENT = {
-    seriesList: DEFAULT_SERIES_LIST,
-    shops: DEFAULT_SHOPS,
-    more: DEFAULT_MORE,
-    metafunctionalities: DEFAULT_METAFUNCTIONALITIES,
-    menu: DEFAULT_MENU
-};
 var fetchContent = function (env) { return __awaiter(void 0, void 0, void 0, function () {
     var loadData, content;
     return __generator(this, function (_a) {
@@ -2736,11 +1313,14 @@ var fetchContent = function (env) { return __awaiter(void 0, void 0, void 0, fun
                                     })];
                             case 1:
                                 data = _a.sent();
+                                if (!data.ok) {
+                                    throw new Error(data.status + " " + data.statusText);
+                                }
                                 return [2 /*return*/, data.json()];
                             case 2:
                                 e_1 = _a.sent();
                                 errorLogRequest('content', "Failed to fetch content with error: " + e_1, env);
-                                return [2 /*return*/, DEFAULT_EMPTY_CONTENT];
+                                return [2 /*return*/, DEFAULT_EMPTY_CONTENT_RESPONSE];
                             case 3: return [2 /*return*/];
                         }
                     });
@@ -2753,6 +1333,11 @@ var fetchContent = function (env) { return __awaiter(void 0, void 0, void 0, fun
     });
 }); };
 var getContentForLocale = function (locale, content, env) {
+    if (content === DEFAULT_EMPTY_CONTENT_RESPONSE) {
+        var logData = "Received empty content. Setting DEFAULT_EMPTY_CONTENT as fallback.";
+        infoLogRequest('content', logData, env);
+        return DEFAULT_EMPTY_CONTENT;
+    }
     var availableLocales = Object.keys(content);
     if (availableLocales.includes(locale.toString())) {
         return content[locale.toString()];
@@ -2963,50 +1548,19 @@ var updateUnreadMessagesCount = function (accessToken) { return __awaiter(void 0
         }
     });
 }); };
-var setScrollbarWidth = function () {
-    var scrollDiv = document.createElement('div');
-    scrollDiv.style.width = '100px';
-    scrollDiv.style.height = '100px';
-    scrollDiv.style.overflow = 'scroll';
-    scrollDiv.style.position = 'absolute';
-    scrollDiv.style.top = '-9999px';
-    document.body.appendChild(scrollDiv);
-    var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-    document.body.removeChild(scrollDiv);
-    return scrollbarWidth;
-};
-var BodyScrollLock = /** @class */ (function () {
-    function BodyScrollLock() {
-        var _this_1 = this;
-        this.activate = function () {
-            _this_1.recordCurrentBodyStyles();
-            _this_1.initBodyPaddingRight();
-            document.body.style.overflow = 'hidden';
-            document.body.style.position = 'fixed';
-            document.body.style.width = '100%';
-            document.body.style.paddingRight = "" + (_this_1.initialBodyPaddingRightValue + _this_1.scrollbarWidth) + _this_1.initialBodyPaddingRightUnit;
-        };
-        this.deactivate = function () {
-            document.body.style.overflow = _this_1.initialBodyOverflow;
-            document.body.style.position = _this_1.initialBodyPosition;
-            document.body.style.width = _this_1.initialBodyWidth;
-            document.body.style.paddingRight = "" + _this_1.initialBodyPaddingRightValue + _this_1.initialBodyPaddingRightUnit;
-        };
-        this.recordCurrentBodyStyles = function () {
-            _this_1.initialBodyOverflow = document.body.style.overflow;
-            _this_1.initialBodyPosition = document.body.style.position;
-            _this_1.initialBodyWidth = document.body.style.width;
-        };
-        this.scrollbarWidth = setScrollbarWidth();
-    }
-    BodyScrollLock.prototype.initBodyPaddingRight = function () {
-        var body = document.body;
-        var paddingRight = window.getComputedStyle(body, null).getPropertyValue('padding-right');
-        this.initialBodyPaddingRightValue = parseFloat(paddingRight);
-        this.initialBodyPaddingRightUnit = paddingRight.split(this.initialBodyPaddingRightValue.toString())[1];
-    };
-    return BodyScrollLock;
-}());
+var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+function createCommonjsModule(fn, basedir, module) {
+    return module = {
+        path: basedir,
+        exports: {},
+        require: function (path, base) {
+            return commonjsRequire();
+        }
+    }, fn(module, module.exports), module.exports;
+}
+function commonjsRequire() {
+    throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
+}
 var errors = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -3034,7 +1588,6 @@ var errors = createCommonjsModule(function (module, exports) {
     }());
     exports.AppAuthError = AppAuthError;
 });
-unwrapExports(errors);
 var xhr = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -3176,8 +1729,6 @@ var xhr = createCommonjsModule(function (module, exports) {
     }(Requestor));
     exports.TestRequestor = TestRequestor;
 });
-unwrapExports(xhr);
-var xhr_3 = xhr.FetchRequestor;
 var authorization_service_configuration = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -3236,8 +1787,6 @@ var authorization_service_configuration = createCommonjsModule(function (module,
     }());
     exports.AuthorizationServiceConfiguration = AuthorizationServiceConfiguration;
 });
-unwrapExports(authorization_service_configuration);
-var authorization_service_configuration_1 = authorization_service_configuration.AuthorizationServiceConfiguration;
 var byteLength_1 = byteLength;
 var toByteArray_1 = toByteArray;
 var fromByteArray_1 = fromByteArray;
@@ -3446,7 +1995,6 @@ var crypto_utils = createCommonjsModule(function (module, exports) {
     }());
     exports.DefaultCrypto = DefaultCrypto;
 });
-unwrapExports(crypto_utils);
 var flags = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -3468,7 +2016,6 @@ var flags = createCommonjsModule(function (module, exports) {
     /* Profiling turned on ? */
     exports.IS_PROFILE = false;
 });
-unwrapExports(flags);
 var logger = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -3554,7 +2101,6 @@ var logger = createCommonjsModule(function (module, exports) {
         return descriptor;
     }
 });
-unwrapExports(logger);
 var authorization_request = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -3654,8 +2200,6 @@ var authorization_request = createCommonjsModule(function (module, exports) {
     }());
     exports.AuthorizationRequest = AuthorizationRequest;
 });
-unwrapExports(authorization_request);
-var authorization_request_1 = authorization_request.AuthorizationRequest;
 var authorization_request_handler = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -3768,7 +2312,6 @@ var authorization_request_handler = createCommonjsModule(function (module, expor
     }());
     exports.AuthorizationRequestHandler = AuthorizationRequestHandler;
 });
-unwrapExports(authorization_request_handler);
 var authorization_response = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -3824,7 +2367,6 @@ var authorization_response = createCommonjsModule(function (module, exports) {
     }());
     exports.AuthorizationError = AuthorizationError;
 });
-unwrapExports(authorization_response);
 var query_string_utils = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -3882,8 +2424,6 @@ var query_string_utils = createCommonjsModule(function (module, exports) {
     }());
     exports.BasicQueryStringUtils = BasicQueryStringUtils;
 });
-unwrapExports(query_string_utils);
-var query_string_utils_1 = query_string_utils.BasicQueryStringUtils;
 var storage = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -3972,8 +2512,6 @@ var storage = createCommonjsModule(function (module, exports) {
     }(StorageBackend));
     exports.LocalStorageBackend = LocalStorageBackend;
 });
-unwrapExports(storage);
-var storage_2 = storage.LocalStorageBackend;
 var redirect_based_handler = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -4135,8 +2673,6 @@ var redirect_based_handler = createCommonjsModule(function (module, exports) {
     }(authorization_request_handler.AuthorizationRequestHandler));
     exports.RedirectRequestHandler = RedirectRequestHandler;
 });
-unwrapExports(redirect_based_handler);
-var redirect_based_handler_1 = redirect_based_handler.RedirectRequestHandler;
 var token_response = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -4219,7 +2755,6 @@ var token_response = createCommonjsModule(function (module, exports) {
     }());
     exports.TokenError = TokenError;
 });
-unwrapExports(token_response);
 var token_request_handler = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -4285,8 +2820,6 @@ var token_request_handler = createCommonjsModule(function (module, exports) {
     }());
     exports.BaseTokenRequestHandler = BaseTokenRequestHandler;
 });
-unwrapExports(token_request_handler);
-var token_request_handler_1 = token_request_handler.BaseTokenRequestHandler;
 var token_request = createCommonjsModule(function (module, exports) {
     /*
      * Copyright 2017 Google Inc.
@@ -4358,9 +2891,6 @@ var token_request = createCommonjsModule(function (module, exports) {
     }());
     exports.TokenRequest = TokenRequest;
 });
-unwrapExports(token_request);
-var token_request_1 = token_request.GRANT_TYPE_AUTHORIZATION_CODE;
-var token_request_3 = token_request.TokenRequest;
 var NoHashQueryStringUtils = /** @class */ (function (_super_1) {
     __extends(NoHashQueryStringUtils, _super_1);
     function NoHashQueryStringUtils(code, state, error) {
@@ -4378,7 +2908,7 @@ var NoHashQueryStringUtils = /** @class */ (function (_super_1) {
         };
     };
     return NoHashQueryStringUtils;
-}(query_string_utils_1));
+}(query_string_utils.BasicQueryStringUtils));
 /* global window */
 var createHiddenIFrame = function () {
     var iframe = window.document.createElement('iframe');
@@ -4394,15 +2924,15 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
             case 0:
                 iFrameAuth = createHiddenIFrame();
                 envConfig = config(env);
-                fetchRequestor = new xhr_3();
+                fetchRequestor = new xhr.FetchRequestor();
                 _a.label = 1;
             case 1:
                 _a.trys.push([1, 3, , 4]);
-                return [4 /*yield*/, authorization_service_configuration_1.fetchFromIssuer(envConfig.LOGIN_BASE_URL, fetchRequestor)];
+                return [4 /*yield*/, authorization_service_configuration.AuthorizationServiceConfiguration.fetchFromIssuer(envConfig.LOGIN_BASE_URL, fetchRequestor)];
             case 2:
                 authorizationServiceConfiguration = _a.sent();
-                authorizationHandler = new redirect_based_handler_1(new storage_2(window.sessionStorage), new NoHashQueryStringUtils(null, null, null), iFrameAuth.contentWindow.location);
-                tokenHandler = new token_request_handler_1(fetchRequestor);
+                authorizationHandler = new redirect_based_handler.RedirectRequestHandler(new storage.LocalStorageBackend(window.sessionStorage), new NoHashQueryStringUtils(null, null, null), iFrameAuth.contentWindow.location);
+                tokenHandler = new token_request_handler.BaseTokenRequestHandler(fetchRequestor);
                 getToken_1 = function (authorizationRequestResponse) { return __awaiter(void 0, void 0, void 0, function () {
                     var extras, requestToken, tokenResponse, e_4;
                     return __generator(this, function (_a) {
@@ -4410,10 +2940,10 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
                             case 0:
                                 extras = { prompt: 'none' };
                                 extras['code_verifier'] = authorizationRequestResponse.request.internal['code_verifier'];
-                                requestToken = new token_request_3({
+                                requestToken = new token_request.TokenRequest({
                                     client_id: envConfig.CLIENT_ID,
                                     redirect_uri: envConfig.LOGIN_REDIRECT_URL,
-                                    grant_type: token_request_1,
+                                    grant_type: token_request.GRANT_TYPE_AUTHORIZATION_CODE,
                                     code: authorizationRequestResponse.response.code,
                                     refresh_token: undefined,
                                     extras: extras
@@ -4435,11 +2965,11 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
                         }
                     });
                 }); };
-                request = new authorization_request_1({
+                request = new authorization_request.AuthorizationRequest({
                     client_id: envConfig.CLIENT_ID,
                     redirect_uri: envConfig.LOGIN_REDIRECT_URL,
                     scope: 'openid',
-                    response_type: authorization_request_1.RESPONSE_TYPE_CODE,
+                    response_type: authorization_request.AuthorizationRequest.RESPONSE_TYPE_CODE,
                     state: undefined,
                     extras: { prompt: 'none' }
                 });
@@ -4519,35 +3049,26 @@ var GeneralLoadEvent = /** @class */ (function (_super_1) {
     };
     return GeneralLoadEvent;
 }(AnalyticsEvent));
-var headerCss = ".header-container{background:#fff;position:relative}.header{font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:400;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:3.8125rem}@media (min-width: 760px){.header{height:4.4375rem}}@media (min-width: 1300px){.header{height:7.3125rem;-ms-flex-direction:row;flex-direction:row}}@media (min-width: 1760px){.header{height:7.6875rem}}.header .crest-burger-btn-container{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.header .crest-burger-btn-container .crest{z-index:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}@media (min-width: 1300px){.header .crest-burger-btn-container .crest{z-index:400}}.header .burger-button:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.header .menu-container{visibility:hidden;display:none}@media (min-width: 1300px){.header .menu-container{display:-ms-flexbox;display:flex;visibility:visible;-ms-flex-positive:1;flex-grow:1}}.header .menu-container .menu-desktop-level-1{-ms-flex:1;flex:1}.limit-stretch{width:calc(100vw - 7vw * 2);max-width:96rem;margin-left:auto;margin-right:auto;-webkit-box-sizing:content-box;box-sizing:content-box}@media (min-width: 1760px){.limit-stretch{width:calc(100vw - 10vw * 2)}}@media (min-width: 1000px){.limit-stretch{padding-left:calc(100vw - 100%)}}.header-border{height:1px;background-color:#c9cacb}p-button.skip-content{display:none}@media (min-width: 1000px){p-button.skip-content{display:-ms-inline-flexbox;display:inline-flex;left:-999px;position:absolute;width:auto;height:auto;overflow:hidden;z-index:-999}}p-button.skip-content.focused{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;overflow:visible;z-index:999}.main-content{width:20px}.main-content:focus{outline-style:none}";
+var headerCss = ".header-container{background:#fff;position:relative;visibility:visible}.header{font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:400;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:3.8125rem;visibility:visible}@media (min-width: 760px){.header{height:4.4375rem}}@media (min-width: 1300px){.header{height:7.3125rem;-ms-flex-direction:row;flex-direction:row}}@media (min-width: 1760px){.header{height:7.6875rem}}.header .crest-burger-btn-container{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.header .crest-burger-btn-container .crest{z-index:1;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}@media (min-width: 1300px){.header .crest-burger-btn-container .crest{z-index:400}}.header .burger-button:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.header .menu-container{visibility:hidden;display:none}@media (min-width: 1300px){.header .menu-container{display:-ms-flexbox;display:flex;visibility:visible;-ms-flex-positive:1;flex-grow:1}}.header .menu-container .menu-desktop-level-1{-ms-flex:1;flex:1}.limit-stretch{width:calc(100vw - 7vw * 2);max-width:96rem;margin-left:auto;margin-right:auto;-webkit-box-sizing:content-box;box-sizing:content-box}@media (min-width: 1760px){.limit-stretch{width:calc(100vw - 10vw * 2)}}@media (min-width: 1000px){.limit-stretch{padding-left:calc(100vw - 100%)}}.header-border{height:1px;background-color:#c9cacb}p-button.skip-content{display:none}@media (min-width: 1000px){p-button.skip-content{display:-ms-inline-flexbox;display:inline-flex;left:-999px;position:absolute;width:auto;height:auto;overflow:hidden;z-index:-999}}p-button.skip-content.focused{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;overflow:visible;z-index:999}.main-content{width:20px}.main-content:focus{outline-style:none}";
 var Header = /** @class */ (function () {
-    function Header(hostRef) {
+    function class_2(hostRef) {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.accessTokenExpired = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "accessTokenExpired", 7);
+        this.navigationDidLoad = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "navigationDidLoad", 7);
         this.localeObject = new Locale(DEFAULT_LOCALE);
         this.locale = DEFAULT_LOCALE;
         this.env = DEFAULT_ENVIRONMENT;
-        this.keyDownHandler = function (event) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
-                if (event.key === 'Enter') {
-                    _this_1.menuDrawerLevel1.show();
-                }
-            }
-        };
         this.skipToMainContent = function (event) {
-            if (_this_1.skipContentEnabled) {
-                if (event.key === 'Enter') {
-                    var mainElement = _this_1.el.shadowRoot.querySelector('#main');
-                    mainElement.tabIndex = 0;
-                    mainElement.focus();
-                }
-            }
+            // NOTE: To remain focused on the clicked element
+            event.stopPropagation();
+            var mainElement = _this_1.el.shadowRoot.querySelector('#main');
+            mainElement.tabIndex = 0;
+            mainElement.focus();
         };
         this.mainContentTab = function () {
-            if (_this_1.skipContentEnabled) {
-                var mainElement = _this_1.el.shadowRoot.querySelector('#main');
-                mainElement.tabIndex = -1;
-            }
+            var mainElement = _this_1.el.shadowRoot.querySelector('#main');
+            mainElement.tabIndex = -1;
         };
         this.addFocus = function () {
             var skipContentElement = _this_1.el.shadowRoot.querySelector('p-button.skip-content');
@@ -4559,20 +3080,18 @@ var Header = /** @class */ (function () {
             var skipContentElement = _this_1.el.shadowRoot.querySelector('p-button.skip-content');
             skipContentElement.classList.remove('focused');
         };
-        this.accessTokenExpired = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "accessTokenExpired", 7);
-        this.navigationDidLoad = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "navigationDidLoad", 7);
     }
-    Header.prototype.localeWatchHandler = function (newLocale) {
+    class_2.prototype.localeWatchHandler = function (newLocale) {
         this.localeObject.setLocale(newLocale);
         analyticsSetupStore.set('locale', new Locale(newLocale));
     };
-    Header.prototype.newAccessTokenReceived = function (newAccessToken, _) {
+    class_2.prototype.newAccessTokenReceived = function (newAccessToken, _) {
         if (newAccessToken !== REDACTED && newAccessToken !== this.accessTokenState) {
             this.accessTokenState = newAccessToken;
         }
         this.el.setAttribute('access-token', REDACTED);
     };
-    Header.prototype.accessTokenStateUpdated = function (newToken, oldToken) {
+    class_2.prototype.accessTokenStateUpdated = function (newToken, oldToken) {
         var _this_1 = this;
         if (newToken) {
             if (newToken !== oldToken) {
@@ -4582,9 +3101,7 @@ var Header = /** @class */ (function () {
                         _this_1.accessTokenExpired.emit();
                     }
                     else {
-                        if (isFeatureEnabled(FEATURE_UNREAD_MESSAGES_COUNT, navContentStore.get('env'))) {
-                            updateUnreadMessagesCount(newToken);
-                        }
+                        updateUnreadMessagesCount(newToken);
                     }
                 });
             }
@@ -4593,7 +3110,7 @@ var Header = /** @class */ (function () {
             navContentStore.set('loggedInState', LOGGED_OUT_USER_STATUS);
         }
     };
-    Header.prototype.handleAccessTokenFetchedEvent = function (event) {
+    class_2.prototype.handleAccessTokenFetchedEvent = function (event) {
         if (event.detail.accessToken) {
             this.accessTokenState = event.detail.accessToken;
         }
@@ -4601,16 +3118,10 @@ var Header = /** @class */ (function () {
             navContentStore.set('loggedInState', LOGGED_OUT_USER_STATUS);
         }
     };
-    Header.prototype.handleAccessTokenFetchErrorEvent = function () {
+    class_2.prototype.handleAccessTokenFetchErrorEvent = function () {
         navContentStore.set('loggedInState', LOGGED_OUT_USER_STATUS);
     };
-    Header.prototype.handleMenuOverlayOpen = function () {
-        this.bodyScrollLock.activate();
-    };
-    Header.prototype.handleMenuOverlayClose = function () {
-        this.bodyScrollLock.deactivate();
-    };
-    Header.prototype.componentWillLoad = function () {
+    class_2.prototype.componentWillLoad = function () {
         return __awaiter(this, void 0, void 0, function () {
             var _a, contentForLocale;
             return __generator(this, function (_b) {
@@ -4619,10 +3130,8 @@ var Header = /** @class */ (function () {
                         analyticsSetupStore.set('window', window);
                         analyticsSetupStore.set('environment', this.env);
                         navContentStore.set('env', this.env);
-                        this.bodyScrollLock = new BodyScrollLock();
+                        navStateStore.set('imagesLoaded', false);
                         this.localeWatchHandler(this.locale);
-                        this.skipContentEnabled = isFeatureEnabled(FEATURE_SKIPCONTENT, navContentStore.get('env'));
-                        this.drawerRestructureEnabled = isFeatureEnabled(FEATURE_DRAWER_RESTRUCTURE, navContentStore.get('env'));
                         _a = this;
                         return [4 /*yield*/, fetchContent(this.env)];
                     case 1:
@@ -4655,7 +3164,7 @@ var Header = /** @class */ (function () {
             });
         });
     };
-    Header.prototype.componentDidLoad = function () {
+    class_2.prototype.componentDidLoad = function () {
         return __awaiter(this, void 0, void 0, function () {
             var analyticsSetup, generalLoadEvent, pagData;
             return __generator(this, function (_a) {
@@ -4668,14 +3177,12 @@ var Header = /** @class */ (function () {
                 generalLoadEvent = new GeneralLoadEvent(analyticsSetup);
                 pagData = (window['pagData'] = window['pagData'] || []);
                 pagData.push(generalLoadEvent.event());
-                // Solution for IE11 not loading right image sizes on document load
-                picturefill();
                 this.navigationDidLoad.emit();
                 return [2 /*return*/];
             });
         });
     };
-    Header.prototype.componentWillUpdate = function () {
+    class_2.prototype.componentWillUpdate = function () {
         var contentForLocale = getContentForLocale(this.localeObject, this.content, this.env);
         navContentStore.set('seriesList', contentForLocale.seriesList);
         navContentStore.set('shops', contentForLocale.shops);
@@ -4683,21 +3190,20 @@ var Header = /** @class */ (function () {
         navContentStore.set('metafunctionalities', contentForLocale.metafunctionalities);
         navContentStore.set('menu', contentForLocale.menu);
     };
-    Header.prototype.render = function () {
-        var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header-container" }, this.skipContentEnabled && (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button", { variant: "primary", class: "skip-content", onfocus: this.addFocus, onKeyDown: this.skipToMainContent, onblur: this.removeFocus }, "Skip to main content")), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header limit-stretch" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "crest-burger-btn-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-crest", { class: "crest" }), this.drawerRestructureEnabled ? (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-layout", null)) : (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-burger-button", { tabindex: "0", class: "burger-button", onClick: function () { return _this_1.menuDrawerLevel1.show(); }, onKeyDown: this.keyDownHandler }))), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-desktop-level-1", { class: "menu-desktop-level-1" })), !this.drawerRestructureEnabled && (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-drawer-level-1", { ref: function (el) { return (_this_1.menuDrawerLevel1 = el); } }))), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header-border" }), this.env === 'preview' && Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-preview-badge", { versionString: "Header " + VERSION + " - PP content" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { id: "main", tabindex: "-1", class: "main-content", onBlur: this.mainContentTab })));
+    class_2.prototype.render = function () {
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("header", { class: "header-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button", { variant: "primary", class: "skip-content", onfocus: this.addFocus, onClick: this.skipToMainContent, onblur: this.removeFocus }, "Skip to main content"), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header limit-stretch" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "crest-burger-btn-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-crest", { class: "crest" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-layout", null)), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("nav", { class: "menu-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-desktop-level-1", { class: "menu-desktop-level-1" }))), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header-border" }), this.env === 'preview' && Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-preview-badge", { versionString: "Header " + VERSION + " - PP content" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { id: "main", tabindex: "-1", class: "main-content", onBlur: this.mainContentTab })));
     };
-    Object.defineProperty(Header, "assetsDirs", {
+    Object.defineProperty(class_2, "assetsDirs", {
         get: function () { return ["auth"]; },
         enumerable: false,
         configurable: true
     });
-    Object.defineProperty(Header.prototype, "el", {
-        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+    Object.defineProperty(class_2.prototype, "el", {
+        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
-    Object.defineProperty(Header, "watchers", {
+    Object.defineProperty(class_2, "watchers", {
         get: function () {
             return {
                 "locale": ["localeWatchHandler"],
@@ -4708,16 +3214,16 @@ var Header = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    return Header;
+    return class_2;
 }());
 Header.style = headerCss;
-var headlineCss = ".headline.sc-phn-headline{font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:100;border-bottom:1px solid #7b7e80;padding:0;cursor:default}@media (min-width: 0) and (max-width: 759px){.headline.sc-phn-headline{margin-top:5.1875rem;font-size:2rem;line-height:2.5rem;padding-bottom:0.75rem;padding-left:0.625rem}}@media (min-width: 760px) and (max-width: 999px){.headline.sc-phn-headline{margin-top:6.625rem;font-size:3.75rem;line-height:4.25rem;padding-bottom:0.6875rem;padding-left:0.625rem}}@media (min-width: 1000px) and (max-width: 1299px){.headline.sc-phn-headline{margin-top:6.625rem;font-size:3rem;line-height:3.5rem;padding-bottom:0.6875rem;padding-left:0.625rem}}@media (min-width: 1300px){.headline.sc-phn-headline{font-weight:400;border-bottom:1px solid #4a4a4a;text-align:left;padding-left:0.625rem}}@media (min-width: 1300px) and (max-width: 1759px){.headline.sc-phn-headline{font-size:1.375rem;line-height:1.75rem;padding-bottom:0.6875rem;padding-right:0.625rem}}@media (min-width: 1760px){.headline.sc-phn-headline{font-size:1.5rem;line-height:2rem;padding-bottom:0.4375rem}}";
+var headlineCss = ".headline.sc-phn-headline{font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:100;border-bottom:1px solid #7b7e80;padding:0;cursor:default}@media (min-width: 0) and (max-width: 759px){.headline.sc-phn-headline{margin-top:5.1875rem;font-size:2rem;line-height:2.5rem;padding-bottom:0.75rem;padding-left:0.625rem}}@media (min-width: 760px) and (max-width: 999px){.headline.sc-phn-headline{margin-top:6.625rem;font-size:3.75rem;line-height:4.25rem;padding-bottom:0.6875rem;padding-left:0.625rem}}@media (min-width: 1000px) and (max-width: 1299px){.headline.sc-phn-headline{margin-top:7.375rem;font-size:3rem;line-height:3.5rem;padding-bottom:0.6875rem;padding-left:0.625rem}}@media (min-width: 1300px){.headline.sc-phn-headline{font-weight:400;border-bottom:1px solid #4a4a4a;text-align:left;padding-left:0.625rem}}@media (min-width: 1300px) and (max-width: 1759px){.headline.sc-phn-headline{font-size:1.375rem;line-height:1.75rem;padding-bottom:0.6875rem;padding-right:0.625rem}}@media (min-width: 1760px){.headline.sc-phn-headline{font-size:1.5rem;line-height:2rem;padding-bottom:0.4375rem}}";
 var Headline = /** @class */ (function () {
     function Headline(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     Headline.prototype.render = function () {
-        return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "headline" }, this.text);
+        return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "headline" }, this.text);
     };
     return Headline;
 }());
@@ -4725,7 +3231,7 @@ Headline.style = headlineCss;
 var listItemCss = ".list-item-link.sc-phn-list-item{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;border-bottom:1px solid #c9cacb}.list-item-link.sc-phn-list-item:hover{color:#d5001c;cursor:pointer}@media (min-width: 760px) and (max-width: 999px){.list-item-link.sc-phn-list-item{font-size:1.125rem}}@media (min-width: 1300px){.list-item-link.sc-phn-list-item{border-bottom:0;padding-left:0}}.list-item-link.sc-phn-list-item a.sc-phn-list-item{text-decoration:none;line-height:1.5rem;display:inline-block;width:100%;padding:0.875rem 0 0.875rem 0.625rem}@media (min-width: 760px) and (max-width: 999px){.list-item-link.sc-phn-list-item a.sc-phn-list-item{padding-top:1.125rem;padding-bottom:1.125rem}}@media (min-width: 1300px){.list-item-link.sc-phn-list-item a.sc-phn-list-item{padding-bottom:0}}.list-item-button.sc-phn-list-item{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;border-bottom:1px solid #c9cacb;height:3.3125rem;padding-left:0.625rem;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}@media (min-width: 760px) and (max-width: 999px){.list-item-button.sc-phn-list-item{font-size:1.125rem;height:3.8125rem;padding-right:0.625rem}}@media (min-width: 1300px){.list-item-button.sc-phn-list-item{border-bottom:0;padding-left:0;padding-top:0.875rem}}.list-item-button.sc-phn-list-item .list-item-text.sc-phn-list-item{display:inline-block;line-height:24px}";
 var ListItem = /** @class */ (function () {
     function ListItem(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
         this.sendNavigationClickAnalyticsEvent = function (item) {
             var contentItem = { PhraseId: item.PhraseId, Text: item.Text, Link: item.Link };
@@ -4742,11 +3248,11 @@ var ListItem = /** @class */ (function () {
     }
     ListItem.prototype.renderLinkItem = function (linkItem) {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: linkItem.Link, onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(linkItem); } }, linkItem.Text)));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: linkItem.Link, onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(linkItem); } }, linkItem.Text))));
     };
     ListItem.prototype.renderTextItem = function (textItem) {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "list-item-button", icon: "arrow-head-right", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(textItem); }, cancelTabIndex: false }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "list-item-text" }, textItem.Text)));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "list-item-button", icon: "arrow-head-right", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(textItem); }, cancelTabIndex: false }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "list-item-text" }, textItem.Text)));
     };
     ListItem.prototype.render = function () {
         return this.item.Link ? this.renderLinkItem(this.item) : this.renderTextItem(this.item);
@@ -4754,11 +3260,11 @@ var ListItem = /** @class */ (function () {
     return ListItem;
 }());
 ListItem.style = listItemCss;
-var megaFlyOutOverlayCss = ".backdrop.sc-phn-mega-fly-out-overlay{position:fixed;z-index:200;left:0;right:0;background:rgba(0, 0, 0, 0.5);pointer-events:none;height:100vh;margin-top:1px}@media (min-width: 1300px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button.sc-phn-mega-fly-out-overlay{border-bottom:2px solid transparent}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button.sc-phn-mega-fly-out-overlay:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button-active.sc-phn-mega-fly-out-overlay{border-bottom:2px solid #d5001c}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button-active.sc-phn-mega-fly-out-overlay:hover{color:#d5001c}}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay{display:block;visibility:hidden;width:100%;position:absolute;left:0;z-index:300;max-height:0;overflow:hidden}@media (min-width: 1300px) and (max-width: 1759px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay{top:117px}}@media (min-width: 1760px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay{top:123px}}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-content.sc-phn-mega-fly-out-overlay{background-color:#fff;border-top:1px solid #c9cacb}@media (min-width: 1300px) and (max-width: 1759px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-content.sc-phn-mega-fly-out-overlay{padding-bottom:5rem}}@media (min-width: 1760px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-content.sc-phn-mega-fly-out-overlay{padding-bottom:6rem}}";
+var megaFlyOutOverlayCss = ".backdrop.sc-phn-mega-fly-out-overlay{position:fixed;z-index:200;left:0;right:0;background:rgba(0, 0, 0, 0.5);pointer-events:none;height:100vh;margin-top:1px}@media (min-width: 1300px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button.sc-phn-mega-fly-out-overlay{display:-ms-flexbox;display:flex;font-family:inherit;width:100%;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;cursor:pointer;color:inherit;cursor:default;border-bottom:2px solid transparent}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button.sc-phn-mega-fly-out-overlay::-moz-focus-inner{border:0}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button.sc-phn-mega-fly-out-overlay:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button-active.sc-phn-mega-fly-out-overlay{border-bottom:2px solid #d5001c}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-button-active.sc-phn-mega-fly-out-overlay:hover{color:#d5001c}}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay{display:block;visibility:hidden;width:100%;position:absolute;left:0;z-index:300;max-height:0;overflow:hidden}@media (min-width: 1300px) and (max-width: 1759px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay{top:117px}}@media (min-width: 1760px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay{top:123px}}.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-content.sc-phn-mega-fly-out-overlay{background-color:#fff;border-top:1px solid #c9cacb}@media (min-width: 1300px) and (max-width: 1759px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-content.sc-phn-mega-fly-out-overlay{padding-bottom:5rem}}@media (min-width: 1760px){.mega-fly-out-overlay.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-container.sc-phn-mega-fly-out-overlay .mega-fly-out-overlay-content.sc-phn-mega-fly-out-overlay{padding-bottom:6rem}}";
 var MegaFlyOutOverlay = /** @class */ (function () {
-    function MegaFlyOutOverlay(hostRef) {
+    function class_3(hostRef) {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.active = '';
         this.setBackdropOffset = function () {
             var offsetFromTop = document.body.querySelector('phn-header').getBoundingClientRect().bottom;
@@ -4774,15 +3280,9 @@ var MegaFlyOutOverlay = /** @class */ (function () {
             window.addEventListener('scroll', _this_1.setBackdropOffset);
         };
         this.handleKeyDown = function (event) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
-                if (event.key === 'Enter') {
-                    _this_1.activateOverlay();
-                    _this_1.keyboardShowOverlayHandler(_this_1.containerElement);
-                }
-                if (event.shiftKey && event.key === 'Tab') {
-                    _this_1.deactivateState();
-                    _this_1.keyboardHideOverlayHandler();
-                }
+            if (event.shiftKey && event.key === 'Tab') {
+                _this_1.deactivateState();
+                _this_1.keyboardHideOverlayHandler();
             }
         };
         this.handleKeyDownContainer = function (event) {
@@ -4798,8 +3298,14 @@ var MegaFlyOutOverlay = /** @class */ (function () {
                 _this_1.keyboardHideOverlayHandler();
             }
         };
+        // also activates screenreader space and enter
+        this.handleClick = function (event) {
+            event.stopPropagation(); //prevent focus from being lost
+            _this_1.activateOverlay();
+            _this_1.keyboardShowOverlayHandler(_this_1.containerElement);
+        };
     }
-    MegaFlyOutOverlay.prototype.showOverlay = function () {
+    class_3.prototype.showOverlay = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 this.activateOverlay();
@@ -4808,7 +3314,7 @@ var MegaFlyOutOverlay = /** @class */ (function () {
             });
         });
     };
-    MegaFlyOutOverlay.prototype.deactivateState = function () {
+    class_3.prototype.deactivateState = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 window.removeEventListener('scroll', this.setBackdropOffset);
@@ -4817,7 +3323,7 @@ var MegaFlyOutOverlay = /** @class */ (function () {
             });
         });
     };
-    MegaFlyOutOverlay.prototype.hideOverlay = function () {
+    class_3.prototype.hideOverlay = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 this.deactivateState();
@@ -4826,16 +3332,16 @@ var MegaFlyOutOverlay = /** @class */ (function () {
             });
         });
     };
-    MegaFlyOutOverlay.prototype.render = function () {
+    class_3.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { tabindex: "0", class: 'mega-fly-out-overlay-button mega-fly-out-overlay-button-' + this.active, onKeyDown: this.handleKeyDown }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "button" })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-container", ref: function (el) { return (_this_1.containerElement = el); }, onKeyDown: this.handleKeyDownContainer }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-content" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" }))), this.active && Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "backdrop", ref: function (el) { return (_this_1.backdropElement = el); } }))));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { class: 'mega-fly-out-overlay-button mega-fly-out-overlay-button-' + this.active, onKeyDown: this.handleKeyDown, onClick: this.handleClick, "aria-expanded": this.active === 'active' ? 'true' : 'false', "aria-haspopup": "true", id: this.screenReaderId }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "button" })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-container", ref: function (el) { return (_this_1.containerElement = el); }, onKeyDown: this.handleKeyDownContainer, "aria-labelledby": this.screenReaderId, "aria-hidden": this.active === 'active' ? 'false' : 'true', role: "region" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-content" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" }))), this.active && Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "backdrop", ref: function (el) { return (_this_1.backdropElement = el); } }))));
     };
-    Object.defineProperty(MegaFlyOutOverlay.prototype, "element", {
-        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+    Object.defineProperty(class_3.prototype, "element", {
+        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
-    return MegaFlyOutOverlay;
+    return class_3;
 }());
 MegaFlyOutOverlay.style = megaFlyOutOverlayCss;
 var HoverIntentService = /** @class */ (function () {
@@ -4969,7 +3475,7 @@ function _assertThisInitialized(self) { if (self === void 0) {
 } return self; }
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 /*!
- * GSAP 3.3.4
+ * GSAP 3.4.2
  * https://greensock.com
  *
  * @license Copyright 2008-2020, GreenSock. All rights reserved.
@@ -5187,9 +3693,7 @@ _round = function _round(value) {
     }
     child._next = child._prev = child.parent = null; // don't delete the _dp just so we can revert if necessary. But parent should be null to indicate the item isn't in a linked list.
 }, _removeFromParent = function _removeFromParent(child, onlyIfParentHasAutoRemove) {
-    if (child.parent && (!onlyIfParentHasAutoRemove || child.parent.autoRemoveChildren)) {
-        child.parent.remove(child);
-    }
+    child.parent && (!onlyIfParentHasAutoRemove || child.parent.autoRemoveChildren) && child.parent.remove(child);
     child._act = 0;
 }, _uncache = function _uncache(animation) {
     var a = animation;
@@ -5219,6 +3723,15 @@ _animationCycle = function _animationCycle(tTime, cycleDuration) {
     return (parentTime - child._start) * child._ts + (child._ts >= 0 ? 0 : child._dirty ? child.totalDuration() : child._tDur);
 }, _setEnd = function _setEnd(animation) {
     return animation._end = _round(animation._start + (animation._tDur / Math.abs(animation._ts || animation._rts || _tinyNum) || 0));
+}, _alignPlayhead = function _alignPlayhead(animation, totalTime) {
+    // adjusts the animation's _start and _end according to the provided totalTime (only if the parent's smoothChildTiming is true and the animation isn't paused). It doesn't do any rendering or forcing things back into parent timelines, etc. - that's what totalTime() is for.
+    var parent = animation._dp;
+    if (parent && parent.smoothChildTiming && animation._ts) {
+        animation._start = _round(animation._dp._time - (animation._ts > 0 ? totalTime / animation._ts : ((animation._dirty ? animation.totalDuration() : animation._tDur) - totalTime) / -animation._ts));
+        _setEnd(animation);
+        parent._dirty || _uncache(parent); //for performance improvement. If the parent's cache is already dirty, it already took care of marking the ancestors as dirty too, so skip the function call here.
+    }
+    return animation;
 }, 
 /*
 _totalTimeToTime = (clampedTotalTime, duration, repeat, repeatDelay, yoyo) => {
@@ -6097,22 +4610,18 @@ var Animation = /*#__PURE__*/ function () {
             return this._tDur;
         }
         this._dirty = 0;
-        return _setDuration(this, this._repeat < 0 ? value : (value - this._repeat * this._rDelay) / (this._repeat + 1));
+        var t = this._time / this._dur || 0;
+        _setDuration(this, this._repeat < 0 ? value : (value - this._repeat * this._rDelay) / (this._repeat + 1));
+        return this._tTime ? _alignPlayhead(this, t * value + _elapsedCycleDuration(this)) : this; // in case the animation hasn't even started yet and it has a delay. Aligning the playhead in that case would make it appear to lose the delay.
     };
     _proto.totalTime = function totalTime(_totalTime, suppressEvents) {
         _wake();
         if (!arguments.length) {
             return this._tTime;
         }
-        var parent = this.parent || this._dp;
+        var parent = this._dp;
         if (parent && parent.smoothChildTiming && this._ts) {
-            // if (!parent._dp && parent._time === parent._dur) { // if a root timeline completes...and then a while later one of its children resumes, we must shoot the playhead forward to where it should be raw-wise, otherwise the child will jump to the end. Down side: this assumes it's using the _ticker.time as a reference.
-            // 	parent._time = _ticker.time - parent._start;
-            // }
-            this._start = _round(parent._time - (this._ts > 0 ? _totalTime / this._ts : ((this._dirty ? this.totalDuration() : this._tDur) - _totalTime) / -this._ts));
-            _setEnd(this);
-            parent._dirty || _uncache(parent); //for performance improvement. If the parent's cache is already dirty, it already took care of marking the ancestors as dirty too, so skip the function call here.
-            //in case any of the ancestor timelines had completed but should now be enabled, we should reset their totalTime() which will also ensure that they're lined up properly and enabled. Skip for animations that are on the root (wasteful). Example: a TimelineLite.exportRoot() is performed when there's a paused tween on the root, the export will not complete until that tween is unpaused, but imagine a child gets restarted later, after all [unpaused] tweens have completed. The start of that child would get pushed out, but one of the ancestors may have completed.
+            _alignPlayhead(this, _totalTime); //in case any of the ancestor timelines had completed but should now be enabled, we should reset their totalTime() which will also ensure that they're lined up properly and enabled. Skip for animations that are on the root (wasteful). Example: a TimelineLite.exportRoot() is performed when there's a paused tween on the root, the export will not complete until that tween is unpaused, but imagine a child gets restarted later, after all [unpaused] tweens have completed. The start of that child would get pushed out, but one of the ancestors may have completed.
             while (parent.parent) {
                 if (parent.parent._time !== parent._start + (parent._ts >= 0 ? parent._tTime / parent._ts : (parent.totalDuration() - parent._tTime) / -parent._ts)) {
                     parent.totalTime(parent._tTime, true);
@@ -6155,7 +4664,7 @@ var Animation = /*#__PURE__*/ function () {
         // prioritize rendering where the parent's playhead lines up instead of this._tTime because there could be a tween that's animating another tween's timeScale in the same rendering loop (same parent), thus if the timeScale tween renders first, it would alter _start BEFORE _tTime was set on that tick (in the rendering loop), effectively freezing it until the timeScale tween finishes.
         this._rts = +value || 0;
         this._ts = this._ps || value === -_tinyNum ? 0 : this._rts; // _ts is the functional timeScale which would be 0 if the animation is paused.
-        return _recacheAncestors(this.totalTime(_clamp(0, this._tDur, tTime), true));
+        return _recacheAncestors(this.totalTime(_clamp(-this._delay, this._tDur, tTime), true));
     };
     _proto.paused = function paused(value) {
         if (!arguments.length) {
@@ -6190,8 +4699,15 @@ var Animation = /*#__PURE__*/ function () {
     _proto.rawTime = function rawTime(wrapRepeats) {
         var parent = this.parent || this._dp; // _dp = detatched parent
         return !parent ? this._tTime : wrapRepeats && (!this._ts || this._repeat && this._time && this.totalProgress() < 1) ? this._tTime % (this._dur + this._rDelay) : !this._ts ? this._tTime : _parentToChildTotalTime(parent.rawTime(wrapRepeats), this);
-    } // globalTime(rawTime) {
-    ;
+    };
+    _proto.globalTime = function globalTime(rawTime) {
+        var animation = this, time = arguments.length ? rawTime : animation.rawTime();
+        while (animation) {
+            time = animation._start + time / (animation._ts || 1);
+            animation = animation._dp;
+        }
+        return time;
+    };
     _proto.repeat = function repeat(value) {
         if (arguments.length) {
             this._repeat = value;
@@ -6254,9 +4770,9 @@ var Animation = /*#__PURE__*/ function () {
         this._zTime = -_tinyNum;
         return this;
     };
-    _proto.isActive = function isActive(hasStarted) {
+    _proto.isActive = function isActive() {
         var parent = this.parent || this._dp, start = this._start, rawTime;
-        return !!(!parent || this._ts && (this._initted || !hasStarted) && parent.isActive(hasStarted) && (rawTime = parent.rawTime(true)) >= start && rawTime < this.endTime(true) - _tinyNum);
+        return !!(!parent || this._ts && this._initted && parent.isActive() && (rawTime = parent.rawTime(true)) >= start && rawTime < this.endTime(true) - _tinyNum);
     };
     _proto.eventCallback = function eventCallback(type, callback, params) {
         var vars = this.vars;
@@ -6615,7 +5131,7 @@ var Timeline = /*#__PURE__*/ function (_Animation) {
             return this._tTime;
         }
         this._forcing = 1;
-        if (!this.parent && !this._dp && this._ts) {
+        if (!this._dp && this._ts) {
             //special case for the global timeline (or any other that has no parent or detached parent).
             this._start = _round(_ticker.time - (this._ts > 0 ? _totalTime2 / this._ts : (this.totalDuration() - _totalTime2) / -this._ts));
         }
@@ -6655,10 +5171,13 @@ var Timeline = /*#__PURE__*/ function (_Animation) {
         return this;
     };
     _proto2.getTweensOf = function getTweensOf(targets, onlyActive) {
-        var a = [], parsedTargets = toArray(targets), child = this._first, children;
+        var a = [], parsedTargets = toArray(targets), child = this._first, isGlobalTime = _isNumber(onlyActive), 
+        // a number is interpreted as a global time. If the animation spans
+        children;
         while (child) {
             if (child instanceof Tween) {
-                if (_arrayContainsAny(child._targets, parsedTargets) && (!onlyActive || child.isActive(onlyActive === "started"))) {
+                if (_arrayContainsAny(child._targets, parsedTargets) && (isGlobalTime ? (!_overwritingTween || child._initted && child._ts) && child.globalTime(0) <= onlyActive && child.globalTime(child.totalDuration()) > onlyActive : !onlyActive || child.isActive())) {
+                    // note: if this is for overwriting, it should only be for tweens that aren't paused and are initted.
                     a.push(child);
                 }
             }
@@ -6878,7 +5397,7 @@ var _addComplexStringPropTween = function _addComplexStringPropTween(target, pro
         }
     }
     if (parsedStart !== end) {
-        if (!isNaN(parsedStart + end)) {
+        if (!isNaN(parsedStart * end)) {
             pt = new PropTween(this._pt, target, prop, +parsedStart || 0, end - (parsedStart || 0), typeof currentValue === "boolean" ? _renderBoolean : _renderPlain, 0, setter);
             funcParam && (pt.fp = funcParam);
             modifier && pt.modifier(modifier, this, target);
@@ -6917,7 +5436,7 @@ _processVars = function _processVars(vars, index, target, targets, tween) {
 }, _overwritingTween, 
 //store a reference temporarily so we can avoid overwriting itself.
 _initTween = function _initTween(tween, time) {
-    var vars = tween.vars, ease = vars.ease, startAt = vars.startAt, immediateRender = vars.immediateRender, lazy = vars.lazy, onUpdate = vars.onUpdate, onUpdateParams = vars.onUpdateParams, callbackScope = vars.callbackScope, runBackwards = vars.runBackwards, yoyoEase = vars.yoyoEase, keyframes = vars.keyframes, autoRevert = vars.autoRevert, dur = tween._dur, prevStartAt = tween._startAt, targets = tween._targets, parent = tween.parent, fullTargets = parent && parent.data === "nested" ? parent.parent._targets : targets, autoOverwrite = tween._overwrite === "auto", tl = tween.timeline, cleanVars, i, p, pt, target, hasPriority, gsData, harness, plugin, ptLookup, index, harnessVars;
+    var vars = tween.vars, ease = vars.ease, startAt = vars.startAt, immediateRender = vars.immediateRender, lazy = vars.lazy, onUpdate = vars.onUpdate, onUpdateParams = vars.onUpdateParams, callbackScope = vars.callbackScope, runBackwards = vars.runBackwards, yoyoEase = vars.yoyoEase, keyframes = vars.keyframes, autoRevert = vars.autoRevert, dur = tween._dur, prevStartAt = tween._startAt, targets = tween._targets, parent = tween.parent, fullTargets = parent && parent.data === "nested" ? parent.parent._targets : targets, autoOverwrite = tween._overwrite === "auto", tl = tween.timeline, cleanVars, i, p, pt, target, hasPriority, gsData, harness, plugin, ptLookup, index, harnessVars, overwritten;
     tl && (!keyframes || !ease) && (ease = "none");
     tween._ease = _parseEase(ease, _defaults.ease);
     tween._yEase = yoyoEase ? _invertEase(_parseEase(yoyoEase === true ? ease : yoyoEase, _defaults.ease)) : 0;
@@ -6951,7 +5470,8 @@ _initTween = function _initTween(tween, time) {
                 if (time > 0) {
                     !autoRevert && (tween._startAt = 0); //tweens that render immediately (like most from() and fromTo() tweens) shouldn't revert when their parent timeline's playhead goes backward past the startTime because the initial render could have happened anytime and it shouldn't be directly correlated to this tween's startTime. Imagine setting up a complex animation where the beginning states of various objects are rendered immediately but the tween doesn't happen for quite some time - if we revert to the starting values as soon as the playhead goes backward past the tween's startTime, it will throw things off visually. Reversion should only happen in Timeline instances where immediateRender was false or when autoRevert is explicitly set to true.
                 }
-                else if (dur) {
+                else if (dur && !(time < 0 && prevStartAt)) {
+                    tween._zTime = time;
                     return; //we skip initialization here so that overwriting doesn't occur until the tween actually begins. Otherwise, if you create several immediateRender:true tweens of the same target/properties to drop into a Timeline, the last one created would overwrite the first ones because they didn't get placed into the timeline yet before the first render occurs and kicks in overwriting.
                 }
             }
@@ -7011,7 +5531,8 @@ _initTween = function _initTween(tween, time) {
             tween._op && tween._op[i] && tween.kill(target, tween._op[i]);
             if (autoOverwrite && tween._pt) {
                 _overwritingTween = tween;
-                _globalTimeline.killTweensOf(target, ptLookup, "started"); //Also make sure the overwriting doesn't overwrite THIS tween!!!
+                _globalTimeline.killTweensOf(target, ptLookup, tween.globalTime(0)); //Also make sure the overwriting doesn't overwrite THIS tween!!!
+                overwritten = !tween.parent;
                 _overwritingTween = 0;
             }
             tween._pt && lazy && (_lazyLookup[gsData.id] = 1);
@@ -7021,7 +5542,7 @@ _initTween = function _initTween(tween, time) {
     }
     tween._from = !tl && !!vars.runBackwards; //nested timelines should never run backwards - the backwards-ness is in the child tweens.
     tween._onUpdate = onUpdate;
-    tween._initted = !!tween.parent; // if overwrittenProps resulted in the entire tween being killed, do NOT flag it as initted or else it may render for one tick.
+    tween._initted = (!tween._op || tween._pt) && !overwritten; // if overwrittenProps resulted in the entire tween being killed, do NOT flag it as initted or else it may render for one tick.
 }, _addAliasesToVars = function _addAliasesToVars(targets, vars) {
     var harness = targets[0] ? _getCache(targets[0]).harness : 0, propertyAliases = harness && harness.aliases, copy, p, i, aliases;
     if (!propertyAliases) {
@@ -7171,7 +5692,7 @@ var Tween = /*#__PURE__*/ function (_Animation2) {
                 }
             }
             if (!this._initted) {
-                if (_attemptInitTween(this, time, force, suppressEvents)) {
+                if (_attemptInitTween(this, totalTime < 0 ? totalTime : time, force, suppressEvents)) {
                     this._tTime = 0; // in constructor if immediateRender is true, we set _tTime to -_tinyNum to have the playhead cross the starting point but we can't leave _tTime as a negative number.
                     return this;
                 }
@@ -7243,6 +5764,7 @@ var Tween = /*#__PURE__*/ function (_Animation2) {
         }
         var parsedTargets = this._targets, killingTargets = targets ? toArray(targets) : parsedTargets, propTweenLookup = this._ptLookup, firstPT = this._pt, overwrittenProps, curLookup, curOverwriteProps, props, p, pt, i;
         if ((!vars || vars === "all") && _arraysMatch(parsedTargets, killingTargets)) {
+            vars === "all" && (this._pt = 0);
             return _interrupt(this);
         }
         overwrittenProps = this._op = this._op || [];
@@ -7691,13 +6213,13 @@ var gsap = _gsap.registerPlugin({
         }
     }
 }, _buildModifierPlugin("roundProps", _roundModifier), _buildModifierPlugin("modifiers"), _buildModifierPlugin("snap", snap)) || _gsap; //to prevent the core plugins from being dropped via aggressive tree shaking, we must include them in the variable declaration in this way.
-Tween.version = Timeline.version = gsap.version = "3.3.4";
+Tween.version = Timeline.version = gsap.version = "3.4.2";
 _coreReady = 1;
 if (_windowExists()) {
     _wake();
 }
 /*!
- * CSSPlugin 3.3.4
+ * CSSPlugin 3.4.2
  * https://greensock.com
  *
  * Copyright 2008-2020, GreenSock. All rights reserved.
@@ -7766,7 +6288,7 @@ _renderRoundedCSSProp = function _renderRoundedCSSProp(ratio, data) {
         };
         _tempDivStyler = _createElement("div");
         _transformProp = _checkPropPrefix(_transformProp);
-        _transformOriginProp = _checkPropPrefix(_transformOriginProp);
+        _transformOriginProp = _transformProp + "Origin";
         _tempDiv.style.cssText = "border-width:0;line-height:0;position:absolute;padding:0"; //make sure to override certain properties that may contaminate measurements, in case the user has overreaching style sheets.
         _supports3D = !!_checkPropPrefix("perspective");
         _pluginInitted = 1;
@@ -7828,7 +6350,7 @@ _renderRoundedCSSProp = function _renderRoundedCSSProp(ratio, data) {
 _removeProperty = function _removeProperty(target, property) {
     if (property) {
         var style = target.style;
-        if (property in _transformProps) {
+        if (property in _transformProps && property !== _transformOriginProp) {
             property = _transformProp;
         }
         if (style.removeProperty) {
@@ -7897,9 +6419,7 @@ _convertToUnit = function _convertToUnit(target, property, value, unit) {
     return _round(toPixels ? px * curValue / amount : px && curValue ? amount / px * curValue : 0);
 }, _get = function _get(target, property, unit, uncache) {
     var value;
-    if (!_pluginInitted) {
-        _initCore();
-    }
+    _pluginInitted || _initCore();
     if (property in _propertyAliases && property !== "transform") {
         property = _propertyAliases[property];
         if (~property.indexOf(",")) {
@@ -7925,6 +6445,9 @@ _convertToUnit = function _convertToUnit(target, property, value, unit) {
         if (s && s !== start) {
             prop = p;
             start = s;
+        }
+        else if (prop === "borderColor") {
+            start = _getComputedProperty(target, "borderTopColor"); // Firefox bug: always reports "borderColor" as "", so we must fall back to borderTopColor. See https://greensock.com/forums/topic/24583-how-to-return-colors-that-i-had-after-reverse/
         }
     }
     var pt = new PropTween(this._pt, target.style, prop, 0, 1, _renderComplexString), index = 0, matchIndex = 0, a, result, startValues, startNum, color, startValue, endValue, endNum, chunk, endUnit, startUnit, relative, endValues;
@@ -8743,7 +7266,7 @@ var menuDesktopLevel1Css = ".menu-desktop-level-1.sc-phn-menu-desktop-level-1{di
 var MenuDesktopLevel1 = /** @class */ (function () {
     function MenuDesktopLevel1(hostRef) {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.hoverIntentService = new HoverIntentService();
         this.overlayAnimation = new OverlayAnimation();
         this.mouseMoveListener = function (event) { return _this_1.onmousemove(event); };
@@ -8802,165 +7325,116 @@ var MenuDesktopLevel1 = /** @class */ (function () {
         };
     }
     MenuDesktopLevel1.prototype.handleMouseEnter = function () {
-        document.addEventListener('mousemove', this.mouseMoveListener);
-        this.mouseLeftNavigation = false;
+        if (navStateStore.get('navigationLoaded')) {
+            document.addEventListener('mousemove', this.mouseMoveListener);
+            this.mouseLeftNavigation = false;
+        }
     };
     MenuDesktopLevel1.prototype.onmousemove = function (event) {
         this.hoverIntentService.handleMouseMove(event, '.overlay-trigger');
     };
     MenuDesktopLevel1.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-desktop-level-1" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-series-shop-and-more", onMouseEnter: function () { return _this_1.handleMouseEnter(); }, onMouseLeave: function () { return _this_1.handleMouseLeave(); } }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-list", { showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more", { showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-separator" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "metafunctionalities" })));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-desktop-level-1" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-series-shop-and-more", onMouseEnter: function () { return _this_1.handleMouseEnter(); }, onMouseLeave: function () { return _this_1.handleMouseLeave(); } }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-list", { showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more", { showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler })), navStateStore.get('navigationLoaded') ? Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-separator" }) : null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "metafunctionalities" })));
     };
     return MenuDesktopLevel1;
 }());
 MenuDesktopLevel1.style = menuDesktopLevel1Css;
 var MenuDrawerAnimation = /** @class */ (function () {
     function MenuDrawerAnimation() {
-        this.slideIn = function (element) {
-            element.querySelector('.menu-drawer-level-1').setAttribute('style', 'visibility: visible;');
-            gsapWithCSS.to(element.querySelector('.drawer-level-1'), {
+        this.slideInFirstMenuDrawer = function (element, eventDispatch) {
+            // Specifically used to slide in first drawer with backdrop
+            var menuDrawerContainer = element.querySelector('.menu-drawer-container');
+            var styles = {
+                visibility: 'visible',
+                backgroundColor: 'rgba(0,0,0,0)'
+            };
+            Object.assign(menuDrawerContainer.style, styles);
+            gsapWithCSS.to(menuDrawerContainer, {
+                backgroundColor: 'rgba(0,0,0,0.8)',
+                duration: 0.32
+            });
+            gsapWithCSS.to(element.querySelector('.menu-drawer-content'), {
                 right: '0%',
                 duration: 0.32,
-                ease: 'sine.inOut'
+                ease: 'sine.inOut',
+                onComplete: function () {
+                    eventDispatch();
+                }
             });
         };
-        this.slideInMenuDrawer = function (element) {
+        this.slideInMenuDrawer = function (mobileLayoutElement, element) {
+            // Slide in all other drawers except first and without backdrop
             element.querySelector('.menu-drawer-container').setAttribute('style', 'visibility: visible;');
             gsapWithCSS.to(element.querySelector('.menu-drawer-content'), {
                 right: '0%',
                 duration: 0.32,
-                ease: 'sine.inOut'
-            });
-        };
-        this.slideOut = function (element) {
-            gsapWithCSS.to(element.querySelector('.drawer-level-1'), {
-                right: '-100%',
-                duration: 0.24,
                 ease: 'sine.inOut',
                 onComplete: function () {
-                    element.querySelector('.menu-drawer-level-1').setAttribute('style', 'visibility:hidden');
+                    if (mobileLayoutElement) {
+                        var bottomDrawers = mobileLayoutElement.querySelectorAll('.drawer-trigger:not(:last-child) .menu-drawer-content');
+                        var lastBottomDrawer = bottomDrawers[bottomDrawers.length - 1];
+                        lastBottomDrawer.scrollTop = 0;
+                        lastBottomDrawer.style.visibility = 'hidden';
+                    }
                 }
             });
         };
-        this.slideOutMenuDrawer = function (element) {
+        this.slideOutMenuDrawer = function (mobileLayout, element, callback) {
+            var bottomDrawers = mobileLayout.querySelectorAll('.drawer-trigger:not(:last-child)');
+            var lastBottomDrawer = bottomDrawers[bottomDrawers.length - 1];
+            lastBottomDrawer.querySelector('.menu-drawer-content').style.visibility = 'visible';
+            lastBottomDrawer.focus();
             gsapWithCSS.to(element.querySelector('.menu-drawer-content'), {
                 right: '-100%',
                 duration: 0.24,
                 ease: 'sine.inOut',
                 onComplete: function () {
                     element.querySelector('.menu-drawer-container').setAttribute('style', 'visibility:hidden');
+                    callback();
+                }
+            });
+        };
+        this.slideOutAllMenuDrawers = function (mobileLayoutElement, resetDrawerStates) {
+            gsapWithCSS.to(mobileLayoutElement.querySelector('.drawer-trigger .menu-drawer-container'), {
+                backgroundColor: 'rgba(0,0,0,0)',
+                duration: 0.24
+            });
+            gsapWithCSS.to(mobileLayoutElement.querySelectorAll('.drawer-trigger .menu-drawer-content'), {
+                right: '-100%',
+                duration: 0.24,
+                ease: 'sine.inOut',
+                onComplete: function () {
+                    resetDrawerStates();
                 }
             });
         };
     }
     return MenuDrawerAnimation;
 }());
-var menuDrawerCss = ".menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer{position:fixed;z-index:300;top:0;left:0;width:100%;height:100vh;background-color:rgba(0, 0, 0, 0.3);visibility:hidden}@media (min-width: 1300px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer{display:none}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer{position:fixed;right:-100%;bottom:0;top:0;overflow-y:auto;background-color:#fff;width:100%}@media (min-width: 1000px) and (max-width: 1299px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer{width:568px}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer{padding-left:7%;padding-right:7%}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer{padding-top:0.75rem}}@media (min-width: 1300px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer{padding-top:unset}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer .back-button.sc-phn-menu-drawer{margin-left:-0.625rem}@media (min-width: 760px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer .close-button.sc-phn-menu-drawer{margin-right:-1.125rem}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.drawer-close.sc-phn-menu-drawer{-ms-flex-pack:end;justify-content:flex-end}";
+var menuDrawerCss = ".menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer{position:fixed;z-index:300;top:0;left:0;width:100%;height:100vh;visibility:hidden}@media (min-width: 1300px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer{display:none}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer{position:fixed;right:-100%;bottom:0;top:0;overflow-y:auto;background-color:#fff;width:100%}@media (min-width: 1000px) and (max-width: 1299px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer{width:568px}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer{padding-left:7%;padding-right:7%}@media (min-width: 1000px) and (max-width: 1299px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer{padding-left:6.34%;padding-right:6.34%}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 999px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer{padding-top:0.75rem}}@media (min-width: 1000px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer{padding-top:1.5rem}}@media (min-width: 1300px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer{padding-top:unset}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer .back-button.sc-phn-menu-drawer{margin-left:-0.625rem}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer .close-button.sc-phn-menu-drawer{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}@media (min-width: 760px) and (max-width: 999px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer .close-button.sc-phn-menu-drawer{margin-right:-1.875rem;height:3rem;width:3rem}}@media (min-width: 1000px){.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.sc-phn-menu-drawer .close-button.sc-phn-menu-drawer{margin-right:-0.3125rem}}.menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-phn-menu-drawer .menu-drawer-content.sc-phn-menu-drawer .menu-drawer-content-wrapper.sc-phn-menu-drawer .drawer-back-and-close.drawer-close.sc-phn-menu-drawer{-ms-flex-pack:end;justify-content:flex-end}";
 var MenuDrawer = /** @class */ (function () {
     function MenuDrawer(hostRef) {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.closeAllDrawers = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "closeAllDrawers", 7);
+        this.menuOverlayOpen = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "menuOverlayOpen", 7);
         this.menuDrawerAnimation = new MenuDrawerAnimation();
-        this.clickBackground = function (event) {
-            _this_1.handleClose(event);
+        this.isFirstDrawer = false;
+        this.handleBack = function () {
+            _this_1.menuDrawerAnimation.slideOutMenuDrawer(_this_1.mobileLayout, _this_1.el, function () {
+                var newStack = navStateStore.get('drawerContentStack');
+                newStack.pop();
+                navStateStore.set('drawerContentStack', __spreadArrays(newStack));
+            });
         };
-        this.clickMenu = function (event) {
+        this.close = function () {
+            _this_1.closeAllDrawers.emit();
+        };
+        this.stopClickEvent = function (event) {
             event.stopPropagation();
         };
     }
-    MenuDrawer.prototype.showContent = function (element) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                this.menuDrawerAnimation.slideInMenuDrawer(element);
-                return [2 /*return*/];
-            });
-        });
-    };
-    MenuDrawer.prototype.hideContent = function (element) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                this.menuDrawerAnimation.slideOutMenuDrawer(element);
-                return [2 /*return*/];
-            });
-        });
-    };
-    MenuDrawer.prototype.slotChange = function (event) {
-        // For Animation - e.g.
-        // const drawerContent = this.el.querySelector('.menu-drawer-content') as HTMLElement;
-        // drawerContent.style.right = '-100%';
-        this.eventTriggered = event.target;
-    };
-    MenuDrawer.prototype.keyDownListener = function (event) {
-        if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
-            this.enterTriggered = event.key === 'Enter';
-            if (!event.shiftKey && event.key === 'Tab') {
-                var focusable = this.el.querySelectorAll(FOCUSABLE_ELEMENTS_SELECTOR);
-                if (event.target === focusable[focusable.length - 1]) {
-                    event.preventDefault();
-                    var backButton = this.el
-                        .closest('phn-menu-drawer')
-                        .querySelector('phn-back-button > p-button-pure');
-                    if (backButton) {
-                        backButton.focus();
-                    }
-                    else {
-                        var closeButton = this.el.closest('phn-menu-drawer').querySelector('phn-close-button');
-                        closeButton.focus();
-                    }
-                }
-            }
-        }
-        else {
-            this.enterTriggered = false;
-        }
-    };
-    MenuDrawer.prototype.componentDidUpdate = function () {
-        if (this.enterTriggered && this.eventTriggered) {
-            var accessibilityMarker = navStateStore.get('accessibilityMarker');
-            var focusElement = null;
-            if (accessibilityMarker && accessibilityMarker !== '') {
-                focusElement = this.eventTriggered.querySelector('' + accessibilityMarker);
-                if (focusElement) {
-                    focusElement.focus();
-                }
-            }
-            if (!focusElement) {
-                focusElement = this.eventTriggered.querySelector('phn-back-button > p-button-pure');
-                if (focusElement) {
-                    focusElement.focus();
-                }
-                else {
-                    focusElement = this.eventTriggered.querySelector('phn-close-button');
-                    focusElement.focus();
-                }
-            }
-        }
-        // For Animation - e.g.
-        // this.showContent(this.el);
-        this.eventTriggered = null;
-        this.enterTriggered = false;
-    };
-    MenuDrawer.prototype.handleBack = function () {
-        var parentDrawerContent = navStateStore.get('parentDrawerContent');
-        navStateStore.set('activeDrawerContent', parentDrawerContent[0]);
-        navStateStore.set('parentDrawerContent', parentDrawerContent.filter(function (_, index) { return index > 0; }));
-        navStateStore.set('backButtonText', null);
-    };
-    MenuDrawer.prototype.handleClose = function (event) {
-        navStateStore.reset();
-        var menuDrawer = event.target.closest('.drawer-trigger');
-        menuDrawer.hideContent(menuDrawer);
-    };
-    MenuDrawer.prototype.keyDownHandler = function (event) {
-        if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
-            if (event.key === 'Enter') {
-                navStateStore.reset();
-                var menuDrawer = event.target.closest('.drawer-trigger');
-                menuDrawer.hideContent(menuDrawer);
-            }
-        }
-    };
     MenuDrawer.prototype.getValueForField = function (fieldName) {
         var text = '';
         var menu = navContentStore.get('menu');
@@ -8972,126 +7446,38 @@ var MenuDrawer = /** @class */ (function () {
         }
         return text;
     };
+    MenuDrawer.prototype.componentWillLoad = function () {
+        this.isFirstDrawer = navStateStore.get('drawerContentStack').length === 1;
+    };
+    MenuDrawer.prototype.componentDidLoad = function () {
+        if (this.isFirstDrawer) {
+            this.menuDrawerAnimation.slideInFirstMenuDrawer(this.el, this.menuOverlayOpen.emit);
+        }
+        else {
+            this.menuDrawerAnimation.slideInMenuDrawer(this.mobileLayout, this.el);
+        }
+    };
     MenuDrawer.prototype.render = function () {
-        var backButtonText = navStateStore.get('backButtonText') || this.getValueForField(TEXT_FIELD_NAME);
+        var backButtonText = this.backButton || this.getValueForField(TEXT_FIELD_NAME);
         var backButtonId = this.getValueForField(PHRASEID_FIELD_NAME);
-        var parentDrawerContent = navStateStore.get('parentDrawerContent');
-        var hasParent = parentDrawerContent.length > 0;
-        var backAndCloseClass = hasParent ? 'drawer-back-and-close' : 'drawer-back-and-close drawer-close';
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "drawer-trigger" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'menu-drawer-container', onClick: this.clickBackground }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-content", onClick: this.clickMenu }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-content-wrapper" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: backAndCloseClass }, hasParent && (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: this.handleBack, buttonId: backButtonId, text: backButtonText })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button", onClick: this.handleClose, onKeyDown: this.keyDownHandler })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" })))))));
+        var backAndCloseClass = !this.isFirstDrawer ? 'drawer-back-and-close' : 'drawer-back-and-close drawer-close';
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "drawer-trigger", tabindex: "-1" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-container", onClick: this.close }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-content", onClick: this.stopClickEvent }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-content-wrapper" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: backAndCloseClass }, !this.isFirstDrawer && (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: this.handleBack, buttonId: backButtonId, text: backButtonText })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { class: "close-button", icon: "close", hideLabel: "true", size: "small", onClick: this.close })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" })))))));
     };
     Object.defineProperty(MenuDrawer.prototype, "el", {
-        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
     return MenuDrawer;
 }());
 MenuDrawer.style = menuDrawerCss;
-var menuDrawerLevel1Css = ".menu-drawer-level-1.sc-phn-menu-drawer-level-1{position:fixed;z-index:300;top:0;left:0;width:100%;height:100vh;background-color:rgba(0, 0, 0, 0.3);visibility:hidden}@media (min-width: 1300px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1{display:none}}.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1{position:fixed;right:-100%;bottom:0;top:0;overflow-y:auto;background-color:#fff;width:100%}@media (min-width: 1000px) and (max-width: 1299px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1{width:568px}}.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1{padding-right:7%;padding-left:7%;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:end;align-items:flex-end}.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-close.sc-phn-menu-drawer-level-1{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:end;justify-content:flex-end;width:100%;padding-top:1.1875rem;margin-bottom:0.5rem}@media (min-width: 760px) and (max-width: 1299px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-close.sc-phn-menu-drawer-level-1{padding-top:0.75rem;margin-bottom:1.75rem}}@media (min-width: 1300px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-close.sc-phn-menu-drawer-level-1{padding-top:0.75rem;margin-bottom:0}}@media (min-width: 760px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .close-button.sc-phn-menu-drawer-level-1{margin-right:-1.125rem}}.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-content.sc-phn-menu-drawer-level-1{width:100%;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;margin-bottom:4.5rem}@media (min-width: 1300px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-content.sc-phn-menu-drawer-level-1{margin-bottom:0}}@media (min-width: 760px) and (max-width: 1299px){.menu-drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-level-1.sc-phn-menu-drawer-level-1 .drawer-container.sc-phn-menu-drawer-level-1 .drawer-content.sc-phn-menu-drawer-level-1{margin-bottom:3.1875rem}}";
-var MenuDrawerLevel1 = /** @class */ (function () {
-    function MenuDrawerLevel1(hostRef) {
-        var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.menuDrawerAnimation = new MenuDrawerAnimation();
-        this.activeDrawerLevel = 1;
-        this.setActiveDrawer = function (element, level) {
-            _this_1.activeDrawerElement = element;
-            _this_1.activeDrawerLevel = level;
-            _this_1.scrollActiveElementToTop();
-            _this_1.preventiOSScrollingParentDrawer(level, element, true);
-        };
-        this.closeActiveDrawer = function (level) {
-            var drawerToBeClosed = _this_1.activeDrawerElement;
-            _this_1.preventiOSScrollingParentDrawer(level, drawerToBeClosed, false);
-            _this_1.activeDrawerLevel = level - 1;
-            _this_1.activeDrawerElement = _this_1.el.querySelector(".drawer-level-" + _this_1.activeDrawerLevel + "-item");
-            _this_1.scrollActiveElementToTop();
-        };
-        this.preventiOSScrollingParentDrawer = function (targetLevelForAction, targetElementForAction, isLevelIncrease) {
-            /* This prevents iOS allowing the bottom drawer to be scrolled.
-             * At the time of creating this solution, we tested overflow: hidden in the fixed scrollable div,
-             * as well as pointer-events: none, but this did not work. Somehow, putting
-             * position: fixed to the parent drawer container did even if it's not a scrollable container.
-             */
-            var parentLevel = targetLevelForAction - 1;
-            if (isLevelIncrease) {
-                var parentScrollableContainer = targetElementForAction.closest(".drawer-level-" + parentLevel + "-item");
-                if (parentScrollableContainer) {
-                    parentScrollableContainer.querySelector('.drawer-container').style.position = 'fixed';
-                }
-            }
-            else {
-                var parentScrollableContainer = targetElementForAction.closest(".drawer-level-" + parentLevel + "-item");
-                parentScrollableContainer.querySelector('.drawer-container').style.position = '';
-            }
-        };
-        this.clickBackground = function () {
-            var closeButton = _this_1.activeDrawerElement.querySelector('phn-close-button');
-            closeButton.click();
-        };
-        this.clickMenu = function (event) {
-            event.stopPropagation();
-        };
-        this.menuOverlayOpen = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "menuOverlayOpen", 7);
-        this.menuOverlayClose = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "menuOverlayClose", 7);
-    }
-    MenuDrawerLevel1.prototype.show = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                this.menuOverlayOpen.emit();
-                this.menuDrawerAnimation.slideIn(this.el);
-                this.setActiveDrawer(this.el, 1);
-                return [2 /*return*/];
-            });
-        });
-    };
-    MenuDrawerLevel1.prototype.handleClose = function () {
-        this.mobileCarSeriesListElement.hideAll();
-        this.hide();
-        this.el.querySelectorAll('.drawer-container').forEach(function (element) {
-            element.style.position = '';
-        });
-    };
-    MenuDrawerLevel1.prototype.scrollActiveElementToTop = function () {
-        var scrollableElement;
-        if (this.activeDrawerElement.classList.contains("drawer-level-" + this.activeDrawerLevel + "-item-scroll")) {
-            scrollableElement = this.activeDrawerElement;
-        }
-        else {
-            scrollableElement = this.activeDrawerElement.querySelector(".drawer-level-" + this.activeDrawerLevel + "-item-scroll");
-        }
-        if (scrollableElement) {
-            scrollableElement.scrollTop = 0;
-        }
-    };
-    MenuDrawerLevel1.prototype.hide = function () {
-        this.menuOverlayClose.emit();
-        this.menuDrawerAnimation.slideOut(this.el);
-    };
-    MenuDrawerLevel1.prototype.componentDidLoad = function () {
-        this.hide();
-    };
-    MenuDrawerLevel1.prototype.render = function () {
-        var _this_1 = this;
-        var seriesList = navContentStore.get('seriesList');
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-level-1 drawer-level-1-item", onClick: this.clickBackground }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-level-1 drawer-level-1-item-scroll", onClick: this.clickMenu }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-close" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-content" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-car-series-list", { ref: function (el) { return (_this_1.mobileCarSeriesListElement = el); }, class: "mobile-car-series-list", carSeries: seriesList, setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shops-and-more", { class: "mobile-shops-and-more", setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "meta-functionalities", setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }))))));
-    };
-    Object.defineProperty(MenuDrawerLevel1.prototype, "el", {
-        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
-        enumerable: false,
-        configurable: true
-    });
-    return MenuDrawerLevel1;
-}());
-MenuDrawerLevel1.style = menuDrawerLevel1Css;
 var MenuMobileLevel1 = /** @class */ (function () {
     function MenuMobileLevel1(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     MenuMobileLevel1.prototype.render = function () {
         var seriesList = navContentStore.get('seriesList');
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-mobile-level-1 mobile-level-1-item" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-level-1 mobile-level-1-item-scroll" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-content" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-car-series-list-2", { class: "mobile-car-series-list", carSeries: seriesList }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shops-and-more-2", null), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "meta-functionalities" }))))));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-mobile-level-1 mobile-level-1-item" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-level-1 mobile-level-1-item-scroll" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-content" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-car-series-list", { class: "mobile-car-series-list", carSeries: seriesList }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shops-and-more", null), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "meta-functionalities" }))))));
     };
     return MenuMobileLevel1;
 }());
@@ -9099,7 +7485,7 @@ var messagesLinkCss = ".sc-phn-messages-link-h .list-item-link.sc-phn-messages-l
 var MessagesLink = /** @class */ (function () {
     function MessagesLink(hostRef) {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
         this.sendNavigationClickAnalyticsEvent = function () {
             var contentItem = { PhraseId: _this_1.item.PhraseId, Text: _this_1.item.Text, Link: _this_1.item.Link };
@@ -9115,9 +7501,8 @@ var MessagesLink = /** @class */ (function () {
         };
     }
     MessagesLink.prototype.render = function () {
-        var _this_1 = this;
         var unreadMessagesCount = navContentStore.get('unreadMessagesCount');
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: this.item.Link, onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(); } }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "link-text" }, this.item.Text), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: unreadMessagesCount > 0 ? 'unread-messages-count' : 'unread-messages-count hidden' }, unreadMessagesCount)))));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: this.item.Link, onClick: this.sendNavigationClickAnalyticsEvent }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "link-text" }, this.item.Text), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: unreadMessagesCount > 0 ? 'unread-messages-count' : 'unread-messages-count hidden' }, unreadMessagesCount)))));
     };
     return MessagesLink;
 }());
@@ -9152,10 +7537,10 @@ var MetaFunctionClick = /** @class */ (function (_super_1) {
     };
     return MetaFunctionClick;
 }(AnalyticsEvent));
-var metaFunctionalitiesCss = ".metafunctionalities.sc-phn-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-direction:column;flex-direction:column;font-size:1rem}@media (-ms-high-contrast: none) and (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{float:right}}@media (min-width: 760px) and (max-width: 999px){.metafunctionalities.sc-phn-meta-functionalities{font-size:1.125rem}}@media (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-align:center;align-items:center;padding-top:0;height:4.0625rem;padding-left:1.25rem;-ms-flex-direction:row;flex-direction:row;font-size:1rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities{margin-right:1.125rem}}@media (min-width: 1760px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-direction:row;flex-direction:row;font-size:1.25rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities{margin-right:1.5rem}}";
+var metaFunctionalitiesCss = ".metafunctionalities.sc-phn-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-direction:column;flex-direction:column;font-size:1rem}@media (-ms-high-contrast: none) and (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{float:right}}@media (min-width: 760px) and (max-width: 999px){.metafunctionalities.sc-phn-meta-functionalities{font-size:1.125rem}}@media (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-align:center;align-items:center;padding-top:0;height:4.0625rem;padding-left:1.25rem;-ms-flex-direction:row;flex-direction:row;font-size:1rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities{margin-right:1.125rem}}@media (min-width: 1760px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-align:center;align-items:center;-ms-flex-direction:row;flex-direction:row;font-size:1.25rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities{margin-right:1.5rem}}";
 var MetaFunctionalities = /** @class */ (function () {
     function MetaFunctionalities(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.sendMetaFunctionClickAnalyticsEvent = function (linkItem) {
             var analyticsSetup = {
                 applicationId: analyticsSetupStore.get('applicationId'),
@@ -9188,10 +7573,10 @@ var MetaFunctionalities = /** @class */ (function () {
         return loggedInStatusTranslations;
     };
     MetaFunctionalities.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "metafunctionalities" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-dealer-search", { class: "dealer-search", dealerSearchText: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, TEXT_FIELD_NAME), dealerSearchLink: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, LINK_FIELD_NAME), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche", { myporscheText: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, TEXT_FIELD_NAME), myporscheLink: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, LINK_FIELD_NAME), loggedInStatusTranslations: this.getLoggedInStatusTranslations(), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent, setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer })));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "metafunctionalities" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-dealer-search", { class: "dealer-search", dealerSearchText: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, TEXT_FIELD_NAME), dealerSearchLink: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, LINK_FIELD_NAME), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche", { myporscheText: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, TEXT_FIELD_NAME), myporscheLink: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, LINK_FIELD_NAME), loggedInStatusTranslations: this.getLoggedInStatusTranslations(), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent, setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer })));
     };
     Object.defineProperty(MetaFunctionalities.prototype, "hostElement", {
-        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -9219,13 +7604,11 @@ var ModelRangeClickEvent = /** @class */ (function (_super_1) {
     };
     return ModelRangeClickEvent;
 }(ModelAnalyticsEvent));
-var mobileCarSeriesListCss = ".mobile-car-series-list.sc-phn-mobile-car-series-list{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list{width:50%}@media (min-width: 760px) and (max-width: 1299px){.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list{margin-top:0.625rem}}";
+var mobileCarSeriesListCss = ".mobile-car-series-list.sc-phn-mobile-car-series-list{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list{width:50%}@media (min-width: 760px) and (max-width: 999px){.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list{margin-top:0.625rem}}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list .car-series-button.sc-phn-mobile-car-series-list{display:-ms-flexbox;display:flex;font-family:inherit;width:100%;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;cursor:pointer;color:inherit;-ms-flex-pack:center;justify-content:center}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list .car-series-button.sc-phn-mobile-car-series-list::-moz-focus-inner{border:0}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list .car-series-button.sc-phn-mobile-car-series-list:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list .car-series-button.sc-phn-mobile-car-series-list:focus{outline-offset:-2px}";
 var MobileCarSeriesList = /** @class */ (function () {
     function MobileCarSeriesList(hostRef) {
-        var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.carSeries = DEFAULT_SERIES_LIST;
-        this.env = DEFAULT_ENVIRONMENT;
         this.sendNavigationClickAnalyticsEvent = function (series) {
             var analyticsSetup = {
                 applicationId: analyticsSetupStore.get('applicationId'),
@@ -9237,149 +7620,149 @@ var MobileCarSeriesList = /** @class */ (function () {
             var pagData = (window['pagData'] = window['pagData'] || []);
             pagData.push(modelSeriesClickEvent.event());
         };
-        this.showCarSubnavigation = function (index) {
-            _this_1.sendNavigationClickAnalyticsEvent(_this_1.carSeries[index]);
-            var subnavigation = _this_1.el.querySelector('.drawer-car-series-model-overview-' + index);
-            subnavigation.style.display = 'block';
-            _this_1.setActiveDrawer(subnavigation, 2);
-        };
-        this.handlePressEnterKey = function (event, index) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
-                if (event.key === 'Enter') {
-                    _this_1.showCarSubnavigation(index);
-                }
-            }
-        };
     }
-    MobileCarSeriesList.prototype.hideAll = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                this.hideAllCarSubnavigations();
-                return [2 /*return*/];
-            });
-        });
-    };
-    MobileCarSeriesList.prototype.componentDidLoad = function () {
-        this.hideAllCarSubnavigations();
-    };
-    MobileCarSeriesList.prototype.hideAllCarSubnavigations = function () {
-        var _this_1 = this;
-        this.carSeries.map(function (_, index) {
-            var subnavigation = _this_1.el.querySelector('.drawer-car-series-model-overview-' + index);
-            subnavigation.style.display = 'none';
-        });
+    MobileCarSeriesList.prototype.showDrawer = function (_, series, index) {
+        var phnDrawerCarSeriesModelOverview = {
+            content: (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-car-series-model-overview", { series: series, class: 'drawer-car-series-model-overview drawer-car-series-model-overview-' + index, slot: "content" }))
+        };
+        navStateStore.set('drawerContentStack', __spreadArrays(navStateStore.get('drawerContentStack'), [
+            phnDrawerCarSeriesModelOverview
+        ]));
+        this.sendNavigationClickAnalyticsEvent(series);
     };
     MobileCarSeriesList.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series-list" }, this.carSeries.map(function (series, index) { return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { class: 'car-series car-series-' + index, text: series.Name, image: series.Image, tabindex: "0", onClick: function () { return _this_1.showCarSubnavigation(index); }, onKeyDown: function (event) { return _this_1.handlePressEnterKey(event, index); } }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-car-series-model-overview", { series: series, class: 'drawer-car-series-model-overview drawer-car-series-model-overview-' + index, closeActiveDrawer: _this_1.closeActiveDrawer }))); })));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series-list" }, this.carSeries.map(function (series, index) { return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series", key: index }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { class: "car-series-button", onClick: function (event) { return _this_1.showDrawer(event, series, index); } }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { class: 'car-series car-series-' + index, text: series.Name, image: series.Image })))); })));
     };
-    Object.defineProperty(MobileCarSeriesList.prototype, "el", {
-        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
-        enumerable: false,
-        configurable: true
-    });
     return MobileCarSeriesList;
 }());
 MobileCarSeriesList.style = mobileCarSeriesListCss;
-var mobileCarSeriesListCss$1 = ".mobile-car-series-list.sc-phn-mobile-car-series-list-2{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.mobile-car-series-list.sc-phn-mobile-car-series-list-2 .mobile-car-series.sc-phn-mobile-car-series-list-2{width:50%}@media (min-width: 760px) and (max-width: 1299px){.mobile-car-series-list.sc-phn-mobile-car-series-list-2 .mobile-car-series.sc-phn-mobile-car-series-list-2{margin-top:0.625rem}}";
-var MobileCarSeriesList$1 = /** @class */ (function () {
-    function MobileCarSeriesList$1(hostRef) {
+var setScrollbarWidth = function () {
+    var scrollDiv = document.createElement('div');
+    scrollDiv.style.width = '100px';
+    scrollDiv.style.height = '100px';
+    scrollDiv.style.overflow = 'scroll';
+    scrollDiv.style.position = 'absolute';
+    scrollDiv.style.top = '-9999px';
+    document.body.appendChild(scrollDiv);
+    var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+    document.body.removeChild(scrollDiv);
+    return scrollbarWidth;
+};
+var BodyScrollLock = /** @class */ (function () {
+    function BodyScrollLock() {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.carSeries = DEFAULT_SERIES_LIST;
-        this.keyDownHandler = function (event, series, index) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
-                if (event.key === 'Enter') {
-                    _this_1.showDrawer(event, series, index);
-                }
-            }
+        this.activate = function () {
+            _this_1.recordCurrentBodyStyles();
+            _this_1.initBodyPaddingRight();
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+            document.body.style.width = '100%';
+            document.body.style.paddingRight = "" + (_this_1.initialBodyPaddingRightValue + _this_1.scrollbarWidth) + _this_1.initialBodyPaddingRightUnit;
         };
-        this.sendNavigationClickAnalyticsEvent = function (series) {
-            var analyticsSetup = {
-                applicationId: analyticsSetupStore.get('applicationId'),
-                locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window'),
-                environment: analyticsSetupStore.get('environment')
-            };
-            var modelSeriesClickEvent = new ModelRangeClickEvent(analyticsSetup, series.Name, series);
-            var pagData = (window['pagData'] = window['pagData'] || []);
-            pagData.push(modelSeriesClickEvent.event());
+        this.deactivate = function () {
+            document.body.style.overflow = _this_1.initialBodyOverflow;
+            document.body.style.position = _this_1.initialBodyPosition;
+            document.body.style.width = _this_1.initialBodyWidth;
+            document.body.style.paddingRight = "" + _this_1.initialBodyPaddingRightValue + _this_1.initialBodyPaddingRightUnit;
         };
+        this.recordCurrentBodyStyles = function () {
+            _this_1.initialBodyOverflow = document.body.style.overflow;
+            _this_1.initialBodyPosition = document.body.style.position;
+            _this_1.initialBodyWidth = document.body.style.width;
+        };
+        this.scrollbarWidth = setScrollbarWidth();
     }
-    MobileCarSeriesList$1.prototype.showDrawer = function (_, series, index) {
-        var phnDrawerCarSeriesModelOverview2 = (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-car-series-model-overview-2", { series: series, class: 'drawer-car-series-model-overview drawer-car-series-model-overview-' + index, slot: "content" }));
-        var parent = navStateStore.get('activeDrawerContent');
-        var currentParent = navStateStore.get('parentDrawerContent');
-        navStateStore.set('activeDrawerContent', phnDrawerCarSeriesModelOverview2);
-        navStateStore.set('parentDrawerContent', __spreadArrays([parent], currentParent));
-        navStateStore.set('accessibilityMarker', ".car-series-" + index);
-        navStateStore.set('backButtonText', null);
-        this.sendNavigationClickAnalyticsEvent(series);
+    BodyScrollLock.prototype.initBodyPaddingRight = function () {
+        var body = document.body;
+        var paddingRight = window.getComputedStyle(body, null).getPropertyValue('padding-right');
+        this.initialBodyPaddingRightValue = parseFloat(paddingRight);
+        this.initialBodyPaddingRightUnit = paddingRight.split(this.initialBodyPaddingRightValue.toString())[1];
     };
-    MobileCarSeriesList$1.prototype.render = function () {
-        var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series-list" }, this.carSeries.map(function (series, index) { return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { class: 'car-series car-series-' + index, text: series.Name, image: series.Image, tabindex: "0", onClick: function (event) { return _this_1.showDrawer(event, series, index); }, onKeyDown: function (event) { return _this_1.keyDownHandler(event, series, index); } }))); })));
-    };
-    return MobileCarSeriesList$1;
+    return BodyScrollLock;
 }());
-MobileCarSeriesList$1.style = mobileCarSeriesListCss$1;
-var mobileLayoutCss = ".sc-phn-mobile-layout-h .burger-button.sc-phn-mobile-layout{height:100%}";
+var mobileLayoutCss = ".sc-phn-mobile-layout-h .burger-button.sc-phn-mobile-layout{height:100%}.sc-phn-mobile-layout-h .burger-button-skeleton.sc-phn-mobile-layout{height:0.875rem}";
 var MobileLayout = /** @class */ (function () {
     function MobileLayout(hostRef) {
-        var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.keyDownHandler = function (event) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
-                if (event.key === 'Enter') {
-                    _this_1.showDrawer(event);
-                }
-            }
-        };
-        this.slotUpdated = Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["d"])(this, "slotUpdated", 7);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.bodyScrollLock = new BodyScrollLock();
+        this.menuDrawerAnimation = new MenuDrawerAnimation();
     }
-    MobileLayout.prototype.showDrawer = function (event) {
-        navStateStore.set('activeDrawerContent', Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-mobile-level-1", { slot: "content" }));
-        var hostElement = event.target.closest('phn-mobile-layout');
-        var menuDrawer = hostElement.querySelector('.drawer-trigger');
-        menuDrawer.showContent(menuDrawer);
+    MobileLayout.prototype.handleMenuOverlayOpen = function () {
+        this.bodyScrollLock.activate();
+        navStateStore.set('isDrawerOpen', true);
+    };
+    MobileLayout.prototype.handleMenuOverlayClose = function () {
+        this.bodyScrollLock.deactivate();
+    };
+    MobileLayout.prototype.handleCloseAllDrawers = function () {
+        var resetDrawerStates = function () {
+            navStateStore.set('drawerContentStack', []);
+        };
+        navStateStore.set('isDrawerOpen', false);
+        this.menuDrawerAnimation.slideOutAllMenuDrawers(this.mobileLayoutElement, resetDrawerStates);
+        this.bodyScrollLock.deactivate();
+    };
+    MobileLayout.prototype.showMobileLevel1 = function () {
+        var drawer = { content: Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-mobile-level-1", { slot: "content" }) };
+        navStateStore.set('drawerContentStack', [drawer]);
     };
     MobileLayout.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-burger-button", { tabindex: "0", class: "burger-button", onClick: this.showDrawer, onKeyDown: this.keyDownHandler }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-drawer", null, navStateStore.get('activeDrawerContent'))));
+        var _this_1 = this;
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-burger-button", { class: "burger-button", onClick: this.showMobileLevel1 }), navStateStore.get('drawerContentStack').map(function (drawer, index) {
+            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-drawer", { key: index, backButton: drawer.backButton, mobileLayout: _this_1.mobileLayoutElement }, drawer.content));
+        })));
     };
+    Object.defineProperty(MobileLayout.prototype, "mobileLayoutElement", {
+        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
+        configurable: true
+    });
     return MobileLayout;
 }());
 MobileLayout.style = mobileLayoutCss;
+var mobileShopAndMoreItemCss = ".sc-phn-mobile-shop-and-more-item-h{display:-ms-flexbox;display:flex;color:#000;font-size:1rem;padding:0.875rem 0 1rem 0.625rem;border-bottom:1px solid #c9cacb}.sc-phn-mobile-shop-and-more-item-h:hover{color:#d5001c;cursor:pointer}@media (min-width: 480px) and (max-width: 759px){.sc-phn-mobile-shop-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-mobile-shop-and-more-item-h{padding:1.125rem 0 1.125rem 0.625rem;font-size:1.125rem}.sc-phn-mobile-shop-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 1000px){.sc-phn-mobile-shop-and-more-item-h{padding:0.875rem 0 0.875rem 0.625rem}.sc-phn-mobile-shop-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}.sc-phn-mobile-shop-and-more-item-h .mobile-shop-and-more-item-drawer.sc-phn-mobile-shop-and-more-item{display:-ms-flexbox;display:flex;width:100%}@media (min-width: 1300px){.sc-phn-mobile-shop-and-more-item-h .mobile-shop-and-more-item-drawer.sc-phn-mobile-shop-and-more-item{display:none}}";
+var MobileShopAndMoreItem = /** @class */ (function () {
+    function MobileShopAndMoreItem(hostRef) {
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.item = EMPTY_ITEM;
+    }
+    MobileShopAndMoreItem.prototype.render = function () {
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shop-and-more-item" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "mobile-shop-and-more-item-drawer", icon: "arrow-head-right" }, this.item.Text)));
+    };
+    return MobileShopAndMoreItem;
+}());
+MobileShopAndMoreItem.style = mobileShopAndMoreItemCss;
 var mobileShopsAndMoreCss = ".sc-phn-mobile-shops-and-more-h{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-direction:column;flex-direction:column;border-top:1px solid #c9cacb;margin-top:1.5rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-mobile-shops-and-more-h{margin-top:3rem}}";
 var MobileShopsAndMore = /** @class */ (function () {
     function MobileShopsAndMore(hostRef) {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.env = DEFAULT_ENVIRONMENT;
-        this.showActiveDrawer = function (overlayRef, item) {
-            overlayRef.style.display = 'block';
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.showDrawer = function (_, item) {
+            var phnDrawerShopsAndMore = {
+                content: (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Text, item: item.Items && item.Items.length === 1 ? item.Items[0] : item, slot: "content", class: "shops-and-more-drawer-level-1" }))
+            };
+            navStateStore.set('drawerContentStack', __spreadArrays(navStateStore.get('drawerContentStack'), [phnDrawerShopsAndMore]));
             _this_1.sendNavigationClickAnalyticsEvent(item);
-            _this_1.setActiveDrawer(overlayRef, 2);
         };
-        this.handlePressEnterKey = function (event, overlayRef, item) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
-                if (event.key === 'Enter') {
-                    _this_1.showActiveDrawer(overlayRef, item);
-                }
+        this.handleKeyDown = function (event, item) {
+            if (event.key === 'Enter') {
+                _this_1.showDrawer(event, item);
             }
         };
-    }
-    MobileShopsAndMore.prototype.sendNavigationClickAnalyticsEvent = function (item) {
-        var contentItem = { PhraseId: item.PhraseId, Text: item.Text, Link: undefined };
-        var analyticsSetup = {
-            applicationId: analyticsSetupStore.get('applicationId'),
-            locale: analyticsSetupStore.get('locale'),
-            window: analyticsSetupStore.get('window'),
-            environment: analyticsSetupStore.get('environment')
+        this.sendNavigationClickAnalyticsEvent = function (item) {
+            var contentItem = { PhraseId: item.PhraseId, Text: item.Text, Link: undefined };
+            var analyticsSetup = {
+                applicationId: analyticsSetupStore.get('applicationId'),
+                locale: analyticsSetupStore.get('locale'),
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
+            };
+            var navigationClickEvent = new NavigationClickEvent(analyticsSetup, contentItem);
+            var pagData = (window['pagData'] = window['pagData'] || []);
+            pagData.push(navigationClickEvent.event());
         };
-        var navigationClickEvent = new NavigationClickEvent(analyticsSetup, contentItem);
-        var pagData = (window['pagData'] = window['pagData'] || []);
-        pagData.push(navigationClickEvent.event());
-    };
+    }
     MobileShopsAndMore.prototype.getItems = function () {
         var items = [];
         var shops = navContentStore.get('shops');
@@ -9395,78 +7778,31 @@ var MobileShopsAndMore = /** @class */ (function () {
     MobileShopsAndMore.prototype.render = function () {
         var _this_1 = this;
         var items = this.getItems();
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shops-and-more" }, items.map(function (item) {
-            var overlayRef;
-            return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-item", { item: item, class: "shops-and-more-item", tabindex: "0", onClick: function () { return _this_1.showActiveDrawer(overlayRef, item); }, onKeyDown: function (event) { return _this_1.handlePressEnterKey(event, overlayRef, item); } }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Items && item.Items.length === 1 ? item.Text : '', item: item.Items && item.Items.length === 1 ? item.Items[0] : item, class: "shops-and-more-overlay", setActiveDrawer: _this_1.setActiveDrawer, closeActiveDrawer: _this_1.closeActiveDrawer, ref: function (el) { return (overlayRef = el); } })));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shops-and-more" }, items.map(function (item, index) {
+            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shop-and-more-item", { item: item, class: 'mobile-shop-and-more-item mobile-shop-and-more-item-' + index, tabindex: "0", onClick: function (event) { return _this_1.showDrawer(event, item); }, onKeyDown: function (event) { return _this_1.handleKeyDown(event, item); } })));
         })));
     };
     return MobileShopsAndMore;
 }());
 MobileShopsAndMore.style = mobileShopsAndMoreCss;
-var mobileShopsAndMoreCss$1 = ".sc-phn-mobile-shops-and-more-2-h{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-direction:column;flex-direction:column;border-top:1px solid #c9cacb;margin-top:1.5rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-mobile-shops-and-more-2-h{margin-top:3rem}}";
-var MobileShopsAndMore$1 = /** @class */ (function () {
-    function MobileShopsAndMore$1(hostRef) {
-        var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.handleKeyDown = function (event, item, index) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
-                if (event.key === 'Enter') {
-                    _this_1.showDrawer(event, item, index);
-                }
-            }
-        };
-    }
-    MobileShopsAndMore$1.prototype.showDrawer = function (_, item, index) {
-        var phnDrawerShopsAndMore2 = (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more-2", { headline: item.Text, item: item.Items && item.Items.length === 1 ? item.Items[0] : item, slot: "content", class: "shops-and-more-drawer-level-1" }));
-        var parent = navStateStore.get('activeDrawerContent');
-        var currentParent = navStateStore.get('parentDrawerContent');
-        navStateStore.set('activeDrawerContent', phnDrawerShopsAndMore2);
-        navStateStore.set('parentDrawerContent', __spreadArrays([parent], currentParent));
-        navStateStore.set('accessibilityMarker', ".shops-and-more-item-" + index);
-        navStateStore.set('backButtonText', null);
-        this.sendNavigationClickAnalyticsEvent(item);
-    };
-    MobileShopsAndMore$1.prototype.sendNavigationClickAnalyticsEvent = function (item) {
-        var contentItem = { PhraseId: item.PhraseId, Text: item.Text, Link: undefined };
-        var analyticsSetup = {
-            applicationId: analyticsSetupStore.get('applicationId'),
-            locale: analyticsSetupStore.get('locale'),
-            window: analyticsSetupStore.get('window'),
-            environment: analyticsSetupStore.get('environment')
-        };
-        var navigationClickEvent = new NavigationClickEvent(analyticsSetup, contentItem);
-        var pagData = (window['pagData'] = window['pagData'] || []);
-        pagData.push(navigationClickEvent.event());
-    };
-    MobileShopsAndMore$1.prototype.getItems = function () {
-        var items = [];
-        var shops = navContentStore.get('shops');
-        var more = navContentStore.get('more');
-        if (shops && shops.length > 0) {
-            items.push(shops[0]);
-        }
-        if (more && more.length > 0) {
-            items.push(more[0]);
-        }
-        return items;
-    };
-    MobileShopsAndMore$1.prototype.render = function () {
-        var _this_1 = this;
-        var items = this.getItems();
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shops-and-more" }, items.map(function (item, index) {
-            return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-item", { item: item, class: 'shops-and-more-item shops-and-more-item-' + index, tabindex: "0", onClick: function (event) { return _this_1.showDrawer(event, item, index); }, onKeyDown: function (event) { return _this_1.handleKeyDown(event, item, index); } })));
-        })));
-    };
-    return MobileShopsAndMore$1;
-}());
-MobileShopsAndMore$1.style = mobileShopsAndMoreCss$1;
-var myporscheCss = ".sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{border-bottom:1px solid #c9cacb;padding:0.875rem 0 0.875rem 0;width:100%}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{border-bottom:0;padding:0}}.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:-0.25rem;font-size:0.75rem}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:-0.1875rem}}@media (min-width: 1300px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:unset;position:absolute;top:0}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{left:1.75rem;padding-top:1.1875rem}}@media (min-width: 1760px){.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{left:2.1875rem;font-size:0.875rem;padding-top:1.6875rem}}.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{padding:0.875rem 0 0.875rem 0;border-bottom:1px solid #c9cacb}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{display:none}}";
+var myporscheCss = ".myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{border-bottom:1px solid #c9cacb;padding:0.875rem 0 0.875rem 0;width:100%}@media (min-width: 760px) and (max-width: 999px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{border-bottom:0;padding:0}}.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:-0.25rem;font-size:0.75rem}@media (min-width: 760px) and (max-width: 999px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:-0.1875rem}}@media (min-width: 1300px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:unset;position:absolute;top:0}}@media (min-width: 1300px) and (max-width: 1759px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{left:1.75rem;padding-top:1.1875rem}}@media (min-width: 1760px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{left:2.1875rem;font-size:0.875rem;padding-top:1.6875rem}}.myporsche.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{padding:0.875rem 0 0.875rem 0;border-bottom:1px solid #c9cacb}@media (min-width: 760px) and (max-width: 999px){.myporsche.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){.myporsche.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{display:none}}@media (min-width: 1300px){.myporsche.sc-phn-myporsche-h .myporsche-skeleton.sc-phn-myporsche{width:8rem;margin-top:0.125rem;width:6.375rem;height:0.875rem;background-color:#c9cacb}}";
 var Myporsche = /** @class */ (function () {
     function Myporsche(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        var _this_1 = this;
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.myporscheLink = '';
         this.myporscheText = '';
         this.loggedInStatusTranslations = {};
+        this.hiddenStyle = { display: 'none' };
+        this.renderMyPorsche = function (loggedInState) {
+            if (loggedInState === LOGGED_OUT_USER_STATUS) {
+                return _this_1.renderLoggedOutComponent();
+            }
+            if (loggedInState === LOADING_STATUS) {
+                return _this_1.renderLoadingComponent();
+            }
+            return _this_1.renderLoggedInComponent();
+        };
     }
     Myporsche.prototype.getSubTextForUser = function () {
         var loggedInState = navContentStore.get('loggedInState');
@@ -9475,108 +7811,77 @@ var Myporsche = /** @class */ (function () {
     };
     Myporsche.prototype.renderLoggedOutComponent = function () {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { class: "myporsche-logged-out", href: this.myporscheLink, onClick: function () {
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { style: navStateStore.get('navigationLoaded') ? {} : this.hiddenStyle, class: "myporsche-logged-out", href: this.myporscheLink, onClick: function () {
                 var linkItem = {
                     PhraseId: MYPORSCHE_PHRASE_ID,
                     Text: _this_1.myporscheText,
                     Link: _this_1.myporscheLink
                 };
                 _this_1.sendMetaFunctionClickAnalyticsEvent(linkItem);
-            }, size: "inherit", icon: "user" }, this.myporscheText, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.getSubTextForUser())));
+            }, size: "inherit", icon: "user" }, this.myporscheText, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.getSubTextForUser())));
     };
     Myporsche.prototype.renderLoadingComponent = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { loading: "true", size: "inherit" }, this.myporscheText));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { class: "myporsche-loading", loading: "true", size: "inherit", style: navStateStore.get('navigationLoaded') ? {} : this.hiddenStyle }, this.myporscheText));
     };
     Myporsche.prototype.renderLoggedInComponent = function () {
         var unreadMessagesCount = navContentStore.get('unreadMessagesCount');
-        var drawerRestructure = isFeatureEnabled(FEATURE_DRAWER_RESTRUCTURE, navContentStore.get('env'));
-        var myPorscheDrawer = drawerRestructure ? (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-drawer-2", { class: "myporsche-logged-in", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), unreadMessagesCount: unreadMessagesCount })) : (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-drawer", { class: "myporsche-logged-in", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer, unreadMessagesCount: unreadMessagesCount }));
         return [
-            myPorscheDrawer,
-            Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-flyout", { class: "myporsche-flyout", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), unreadMessagesCount: unreadMessagesCount })
+            Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-drawer", { class: "myporsche-logged-in", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), unreadMessagesCount: unreadMessagesCount }),
+            Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-flyout", { style: navStateStore.get('navigationLoaded') ? {} : this.hiddenStyle, class: "myporsche-flyout", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), unreadMessagesCount: unreadMessagesCount })
         ];
     };
     Myporsche.prototype.render = function () {
         var loggedInState = navContentStore.get('loggedInState');
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, loggedInState === LOGGED_OUT_USER_STATUS
-            ? this.renderLoggedOutComponent()
-            : loggedInState === LOADING_STATUS
-                ? this.renderLoadingComponent()
-                : this.renderLoggedInComponent()));
+        var hiddenStyle = { display: 'none' };
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "myporsche" }, this.renderMyPorsche(loggedInState), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "myporsche-skeleton", style: navStateStore.get('navigationLoaded') ? hiddenStyle : {} })));
     };
+    Object.defineProperty(Myporsche.prototype, "el", {
+        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        enumerable: false,
+        configurable: true
+    });
     return Myporsche;
 }());
 Myporsche.style = myporscheCss;
-var myporscheDrawerCss = ".sc-phn-myporsche-drawer-h{display:block}.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:-0.25rem;font-size:0.75rem}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:-0.1875rem}}@media (min-width: 1300px){.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:unset}}.sc-phn-myporsche-drawer-h .drawer-trigger.sc-phn-myporsche-drawer:focus-within{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.sc-phn-myporsche-drawer-h .drawer-trigger-label.sc-phn-myporsche-drawer{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-direction:column;flex-direction:column;padding-left:0.25rem}.sc-phn-myporsche-drawer-h .drawer--closed.sc-phn-myporsche-drawer{display:none}.sc-phn-myporsche-drawer-h .drawer--opened.sc-phn-myporsche-drawer{display:block}.sc-phn-myporsche-drawer-h .myporsche-unread-messages-indicator.sc-phn-myporsche-drawer{position:absolute;width:0.375rem;height:0.375rem;border-radius:50%;background-color:#d5001c;left:1.0625rem;top:0.0625rem}.sc-phn-myporsche-drawer-h .myporsche-unread-messages-indicator.hidden.sc-phn-myporsche-drawer{display:none}";
+var myporscheDrawerCss = ".sc-phn-myporsche-drawer-h{display:block}.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:-0.25rem;font-size:0.75rem}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:-0.1875rem}}@media (min-width: 1300px){.sc-phn-myporsche-drawer-h .login-status.sc-phn-myporsche-drawer{margin-top:unset}}.sc-phn-myporsche-drawer-h .myporsche-drawer-trigger.sc-phn-myporsche-drawer:focus-within{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.sc-phn-myporsche-drawer-h .myporsche-drawer-trigger-label.sc-phn-myporsche-drawer{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-direction:column;flex-direction:column;padding-left:0.25rem}.sc-phn-myporsche-drawer-h .myporsche-unread-messages-indicator.sc-phn-myporsche-drawer{position:absolute;width:0.375rem;height:0.375rem;border-radius:50%;background-color:#d5001c;left:1.0625rem;top:0.0625rem}.sc-phn-myporsche-drawer-h .myporsche-unread-messages-indicator.hidden.sc-phn-myporsche-drawer{display:none}";
 var MyPorscheDrawer = /** @class */ (function () {
     function MyPorscheDrawer(hostRef) {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.env = DEFAULT_ENVIRONMENT;
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.unreadMessagesCount = 0;
-        this.handlePressEnterKey = function (event, drawerRef) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
-                if (event.key === 'Enter') {
-                    _this_1.openDrawer(drawerRef);
-                }
-            }
+        this.openDrawer = function () {
+            var phnMyporscheItemsDrawer = {
+                content: Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items-drawer", { slot: "content", myPorscheText: _this_1.myPorscheText })
+            };
+            navStateStore.set('drawerContentStack', __spreadArrays(navStateStore.get('drawerContentStack'), [phnMyporscheItemsDrawer]));
         };
     }
-    MyPorscheDrawer.prototype.openDrawer = function (myPorscheItems) {
-        myPorscheItems.style.display = 'block';
-        this.setActiveDrawer(myPorscheItems, 2);
-    };
     MyPorscheDrawer.prototype.render = function () {
-        var _this_1 = this;
-        var drawerRef;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "drawer-trigger", icon: "arrow-head-right", onClick: function () { return _this_1.openDrawer(drawerRef); }, onKeyDown: function (event) { return _this_1.handlePressEnterKey(event, drawerRef); }, cancelTabIndex: false }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: this.unreadMessagesCount > 0
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "myporsche-drawer-trigger", icon: "arrow-head-right", onClick: this.openDrawer, cancelTabIndex: false }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: this.unreadMessagesCount > 0
                 ? 'myporsche-unread-messages-indicator'
-                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "user", size: "small" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "drawer-trigger-label" }, this.myPorscheText, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus))), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items-drawer", { class: "drawer--closed", ref: function (el) { return (drawerRef = el); }, closeActiveDrawer: this.closeActiveDrawer })));
+                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { color: "inherit", name: "user", size: "small" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "myporsche-drawer-trigger-label" }, this.myPorscheText, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)))));
     };
     return MyPorscheDrawer;
 }());
 MyPorscheDrawer.style = myporscheDrawerCss;
-var myporscheDrawerCss$1 = ".sc-phn-myporsche-drawer-2-h{display:block}.sc-phn-myporsche-drawer-2-h .login-status.sc-phn-myporsche-drawer-2{margin-top:-0.25rem;font-size:0.75rem}@media (min-width: 760px) and (max-width: 999px){.sc-phn-myporsche-drawer-2-h .login-status.sc-phn-myporsche-drawer-2{margin-top:-0.1875rem}}@media (min-width: 1300px){.sc-phn-myporsche-drawer-2-h .login-status.sc-phn-myporsche-drawer-2{margin-top:unset}}.sc-phn-myporsche-drawer-2-h .myporsche-drawer-trigger.sc-phn-myporsche-drawer-2:focus-within{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.sc-phn-myporsche-drawer-2-h .myporsche-drawer-trigger-label.sc-phn-myporsche-drawer-2{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-direction:column;flex-direction:column;padding-left:0.25rem}.sc-phn-myporsche-drawer-2-h .myporsche-unread-messages-indicator.sc-phn-myporsche-drawer-2{position:absolute;width:0.375rem;height:0.375rem;border-radius:50%;background-color:#d5001c;left:1.0625rem;top:0.0625rem}.sc-phn-myporsche-drawer-2-h .myporsche-unread-messages-indicator.hidden.sc-phn-myporsche-drawer-2{display:none}";
-var MyPorscheDrawer$1 = /** @class */ (function () {
-    function MyPorscheDrawer$1(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.unreadMessagesCount = 0;
-    }
-    MyPorscheDrawer$1.prototype.openDrawer = function () {
-        var phnDrawerCarSeriesModelOverview2 = (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items-drawer-2", { slot: "content", myPorscheText: this.myPorscheText }));
-        var parent = navStateStore.get('activeDrawerContent');
-        var currentParent = navStateStore.get('parentDrawerContent');
-        navStateStore.set('activeDrawerContent', phnDrawerCarSeriesModelOverview2);
-        navStateStore.set('parentDrawerContent', __spreadArrays([parent], currentParent));
-        navStateStore.set('accessibilityMarker', '.my-porsche-meta-functionality');
-        navStateStore.set('backButtonText', null);
-    };
-    MyPorscheDrawer$1.prototype.render = function () {
-        var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "myporsche-drawer-trigger", icon: "arrow-head-right", onClick: function () { return _this_1.openDrawer(); }, cancelTabIndex: false }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: this.unreadMessagesCount > 0
-                ? 'myporsche-unread-messages-indicator'
-                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "user", size: "small" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "myporsche-drawer-trigger-label" }, this.myPorscheText, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)))));
-    };
-    return MyPorscheDrawer$1;
-}());
-MyPorscheDrawer$1.style = myporscheDrawerCss$1;
 var myporscheFlyoutCss = ".sc-phn-myporsche-flyout-h{display:none;position:relative}@media (min-width: 1300px){.sc-phn-myporsche-flyout-h{display:block}}.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout{cursor:pointer}.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout:first-child{padding-right:1.125rem}}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout:first-child{padding-right:1.5rem}}@media (min-width: 1300px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout .login-status.sc-phn-myporsche-flyout{position:absolute;top:0;padding-bottom:0.625rem;left:1.75rem;font-size:0.75rem;padding-top:1.1875rem}}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .flyout-trigger.sc-phn-myporsche-flyout .login-status.sc-phn-myporsche-flyout{left:2.1875rem;font-size:0.875rem;padding-top:1.6875rem}}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout{-webkit-box-sizing:border-box;box-sizing:border-box;display:block;position:absolute;background:#fff;right:-3rem;z-index:300}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout{-webkit-box-sizing:inherit;box-sizing:inherit;border:1px solid #c9cacb;position:relative;background:#fff}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout:before{content:\"\";width:0;height:0;position:absolute;top:-0.375rem;right:50%;-webkit-transform:translateX(50%);transform:translateX(50%);border-style:solid;border-width:0 0.3125rem 0.3125rem;border-color:transparent transparent #c9cacb}.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout:after{content:\"\";width:0;height:0;position:absolute;top:-0.3125rem;right:50%;-webkit-transform:translateX(50%);transform:translateX(50%);border-style:solid;border-width:0 0.3125rem 0.3125rem;border-color:transparent transparent #fff}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout{width:14.625rem;top:2.75rem}}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout{width:17.125rem;top:3.5625rem}}@media (min-width: 1300px){.sc-phn-myporsche-flyout-h .myporsche-items.sc-phn-myporsche-flyout phn-myporsche-items.sc-phn-myporsche-flyout{padding:0.625rem 1.5rem 2.25rem 1.5rem}}.sc-phn-myporsche-flyout-h .myporsche-unread-messages-indicator.sc-phn-myporsche-flyout{position:absolute;width:0.375rem;height:0.375rem;border-radius:50%;background-color:#d5001c;left:1.0625rem;top:0.0625rem}@media (min-width: 1760px){.sc-phn-myporsche-flyout-h .myporsche-unread-messages-indicator.sc-phn-myporsche-flyout{width:0.5rem;height:0.5rem;left:1.25rem;top:0.0625rem}}.sc-phn-myporsche-flyout-h .myporsche-unread-messages-indicator.hidden.sc-phn-myporsche-flyout{display:none}";
 var MyPorscheFlyout = /** @class */ (function () {
     function MyPorscheFlyout(hostRef) {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.env = DEFAULT_ENVIRONMENT;
         this.unreadMessagesCount = 0;
         this.isActive = false;
+        this.screenReaderId = 'myporsche-flyout';
         this.keyDownHandler = function (event) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, _this_1.env)) {
-                if (event.key === 'Enter') {
-                    _this_1.isActive = true;
-                }
-                if (event.shiftKey && event.key === 'Tab') {
-                    _this_1.isActive = false;
-                }
+            if (event.shiftKey && event.key === 'Tab') {
+                _this_1.isActive = false;
             }
+        };
+        // also activates screenreader space and enter
+        this.handleClick = function (event) {
+            event.stopPropagation(); // prevents button from losing focus
+            _this_1.isActive = true;
         };
     }
     MyPorscheFlyout.prototype.myPorscheCloseHandler = function () {
@@ -9590,31 +7895,39 @@ var MyPorscheFlyout = /** @class */ (function () {
     };
     MyPorscheFlyout.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: this.unreadMessagesCount > 0
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { "aria-hidden": "true", class: this.unreadMessagesCount > 0
                 ? 'myporsche-unread-messages-indicator'
-                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { class: "flyout-trigger", size: "inherit", icon: "user", active: this.isActive, tabindex: "0", onKeyDown: this.keyDownHandler }, this.myPorscheText, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)), this.isActive ? (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "myporsche-items" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", { myPorscheCloseHandler: function () { return _this_1.myPorscheCloseHandler(); } }))) : null));
+                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { class: "flyout-trigger", size: "inherit", icon: "user", active: this.isActive, onKeyDown: this.keyDownHandler, "aria-haspopup": "true", "aria-expanded": this.isActive ? 'true' : 'false', onClick: this.handleClick, id: this.screenReaderId, role: "button" }, this.myPorscheText, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)), this.isActive ? (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "myporsche-items", "aria-labelledby": this.screenReaderId, role: "region" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", { myPorscheCloseHandler: function () { return _this_1.myPorscheCloseHandler(); } }))) : null));
     };
     return MyPorscheFlyout;
 }());
 MyPorscheFlyout.style = myporscheFlyoutCss;
-var myporscheItemsCss = ".sc-phn-myporsche-items-h{display:block}.sc-phn-myporsche-items-h hr.sc-phn-myporsche-items{display:none}@media (min-width: 1300px){.sc-phn-myporsche-items-h hr.sc-phn-myporsche-items{display:block;height:1px;border:none;background-color:#c9cacb;margin:0.875rem 0 0 0;text-align:center}}";
+var myporscheItemsCss = ".sc-phn-myporsche-items-h{display:block}.sc-phn-myporsche-items-h ul.sc-phn-myporsche-items{margin:0;padding:0;text-indent:0;list-style-type:none}.sc-phn-myporsche-items-h li.sc-phn-myporsche-items{margin:0;padding:0;text-indent:0;list-style-type:none}.sc-phn-myporsche-items-h hr.sc-phn-myporsche-items{display:none}@media (min-width: 1300px){.sc-phn-myporsche-items-h hr.sc-phn-myporsche-items{display:block;height:1px;border:none;background-color:#c9cacb;margin:0.875rem 0 0 0;text-align:center}}";
 var MyPorscheItems = /** @class */ (function () {
     function MyPorscheItems(hostRef) {
         var _this_1 = this;
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.handlePressShiftTabKey = function (event) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
-                if (window.innerWidth > MAX_M_VIEWPORT_WIDTH && event.shiftKey && event.key === 'Tab') {
-                    _this_1.myPorscheCloseHandler();
-                }
+            if (window.innerWidth > MAX_M_VIEWPORT_WIDTH && event.shiftKey && event.key === 'Tab') {
+                _this_1.myPorscheCloseHandler();
             }
         };
         this.handlePressTabKey = function (event) {
-            if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
-                if (window.innerWidth > MAX_M_VIEWPORT_WIDTH && !event.shiftKey && event.key === 'Tab') {
-                    _this_1.myPorscheCloseHandler();
-                }
+            if (window.innerWidth > MAX_M_VIEWPORT_WIDTH && !event.shiftKey && event.key === 'Tab') {
+                _this_1.myPorscheCloseHandler();
             }
+        };
+        this.displayListItems = function (item, index) {
+            if (item.PhraseId === MYPORSCHE_PHRASE_ID + ".messages") {
+                if (index === 0) {
+                    return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-messages-link", { class: "myporsche-list-item", item: item, onKeyDown: _this_1.handlePressShiftTabKey })));
+                }
+                return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-messages-link", { class: "myporsche-list-item", item: item })));
+            }
+            if (index === 0) {
+                return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: item, onKeyDown: _this_1.handlePressShiftTabKey })));
+            }
+            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: item })));
         };
     }
     MyPorscheItems.prototype.getMyPorscheItemFromTemplateAsLinkItem = function (id) {
@@ -9625,75 +7938,37 @@ var MyPorscheItems = /** @class */ (function () {
         return myPorscheItems.find(function (item) { return item.PhraseId === phraseId; });
     };
     MyPorscheItems.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: this.getMyPorscheItemFromTemplateAsLinkItem('carsandservices'), onKeyDown: this.handlePressShiftTabKey }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-messages-link", { class: "myporsche-list-item", item: this.getMyPorscheItemFromTemplateAsLinkItem('messages') }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: this.getMyPorscheItemFromTemplateAsLinkItem('accountadministration') }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("hr", null), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item logout", item: this.getMyPorscheItemFromTemplateAsLinkItem('logout'), onKeyDown: this.handlePressTabKey })));
+        if (navContentStore.get('metafunctionalities').length > 0) {
+            var myPorscheItems = navContentStore.get('metafunctionalities').find(function (m) { return m.PhraseId === MYPORSCHE_PHRASE_ID; })
+                .Items;
+            var nonStaticItems = myPorscheItems.filter(function (item) { return item.PhraseId !== MYPORSCHE_PHRASE_ID + "." + LOGGED_IN_USER_NO_NAME_STATUS &&
+                item.PhraseId !== MYPORSCHE_PHRASE_ID + "." + LOGGED_OUT_USER_STATUS &&
+                item.PhraseId !== MYPORSCHE_PHRASE_ID + ".logout"; });
+            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ul", null, nonStaticItems.map(this.displayListItems), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("hr", { "aria-hidden": "true" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item logout", item: this.getMyPorscheItemFromTemplateAsLinkItem('logout'), onKeyDown: this.handlePressTabKey }))));
+        }
+        return null;
     };
     return MyPorscheItems;
 }());
 MyPorscheItems.style = myporscheItemsCss;
-var myporscheItemsDrawerCss = ".sc-phn-myporsche-items-drawer-h{position:fixed;right:0;top:0;bottom:0;overflow-y:auto;overscroll-behavior-y:none;background-color:#fff;width:100%;padding-bottom:3.125rem;z-index:999999}@media (min-width: 1000px) and (max-width: 1299px){.sc-phn-myporsche-items-drawer-h{width:568px}}.sc-phn-myporsche-items-drawer-h .drawer-container.sc-phn-myporsche-items-drawer{padding-right:7%;padding-left:7%}.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding-top:1.1875rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer{padding-top:0.75rem}}@media (min-width: 1300px){.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer{padding-top:unset}}@media (min-width: 760px){.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer .close-button.sc-phn-myporsche-items-drawer{margin-right:-1.125rem}}.sc-phn-myporsche-items-drawer-h .drawer-back-and-close.sc-phn-myporsche-items-drawer .back-button.sc-phn-myporsche-items-drawer{margin-left:-0.625rem}";
+var myporscheItemsDrawerCss = ".sc-phn-myporsche-items-drawer-h{padding-bottom:3.125rem}";
 var MyPorscheItemsDrawer = /** @class */ (function () {
     function MyPorscheItemsDrawer(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
-    MyPorscheItemsDrawer.prototype.hideDrawer = function () {
-        this.hostElement.style.display = 'none';
-    };
-    MyPorscheItemsDrawer.prototype.keyDownHandler = function (event) {
-        if (isFeatureEnabled(FEATURE_KEYBOARD, navContentStore.get('env'))) {
-            if (!event.shiftKey && event.key === 'Tab') {
-                var focusable = this.hostElement.querySelectorAll(FOCUSABLE_ELEMENTS_SELECTOR);
-                if (event.target === focusable[focusable.length - 1]) {
-                    event.preventDefault();
-                    this.hostElement.querySelector('phn-back-button > p-button-pure').focus();
-                }
-            }
-        }
-    };
-    MyPorscheItemsDrawer.prototype.getValueForField = function (fieldName) {
-        var text = '';
-        var menu = navContentStore.get('menu');
-        if (menu && menu.length > 0) {
-            var menuItem = menu.find(function (m) { return m.PhraseId === MENU_PHRASE_ID; });
-            if (menuItem && menuItem[fieldName]) {
-                text = menuItem[fieldName];
-            }
-        }
-        return text;
-    };
-    MyPorscheItemsDrawer.prototype.hide = function () {
-        this.hideDrawer();
-        this.closeActiveDrawer(2);
-    };
     MyPorscheItemsDrawer.prototype.render = function () {
-        var _this_1 = this;
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "drawer-level-2-item-scroll" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-back-and-close" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", buttonId: this.getValueForField(PHRASEID_FIELD_NAME), text: this.getValueForField(TEXT_FIELD_NAME), onClick: function () { return _this_1.hide(); } }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-close-button", { class: "close-button" })), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: "My Porsche", class: "drawer-headline" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", null))));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.myPorscheText, class: "drawer-headline" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", null))));
     };
-    Object.defineProperty(MyPorscheItemsDrawer.prototype, "hostElement", {
-        get: function () { return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
-        enumerable: false,
-        configurable: true
-    });
     return MyPorscheItemsDrawer;
 }());
 MyPorscheItemsDrawer.style = myporscheItemsDrawerCss;
-var myporscheItemsDrawerCss$1 = ".sc-phn-myporsche-items-drawer-2-h{padding-bottom:3.125rem}";
-var MyPorscheItemsDrawer$1 = /** @class */ (function () {
-    function MyPorscheItemsDrawer$1(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-    }
-    MyPorscheItemsDrawer$1.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.myPorscheText, class: "drawer-headline" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", null))));
-    };
-    return MyPorscheItemsDrawer$1;
-}());
-MyPorscheItemsDrawer$1.style = myporscheItemsDrawerCss$1;
 var previewBadgeCss = ".sc-phn-preview-badge-h{display:block;position:absolute;top:0;right:0;background-color:#d5001c;z-index:9999;padding:0 0.125rem}";
 var PreviewBadge = /** @class */ (function () {
     function PreviewBadge(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     PreviewBadge.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { theme: "dark", size: "x-small" }, this.versionString)));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { theme: "dark", size: "x-small" }, this.versionString)));
     };
     return PreviewBadge;
 }());
@@ -9701,7 +7976,7 @@ PreviewBadge.style = previewBadgeCss;
 var shopsAndMoreCss = ".shops-and-more.sc-phn-shops-and-more{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more.sc-phn-shops-and-more{padding-right:1.5rem}}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more.sc-phn-shops-and-more .shops-and-more-overlay-trigger.sc-phn-shops-and-more{padding:0 0.5625rem;height:91px}}@media (min-width: 1760px){.shops-and-more.sc-phn-shops-and-more .shops-and-more-overlay-trigger.sc-phn-shops-and-more{padding:0 0.75rem;height:102px}}";
 var ShopsAndMore = /** @class */ (function () {
     function ShopsAndMore(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     ShopsAndMore.prototype.getItems = function () {
         var items = [];
@@ -9718,25 +7993,13 @@ var ShopsAndMore = /** @class */ (function () {
     ShopsAndMore.prototype.render = function () {
         var _this_1 = this;
         var items = this.getItems();
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more" }, items.map(function (item) {
-            return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "shops-and-more-overlay-trigger overlay-trigger", showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-item", { slot: "button", item: item, class: "shops-and-more-item" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-overview", { slot: "content", item: item })));
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more" }, items.map(function (item) {
+            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "shops-and-more-overlay-trigger overlay-trigger", showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-desktop-shop-and-more-item", { slot: "button", itemText: item.Text, class: "desktop-shop-and-more-item" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-overview", { slot: "content", item: item })));
         })));
     };
     return ShopsAndMore;
 }());
 ShopsAndMore.style = shopsAndMoreCss;
-var shopsAndMoreItemCss = ".sc-phn-shops-and-more-item-h{display:-ms-flexbox;display:flex;color:#000;font-size:1rem;padding:0.875rem 0 1rem 0.625rem;border-bottom:1px solid #c9cacb}.sc-phn-shops-and-more-item-h:hover{color:#d5001c;cursor:pointer}@media (min-width: 480px) and (max-width: 759px){.sc-phn-shops-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-shops-and-more-item-h{padding:1.125rem 0 1.125rem 0.625rem;font-size:1.125rem}.sc-phn-shops-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 1000px) and (max-width: 1299px){.sc-phn-shops-and-more-item-h{padding:0.875rem 0 0.875rem 0.625rem}.sc-phn-shops-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 1300px){.sc-phn-shops-and-more-item-h{border-bottom:0;padding:1.3125rem 0 2.75rem 0;white-space:nowrap}.sc-phn-shops-and-more-item-h:hover{cursor:default;color:inherit}}@media (min-width: 1760px){.sc-phn-shops-and-more-item-h{padding:1.6875rem 0 2.8125rem 0;font-size:1.25rem}}.sc-phn-shops-and-more-item-h .shops-and-more-item-drawer.sc-phn-shops-and-more-item{display:-ms-flexbox;display:flex;width:100%}@media (min-width: 1300px){.sc-phn-shops-and-more-item-h .shops-and-more-item-drawer.sc-phn-shops-and-more-item{display:none}}.sc-phn-shops-and-more-item-h .shops-and-more-item-mega-menu.sc-phn-shops-and-more-item{display:none}@media (min-width: 1300px){.sc-phn-shops-and-more-item-h .shops-and-more-item-mega-menu.sc-phn-shops-and-more-item{display:-ms-flexbox;display:flex}}";
-var ShopsAndMoreItem = /** @class */ (function () {
-    function ShopsAndMoreItem(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.item = EMPTY_ITEM;
-    }
-    ShopsAndMoreItem.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "shops-and-more-item-drawer", icon: "arrow-head-right" }, this.item.Text), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "shops-and-more-item-mega-menu" }, this.item.Text)));
-    };
-    return ShopsAndMoreItem;
-}());
-ShopsAndMoreItem.style = shopsAndMoreItemCss;
 var hasLinkItemChild = function (item) {
     if (item.Items) {
         for (var index = 0; index < item.Items.length; index++) {
@@ -9777,13 +8040,13 @@ var NavigationLoadEvent = /** @class */ (function (_super_1) {
     };
     return NavigationLoadEvent;
 }(AnalyticsEvent));
-var shopsAndMoreOverviewCss = ".shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:center;justify-content:center}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{padding-top:3.125rem}}@media (min-width: 1760px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{padding-top:3rem}}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview{margin-left:3.75rem;margin-right:3.75rem;width:16.6875rem}}@media (min-width: 1760px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview{margin-left:3rem;margin-right:3rem;width:21.6875rem}}.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview:nth-child(2){margin:0}.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview .list-item-group.sc-phn-shops-and-more-overview{padding-top:0.375rem;padding-left:0.625rem;padding-right:0.625rem}";
+var shopsAndMoreOverviewCss = ".shops-and-more-overview.sc-phn-shops-and-more-overview ul.sc-phn-shops-and-more-overview{margin:0;padding:0;text-indent:0;list-style-type:none}.shops-and-more-overview.sc-phn-shops-and-more-overview li.sc-phn-shops-and-more-overview{margin:0;padding:0;text-indent:0;list-style-type:none}.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:center;justify-content:center}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{padding-top:3.125rem}}@media (min-width: 1760px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{padding-top:3rem}}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview{margin-left:3.75rem;margin-right:3.75rem;width:16.6875rem}}@media (min-width: 1760px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview{margin-left:3rem;margin-right:3rem;width:21.6875rem}}.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview:nth-child(2){margin:0}.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview .list-item-group.sc-phn-shops-and-more-overview{padding-top:0.375rem;padding-left:0.625rem;padding-right:0.625rem}";
 var ShopsAndMoreOverview = /** @class */ (function () {
-    function ShopsAndMoreOverview(hostRef) {
-        Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+    function class_4(hostRef) {
+        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
     }
-    ShopsAndMoreOverview.prototype.triggerAnalyticsEvent = function () {
+    class_4.prototype.triggerAnalyticsEvent = function () {
         return __awaiter(this, void 0, void 0, function () {
             var pagData, analyticsSetup, analyticsEvent;
             return __generator(this, function (_a) {
@@ -9800,24 +8063,24 @@ var ShopsAndMoreOverview = /** @class */ (function () {
             });
         });
     };
-    ShopsAndMoreOverview.prototype.renderLinkGroup = function (_items, _title) {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "link-group" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: _title, class: "head-line" }), Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "list-item-group" }, _items.map(function (linkItem) {
-            return Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: linkItem });
+    class_4.prototype.renderLinkGroup = function (_items, _title) {
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "link-group" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { role: "heading", "aria-level": "2", text: _title, class: "head-line" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ul", { class: "list-item-group" }, _items.map(function (linkItem) {
+            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: linkItem })));
         }))));
     };
-    ShopsAndMoreOverview.prototype.renderLinkGroups = function (_items) {
+    class_4.prototype.renderLinkGroups = function (_items) {
         var _this_1 = this;
         return (_items &&
             _items.map(function (childItem) {
                 return _this_1.renderLinkGroup(childItem.Items, childItem.Text);
             }));
     };
-    ShopsAndMoreOverview.prototype.render = function () {
-        return (Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview" }, Object(_index_b5926612_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview-content" }, hasLinkItemChild(this.item)
+    class_4.prototype.render = function () {
+        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview-content" }, hasLinkItemChild(this.item)
             ? this.renderLinkGroup(this.item.Items, this.item.Text)
             : this.renderLinkGroups(this.item.Items))));
     };
-    return ShopsAndMoreOverview;
+    return class_4;
 }());
 ShopsAndMoreOverview.style = shopsAndMoreOverviewCss;
 

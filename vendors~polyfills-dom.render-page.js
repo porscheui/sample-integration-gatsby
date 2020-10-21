@@ -1,10 +1,10 @@
 exports.ids = ["vendors~polyfills-dom"];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/dom-24a54a40.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/dom-24a54a40.js ***!
-  \*********************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/dom-24a54a40.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/dom-24a54a40.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -480,10 +480,10 @@ catch (e) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm/polyfills/dom.js":
-/*!******************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm/polyfills/dom.js ***!
-  \******************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm/polyfills/dom.js":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm/polyfills/dom.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -570,15 +570,15 @@ DOMTokenList
 
 /***/ }),
 
-/***/ "./node_modules/@porschehn/navigation/dist/esm-es5/dom-24a54a40.js":
+/***/ "./node_modules/@porschehn/navigation/dist/esm-es5/dom-99e33274.js":
 /*!*************************************************************************!*\
-  !*** ./node_modules/@porschehn/navigation/dist/esm-es5/dom-24a54a40.js ***!
+  !*** ./node_modules/@porschehn/navigation/dist/esm-es5/dom-99e33274.js ***!
   \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 /*
- Stencil Client Platform v1.14.0 | MIT Licensed | https://stenciljs.com
+ Stencil Client Patch v1.16.5 | MIT Licensed | https://stenciljs.com
  */
 (function () {
     var aa = new Set("annotation-xml color-profile font-face font-face-src font-face-uri font-face-format font-face-name missing-glyph".split(" "));

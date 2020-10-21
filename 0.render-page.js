@@ -1,10 +1,10 @@
 exports.ids = [0];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-02c10760.js":
-/*!***********************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index-02c10760.js ***!
-  \***********************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-02c10760.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index-02c10760.js ***!
+  \******************************************************************************************/
 /*! exports provided: C, I, M, a */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

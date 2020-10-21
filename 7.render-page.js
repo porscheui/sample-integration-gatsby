@@ -1,10 +1,10 @@
 exports.ids = [7];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js":
-/*!***************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js ***!
-  \***************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js ***!
+  \**********************************************************************************************/
 /*! exports provided: t */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -114,20 +114,20 @@ function throttle(delay, noTrailing, callback, debounceMode) {
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-select-wrapper.entry.js":
-/*!*******************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/p-select-wrapper.entry.js ***!
-  \*******************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-select-wrapper.entry.js":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/p-select-wrapper.entry.js ***!
+  \**************************************************************************************************/
 /*! exports provided: p_select_wrapper */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p_select_wrapper", function() { return SelectWrapper; });
-/* harmony import */ var _breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-633ca215.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-633ca215.js");
-/* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
-/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
-/* harmony import */ var _transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./transition-listener-302b2719.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js");
+/* harmony import */ var _breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpointCustomizable-ff31979d.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/breakpointCustomizable-ff31979d.js");
+/* harmony import */ var _slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slotted-styles-9a18361d.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js");
+/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
+/* harmony import */ var _transition_listener_302b2719_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./transition-listener-302b2719.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js");
 var __spreadArrays = (undefined && undefined.__spreadArrays) || function () {
     for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
     for (var r = Array(s), k = 0, i = 0; i < il; i++)
@@ -150,7 +150,7 @@ var selectWrapperCss = ":host{display:block}::slotted(select){position:absolute 
 var SelectWrapper = /** @class */ (function () {
     function SelectWrapper(hostRef) {
         var _this = this;
-        Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         /** The label text. */
         this.label = '';
         /** The description text. */
@@ -221,7 +221,7 @@ var SelectWrapper = /** @class */ (function () {
     SelectWrapper.prototype.componentDidUpdate = function () {
         this.setAriaAttributes();
     };
-    SelectWrapper.prototype.componentDidUnload = function () {
+    SelectWrapper.prototype.disconnectedCallback = function () {
         if (!this.isTouch) {
             this.selectObserver.disconnect();
             this.select.removeEventListener('mousedown', this.handleMouseEvents.bind(this));
@@ -234,28 +234,28 @@ var SelectWrapper = /** @class */ (function () {
     SelectWrapper.prototype.render = function () {
         var _a, _b, _c, _d, _e, _f;
         var _this = this;
-        var labelClasses = Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__label');
-        var labelTextClasses = Object.assign((_a = {}, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__label-text')] = true, _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__label-text--disabled')] = this.disabled, _a), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["m"])('select-wrapper__label-text-', this.hideLabel, ['hidden', 'visible']));
-        var descriptionTextClasses = Object.assign((_b = {}, _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__description-text')] = true, _b[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__description-text--disabled')] = this.disabled, _b), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["m"])('select-wrapper__description-text-', this.hideLabel, ['hidden', 'visible']));
+        var labelClasses = Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__label');
+        var labelTextClasses = Object.assign((_a = {}, _a[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__label-text')] = true, _a[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__label-text--disabled')] = this.disabled, _a), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["m"])('select-wrapper__label-text-', this.hideLabel, ['hidden', 'visible']));
+        var descriptionTextClasses = Object.assign((_b = {}, _b[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__description-text')] = true, _b[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__description-text--disabled')] = this.disabled, _b), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["m"])('select-wrapper__description-text-', this.hideLabel, ['hidden', 'visible']));
         var fakeSelectClasses = (_c = {},
-            _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-select')] = true,
-            _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-select--disabled')] = this.disabled,
-            _c[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("select-wrapper__fake-select--" + this.state)] = this.state !== 'none',
+            _c[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-select')] = true,
+            _c[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-select--disabled')] = this.disabled,
+            _c[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])("select-wrapper__fake-select--" + this.state)] = this.state !== 'none',
             _c);
         var fakeOptionListClasses = (_d = {},
-            _d[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option-list')] = true,
-            _d[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option-list--hidden')] = this.fakeOptionListHidden,
+            _d[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option-list')] = true,
+            _d[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option-list--hidden')] = this.fakeOptionListHidden,
             _d);
         var iconClasses = (_e = {},
-            _e[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__icon')] = true,
-            _e[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__icon--disabled')] = this.disabled,
-            _e[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__icon--opened')] = !this.fakeOptionListHidden,
+            _e[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__icon')] = true,
+            _e[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__icon--disabled')] = this.disabled,
+            _e[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__icon--opened')] = !this.fakeOptionListHidden,
             _e);
         var messageClasses = (_f = {},
-            _f[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__message')] = true,
-            _f[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])("select-wrapper__message--" + this.state)] = this.state !== 'none',
+            _f[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__message')] = true,
+            _f[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])("select-wrapper__message--" + this.state)] = this.state !== 'none',
             _f);
-        return (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: labelClasses }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("label", null, this.isLabelVisible && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelTextClasses, tag: "span", color: "inherit", onClick: this.labelClick }, this.label || (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "label" }))))), this.isDescriptionVisible && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: descriptionTextClasses, tag: "span", color: "inherit", size: "x-small", onClick: this.labelClick }, this.description || (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "description" }))))), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: fakeSelectClasses }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, name: "arrow-head-down", color: "inherit" }), Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), !this.isTouch && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: fakeOptionListClasses, role: "listbox", "aria-activedescendant": "option-" + this.optionSelected, tabIndex: -1, "aria-expanded": this.fakeOptionListHidden ? 'false' : 'true', "aria-labelledby": this.label, ref: function (el) { return (_this.fakeOptionListNode = el); } }, this.createFakeOptionList()))), this.isMessageVisible && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: messageClasses, color: "inherit", role: this.state === 'error' && 'alert' }, this.message || (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "message" })))))));
+        return (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: labelClasses }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("label", null, this.isLabelVisible && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: labelTextClasses, tag: "span", color: "inherit", onClick: this.labelClick }, this.label || (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "label" }))))), this.isDescriptionVisible && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: descriptionTextClasses, tag: "span", color: "inherit", size: "x-small", onClick: this.labelClick }, this.description || (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "description" }))))), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: fakeSelectClasses }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: iconClasses, name: "arrow-head-down", color: "inherit" }), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null))), !this.isTouch && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: fakeOptionListClasses, role: "listbox", "aria-activedescendant": "option-" + this.optionSelected, tabIndex: -1, "aria-expanded": this.fakeOptionListHidden ? 'false' : 'true', "aria-labelledby": this.label, ref: function (el) { return (_this.fakeOptionListNode = el); } }, this.createFakeOptionList()))), this.isMessageVisible && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: messageClasses, color: "inherit", role: this.state === 'error' && 'alert' }, this.message || (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "message" })))))));
     };
     Object.defineProperty(SelectWrapper.prototype, "isLabelVisible", {
         get: function () {
@@ -410,13 +410,13 @@ var SelectWrapper = /** @class */ (function () {
         return Array.from(this.options).map(function (option, key) {
             var _a;
             return [
-                option.parentElement.tagName === 'OPTGROUP' && option.previousElementSibling === null && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-optgroup-label'), role: "presentation" }, option.closest('optgroup').label)),
-                Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { id: "option-" + key, role: "option", color: "inherit", class: (_a = {},
-                        _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option')] = true,
-                        _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option--selected')] = _this.optionSelected === key,
-                        _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option--highlighted')] = _this.optionHighlighted === key,
-                        _a[Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option--disabled')] = _this.optionDisabled.includes(key),
-                        _a), onClick: function () { return (!_this.optionDisabled.includes(key) ? _this.setOptionSelected(key) : _this.select.focus()); }, "aria-selected": _this.optionSelected === key && 'true', "aria-disabled": _this.optionDisabled.includes(key) && 'true' }, Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, option.text), key === _this.optionSelected && (Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option-icon'), "aria-hidden": "true", name: "check", color: "inherit" })))
+                option.parentElement.tagName === 'OPTGROUP' && option.previousElementSibling === null && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-optgroup-label'), role: "presentation" }, option.closest('optgroup').label)),
+                Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { id: "option-" + key, role: "option", color: "inherit", class: (_a = {},
+                        _a[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option')] = true,
+                        _a[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option--selected')] = _this.optionSelected === key,
+                        _a[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option--highlighted')] = _this.optionHighlighted === key,
+                        _a[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option--disabled')] = _this.optionDisabled.includes(key),
+                        _a), onClick: function () { return (!_this.optionDisabled.includes(key) ? _this.setOptionSelected(key) : _this.select.focus()); }, "aria-selected": _this.optionSelected === key && 'true', "aria-disabled": _this.optionDisabled.includes(key) && 'true' }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", null, option.text), key === _this.optionSelected && (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('select-wrapper__fake-option-icon'), "aria-hidden": "true", name: "check", color: "inherit" })))
             ];
         });
     };
@@ -483,7 +483,7 @@ var SelectWrapper = /** @class */ (function () {
         Object(_slotted_styles_9a18361d_js__WEBPACK_IMPORTED_MODULE_1__["i"])(this.host, style);
     };
     Object.defineProperty(SelectWrapper.prototype, "host", {
-        get: function () { return Object(_breakpointCustomizable_633ca215_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
+        get: function () { return Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -495,10 +495,10 @@ SelectWrapper.style = selectWrapperCss;
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js":
-/*!********************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js ***!
-  \********************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/slotted-styles-9a18361d.js ***!
+  \***************************************************************************************************/
 /*! exports provided: i */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -559,17 +559,17 @@ var minifySlottedStyles = function (css) { return css
 
 /***/ }),
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js":
-/*!*************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js ***!
-  \*************************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/transition-listener-302b2719.js ***!
+  \********************************************************************************************************/
 /*! exports provided: t */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return transitionListener; });
-/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
+/* harmony import */ var _index_esm_37b6c9b0_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.esm-37b6c9b0.js */ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/index.esm-37b6c9b0.js");
 
 /**
  * Listens to the end of a CSS transition and calls a throttled callback and calls

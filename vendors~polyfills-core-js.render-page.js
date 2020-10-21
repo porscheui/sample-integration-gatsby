@@ -1,10 +1,10 @@
 exports.ids = ["vendors~polyfills-core-js"];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm/polyfills/core-js.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm/polyfills/core-js.js ***!
-  \**********************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm/polyfills/core-js.js":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm/polyfills/core-js.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

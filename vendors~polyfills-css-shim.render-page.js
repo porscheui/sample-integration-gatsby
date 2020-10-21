@@ -1,10 +1,10 @@
 exports.ids = ["vendors~polyfills-css-shim"];
 exports.modules = {
 
-/***/ "./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/css-shim-8a9bfe22.js":
-/*!**************************************************************************************************************************************************!*\
-  !*** ./node_modules/@porsche-design-system/components-react/node_modules/@porsche-design-system/components-js/dist/esm-es5/css-shim-8a9bfe22.js ***!
-  \**************************************************************************************************************************************************/
+/***/ "./node_modules/@porsche-design-system/components-js/dist/esm-es5/css-shim-8a9bfe22.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/@porsche-design-system/components-js/dist/esm-es5/css-shim-8a9bfe22.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -134,15 +134,15 @@ var CustomStyle = function () { function e(e, t) { this.win = e, this.doc = t, t
 
 /***/ }),
 
-/***/ "./node_modules/@porschehn/navigation/dist/esm-es5/css-shim-8a9bfe22.js":
+/***/ "./node_modules/@porschehn/navigation/dist/esm-es5/css-shim-c25d0fa8.js":
 /*!******************************************************************************!*\
-  !*** ./node_modules/@porschehn/navigation/dist/esm-es5/css-shim-8a9bfe22.js ***!
+  !*** ./node_modules/@porschehn/navigation/dist/esm-es5/css-shim-c25d0fa8.js ***!
   \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 /*
- Stencil Client Platform v1.14.0 | MIT Licensed | https://stenciljs.com
+ Stencil Client Patch v1.16.5 | MIT Licensed | https://stenciljs.com
  */
 var StyleNode = function () { this.start = 0, this.end = 0, this.previous = null, this.parent = null, this.rules = null, this.parsedCssText = "", this.cssText = "", this.atRule = !1, this.type = 0, this.keyframesName = "", this.selector = "", this.parsedSelector = ""; };
 function parse(e) { return parseCss(lex(e = clean(e)), e); }
