@@ -10,7 +10,7 @@ beforeEach(() => {
       siteMetadata: {
         author: 'Bernd / Matze',
         description: 'Mock of SEO',
-        title: 'Porsche Design System in Gatsby'
+        title: 'Porsche Design System in Gatsby',
       },
     },
   }));
