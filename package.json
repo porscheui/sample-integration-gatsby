@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@porsche-design-system/components-react": "1.5.6",
+    "@porsche-design-system/components-react": "1.5.7",
     "@porsche-design-system/partials": "2.0.0",
     "@porsche-design-system/utilities": "2.0.0",
     "@porschehn/navigation": "^1.4.2",
@@ -26,6 +26,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@porsche-design-system/prettier-config": "^1.0.0",
     "@testing-library/jest-dom": "^5.11.1",
     "@testing-library/react": "^10.4.7",
     "@types/react-helmet": "^6.0.0",
@@ -34,13 +35,14 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
     "jest-preset-gatsby": "^1.0.71",
-    "prettier": "^2.0.5",
+    "prettier": "^2.2.1",
     "react-test-renderer": "^16.13.1"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
+  "prettier": "@porsche-design-system/prettier-config",
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop -H 0.0.0.0",

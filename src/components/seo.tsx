@@ -69,8 +69,8 @@ const SEO = ({ description, lang, meta, title }): JSX.Element => {
           content: metaDescription,
         },
       ].concat(meta)}
-      style={[{cssText: getPorscheDesignSystemCoreStyles({ withoutTags: true })}]}
-      link={[{rel: 'stylesheet', href: getFontFaceCSS({ withoutTags: true })}]}
+      style={[{ cssText: getPorscheDesignSystemCoreStyles({ withoutTags: true }) }]}
+      link={[{ rel: 'stylesheet', href: getFontFaceCSS({ withoutTags: true }) }]}
     />
   );
 };
