@@ -465,6 +465,8 @@ var Pagination = /** @class */ (function () {
         this.allyLabelNext = 'Next page';
         /** Adapts the color when used on dark background. */
         this.theme = 'light';
+        // eslint-disable-next-line @typescript-eslint/no-empty-function
+        this.unlistenResize = function () { };
         this.pageChange = Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "pageChange", 7);
     }
     Pagination.prototype.onActivePageChange = function (page, previousPage) {
@@ -507,7 +509,7 @@ var Pagination = /** @class */ (function () {
                         _a[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__prev')] = true,
                         _a[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__prev--disabled')] = !pageModel.isActive,
                         _a);
-                    return (prevItem = (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationPrevClasses, role: 'button', tabIndex: pageModel.isActive ? 0 : null, onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-disabled": !pageModel.isActive && 'true', "aria-label": _this.allyLabelPrev }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "arrow-head-left", color: "inherit" })))));
+                    return (prevItem = (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationPrevClasses, role: 'button', tabIndex: pageModel.isActive ? 0 : null, onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-disabled": !pageModel.isActive ? 'true' : null, "aria-label": _this.allyLabelPrev }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "arrow-head-left", color: "inherit" })))));
                 }
                 if (pageModel.type === itemTypes.ELLIPSIS) {
                     var paginationGoToClasses = (_b = {},
@@ -521,14 +523,14 @@ var Pagination = /** @class */ (function () {
                         _c[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__goto')] = true,
                         _c[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__goto--current')] = pageModel.isActive,
                         _c);
-                    pageItems.push(Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationGoToClasses, role: 'button', tabIndex: pageModel.isActive ? null : 0, "aria-disabled": pageModel.isActive && 'true', onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-label": _this.allyLabelPage + " " + pageModel.value, "aria-current": pageModel.isActive && 'page' }, pageModel.value)));
+                    pageItems.push(Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationGoToClasses, role: 'button', tabIndex: pageModel.isActive ? null : 0, "aria-disabled": pageModel.isActive ? 'true' : null, onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-label": _this.allyLabelPage + " " + pageModel.value, "aria-current": pageModel.isActive ? 'page' : null }, pageModel.value)));
                 }
                 if (pageModel.type === itemTypes.NEXT_PAGE_LINK) {
                     var paginationNextClasses = (_d = {},
                         _d[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__next')] = true,
                         _d[Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["c"])('pagination__next--disabled')] = !pageModel.isActive,
                         _d);
-                    return (nextItem = (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationNextClasses, role: 'button', tabIndex: pageModel.isActive ? 0 : null, onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-disabled": !pageModel.isActive && 'true', "aria-label": _this.allyLabelNext }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "arrow-head-right", color: "inherit" })))));
+                    return (nextItem = (Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", Object.assign({}, pageModel, { class: paginationItemClasses }), Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: paginationNextClasses, role: 'button', tabIndex: pageModel.isActive ? 0 : null, onClick: function () { return _this.onClick(pageModel.value); }, onKeyDown: function (e) { return _this.onKeyDown(e, pageModel.value); }, "aria-disabled": !pageModel.isActive ? 'true' : null, "aria-label": _this.allyLabelNext }, Object(_breakpointCustomizable_ff31979d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { name: "arrow-head-right", color: "inherit" })))));
                 }
             });
             return {
