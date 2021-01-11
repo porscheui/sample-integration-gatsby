@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { includeOverlay } from '@porsche-design-system/browser-notification';
+import { getFontFaceCSS, getPorscheDesignSystemCoreStyles } from '@porsche-design-system/partials';
 
 export default function HTML(props) {
   return (
@@ -9,6 +10,8 @@ export default function HTML(props) {
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <style dangerouslySetInnerHTML={{ __html: getPorscheDesignSystemCoreStyles({ withoutTags: true }) }} />
+        <link rel="stylesheet" href={getFontFaceCSS({ withoutTags: true })} />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
