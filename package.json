@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@porsche-design-system/browser-notification": "^2.0.0",
     "@porsche-design-system/components-react": "1.5.7",
     "@porsche-design-system/partials": "2.0.0",
     "@porsche-design-system/utilities": "2.0.0",
