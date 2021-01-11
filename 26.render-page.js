@@ -46,7 +46,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_preview_badge", function() { return PreviewBadge; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_shops_and_more", function() { return ShopsAndMore; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "phn_shops_and_more_overview", function() { return ShopsAndMoreOverview; });
-/* harmony import */ var _index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-f8290f1d.js */ "./node_modules/@porschehn/navigation/dist/esm-es5/index-f8290f1d.js");
+/* harmony import */ var _index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-866367c9.js */ "./node_modules/@porschehn/navigation/dist/esm-es5/index-866367c9.js");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -117,8 +117,8 @@ var debounce = function (fn, ms) {
     var timeoutId;
     return function () {
         var args = [];
-        for (var _a = 0; _a < arguments.length; _a++) {
-            args[_a] = arguments[_a];
+        for (var _b = 0; _b < arguments.length; _b++) {
+            args[_b] = arguments[_b];
         }
         if (timeoutId) {
             clearTimeout(timeoutId);
@@ -140,22 +140,22 @@ var debounce = function (fn, ms) {
  */
 var isConnected = function (maybeElement) { return !('isConnected' in maybeElement) || maybeElement.isConnected; };
 var cleanupElements = debounce(function (map) {
-    for (var _a = 0, _b = map.keys(); _a < _b.length; _a++) {
-        var key = _b[_a];
+    for (var _b = 0, _c = map.keys(); _b < _c.length; _b++) {
+        var key = _c[_b];
         map.set(key, map.get(key).filter(isConnected));
     }
 }, 2000);
-var stencilSubscription = function (_a) {
-    var on = _a.on;
+var stencilSubscription = function (_b) {
+    var on = _b.on;
     var elmsToUpdate = new Map();
-    if (typeof _index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["g"] === 'function') {
+    if (typeof _index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["g"] === 'function') {
         // If we are not in a stencil project, we do nothing.
         // This function is not really exported by @stencil/core.
         on('dispose', function () {
             elmsToUpdate.clear();
         });
         on('get', function (propName) {
-            var elm = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["g"])();
+            var elm = Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["g"])();
             if (elm) {
                 appendToMap(elmsToUpdate, propName, elm);
             }
@@ -163,12 +163,12 @@ var stencilSubscription = function (_a) {
         on('set', function (propName) {
             var elements = elmsToUpdate.get(propName);
             if (elements) {
-                elmsToUpdate.set(propName, elements.filter(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["f"]));
+                elmsToUpdate.set(propName, elements.filter(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["f"]));
             }
             cleanupElements(elmsToUpdate);
         });
         on('reset', function () {
-            elmsToUpdate.forEach(function (elms) { return elms.forEach(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["f"]); });
+            elmsToUpdate.forEach(function (elms) { return elms.forEach(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["f"]); });
             cleanupElements(elmsToUpdate);
         });
     }
@@ -246,8 +246,8 @@ var createObservableMap = function (defaultState, shouldUpdate) {
     };
     var use = function () {
         var subscriptions = [];
-        for (var _a = 0; _a < arguments.length; _a++) {
-            subscriptions[_a] = arguments[_a];
+        for (var _b = 0; _b < arguments.length; _b++) {
+            subscriptions[_b] = arguments[_b];
         }
         return subscriptions.forEach(function (subscription) {
             if (subscription.set) {
@@ -292,13 +292,21 @@ var DEFAULT_METAFUNCTIONALITIES = [];
 var DEFAULT_MENU = [];
 var DEFAULT_ENVIRONMENT = 'production';
 var ANALYTICS_APP_ID = 'nav';
-var EMPTY_SERIES = { PhraseId: '', Name: '', Image: '', Models: [], Further: [], Meta: [] };
+var EMPTY_SERIES = {
+    PhraseId: '',
+    Name: '',
+    Image: '',
+    Models: [],
+    Further: [],
+    Meta: [],
+    ModelMeta: []
+};
 var EMPTY_ITEM = { PhraseId: '', Text: '' };
 var REDACTED = 'REDACTED';
 var LOGGED_IN_USER_NO_NAME_STATUS = 'loggedIn';
 var LOGGED_OUT_USER_STATUS = 'loginOrRegister';
 var LOADING_STATUS = 'loading';
-var VERSION = '1.9.1';
+var VERSION = '1.12.0';
 var DEFAULT_UNREAD_MESSAGES_COUNT = 0;
 var DEFAULT_EMPTY_CONTENT_RESPONSE = [];
 var DEFAULT_EMPTY_CONTENT = {
@@ -317,6 +325,9 @@ var DEALER_SEARCH_PHRASE_ID = 'metafunctionalities.finddealer';
 var MYPORSCHE_PHRASE_ID = 'metafunctionalities.myporsche';
 var CREST_PHRASE_ID = 'mainmenu.crest';
 var MENU_PHRASE_ID = 'mainmenu.menu';
+var FEATURE_OVERRIDE_ENABLED = 'featureOverrideEnabled';
+var FEATURE_MODEL_META = 'homenav_1163_modelMeta';
+var FEATURE_MOBILE_FOCUS = 'homenav_1174_focusMgmt';
 var MAX_M_VIEWPORT_WIDTH = 1299;
 var FOCUSABLE_ELEMENTS_SELECTOR = 'a, button, [tabindex]:not([tabindex="-1"]), p-link-pure, p-button-pure';
 var Locale = /** @class */ (function () {
@@ -417,31 +428,31 @@ var AnalyticsEvent = /** @class */ (function () {
         };
     };
     AnalyticsEvent.prototype.initContext = function () {
-        var _a;
-        this.context = (_a = {},
-            _a[ContextCollectionDimensions.ApplicationId] = undefined,
-            _a[ContextCollectionDimensions.Language] = undefined,
-            _a[ContextCollectionDimensions.Country] = undefined,
-            _a[ContextCollectionDimensions.EventAction] = undefined,
-            _a[ContextCollectionDimensions.Timestamp] = undefined,
-            _a[ContextCollectionDimensions.Environment] = undefined,
-            _a);
+        var _b;
+        this.context = (_b = {},
+            _b[ContextCollectionDimensions.ApplicationId] = undefined,
+            _b[ContextCollectionDimensions.Language] = undefined,
+            _b[ContextCollectionDimensions.Country] = undefined,
+            _b[ContextCollectionDimensions.EventAction] = undefined,
+            _b[ContextCollectionDimensions.Timestamp] = undefined,
+            _b[ContextCollectionDimensions.Environment] = undefined,
+            _b);
     };
     AnalyticsEvent.prototype.initVisitor = function () {
-        var _a;
-        this.visitor = (_a = {},
-            _a[VisitorCollectionDimensions.DeviceBrowserWidth] = undefined,
-            _a[VisitorCollectionDimensions.DeviceBrowserHeight] = undefined,
-            _a[VisitorCollectionDimensions.DeviceBrowserBreakpoint] = undefined,
-            _a[VisitorCollectionDimensions.DeviceBrowserOrientation] = undefined,
-            _a);
+        var _b;
+        this.visitor = (_b = {},
+            _b[VisitorCollectionDimensions.DeviceBrowserWidth] = undefined,
+            _b[VisitorCollectionDimensions.DeviceBrowserHeight] = undefined,
+            _b[VisitorCollectionDimensions.DeviceBrowserBreakpoint] = undefined,
+            _b[VisitorCollectionDimensions.DeviceBrowserOrientation] = undefined,
+            _b);
     };
     AnalyticsEvent.prototype.initPageExperience = function () {
-        var _a;
-        this.pageExperience = (_a = {},
-            _a[PageExperienceCollectionDimensions.PageId] = undefined,
-            _a[PageExperienceCollectionDimensions.PageName] = undefined,
-            _a);
+        var _b;
+        this.pageExperience = (_b = {},
+            _b[PageExperienceCollectionDimensions.PageId] = undefined,
+            _b[PageExperienceCollectionDimensions.PageName] = undefined,
+            _b);
     };
     AnalyticsEvent.prototype.populateVisitor = function (window) {
         this.visitor.deviceBrowserHeight = window.innerHeight.toString();
@@ -493,13 +504,13 @@ var MenuBackClickEvent = /** @class */ (function (_super_1) {
         return _this_1;
     }
     MenuBackClickEvent.prototype.initComponentClick = function () {
-        var _a;
-        this.componentClick = (_a = {},
-            _a[ComponentClickCollectionDimension.ClickElementId] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementName] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementType] = undefined,
-            _a[ComponentClickCollectionDimension.TargetUrl] = undefined,
-            _a);
+        var _b;
+        this.componentClick = (_b = {},
+            _b[ComponentClickCollectionDimension.ClickElementId] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementName] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementType] = undefined,
+            _b[ComponentClickCollectionDimension.TargetUrl] = undefined,
+            _b);
     };
     MenuBackClickEvent.prototype.populateComponentClickFromContentItem = function (contentItem) {
         this.componentClick.clickElementId = contentItem.PhraseId;
@@ -516,7 +527,7 @@ var backButtonCss = ".sc-phn-back-button-h{font-size:1rem;display:-ms-flexbox;di
 var BackButton = /** @class */ (function () {
     function BackButton(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.text = '';
         this.buttonId = '';
         this.sendMenuBackClickEventAnalyticsEvent = function () {
@@ -533,7 +544,7 @@ var BackButton = /** @class */ (function () {
         };
     }
     BackButton.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { size: "inherit", icon: "arrow-head-left", class: "back-button-text-link", onClick: this.sendMenuBackClickEventAnalyticsEvent }, this.text)));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { size: "inherit", icon: "arrow-head-left", class: "back-button-text-link", "aria-label": "Back to Menu", onClick: this.sendMenuBackClickEventAnalyticsEvent }, this.text)));
     };
     return BackButton;
 }());
@@ -583,13 +594,13 @@ var MoreClickEvent = /** @class */ (function (_super_1) {
         return _this_1;
     }
     MoreClickEvent.prototype.initComponentClick = function () {
-        var _a;
-        this.componentClick = (_a = {},
-            _a[ComponentClickCollectionDimension.ClickElementId] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementName] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementType] = undefined,
-            _a[ComponentClickCollectionDimension.TargetUrl] = undefined,
-            _a);
+        var _b;
+        this.componentClick = (_b = {},
+            _b[ComponentClickCollectionDimension.ClickElementId] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementName] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementType] = undefined,
+            _b[ComponentClickCollectionDimension.TargetUrl] = undefined,
+            _b);
     };
     MoreClickEvent.prototype.populateComponentClickFromContentItem = function (contentItem) {
         this.componentClick.clickElementId = contentItem.PhraseId;
@@ -602,10 +613,10 @@ var MoreClickEvent = /** @class */ (function (_super_1) {
     };
     return MoreClickEvent;
 }(AnalyticsEvent));
-var burgerButtonCss = ".sc-phn-burger-button-h{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;position:relative}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button{display:-ms-flexbox;display:flex;font-family:inherit;width:100%;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;cursor:pointer;color:inherit;color:#000}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button::-moz-focus-inner{border:0}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button{padding-bottom:0.125rem}}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button:hover{color:#d5001c;cursor:pointer}@media (min-width: 1300px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button{display:none}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .burger-button-icon.sc-phn-burger-button{padding-top:0.125rem}}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .burger-button-text.sc-phn-burger-button{font-size:1rem;padding:0 0.5rem 0 0}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .burger-button-text.sc-phn-burger-button{font-size:1.125rem}}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .myporsche-unread-messages-indicator.sc-phn-burger-button{position:absolute;width:0.375rem;height:0.375rem;border-radius:50%;background-color:#d5001c;right:-0.25rem;top:1.25rem}@media (min-width: 760px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .myporsche-unread-messages-indicator.sc-phn-burger-button{top:1.3125rem}}@media (min-width: 1000px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .myporsche-unread-messages-indicator.sc-phn-burger-button{top:1.4375rem}}.sc-phn-burger-button-h .hide-button.sc-phn-burger-button{visibility:hidden}.sc-phn-burger-button-h .burger-button-skeleton.sc-phn-burger-button{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;height:0.875rem;width:4rem;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;background:#c9cacb}@media (min-width: 1300px){.sc-phn-burger-button-h .burger-button-skeleton.sc-phn-burger-button{display:none}}";
+var burgerButtonCss = ".sc-phn-burger-button-h{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;position:relative}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button{display:-ms-flexbox;display:flex;font-family:inherit;width:100%;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;cursor:pointer;color:inherit;color:#000}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button::-moz-focus-inner{border:0}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button{padding-bottom:0.125rem}}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button:hover{color:#d5001c;cursor:pointer}@media (min-width: 1300px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button{display:none}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .burger-button-icon.sc-phn-burger-button{padding-top:0.125rem}}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .burger-button-text.sc-phn-burger-button{font-size:1rem;padding:0 0.5rem 0 0}@media (min-width: 760px) and (max-width: 999px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .burger-button-text.sc-phn-burger-button{font-size:1.125rem}}.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .myporsche-unread-messages-indicator.sc-phn-burger-button{position:absolute;width:0.375rem;height:0.375rem;border-radius:50%;background-color:#d5001c;right:-0.25rem;top:1.25rem}@media (min-width: 760px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .myporsche-unread-messages-indicator.sc-phn-burger-button{top:1.3125rem}}@media (min-width: 1000px){.sc-phn-burger-button-h .burger-button.sc-phn-burger-button .myporsche-unread-messages-indicator.sc-phn-burger-button{top:1.4375rem}}.sc-phn-burger-button-h .burger-button-skeleton.sc-phn-burger-button{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;height:0.875rem;width:4rem;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;background:#c9cacb}@media (min-width: 1300px){.sc-phn-burger-button-h .burger-button-skeleton.sc-phn-burger-button{display:none}}";
 var BurgerButton = /** @class */ (function () {
     function BurgerButton(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.hiddenStyle = { display: 'none' };
         this.sendMoreClickAnalyticsEvent = function () {
             var analyticsSetup = {
@@ -634,8 +645,7 @@ var BurgerButton = /** @class */ (function () {
     BurgerButton.prototype.render = function () {
         var hasMenuContent = navContentStore.get('menu').length > 0;
         var hasUnreadMessages = navContentStore.get('unreadMessagesCount') > 0;
-        var isDrawerOpen = navStateStore.get('isDrawerOpen');
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { style: navStateStore.get('crestLoaded') ? {} : this.hiddenStyle, class: "burger-button " + (isDrawerOpen ? 'hide-button' : ''), onClick: hasMenuContent ? this.sendMoreClickAnalyticsEvent : null }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { size: "inherit", class: "burger-button-text" }, this.getText()), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: "burger-button-icon", size: "small", name: "menu-lines" }), hasUnreadMessages && Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "myporsche-unread-messages-indicator" })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { style: navStateStore.get('crestLoaded') ? this.hiddenStyle : {}, class: "burger-button-skeleton" })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { style: navStateStore.get('crestLoaded') ? {} : this.hiddenStyle, class: "burger-button", onClick: hasMenuContent ? this.sendMoreClickAnalyticsEvent : null, "aria-haspopup": "dialog" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { size: "inherit", class: "burger-button-text" }, this.getText()), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { class: "burger-button-icon", size: "small", name: "menu-lines", role: "img", "aria-label": "burger button" }), hasUnreadMessages && Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "myporsche-unread-messages-indicator" })), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { style: navStateStore.get('crestLoaded') ? this.hiddenStyle : {}, class: "burger-button-skeleton" })));
     };
     return BurgerButton;
 }());
@@ -643,11 +653,11 @@ BurgerButton.style = burgerButtonCss;
 var buttonExtendedCss = "button.sc-phn-button-extended{display:-ms-flexbox;display:flex;width:100%;position:relative;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;-webkit-transition:outline-color 0.24s ease, color 0.24s ease;transition:outline-color 0.24s ease, color 0.24s ease;color:inherit;font-size:inherit;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center}button.sc-phn-button-extended::-moz-focus-inner{border:0}button.sc-phn-button-extended:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;height:100%}button.sc-phn-button-extended:hover,button.sc-phn-button-extended:hover p-text.sc-phn-button-extended,button.sc-phn-button-extended:hover p-icon.sc-phn-button-extended{color:#d5001c;cursor:pointer}@media (min-width: 1300px){button.sc-phn-button-extended:hover,button.sc-phn-button-extended:hover p-text.sc-phn-button-extended,button.sc-phn-button-extended:hover p-icon.sc-phn-button-extended{cursor:default;color:inherit}}button.sc-phn-button-extended:enabled:hover,button.sc-phn-button-extended:enabled:active,button.sc-phn-button-extended:not([disabled]):hover,button.sc-phn-button-extended:not([disabled]):active{color:#d5001c}button.sc-phn-button-extended p-icon.sc-phn-button-extended{display:-ms-flexbox;display:flex}button.sc-phn-button-extended p-text.sc-phn-button-extended{display:-ms-flexbox;display:flex}";
 var ButtonExtended = /** @class */ (function () {
     function ButtonExtended(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.cancelTabIndex = true;
     }
     ButtonExtended.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { tabindex: this.cancelTabIndex ? -1 : 0 }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { color: "inherit", size: "inherit", tag: "div" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)), this.icon ? Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { color: "inherit", size: "small", name: this.icon }) : null));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { tabindex: this.cancelTabIndex ? -1 : 0 }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { color: "inherit", size: "inherit", tag: "div" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null)), this.icon ? Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { color: "inherit", size: "small", name: this.icon }) : null));
     };
     return ButtonExtended;
 }());
@@ -662,13 +672,13 @@ var NavigationClickEvent = /** @class */ (function (_super_1) {
         return _this_1;
     }
     NavigationClickEvent.prototype.initComponentClick = function () {
-        var _a;
-        this.componentClick = (_a = {},
-            _a[ComponentClickCollectionDimension.ClickElementId] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementName] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementType] = undefined,
-            _a[ComponentClickCollectionDimension.TargetUrl] = undefined,
-            _a);
+        var _b;
+        this.componentClick = (_b = {},
+            _b[ComponentClickCollectionDimension.ClickElementId] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementName] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementType] = undefined,
+            _b[ComponentClickCollectionDimension.TargetUrl] = undefined,
+            _b);
     };
     NavigationClickEvent.prototype.populateComponentClickFromContentItem = function (contentItem) {
         this.componentClick.clickElementId = contentItem.PhraseId;
@@ -685,7 +695,7 @@ var NavigationClickEvent = /** @class */ (function (_super_1) {
 var carFurtherLinksCss = "@media (min-width: 1300px){.car-further-links.sc-phn-car-further-links{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center}}.car-further-links.sc-phn-car-further-links .car-further-links-wrapper.sc-phn-car-further-links{border-bottom:1px solid #c9cacb;margin-bottom:3.75rem}@media (min-width: 1300px){.car-further-links.sc-phn-car-further-links .car-further-links-wrapper.sc-phn-car-further-links{border-top:1px solid #c9cacb;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;margin-bottom:unset}}.car-further-links-item.sc-phn-car-further-links{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;font-weight:normal;-ms-flex-align:center;align-items:center;border-top:1px solid #c9cacb;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;padding:15px 0}.car-further-links-item.sc-phn-car-further-links:first-child{border-top:0}@media (min-width: 760px) and (max-width: 999px){.car-further-links-item.sc-phn-car-further-links{font-size:1.125rem;padding:18px 0}}@media (min-width: 1300px){.car-further-links-item.sc-phn-car-further-links{height:1.5rem;padding:0.875rem 0.625rem;border-top:0;-webkit-box-sizing:unset;box-sizing:unset}.car-further-links-item.sc-phn-car-further-links:first-child{margin-right:0.25rem}}";
 var CarFurtherLinks = /** @class */ (function () {
     function CarFurtherLinks(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.items = [
             { PhraseId: '', Text: '', Link: '' },
             { PhraseId: '', Text: '', Link: '' }
@@ -704,10 +714,10 @@ var CarFurtherLinks = /** @class */ (function () {
     }
     CarFurtherLinks.prototype.renderItem = function (item) {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: item.Link, icon: 'arrow-head-right', size: "inherit", class: "car-further-links-item", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(item); } }, item.Text));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: item.Link, icon: 'arrow-head-right', size: "inherit", class: "car-further-links-item", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(item); }, role: "button" }, item.Text));
     };
     CarFurtherLinks.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links-wrapper" }, this.renderItem(this.items[0]), this.renderItem(this.items[1]))));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-further-links-wrapper" }, this.renderItem(this.items[0]), this.renderItem(this.items[1]))));
     };
     return CarFurtherLinks;
 }());
@@ -723,24 +733,24 @@ var ModelAnalyticsEvent = /** @class */ (function (_super_1) {
         return _this_1;
     }
     ModelAnalyticsEvent.prototype.initCar = function () {
-        var _a;
-        this.car = (_a = {},
-            _a[CarCollectionDimensions.ModelRangeCode] = undefined,
-            _a[CarCollectionDimensions.ModelRangeName] = undefined,
-            _a[CarCollectionDimensions.ModelSeriesName] = undefined,
-            _a[CarCollectionDimensions.ModelSeriesCode] = undefined,
-            _a[CarCollectionDimensions.ModelName] = undefined,
-            _a[CarCollectionDimensions.Bodytype] = undefined,
-            _a);
+        var _b;
+        this.car = (_b = {},
+            _b[CarCollectionDimensions.ModelRangeCode] = undefined,
+            _b[CarCollectionDimensions.ModelRangeName] = undefined,
+            _b[CarCollectionDimensions.ModelSeriesName] = undefined,
+            _b[CarCollectionDimensions.ModelSeriesCode] = undefined,
+            _b[CarCollectionDimensions.ModelName] = undefined,
+            _b[CarCollectionDimensions.Bodytype] = undefined,
+            _b);
     };
     ModelAnalyticsEvent.prototype.initComponentClick = function () {
-        var _a;
-        this.componentClick = (_a = {},
-            _a[ComponentClickCollectionDimension.ClickElementId] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementName] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementType] = undefined,
-            _a[ComponentClickCollectionDimension.TargetUrl] = undefined,
-            _a);
+        var _b;
+        this.componentClick = (_b = {},
+            _b[ComponentClickCollectionDimension.ClickElementId] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementName] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementType] = undefined,
+            _b[ComponentClickCollectionDimension.TargetUrl] = undefined,
+            _b);
     };
     ModelAnalyticsEvent.prototype.populateCar = function (modelRangeName) {
         this.car.modelRangeName = modelRangeName;
@@ -813,59 +823,6 @@ var FindCarClickEvent = /** @class */ (function (_super_1) {
     };
     return FindCarClickEvent;
 }(ModelAnalyticsEvent));
-var carMetaFunctionalitiesCss = "@media (min-width: 1300px) and (max-width: 1759px){.car-meta-functionalities.sc-phn-car-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;padding-top:3.125rem}}@media (min-width: 1760px){.car-meta-functionalities.sc-phn-car-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;padding-top:3rem}}.car-meta-functionalities.sc-phn-car-meta-functionalities .car-meta-functionalities-wrapper.sc-phn-car-meta-functionalities{border-bottom:1px solid #c9cacb;border-top:1px solid #c9cacb}@media (min-width: 0) and (max-width: 1299px){.car-meta-functionalities.sc-phn-car-meta-functionalities .car-meta-functionalities-wrapper.sc-phn-car-meta-functionalities{border:0}}@media (min-width: 1300px){.car-meta-functionalities.sc-phn-car-meta-functionalities .car-meta-functionalities-wrapper.sc-phn-car-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:center;justify-content:center;height:3.375rem}}.car-meta-functionalities-item.sc-phn-car-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center}@media (min-width: 0) and (max-width: 759px){.car-meta-functionalities-item.sc-phn-car-meta-functionalities{font-size:1rem;padding:0.875rem 0 0.875rem 0;border-bottom:1px solid #c9cacb}}@media (min-width: 760px) and (max-width: 999px){.car-meta-functionalities-item.sc-phn-car-meta-functionalities{font-size:1.125rem;padding:1.125rem 0 1.125rem 0;border-bottom:1px solid #c9cacb}}@media (min-width: 1000px) and (max-width: 1299px){.car-meta-functionalities-item.sc-phn-car-meta-functionalities{font-size:1rem;padding:0.875rem 0 0.875rem 0;border-bottom:1px solid #c9cacb}}@media (min-width: 1300px){.car-meta-functionalities-item.sc-phn-car-meta-functionalities{font-size:1rem;padding:0.875rem 0 0.875rem 1.5rem;border-bottom:0}.car-meta-functionalities-item.sc-phn-car-meta-functionalities:nth-last-child(1){margin-right:0.625rem}.car-meta-functionalities-item.sc-phn-car-meta-functionalities:nth-child(1){padding:0.875rem 0 0.875rem 0.625rem}}";
-var CarMetaFunctionalities = /** @class */ (function () {
-    function CarMetaFunctionalities(hostRef) {
-        var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.items = [
-            { PhraseId: '', Text: '', Link: '' },
-            { PhraseId: '', Text: '', Link: '' },
-            { PhraseId: '', Text: '', Link: '' }
-        ];
-        this.sendConfigureClickAnalyticsEvent = function (contentItem) {
-            var analyticsSetup = {
-                applicationId: analyticsSetupStore.get('applicationId'),
-                locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window'),
-                environment: analyticsSetupStore.get('environment')
-            };
-            var configureClickEvent = new ConfigureClickEvent(analyticsSetup, _this_1.name, contentItem);
-            var pagData = (window['pagData'] = window['pagData'] || []);
-            pagData.push(configureClickEvent.event());
-        };
-        this.sendCompareClickAnalyticsEvent = function (contentItem) {
-            var analyticsSetup = {
-                applicationId: analyticsSetupStore.get('applicationId'),
-                locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window'),
-                environment: analyticsSetupStore.get('environment')
-            };
-            var compareClickEvent = new CompareClickEvent(analyticsSetup, _this_1.name, contentItem);
-            var pagData = (window['pagData'] = window['pagData'] || []);
-            pagData.push(compareClickEvent.event());
-        };
-        this.sendFindCarClickAnalyticsEvent = function (contentItem) {
-            var analyticsSetup = {
-                applicationId: analyticsSetupStore.get('applicationId'),
-                locale: analyticsSetupStore.get('locale'),
-                window: analyticsSetupStore.get('window'),
-                environment: analyticsSetupStore.get('environment')
-            };
-            var findCarClickEvent = new FindCarClickEvent(analyticsSetup, _this_1.name, contentItem);
-            var pagData = (window['pagData'] = window['pagData'] || []);
-            pagData.push(findCarClickEvent.event());
-        };
-    }
-    CarMetaFunctionalities.prototype.renderItem = function (source, contentItem, analyticsEvent) {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: contentItem.Link, icon: source, size: "inherit", onClick: function () { return analyticsEvent(contentItem); }, class: "car-meta-functionalities-item" }, contentItem.Text));
-    };
-    CarMetaFunctionalities.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities-wrapper" }, this.renderItem('configurate', this.items[0], this.sendConfigureClickAnalyticsEvent), this.renderItem('compare', this.items[1], this.sendCompareClickAnalyticsEvent), this.renderItem('search', this.items[2], this.sendFindCarClickAnalyticsEvent))));
-    };
-    return CarMetaFunctionalities;
-}());
-CarMetaFunctionalities.style = carMetaFunctionalitiesCss;
 var local = {
     CONTENT_URL: "https://preview-nav.porsche.com/content/preprod-content.json",
     ASSETS_URL: ".",
@@ -917,20 +874,155 @@ var configJson = {
     preview: preview,
     production: production
 };
+var local$1 = {
+    featureOverrideEnabled: true,
+    homenav_feature1: false,
+    homenav_1163_modelMeta: true,
+    homenav_1174_focusMgmt: false
+};
+var preview$1 = {
+    featureOverrideEnabled: true,
+    homenav_feature1: false,
+    homenav_1163_modelMeta: true,
+    homenav_1174_focusMgmt: false
+};
+var production$1 = {
+    featureOverrideEnabled: false,
+    homenav_feature1: false,
+    homenav_1163_modelMeta: true,
+    homenav_1174_focusMgmt: false
+};
+var featureJson = {
+    local: local$1,
+    preview: preview$1,
+    production: production$1
+};
 var config = function (env) {
     if (env === void 0) { env = DEFAULT_ENVIRONMENT; }
     return configJson[env] || configJson['local'];
 };
+var getOverrideValue = function (feature) {
+    var queryString = window.location.search.split('?')[1];
+    if (queryString) {
+        var queryStringArray = queryString.split('&');
+        var featureQuery = queryStringArray.find(function (query) { return query.indexOf(feature) > -1; });
+        if (featureQuery) {
+            var stringValue = featureQuery.split('=')[1];
+            if (stringValue === 'true') {
+                return true;
+            }
+            else if (stringValue === 'false') {
+                return false;
+            }
+        }
+    }
+};
+var isOverrideValid = function (env, overrideValue) { return featureJson[env][FEATURE_OVERRIDE_ENABLED] && overrideValue !== undefined; };
+var isFeatureEnabled = function (feature, env) {
+    if (env === void 0) { env = DEFAULT_ENVIRONMENT; }
+    var overrideValue = getOverrideValue(feature);
+    return isOverrideValid(env, overrideValue) ? overrideValue : featureJson[env][feature];
+};
+var ModelMetaClickEvent = /** @class */ (function (_super_1) {
+    __extends(ModelMetaClickEvent, _super_1);
+    function ModelMetaClickEvent(analyticsSetup, modelRangeName, modelMeta) {
+        var _this_1 = _super_1.call(this, analyticsSetup, modelRangeName) || this;
+        _this_1.context.eventAction = 'PAGHomeNav_ModelMetaFunction_Click';
+        _this_1.populateComponentClickFromLink(modelMeta);
+        return _this_1;
+    }
+    ModelMetaClickEvent.prototype.populateComponentClickFromLink = function (modelMeta) {
+        this.componentClick.clickElementId = modelMeta.PhraseId;
+        this.componentClick.clickElementName = modelMeta.Text;
+        this.componentClick.clickElementType = 'link';
+        this.componentClick.targetUrl = modelMeta.Link;
+    };
+    ModelMetaClickEvent.prototype.event = function () {
+        var componentClick = this.componentClick;
+        return Object.assign(Object.assign({}, _super_1.prototype.event.call(this)), { componentClick: componentClick });
+    };
+    return ModelMetaClickEvent;
+}(ModelAnalyticsEvent));
+var carMetaFunctionalitiesCss = "@media (min-width: 1300px) and (max-width: 1759px){.car-meta-functionalities.sc-phn-car-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;padding-top:3.125rem}}@media (min-width: 1760px){.car-meta-functionalities.sc-phn-car-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;padding-top:3rem}}.car-meta-functionalities.sc-phn-car-meta-functionalities .car-meta-functionalities-wrapper.sc-phn-car-meta-functionalities{border-bottom:1px solid #c9cacb;border-top:1px solid #c9cacb}@media (min-width: 0) and (max-width: 1299px){.car-meta-functionalities.sc-phn-car-meta-functionalities .car-meta-functionalities-wrapper.sc-phn-car-meta-functionalities{border:0}}@media (min-width: 1300px){.car-meta-functionalities.sc-phn-car-meta-functionalities .car-meta-functionalities-wrapper.sc-phn-car-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:center;justify-content:center;height:3.375rem}}.car-meta-functionalities-item.sc-phn-car-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center}@media (min-width: 0) and (max-width: 759px){.car-meta-functionalities-item.sc-phn-car-meta-functionalities{font-size:1rem;padding:0.875rem 0 0.875rem 0;border-bottom:1px solid #c9cacb}}@media (min-width: 760px) and (max-width: 999px){.car-meta-functionalities-item.sc-phn-car-meta-functionalities{font-size:1.125rem;padding:1.125rem 0 1.125rem 0;border-bottom:1px solid #c9cacb}}@media (min-width: 1000px) and (max-width: 1299px){.car-meta-functionalities-item.sc-phn-car-meta-functionalities{font-size:1rem;padding:0.875rem 0 0.875rem 0;border-bottom:1px solid #c9cacb}}@media (min-width: 1300px){.car-meta-functionalities-item.sc-phn-car-meta-functionalities{font-size:1rem;padding:0.875rem 0 0.875rem 1.5rem;border-bottom:0}.car-meta-functionalities-item.sc-phn-car-meta-functionalities:nth-last-child(1){margin-right:0.625rem}.car-meta-functionalities-item.sc-phn-car-meta-functionalities:nth-child(1){padding:0.875rem 0 0.875rem 0.625rem}}";
+var CarMetaFunctionalities = /** @class */ (function () {
+    function CarMetaFunctionalities(hostRef) {
+        var _this_1 = this;
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.items = [
+            { PhraseId: '', Text: '', Link: '' },
+            { PhraseId: '', Text: '', Link: '' },
+            { PhraseId: '', Text: '', Link: '' }
+        ];
+        this.modelMetaItems = [
+            { PhraseId: '', Icon: '', Text: '', Link: '' },
+            { PhraseId: '', Icon: '', Text: '', Link: '' },
+            { PhraseId: '', Icon: '', Text: '', Link: '' }
+        ];
+        this.sendModelMetaFunctionAnalyticsEvent = function (modelMetaItem) {
+            var analyticsSetup = {
+                applicationId: analyticsSetupStore.get('applicationId'),
+                locale: analyticsSetupStore.get('locale'),
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
+            };
+            var modelMetaClickEvent = new ModelMetaClickEvent(analyticsSetup, _this_1.name, modelMetaItem);
+            var pagData = (window['pagData'] = window['pagData'] || []);
+            pagData.push(modelMetaClickEvent.event());
+        };
+        this.sendConfigureClickAnalyticsEvent = function (contentItem) {
+            var analyticsSetup = {
+                applicationId: analyticsSetupStore.get('applicationId'),
+                locale: analyticsSetupStore.get('locale'),
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
+            };
+            var configureClickEvent = new ConfigureClickEvent(analyticsSetup, _this_1.name, contentItem);
+            var pagData = (window['pagData'] = window['pagData'] || []);
+            pagData.push(configureClickEvent.event());
+        };
+        this.sendCompareClickAnalyticsEvent = function (contentItem) {
+            var analyticsSetup = {
+                applicationId: analyticsSetupStore.get('applicationId'),
+                locale: analyticsSetupStore.get('locale'),
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
+            };
+            var compareClickEvent = new CompareClickEvent(analyticsSetup, _this_1.name, contentItem);
+            var pagData = (window['pagData'] = window['pagData'] || []);
+            pagData.push(compareClickEvent.event());
+        };
+        this.sendFindCarClickAnalyticsEvent = function (contentItem) {
+            var analyticsSetup = {
+                applicationId: analyticsSetupStore.get('applicationId'),
+                locale: analyticsSetupStore.get('locale'),
+                window: analyticsSetupStore.get('window'),
+                environment: analyticsSetupStore.get('environment')
+            };
+            var findCarClickEvent = new FindCarClickEvent(analyticsSetup, _this_1.name, contentItem);
+            var pagData = (window['pagData'] = window['pagData'] || []);
+            pagData.push(findCarClickEvent.event());
+        };
+    }
+    CarMetaFunctionalities.prototype.renderItem = function (source, contentItem, analyticsEvent) {
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: contentItem.Link, icon: source, size: "inherit", onClick: function () { return analyticsEvent(contentItem); }, class: "car-meta-functionalities-item" }, contentItem.Text));
+    };
+    CarMetaFunctionalities.prototype.render = function () {
+        var _this_1 = this;
+        return isFeatureEnabled(FEATURE_MODEL_META) ? (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities-wrapper" }, this.modelMetaItems.map(function (item) { return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { href: item.Link, icon: item.Icon, onClick: function () { return _this_1.sendModelMetaFunctionAnalyticsEvent(item); }, size: "inherit", class: "car-meta-functionalities-item" }, item.Text)); })))) : (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-meta-functionalities-wrapper" }, this.renderItem('configurate', this.items[0], this.sendConfigureClickAnalyticsEvent), this.renderItem('compare', this.items[1], this.sendCompareClickAnalyticsEvent), this.renderItem('search', this.items[2], this.sendFindCarClickAnalyticsEvent))));
+    };
+    return CarMetaFunctionalities;
+}());
+CarMetaFunctionalities.style = carMetaFunctionalitiesCss;
 var carModelCss = ".car-model.sc-phn-car-model{text-decoration:none;color:#000;padding-top:0.6875rem;padding-bottom:0.875rem;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center;width:100%;text-align:left;border-bottom:1px solid #c9cacb}@media (min-width: 760px){.car-model.sc-phn-car-model{padding-top:unset;padding-bottom:unset}}@media (min-width: 1000px){.car-model.sc-phn-car-model:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;outline-offset:-2px}}@media (min-width: 1300px){.car-model.sc-phn-car-model{display:block;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:unset;align-items:unset;width:unset;text-align:center;border-bottom:0}}.car-model.sc-phn-car-model:hover .model-text.sc-phn-car-model{color:#d5001c}.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{width:50%}.car-model.sc-phn-car-model .model-pic.sc-phn-car-model img.sc-phn-car-model{vertical-align:middle}@media (min-width: 760px) and (max-width: 999px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{height:10.875rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{height:8.125rem}}@media (min-width: 1300px){.car-model.sc-phn-car-model .model-pic.sc-phn-car-model{width:100%}}.car-model.sc-phn-car-model .model-text.sc-phn-car-model{width:50%}@media (min-width: 0) and (max-width: 759px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1rem;line-height:1.5rem}}@media (min-width: 760px) and (max-width: 999px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1.875rem;line-height:2.5rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{font-size:1.5rem;line-height:2rem}}@media (min-width: 1300px){.car-model.sc-phn-car-model .model-text.sc-phn-car-model{width:100%;margin-top:-0.9375rem}}";
 var CarModel = /** @class */ (function () {
     function CarModel(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     CarModel.prototype.render = function () {
-        var path = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["c"])(config(navContentStore.get('env')).ASSETS_URL + "/model-assets");
+        var path = Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["c"])(config(navContentStore.get('env')).ASSETS_URL + "/model-assets");
         var imageFileEnding = 'jpg';
         var imageType = 'jpeg';
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "car-model", href: this.link }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("picture", { class: "model-pic", "aria-hidden": "true" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 1760px)", srcSet: path + "/1920/" + this.image + "." + imageFileEnding + ", " + path + "/1920/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 1300px)", srcSet: path + "/1366/" + this.image + "." + imageFileEnding + ", " + path + "/1366/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 1000px)", srcSet: path + "/1024/" + this.image + "." + imageFileEnding + ", " + path + "/1024/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 760px)", srcSet: path + "/768/" + this.image + "." + imageFileEnding + ", " + path + "/768/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 375px)", srcSet: path + "/375/" + this.image + "." + imageFileEnding + ", " + path + "/375/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 0px)", srcSet: path + "/320/" + this.image + "." + imageFileEnding + ", " + path + "/320/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("img", { alt: this.text })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "model-text" }, this.text)));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "car-model", href: this.link }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("picture", { class: "model-pic", "aria-hidden": "true" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 1760px)", srcSet: path + "/1920/" + this.image + "." + imageFileEnding + ", " + path + "/1920/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 1300px)", srcSet: path + "/1366/" + this.image + "." + imageFileEnding + ", " + path + "/1366/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 1000px)", srcSet: path + "/1024/" + this.image + "." + imageFileEnding + ", " + path + "/1024/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 760px)", srcSet: path + "/768/" + this.image + "." + imageFileEnding + ", " + path + "/768/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 375px)", srcSet: path + "/375/" + this.image + "." + imageFileEnding + ", " + path + "/375/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("source", { type: "image/" + imageType, media: "(min-width: 0px)", srcSet: path + "/320/" + this.image + "." + imageFileEnding + ", " + path + "/320/" + this.image + "@2x." + imageFileEnding + " 2x" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("img", { alt: this.text })), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "model-text" }, this.text)));
     };
     Object.defineProperty(CarModel, "assetsDirs", {
         get: function () { return ["model-assets"]; },
@@ -963,7 +1055,7 @@ var ModelClickEvent = /** @class */ (function (_super_1) {
 var carModelListCss = "@media (min-width: 1300px) and (max-width: 1759px){.car-model-list.sc-phn-car-model-list{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;margin-bottom:1.875rem}}@media (min-width: 1760px){.car-model-list.sc-phn-car-model-list{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;margin-bottom:3.5625rem}}@media (min-width: 1300px) and (max-width: 1759px){.car-model-list-wrapper.sc-phn-car-model-list{padding-top:0.5rem;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;width:70rem;-ms-flex-pack:center;justify-content:center}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list{margin-right:2.25rem}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list:last-child{margin-right:0}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list,.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list{width:52.5rem}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3),.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3){margin-right:0}}@media (min-width: 1760px){.car-model-list-wrapper.sc-phn-car-model-list{padding-top:1.5rem;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;width:83rem;-ms-flex-pack:center;justify-content:center}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list{margin-right:3rem}.car-model-list-wrapper.sc-phn-car-model-list .car-model.sc-phn-car-model-list:last-child{margin-right:0}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list,.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list{width:64.0625rem}.car-model-list-wrapper.car-models-count-5.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3),.car-model-list-wrapper.car-models-count-6.sc-phn-car-model-list .car-model.sc-phn-car-model-list:nth-child(3){margin-right:0}}";
 var CarModelList = /** @class */ (function () {
     function CarModelList(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.series = EMPTY_SERIES;
     }
     CarModelList.prototype.sendModelClickAnalyticsEvent = function (model) {
@@ -979,14 +1071,14 @@ var CarModelList = /** @class */ (function () {
     };
     CarModelList.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-model-list" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model-list-wrapper car-models-count-' + this.series.Models.length }, this.series.Models.map(function (model, index) { return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model car-model-' + index }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model", { text: model.Name, image: model.Image, link: model.Link, onClick: function () { return _this_1.sendModelClickAnalyticsEvent(model); } }))); }))));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-model-list" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model-list-wrapper car-models-count-' + this.series.Models.length }, this.series.Models.map(function (model, index) { return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: 'car-model car-model-' + index }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model", { text: model.Name, image: model.Image, link: model.Link, onClick: function () { return _this_1.sendModelClickAnalyticsEvent(model); } }))); }))));
     };
     return CarModelList;
 }());
 CarModelList.style = carModelListCss;
 /* istanbul ignore file */
 var getSrcPath = function (image) {
-    var path = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["c"])(config(navContentStore.get('env')).ASSETS_URL + "/series-assets");
+    var path = Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["c"])(config(navContentStore.get('env')).ASSETS_URL + "/series-assets");
     var imageFileEnding = 'jpg';
     if (window.matchMedia('(min-width: 1760px)').matches) {
         return path + "/1920/" + image + "." + imageFileEnding + ", " + path + "/1920/" + image + "@2x." + imageFileEnding + " 2x";
@@ -1011,7 +1103,7 @@ var getSrcPath = function (image) {
 var carSeriesCss = ".car-series.sc-phn-car-series-h{text-align:center;text-decoration:none;color:#000;display:block}.car-series.sc-phn-car-series-h:hover{cursor:pointer;color:#d5001c}@media (min-width: 0) and (max-width: 759px){.car-series.sc-phn-car-series-h{padding-bottom:0.5625rem}}@media (min-width: 760px) and (max-width: 999px){.car-series.sc-phn-car-series-h{padding-bottom:0.625rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-series.sc-phn-car-series-h{padding-bottom:0.25rem}.car-series.sc-phn-car-series-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9;outline-offset:-2px}}@media (min-width: 1300px) and (max-width: 1759px){.car-series.sc-phn-car-series-h{height:5.5625rem;min-width:5.5625rem}.car-series.sc-phn-car-series-h:hover{color:inherit;cursor:default}}@media (min-width: 1760px){.car-series.sc-phn-car-series-h{height:100px}.car-series.sc-phn-car-series-h:hover{color:inherit;cursor:default}}.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{padding:0;margin:0;line-height:1.5rem;font-size:1rem}@media (min-width: 0) and (max-width: 759px){.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-1.125rem 0 0 0;padding-right:0.1875rem}}@media (min-width: 760px) and (max-width: 999px){.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-2.3125rem 0 0 0;padding-right:0.0625rem;font-size:1.125rem}}@media (min-width: 1000px) and (max-width: 1299px){.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin:-2.0625rem 0 0 0;padding-right:0.125rem;font-size:1rem}}@media (min-width: 1300px) and (max-width: 1759px){.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin-top:-1.0625rem;font-size:0.875rem;padding-bottom:1.25rem}}@media (min-width: 1760px){.car-series.sc-phn-car-series-h .car-series-text.sc-phn-car-series{margin-top:-1.1875rem;padding-bottom:1.4375rem}}.car-series-skeleton.sc-phn-car-series{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:#c9cacb;pointer-events:none;display:none}@media (min-width: 1300px){.car-series-skeleton.sc-phn-car-series{display:block;margin-top:1rem;height:2.6875rem;width:5.5625rem}}@media (min-width: 1760px){.car-series-skeleton.sc-phn-car-series{margin-top:1.1875rem;height:2.6875rem;width:6.5625rem}}";
 var CarSeries = /** @class */ (function () {
     function CarSeries(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.imgLarge = new Image();
         this.isResized = false;
         this.hideImage = function (image) {
@@ -1057,7 +1149,7 @@ var CarSeries = /** @class */ (function () {
     };
     CarSeries.prototype.render = function () {
         var hiddenStyle = { display: 'none' };
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "car-series" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p", { style: navStateStore.get('navigationLoaded') ? {} : hiddenStyle, class: "car-series-text", "aria-label": "Porsche Model Series " + this.text }, this.text), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { style: navStateStore.get('navigationLoaded') ? hiddenStyle : {}, class: "car-series-skeleton" })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "car-series" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p", { style: navStateStore.get('navigationLoaded') ? {} : hiddenStyle, class: "car-series-text", "aria-label": "Porsche Model Series " + this.text }, this.text), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { style: navStateStore.get('navigationLoaded') ? hiddenStyle : {}, class: "car-series-skeleton" })));
     };
     Object.defineProperty(CarSeries, "assetsDirs", {
         get: function () { return ["series-assets"]; },
@@ -1065,7 +1157,7 @@ var CarSeries = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(CarSeries.prototype, "el", {
-        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -1075,12 +1167,12 @@ CarSeries.style = carSeriesCss;
 var carSeriesListCss = ".sc-phn-car-series-list-h{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:1.75rem}@media (min-width: 760px) and (max-width: 1299px){.sc-phn-car-series-list-h{margin-top:1.875rem}}@media (min-width: 1300px){.sc-phn-car-series-list-h{-ms-flex-wrap:nowrap;flex-wrap:nowrap;margin-top:0}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-list-h{min-width:657px;margin-left:0.5625rem}}@media (min-width: 1760px){.sc-phn-car-series-list-h{min-width:809px;margin-left:1.25rem}}@media (min-width: 1300px) and (max-width: 1759px){.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list{padding:0 0.3125rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:first-of-type{padding-left:0.9375rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:last-of-type{padding-right:0.9375rem}}@media (min-width: 1760px){.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list{padding:0 0.5625rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:first-of-type{padding-left:1.25rem}.sc-phn-car-series-list-h .car-series-fly-out-overlay.sc-phn-car-series-list:last-of-type{padding-right:1.25rem}}";
 var CarSeriesList = /** @class */ (function () {
     function CarSeriesList(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     CarSeriesList.prototype.render = function () {
         var _this_1 = this;
         var carSeries = navContentStore.get('seriesList');
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { role: "list" }, carSeries.map(function (series) { return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "car-series-fly-out-overlay overlay-trigger " + series.PhraseId, showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler, screenReaderId: "car-series-mega-menu-" + series.Name, role: "listitem" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { slot: "button", text: series.Name, image: series.Image }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-model-overview", { slot: "content", series: series }))); })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], { role: "list" }, carSeries.map(function (series) { return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "car-series-fly-out-overlay overlay-trigger " + series.PhraseId, showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler, screenReaderId: "car-series-mega-menu-" + series.Name, role: "listitem" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { slot: "button", text: series.Name, image: series.Image }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-model-overview", { slot: "content", series: series }))); })));
     };
     return CarSeriesList;
 }());
@@ -1108,13 +1200,13 @@ var ModelRangeOverlayLoadEvent = /** @class */ (function (_super_1) {
 }(ModelAnalyticsEvent));
 var CarSeriesModelOverview = /** @class */ (function () {
     function class_1(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.series = EMPTY_SERIES;
     }
     class_1.prototype.triggerAnalyticsEvent = function () {
         return __awaiter(this, void 0, void 0, function () {
             var pagData, analyticsSetup, analyticsEvent;
-            return __generator(this, function (_a) {
+            return __generator(this, function (_b) {
                 pagData = (window['pagData'] = window['pagData'] || []);
                 analyticsSetup = {
                     applicationId: analyticsSetupStore.get('applicationId'),
@@ -1129,7 +1221,7 @@ var CarSeriesModelOverview = /** @class */ (function () {
         });
     };
     class_1.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-series-model-overview" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { series: this.series }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "car-series-model-overview" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta, modelMetaItems: this.series.ModelMeta }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { series: this.series }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further })));
     };
     return class_1;
 }());
@@ -1148,7 +1240,7 @@ var CrestClickEvent = /** @class */ (function (_super_1) {
 var crestCss = ".sc-phn-crest-h .crest.sc-phn-crest{display:-ms-flexbox;display:flex;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;border:0.0625rem solid #c9cacb;border-top:0;height:4.8125rem;padding:0.3125rem 0.1875rem 0.5625rem 0.1875rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.1875rem + 0.0625rem));margin-bottom:-0.75rem}.sc-phn-crest-h .crest.sc-phn-crest:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}@media (min-width: 760px){.sc-phn-crest-h .crest.sc-phn-crest{height:5.25rem;padding:0.5625rem 0.25rem 0.8125rem 0.25rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.25rem + 0.0625rem))}}@media (min-width: 1000px){.sc-phn-crest-h .crest.sc-phn-crest{padding:0.375rem 0.3125rem 0.4375rem 0.3125rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.3125rem + 0.0625rem))}}@media (min-width: 1300px){.sc-phn-crest-h .crest.sc-phn-crest{width:8.3125rem;height:8.3125rem;padding:1.75rem 0.25rem 1.875rem 0.25rem;margin-bottom:-0.9375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.25rem + 0.0625rem))}}@media (min-width: 1760px){.sc-phn-crest-h .crest.sc-phn-crest{width:8.5625rem;height:8.5625rem;padding:1.8125rem 0.375rem 2.0625rem 0.375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.375rem + 0.0625rem))}}.sc-phn-crest-h .marque-bone.sc-phn-crest{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;border:0.0625rem solid #c9cacb;border-top:0;width:6.75rem;height:4.75rem;padding:0.875rem 0 1.1875rem 0;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.1875rem + 0.0625rem));margin-bottom:-0.75rem}@media (min-width: 760px){.sc-phn-crest-h .marque-bone.sc-phn-crest{width:6.875rem;height:5.1875rem;padding:1.125rem 0 1.375rem 0;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.625rem + 0.25rem + 0.0625rem))}}@media (min-width: 1000px){.sc-phn-crest-h .marque-bone.sc-phn-crest{width:8.3125rem;height:5.4375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.3125rem + 0.0625rem));padding:1.1875rem 0 1.125rem 0}}@media (min-width: 1300px){.sc-phn-crest-h .marque-bone.sc-phn-crest{width:8.25rem;height:8.3125rem;padding:2.46875rem 0 2.59375rem 0;margin-bottom:-0.9375rem;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.25rem + 0.0625rem))}}@media (min-width: 1760px){.sc-phn-crest-h .marque-bone.sc-phn-crest{width:8.5625rem;height:8.5rem;padding:2.5rem 0 2.75rem 0;margin-left:calc(calc(100vw - 7vw * 2) - calc(calc(100vw - 7vw * 2) + 0.75rem + 0.375rem + 0.0625rem))}}.sc-phn-crest-h .marque-bone.sc-phn-crest .crest-bone.sc-phn-crest{width:1.5rem;height:1.9375rem;background-image:url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='24px' height='31px' viewBox='0 0 29 37' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Ecrest-path-pixel-perfect-3%3C/title%3E%3Cg id='Design-Focus' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='832-skeleton-hn-1366' transform='translate(-130.000000, -39.000000)' fill='%23C9CACB' fill-rule='nonzero'%3E%3Cg id='Crest-bones' transform='translate(78.000000, 0.000000)'%3E%3Cpath d='M80.8612951,41.6891698 C79.3593022,41.0929534 77.8195513,40.5958533 76.2520235,40.2010916 C74.092052,39.6781633 71.8946453,39.3227949 69.6795438,39.1381787 C68.6125828,39.0425165 67.6096394,39.0106291 66.4786608,39 L66.4679912,39 C65.4010302,39 64.3340692,39 63.2671082,39.1381787 C61.0520067,39.3227949 58.8545999,39.6781633 56.6946284,40.2010916 C55.1285058,40.5930516 53.5918758,41.093847 52.0960265,41.6997989 L52,41.6997989 C52,41.6997989 52.1813834,52.8710141 52.3200883,58.3981614 C52.3624958,60.0288438 52.6613178,61.6428163 53.2056659,63.1812698 C53.83596,64.927843 54.6779771,66.5912102 55.7130243,68.1344441 C56.7974563,69.7321996 58.1093136,71.164397 59.6074319,72.3860959 C60.1877267,72.8817079 60.8047619,73.3329574 61.4532745,73.7359954 C62.4748439,74.3534515 63.5453697,74.8866836 64.6541575,75.3303648 C65.0062546,75.4791727 65.3263429,75.6279805 65.6144224,75.7236426 C65.9077386,75.8428333 66.2112826,75.9353298 66.5213392,76 C66.8313958,75.9353298 67.1349399,75.8428333 67.4282561,75.7236426 C67.7163355,75.6279805 68.0364238,75.4791727 68.3991906,75.3303648 C69.4899033,74.8845355 70.542531,74.3513317 71.5467255,73.7359954 C72.1928274,73.3294237 72.8096114,72.8783579 73.3925681,72.3860959 C74.8933275,71.167176 76.2055628,69.7345659 77.2869757,68.1344441 C78.3220229,66.5912102 79.16404,64.927843 79.7943341,63.1812698 C80.3386822,61.6428163 80.6375042,60.0288438 80.6799117,58.3981614 C80.8186166,52.8710141 81,41.6997989 81,41.6997989 L80.8612951,41.6891698 Z' id='crest-path-pixel-perfect-3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\");background-repeat:no-repeat;background-position:center}@media (min-width: 1000px){.sc-phn-crest-h .marque-bone.sc-phn-crest .crest-bone.sc-phn-crest{width:1.8125rem;height:2.3125rem;background-image:url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='29px' height='37px' viewBox='0 0 29 37' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Ecrest-path-pixel-perfect-3%3C/title%3E%3Cg id='Design-Focus' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='832-skeleton-hn-1366' transform='translate(-130.000000, -39.000000)' fill='%23C9CACB' fill-rule='nonzero'%3E%3Cg id='Crest-bones' transform='translate(78.000000, 0.000000)'%3E%3Cpath d='M80.8612951,41.6891698 C79.3593022,41.0929534 77.8195513,40.5958533 76.2520235,40.2010916 C74.092052,39.6781633 71.8946453,39.3227949 69.6795438,39.1381787 C68.6125828,39.0425165 67.6096394,39.0106291 66.4786608,39 L66.4679912,39 C65.4010302,39 64.3340692,39 63.2671082,39.1381787 C61.0520067,39.3227949 58.8545999,39.6781633 56.6946284,40.2010916 C55.1285058,40.5930516 53.5918758,41.093847 52.0960265,41.6997989 L52,41.6997989 C52,41.6997989 52.1813834,52.8710141 52.3200883,58.3981614 C52.3624958,60.0288438 52.6613178,61.6428163 53.2056659,63.1812698 C53.83596,64.927843 54.6779771,66.5912102 55.7130243,68.1344441 C56.7974563,69.7321996 58.1093136,71.164397 59.6074319,72.3860959 C60.1877267,72.8817079 60.8047619,73.3329574 61.4532745,73.7359954 C62.4748439,74.3534515 63.5453697,74.8866836 64.6541575,75.3303648 C65.0062546,75.4791727 65.3263429,75.6279805 65.6144224,75.7236426 C65.9077386,75.8428333 66.2112826,75.9353298 66.5213392,76 C66.8313958,75.9353298 67.1349399,75.8428333 67.4282561,75.7236426 C67.7163355,75.6279805 68.0364238,75.4791727 68.3991906,75.3303648 C69.4899033,74.8845355 70.542531,74.3513317 71.5467255,73.7359954 C72.1928274,73.3294237 72.8096114,72.8783579 73.3925681,72.3860959 C74.8933275,71.167176 76.2055628,69.7345659 77.2869757,68.1344441 C78.3220229,66.5912102 79.16404,64.927843 79.7943341,63.1812698 C80.3386822,61.6428163 80.6375042,60.0288438 80.6799117,58.3981614 C80.8186166,52.8710141 81,41.6997989 81,41.6997989 L80.8612951,41.6891698 Z' id='crest-path-pixel-perfect-3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")}}.sc-phn-crest-h .marque-bone.sc-phn-crest .label-bone.sc-phn-crest{width:5rem;height:0.4375rem;background-color:#c9cacb}@media (min-width: 1000px){.sc-phn-crest-h .marque-bone.sc-phn-crest .label-bone.sc-phn-crest{width:6.1875rem;height:0.5rem}}";
 var Crest = /** @class */ (function () {
     function Crest(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     Crest.prototype.getCrestLink = function () {
         var crestItem = navContentStore.get('menu').find(function (m) { return m.PhraseId === CREST_PHRASE_ID; });
@@ -1184,10 +1276,10 @@ var Crest = /** @class */ (function () {
     Crest.prototype.render = function () {
         var _this_1 = this;
         var hiddenStyle = { display: 'none' };
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "crest", style: this.contentLoaded() ? {} : hiddenStyle, onClick: function () { return _this_1.sendCrestClickAnalyticsEvent(); }, href: this.getCrestLink() }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-marque", { class: "marque" })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "marque-bone", style: this.contentLoaded() ? hiddenStyle : {} }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "crest-bone" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "label-bone" }))));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { class: "crest", style: this.contentLoaded() ? {} : hiddenStyle, onClick: function () { return _this_1.sendCrestClickAnalyticsEvent(); }, href: this.getCrestLink() }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-marque", { class: "marque" })), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "marque-bone", style: this.contentLoaded() ? hiddenStyle : {} }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "crest-bone" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "label-bone" }))));
     };
     Object.defineProperty(Crest.prototype, "el", {
-        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -1197,24 +1289,24 @@ Crest.style = crestCss;
 var dealerSearchCss = ".dealer-search.sc-phn-dealer-search-h .dealer-search-link.sc-phn-dealer-search{border-bottom:1px solid #c9cacb;padding:0.875rem 0 0.875rem 0;width:100%}@media (min-width: 760px) and (max-width: 999px){.dealer-search.sc-phn-dealer-search-h .dealer-search-link.sc-phn-dealer-search{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){.dealer-search.sc-phn-dealer-search-h .dealer-search-link.sc-phn-dealer-search{border-bottom:0;padding:0}}@media (min-width: 1300px){.dealer-search.sc-phn-dealer-search-h .dealer-search-skeleton.sc-phn-dealer-search{width:6.375rem;height:0.875rem;background-color:#c9cacb;margin-top:0.125rem;width:8rem}}";
 var DealerSearch = /** @class */ (function () {
     function DealerSearch(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.dealerSearchText = '';
         this.dealerSearchLink = '';
     }
     DealerSearch.prototype.render = function () {
         var _this_1 = this;
         var hiddenStyle = { display: 'none' };
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "dealer-search" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { style: navStateStore.get('navigationLoaded') ? {} : hiddenStyle, href: this.dealerSearchLink, size: "inherit", icon: "pin", class: 'dealer-search-link', onClick: function () {
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "dealer-search" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { style: navStateStore.get('navigationLoaded') ? {} : hiddenStyle, href: this.dealerSearchLink, size: "inherit", icon: "pin", class: 'dealer-search-link', onClick: function () {
                 var linkItem = {
                     PhraseId: DEALER_SEARCH_PHRASE_ID,
                     Text: _this_1.dealerSearchText,
                     Link: _this_1.dealerSearchLink
                 };
                 _this_1.sendMetaFunctionClickAnalyticsEvent(linkItem);
-            } }, this.dealerSearchText), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "dealer-search-skeleton", style: navStateStore.get('navigationLoaded') ? hiddenStyle : {} })));
+            } }, this.dealerSearchText), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "dealer-search-skeleton", style: navStateStore.get('navigationLoaded') ? hiddenStyle : {} })));
     };
     Object.defineProperty(DealerSearch.prototype, "el", {
-        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -1224,35 +1316,35 @@ DealerSearch.style = dealerSearchCss;
 var desktopShopAndMoreItemCss = ".desktop-shop-and-more-item.sc-phn-desktop-shop-and-more-item-h{display:-ms-flexbox;display:flex;color:#000;font-size:1rem;border-bottom:0;padding:1.3125rem 0 2.75rem 0;white-space:nowrap}.desktop-shop-and-more-item.sc-phn-desktop-shop-and-more-item-h:hover{cursor:default;color:inherit}@media (min-width: 1760px){.desktop-shop-and-more-item.sc-phn-desktop-shop-and-more-item-h{padding:1.6875rem 0 2.8125rem 0;font-size:1.25rem}}.desktop-shop-and-more-item-skeleton.sc-phn-desktop-shop-and-more-item{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:-ms-flexbox;display:flex;background:#c9cacb;-ms-flex-align:center;align-items:center;height:0.875rem}@media (min-width: 1300px){.desktop-shop-and-more-item-skeleton.sc-phn-desktop-shop-and-more-item{width:2.375rem;margin-top:0.375rem}}@media (min-width: 1760px){.desktop-shop-and-more-item-skeleton.sc-phn-desktop-shop-and-more-item{width:3.125rem;margin-top:0.1875rem}}";
 var DesktopShopAndMoreItem = /** @class */ (function () {
     function DesktopShopAndMoreItem(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     DesktopShopAndMoreItem.prototype.render = function () {
         var hiddenStyle = { display: 'none' };
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { style: navStateStore.get('navigationLoaded') ? {} : hiddenStyle, class: "desktop-shop-and-more-item-text", color: "inherit", size: "inherit", tag: "div" }, this.itemText), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "desktop-shop-and-more-item-skeleton", style: navStateStore.get('navigationLoaded') ? hiddenStyle : {} })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { style: navStateStore.get('navigationLoaded') ? {} : hiddenStyle, class: "desktop-shop-and-more-item-text", color: "inherit", size: "inherit", tag: "div" }, this.itemText), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "desktop-shop-and-more-item-skeleton", style: navStateStore.get('navigationLoaded') ? hiddenStyle : {} })));
     };
     return DesktopShopAndMoreItem;
 }());
 DesktopShopAndMoreItem.style = desktopShopAndMoreItemCss;
 var DrawerCarSeriesModelOverview = /** @class */ (function () {
     function DrawerCarSeriesModelOverview(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.series = EMPTY_SERIES;
     }
     DrawerCarSeriesModelOverview.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-car-series-model-overview" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container drawer-level-2-item-scroll" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.series.Name }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { class: "car-model-list", series: this.series }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further }))));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-car-series-model-overview" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container drawer-level-2-item-scroll" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.series.Name }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-meta-functionalities", { name: this.series.Name, items: this.series.Meta, modelMetaItems: this.series.ModelMeta }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-model-list", { class: "car-model-list", series: this.series }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-further-links", { items: this.series.Further }))));
     };
     return DrawerCarSeriesModelOverview;
 }());
 var drawerShopsAndMoreCss = ".drawer-shops-and-more.sc-phn-drawer-shops-and-more{padding-bottom:3.125rem}";
 var DrawerShopsAndMore = /** @class */ (function () {
     function DrawerShopsAndMore(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
     }
     DrawerShopsAndMore.prototype.showDrawer = function (item, index) {
         var phnDrawerShopsAndMore = {
             backButton: this.item.Text,
-            content: (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Text, item: item, class: 'shops-and-more-drawer-level-2 drawer-level-2 drawer-level-2-' + index, slot: "content" }))
+            content: (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Text, item: item, class: 'shops-and-more-drawer-level-2 drawer-level-2 drawer-level-2-' + index, slot: "content" }))
         };
         if (!item.Link && item.Items) {
             navStateStore.set('drawerContentStack', __spreadArrays(navStateStore.get('drawerContentStack'), [phnDrawerShopsAndMore]));
@@ -1260,9 +1352,9 @@ var DrawerShopsAndMore = /** @class */ (function () {
     };
     DrawerShopsAndMore.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-shops-and-more" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.headline, class: "drawer-headline" }), this.item.Items &&
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-shops-and-more" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.headline, class: "drawer-headline" }), this.item.Items &&
             this.item.Items.map(function (item, index) {
-                return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: item, onClick: function () { return _this_1.showDrawer(item, index); }, class: 'drawer-shops-and-more-item drawer-shops-and-more-item-' + index })));
+                return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: item, onClick: function () { return _this_1.showDrawer(item, index); }, class: 'drawer-shops-and-more-item drawer-shops-and-more-item-' + index })));
             }))));
     };
     return DrawerShopsAndMore;
@@ -1297,28 +1389,28 @@ var errorLogRequest = function (id, data, env) {
 };
 var fetchContent = function (env) { return __awaiter(void 0, void 0, void 0, function () {
     var loadData, content;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
+    return __generator(this, function (_b) {
+        switch (_b.label) {
             case 0:
                 loadData = function () { return __awaiter(void 0, void 0, void 0, function () {
                     var data, e_1;
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
+                    return __generator(this, function (_b) {
+                        switch (_b.label) {
                             case 0:
-                                _a.trys.push([0, 2, , 3]);
+                                _b.trys.push([0, 2, , 3]);
                                 return [4 /*yield*/, fetch(config(env).CONTENT_URL, {
                                         headers: {
                                             'Cache-Control': 'no-cache'
                                         }
                                     })];
                             case 1:
-                                data = _a.sent();
+                                data = _b.sent();
                                 if (!data.ok) {
                                     throw new Error(data.status + " " + data.statusText);
                                 }
                                 return [2 /*return*/, data.json()];
                             case 2:
-                                e_1 = _a.sent();
+                                e_1 = _b.sent();
                                 errorLogRequest('content', "Failed to fetch content with error: " + e_1, env);
                                 return [2 /*return*/, DEFAULT_EMPTY_CONTENT_RESPONSE];
                             case 3: return [2 /*return*/];
@@ -1327,7 +1419,7 @@ var fetchContent = function (env) { return __awaiter(void 0, void 0, void 0, fun
                 }); };
                 return [4 /*yield*/, Promise.all([loadData()])];
             case 1:
-                content = (_a.sent())[0];
+                content = (_b.sent())[0];
                 return [2 /*return*/, content];
         }
     });
@@ -1361,6 +1453,10 @@ function rng() {
     }
     return getRandomValues(rnds8);
 }
+var REGEX = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
+function validate(uuid) {
+    return typeof uuid === 'string' && REGEX.test(uuid);
+}
 /**
  * Convert array of 16 byte values to UUID string format of the form:
  * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
@@ -1369,10 +1465,19 @@ var byteToHex = [];
 for (var i = 0; i < 256; ++i) {
     byteToHex.push((i + 0x100).toString(16).substr(1));
 }
-function bytesToUuid(buf, offset_) {
-    var offset = offset_ || 0; // Note: Be careful editing this code!  It's been tuned for performance
+function stringify(arr) {
+    var offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+    // Note: Be careful editing this code!  It's been tuned for performance
     // and works in ways you may not expect. See https://github.com/uuidjs/uuid/pull/434
-    return (byteToHex[buf[offset + 0]] + byteToHex[buf[offset + 1]] + byteToHex[buf[offset + 2]] + byteToHex[buf[offset + 3]] + '-' + byteToHex[buf[offset + 4]] + byteToHex[buf[offset + 5]] + '-' + byteToHex[buf[offset + 6]] + byteToHex[buf[offset + 7]] + '-' + byteToHex[buf[offset + 8]] + byteToHex[buf[offset + 9]] + '-' + byteToHex[buf[offset + 10]] + byteToHex[buf[offset + 11]] + byteToHex[buf[offset + 12]] + byteToHex[buf[offset + 13]] + byteToHex[buf[offset + 14]] + byteToHex[buf[offset + 15]]).toLowerCase();
+    var uuid = (byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + '-' + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + '-' + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + '-' + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + '-' + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]]).toLowerCase(); // Consistency check for valid UUID.  If this throws, it's likely due to one
+    // of the following:
+    // - One or more input array values don't map to a hex octet (leading to
+    // "undefined" in the uuid)
+    // - Invalid input values for the RFC `version` or `variant` fields
+    if (!validate(uuid)) {
+        throw TypeError('Stringified UUID is invalid');
+    }
+    return uuid;
 }
 function v4(options, buf, offset) {
     options = options || {};
@@ -1386,7 +1491,7 @@ function v4(options, buf, offset) {
         }
         return buf;
     }
-    return bytesToUuid(rnds);
+    return stringify(rnds);
 }
 var deriveLoggedInStatusFromUserData = function (userData) {
     var status;
@@ -1421,10 +1526,10 @@ var deriveLoggedInStatusFromUserData = function (userData) {
 };
 var getLoggedInStatus = function (accessToken, locale, env) { return __awaiter(void 0, void 0, void 0, function () {
     var userProfile, userLoggedInStatus, configuration, init, e_2, logData, userData;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
+    return __generator(this, function (_b) {
+        switch (_b.label) {
             case 0:
-                _a.trys.push([0, 2, , 3]);
+                _b.trys.push([0, 2, , 3]);
                 configuration = config(env);
                 init = {
                     method: 'GET',
@@ -1438,10 +1543,10 @@ var getLoggedInStatus = function (accessToken, locale, env) { return __awaiter(v
                 };
                 return [4 /*yield*/, fetch(configuration.PROFILE_API_URL + "?country=" + locale.country, init)];
             case 1:
-                userProfile = _a.sent();
+                userProfile = _b.sent();
                 return [3 /*break*/, 3];
             case 2:
-                e_2 = _a.sent();
+                e_2 = _b.sent();
                 logData = "Exception occurred while fetching user info: " + JSON.stringify(e_2.message);
                 errorLogRequest('user_profile', logData, env);
                 userLoggedInStatus = LOGGED_IN_USER_NO_NAME_STATUS;
@@ -1451,13 +1556,13 @@ var getLoggedInStatus = function (accessToken, locale, env) { return __awaiter(v
                 if (!(userProfile.status === 200)) return [3 /*break*/, 5];
                 return [4 /*yield*/, userProfile.json()];
             case 4:
-                userData = _a.sent();
+                userData = _b.sent();
                 userLoggedInStatus = deriveLoggedInStatusFromUserData(userData);
                 return [3 /*break*/, 6];
             case 5:
                 errorLogRequest('user_profile', "Error occurred: " + userProfile.status + " " + userProfile.statusText, env);
                 userLoggedInStatus = undefined;
-                _a.label = 6;
+                _b.label = 6;
             case 6: return [2 /*return*/, userLoggedInStatus];
         }
     });
@@ -1466,13 +1571,13 @@ var getUnreadMessagesCount = function (accessToken, env
 //currentUnreadMessagesCount = 0
 ) { return __awaiter(void 0, void 0, void 0, function () {
     var unreadMessagesCount, unreadMessagesCountResponse, configuration, init, unreadMessagesCountPayload, e_3, logData;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
+    return __generator(this, function (_b) {
+        switch (_b.label) {
             case 0:
                 unreadMessagesCount = 0;
-                _a.label = 1;
+                _b.label = 1;
             case 1:
-                _a.trys.push([1, 6, , 7]);
+                _b.trys.push([1, 6, , 7]);
                 configuration = config(env);
                 init = {
                     method: 'GET',
@@ -1485,11 +1590,11 @@ var getUnreadMessagesCount = function (accessToken, env
                 };
                 return [4 /*yield*/, fetch(configuration.UNREAD_MESSAGES_COUNT_API_URL, init)];
             case 2:
-                unreadMessagesCountResponse = _a.sent();
+                unreadMessagesCountResponse = _b.sent();
                 if (!(unreadMessagesCountResponse.status === 200)) return [3 /*break*/, 4];
                 return [4 /*yield*/, unreadMessagesCountResponse.json()];
             case 3:
-                unreadMessagesCountPayload = _a.sent();
+                unreadMessagesCountPayload = _b.sent();
                 if (unreadMessagesCountPayload.data &&
                     unreadMessagesCountPayload.data.unreadCount &&
                     typeof unreadMessagesCountPayload.data.unreadCount === 'number') {
@@ -1498,10 +1603,10 @@ var getUnreadMessagesCount = function (accessToken, env
                 return [3 /*break*/, 5];
             case 4:
                 errorLogRequest('unread_messages_count', "Error occurred: " + unreadMessagesCountResponse.status + " " + unreadMessagesCountResponse.statusText, env);
-                _a.label = 5;
+                _b.label = 5;
             case 5: return [3 /*break*/, 7];
             case 6:
-                e_3 = _a.sent();
+                e_3 = _b.sent();
                 logData = "Exception occurred while fetching unread message count: " + JSON.stringify(e_3.message);
                 errorLogRequest('unread_messages_count', logData, env);
                 return [3 /*break*/, 7];
@@ -1511,8 +1616,8 @@ var getUnreadMessagesCount = function (accessToken, env
 }); };
 var updateLoggedInStatus = function (newToken, localeObject) { return __awaiter(void 0, void 0, void 0, function () {
     var env, userLoggedInStatus;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
+    return __generator(this, function (_b) {
+        switch (_b.label) {
             case 0:
                 env = navContentStore.get('env');
                 if (navContentStore.get('loggedInState') !== LOADING_STATUS) {
@@ -1520,7 +1625,7 @@ var updateLoggedInStatus = function (newToken, localeObject) { return __awaiter(
                 }
                 return [4 /*yield*/, getLoggedInStatus(newToken, localeObject, env)];
             case 1:
-                userLoggedInStatus = _a.sent();
+                userLoggedInStatus = _b.sent();
                 if (!userLoggedInStatus) {
                     navContentStore.set('loggedInState', LOGGED_OUT_USER_STATUS);
                     return [2 /*return*/, undefined];
@@ -1536,13 +1641,13 @@ var updateLoggedInStatus = function (newToken, localeObject) { return __awaiter(
 }); };
 var updateUnreadMessagesCount = function (accessToken) { return __awaiter(void 0, void 0, void 0, function () {
     var env, unreadMessagesCount;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
+    return __generator(this, function (_b) {
+        switch (_b.label) {
             case 0:
                 env = navContentStore.get('env');
                 return [4 /*yield*/, getUnreadMessagesCount(accessToken, env)];
             case 1:
-                unreadMessagesCount = _a.sent();
+                unreadMessagesCount = _b.sent();
                 navContentStore.set('unreadMessagesCount', unreadMessagesCount);
                 return [2 /*return*/];
         }
@@ -1576,6 +1681,7 @@ var errors = createCommonjsModule(function (module, exports) {
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.AppAuthError = void 0;
     /**
      * Represents the AppAuthError type.
      */
@@ -1607,7 +1713,7 @@ var xhr = createCommonjsModule(function (module, exports) {
             extendStatics = Object.setPrototypeOf ||
                 ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
                 function (d, b) { for (var p in b)
-                    if (b.hasOwnProperty(p))
+                    if (Object.prototype.hasOwnProperty.call(b, p))
                         d[p] = b[p]; };
             return extendStatics(d, b);
         };
@@ -1618,6 +1724,7 @@ var xhr = createCommonjsModule(function (module, exports) {
         };
     })();
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.TestRequestor = exports.FetchRequestor = exports.JQueryRequestor = exports.Requestor = void 0;
     /**
      * An class that abstracts away the ability to make an XMLHttpRequest.
      */
@@ -1744,6 +1851,7 @@ var authorization_service_configuration = createCommonjsModule(function (module,
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.AuthorizationServiceConfiguration = void 0;
     /**
      * The standard base path for well-known resources on domains.
      * See https://tools.ietf.org/html/rfc5785 for more information.
@@ -1929,6 +2037,7 @@ var crypto_utils = createCommonjsModule(function (module, exports) {
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.DefaultCrypto = exports.textEncodeLite = exports.urlSafe = exports.bufferToString = void 0;
     var HAS_CRYPTO = typeof window !== 'undefined' && !!window.crypto;
     var HAS_SUBTLE_CRYPTO = HAS_CRYPTO && !!window.crypto.subtle;
     var CHARSET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -2010,6 +2119,7 @@ var flags = createCommonjsModule(function (module, exports) {
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.IS_PROFILE = exports.IS_LOG = void 0;
     /* Global flags that control the behavior of App Auth JS. */
     /* Logging turned on ? */
     exports.IS_LOG = true;
@@ -2039,6 +2149,7 @@ var logger = createCommonjsModule(function (module, exports) {
         return r;
     };
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.profile = exports.log = void 0;
     function log(message) {
         var args = [];
         for (var _i = 1; _i < arguments.length; _i++) {
@@ -2116,6 +2227,7 @@ var authorization_request = createCommonjsModule(function (module, exports) {
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.AuthorizationRequest = void 0;
     /**
      * Generates a cryptographically random new state. Useful for CSRF protection.
      */
@@ -2215,6 +2327,7 @@ var authorization_request_handler = createCommonjsModule(function (module, expor
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.AuthorizationRequestHandler = exports.BUILT_IN_PARAMETERS = exports.AuthorizationNotifier = void 0;
     /**
      * Authorization Service notifier.
      * This manages the communication of the AuthorizationResponse to the 3p client.
@@ -2327,6 +2440,7 @@ var authorization_response = createCommonjsModule(function (module, exports) {
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.AuthorizationError = exports.AuthorizationResponse = void 0;
     /**
      * Represents the Authorization Response type.
      * For more information look at
@@ -2382,6 +2496,7 @@ var query_string_utils = createCommonjsModule(function (module, exports) {
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.BasicQueryStringUtils = void 0;
     var BasicQueryStringUtils = /** @class */ (function () {
         function BasicQueryStringUtils() {
         }
@@ -2443,7 +2558,7 @@ var storage = createCommonjsModule(function (module, exports) {
             extendStatics = Object.setPrototypeOf ||
                 ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
                 function (d, b) { for (var p in b)
-                    if (b.hasOwnProperty(p))
+                    if (Object.prototype.hasOwnProperty.call(b, p))
                         d[p] = b[p]; };
             return extendStatics(d, b);
         };
@@ -2454,6 +2569,7 @@ var storage = createCommonjsModule(function (module, exports) {
         };
     })();
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.LocalStorageBackend = exports.StorageBackend = void 0;
     /**
      * Asynchronous storage APIs. All methods return a `Promise`.
      * All methods take the `DOMString`
@@ -2531,7 +2647,7 @@ var redirect_based_handler = createCommonjsModule(function (module, exports) {
             extendStatics = Object.setPrototypeOf ||
                 ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
                 function (d, b) { for (var p in b)
-                    if (b.hasOwnProperty(p))
+                    if (Object.prototype.hasOwnProperty.call(b, p))
                         d[p] = b[p]; };
             return extendStatics(d, b);
         };
@@ -2542,6 +2658,7 @@ var redirect_based_handler = createCommonjsModule(function (module, exports) {
         };
     })();
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.RedirectRequestHandler = void 0;
     /** key for authorization request. */
     var authorizationRequestKey = function (handle) {
         return handle + "_appauth_authorization_request";
@@ -2688,6 +2805,7 @@ var token_response = createCommonjsModule(function (module, exports) {
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.TokenError = exports.TokenResponse = exports.nowInSeconds = void 0;
     // constants
     var AUTH_EXPIRY_BUFFER = 10 * 60 * -1; // 10 mins in seconds
     /**
@@ -2703,13 +2821,16 @@ var token_response = createCommonjsModule(function (module, exports) {
         function TokenResponse(response) {
             this.accessToken = response.access_token;
             this.tokenType = response.token_type || 'bearer';
-            this.expiresIn = response.expires_in;
+            if (response.expires_in) {
+                this.expiresIn = parseInt(response.expires_in, 10);
+            }
             this.refreshToken = response.refresh_token;
             this.scope = response.scope;
             this.idToken = response.id_token;
             this.issuedAt = response.issued_at || exports.nowInSeconds();
         }
         TokenResponse.prototype.toJson = function () {
+            var _a;
             return {
                 access_token: this.accessToken,
                 id_token: this.idToken,
@@ -2717,7 +2838,7 @@ var token_response = createCommonjsModule(function (module, exports) {
                 scope: this.scope,
                 token_type: this.tokenType,
                 issued_at: this.issuedAt,
-                expires_in: this.expiresIn
+                expires_in: (_a = this.expiresIn) === null || _a === void 0 ? void 0 : _a.toString()
             };
         };
         TokenResponse.prototype.isValid = function (buffer) {
@@ -2770,6 +2891,7 @@ var token_request_handler = createCommonjsModule(function (module, exports) {
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.BaseTokenRequestHandler = void 0;
     /**
      * The default token request handler.
      */
@@ -2835,6 +2957,7 @@ var token_request = createCommonjsModule(function (module, exports) {
      * limitations under the License.
      */
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.TokenRequest = exports.GRANT_TYPE_REFRESH_TOKEN = exports.GRANT_TYPE_AUTHORIZATION_CODE = void 0;
     exports.GRANT_TYPE_AUTHORIZATION_CODE = 'authorization_code';
     exports.GRANT_TYPE_REFRESH_TOKEN = 'refresh_token';
     /**
@@ -2919,24 +3042,24 @@ var createHiddenIFrame = function () {
 };
 var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { return __awaiter(void 0, void 0, void 0, function () {
     var authorizationServiceConfiguration, tokenHandler, authorizationHandler, iFrameAuth, envConfig, fetchRequestor, getToken_1, request, recieveMessage, error_1;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
+    return __generator(this, function (_b) {
+        switch (_b.label) {
             case 0:
                 iFrameAuth = createHiddenIFrame();
                 envConfig = config(env);
                 fetchRequestor = new xhr.FetchRequestor();
-                _a.label = 1;
+                _b.label = 1;
             case 1:
-                _a.trys.push([1, 3, , 4]);
+                _b.trys.push([1, 3, , 4]);
                 return [4 /*yield*/, authorization_service_configuration.AuthorizationServiceConfiguration.fetchFromIssuer(envConfig.LOGIN_BASE_URL, fetchRequestor)];
             case 2:
-                authorizationServiceConfiguration = _a.sent();
+                authorizationServiceConfiguration = _b.sent();
                 authorizationHandler = new redirect_based_handler.RedirectRequestHandler(new storage.LocalStorageBackend(window.sessionStorage), new NoHashQueryStringUtils(null, null, null), iFrameAuth.contentWindow.location);
                 tokenHandler = new token_request_handler.BaseTokenRequestHandler(fetchRequestor);
                 getToken_1 = function (authorizationRequestResponse) { return __awaiter(void 0, void 0, void 0, function () {
                     var extras, requestToken, tokenResponse, e_4;
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
+                    return __generator(this, function (_b) {
+                        switch (_b.label) {
                             case 0:
                                 extras = { prompt: 'none' };
                                 extras['code_verifier'] = authorizationRequestResponse.request.internal['code_verifier'];
@@ -2948,16 +3071,16 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
                                     refresh_token: undefined,
                                     extras: extras
                                 });
-                                _a.label = 1;
+                                _b.label = 1;
                             case 1:
-                                _a.trys.push([1, 3, , 4]);
+                                _b.trys.push([1, 3, , 4]);
                                 return [4 /*yield*/, tokenHandler.performTokenRequest(authorizationServiceConfiguration, requestToken)];
                             case 2:
-                                tokenResponse = _a.sent();
+                                tokenResponse = _b.sent();
                                 debugLogRequest('silent_auth', 'Token request completed successfully', env);
                                 return [2 /*return*/, tokenResponse];
                             case 3:
-                                e_4 = _a.sent();
+                                e_4 = _b.sent();
                                 errorLogRequest('silent_auth', "Token request failed: " + JSON.stringify(e_4.message), env);
                                 errorHandler();
                                 return [3 /*break*/, 4];
@@ -2975,31 +3098,31 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
                 });
                 recieveMessage = function (event) { return __awaiter(void 0, void 0, void 0, function () {
                     var authorizationRequestResponse, tokenResponse, e_5;
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
+                    return __generator(this, function (_b) {
+                        switch (_b.label) {
                             case 0:
                                 debugLogRequest('silent_auth', 'Received message event', env);
                                 if (!(envConfig.LOGIN_REDIRECT_URL.indexOf(event.origin) > -1)) return [3 /*break*/, 7];
                                 if (!(event.data.state && event.data.code)) return [3 /*break*/, 6];
                                 authorizationHandler.locationLike = window.location; // Set locationlike to avoid cors problems
                                 authorizationHandler.utils = new NoHashQueryStringUtils(event.data.code, event.data.state, null);
-                                _a.label = 1;
+                                _b.label = 1;
                             case 1:
-                                _a.trys.push([1, 4, , 5]);
+                                _b.trys.push([1, 4, , 5]);
                                 return [4 /*yield*/, authorizationHandler.completeAuthorizationRequest()];
                             case 2:
-                                authorizationRequestResponse = _a.sent();
+                                authorizationRequestResponse = _b.sent();
                                 debugLogRequest('silent_auth', 'Authorization Request Response received. Trying to get token...', env);
                                 return [4 /*yield*/, getToken_1(authorizationRequestResponse)];
                             case 3:
-                                tokenResponse = _a.sent();
+                                tokenResponse = _b.sent();
                                 debugLogRequest('silent_auth', 'Token response received. Handling token...', env);
                                 if (tokenResponse) {
                                     tokenReceivedHandler(tokenResponse);
                                 }
                                 return [3 /*break*/, 5];
                             case 4:
-                                e_5 = _a.sent();
+                                e_5 = _b.sent();
                                 errorLogRequest('silent_auth', "Something really bad happened: " + JSON.stringify(e_5.message), env);
                                 errorHandler();
                                 return [3 /*break*/, 5];
@@ -3009,7 +3132,7 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
                                     errorLogRequest('silent_auth', "Received error from message, " + event.data.error, env);
                                     errorHandler();
                                 }
-                                _a.label = 7;
+                                _b.label = 7;
                             case 7: return [2 /*return*/];
                         }
                     });
@@ -3018,7 +3141,7 @@ var fetchAccessToken = function (tokenReceivedHandler, errorHandler, env) { retu
                 authorizationHandler.performAuthorizationRequest(authorizationServiceConfiguration, request);
                 return [3 /*break*/, 4];
             case 3:
-                error_1 = _a.sent();
+                error_1 = _b.sent();
                 errorLogRequest('silent_auth', "Something bad happened: " + error_1.message, env);
                 errorHandler();
                 return [3 /*break*/, 4];
@@ -3053,9 +3176,9 @@ var headerCss = ".header-container{background:#fff;position:relative;visibility:
 var Header = /** @class */ (function () {
     function class_2(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.accessTokenExpired = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "accessTokenExpired", 7);
-        this.navigationDidLoad = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "navigationDidLoad", 7);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.accessTokenExpired = Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "accessTokenExpired", 7);
+        this.navigationDidLoad = Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "navigationDidLoad", 7);
         this.localeObject = new Locale(DEFAULT_LOCALE);
         this.locale = DEFAULT_LOCALE;
         this.env = DEFAULT_ENVIRONMENT;
@@ -3123,20 +3246,21 @@ var Header = /** @class */ (function () {
     };
     class_2.prototype.componentWillLoad = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var _a, contentForLocale;
-            return __generator(this, function (_b) {
-                switch (_b.label) {
+            var _b, contentForLocale, myPorscheExists;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
                     case 0:
                         analyticsSetupStore.set('window', window);
                         analyticsSetupStore.set('environment', this.env);
                         navContentStore.set('env', this.env);
                         navStateStore.set('imagesLoaded', false);
                         this.localeWatchHandler(this.locale);
-                        _a = this;
+                        _b = this;
                         return [4 /*yield*/, fetchContent(this.env)];
                     case 1:
-                        _a.content = _b.sent();
+                        _b.content = _c.sent();
                         contentForLocale = getContentForLocale(this.localeObject, this.content, this.env);
+                        myPorscheExists = contentForLocale.metafunctionalities && contentForLocale.metafunctionalities[1];
                         if (!this.accessToken) return [3 /*break*/, 2];
                         if (this.accessToken !== REDACTED) {
                             this.accessTokenState = this.accessToken;
@@ -3144,15 +3268,15 @@ var Header = /** @class */ (function () {
                         }
                         return [3 /*break*/, 5];
                     case 2:
-                        if (!config(this.env).PORSCHE_COM_URL.includes(window.location.origin)) return [3 /*break*/, 4];
+                        if (!(config(this.env).PORSCHE_COM_URL.includes(window.location.origin) && myPorscheExists)) return [3 /*break*/, 4];
                         navContentStore.set('loggedInState', LOADING_STATUS);
                         return [4 /*yield*/, emitAccessToken(this.el, this.env)()];
                     case 3:
-                        _b.sent();
+                        _c.sent();
                         return [3 /*break*/, 5];
                     case 4:
                         navContentStore.set('loggedInState', LOGGED_OUT_USER_STATUS);
-                        _b.label = 5;
+                        _c.label = 5;
                     case 5:
                         navContentStore.set('seriesList', contentForLocale.seriesList);
                         navContentStore.set('shops', contentForLocale.shops);
@@ -3167,7 +3291,7 @@ var Header = /** @class */ (function () {
     class_2.prototype.componentDidLoad = function () {
         return __awaiter(this, void 0, void 0, function () {
             var analyticsSetup, generalLoadEvent, pagData;
-            return __generator(this, function (_a) {
+            return __generator(this, function (_b) {
                 analyticsSetup = {
                     applicationId: analyticsSetupStore.get('applicationId'),
                     locale: analyticsSetupStore.get('locale'),
@@ -3191,7 +3315,7 @@ var Header = /** @class */ (function () {
         navContentStore.set('menu', contentForLocale.menu);
     };
     class_2.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("header", { class: "header-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button", { variant: "primary", class: "skip-content", onfocus: this.addFocus, onClick: this.skipToMainContent, onblur: this.removeFocus }, "Skip to main content"), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header limit-stretch" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "crest-burger-btn-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-crest", { class: "crest" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-layout", null)), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("nav", { class: "menu-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-desktop-level-1", { class: "menu-desktop-level-1" }))), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header-border" }), this.env === 'preview' && Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-preview-badge", { versionString: "Header " + VERSION + " - PP content" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { id: "main", tabindex: "-1", class: "main-content", onBlur: this.mainContentTab })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("header", { class: "header-container" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button", { variant: "primary", class: "skip-content", onfocus: this.addFocus, onClick: this.skipToMainContent, onblur: this.removeFocus }, "Skip to main content"), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header limit-stretch" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "crest-burger-btn-container" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-crest", { class: "crest" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-layout", null)), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("nav", { class: "menu-container" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-desktop-level-1", { class: "menu-desktop-level-1" }))), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "header-border" }), this.env === 'preview' && Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-preview-badge", { versionString: "Header " + VERSION + " - PP content" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { id: "main", tabindex: "-1", class: "main-content", onBlur: this.mainContentTab })));
     };
     Object.defineProperty(class_2, "assetsDirs", {
         get: function () { return ["auth"]; },
@@ -3199,7 +3323,7 @@ var Header = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(class_2.prototype, "el", {
-        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -3217,13 +3341,13 @@ var Header = /** @class */ (function () {
     return class_2;
 }());
 Header.style = headerCss;
-var headlineCss = ".headline.sc-phn-headline{font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:100;border-bottom:1px solid #7b7e80;padding:0;cursor:default}@media (min-width: 0) and (max-width: 759px){.headline.sc-phn-headline{margin-top:5.1875rem;font-size:2rem;line-height:2.5rem;padding-bottom:0.75rem;padding-left:0.625rem}}@media (min-width: 760px) and (max-width: 999px){.headline.sc-phn-headline{margin-top:6.625rem;font-size:3.75rem;line-height:4.25rem;padding-bottom:0.6875rem;padding-left:0.625rem}}@media (min-width: 1000px) and (max-width: 1299px){.headline.sc-phn-headline{margin-top:7.375rem;font-size:3rem;line-height:3.5rem;padding-bottom:0.6875rem;padding-left:0.625rem}}@media (min-width: 1300px){.headline.sc-phn-headline{font-weight:400;border-bottom:1px solid #4a4a4a;text-align:left;padding-left:0.625rem}}@media (min-width: 1300px) and (max-width: 1759px){.headline.sc-phn-headline{font-size:1.375rem;line-height:1.75rem;padding-bottom:0.6875rem;padding-right:0.625rem}}@media (min-width: 1760px){.headline.sc-phn-headline{font-size:1.5rem;line-height:2rem;padding-bottom:0.4375rem}}";
+var headlineCss = ".headline.sc-phn-headline{font-family:\"Porsche Next\", \"Arial Narrow\", Arial, sans-serif;font-weight:100;border-bottom:1px solid #7b7e80;padding:0;margin:0;cursor:default;vertical-align:baseline}@media (min-width: 0) and (max-width: 759px){.headline.sc-phn-headline{margin-top:5.1875rem;font-size:2rem;line-height:2.5rem;padding-bottom:0.75rem;padding-left:0.625rem}}@media (min-width: 760px) and (max-width: 999px){.headline.sc-phn-headline{margin-top:6.625rem;font-size:3.75rem;line-height:4.25rem;padding-bottom:0.6875rem;padding-left:0.625rem}}@media (min-width: 1000px) and (max-width: 1299px){.headline.sc-phn-headline{margin-top:7.375rem;font-size:3rem;line-height:3.5rem;padding-bottom:0.6875rem;padding-left:0.625rem}}@media (min-width: 1300px){.headline.sc-phn-headline{font-weight:400;border-bottom:1px solid #4a4a4a;text-align:left;padding-left:0.625rem}}@media (min-width: 1300px) and (max-width: 1759px){.headline.sc-phn-headline{font-size:1.375rem;line-height:1.75rem;padding-bottom:0.6875rem;padding-right:0.625rem}}@media (min-width: 1760px){.headline.sc-phn-headline{font-size:1.5rem;line-height:2rem;padding-bottom:0.4375rem}}";
 var Headline = /** @class */ (function () {
     function Headline(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     Headline.prototype.render = function () {
-        return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "headline" }, this.text);
+        return Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("h1", { class: "headline" }, this.text);
     };
     return Headline;
 }());
@@ -3231,7 +3355,7 @@ Headline.style = headlineCss;
 var listItemCss = ".list-item-link.sc-phn-list-item{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;border-bottom:1px solid #c9cacb}.list-item-link.sc-phn-list-item:hover{color:#d5001c;cursor:pointer}@media (min-width: 760px) and (max-width: 999px){.list-item-link.sc-phn-list-item{font-size:1.125rem}}@media (min-width: 1300px){.list-item-link.sc-phn-list-item{border-bottom:0;padding-left:0}}.list-item-link.sc-phn-list-item a.sc-phn-list-item{text-decoration:none;line-height:1.5rem;display:inline-block;width:100%;padding:0.875rem 0 0.875rem 0.625rem}@media (min-width: 760px) and (max-width: 999px){.list-item-link.sc-phn-list-item a.sc-phn-list-item{padding-top:1.125rem;padding-bottom:1.125rem}}@media (min-width: 1300px){.list-item-link.sc-phn-list-item a.sc-phn-list-item{padding-bottom:0}}.list-item-button.sc-phn-list-item{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:1rem;border-bottom:1px solid #c9cacb;height:3.3125rem;padding-left:0.625rem;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}@media (min-width: 760px) and (max-width: 999px){.list-item-button.sc-phn-list-item{font-size:1.125rem;height:3.8125rem;padding-right:0.625rem}}@media (min-width: 1300px){.list-item-button.sc-phn-list-item{border-bottom:0;padding-left:0;padding-top:0.875rem}}.list-item-button.sc-phn-list-item .list-item-text.sc-phn-list-item{display:inline-block;line-height:24px}";
 var ListItem = /** @class */ (function () {
     function ListItem(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
         this.sendNavigationClickAnalyticsEvent = function (item) {
             var contentItem = { PhraseId: item.PhraseId, Text: item.Text, Link: item.Link };
@@ -3248,11 +3372,11 @@ var ListItem = /** @class */ (function () {
     }
     ListItem.prototype.renderLinkItem = function (linkItem) {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: linkItem.Link, onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(linkItem); } }, linkItem.Text))));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: linkItem.Link, onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(linkItem); } }, linkItem.Text))));
     };
     ListItem.prototype.renderTextItem = function (textItem) {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "list-item-button", icon: "arrow-head-right", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(textItem); }, cancelTabIndex: false }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "list-item-text" }, textItem.Text)));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "list-item-button", icon: "arrow-head-right", onClick: function () { return _this_1.sendNavigationClickAnalyticsEvent(textItem); }, cancelTabIndex: false }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "list-item-text" }, textItem.Text)));
     };
     ListItem.prototype.render = function () {
         return this.item.Link ? this.renderLinkItem(this.item) : this.renderTextItem(this.item);
@@ -3264,7 +3388,7 @@ var megaFlyOutOverlayCss = ".backdrop.sc-phn-mega-fly-out-overlay{position:fixed
 var MegaFlyOutOverlay = /** @class */ (function () {
     function class_3(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.active = '';
         this.setBackdropOffset = function () {
             var offsetFromTop = document.body.querySelector('phn-header').getBoundingClientRect().bottom;
@@ -3307,7 +3431,7 @@ var MegaFlyOutOverlay = /** @class */ (function () {
     }
     class_3.prototype.showOverlay = function () {
         return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
+            return __generator(this, function (_b) {
                 this.activateOverlay();
                 this.showOverlayHandler(this.containerElement);
                 return [2 /*return*/];
@@ -3316,7 +3440,7 @@ var MegaFlyOutOverlay = /** @class */ (function () {
     };
     class_3.prototype.deactivateState = function () {
         return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
+            return __generator(this, function (_b) {
                 window.removeEventListener('scroll', this.setBackdropOffset);
                 this.active = '';
                 return [2 /*return*/];
@@ -3325,7 +3449,7 @@ var MegaFlyOutOverlay = /** @class */ (function () {
     };
     class_3.prototype.hideOverlay = function () {
         return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
+            return __generator(this, function (_b) {
                 this.deactivateState();
                 this.hideOverlayHandler(this.containerElement);
                 return [2 /*return*/];
@@ -3334,10 +3458,10 @@ var MegaFlyOutOverlay = /** @class */ (function () {
     };
     class_3.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { class: 'mega-fly-out-overlay-button mega-fly-out-overlay-button-' + this.active, onKeyDown: this.handleKeyDown, onClick: this.handleClick, "aria-expanded": this.active === 'active' ? 'true' : 'false', "aria-haspopup": "true", id: this.screenReaderId }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "button" })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-container", ref: function (el) { return (_this_1.containerElement = el); }, onKeyDown: this.handleKeyDownContainer, "aria-labelledby": this.screenReaderId, "aria-hidden": this.active === 'active' ? 'false' : 'true', role: "region" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-content" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" }))), this.active && Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "backdrop", ref: function (el) { return (_this_1.backdropElement = el); } }))));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { class: 'mega-fly-out-overlay-button mega-fly-out-overlay-button-' + this.active, onKeyDown: this.handleKeyDown, onClick: this.handleClick, "aria-expanded": this.active === 'active' ? 'true' : 'false', "aria-haspopup": "true", id: this.screenReaderId }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "button" })), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-container", ref: function (el) { return (_this_1.containerElement = el); }, onKeyDown: this.handleKeyDownContainer, "aria-labelledby": this.screenReaderId, "aria-hidden": this.active === 'active' ? 'false' : 'true', role: "region" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mega-fly-out-overlay-content" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" }))), this.active && Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "backdrop", ref: function (el) { return (_this_1.backdropElement = el); } }))));
     };
     Object.defineProperty(class_3.prototype, "element", {
-        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -3350,16 +3474,16 @@ var HoverIntentService = /** @class */ (function () {
     }
     HoverIntentService.prototype.handleHoverOut = function () {
         return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
+            return __generator(this, function (_b) {
+                switch (_b.label) {
                     case 0:
                         clearTimeout(this.timeout);
                         if (!this.last) return [3 /*break*/, 2];
                         return [4 /*yield*/, this.last.hideOverlay()];
                     case 1:
-                        _a.sent();
+                        _b.sent();
                         this.link = null;
-                        _a.label = 2;
+                        _b.label = 2;
                     case 2: return [2 /*return*/];
                 }
             });
@@ -3379,8 +3503,8 @@ var HoverIntentService = /** @class */ (function () {
         return __awaiter(this, void 0, void 0, function () {
             var element, linkNominee, targetNode;
             var _this_1 = this;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
+            return __generator(this, function (_b) {
+                switch (_b.label) {
                     case 0:
                         element = event.composedPath().length === 0 ? this.capturedComposedPath[0] : event.composedPath()[0];
                         linkNominee = this.closestElement(parentElementSelector, element);
@@ -3408,20 +3532,20 @@ var HoverIntentService = /** @class */ (function () {
                             // capture composedPath() before the handleMouseMove event happens, as it becomes empty before the next event happens
                             this.capturedComposedPath = event.composedPath();
                             this.timeout = setTimeout(function () { return __awaiter(_this_1, void 0, void 0, function () {
-                                return __generator(this, function (_a) {
-                                    switch (_a.label) {
+                                return __generator(this, function (_b) {
+                                    switch (_b.label) {
                                         case 0:
                                             if (!this.link) return [3 /*break*/, 3];
                                             return [4 /*yield*/, this.link.hideOverlay()];
                                         case 1:
-                                            _a.sent();
+                                            _b.sent();
                                             this.link = linkNominee;
                                             return [4 /*yield*/, linkNominee.showOverlay()];
                                         case 2:
-                                            _a.sent();
+                                            _b.sent();
                                             this.originPositionX = this.mouseCursorX;
                                             this.originPositionY = this.mouseCursorY;
-                                            _a.label = 3;
+                                            _b.label = 3;
                                         case 3:
                                             this.handleMouseMove(event, parentElementSelector);
                                             return [2 /*return*/];
@@ -3432,8 +3556,8 @@ var HoverIntentService = /** @class */ (function () {
                         }
                         return [4 /*yield*/, this.link.hideOverlay()];
                     case 2:
-                        _a.sent();
-                        _a.label = 3;
+                        _b.sent();
+                        _b.label = 3;
                     case 3:
                         // set link
                         this.link = linkNominee;
@@ -3450,8 +3574,8 @@ var HoverIntentService = /** @class */ (function () {
                         return [4 /*yield*/, this.link.showOverlay()];
                     case 4:
                         // set link state
-                        _a.sent();
-                        _a.label = 5;
+                        _b.sent();
+                        _b.label = 5;
                     case 5: return [2 /*return*/];
                 }
             });
@@ -3475,7 +3599,7 @@ function _assertThisInitialized(self) { if (self === void 0) {
 } return self; }
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 /*!
- * GSAP 3.4.2
+ * GSAP 3.5.1
  * https://greensock.com
  *
  * @license Copyright 2008-2020, GreenSock. All rights reserved.
@@ -3511,14 +3635,14 @@ var _config = {
     return typeof window !== "undefined";
 }, _isFuncOrString = function _isFuncOrString(value) {
     return _isFunction(value) || _isString(value);
-}, _isArray = Array.isArray, _strictNumExp = /(?:-?\.?\d|\.)+/gi, 
+}, _isTypedArray = typeof ArrayBuffer === "function" && ArrayBuffer.isView || function () { }, 
+// note: IE10 has ArrayBuffer, but NOT ArrayBuffer.isView().
+_isArray = Array.isArray, _strictNumExp = /(?:-?\.?\d|\.)+/gi, 
 //only numbers (including negatives and decimals) but NOT relative values.
 _numExp = /[-+=.]*\d+[.e\-+]*\d*[e\-\+]*\d*/g, 
 //finds any numbers, including ones that start with += or -=, negative numbers, and ones in scientific notation like 1e-8.
 _numWithUnitExp = /[-+=.]*\d+[.e-]*\d*[a-z%]*/g, _complexStringNumExp = /[-+=.]*\d+(?:\.|e-|e)*\d*/gi, 
 //duplicate so that while we're looping through matches from exec(), it doesn't contaminate the lastIndex of _numExp which we use to search for colors too.
-_parenthesesExp = /\(([^()]+)\)/i, 
-//finds the string between parentheses.
 _relExp = /[+-]=-?[\.\d]+/, _delimitedValueExp = /[#\-+.]*\b[a-z\d-=+%.]+/gi, _globalTimeline, _win, _coreInitted, _doc, _globals = {}, _installScope = {}, _coreReady, _install = function _install(scope) {
     return (_installScope = _merge(scope, _globals)) && gsap;
 }, _missingPlugin = function _missingPlugin(property, value) {
@@ -3531,9 +3655,7 @@ _relExp = /[+-]=-?[\.\d]+/, _delimitedValueExp = /[#\-+.]*\b[a-z\d-=+%.]+/gi, _g
     return 0;
 }, _reservedProps = {}, _lazyTweens = [], _lazyLookup = {}, _lastRenderedFrame, _plugins = {}, _effects = {}, _nextGCFrame = 30, _harnessPlugins = [], _callbackNames = "", _harness = function _harness(targets) {
     var target = targets[0], harnessPlugin, i;
-    if (!_isObject(target) && !_isFunction(target)) {
-        targets = [targets];
-    }
+    _isObject(target) || _isFunction(target) || (targets = [targets]);
     if (!(harnessPlugin = (target._gsap || {}).harness)) {
         i = _harnessPlugins.length;
         while (i-- && !_harnessPlugins[i].targetTest(target)) { }
@@ -3546,9 +3668,8 @@ _relExp = /[+-]=-?[\.\d]+/, _delimitedValueExp = /[#\-+.]*\b[a-z\d-=+%.]+/gi, _g
     return targets;
 }, _getCache = function _getCache(target) {
     return target._gsap || _harness(toArray(target))[0]._gsap;
-}, _getProperty = function _getProperty(target, property) {
-    var currentValue = target[property];
-    return _isFunction(currentValue) ? target[property]() : _isUndefined(currentValue) && target.getAttribute(property) || currentValue;
+}, _getProperty = function _getProperty(target, property, v) {
+    return (v = target[property]) && _isFunction(v) ? target[property]() : _isUndefined(v) && target.getAttribute && target.getAttribute(property) || v;
 }, _forEachName = function _forEachName(names, func) {
     return (names = names.split(",")).forEach(func) || names;
 }, 
@@ -3563,9 +3684,7 @@ _round = function _round(value) {
 }, _parseVars = function _parseVars(params, type, parent) {
     //reads the arguments passed to one of the key methods and figures out if the user is defining things with the OLD/legacy syntax where the duration is the 2nd parameter, and then it adjusts things accordingly and spits back the corrected vars object (with the duration added if necessary, as well as runBackwards or startAt or immediateRender). type 0 = to()/staggerTo(), 1 = from()/staggerFrom(), 2 = fromTo()/staggerFromTo()
     var isLegacy = _isNumber(params[1]), varsIndex = (isLegacy ? 2 : 1) + (type < 2 ? 0 : 1), vars = params[varsIndex], irVars;
-    if (isLegacy) {
-        vars.duration = params[1];
-    }
+    isLegacy && (vars.duration = params[1]);
     vars.parent = parent;
     if (type) {
         irVars = vars;
@@ -3575,12 +3694,7 @@ _round = function _round(value) {
             parent = _isNotFalse(parent.vars.inherit) && parent.parent;
         }
         vars.immediateRender = _isNotFalse(irVars.immediateRender);
-        if (type < 2) {
-            vars.runBackwards = 1;
-        }
-        else {
-            vars.startAt = params[varsIndex - 1]; // "from" vars
-        }
+        type < 2 ? vars.runBackwards = 1 : vars.startAt = params[varsIndex - 1]; // "from" vars
     }
     return vars;
 }, _lazyRender = function _lazyRender() {
@@ -3597,7 +3711,7 @@ _round = function _round(value) {
     _lazyTweens.length && _lazyRender(); //in case rendering caused any tweens to lazy-init, we should render them because typically when someone calls seek() or time() or progress(), they expect an immediate render.
 }, _numericIfPossible = function _numericIfPossible(value) {
     var n = parseFloat(value);
-    return (n || n === 0) && (value + "").match(_delimitedValueExp).length < 2 ? n : value;
+    return (n || n === 0) && (value + "").match(_delimitedValueExp).length < 2 ? n : _isString(value) ? value.trim() : value;
 }, _passThrough = function _passThrough(p) {
     return p;
 }, _setDefaults = function _setDefaults(obj, defaults) {
@@ -3607,9 +3721,7 @@ _round = function _round(value) {
     return obj;
 }, _setKeyframeDefaults = function _setKeyframeDefaults(obj, defaults) {
     for (var p in defaults) {
-        if (!(p in obj) && p !== "duration" && p !== "ease") {
-            obj[p] = defaults[p];
-        }
+        p in obj || p === "duration" || p === "ease" || (obj[p] = defaults[p]);
     }
 }, _merge = function _merge(base, toMerge) {
     for (var p in toMerge) {
@@ -3695,11 +3807,14 @@ _round = function _round(value) {
 }, _removeFromParent = function _removeFromParent(child, onlyIfParentHasAutoRemove) {
     child.parent && (!onlyIfParentHasAutoRemove || child.parent.autoRemoveChildren) && child.parent.remove(child);
     child._act = 0;
-}, _uncache = function _uncache(animation) {
-    var a = animation;
-    while (a) {
-        a._dirty = 1;
-        a = a.parent;
+}, _uncache = function _uncache(animation, child) {
+    if (animation && (!child || child._end > animation._dur || child._start < 0)) {
+        // performance optimization: if a child animation is passed in we should only uncache if that child EXTENDS the animation (its end time is beyond the end)
+        var a = animation;
+        while (a) {
+            a._dirty = 1;
+            a = a.parent;
+        }
     }
     return animation;
 }, _recacheAncestors = function _recacheAncestors(animation) {
@@ -3729,7 +3844,7 @@ _animationCycle = function _animationCycle(tTime, cycleDuration) {
     if (parent && parent.smoothChildTiming && animation._ts) {
         animation._start = _round(animation._dp._time - (animation._ts > 0 ? totalTime / animation._ts : ((animation._dirty ? animation.totalDuration() : animation._tDur) - totalTime) / -animation._ts));
         _setEnd(animation);
-        parent._dirty || _uncache(parent); //for performance improvement. If the parent's cache is already dirty, it already took care of marking the ancestors as dirty too, so skip the function call here.
+        parent._dirty || _uncache(parent, animation); //for performance improvement. If the parent's cache is already dirty, it already took care of marking the ancestors as dirty too, so skip the function call here.
     }
     return animation;
 }, 
@@ -3752,7 +3867,7 @@ _postAddChecks = function _postAddChecks(timeline, child) {
             child.render(t, true);
         }
     } //if the timeline has already ended but the inserted tween/timeline extends the duration, we should enable this timeline again so that it renders properly. We should also align the playhead with the parent timeline's when appropriate.
-    if (_uncache(timeline)._dp && timeline._initted && timeline._time >= timeline._dur && timeline._ts) {
+    if (_uncache(timeline, child)._dp && timeline._initted && timeline._time >= timeline._dur && timeline._ts) {
         //in case any of the ancestors had completed but should now be enabled...
         if (timeline._dur < timeline.duration()) {
             t = timeline;
@@ -3784,7 +3899,7 @@ _postAddChecks = function _postAddChecks(timeline, child) {
         return 1;
     }
 }, _renderZeroDurationTween = function _renderZeroDurationTween(tween, totalTime, suppressEvents, force) {
-    var prevRatio = tween.ratio, ratio = totalTime < 0 || !totalTime && prevRatio && !tween._start && tween._zTime > _tinyNum && !tween._dp._lock || tween._ts < 0 || tween._dp._ts < 0 ? 0 : 1, 
+    var prevRatio = tween.ratio, ratio = totalTime < 0 || !totalTime && prevRatio && !tween._start && tween._zTime > _tinyNum && !tween._dp._lock || (tween._ts < 0 || tween._dp._ts < 0) && tween.data !== "isFromStart" && tween.data !== "isStart" ? 0 : 1, 
     // check parent's _lock because when a timeline repeats/yoyos and does its artificial wrapping, we shouldn't force the ratio back to 0. Also, if the tween or its parent is reversed and the totalTime is 0, we should go to a ratio of 0.
     repeatDelay = tween._rDelay, tTime = 0, pt, iteration, prevIteration;
     if (repeatDelay && tween._repeat) {
@@ -3797,11 +3912,11 @@ _postAddChecks = function _postAddChecks(timeline, child) {
             tween.vars.repeatRefresh && tween._initted && tween.invalidate();
         }
     }
-    if (!tween._initted && _attemptInitTween(tween, totalTime, force, suppressEvents)) {
-        // if we render the very beginning (time == 0) of a fromTo(), we must force the render (normal tweens wouldn't need to render at a time of 0 when the prevTime was also 0). This is also mandatory to make sure overwriting kicks in immediately.
-        return;
-    }
     if (ratio !== prevRatio || force || tween._zTime === _tinyNum || !totalTime && tween._zTime) {
+        if (!tween._initted && _attemptInitTween(tween, totalTime, force, suppressEvents)) {
+            // if we render the very beginning (time == 0) of a fromTo(), we must force the render (normal tweens wouldn't need to render at a time of 0 when the prevTime was also 0). This is also mandatory to make sure overwriting kicks in immediately.
+            return;
+        }
         prevIteration = tween._zTime;
         tween._zTime = totalTime || (suppressEvents ? _tinyNum : 0); // when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration tween, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect.
         suppressEvents || (suppressEvents = totalTime && !prevIteration); // if it was rendered previously at exactly 0 (_zTime) and now the playhead is moving away, DON'T fire callbacks otherwise they'll seem like duplicates.
@@ -3849,16 +3964,13 @@ _postAddChecks = function _postAddChecks(timeline, child) {
             child = child._prev;
         }
     }
-}, _setDuration = function _setDuration(animation, duration, skipUncache) {
-    var repeat = animation._repeat, dur = _round(duration) || 0;
+}, _setDuration = function _setDuration(animation, duration, skipUncache, leavePlayhead) {
+    var repeat = animation._repeat, dur = _round(duration) || 0, totalProgress = animation._tTime / animation._tDur;
+    totalProgress && !leavePlayhead && (animation._time *= dur / animation._dur);
     animation._dur = dur;
     animation._tDur = !repeat ? dur : repeat < 0 ? 1e10 : _round(dur * (repeat + 1) + animation._rDelay * repeat);
-    if (animation._time > dur) {
-        animation._time = dur;
-        animation._tTime = Math.min(animation._tTime, animation._tDur);
-    }
-    !skipUncache && _uncache(animation.parent);
-    animation.parent && _setEnd(animation);
+    totalProgress && !leavePlayhead ? _alignPlayhead(animation, animation._tTime = animation._tDur * totalProgress) : animation.parent && _setEnd(animation);
+    skipUncache || _uncache(animation.parent, animation);
     return animation;
 }, _onUpdateTotalDuration = function _onUpdateTotalDuration(animation) {
     return animation instanceof Timeline ? _uncache(animation) : _setDuration(animation, animation._dur);
@@ -3889,8 +4001,10 @@ _postAddChecks = function _postAddChecks(timeline, child) {
 }, _clamp = function _clamp(min, max, value) {
     return value < min ? min : value > max ? max : value;
 }, getUnit = function getUnit(value) {
-    return (value + "").substr((parseFloat(value) + "").length);
-}, clamp = function clamp(min, max, value) {
+    return (value = (value + "").substr((parseFloat(value) + "").length)) && isNaN(value) ? value : "";
+}, 
+// note: protect against padded numbers as strings, like "100.100". That shouldn't return "00" as the unit. If it's numeric, return no unit.
+clamp = function clamp(min, max, value) {
     return _conditionalReturn(value, function (v) {
         return _clamp(min, max, v);
     });
@@ -4051,7 +4165,7 @@ distribute = function distribute(v) {
         end = value.indexOf(")", i);
         isArray = value.charAt(i + 7) === "[";
         nums = value.substr(i + 7, end - i - 7).match(isArray ? _delimitedValueExp : _strictNumExp);
-        s += value.substr(prev, i - prev) + random(isArray ? nums : +nums[0], +nums[1], +nums[2] || 1e-5);
+        s += value.substr(prev, i - prev) + random(isArray ? nums : +nums[0], isArray ? 0 : +nums[1], +nums[2] || 1e-5);
         prev = end + 1;
     }
     return s + value.substr(prev, value.length - prev);
@@ -4125,9 +4239,7 @@ distribute = function distribute(v) {
     return params ? callback.apply(scope, params) : callback.call(scope);
 }, _interrupt = function _interrupt(animation) {
     _removeFromParent(animation);
-    if (animation.progress() < 1) {
-        _callback(animation, "onInterrupt");
-    }
+    animation.progress() < 1 && _callback(animation, "onInterrupt");
     return animation;
 }, _quickTween, _createPlugin = function _createPlugin(config) {
     config = !config.name && config["default"] || config; //UMD packaging wraps things oddly, so for example MotionPathHelper becomes {MotionPathHelper:MotionPathHelper, default:MotionPathHelper}.
@@ -4164,9 +4276,7 @@ distribute = function distribute(v) {
         name = (name === "css" ? "CSS" : name.charAt(0).toUpperCase() + name.substr(1)) + "Plugin"; //for the global name. "motionPath" should become MotionPathPlugin
     }
     _addGlobal(name, Plugin);
-    if (config.register) {
-        config.register(gsap, Plugin, PropTween);
-    }
+    config.register && config.register(gsap, Plugin, PropTween);
 }, 
 /*
  * --------------------------------------------------------------------------------------
@@ -4225,9 +4335,7 @@ _255 = 255, _colorLookup = {
                 l = +a[2] / 100;
                 g = l <= .5 ? l * (s + 1) : l + s - l * s;
                 r = l * 2 - g;
-                if (a.length > 3) {
-                    a[3] *= 1; //cast as number
-                }
+                a.length > 3 && (a[3] *= 1); //cast as number
                 a[0] = _hue(h + 1 / 3, r, g);
                 a[1] = _hue(h, r, g);
                 a[2] = _hue(h - 1 / 3, r, g);
@@ -4327,29 +4435,35 @@ _255 = 255, _colorLookup = {
  * --------------------------------------------------------------------------------------
  */
 _tickerActive, _ticker = function () {
-    var _getTime = Date.now, _lagThreshold = 500, _adjustedLag = 33, _startTime = _getTime(), _lastUpdate = _startTime, _gap = 1 / 240, _nextTime = _gap, _listeners = [], _id, _req, _raf, _self, _tick = function _tick(v) {
-        var elapsed = _getTime() - _lastUpdate, manual = v === true, overlap, dispatch;
-        if (elapsed > _lagThreshold) {
-            _startTime += elapsed - _adjustedLag;
-        }
+    var _getTime = Date.now, _lagThreshold = 500, _adjustedLag = 33, _startTime = _getTime(), _lastUpdate = _startTime, _gap = 1000 / 240, _nextTime = _gap, _listeners = [], _id, _req, _raf, _self, _delta, _i, _tick = function _tick(v) {
+        var elapsed = _getTime() - _lastUpdate, manual = v === true, overlap, dispatch, time, frame;
+        elapsed > _lagThreshold && (_startTime += elapsed - _adjustedLag);
         _lastUpdate += elapsed;
-        _self.time = (_lastUpdate - _startTime) / 1000;
-        overlap = _self.time - _nextTime;
+        time = _lastUpdate - _startTime;
+        overlap = time - _nextTime;
         if (overlap > 0 || manual) {
-            _self.frame++;
-            _nextTime += overlap + (overlap >= _gap ? 0.004 : _gap - overlap);
+            frame = ++_self.frame;
+            _delta = time - _self.time * 1000;
+            _self.time = time = time / 1000;
+            _nextTime += overlap + (overlap >= _gap ? 4 : _gap - overlap);
             dispatch = 1;
         }
         manual || (_id = _req(_tick)); //make sure the request is made before we dispatch the "tick" event so that timing is maintained. Otherwise, if processing the "tick" requires a bunch of time (like 15ms) and we're using a setTimeout() that's based on 16.7ms, it'd technically take 31.7ms between frames otherwise.
-        dispatch && _listeners.forEach(function (l) {
-            return l(_self.time, elapsed, _self.frame, v);
-        });
+        if (dispatch) {
+            for (_i = 0; _i < _listeners.length; _i++) {
+                // use _i and check _listeners.length instead of a variable because a listener could get removed during the loop, and if that happens to an element less than the current index, it'd throw things off in the loop.
+                _listeners[_i](time, _delta, frame, v);
+            }
+        }
     };
     _self = {
         time: 0,
         frame: 0,
         tick: function tick() {
             _tick(true);
+        },
+        deltaRatio: function deltaRatio(fps) {
+            return _delta / (1000 / (fps || 60));
         },
         wake: function wake() {
             if (_coreReady) {
@@ -4363,7 +4477,7 @@ _tickerActive, _ticker = function () {
                 }
                 _id && _self.sleep();
                 _req = _raf || function (f) {
-                    return setTimeout(f, (_nextTime - _self.time) * 1000 + 1 | 0);
+                    return setTimeout(f, _nextTime - _self.time * 1000 + 1 | 0);
                 };
                 _tickerActive = 1;
                 _tick(2);
@@ -4379,8 +4493,8 @@ _tickerActive, _ticker = function () {
             _adjustedLag = Math.min(adjustedLag, _lagThreshold, 0);
         },
         fps: function fps(_fps) {
-            _gap = 1 / (_fps || 240);
-            _nextTime = _self.time + _gap;
+            _gap = 1000 / (_fps || 240);
+            _nextTime = _self.time * 1000 + _gap;
         },
         add: function add(callback) {
             _listeners.indexOf(callback) < 0 && _listeners.push(callback);
@@ -4388,7 +4502,7 @@ _tickerActive, _ticker = function () {
         },
         remove: function remove(callback) {
             var i;
-            ~(i = _listeners.indexOf(callback)) && _listeners.splice(i, 1);
+            ~(i = _listeners.indexOf(callback)) && _listeners.splice(i, 1) && _i >= i && _i--;
         },
         _listeners: _listeners
     };
@@ -4413,10 +4527,13 @@ _easeMap = {}, _customEaseExp = /^[\d.\-M][\d.\-,\s]/, _quotesExp = /["']/g, _pa
         key = val.substr(index + 1).trim();
     }
     return obj;
+}, _valueInParentheses = function _valueInParentheses(value) {
+    var open = value.indexOf("(") + 1, close = value.indexOf(")"), nested = value.indexOf("(", open);
+    return value.substring(open, ~nested && nested < close ? value.indexOf(")", close + 1) : close);
 }, _configEaseFromString = function _configEaseFromString(name) {
     //name can be a string like "elastic.out(1,0.5)", and pass in _easeMap as obj and it'll parse it out and call the actual function like _easeMap.Elastic.easeOut.config(1,0.5). It will also parse custom ease strings as long as CustomEase is loaded and registered (internally as _easeMap._CE).
     var split = (name + "").split("("), ease = _easeMap[split[0]];
-    return ease && split.length > 1 && ease.config ? ease.config.apply(null, ~name.indexOf("{") ? [_parseObjectInString(split[1])] : _parenthesesExp.exec(name)[1].split(",").map(_numericIfPossible)) : _easeMap._CE && _customEaseExp.test(name) ? _easeMap._CE("", name) : ease;
+    return ease && split.length > 1 && ease.config ? ease.config.apply(null, ~name.indexOf("{") ? [_parseObjectInString(split[1])] : _valueInParentheses(name).split(",").map(_numericIfPossible)) : _easeMap._CE && _customEaseExp.test(name) ? _easeMap._CE("", name) : ease;
 }, _invertEase = function _invertEase(ease) {
     return function (p) {
         return 1 - ease(1 - p);
@@ -4586,7 +4703,7 @@ var Animation = /*#__PURE__*/ function () {
             this._yoyo = !!vars.yoyo || !!vars.yoyoEase;
         }
         this._ts = 1;
-        _setDuration(this, +vars.duration, 1);
+        _setDuration(this, +vars.duration, 1, 1);
         this.data = vars.data;
         _tickerActive || _ticker.wake();
         parent && _addToTimeline(parent, this, time || time === 0 ? time : parent._time, 1);
@@ -4610,9 +4727,7 @@ var Animation = /*#__PURE__*/ function () {
             return this._tDur;
         }
         this._dirty = 0;
-        var t = this._time / this._dur || 0;
-        _setDuration(this, this._repeat < 0 ? value : (value - this._repeat * this._rDelay) / (this._repeat + 1));
-        return this._tTime ? _alignPlayhead(this, t * value + _elapsedCycleDuration(this)) : this; // in case the animation hasn't even started yet and it has a delay. Aligning the playhead in that case would make it appear to lose the delay.
+        return _setDuration(this, this._repeat < 0 ? value : (value - this._repeat * this._rDelay) / (this._repeat + 1));
     };
     _proto.totalTime = function totalTime(_totalTime, suppressEvents) {
         _wake();
@@ -4633,7 +4748,8 @@ var Animation = /*#__PURE__*/ function () {
                 _addToTimeline(this._dp, this, this._start - this._delay);
             }
         }
-        if (this._tTime !== _totalTime || !this._dur && !suppressEvents || this._initted && Math.abs(this._zTime) === _tinyNum || !_totalTime && !this._initted) {
+        if (this._tTime !== _totalTime || !this._dur && !suppressEvents || this._initted && Math.abs(this._zTime) === _tinyNum || !_totalTime && !this._initted && (this.add || this._ptLookup)) {
+            // check for _ptLookup on a Tween instance to ensure it has actually finished being instantiated, otherwise if this.reverse() gets called in the Animation constructor, it could trigger a render() here even though the _targets weren't populated, thus when _init() is called there won't be any PropTweens (it'll act like the tween is non-functional)
             this._ts || (this._pTime = _totalTime); // otherwise, if an animation is paused, then the playhead is moved back to zero, then resumed, it'd revert back to the original time at the pause
             _lazySafeRender(this, _totalTime, suppressEvents);
         }
@@ -4736,21 +4852,15 @@ var Animation = /*#__PURE__*/ function () {
         return this.play().totalTime(includeDelay ? -this._delay : 0, _isNotFalse(suppressEvents));
     };
     _proto.play = function play(from, suppressEvents) {
-        if (from != null) {
-            this.seek(from, suppressEvents);
-        }
+        from != null && this.seek(from, suppressEvents);
         return this.reversed(false).paused(false);
     };
     _proto.reverse = function reverse(from, suppressEvents) {
-        if (from != null) {
-            this.seek(from || this.totalDuration(), suppressEvents);
-        }
+        from != null && this.seek(from || this.totalDuration(), suppressEvents);
         return this.reversed(true).paused(false);
     };
     _proto.pause = function pause(atTime, suppressEvents) {
-        if (atTime != null) {
-            this.seek(atTime, suppressEvents);
-        }
+        atTime != null && this.seek(atTime, suppressEvents);
         return this.paused(true);
     };
     _proto.resume = function resume() {
@@ -4758,9 +4868,7 @@ var Animation = /*#__PURE__*/ function () {
     };
     _proto.reversed = function reversed(value) {
         if (arguments.length) {
-            if (!!value !== this.reversed()) {
-                this.timeScale(-this._rts || (value ? -_tinyNum : 0)); // in case timeScale is zero, reversing would have no effect so we use _tinyNum.
-            }
+            !!value !== this.reversed() && this.timeScale(-this._rts || (value ? -_tinyNum : 0)); // in case timeScale is zero, reversing would have no effect so we use _tinyNum.
             return this;
         }
         return this._rts < 0;
@@ -4782,12 +4890,8 @@ var Animation = /*#__PURE__*/ function () {
             }
             else {
                 vars[type] = callback;
-                if (params) {
-                    vars[type + "Params"] = params;
-                }
-                if (type === "onUpdate") {
-                    this._onUpdate = callback;
-                }
+                params && (vars[type + "Params"] = params);
+                type === "onUpdate" && (this._onUpdate = callback);
             }
             return this;
         }
@@ -4922,13 +5026,18 @@ var Timeline = /*#__PURE__*/ function (_Animation) {
                 yoyo = this._yoyo;
                 cycleDuration = dur + this._rDelay;
                 time = _round(tTime % cycleDuration); //round to avoid floating point errors. (4 % 0.8 should be 0 but some browsers report it as 0.79999999!)
-                if (time > dur || tDur === tTime) {
+                if (tTime === tDur) {
+                    // the tDur === tTime is for edge cases where there's a lengthy decimal on the duration and it may reach the very end but the time is rendered as not-quite-there (remember, tDur is rounded to 4 decimals whereas dur isn't)
+                    iteration = this._repeat;
                     time = dur;
                 }
-                iteration = ~~(tTime / cycleDuration);
-                if (iteration && iteration === tTime / cycleDuration) {
-                    time = dur;
-                    iteration--;
+                else {
+                    iteration = ~~(tTime / cycleDuration);
+                    if (iteration && iteration === tTime / cycleDuration) {
+                        time = dur;
+                        iteration--;
+                    }
+                    time > dur && (time = dur);
                 }
                 prevIteration = _animationCycle(this._tTime, cycleDuration);
                 !prevTime && this._tTime && prevIteration !== iteration && (prevIteration = iteration); // edge case - if someone does addPause() at the very beginning of a repeating timeline, that pause is technically at the same spot as the end which causes this._time to get set to 0 when the totalTime would normally place the playhead at the end. See https://greensock.com/forums/topic/23823-closing-nav-animation-not-working-on-ie-and-iphone-6-maybe-other-older-browser/?tab=comments#comment-113005
@@ -4946,22 +5055,20 @@ var Timeline = /*#__PURE__*/ function (_Animation) {
                 */
                 if (iteration !== prevIteration && !this._lock) {
                     var rewinding = yoyo && prevIteration & 1, doesWrap = rewinding === (yoyo && iteration & 1);
-                    if (iteration < prevIteration) {
-                        rewinding = !rewinding;
-                    }
+                    iteration < prevIteration && (rewinding = !rewinding);
                     prevTime = rewinding ? 0 : dur;
                     this._lock = 1;
                     this.render(prevTime || (isYoyo ? 0 : _round(iteration * cycleDuration)), suppressEvents, !dur)._lock = 0;
-                    if (!suppressEvents && this.parent) {
-                        _callback(this, "onRepeat");
-                    }
+                    !suppressEvents && this.parent && _callback(this, "onRepeat");
                     this.vars.repeatRefresh && !isYoyo && (this.invalidate()._lock = 1);
                     if (prevTime !== this._time || prevPaused !== !this._ts) {
                         return this;
                     }
+                    dur = this._dur; // in case the duration changed in the onRepeat
+                    tDur = this._tDur;
                     if (doesWrap) {
                         this._lock = 2;
-                        prevTime = rewinding ? dur + 0.0001 : -0.0001;
+                        prevTime = rewinding ? dur : -0.0001;
                         this.render(prevTime, true);
                         this.vars.repeatRefresh && !isYoyo && this.invalidate();
                     }
@@ -4986,9 +5093,7 @@ var Timeline = /*#__PURE__*/ function (_Animation) {
                 this._initted = 1;
                 this._zTime = totalTime;
             }
-            if (!prevTime && time && !suppressEvents) {
-                _callback(this, "onStart");
-            }
+            !prevTime && time && !suppressEvents && _callback(this, "onStart");
             if (time >= prevTime && totalTime >= 0) {
                 child = this._first;
                 while (child) {
@@ -5063,7 +5168,7 @@ var Timeline = /*#__PURE__*/ function (_Animation) {
                 child.forEach(function (obj) {
                     return _this2.add(obj, position);
                 });
-                return _uncache(this);
+                return this;
             }
             if (_isString(child)) {
                 return this.addLabel(child, position);
@@ -5194,11 +5299,12 @@ var Timeline = /*#__PURE__*/ function (_Animation) {
             ease: "none",
             lazy: false,
             time: endTime,
+            overwrite: "auto",
             duration: vars.duration || Math.abs((endTime - (startAt && "time" in startAt ? startAt.time : tl._time)) / tl.timeScale()) || _tinyNum,
             onStart: function onStart() {
                 tl.pause();
                 var duration = vars.duration || Math.abs((endTime - tl._time) / tl.timeScale());
-                tween._dur !== duration && _setDuration(tween, duration).render(tween._time, true, true);
+                tween._dur !== duration && _setDuration(tween, duration, 0, 1).render(tween._time, true, true);
                 _onStart && _onStart.apply(tween, onStartParams || []); //in case the user had an onStart in the vars - we don't want to overwrite it.
             }
         }));
@@ -5237,6 +5343,7 @@ var Timeline = /*#__PURE__*/ function (_Animation) {
         while (child) {
             if (child._start >= ignoreBeforeTime) {
                 child._start += amount;
+                child._end += amount;
             }
             child = child._next;
         }
@@ -5269,13 +5376,11 @@ var Timeline = /*#__PURE__*/ function (_Animation) {
             child = next;
         }
         this._time = this._tTime = this._pTime = 0;
-        if (includeLabels) {
-            this.labels = {};
-        }
+        includeLabels && (this.labels = {});
         return _uncache(this);
     };
     _proto2.totalDuration = function totalDuration(value) {
-        var max = 0, self = this, child = self._last, prevStart = _bigNum, prev, end, start, parent;
+        var max = 0, self = this, child = self._last, prevStart = _bigNum, prev, start, parent;
         if (arguments.length) {
             return self.timeScale((self._repeat < 0 ? self.duration() : self.totalDuration()) / (self.reversed() ? -value : value));
         }
@@ -5304,13 +5409,10 @@ var Timeline = /*#__PURE__*/ function (_Animation) {
                     self.shiftChildren(-start, false, -1e999);
                     prevStart = 0;
                 }
-                end = _setEnd(child);
-                if (end > max && child._ts) {
-                    max = end;
-                }
+                child._end > max && child._ts && (max = child._end);
                 child = prev;
             }
-            _setDuration(self, self === _globalTimeline && self._time > max ? self._time : max, 1);
+            _setDuration(self, self === _globalTimeline && self._time > max ? self._time : max, 1, 1);
             self._dirty = 0;
         }
         return self._tDur;
@@ -5409,10 +5511,8 @@ var _addComplexStringPropTween = function _addComplexStringPropTween(target, pro
 }, 
 //creates a copy of the vars object and processes any function-based values (putting the resulting values directly into the copy) as well as strings with "random()" in them. It does NOT process relative values.
 _processVars = function _processVars(vars, index, target, targets, tween) {
-    if (_isFunction(vars)) {
-        vars = _parseFuncOrString(vars, tween, index, target, targets);
-    }
-    if (!_isObject(vars) || vars.style && vars.nodeType || _isArray(vars)) {
+    _isFunction(vars) && (vars = _parseFuncOrString(vars, tween, index, target, targets));
+    if (!_isObject(vars) || vars.style && vars.nodeType || _isArray(vars) || _isTypedArray(vars)) {
         return _isString(vars) ? _parseFuncOrString(vars, tween, index, target, targets) : vars;
     }
     var copy = {}, p;
@@ -5468,10 +5568,10 @@ _initTween = function _initTween(tween, time) {
             }, startAt))); //copy the properties/values into a new object to avoid collisions, like var to = {x:0}, from = {x:500}; timeline.fromTo(e, from, to).fromTo(e, to, from);
             if (immediateRender) {
                 if (time > 0) {
-                    !autoRevert && (tween._startAt = 0); //tweens that render immediately (like most from() and fromTo() tweens) shouldn't revert when their parent timeline's playhead goes backward past the startTime because the initial render could have happened anytime and it shouldn't be directly correlated to this tween's startTime. Imagine setting up a complex animation where the beginning states of various objects are rendered immediately but the tween doesn't happen for quite some time - if we revert to the starting values as soon as the playhead goes backward past the tween's startTime, it will throw things off visually. Reversion should only happen in Timeline instances where immediateRender was false or when autoRevert is explicitly set to true.
+                    autoRevert || (tween._startAt = 0); //tweens that render immediately (like most from() and fromTo() tweens) shouldn't revert when their parent timeline's playhead goes backward past the startTime because the initial render could have happened anytime and it shouldn't be directly correlated to this tween's startTime. Imagine setting up a complex animation where the beginning states of various objects are rendered immediately but the tween doesn't happen for quite some time - if we revert to the starting values as soon as the playhead goes backward past the tween's startTime, it will throw things off visually. Reversion should only happen in Timeline instances where immediateRender was false or when autoRevert is explicitly set to true.
                 }
                 else if (dur && !(time < 0 && prevStartAt)) {
-                    tween._zTime = time;
+                    time && (tween._zTime = time);
                     return; //we skip initialization here so that overwriting doesn't occur until the tween actually begins. Otherwise, if you create several immediateRender:true tweens of the same target/properties to drop into a Timeline, the last one created would overwrite the first ones because they didn't get placed into the timeline yet before the first render occurs and kicks in overwriting.
                 }
             }
@@ -5509,7 +5609,7 @@ _initTween = function _initTween(tween, time) {
             target = targets[i];
             gsData = target._gsap || _harness(targets)[i]._gsap;
             tween._ptLookup[i] = ptLookup = {};
-            _lazyLookup[gsData.id] && _lazyRender(); //if other tweens of the same target have recently initted but haven't rendered yet, we've got to force the render so that the starting values are correct (imagine populating a timeline with a bunch of sequential tweens and then jumping to the end)
+            _lazyLookup[gsData.id] && _lazyTweens.length && _lazyRender(); //if other tweens of the same target have recently initted but haven't rendered yet, we've got to force the render so that the starting values are correct (imagine populating a timeline with a bunch of sequential tweens and then jumping to the end)
             index = fullTargets === targets ? i : fullTargets.indexOf(target);
             if (harness && (plugin = new harness()).init(target, harnessVars || cleanVars, tween, index, fullTargets) !== false) {
                 tween._pt = pt = new PropTween(tween._pt, target, plugin.name, 0, 1, plugin.render, plugin, 0, plugin.priority);
@@ -5577,7 +5677,7 @@ var Tween = /*#__PURE__*/ function (_Animation2) {
             time = null;
         }
         _this3 = _Animation2.call(this, skipInherit ? vars : _inheritDefaults(vars), time) || this;
-        var _this3$vars = _this3.vars, duration = _this3$vars.duration, delay = _this3$vars.delay, immediateRender = _this3$vars.immediateRender, stagger = _this3$vars.stagger, overwrite = _this3$vars.overwrite, keyframes = _this3$vars.keyframes, defaults = _this3$vars.defaults, scrollTrigger = _this3$vars.scrollTrigger, yoyoEase = _this3$vars.yoyoEase, parent = _this3.parent, parsedTargets = (_isArray(targets) ? _isNumber(targets[0]) : "length" in vars) ? [targets] : toArray(targets), tl, i, copy, l, p, curTarget, staggerFunc, staggerVarsToMerge;
+        var _this3$vars = _this3.vars, duration = _this3$vars.duration, delay = _this3$vars.delay, immediateRender = _this3$vars.immediateRender, stagger = _this3$vars.stagger, overwrite = _this3$vars.overwrite, keyframes = _this3$vars.keyframes, defaults = _this3$vars.defaults, scrollTrigger = _this3$vars.scrollTrigger, yoyoEase = _this3$vars.yoyoEase, parent = _this3.parent, parsedTargets = (_isArray(targets) || _isTypedArray(targets) ? _isNumber(targets[0]) : "length" in vars) ? [targets] : toArray(targets), tl, i, copy, l, p, curTarget, staggerFunc, staggerVarsToMerge;
         _this3._targets = parsedTargets.length ? _harness(parsedTargets) : _warn("GSAP target " + targets + " not found. https://greensock.com", !_config.nullTargetWarn) || [];
         _this3._ptLookup = []; //PropTween lookup. An array containing an object for each target, having keys for each tweening property
         _this3._overwrite = overwrite;
@@ -5664,14 +5764,18 @@ var Tween = /*#__PURE__*/ function (_Animation2) {
                 //adjust the time for repeats and yoyos
                 cycleDuration = dur + this._rDelay;
                 time = _round(tTime % cycleDuration); //round to avoid floating point errors. (4 % 0.8 should be 0 but some browsers report it as 0.79999999!)
-                if (time > dur || tDur === tTime) {
+                if (tTime === tDur) {
                     // the tDur === tTime is for edge cases where there's a lengthy decimal on the duration and it may reach the very end but the time is rendered as not-quite-there (remember, tDur is rounded to 4 decimals whereas dur isn't)
+                    iteration = this._repeat;
                     time = dur;
                 }
-                iteration = ~~(tTime / cycleDuration);
-                if (iteration && iteration === tTime / cycleDuration) {
-                    time = dur;
-                    iteration--;
+                else {
+                    iteration = ~~(tTime / cycleDuration);
+                    if (iteration && iteration === tTime / cycleDuration) {
+                        time = dur;
+                        iteration--;
+                    }
+                    time > dur && (time = dur);
                 }
                 isYoyo = this._yoyo && iteration & 1;
                 if (isYoyo) {
@@ -5719,9 +5823,7 @@ var Tween = /*#__PURE__*/ function (_Animation2) {
             }
             timeline && timeline.render(totalTime < 0 ? totalTime : !time && isYoyo ? -_tinyNum : timeline._dur * ratio, suppressEvents, force) || this._startAt && (this._zTime = totalTime);
             if (this._onUpdate && !suppressEvents) {
-                if (totalTime < 0 && this._startAt) {
-                    this._startAt.render(totalTime, true, force); //note: for performance reasons, we tuck this conditional logic inside less traveled areas (most tweens don't have an onUpdate). We'd just have it at the end before the onComplete, but the values should be updated before any onUpdate is called, so we ALSO put it here and then if it's not called, we do so later near the onComplete.
-                }
+                totalTime < 0 && this._startAt && this._startAt.render(totalTime, true, force); //note: for performance reasons, we tuck this conditional logic inside less traveled areas (most tweens don't have an onUpdate). We'd just have it at the end before the onComplete, but the values should be updated before any onUpdate is called, so we ALSO put it here and then if it's not called, we do so later near the onComplete.
                 _callback(this, "onUpdate");
             }
             this._repeat && iteration !== prevIteration && this.vars.onRepeat && !suppressEvents && this.parent && _callback(this, "onRepeat");
@@ -5759,7 +5861,7 @@ var Tween = /*#__PURE__*/ function (_Animation2) {
         if (this.timeline) {
             var tDur = this.timeline.totalDuration();
             this.timeline.killTweensOf(targets, vars, _overwritingTween && _overwritingTween.vars.overwrite !== true)._first || _interrupt(this); // if nothing is left tweenng, interrupt.
-            this.parent && tDur !== this.timeline.totalDuration() && _setDuration(this, this._dur * this.timeline._tDur / tDur); // if a nested tween is killed that changes the duration, it should affect this tween's duration. We must use the ratio, though, because sometimes the internal timeline is stretched like for keyframes where they don't all add up to whatever the parent tween's duration was set to.
+            this.parent && tDur !== this.timeline.totalDuration() && _setDuration(this, this._dur * this.timeline._tDur / tDur, 0, 1); // if a nested tween is killed that changes the duration, it should affect this tween's duration. We must use the ratio, though, because sometimes the internal timeline is stretched like for keyframes where they don't all add up to whatever the parent tween's duration was set to.
             return this;
         }
         var parsedTargets = this._targets, killingTargets = targets ? toArray(targets) : parsedTargets, propTweenLookup = this._ptLookup, firstPT = this._pt, overwrittenProps, curLookup, curOverwriteProps, props, p, pt, i;
@@ -5909,9 +6011,7 @@ var _setterPlain = function _setterPlain(target, property, value) {
     var pt = this._pt, next;
     while (pt) {
         next = pt._next;
-        if (pt.p === property) {
-            pt.modifier(modifier, tween, target);
-        }
+        pt.p === property && pt.modifier(modifier, tween, target);
         pt = next;
     }
 }, _killPropTweensOf = function _killPropTweensOf(property) {
@@ -6012,14 +6112,9 @@ var _gsap = {
         return _globalTimeline.getTweensOf(targets, onlyActive);
     },
     getProperty: function getProperty(target, property, unit, uncache) {
-        if (_isString(target)) {
-            //in case selector text or an array is passed in
-            target = toArray(target)[0];
-        }
+        _isString(target) && (target = toArray(target)[0]); //in case selector text or an array is passed in
         var getter = _getCache(target || {}).get, format = unit ? _passThrough : _numericIfPossible;
-        if (unit === "native") {
-            unit = "";
-        }
+        unit === "native" && (unit = "");
         return !target ? target : !property ? function (property, unit, uncache) {
             return format((_plugins[property] && _plugins[property].get || getter)(target, property, unit, uncache));
         } : format((_plugins[property] && _plugins[property].get || getter)(target, property, unit, uncache));
@@ -6055,9 +6150,7 @@ var _gsap = {
         return _globalTimeline.getTweensOf(targets, true).length > 0;
     },
     defaults: function defaults(value) {
-        if (value && value.ease) {
-            value.ease = _parseEase(value.ease, _defaults.ease);
-        }
+        value && value.ease && (value.ease = _parseEase(value.ease, _defaults.ease));
         return _mergeDeep(_defaults, value || {});
     },
     config: function config(value) {
@@ -6200,7 +6293,7 @@ var gsap = _gsap.registerPlugin({
         var p, pt;
         for (p in vars) {
             pt = this.add(target, "setAttribute", (target.getAttribute(p) || 0) + "", vars[p], index, targets, 0, 0, p);
-            pt && (pt.op = p); //this.add(target, "setAttribute", (target.getAttribute((p in target.dataset ? (p = "data-" + p) : p)) || 0) + "", vars[p], index, targets, 0, 0, p);
+            pt && (pt.op = p);
             this._props.push(p);
         }
     }
@@ -6213,13 +6306,13 @@ var gsap = _gsap.registerPlugin({
         }
     }
 }, _buildModifierPlugin("roundProps", _roundModifier), _buildModifierPlugin("modifiers"), _buildModifierPlugin("snap", snap)) || _gsap; //to prevent the core plugins from being dropped via aggressive tree shaking, we must include them in the variable declaration in this way.
-Tween.version = Timeline.version = gsap.version = "3.4.2";
+Tween.version = Timeline.version = gsap.version = "3.5.1";
 _coreReady = 1;
 if (_windowExists()) {
     _wake();
 }
 /*!
- * CSSPlugin 3.4.2
+ * CSSPlugin 3.5.1
  * https://greensock.com
  *
  * Copyright 2008-2020, GreenSock. All rights reserved.
@@ -7027,9 +7120,7 @@ var CSSPlugin = {
     },
     init: function init(target, vars, tween, index, targets) {
         var props = this._props, style = target.style, startValue, endValue, endNum, startNum, type, specialProp, p, startUnit, endUnit, relative, isTransformRelated, transformPropTween, cache, smooth, hasPriority;
-        if (!_pluginInitted) {
-            _initCore();
-        }
+        _pluginInitted || _initCore();
         for (p in vars) {
             if (p === "autoRound") {
                 continue;
@@ -7057,7 +7148,7 @@ var CSSPlugin = {
                 //CSS variable
                 this.add(style, "setProperty", getComputedStyle(target).getPropertyValue(p) + "", endValue + "", index, targets, 0, 0, p);
             }
-            else {
+            else if (type !== "undefined") {
                 startValue = _get(target, p);
                 startNum = parseFloat(startValue);
                 relative = type === "string" && endValue.charAt(1) === "=" ? +(endValue.charAt(0) + "1") : 0;
@@ -7076,9 +7167,7 @@ var CSSPlugin = {
                     }
                     if (p !== "scale" && p !== "transform") {
                         p = _propertyAliases[p];
-                        if (~p.indexOf(",")) {
-                            p = p.split(",")[0];
-                        }
+                        ~p.indexOf(",") && (p = p.split(",")[0]);
                     }
                 }
                 isTransformRelated = p in _transformProps; //--- TRANSFORM-RELATED ---
@@ -7102,9 +7191,7 @@ var CSSPlugin = {
                         }
                         else {
                             endUnit = parseFloat(endValue.split(" ")[2]) || 0; //handle the zOrigin separately!
-                            if (endUnit !== cache.zOrigin) {
-                                _addNonTweeningPT(this, cache, "zOrigin", cache.zOrigin, endUnit);
-                            }
+                            endUnit !== cache.zOrigin && _addNonTweeningPT(this, cache, "zOrigin", cache.zOrigin, endUnit);
                             _addNonTweeningPT(this, style, p, _firstTwoOnly(startValue), _firstTwoOnly(endValue));
                         }
                         continue;
@@ -7136,10 +7223,8 @@ var CSSPlugin = {
                 if (isTransformRelated || (endNum || endNum === 0) && (startNum || startNum === 0) && !_complexExp.test(endValue) && p in style) {
                     startUnit = (startValue + "").substr((startNum + "").length);
                     endNum || (endNum = 0); // protect against NaN
-                    endUnit = (endValue + "").substr((endNum + "").length) || (p in _config.units ? _config.units[p] : startUnit);
-                    if (startUnit !== endUnit) {
-                        startNum = _convertToUnit(target, p, startValue, endUnit);
-                    }
+                    endUnit = getUnit(endValue) || (p in _config.units ? _config.units[p] : startUnit);
+                    startUnit !== endUnit && (startNum = _convertToUnit(target, p, startValue, endUnit));
                     this._pt = new PropTween(this._pt, isTransformRelated ? cache : style, p, startNum, relative ? relative * endNum : endNum - startNum, endUnit === "px" && vars.autoRound !== false && !isTransformRelated ? _renderRoundedCSSProp : _renderCSSProp);
                     this._pt.u = endUnit || 0;
                     if (startUnit !== endUnit) {
@@ -7164,9 +7249,7 @@ var CSSPlugin = {
                 props.push(p);
             }
         }
-        if (hasPriority) {
-            _sortPropTweensByPriority(this);
-        }
+        hasPriority && _sortPropTweensByPriority(this);
     },
     get: _get,
     aliases: _propertyAliases,
@@ -7266,7 +7349,7 @@ var menuDesktopLevel1Css = ".menu-desktop-level-1.sc-phn-menu-desktop-level-1{di
 var MenuDesktopLevel1 = /** @class */ (function () {
     function MenuDesktopLevel1(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.hoverIntentService = new HoverIntentService();
         this.overlayAnimation = new OverlayAnimation();
         this.mouseMoveListener = function (event) { return _this_1.onmousemove(event); };
@@ -7335,7 +7418,7 @@ var MenuDesktopLevel1 = /** @class */ (function () {
     };
     MenuDesktopLevel1.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-desktop-level-1" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-series-shop-and-more", onMouseEnter: function () { return _this_1.handleMouseEnter(); }, onMouseLeave: function () { return _this_1.handleMouseLeave(); } }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-list", { showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more", { showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler })), navStateStore.get('navigationLoaded') ? Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-separator" }) : null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "metafunctionalities" })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-desktop-level-1" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-series-shop-and-more", onMouseEnter: function () { return _this_1.handleMouseEnter(); }, onMouseLeave: function () { return _this_1.handleMouseLeave(); } }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series-list", { showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more", { showOverlayHandler: this.showOverlayHandler, hideOverlayHandler: this.hideOverlayHandler, keyboardShowOverlayHandler: this.keyboardShowOverlayHandler, keyboardHideOverlayHandler: this.keyboardHideOverlayHandler })), navStateStore.get('navigationLoaded') ? Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-separator" }) : null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "metafunctionalities" })));
     };
     return MenuDesktopLevel1;
 }());
@@ -7416,9 +7499,10 @@ var menuDrawerCss = ".menu-drawer.sc-phn-menu-drawer .menu-drawer-container.sc-p
 var MenuDrawer = /** @class */ (function () {
     function MenuDrawer(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.closeAllDrawers = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "closeAllDrawers", 7);
-        this.menuOverlayOpen = Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "menuOverlayOpen", 7);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.closeAllDrawers = Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "closeAllDrawers", 7);
+        this.menuOverlayOpen = Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this, "menuOverlayOpen", 7);
+        this.isTopmostDrawer = '';
         this.menuDrawerAnimation = new MenuDrawerAnimation();
         this.isFirstDrawer = false;
         this.handleBack = function () {
@@ -7434,7 +7518,20 @@ var MenuDrawer = /** @class */ (function () {
         this.stopClickEvent = function (event) {
             event.stopPropagation();
         };
+        this.initFirstAndLastFocusableElements = function () {
+            var focusableElements = _this_1.el.querySelectorAll('button, a, p-link-pure, p-button-pure, [tabindex]:not([tabindex="-1"])');
+            _this_1.firstFocusableElement = focusableElements[0];
+            _this_1.lastFocusableElement = focusableElements[focusableElements.length - 1];
+        };
     }
+    MenuDrawer.prototype.handleKeyDown = function (ev) {
+        if (!ev.shiftKey && ev.key === 'Tab' && ev.target === this.lastFocusableElement) {
+            this.firstKeyboardAnchor.focus();
+        }
+        if (ev.shiftKey && ev.key === 'Tab' && ev.target === this.firstFocusableElement) {
+            this.lastKeyboardAnchor.focus();
+        }
+    };
     MenuDrawer.prototype.getValueForField = function (fieldName) {
         var text = '';
         var menu = navContentStore.get('menu');
@@ -7450,21 +7547,35 @@ var MenuDrawer = /** @class */ (function () {
         this.isFirstDrawer = navStateStore.get('drawerContentStack').length === 1;
     };
     MenuDrawer.prototype.componentDidLoad = function () {
+        this.initFirstAndLastFocusableElements();
         if (this.isFirstDrawer) {
             this.menuDrawerAnimation.slideInFirstMenuDrawer(this.el, this.menuOverlayOpen.emit);
         }
         else {
             this.menuDrawerAnimation.slideInMenuDrawer(this.mobileLayout, this.el);
         }
+        if (this.isTopmostDrawer) {
+            isFeatureEnabled(FEATURE_MOBILE_FOCUS)
+                ? this.firstFocusableElement.focus()
+                : this.firstKeyboardAnchor.focus();
+        }
+    };
+    MenuDrawer.prototype.componentDidUpdate = function () {
+        if (this.isTopmostDrawer) {
+            isFeatureEnabled(FEATURE_MOBILE_FOCUS)
+                ? this.firstFocusableElement.focus()
+                : this.firstKeyboardAnchor.focus();
+        }
     };
     MenuDrawer.prototype.render = function () {
+        var _this_1 = this;
         var backButtonText = this.backButton || this.getValueForField(TEXT_FIELD_NAME);
         var backButtonId = this.getValueForField(PHRASEID_FIELD_NAME);
         var backAndCloseClass = !this.isFirstDrawer ? 'drawer-back-and-close' : 'drawer-back-and-close drawer-close';
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "drawer-trigger", tabindex: "-1" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-container", onClick: this.close }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-content", onClick: this.stopClickEvent }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-content-wrapper" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: backAndCloseClass }, !this.isFirstDrawer && (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: this.handleBack, buttonId: backButtonId, text: backButtonText })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { class: "close-button", icon: "close", hideLabel: "true", size: "small", onClick: this.close })), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" })))))));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "drawer-trigger", tabindex: "-1" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-container", onClick: this.close }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-content", onClick: this.stopClickEvent }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-drawer-content-wrapper", role: "dialog", "aria-modal": "true" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { ref: function (el) { return (_this_1.firstKeyboardAnchor = el); }, "aria-hidden": "true", tabindex: "-1" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: backAndCloseClass }, !this.isFirstDrawer && (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-back-button", { class: "back-button", onClick: this.handleBack, buttonId: backButtonId, text: backButtonText })), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { class: "close-button", icon: "close", hideLabel: "true", role: "button", "aria-label": "close dialog", size: "small", onClick: this.close }, "Close Dialog")), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "content" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { ref: function (el) { return (_this_1.lastKeyboardAnchor = el); }, "aria-hidden": "true", tabindex: "-1" })))))));
     };
     Object.defineProperty(MenuDrawer.prototype, "el", {
-        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -7473,11 +7584,11 @@ var MenuDrawer = /** @class */ (function () {
 MenuDrawer.style = menuDrawerCss;
 var MenuMobileLevel1 = /** @class */ (function () {
     function MenuMobileLevel1(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     MenuMobileLevel1.prototype.render = function () {
         var seriesList = navContentStore.get('seriesList');
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-mobile-level-1 mobile-level-1-item" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-level-1 mobile-level-1-item-scroll" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-content" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-car-series-list", { class: "mobile-car-series-list", carSeries: seriesList }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shops-and-more", null), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "meta-functionalities" }))))));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "menu-mobile-level-1 mobile-level-1-item" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-level-1 mobile-level-1-item-scroll" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-content" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-car-series-list", { class: "mobile-car-series-list", carSeries: seriesList }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shops-and-more", null), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-meta-functionalities", { class: "meta-functionalities" }))))));
     };
     return MenuMobileLevel1;
 }());
@@ -7485,7 +7596,7 @@ var messagesLinkCss = ".sc-phn-messages-link-h .list-item-link.sc-phn-messages-l
 var MessagesLink = /** @class */ (function () {
     function MessagesLink(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
         this.sendNavigationClickAnalyticsEvent = function () {
             var contentItem = { PhraseId: _this_1.item.PhraseId, Text: _this_1.item.Text, Link: _this_1.item.Link };
@@ -7502,7 +7613,7 @@ var MessagesLink = /** @class */ (function () {
     }
     MessagesLink.prototype.render = function () {
         var unreadMessagesCount = navContentStore.get('unreadMessagesCount');
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: this.item.Link, onClick: this.sendNavigationClickAnalyticsEvent }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "link-text" }, this.item.Text), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: unreadMessagesCount > 0 ? 'unread-messages-count' : 'unread-messages-count hidden' }, unreadMessagesCount)))));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "list-item-link", tag: "div", color: "inherit", size: "inherit" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", { href: this.item.Link, onClick: this.sendNavigationClickAnalyticsEvent }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "link-text" }, this.item.Text), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: unreadMessagesCount > 0 ? 'unread-messages-count' : 'unread-messages-count hidden' }, unreadMessagesCount)))));
     };
     return MessagesLink;
 }());
@@ -7517,13 +7628,13 @@ var MetaFunctionClick = /** @class */ (function (_super_1) {
         return _this_1;
     }
     MetaFunctionClick.prototype.initComponentClick = function () {
-        var _a;
-        this.componentClick = (_a = {},
-            _a[ComponentClickCollectionDimension.ClickElementId] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementName] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementType] = undefined,
-            _a[ComponentClickCollectionDimension.TargetUrl] = undefined,
-            _a);
+        var _b;
+        this.componentClick = (_b = {},
+            _b[ComponentClickCollectionDimension.ClickElementId] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementName] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementType] = undefined,
+            _b[ComponentClickCollectionDimension.TargetUrl] = undefined,
+            _b);
     };
     MetaFunctionClick.prototype.populateComponentClick = function (linkItem) {
         this.componentClick.clickElementId = linkItem.PhraseId;
@@ -7537,10 +7648,10 @@ var MetaFunctionClick = /** @class */ (function (_super_1) {
     };
     return MetaFunctionClick;
 }(AnalyticsEvent));
-var metaFunctionalitiesCss = ".metafunctionalities.sc-phn-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-direction:column;flex-direction:column;font-size:1rem}@media (-ms-high-contrast: none) and (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{float:right}}@media (min-width: 760px) and (max-width: 999px){.metafunctionalities.sc-phn-meta-functionalities{font-size:1.125rem}}@media (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-align:center;align-items:center;padding-top:0;height:4.0625rem;padding-left:1.25rem;-ms-flex-direction:row;flex-direction:row;font-size:1rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities{margin-right:1.125rem}}@media (min-width: 1760px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-align:center;align-items:center;-ms-flex-direction:row;flex-direction:row;font-size:1.25rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities{margin-right:1.5rem}}";
+var metaFunctionalitiesCss = ".metafunctionalities.sc-phn-meta-functionalities{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-direction:column;flex-direction:column;font-size:1rem}@media (-ms-high-contrast: none) and (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{float:right}}@media (min-width: 760px) and (max-width: 999px){.metafunctionalities.sc-phn-meta-functionalities{font-size:1.125rem}}@media (min-width: 1300px) and (max-width: 1759px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-align:center;align-items:center;padding-top:0;height:4.0625rem;padding-left:1.25rem;-ms-flex-direction:row;flex-direction:row;font-size:1rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities{margin-right:1.125rem}}@media (min-width: 1760px){.metafunctionalities.sc-phn-meta-functionalities{-ms-flex-align:center;align-items:center;-ms-flex-direction:row;flex-direction:row;font-size:1.25rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities{margin-right:1.5rem}.metafunctionalities.sc-phn-meta-functionalities .dealer-search.sc-phn-meta-functionalities:only-child{margin-right:10.5625rem}}";
 var MetaFunctionalities = /** @class */ (function () {
     function MetaFunctionalities(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.sendMetaFunctionClickAnalyticsEvent = function (linkItem) {
             var analyticsSetup = {
                 applicationId: analyticsSetupStore.get('applicationId'),
@@ -7560,6 +7671,9 @@ var MetaFunctionalities = /** @class */ (function () {
         }
         return functionality[fieldName] ? functionality[fieldName] : '';
     };
+    MetaFunctionalities.prototype.myPorscheExists = function () {
+        return (navContentStore.get('metafunctionalities').find(function (meta) { return meta.PhraseId === MYPORSCHE_PHRASE_ID; }) !== undefined);
+    };
     MetaFunctionalities.prototype.getLoggedInStatusTranslations = function () {
         var functionality = navContentStore
             .get('metafunctionalities')
@@ -7573,10 +7687,10 @@ var MetaFunctionalities = /** @class */ (function () {
         return loggedInStatusTranslations;
     };
     MetaFunctionalities.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "metafunctionalities" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-dealer-search", { class: "dealer-search", dealerSearchText: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, TEXT_FIELD_NAME), dealerSearchLink: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, LINK_FIELD_NAME), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche", { myporscheText: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, TEXT_FIELD_NAME), myporscheLink: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, LINK_FIELD_NAME), loggedInStatusTranslations: this.getLoggedInStatusTranslations(), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent, setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "metafunctionalities" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-dealer-search", { class: "dealer-search", dealerSearchText: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, TEXT_FIELD_NAME), dealerSearchLink: this.getFieldValueForPhraseId(DEALER_SEARCH_PHRASE_ID, LINK_FIELD_NAME), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent }), this.myPorscheExists() && (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche", { myporscheText: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, TEXT_FIELD_NAME), myporscheLink: this.getFieldValueForPhraseId(MYPORSCHE_PHRASE_ID, LINK_FIELD_NAME), loggedInStatusTranslations: this.getLoggedInStatusTranslations(), sendMetaFunctionClickAnalyticsEvent: this.sendMetaFunctionClickAnalyticsEvent, setActiveDrawer: this.setActiveDrawer, closeActiveDrawer: this.closeActiveDrawer }))));
     };
     Object.defineProperty(MetaFunctionalities.prototype, "hostElement", {
-        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -7607,7 +7721,7 @@ var ModelRangeClickEvent = /** @class */ (function (_super_1) {
 var mobileCarSeriesListCss = ".mobile-car-series-list.sc-phn-mobile-car-series-list{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list{width:50%}@media (min-width: 760px) and (max-width: 999px){.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list{margin-top:0.625rem}}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list .car-series-button.sc-phn-mobile-car-series-list{display:-ms-flexbox;display:flex;font-family:inherit;width:100%;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:transparent none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;text-decoration:none;text-align:left;background:transparent;cursor:pointer;color:inherit;-ms-flex-pack:center;justify-content:center}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list .car-series-button.sc-phn-mobile-car-series-list::-moz-focus-inner{border:0}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list .car-series-button.sc-phn-mobile-car-series-list:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}.mobile-car-series-list.sc-phn-mobile-car-series-list .mobile-car-series.sc-phn-mobile-car-series-list .car-series-button.sc-phn-mobile-car-series-list:focus{outline-offset:-2px}";
 var MobileCarSeriesList = /** @class */ (function () {
     function MobileCarSeriesList(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.carSeries = DEFAULT_SERIES_LIST;
         this.sendNavigationClickAnalyticsEvent = function (series) {
             var analyticsSetup = {
@@ -7623,7 +7737,7 @@ var MobileCarSeriesList = /** @class */ (function () {
     }
     MobileCarSeriesList.prototype.showDrawer = function (_, series, index) {
         var phnDrawerCarSeriesModelOverview = {
-            content: (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-car-series-model-overview", { series: series, class: 'drawer-car-series-model-overview drawer-car-series-model-overview-' + index, slot: "content" }))
+            content: (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-car-series-model-overview", { series: series, class: 'drawer-car-series-model-overview drawer-car-series-model-overview-' + index, slot: "content" }))
         };
         navStateStore.set('drawerContentStack', __spreadArrays(navStateStore.get('drawerContentStack'), [
             phnDrawerCarSeriesModelOverview
@@ -7632,7 +7746,7 @@ var MobileCarSeriesList = /** @class */ (function () {
     };
     MobileCarSeriesList.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series-list" }, this.carSeries.map(function (series, index) { return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series", key: index }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { class: "car-series-button", onClick: function (event) { return _this_1.showDrawer(event, series, index); } }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { class: 'car-series car-series-' + index, text: series.Name, image: series.Image })))); })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series-list" }, this.carSeries.map(function (series, index) { return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "mobile-car-series", key: index }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { class: "car-series-button", onClick: function (event) { return _this_1.showDrawer(event, series, index); } }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-car-series", { class: 'car-series car-series-' + index, text: series.Name, image: series.Image })))); })));
     };
     return MobileCarSeriesList;
 }());
@@ -7684,10 +7798,15 @@ var BodyScrollLock = /** @class */ (function () {
 var mobileLayoutCss = ".sc-phn-mobile-layout-h .burger-button.sc-phn-mobile-layout{height:100%}.sc-phn-mobile-layout-h .burger-button-skeleton.sc-phn-mobile-layout{height:0.875rem}";
 var MobileLayout = /** @class */ (function () {
     function MobileLayout(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.bodyScrollLock = new BodyScrollLock();
         this.menuDrawerAnimation = new MenuDrawerAnimation();
     }
+    MobileLayout.prototype.handleKeyDown = function (ev) {
+        if (navStateStore.get('isDrawerOpen') === true && ev.key === 'Escape') {
+            this.handleCloseAllDrawers();
+        }
+    };
     MobileLayout.prototype.handleMenuOverlayOpen = function () {
         this.bodyScrollLock.activate();
         navStateStore.set('isDrawerOpen', true);
@@ -7704,17 +7823,18 @@ var MobileLayout = /** @class */ (function () {
         this.bodyScrollLock.deactivate();
     };
     MobileLayout.prototype.showMobileLevel1 = function () {
-        var drawer = { content: Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-mobile-level-1", { slot: "content" }) };
+        var drawer = { content: Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-mobile-level-1", { slot: "content" }) };
         navStateStore.set('drawerContentStack', [drawer]);
     };
     MobileLayout.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-burger-button", { class: "burger-button", onClick: this.showMobileLevel1 }), navStateStore.get('drawerContentStack').map(function (drawer, index) {
-            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-drawer", { key: index, backButton: drawer.backButton, mobileLayout: _this_1.mobileLayoutElement }, drawer.content));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-burger-button", { class: "burger-button", onClick: this.showMobileLevel1 }), navStateStore.get('drawerContentStack').map(function (drawer, index, array) {
+            var isTopmostDrawer = array.length - 1 === index;
+            return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-menu-drawer", { key: index, backButton: drawer.backButton, mobileLayout: _this_1.mobileLayoutElement, isTopmostDrawer: isTopmostDrawer ? 'true' : '' }, drawer.content));
         })));
     };
     Object.defineProperty(MobileLayout.prototype, "mobileLayoutElement", {
-        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -7724,11 +7844,11 @@ MobileLayout.style = mobileLayoutCss;
 var mobileShopAndMoreItemCss = ".sc-phn-mobile-shop-and-more-item-h{display:-ms-flexbox;display:flex;color:#000;font-size:1rem;padding:0.875rem 0 1rem 0.625rem;border-bottom:1px solid #c9cacb}.sc-phn-mobile-shop-and-more-item-h:hover{color:#d5001c;cursor:pointer}@media (min-width: 480px) and (max-width: 759px){.sc-phn-mobile-shop-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 760px) and (max-width: 999px){.sc-phn-mobile-shop-and-more-item-h{padding:1.125rem 0 1.125rem 0.625rem;font-size:1.125rem}.sc-phn-mobile-shop-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}@media (min-width: 1000px){.sc-phn-mobile-shop-and-more-item-h{padding:0.875rem 0 0.875rem 0.625rem}.sc-phn-mobile-shop-and-more-item-h:focus{outline-width:2px;outline-style:solid;outline-offset:1px;outline-color:#00d5b9}}.sc-phn-mobile-shop-and-more-item-h .mobile-shop-and-more-item-drawer.sc-phn-mobile-shop-and-more-item{display:-ms-flexbox;display:flex;width:100%}@media (min-width: 1300px){.sc-phn-mobile-shop-and-more-item-h .mobile-shop-and-more-item-drawer.sc-phn-mobile-shop-and-more-item{display:none}}";
 var MobileShopAndMoreItem = /** @class */ (function () {
     function MobileShopAndMoreItem(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
     }
     MobileShopAndMoreItem.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shop-and-more-item" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "mobile-shop-and-more-item-drawer", icon: "arrow-head-right" }, this.item.Text)));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shop-and-more-item" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "mobile-shop-and-more-item-drawer", icon: "arrow-head-right" }, this.item.Text)));
     };
     return MobileShopAndMoreItem;
 }());
@@ -7737,10 +7857,10 @@ var mobileShopsAndMoreCss = ".sc-phn-mobile-shops-and-more-h{display:-ms-flexbox
 var MobileShopsAndMore = /** @class */ (function () {
     function MobileShopsAndMore(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.showDrawer = function (_, item) {
             var phnDrawerShopsAndMore = {
-                content: (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Text, item: item.Items && item.Items.length === 1 ? item.Items[0] : item, slot: "content", class: "shops-and-more-drawer-level-1" }))
+                content: (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-drawer-shops-and-more", { headline: item.Text, item: item.Items && item.Items.length === 1 ? item.Items[0] : item, slot: "content", class: "shops-and-more-drawer-level-1" }))
             };
             navStateStore.set('drawerContentStack', __spreadArrays(navStateStore.get('drawerContentStack'), [phnDrawerShopsAndMore]));
             _this_1.sendNavigationClickAnalyticsEvent(item);
@@ -7778,18 +7898,21 @@ var MobileShopsAndMore = /** @class */ (function () {
     MobileShopsAndMore.prototype.render = function () {
         var _this_1 = this;
         var items = this.getItems();
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shops-and-more" }, items.map(function (item, index) {
-            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shop-and-more-item", { item: item, class: 'mobile-shop-and-more-item mobile-shop-and-more-item-' + index, tabindex: "0", onClick: function (event) { return _this_1.showDrawer(event, item); }, onKeyDown: function (event) { return _this_1.handleKeyDown(event, item); } })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "mobile-shops-and-more" }, items.map(function (item, index) {
+            return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-container" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mobile-shop-and-more-item", { item: item, class: 'mobile-shop-and-more-item mobile-shop-and-more-item-' + index, tabindex: "0", onClick: function (event) { return _this_1.showDrawer(event, item); }, onKeyDown: function (event) { return _this_1.handleKeyDown(event, item); } })));
         })));
     };
     return MobileShopsAndMore;
 }());
 MobileShopsAndMore.style = mobileShopsAndMoreCss;
+var isDesktop = function () {
+    return window.matchMedia('(min-width: 1300px)').matches;
+};
 var myporscheCss = ".myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{border-bottom:1px solid #c9cacb;padding:0.875rem 0 0.875rem 0;width:100%}@media (min-width: 760px) and (max-width: 999px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche{border-bottom:0;padding:0}}.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:-0.25rem;font-size:0.75rem}@media (min-width: 760px) and (max-width: 999px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:-0.1875rem}}@media (min-width: 1300px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{margin-top:unset;position:absolute;top:0}}@media (min-width: 1300px) and (max-width: 1759px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{left:1.75rem;padding-top:1.1875rem}}@media (min-width: 1760px){.myporsche.sc-phn-myporsche-h p-link-pure.sc-phn-myporsche .login-status.sc-phn-myporsche,.myporsche.sc-phn-myporsche-h p-button-pure.sc-phn-myporsche .login-status.sc-phn-myporsche{left:2.1875rem;font-size:0.875rem;padding-top:1.6875rem}}.myporsche.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{padding:0.875rem 0 0.875rem 0;border-bottom:1px solid #c9cacb}@media (min-width: 760px) and (max-width: 999px){.myporsche.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{padding:1.125rem 0 1.125rem 0}}@media (min-width: 1300px){.myporsche.sc-phn-myporsche-h .myporsche-logged-in.sc-phn-myporsche{display:none}}@media (min-width: 1300px){.myporsche.sc-phn-myporsche-h .myporsche-skeleton.sc-phn-myporsche{width:8rem;margin-top:0.125rem;width:6.375rem;height:0.875rem;background-color:#c9cacb}}";
 var Myporsche = /** @class */ (function () {
     function Myporsche(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.myporscheLink = '';
         this.myporscheText = '';
         this.loggedInStatusTranslations = {};
@@ -7801,9 +7924,12 @@ var Myporsche = /** @class */ (function () {
             if (loggedInState === LOADING_STATUS) {
                 return _this_1.renderLoadingComponent();
             }
-            return _this_1.renderLoggedInComponent();
+            return _this_1.isDesktop ? _this_1.renderLoggedInFlyout() : _this_1.renderLoggedInDrawer();
         };
     }
+    Myporsche.prototype.resizeHandler = function () {
+        this.isDesktop = isDesktop();
+    };
     Myporsche.prototype.getSubTextForUser = function () {
         var loggedInState = navContentStore.get('loggedInState');
         var phraseId = MYPORSCHE_PHRASE_ID + "." + loggedInState;
@@ -7811,32 +7937,36 @@ var Myporsche = /** @class */ (function () {
     };
     Myporsche.prototype.renderLoggedOutComponent = function () {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { style: navStateStore.get('navigationLoaded') ? {} : this.hiddenStyle, class: "myporsche-logged-out", href: this.myporscheLink, onClick: function () {
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-link-pure", { style: navStateStore.get('navigationLoaded') ? {} : this.hiddenStyle, class: "myporsche-logged-out", href: this.myporscheLink, onClick: function () {
                 var linkItem = {
                     PhraseId: MYPORSCHE_PHRASE_ID,
                     Text: _this_1.myporscheText,
                     Link: _this_1.myporscheLink
                 };
                 _this_1.sendMetaFunctionClickAnalyticsEvent(linkItem);
-            }, size: "inherit", icon: "user" }, this.myporscheText, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.getSubTextForUser())));
+            }, size: "inherit", icon: "user" }, this.myporscheText, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.getSubTextForUser())));
     };
     Myporsche.prototype.renderLoadingComponent = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { class: "myporsche-loading", loading: "true", size: "inherit", style: navStateStore.get('navigationLoaded') ? {} : this.hiddenStyle }, this.myporscheText));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { class: "myporsche-loading", loading: "true", size: "inherit", "aria-label": "myporsche loading", style: navStateStore.get('navigationLoaded') ? {} : this.hiddenStyle }, this.myporscheText));
     };
-    Myporsche.prototype.renderLoggedInComponent = function () {
+    Myporsche.prototype.renderLoggedInFlyout = function () {
         var unreadMessagesCount = navContentStore.get('unreadMessagesCount');
-        return [
-            Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-drawer", { class: "myporsche-logged-in", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), unreadMessagesCount: unreadMessagesCount }),
-            Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-flyout", { style: navStateStore.get('navigationLoaded') ? {} : this.hiddenStyle, class: "myporsche-flyout", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), unreadMessagesCount: unreadMessagesCount })
-        ];
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-flyout", { style: navStateStore.get('navigationLoaded') ? {} : this.hiddenStyle, class: "myporsche-flyout", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), unreadMessagesCount: unreadMessagesCount }));
+    };
+    Myporsche.prototype.renderLoggedInDrawer = function () {
+        var unreadMessagesCount = navContentStore.get('unreadMessagesCount');
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-drawer", { class: "myporsche-logged-in", myPorscheText: this.myporscheText, loginStatus: this.getSubTextForUser(), unreadMessagesCount: unreadMessagesCount }));
+    };
+    Myporsche.prototype.componentWillLoad = function () {
+        this.isDesktop = isDesktop();
     };
     Myporsche.prototype.render = function () {
         var loggedInState = navContentStore.get('loggedInState');
         var hiddenStyle = { display: 'none' };
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "myporsche" }, this.renderMyPorsche(loggedInState), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "myporsche-skeleton", style: navStateStore.get('navigationLoaded') ? hiddenStyle : {} })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: "myporsche" }, this.renderMyPorsche(loggedInState), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "myporsche-skeleton", style: navStateStore.get('navigationLoaded') ? hiddenStyle : {} })));
     };
     Object.defineProperty(Myporsche.prototype, "el", {
-        get: function () { return Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
+        get: function () { return Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); },
         enumerable: false,
         configurable: true
     });
@@ -7847,19 +7977,19 @@ var myporscheDrawerCss = ".sc-phn-myporsche-drawer-h{display:block}.sc-phn-mypor
 var MyPorscheDrawer = /** @class */ (function () {
     function MyPorscheDrawer(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.unreadMessagesCount = 0;
         this.openDrawer = function () {
             var phnMyporscheItemsDrawer = {
-                content: Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items-drawer", { slot: "content", myPorscheText: _this_1.myPorscheText })
+                content: Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items-drawer", { slot: "content", myPorscheText: _this_1.myPorscheText })
             };
             navStateStore.set('drawerContentStack', __spreadArrays(navStateStore.get('drawerContentStack'), [phnMyporscheItemsDrawer]));
         };
     }
     MyPorscheDrawer.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "myporsche-drawer-trigger", icon: "arrow-head-right", onClick: this.openDrawer, cancelTabIndex: false }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: this.unreadMessagesCount > 0
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-button-extended", { class: "myporsche-drawer-trigger", icon: "arrow-head-right", onClick: this.openDrawer, cancelTabIndex: false }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: this.unreadMessagesCount > 0
                 ? 'myporsche-unread-messages-indicator'
-                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { color: "inherit", name: "user", size: "small" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "myporsche-drawer-trigger-label" }, this.myPorscheText, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)))));
+                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-icon", { color: "inherit", name: "user", size: "small" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "myporsche-drawer-trigger-label" }, this.myPorscheText, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)))));
     };
     return MyPorscheDrawer;
 }());
@@ -7868,7 +7998,7 @@ var myporscheFlyoutCss = ".sc-phn-myporsche-flyout-h{display:none;position:relat
 var MyPorscheFlyout = /** @class */ (function () {
     function MyPorscheFlyout(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.env = DEFAULT_ENVIRONMENT;
         this.unreadMessagesCount = 0;
         this.isActive = false;
@@ -7895,9 +8025,9 @@ var MyPorscheFlyout = /** @class */ (function () {
     };
     MyPorscheFlyout.prototype.render = function () {
         var _this_1 = this;
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { "aria-hidden": "true", class: this.unreadMessagesCount > 0
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { "aria-hidden": "true", class: this.unreadMessagesCount > 0
                 ? 'myporsche-unread-messages-indicator'
-                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { class: "flyout-trigger", size: "inherit", icon: "user", active: this.isActive, onKeyDown: this.keyDownHandler, "aria-haspopup": "true", "aria-expanded": this.isActive ? 'true' : 'false', onClick: this.handleClick, id: this.screenReaderId, role: "button" }, this.myPorscheText, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)), this.isActive ? (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "myporsche-items", "aria-labelledby": this.screenReaderId, role: "region" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", { myPorscheCloseHandler: function () { return _this_1.myPorscheCloseHandler(); } }))) : null));
+                : 'myporsche-unread-messages-indicator hidden' }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-button-pure", { class: "flyout-trigger", size: "inherit", icon: "user", active: this.isActive, onKeyDown: this.keyDownHandler, "aria-haspopup": "true", "aria-expanded": this.isActive ? 'true' : 'false', onClick: this.handleClick, id: this.screenReaderId, role: "button", "aria-label": "open myporsche flyout" }, this.myPorscheText, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { class: "login-status", color: "inherit", size: "inherit", ellipsis: "true", align: "left" }, this.loginStatus)), this.isActive ? (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "myporsche-items", "aria-labelledby": this.screenReaderId, role: "region" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", { myPorscheCloseHandler: function () { return _this_1.myPorscheCloseHandler(); } }))) : null));
     };
     return MyPorscheFlyout;
 }());
@@ -7906,7 +8036,7 @@ var myporscheItemsCss = ".sc-phn-myporsche-items-h{display:block}.sc-phn-myporsc
 var MyPorscheItems = /** @class */ (function () {
     function MyPorscheItems(hostRef) {
         var _this_1 = this;
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.handlePressShiftTabKey = function (event) {
             if (window.innerWidth > MAX_M_VIEWPORT_WIDTH && event.shiftKey && event.key === 'Tab') {
                 _this_1.myPorscheCloseHandler();
@@ -7920,14 +8050,14 @@ var MyPorscheItems = /** @class */ (function () {
         this.displayListItems = function (item, index) {
             if (item.PhraseId === MYPORSCHE_PHRASE_ID + ".messages") {
                 if (index === 0) {
-                    return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-messages-link", { class: "myporsche-list-item", item: item, onKeyDown: _this_1.handlePressShiftTabKey })));
+                    return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-messages-link", { class: "myporsche-list-item", item: item, onKeyDown: _this_1.handlePressShiftTabKey })));
                 }
-                return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-messages-link", { class: "myporsche-list-item", item: item })));
+                return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-messages-link", { class: "myporsche-list-item", item: item })));
             }
             if (index === 0) {
-                return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: item, onKeyDown: _this_1.handlePressShiftTabKey })));
+                return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: item, onKeyDown: _this_1.handlePressShiftTabKey })));
             }
-            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: item })));
+            return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item", item: item })));
         };
     }
     MyPorscheItems.prototype.getMyPorscheItemFromTemplateAsLinkItem = function (id) {
@@ -7944,7 +8074,7 @@ var MyPorscheItems = /** @class */ (function () {
             var nonStaticItems = myPorscheItems.filter(function (item) { return item.PhraseId !== MYPORSCHE_PHRASE_ID + "." + LOGGED_IN_USER_NO_NAME_STATUS &&
                 item.PhraseId !== MYPORSCHE_PHRASE_ID + "." + LOGGED_OUT_USER_STATUS &&
                 item.PhraseId !== MYPORSCHE_PHRASE_ID + ".logout"; });
-            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ul", null, nonStaticItems.map(this.displayListItems), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("hr", { "aria-hidden": "true" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item logout", item: this.getMyPorscheItemFromTemplateAsLinkItem('logout'), onKeyDown: this.handlePressTabKey }))));
+            return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ul", null, nonStaticItems.map(this.displayListItems), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("hr", { "aria-hidden": "true" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { class: "myporsche-list-item logout", item: this.getMyPorscheItemFromTemplateAsLinkItem('logout'), onKeyDown: this.handlePressTabKey }))));
         }
         return null;
     };
@@ -7954,10 +8084,10 @@ MyPorscheItems.style = myporscheItemsCss;
 var myporscheItemsDrawerCss = ".sc-phn-myporsche-items-drawer-h{padding-bottom:3.125rem}";
 var MyPorscheItemsDrawer = /** @class */ (function () {
     function MyPorscheItemsDrawer(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     MyPorscheItemsDrawer.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.myPorscheText, class: "drawer-headline" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", null))));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "drawer-container" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { text: this.myPorscheText, class: "drawer-headline" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-myporsche-items", null))));
     };
     return MyPorscheItemsDrawer;
 }());
@@ -7965,10 +8095,10 @@ MyPorscheItemsDrawer.style = myporscheItemsDrawerCss;
 var previewBadgeCss = ".sc-phn-preview-badge-h{display:block;position:absolute;top:0;right:0;background-color:#d5001c;z-index:9999;padding:0 0.125rem}";
 var PreviewBadge = /** @class */ (function () {
     function PreviewBadge(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     PreviewBadge.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { theme: "dark", size: "x-small" }, this.versionString)));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["H"], null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p-text", { theme: "dark", size: "x-small" }, this.versionString)));
     };
     return PreviewBadge;
 }());
@@ -7976,7 +8106,7 @@ PreviewBadge.style = previewBadgeCss;
 var shopsAndMoreCss = ".shops-and-more.sc-phn-shops-and-more{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more.sc-phn-shops-and-more{padding-right:1.5rem}}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more.sc-phn-shops-and-more .shops-and-more-overlay-trigger.sc-phn-shops-and-more{padding:0 0.5625rem;height:91px}}@media (min-width: 1760px){.shops-and-more.sc-phn-shops-and-more .shops-and-more-overlay-trigger.sc-phn-shops-and-more{padding:0 0.75rem;height:102px}}";
 var ShopsAndMore = /** @class */ (function () {
     function ShopsAndMore(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
     }
     ShopsAndMore.prototype.getItems = function () {
         var items = [];
@@ -7993,8 +8123,8 @@ var ShopsAndMore = /** @class */ (function () {
     ShopsAndMore.prototype.render = function () {
         var _this_1 = this;
         var items = this.getItems();
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more" }, items.map(function (item) {
-            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "shops-and-more-overlay-trigger overlay-trigger", showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-desktop-shop-and-more-item", { slot: "button", itemText: item.Text, class: "desktop-shop-and-more-item" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-overview", { slot: "content", item: item })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more" }, items.map(function (item) {
+            return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-mega-fly-out-overlay", { class: "shops-and-more-overlay-trigger overlay-trigger", showOverlayHandler: _this_1.showOverlayHandler, hideOverlayHandler: _this_1.hideOverlayHandler, keyboardShowOverlayHandler: _this_1.keyboardShowOverlayHandler, keyboardHideOverlayHandler: _this_1.keyboardHideOverlayHandler }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-desktop-shop-and-more-item", { slot: "button", itemText: item.Text, class: "desktop-shop-and-more-item" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-shops-and-more-overview", { slot: "content", item: item })));
         })));
     };
     return ShopsAndMore;
@@ -8020,13 +8150,13 @@ var NavigationLoadEvent = /** @class */ (function (_super_1) {
         return _this_1;
     }
     NavigationLoadEvent.prototype.initComponentClick = function () {
-        var _a;
-        this.componentClick = (_a = {},
-            _a[ComponentClickCollectionDimension.ClickElementId] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementName] = undefined,
-            _a[ComponentClickCollectionDimension.ClickElementType] = undefined,
-            _a[ComponentClickCollectionDimension.TargetUrl] = undefined,
-            _a);
+        var _b;
+        this.componentClick = (_b = {},
+            _b[ComponentClickCollectionDimension.ClickElementId] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementName] = undefined,
+            _b[ComponentClickCollectionDimension.ClickElementType] = undefined,
+            _b[ComponentClickCollectionDimension.TargetUrl] = undefined,
+            _b);
     };
     NavigationLoadEvent.prototype.populateComponentClickFromContentItem = function (item) {
         this.componentClick.clickElementId = item.PhraseId;
@@ -8043,13 +8173,13 @@ var NavigationLoadEvent = /** @class */ (function (_super_1) {
 var shopsAndMoreOverviewCss = ".shops-and-more-overview.sc-phn-shops-and-more-overview ul.sc-phn-shops-and-more-overview{margin:0;padding:0;text-indent:0;list-style-type:none}.shops-and-more-overview.sc-phn-shops-and-more-overview li.sc-phn-shops-and-more-overview{margin:0;padding:0;text-indent:0;list-style-type:none}.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:center;justify-content:center}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{padding-top:3.125rem}}@media (min-width: 1760px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview{padding-top:3rem}}@media (min-width: 1300px) and (max-width: 1759px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview{margin-left:3.75rem;margin-right:3.75rem;width:16.6875rem}}@media (min-width: 1760px){.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview{margin-left:3rem;margin-right:3rem;width:21.6875rem}}.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview:nth-child(2){margin:0}.shops-and-more-overview.sc-phn-shops-and-more-overview .shops-and-more-overview-content.sc-phn-shops-and-more-overview .link-group.sc-phn-shops-and-more-overview .list-item-group.sc-phn-shops-and-more-overview{padding-top:0.375rem;padding-left:0.625rem;padding-right:0.625rem}";
 var ShopsAndMoreOverview = /** @class */ (function () {
     function class_4(hostRef) {
-        Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
         this.item = EMPTY_ITEM;
     }
     class_4.prototype.triggerAnalyticsEvent = function () {
         return __awaiter(this, void 0, void 0, function () {
             var pagData, analyticsSetup, analyticsEvent;
-            return __generator(this, function (_a) {
+            return __generator(this, function (_b) {
                 pagData = (window['pagData'] = window['pagData'] || []);
                 analyticsSetup = {
                     applicationId: analyticsSetupStore.get('applicationId'),
@@ -8064,8 +8194,8 @@ var ShopsAndMoreOverview = /** @class */ (function () {
         });
     };
     class_4.prototype.renderLinkGroup = function (_items, _title) {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "link-group" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { role: "heading", "aria-level": "2", text: _title, class: "head-line" }), Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ul", { class: "list-item-group" }, _items.map(function (linkItem) {
-            return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: linkItem })));
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "link-group" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-headline", { role: "heading", "aria-level": "2", text: _title, class: "head-line" }), Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ul", { class: "list-item-group" }, _items.map(function (linkItem) {
+            return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("phn-list-item", { item: linkItem })));
         }))));
     };
     class_4.prototype.renderLinkGroups = function (_items) {
@@ -8076,7 +8206,7 @@ var ShopsAndMoreOverview = /** @class */ (function () {
             }));
     };
     class_4.prototype.render = function () {
-        return (Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview" }, Object(_index_f8290f1d_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview-content" }, hasLinkItemChild(this.item)
+        return (Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview" }, Object(_index_866367c9_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "shops-and-more-overview-content" }, hasLinkItemChild(this.item)
             ? this.renderLinkGroup(this.item.Items, this.item.Text)
             : this.renderLinkGroups(this.item.Items))));
     };

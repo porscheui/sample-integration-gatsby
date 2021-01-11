@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{QeBL:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),o=n.n(a),l=n("K2NN"),s=n("9Dj+");t.default=function(){return o.a.createElement(s.a,null,o.a.createElement(l.g,null,o.a.createElement(l.h,{size:12},o.a.createElement(l.q,null,"Welcome to our Porsche Design System example site with Gatsby. Click one of the Links above to see different examples of all Components we provide"))))}}}]);
-//# sourceMappingURL=component---src-pages-index-tsx-c3c159c025b5e200340f.js.map
