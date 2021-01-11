@@ -6,7 +6,7 @@ on:
       - housekeeping/*
       - issue/*
       - dependabot/**
-name: 'Sample Integration NextJS'
+name: 'Sample Integration Gatsby'
 jobs:
   build:
     name: 'Build'
