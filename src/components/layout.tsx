@@ -10,6 +10,7 @@ import * as PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import './layout.css';
+import {PorscheDesignSystemProvider} from '@porsche-design-system/components-react';
 
 const Layout = ({ children }): JSX.Element => {
   const data = useStaticQuery(graphql`
@@ -23,10 +24,12 @@ const Layout = ({ children }): JSX.Element => {
   `);
 
   return (
-    <div className="pageLayout">
-      <Header siteTitle={data.site.siteMetadata.title} />
-      {children}
-    </div>
+    <PorscheDesignSystemProvider>
+      <div className="pageLayout">
+        <Header siteTitle={data.site.siteMetadata.title} />
+        {children}
+      </div>
+    </PorscheDesignSystemProvider>
   );
 };
 

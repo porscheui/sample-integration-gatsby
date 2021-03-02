@@ -4,7 +4,9 @@ import { PButton, PLinkPure, PIcon } from '@porsche-design-system/components-rea
 import { applyPolyfills, defineCustomElements as definePorscheNavigation } from '@porschehn/navigation/loader';
 
 applyPolyfills().then(() => {
-  definePorscheNavigation(window);
+  if (typeof window !== 'undefined') {
+    definePorscheNavigation(window);
+  }
 });
 
 const PhnHeaderPage = (): JSX.Element => (

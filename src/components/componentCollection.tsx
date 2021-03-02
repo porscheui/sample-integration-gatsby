@@ -17,12 +17,12 @@ const ComponentCollection = (): JSX.Element => {
   const [submit, setSubmit] = useState(false);
   const [activePage, setActivePage] = useState(1);
 
-  const handleSubmit = (e: React.MouseEvent<HTMLPButtonElement>): void => {
+  const handleSubmit = (e: React.MouseEvent<{}, MouseEvent>): void => {
     e.preventDefault();
     setSubmit(true);
   };
 
-  const handleDismiss = (e: React.MouseEvent<HTMLPButtonPureElement>): void => {
+  const handleDismiss = (e: React.MouseEvent<{}, MouseEvent>): void => {
     e.preventDefault();
     setSubmit(false);
   };
@@ -62,14 +62,10 @@ const ComponentCollection = (): JSX.Element => {
       </PGridItem>
       {/*Example of all Link variation which are provided by the Porsche Design System*/}
       <PGridItem size="12">
-        <a href="https://www.porsche.com" className="removeLinkStyle">
-          <PLink>porsche.com</PLink>
-        </a>
+          <PLink href="https://www.porsche.com">porsche.com</PLink>
       </PGridItem>
       <PGridItem size="12" className="contentWrapperBig">
-        <a href="#hashTest" className="removeLinkStyle">
-          <PLinkPure>Test PLinkPure</PLinkPure>
-        </a>
+          <PLinkPure href="#hashTest">Test PLinkPure</PLinkPure>
         <PLinkPure href="#propHashTest">Test propHash</PLinkPure>
       </PGridItem>
       <PGridItem size="12">

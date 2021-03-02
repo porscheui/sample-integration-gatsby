@@ -9,7 +9,7 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
-import { getFontFaceCSS, getPorscheDesignSystemCoreStyles } from '@porsche-design-system/partials';
+import { getInitialStyles, getFontFaceStylesheet } from '@porsche-design-system/components-react/partials';
 
 const SEO = ({ description, lang, meta, title }): JSX.Element => {
   const { site } = useStaticQuery(
@@ -69,8 +69,8 @@ const SEO = ({ description, lang, meta, title }): JSX.Element => {
           content: metaDescription,
         },
       ].concat(meta)}
-      style={[{ cssText: getPorscheDesignSystemCoreStyles({ withoutTags: true }) }]}
-      link={[{ rel: 'stylesheet', href: getFontFaceCSS({ withoutTags: true }) }]}
+      style={[{ cssText: getInitialStyles({ withoutTags: true }) }]}
+      link={[{ rel: 'stylesheet', href: getFontFaceStylesheet({ withoutTags: true }) }]}
     />
   );
 };
